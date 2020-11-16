@@ -1,10 +1,22 @@
-#testando
+#JonathanBonette
 
-#referenciando imagens no meu documento
-
-#o formato para referenciar é ! [] () //sem espaços
-
-#! [nome da imagem] (local da imagem no git) //sem espaços
+•Referenciando imagens no meu documento de forma simples:
+  O formato para referenciar é ! [] () //sem espaços
+  ! [nome da imagem] (local da imagem no git) //sem espaços
 
 LOGO IFSC
 ![LOGO IFSC](logoifsc.png)
+
+•Referenciando imagens no meu documento na forma HTML:
+
+<p>
+  IMAGEM SEM <b>ESCALA</b>
+</p>
+
+<img src = “JonathanBonette/logoifsc.png”>
+
+<p>
+  IMAGEM COM <b>ESCALA</b>
+</p>
+
+<img src = “JonathanBonette/logoifsc.png” width = 200 height = 200 >
