@@ -2,9 +2,9 @@
 
 #referenciando imagens no meu documento
 
-#o formato para referenciar é ![]()
+#o formato para referenciar é ! [] () //sem espaços
 
-#![nome da imagem](local da imagem no git)
+#! [nome da imagem] (local da imagem no git) //sem espaços
 
 LOGO IFSC
-![LOGO IFSC](logo-ifsc.png)
+![LOGO IFSC](logoifsc.png)
