@@ -13,10 +13,10 @@ LOGO IFSC
   IMAGEM SEM <b>ESCALA</b>
 </p>
 
-<img src = “JonathanBonette/logoifsc.png”>
+<img src = “./Imagens/logoifsc.png”>
 
 <p>
   IMAGEM COM <b>ESCALA</b>
 </p>
 
-<img src = “JonathanBonette/logoifsc.png” width = 200 height = 200 >
+<img src = “./Imagens/logoifsc.png” width = 200 height = 200 >
