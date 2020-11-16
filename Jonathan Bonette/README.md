@@ -5,7 +5,7 @@
   ! [nome da imagem] (local da imagem no git) //sem espaços
 
 LOGO IFSC
-![LOGO IFSC](logoifsc.png)
+![IFSC](logoifsc.png)
 
 •Referenciando imagens no meu documento na forma HTML:
 
