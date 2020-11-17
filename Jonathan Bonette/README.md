@@ -21,3 +21,21 @@ LOGO IFSC
 </p>
 
 <img src = "Imagens/logoifsc.png" width = 200 height = 200 >
+
+
+linha divisória mais fina:
+---
+
+| ALINHAMENTO ESQ | CENTRAL           | DIR   |
+| --------------- |:-----------------:| -----:|
+| this is a test  | test              | $1600 |
+| another one     | 1,2 test          |   $12 |
+| it's me again   | 1,2,3 testing     |    $1 |
+
+linha divisória mais grossa:
+***
+
+centralizar itálico | centralizar sombreado | centralizar negrito
+--- | --- | ---
+*itálico* | `sombreado` | **negrito**
+1 | 2 | 3
