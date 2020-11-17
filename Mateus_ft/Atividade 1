@@ -26,7 +26,13 @@ Observa-se que na verdade a tensão sobre R3 é de -240 Volts invertendo a polar
 
 ***
 ## Tutorial LTSPICE.
+NETLIST: 
+Para acessar a netlist de um circuito é necessário acessar na barra superior o ícone *view*
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/tutorial_ntelist.png)
 
+Após acessar a netlist do circuito é possivel observar como o programa codifica a parte gráfica em texto.
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/tutorial_ntelist2.png)
+Na primeira coluna é apresentado o nome do componente ou fonte; na segunda observa-se o nome do nó em que o componente está conectado; na terceira o outro nó em que o componente está conectado; na última coluna está o valor do componente ou fonte.
 
 
 
