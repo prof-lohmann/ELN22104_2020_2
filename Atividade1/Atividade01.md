@@ -18,4 +18,4 @@ Fazendo LKT, podemos equacionar o circuito da seguinte forma: _((Vo-5)/10000) + 
 ## Questão 3
 
 ![Circuito 4](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%203.PNG)
-![Circuito 5](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%202%20Eq..PNG)
+![Circuito 5](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%203%20Eq..PNG)
