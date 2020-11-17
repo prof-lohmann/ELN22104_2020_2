@@ -62,7 +62,8 @@ Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 
 (continuar Tutorial)
 
-### Questões Propostas:
+### Questões Propostas (a):
+
 
 1. O que é NETLIST?
 
@@ -75,3 +76,53 @@ Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 3. Como é representado cada um dos componentes? Exemplo.
 
 > Resposta
+
+4. O que é o LABEL de um nó e qual a vantagem de usar o mesmo?
+
+> Resposta
+
+5. Quais os componentes  básicos  implementados  no Spice?
+
+> resposta
+
+6. O que é um SUBCKIT? Exemplo.
+
+> resposta 
+
+7. Como incluir novos modelos de componentes em um simulador Spice.
+
+> resposta
+
+
+### Questões Propostas (b):
+
+
+l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
+
+> resposta
+
+2. O que é simulação “ DC operating point” (.0p)? Quando usar? Faça um exemplo.
+
+>resposta
+
+3. Quando usar .trans ou .op no SPICE
+
+>resposta
+
+4. O que faz a diretiva “.step"? Forneça exemplos de utilização.
+
+>resposta
+
+5. O que faz a diretiva “means”? Forneça exemplos de utilização.
+
+>resposta
+
+6. O que é a simulação “DC sweep” (dc)? Quando usar? Faça um exemplo.
+
+>resposta
+
+7. (Como simular um circuito em diferentes temperaturas de funcionamento?
+
+>resposta
+
+
