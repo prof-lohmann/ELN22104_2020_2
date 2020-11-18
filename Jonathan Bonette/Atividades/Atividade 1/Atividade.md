@@ -13,8 +13,8 @@ Eletrônica I</b>
 
 
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
-<span style="color:blue">some *blue* text</span><br>
-<span style="color:blue">some *This is Blue italic.* text</span>
+<span style="color:blue">testando alguma cor</span><br>
+<span style="color:blue">testando alguma cor</span>
 <p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de
