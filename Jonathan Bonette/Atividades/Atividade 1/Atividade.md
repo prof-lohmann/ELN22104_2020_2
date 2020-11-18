@@ -6,6 +6,7 @@
 <b>Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina<br>
 Campus Florianópolis<br>
 Departamento Acadêmico de Eletrônica<br>
+Eletrônica I</b>
 
 *Jonathan Chrysostomo Cabral Bonette*
 </td></tr></table>
