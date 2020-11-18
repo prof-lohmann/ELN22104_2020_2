@@ -7,13 +7,13 @@ Professores:
 
 ## Exercício 1
 
-![](prof-lohmann-Alunos_01/Gabriel_Wagner/1.jpg)
+![](1.jpg)
 *Figura 1 - Exercício 1*
 
 ## Exercicio 2
 
 Para  escobrirmos a tensão V0, basta encontrar a tensão em R2 e depois somar com a tensão da fonte V2.
-![](prof-lohmann-Alunos_01/Gabriel_Wagner/2.jpg)
+![](2.jpg)
 *Figura 2 - Exercício 2*
 
 ## Exercício 3
@@ -21,7 +21,7 @@ Para  escobrirmos a tensão V0, basta encontrar a tensão em R2 e depois somar c
 Para calcularmos a corrente que passa por R2, aplicaremos o teorema da superposição.
 Fazendo a série entre o paralelo de R1 e R3, e o paralelo de R2 e R4 podemos encontrar a corrente.
 Depois disso basta fazer o caminho inverso separando R2 e R4, e por fim calcular a corrente através do divisor de corrente. Deste modo encontraremos a corrente para as duas fontes.
-![](prof-lohmann-Alunos_01/Gabriel_Wagner/3.jpg)
+![](3.jpg)
 *Figura 3 - Exercício 3*
 
 ## Exercício 4
