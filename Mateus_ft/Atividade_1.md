@@ -42,6 +42,7 @@ Deve-se identificar os nós do circuito e a referência ground, após é importa
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/netlist_r.png)
 
 4. Label de um nó é uma forma de nomear o nó, para deixar o circuito mais organizado. Para fazer isso basta apertar f4 que abrirá a janela *Net Name* nesse local deve-se nomear a label.
+
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/label.png)
 
 Após nomear a label basta apertar no ok e coloca-la no nó onde desejar.
