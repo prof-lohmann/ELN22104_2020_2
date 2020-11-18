@@ -29,5 +29,5 @@ Depois disso basta fazer o caminho inverso separando R2 e R4, e por fim calcular
 Para calcular a queda de tensão em R3, temos que encontrar a corrente que passa por essa malha. Para encontrar essa corrente, temos que encontrar o valor da corrente na fonte dependente.
 A corrente na fonte dependente será o ganho Gm vezes a queda de tensão no resistor R2.
 Para encontrarmos a queda de tensão no resistor R2 basta fazermos um divisor de tensão entre R2 e R1.
-![](prof-lohmann-Alunos_01/Gabriel_Wagner/4.jpg)
+![](4.jpg)
 *Figura 4 - Exercício 4*
