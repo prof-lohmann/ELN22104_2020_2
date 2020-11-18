@@ -1,5 +1,5 @@
 <table align="center"><tr><td align="center" width="9999"><br>
-<img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Project icon">
+<img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Logo IFSC">
 
 # Atividade 1
 
@@ -12,7 +12,9 @@ Eletrônica I</b>
 </td></tr></table>
 
 
-<b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b>
+<b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
+<span style="color:blue">TESTANDO </span>.<br><br>
+<img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br>
 
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de
