@@ -10,8 +10,8 @@ a)
 
 b)
 1- Uma simulação em função do tempo
-2- É um tipo de simulação onde deseja-se apenas as informações de um ponto específico.
-3- Quando quiser fazer uma simulação em função do tempo ou em um ponto especifico
+2- É um tipo de simulação onde deseja-se apenas uma análise de corrente contínua.
+3- Quando quiser fazer uma simulação em função do tempo ou uma analise de corretne continua.
 4- Determina qual a constante que vai multiplicar um valor de um resistor em cada aumento.
 5- Determina os valores médios de alguma variavel
 6- Simulação feita por varredura
