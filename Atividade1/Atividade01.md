@@ -16,6 +16,12 @@ Fazendo LKT, podemos equacionar o circuito da seguinte forma: _((Vo-5)/10000) + 
 ![Circuito 3](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%202.PNG)
 
 ## Questão 3
+Anisando o Circuito, pode-se observar que ao fazer o paralelo de _R1//R3_; _R2//R4_, obtem-se um circuito em série. Sendo assim, _Req = R1//R3 + R2//R4 = 6621,42441ohm_, pode-se calcular o valor da corrente com: _Itotal = (12+10)/Req = 3,32mA_. Sabendo _Itotal_ podemos obter as tensões em cima dos resistores equivalentes: _VR13 = (R1//R3) * Itotal = 8,2439V_ e _VR24 = (R2//R4) * Itotal = 13,7561V_. Por fim, pode-se obter os valores de corrente: _IR3 = VR13 / 3300 = 2,49816mA_ e _IR4 = VR24 / 22000 = 625,277uA_. Portanto _I = IR3 - IR4 = 1,87288mA.
 
 ![Circuito 4](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%203.PNG)
 ![Circuito 5](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%203%20Eq..PNG)
+
+## Questão 4
+Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 = 4500ohm_, calcula-se a corrente _IR2 = 9 / 4500 = 2mA_, _VR2 = 1200 * IR2 = 2,4V_. Sabendo o valor de _VR2_, calcula-se o valor da fonte de corrente controlada por _VR2_: _Icontroler = 10*10^(-3) * VR2 = 24mA_, sendo assim, podemos obter o valor de _VR3_: _VR3 = 10000 * (-24*10^(-3)) = -240V.
+
+![Circuito 6](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%204.PNG)
