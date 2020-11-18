@@ -13,12 +13,8 @@ Eletrônica I</b>
 
 
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
-<span style="color:blue">TESTANDO </span>.<br><br>
-
+<span style="color:blue">some *blue* text</span>
 <p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
-
-
-
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de
 thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
