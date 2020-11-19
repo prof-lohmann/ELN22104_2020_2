@@ -129,12 +129,13 @@ O gráfico das tensões simuladas fica da seguinte forma:
 
 #### O que faz a diretiva .meas? Forneça exemplos de utilização.
 
-O comando .meas (.measure) suporta avaliar quantidades elétricas definidas pelo usuário. Existem dois tipos diferentes de instruções .meas. Aquelas que se
-referem a um ponto ao longo da abcissa, que é a variável independente plotada ao longo eixo horizontal, ou seja, o eixo do tempo de uma análise de transiente
-(.tran), e as instruções que se referem a um intervalo acima da abcissa. Vamos observar um exemplo do primeiro tipo de instrução .meas:
+O comando .meas (.measure) serve para avaliar quantidades elétricas definidas pelo usuário. Existem dois tipos diferentes de instruções .measure, aquelas que se
+referem a um ponto ao longo da abscissa, que é a variável independente plotada ao longo eixo horizontal como, por exemplo, o eixo do tempo de uma análise de transiente
+(.tran); e as instruções que se referem a um intervalo acima da abscissa. Vamos observar um exemplo do primeiro tipo de instrução .measure:
+
 ![exemplo_measure1](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_measure1.PNG)
 
-Após simular o circuito acima com o comando .meas, pode ser encontrado o valor medido na janela Error Log do SPICE, como mostrado abaixo:
+Após simular o circuito acima com o comando .meas, pode ser encontrado o valor medido na janela Error Log do SPICE (CTRL + L para acessar), como mostrado abaixo:
 
 ![exemplo_measure2](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_measure2.PNG)
 
