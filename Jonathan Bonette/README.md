@@ -1,41 +1,12 @@
+<table align="center"><tr><td align="center" width="9999"><br>
+<img src="Imagens/logoifsc.png" align="center" width="150" alt="Logo IFSC">
 
-#Testando comandos // Documentação
+# Repositório
 
-#JonathanBonette
+<b>Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina<br>
+Campus Florianópolis<br>
+Departamento Acadêmico de Eletrônica<br>
+Eletrônica I</b>
 
-•Referenciando imagens no meu documento de forma simples:
-  O formato para referenciar é ! [] () //sem espaços
-  ! [nome da imagem] (local da imagem no git) //sem espaços
-
-LOGO IFSC
-![IFSC](Imagens/logoifsc.png)
-
-•Referenciando imagens no meu documento na forma HTML:
-
-<p>
-  IMAGEM SEM <b>ESCALA</b>
-</p>
-<img src = "Imagens/logoifsc.png">
-<p>
-  IMAGEM COM <b>ESCALA</b>
-</p>
-
-<img src = "Imagens/logoifsc.png" width = 200 height = 200 >
-
-
-linha divisória mais fina:
----
-
-| ALINHAMENTO ESQ | CENTRAL           | DIR   |
-| --------------- |:-----------------:| -----:|
-| this is a test  | test              | $1600 |
-| another one     | 1,2 test          |   $12 |
-| it's me again   | 1,2,3 testing     |    $1 |
-
-linha divisória mais grossa:
-***
-
-centralizar itálico | centralizar sombreado | centralizar negrito
---- | --- | ---
-*itálico* | `sombreado` | **negrito**
-1 | 2 | 3
+*Jonathan Chrysostomo Cabral Bonette*
+</td></tr></table>
