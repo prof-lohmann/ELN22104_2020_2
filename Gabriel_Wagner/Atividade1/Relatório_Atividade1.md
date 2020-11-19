@@ -69,6 +69,27 @@ A terceira é criando um sub circuito. Basta você abrir o modelo SPICE dentro d
 Por exemplo os pinos de alimentação de um ampop, use nomes como VEE e VCC, para não gerar confusão.
 
 ### Simulação .trans
-A simulação
+A simulação .trans é usada quando você precisa fazer análise de transitórios. Segue abaixo uma fonte pulsada onde é demonstrado o carregamento e descarregamento de um capacitor.
+![](transitorio.png)
 
+### Simulação .op
+Essa simulação é usada quando seu circuito não irá apresentar transitórios, quando seu circuito tende a manter o mesmo comportamento ao longo do tempo.
+![](.op.png)
+
+### Simulação .step
+A simulação .step serve para quando você quer variar parâmetros, como a resistência de um resistor ou a indutância de um indutor.
+Segue abaixo as tensões de um resistor com resistência variável. O valor do resistor vai de 1 a 1000, com incremento de 200.
+![](.step.png)
+
+### Simulação .meas
+A simulação .meas serve para fazer uma medida característica quando certa condição é alcançada. Por exemplo em um circuito série, medir a tensão no resistor R3 em 5 ms.
+
+### Simulação .dc
+A simulação .dc é muito parecida com a simulação .step, mas nesse caso você estará variando os parâmetros de tensão de uma fonte cc, onde só uma curva representará a mudança do parâmetro. Segue o exemplo abaixo, onde a tensão da fonte é variada de -10 V a 10 V com incremento de 2 V.
+![](.dc.png)
+
+### Parâmetro de variação de temperatura
+Para variar a temperatura no seu programa SPICE basta adicionar a variação de parâmetro .step temp e colocar o valor inicial, final e o incremento. Segue exemplo abaixo de um circuito com diodo, componente muito sensível a temperatura. O parâmetro temperatura varia de 20 a 50 graus com incremento de 10 graus.
+![](.temp.png)
+Percebe-se a variação da corrente no resistor R3 devido a variação de temperatura.
 
