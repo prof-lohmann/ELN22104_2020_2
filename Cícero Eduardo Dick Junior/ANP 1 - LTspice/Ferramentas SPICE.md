@@ -10,7 +10,7 @@ O *netlist* é um documento de texto que faz a listagem dos componentes de um ci
 
 Existe uma formatação específica para a descrição de uma netlist e também símbolos que devem ser usados para representar cada componente.
 Por tanto, vamos utilizar o circuito abaixo como exemplo para visualizar melhor.
-![exemplo_netlist]()
+![exemplo_netlist](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_netlist.PNG)
 
 O circuito é formado por três resistores, que serão representados por R1, R2 e R3; uma fonte de tensão representada por V1 e quatro nós que ligam os componentes 
 N1, N2, N3 e N4. A *netlist* para este circuito fica assim:
@@ -28,7 +28,7 @@ Como visto no exemplo anterior, os nós do circuito estão marcados com os símb
 a organizar o circuito e a *netlist*. Por padrão, os nós aparecem na *netlist* numerados por n001, n002, n003 e assim por diante, o que torna a netlist um
 pouco confusa quando utilizamos circuitos mais complexos. Com o uso de *LABELS* podemos identificar mais facilmente os nós mais importantes em nossa análise.
 Além disso, eles podem ser usados para fazer as conexões entre componentes e manter o projeto mais organizado, dessa forma:
-![exemplo_labels]()
+![exemplo_labels](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_labels.PNG)
 
 #### Quais os componentes básicos implementados no SPICE?
 
@@ -81,7 +81,7 @@ os Amplificadores Operacionais. Este é um exemplo de SUBCKT que descreve um Amp
 Basta encontrar o modelo que se encaixa com o componente real que deseja e salvar na pasta do seu projeto, depois utilizar o comando .lib e endereçar o arquivo
 que contém o modelo no spice e por último, nomear o componente do projeto com o mesmo nome do subcircuito ou modelo, como por exemplo:
 
-![exemplo_modelos]()
+![exemplo_modelos](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_modelos.PNG)
 
 ## Parâmetros de Simulação do SPICE
 
@@ -90,7 +90,7 @@ que contém o modelo no spice e por último, nomear o componente do projeto com 
 A simulação transiente é uma simulação **não linear no domínio de tempo**, muito útil quando observamos circuitos não lineares, cujo a tensão e corrente 
 mudam ao decorrer do tempo. Como exemplo, vamos observar a curva de carga do capacitor no circuito abaixo:
 
-![exemplo_transiente]()
+![exemplo_transiente](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_transiente.PNG)
 
 Na imagem aparece o comando:
 ```
@@ -99,23 +99,23 @@ Na imagem aparece o comando:
 É possível definir o tempo inicial da simulação, que no nosso caso é zero, o tempo final, nesse caso um segundo, além do máximo de timesteps, que não estão
 configurados neste exemplo. O gráfico da simulação fica dessa forma:
 
-![exemplo_transiente]()
+![exemplo_transiente](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_transiente2.PNG)
 
 #### O que é simulação DC operating point (.op)? Quando usar? Faça um exemplo.
 
 A simulão .op faz a análise do circuito em corrente contínua, útil para analisar o estado inicial de um circuito ou para analisar um circuito em corrente
 continua. Como exemplo, vamos analisar o divisor de corrente abaixo:
 
-![exemplo_DCsim]()
+![exemplo_DCsim](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_DCsim.PNG)
 
 Nesse caso, o *software* faz uma lista das tensões nos nós e das correntes em cada componente do circuito, como mostrado abaixo:
-![exemplo_DCsim2]()
+![exemplo_DCsim2](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_DCsim2.PNG)
 
 #### O que faz a diretiva .step no SPICE?
 
 O comando .step repete uma análise de circuito alterando o parâmetro de um componente em cada repetição. Como no exemplo desse circuito simplificado:
 
-![exemplo_step1]()
+![exemplo_step1](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_step.PNG)
 
 A sintaxe do comando .step segue da seguinte forma:
 ```
@@ -124,29 +124,29 @@ A sintaxe do comando .step segue da seguinte forma:
 O que significa que o valor inicial do meu resistor é 1k, o valor final é 3k e ele varia 1k em cada repetição.
 O gráfico das tensões simuladas fica da seguinte forma:
 
-![exemplo_step2]()
+![exemplo_step2](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_step2.PNG)
 
 #### O que faz a diretiva .meas? Forneça exemplos de utilização.
 
 O comando .meas (.measure) suporta avaliar quantidades elétricas definidas pelo usuário. Existem dois tipos diferentes de instruções .meas. Aquelas que se
 referem a um ponto ao longo da abcissa, que é a variável independente plotada ao longo eixo horizontal, ou seja, o eixo do tempo de uma análise de transiente
 (.tran), e as instruções que se referem a um intervalo acima da abcissa. Vamos observar um exemplo do primeiro tipo de instrução .meas:
-![exemplo_measure1]()
+![exemplo_measure1](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_measure1.PNG)
 
 Após simular o circuito acima com o comando .meas, pode ser encontrado o valor medido na janela Error Log do SPICE, como mostrado abaixo:
 
-![exemplo_measure2]()
+![exemplo_measure2](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_measure2.PNG)
 
 #### O que é a simulação "DC Sweep" (.dc)? Quando usar? Faça um exemplo.
 
 O DC Sweep funciona de forma análoga a diretiva .step, o simulador repete a análise do circuito variando a tensão das fontes de corrente contínua do circuito.
 Este tipo de análise pode ser usado para avaliar, por exemplo, o comportamento de um transistor, como veremos a seguir.
 
-![exemplo_dcsweep1]()
+![exemplo_dcsweep1](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_dcsweep1.PNG)
 
 Podemos ver a tensão no Gate do transistor aumentando e, consequentemente, ele passando de fechado para triodo e depois completamente ativado:
 
-![exemplo_dcsweep2]()
+![exemplo_dcsweep2](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_dcsweep2.PNG)
 
 #### Como simular um circuito em diferentes temperaturas de funcionamento?
 
