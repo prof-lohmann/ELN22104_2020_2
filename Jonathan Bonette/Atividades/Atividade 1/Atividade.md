@@ -52,10 +52,17 @@ Eletrônica I</b>
 
 
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
-<b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br>
-2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo<br>
-3. Quando usar .trans ou .op no SPICE?<br>
-4. O que faz a diretiva “.step”? Forneça exemplos de utilização.<br>
-5. O que faz a diretiva “.means”? Forneça exemplos de utilização.<br>
-6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.<br>
-7. Como simular um circuito em diferentes temperaturas de funcionamento?</b><br>
+<b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br></b>
+ *Uma simulação em função do tempo.*<br><br>
+<b>2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo</b><br>
+ *Uma simulação de corrente contínua.*<br><br>
+<b>3. Quando usar .trans ou .op no SPICE?</b><br>
+ *Quando quisermos analisar um circuito pela função do tempo ou uma em corrente contínua.*<br><br>
+<b>4. O que faz a diretiva “.step”? Forneça exemplos de utilização.</b><br>
+ *Determina qual o valor da constante que vai ser multiplicada a um valor de componente de tempos em tempos.*<br><br>
+<b>5. O que faz a diretiva “.means”? Forneça exemplos de utilização.</b><br>
+ *Mostra qual o valor médio de alguma variável.*<br><br>
+<b>6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.</b><br>
+ *Simulação feita ao analisar um período determinado.*<br><br>
+<b>7. Como simular um circuito em diferentes temperaturas de funcionamento?</b><br>
+*Usando .temp na simulação.*<br><br>
