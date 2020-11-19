@@ -20,12 +20,12 @@ O LTSpice é um simulador gratuito, sendo possivel ser baixado [aqui](https://ww
 
 Depois de instalar o programa e executá-lo, você verá uma tela como esta abaixo:
 
-(por imagem 1)
+![Imagem 1](https://user-images.githubusercontent.com/12564754/99699183-6b4f6080-2a70-11eb-8c01-83b15cfb577e.PNG)
 
 Para realmente começar a desenhar um esquema, você precisará clicar no menu File e em seguida Nem Schematic (tela abaixo). Será criado um novo arquivo
 com a extensão .asc.
 
-(por imagem 2)
+![Imagem 2](https://user-images.githubusercontent.com/12564754/99699402-abaede80-2a70-11eb-949d-efef638d3932.png)
 
 A partir daqui, você pode começar a inserir e editar componentes, mas primeiro vamos examinar alguns atalhos de teclado. Você pode encontrar a maioria deles na barra de ferramentas acima da janela do circuito, ou também nos menus Edit e View, se preferir acessá-los dessa forma. Se você ficar preso ao trabalhar com o LTSpice, há um conjunto bastante abrangente de recursos disponíveis no menu Help, incluindo mais exemplos relacionados ao uso. 
 
@@ -68,11 +68,11 @@ Para alterar as propriedades dos componentes selecionados, basta clicar com o bo
 
 Para rodar a simulacao do circuito feito, basta clicar no botao Run, como na imagem a baixo:
 
-(inserir figura 4)
+![Imagem 4](https://user-images.githubusercontent.com/12564754/99699495-bf5a4500-2a70-11eb-82fc-5a3271268024.PNG)
 
 Note que aparecera uma janela para inserir as informacoes de como sera realizada a execucao. Apos configurar e mandar executar a simulacao, uma nova janela com o título “Draft1.raw” se abrirá (imagem abaixo). Nela serão mostrados os resultados da simulação.
 
-(inserir imagem 5)
+![Imagem 5](https://user-images.githubusercontent.com/12564754/99699525-cbde9d80-2a70-11eb-83e0-234eb91abc01.PNG)
 
 A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparecesera uma ponta de medida de tensao ou corrente. Se clicar sobre a linha ou componente, automamticamente aparecera o sinal na janela com o título “Draft1.raw”.
 
