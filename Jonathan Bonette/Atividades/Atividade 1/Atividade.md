@@ -13,26 +13,22 @@ Eletrônica I</b>
 
 
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
-<span style="color:blue">testando alguma cor</span><br>
-<p align="center"><img src="../../Imagens/Atividade 1/1.png" align="center"  alt="Q1"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/1.png" align="center"><br></p>
 
 ---
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
-<span style="color:blue">testando alguma cor</span><br>
-<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/2.png" align="center"><br></p>
 
 ---
 
 <b>3. Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ, R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
-<span style="color:blue">testando alguma cor</span><br>
-<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/3.png" align="center"><br></p>
 
 ---
 
 <b>4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V</b>
-<span style="color:blue">testando alguma cor</span><br>
-<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/4.png" align="center"><br></p>
 
 ---
 
