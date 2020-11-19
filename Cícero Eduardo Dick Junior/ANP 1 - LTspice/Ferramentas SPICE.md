@@ -141,7 +141,7 @@ Após simular o circuito acima com o comando .meas, pode ser encontrado o valor 
 
 #### O que é a simulação "DC Sweep" (.dc)? Quando usar? Faça um exemplo.
 
-O DC Sweep funciona de forma análoga a diretiva .step, o simulador repete a análise do circuito variando a tensão das fontes de corrente contínua do circuito.
+O DC Sweep funciona de forma análoga a diretiva .step, o simulador repete a análise do circuito variando a tensão das fontes em corrente contínua do circuito.
 Este tipo de análise pode ser usado para avaliar, por exemplo, o comportamento de um transistor, como veremos a seguir.
 
 ![exemplo_dcsweep1](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/exemplo_dcsweep1.PNG)
