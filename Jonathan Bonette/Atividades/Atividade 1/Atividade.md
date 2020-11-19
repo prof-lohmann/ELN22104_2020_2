@@ -14,17 +14,27 @@ Eletrônica I</b>
 
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
 <span style="color:blue">testando alguma cor</span><br>
-<span style="color:blue">testando alguma cor</span>
 <p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
 
-<b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de
-thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
+---
 
-<b>3. Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ,
-R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
+<b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
+<span style="color:blue">testando alguma cor</span><br>
+<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
 
-<b>4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3
-= 10kΩ e gm = 10mA/V</b>
+---
+
+<b>3. Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ, R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
+<span style="color:blue">testando alguma cor</span><br>
+<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+
+---
+
+<b>4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V</b>
+<span style="color:blue">testando alguma cor</span><br>
+<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+
+---
 
 <b>5. Aprendendo a simular com o simuladores SPICE.</b>
 
@@ -36,6 +46,8 @@ R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
 5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)<br>
 6. O que é um “SUBCKT”? Faça um exemplo.<br>
 7. Como incluir novos modelos de componentes em um simulador SPICE?</b>
+
+
 
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
 <b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br>
