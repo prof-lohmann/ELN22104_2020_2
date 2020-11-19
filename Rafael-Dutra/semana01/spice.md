@@ -13,14 +13,14 @@ Netilist é uma descrição de componentes e suas conexões. Um circuito é desc
     Cada componente é representado por uma Label e um valor no script, como por exemplo, 
     a letra R representa um resistor é o 10k representa o valor da resistência: 
 
-![imagem de modelo no ltspice e nomenclatura no netlist](https://github.com/Rafael-Dutra/ELN22104_2020_2/tree/prof-lohmann-Alunos_01/Rafael-Dutra/semana01/img/resistor.png)
+![imagem de modelo no ltspice e nomenclatura no netlist](img/resistor.png)
 
 ## SUBCKT
     
     Representado pela letra U no netlist, o SUBCKT é uma abstração de um conjunto de componentes e 
     suas ligações.
 
-![imagem de modelo no ltspice e nomenclatura no netlist](https://github.com/Rafael-Dutra/ELN22104_2020_2/tree/prof-lohmann-Alunos_01/Rafael-Dutra/semana01/img/subckt.png)
+![imagem de modelo no ltspice e nomenclatura no netlist](img/subckt.png)
 
 ## Como incluir novos modelos
 
