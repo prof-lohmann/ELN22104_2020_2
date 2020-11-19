@@ -152,9 +152,23 @@ Podemos ver a tensão no Gate do transistor aumentando e, consequentemente, ele 
 
 #### Como simular um circuito em diferentes temperaturas de funcionamento?
 
-Para simular um circuito em diferentes temperaturas, basta utilizar a diretiva .step temp <Tinicial> <Tfinal> <Tstep>
+Para simular um circuito em diferentes temperaturas, basta utilizar a diretiva .step temp (Tinicial) (Tfinal) (Tstep).
+
 Exemplo:
 ```
 .step temp 10 70 5
 ```
 Neste exemplo temos a temperatura inicial 10°C, temperatura final 70°C com um incremento de 5°C para cada repetição da análise.
+
+## Referências
+
+* http://electronicsbeliever.com/how-to-sweep-temperature-in-ltspice-with-step-by-step-tutorials/
+* https://www.youtube.com/watch?v=VzxnNrOMcMo
+* https://www.youtube.com/watch?v=H0_1HLoRni0
+* http://electronicsbeliever.com/how-to-sweep-voltage-in-ltspice/
+* https://www.embarcados.com.br/medicoes-especiais-measure/
+* http://ltwiki.org/LTspiceHelp/LTspiceHelp/_MEASURE_Evaluate_User_Defined_Electrical_Quantities.htm
+* https://www.analog.com/en/technical-articles/ltspice-using-meas-and-step-commands-to-calculate-efficiency.html
+* https://www.analog.com/en/technical-articles/ltspice-using-the-step-command-to-perform-repeated-analysis.html
+* https://www.youtube.com/watch?v=idVApmPvtv4
+* https://www.embarcados.com.br/primeiros-passos-com-o-ltspice-xvii/
