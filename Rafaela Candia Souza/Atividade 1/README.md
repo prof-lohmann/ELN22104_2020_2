@@ -82,27 +82,42 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 
 1. O que é NETLIST?
 
-> Resposta
+> Uma netlist é uma representação baseada em texto de um circuito. Ela é utilizada para aprender sobre a sintaxe e simulação do SPICE. Também pode ajudar na identificação de erros de simulação e problemas de convergência.
 
 2. Como descrever o NETLIST de um circuito?
 
-> Resposta
+> O netlist pode ser gerado pelo programa EDFIL, a partir do diagrama esquemático. Primeira linha: Comentário (o editor EDFIL coloca o número de nós nesta linha).Linhas seguintes: Descrição do circuito, com um elemento por linha. A primeira letra determina o tipo de elemento.
 
 3. Como é representado cada um dos componentes? Exemplo.
 
-> Resposta
+> * Resistor: R<nome> <nó1> <nó2> <Resistência>
+> * Indutor: L<nome> <nó1> <nó2> <Indutância>
+> * Capacitor: C<nome> <nó1> <nó2> <Capacitância>
+> * Fonte de tensão controlada a tensão: E<nome> <nóV+> <nóV-> <nóv+> <nóv-> <Av>
+> * Fonte de corrente controlada a corrente: F<nome> <nóI+> <nóI-> <nói+> <nói-> <Ai>
+> * Fonte de corrente controlada a tensão: G<nome> <nóI+> <nóI-> <nóv+> <nóv-> <Gm>
+> * Fonte de tensão controlada a corrente: H<nome> <nóV+> <nóV-> <nói+> <nói-> <Rm>
+> * Fonte de corrente: I<nome> <nó+> <nó-> <parâmetros>
+> * Fonte de tensão: V<nome> <nó+> <nó-> <parâmetros>
+> * Amplificador operacional ideal: O<nome> <nó saída+> <nó saída-> <nó entrada+> <nó entrada->
+> * Resistor linear por partes: N<nome> <nó+> <nó-> <4 pontos vi ji >
+> * Transformador ideal: K<nome> <nó a> <nó b> <nó c> <nó d> <n>
+> * Chave: $<nome> <nó a> <nó b> <nó controle c> <nó controle d> <gon> <goff> <vref>
+> * Comentário: *<comentário>
 
 4. O que é o LABEL de um nó e qual a vantagem de usar o mesmo?
 
-> Resposta
+> É a atribuicao de uma identificação à um fio, dando qualquer nome que se queira a ele. Assim em qualquer outra parte do circuito que for inserido o mesmo nome, o simulador entenderá que trata-se do mesmo ponto. 
 
 5. Quais os componentes  básicos  implementados  no Spice?
 
-> resposta
+> Biblioteca de componentes passivos ( como R, L, C)e biblioteca de componentes lineares.
 
 6. O que é um SUBCKIT? Exemplo.
 
-> resposta 
+> É a criacao automaticamente de um símbolo para um modelo customizado, ou você pode associar um subcircuito a um símbolo intrínseco LTspice, desde que o modelo .SUBCKT desejado e o símbolo intrínseco compartilhem uma lista de rede de pinos / portas de idêntica ordem.
+> Exemplo:
+>
 
 7. Como incluir novos modelos de componentes em um simulador Spice.
 
