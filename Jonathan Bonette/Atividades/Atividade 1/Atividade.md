@@ -14,7 +14,7 @@ Eletrônica I</b>
 
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
 <span style="color:blue">testando alguma cor</span><br>
-<p align="center"><img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Q1"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/1.png" align="center"  alt="Q1"><br></p>
 
 ---
 
