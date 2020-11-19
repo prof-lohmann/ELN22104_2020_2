@@ -1,27 +1,30 @@
 # Netlist
-Netilist é ................
 
-Um circuito é descrito por meio da ligação dos nós no netlist
+Netilist é uma descrição de componentes e suas conexões. Um circuito é descrito por um Netlist será descrito por meio de seus nós, componentes e pela maneira que nós e componentes estão conectados.
 
 ## Label 
     
-    Label é um palavra usada pra identificar os nós, é possivel renomear um nó para 
-    facilitar a compreensao das ligções descritas no netlist
-
+    Label é um palavra usada pra identificar um elemento, seja ele um nó ou componente, no Netlist. 
+    É possivel renomear uma label para facilitar a compreensão na hora de ler o Netlist.
+    
 ## Componente
     
-    Os componentes basicos implementados no SPICE sao resistor capacitor e indutor e 
-    um SUBCKT. Cada componente é repressentado por uma letra no script, como por 
-    exemplo, a letra R representa um resistor: 
+    Os componentes basicos implementados no SPICE são resistor, capacitor e indutor e um SUBCKT. 
+    Cada componente é representado por uma Label e um valor no script, como por exemplo, 
+    a letra R representa um resistor é o 10k representa o valor da resistência: 
 
-\*imagem de modelo no ltspice e nomenclatura no netlist\*
+![imagem de modelo no ltspice e nomenclatura no netlist](https://github.com/Rafael-Dutra/ELN22104_2020_2/tree/prof-lohmann-Alunos_01/Rafael-Dutra/semana01/img/resistor.png)
 
 ## SUBCKT
     
-    oq é
+    Representado pela letra U no netlist, o SUBCKT é uma abstração de um conjunto de componentes e 
+    suas ligações.
 
-### Como incluir modelos
+![imagem de modelo no ltspice e nomenclatura no netlist](https://github.com/Rafael-Dutra/ELN22104_2020_2/tree/prof-lohmann-Alunos_01/Rafael-Dutra/semana01/img/subckt.png)
 
+## Como incluir novos modelos
+
+Utilizando 
 # Simulação SPICE
 
 ## Transiente
