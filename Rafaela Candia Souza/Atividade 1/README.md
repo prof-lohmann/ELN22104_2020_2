@@ -22,13 +22,14 @@ Depois de instalar o programa e executá-lo, você verá uma tela como esta abai
 
 (por imagem 1)
 
-Para realmente começar a desenhar um esquema, você precisará clicar no menu File e em seguida Nem Schematic, como na tela abaixo:
+Para realmente começar a desenhar um esquema, você precisará clicar no menu File e em seguida Nem Schematic (tela abaixo). Será criado um novo arquivo
+com a extensão .asc.
 
 (por imagem 2)
 
 A partir daqui, você pode começar a inserir e editar componentes, mas primeiro vamos examinar alguns atalhos de teclado. Você pode encontrar a maioria deles na barra de ferramentas acima da janela do circuito, ou também nos menus Edit e View, se preferir acessá-los dessa forma. Se você ficar preso ao trabalhar com o LTSpice, há um conjunto bastante abrangente de recursos disponíveis no menu Help, incluindo mais exemplos relacionados ao uso. 
 
-Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
+##### Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 
 **R:** Inserir Resistor
 
@@ -60,10 +61,24 @@ Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 
 **CTRL+E:** Espelhar (com o componente selecionado)
 
-(continuar Tutorial)
+Para alterar as propriedades dos componentes selecionados, basta clicar com o botao esquerdo do mouse sobre o componente desejado.
+
+
+##### Execucao de Simulacoes e Sinais Senoidais:
+
+Para rodar a simulacao do circuito feito, basta clicar no botao Run, como na imagem a baixo:
+
+(inserir figura 4)
+
+Note que aparecera uma janela para inserir as informacoes de como sera realizada a execucao. Apos configurar e mandar executar a simulacao, uma nova janela com o título “Draft1.raw” se abrirá (imagem abaixo). Nela serão mostrados os resultados da simulação.
+
+(inserir imagem 5)
+
+A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparecesera uma ponta de medida de tensao ou corrente. Se clicar sobre a linha ou componente, automamticamente aparecera o sinal na janela com o título “Draft1.raw”.
+
+### Topicos avancados sobre o LTSpice:
 
 ### Questões Propostas (a):
-
 
 1. O que é NETLIST?
 
@@ -93,9 +108,7 @@ Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 
 > resposta
 
-
 ### Questões Propostas (b):
-
 
 l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
@@ -121,7 +134,7 @@ l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
 >resposta
 
-7. (Como simular um circuito em diferentes temperaturas de funcionamento?
+7. Como simular um circuito em diferentes temperaturas de funcionamento?
 
 >resposta
 
