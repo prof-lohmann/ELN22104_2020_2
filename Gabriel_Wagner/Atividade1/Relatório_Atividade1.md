@@ -8,6 +8,7 @@ Professores:
 ## Exercício 1
 
 Figura 1 - Exercício 1
+
 ![](1.jpg)
 
 ## Exercicio 2
@@ -15,6 +16,7 @@ Figura 1 - Exercício 1
 Para descobrirmos a tensão V0, basta encontrar a tensão em R2 e depois somar com a tensão da fonte V2.
 
 Figura 2 - Exercício 2
+
 ![](2.jpg)
 
 ## Exercício 3
@@ -24,6 +26,7 @@ Fazendo a série entre o paralelo de R1 e R3, e o paralelo de R2 e R4 podemos en
 Depois disso basta fazer o caminho inverso separando R2 e R4, e por fim calcular a corrente através do divisor de corrente. Deste modo encontraremos a corrente para as duas fontes.
 
 Figura 3 - Exercício 3
+
 ![](3.jpg)
 
 ## Exercício 4
@@ -33,6 +36,7 @@ A corrente na fonte dependente será o ganho Gm vezes a queda de tensão no resi
 Para encontrarmos a queda de tensão no resistor R2 basta fazermos um divisor de tensão entre R2 e R1.
 
 Figura 4 - Exercício 4
+
 ![](4.jpg)
 
 ## Exercício 5
