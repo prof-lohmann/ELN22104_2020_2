@@ -25,7 +25,8 @@ Ainda, com o propósito de comprovar o cálculo nodal feito manualmente segue a 
 Observa-se que na verdade a tensão sobre R3 é de -240 Volts invertendo a polaridade. Pois a fonte de corrente controlada está no sentido contrário do usual.
 
 ***
-## Tutorial LTSPICE.
+**Questão 5**
+**a**
 1. O que é o **NETLIST**? 
 
 Para acessar a netlist de um circuito é necessário acessar na barra superior o ícone *view*
@@ -54,6 +55,24 @@ Para adicionar esse componente ao LTSPICE é necessário ir até o site do fabri
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/adc_tl082%20model%20spice%202.png)
 
 Após fazer o download é necessário adicioná-lo ao circuito dessa forma:
+
+**b**
+
+1. A simulação transiente .tran analisa o circuito em função do tempo e descreve seu comportamente graficamente.
+Exemplo:
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/simu%20.tran%205.png)
+
+É interessante usá-la em circuitos alternados. Que alteram os parametros de tensão e corrente ao longo do tempo.
+
+2. A simulação DC operating point .op identifica os nós do circuito e resolve usando o método dos nós.
+Exemplo:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/simu%20.op.png)
+
+É importante utiliza-la quando se está analisando um circuito de corrente contínua.
+
+
+
 
 
 
