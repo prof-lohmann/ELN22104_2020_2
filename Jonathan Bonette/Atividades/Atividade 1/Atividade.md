@@ -35,14 +35,20 @@ Eletrônica I</b>
 <b>5. Aprendendo a simular com o simuladores SPICE.</b>
 
 <b>a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda:</b><br>
-<b> 1. O que é o NETLIST?<br>
-2. Como descrever o NETLIST de um circuito?<br>
-3. Como é representado cada um dos componentes? Explique com um exemplo.<br>
-4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?<br>
-5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)<br>
-6. O que é um “SUBCKT”? Faça um exemplo.<br>
-7. Como incluir novos modelos de componentes em um simulador SPICE?</b>
-
+<b>1. O que é o NETLIST?</b><br>
+  *Uma NETLIST spice é uma representação baseada em texto de um circuito.*<br><br>
+<b>2. Como descrever o NETLIST de um circuito?</b><br>
+*Descrevemos com letras, palavras, simbolos ou números.*<br><br>
+<b>3. Como é representado cada um dos componentes? Explique com um exemplo.</b><br>
+*Cada componente é representado por uma letra ou símbolo que armmazena um valor. Ex: V1=12.*<br><br>
+<b>4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?</b><br>
+*Label é usualmente usado como um tipo de malha especial, onde os pontos definidos possuem o mesmo valor. Sua vantagem é que a recuperação de dados é muito mais rápida.*<br><br>
+<b>5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)</b><br>
+*Resistores, capacitores, indutores, entre outros.*<br><br>
+<b>6. O que é um “SUBCKT”? Faça um exemplo.</b><br>
+*É um subcircuito que envolve um bloco de texto do circuito e permite conexões externas a este circuito apenas através dos nós do subcircuito.*<br><br>
+<b>7. Como incluir novos modelos de componentes em um simulador SPICE?</b>
+*Abra o arquivo netlist que contém as definições de subcircuito no LTspice (Arquivo > Abrir ou arraste o arquivo para o LTspice). Edite o símbolo se necessário e salve.*<br><br>
 
 
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
