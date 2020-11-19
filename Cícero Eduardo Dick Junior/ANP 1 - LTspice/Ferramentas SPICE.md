@@ -28,6 +28,7 @@ Como visto no exemplo anterior, os nós do circuito estão marcados com os símb
 a organizar o circuito e a *netlist*. Por padrão, os nós aparecem na *netlist* numerados por n001, n002, n003 e assim por diante, o que torna a netlist um
 pouco confusa quando utilizamos circuitos mais complexos. Com o uso de *LABELS* podemos identificar mais facilmente os nós mais importantes em nossa análise.
 Além disso, eles podem ser usados para fazer as conexões entre componentes e manter o projeto mais organizado, dessa forma:
+
 ![exemplo_labels](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%201%20-%20LTspice/Img_Exemplos/Exemplo_labels.PNG)
 
 #### Quais os componentes básicos implementados no SPICE?
