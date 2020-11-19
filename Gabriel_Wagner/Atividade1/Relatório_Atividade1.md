@@ -8,7 +8,6 @@ Professores:
 ## Exercício 1
 
 Figura 1 - Exercício 1
-
 ![](1.jpg)
 
 ## Exercicio 2
@@ -16,7 +15,6 @@ Figura 1 - Exercício 1
 Para descobrirmos a tensão V0, basta encontrar a tensão em R2 e depois somar com a tensão da fonte V2.
 
 Figura 2 - Exercício 2
-
 ![](2.jpg)
 
 ## Exercício 3
@@ -26,7 +24,6 @@ Fazendo a série entre o paralelo de R1 e R3, e o paralelo de R2 e R4 podemos en
 Depois disso basta fazer o caminho inverso separando R2 e R4, e por fim calcular a corrente através do divisor de corrente. Deste modo encontraremos a corrente para as duas fontes.
 
 Figura 3 - Exercício 3
-
 ![](3.jpg)
 
 ## Exercício 4
@@ -36,7 +33,6 @@ A corrente na fonte dependente será o ganho Gm vezes a queda de tensão no resi
 Para encontrarmos a queda de tensão no resistor R2 basta fazermos um divisor de tensão entre R2 e R1.
 
 Figura 4 - Exercício 4
-
 ![](4.jpg)
 
 ## Exercício 5
@@ -70,17 +66,20 @@ Por exemplo os pinos de alimentação de um ampop, use nomes como VEE e VCC, par
 
 ### Simulação .trans
 A simulação .trans é usada quando você precisa fazer análise de transitórios. Segue abaixo uma fonte pulsada onde é demonstrado o carregamento e descarregamento de um capacitor.
+
 Figura 5 - Transitório do capacitor.
 ![](transitorio.png)
 
 ### Simulação .op
 Essa simulação é usada quando seu circuito não irá apresentar transitórios, quando seu circuito tende a manter o mesmo comportamento ao longo do tempo.
+
 Figura 6 - Simulação .op.
 ![](.op.png)
 
 ### Simulação .step
 A simulação .step serve para quando você quer variar parâmetros, como a resistência de um resistor ou a indutância de um indutor.
 Segue abaixo as tensões de um resistor com resistência variável. O valor do resistor vai de 1 a 1000, com incremento de 200.
+
 Figura 7 - Variação da resistência de um resistor através do .step param.
 ![](.step.png)
 
@@ -89,11 +88,13 @@ A simulação .meas serve para fazer uma medida característica quando certa con
 
 ### Simulação .dc
 A simulação .dc é muito parecida com a simulação .step, mas nesse caso você estará variando os parâmetros de tensão de uma fonte cc, onde só uma curva representará a mudança do parâmetro. Segue o exemplo abaixo, onde a tensão da fonte é variada de -10 V a 10 V com incremento de 2 V.
+
 Figura 7 - Variação da tensão de uma fonte cc através do dc sweep.
 ![](.dc.png)
 
 ### Parâmetro de variação de temperatura
 Para variar a temperatura no seu programa SPICE basta adicionar a variação de parâmetro .step temp e colocar o valor inicial, final e o incremento. Segue exemplo abaixo de um circuito com diodo, componente muito sensível a temperatura. O parâmetro temperatura varia de 20 a 50 graus com incremento de 10 graus.
+
 Figura 8 - Variação da corrente no resistor R3 devido a variação de temperatura.
 ![](.temp.png)
 Percebe-se a variação da corrente no resistor R3 devido a variação de temperatura.
