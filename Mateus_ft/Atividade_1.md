@@ -56,6 +56,12 @@ Para adicionar esse componente ao LTSPICE é necessário ir até o site do fabri
 
 Após fazer o download é necessário adicioná-lo ao circuito dessa forma:
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/bibext.png)
+
+Para adicionar a biblioteca externa, após baixar o arquivo disponibilizado pelo fabricante é necessário indicar qual o caminho que o LTSPICE deve fazer para encontra-lo através de uma diretiva. Apontando o caminho. Após basta renomear o componente opamp2 para o nome do arquivo baixado.
+
+
+
 **b**
 
 1. A simulação transiente .tran analisa o circuito em função do tempo e descreve seu comportamente graficamente.
