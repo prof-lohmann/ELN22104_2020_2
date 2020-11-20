@@ -27,7 +27,7 @@ O *SPICE* já possui uma biblioteca padrão, os principais componentes são: Res
 ### 6. O que e um “SUBCKT”? Faça um exemplo.
 O *SPICE* tem símbolos "modelos" para certos componentes reais desde que esses componentes compartilhem uma lista de rede de pinos e portas idênticas em ordem. Para isso, se utiliza a diretiva .SUBCKT associando um modelo do *SPICE* a um componente.
 
-INSERIR IMAGEM PRINT QUE BATI
+!{Exemplo SUBCKT.}(https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/Imagens/subckt.PNG)
 
 
 ### 7. Como incluir novos modelos de componentes em um simulador SPICE?
