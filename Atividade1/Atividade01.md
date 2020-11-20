@@ -25,3 +25,6 @@ Anisando o Circuito, pode-se observar que ao fazer o paralelo de _R1//R3_; _R2//
 Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 = 4500ohm_, calcula-se a corrente _IR2 = 9 / 4500 = 2mA_, _VR2 = 1200 * IR2 = 2,4V_. Sabendo o valor de _VR2_, calcula-se o valor da fonte de corrente controlada por _VR2_: _Icontroler = 10*10^(-3) * VR2 = 24mA_, sendo assim, podemos obter o valor de _VR3_: _VR3 = 10000 * (-24*10^(-3)) = -240V.
 
 ![Circuito 6](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Atividade1/Figura%204.PNG)
+
+## Questão 5
+
