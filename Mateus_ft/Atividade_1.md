@@ -77,6 +77,8 @@ Exemplo:
 
 É importante utiliza-la quando se está analisando um circuito de corrente contínua.
 
+3. Usar a diretiva .tran quando o circuito analisado for de corrente alternada. Assim o .op será utilizado quando o circuito for de corrente continua.
+
 
 
 
