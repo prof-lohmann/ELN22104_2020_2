@@ -1,5 +1,16 @@
 ## Exercício 1
-![Figura 1](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%201.jpg?raw=true)
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%201.jpg?raw=true)
+
+## Exercício 2
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%202.jpg?raw=true)
+
+## Exercício 3
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%203.jpg?raw=true)
+
+## Exercício 4
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%204.jpg?raw=true)
+
+
 
 ## Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
