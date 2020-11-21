@@ -1,0 +1,11 @@
+Exercício 5 - letra a
+
+1. O que é um NETLIST?
+R: Resumidamente, é a representação do circuito na forma de texto onde são descrito os nós, componentes e fontes do circuito.
+
+2. Como descrever o NETLIST de um circuito?
+3. Como é representado cada um dos componentes? Explique com um exemplo.
+4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
+5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)
+6. O que é um “SUBCKT”? Faça um exemplo.
+7. Como incluir novos modelos de componentes em um simulador SPICE?
