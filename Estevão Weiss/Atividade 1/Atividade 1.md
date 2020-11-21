@@ -15,7 +15,7 @@
 ## Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
 * NETLIST - Resumo
-  É a apresentação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
+É a apresentação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
 
 * LABEL - Resumo
 A ferramenta label serve para que os nós sejam nomeados e também é utilizada como uma conexão com o nó em questão, sem que seja necessário ligar um fio ao nó.
