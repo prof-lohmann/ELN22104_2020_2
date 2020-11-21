@@ -1,5 +1,5 @@
 ## Exercício 1
-![](Exercício 1.jpg)
+![Figura 1](Exercício 1.jpg)
 
 ## Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
