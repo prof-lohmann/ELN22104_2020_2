@@ -8,7 +8,7 @@
 ![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%203.jpg?raw=true)
 
 ## Exercício 4
-![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%204.jpg?raw=true)
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%2004.jpg?raw=true)
 
 
 
