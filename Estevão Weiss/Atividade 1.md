@@ -1,7 +1,7 @@
 # Exercício 1
 ![](Exercício 1.jpg)
 
-# Exercício 5 - ##Tutorial básico sobre as operações e ferramentas do Spice
+## Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
 * NETLIST - Resumo
 É a apresentação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
