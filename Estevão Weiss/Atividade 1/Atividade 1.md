@@ -28,3 +28,10 @@ Os subcircuitos são circuitos transformados num espécie de caixa preta para se
 
 Como incluir novos modelos de componentes em um simulador SPICE?
 
+* Simulação transiente (.trans)
+Esta simulação é utilizada quando o intuito é analisar os comportamentos transitórios dos componentes. Abaixo o exemplo desta simulação em um circuito RC.
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/.trans.JPG?raw=true)
+
+* Simulação DC operating point (.op)
+
+
