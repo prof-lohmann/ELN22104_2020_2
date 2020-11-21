@@ -1,5 +1,5 @@
 ## Exercício 1
-![Figura 1](Exercício 1.jpg)
+![Figura 1](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/Exerc%C3%ADcio%201.jpg?raw=true)
 
 ## Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
