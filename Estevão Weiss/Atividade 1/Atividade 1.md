@@ -39,4 +39,7 @@ Esta simulação é utilizada quando o intuito é analisar os comportamentos tra
 
 * Simulação DC operating point (.op)
 
+Esta simulação é utilizado para circuitos que não terão variações ao longo do tempo (sem transitórios). Abaixo o exemplo do circuito do exercício 3 desta atividade.
+
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/.op.jpg?raw=true)
 
