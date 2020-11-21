@@ -1,12 +1,18 @@
-Exercício 5 - Tutorial básico sobre a operação do LTSpice
-Letra A
+# Exercício 1
+![](Exercício 1.jpg)
 
-NETLIST
-Resumidamente, é a representação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
+Exercício 5 - Tutorial básico sobre as operações e ferramentas do Spice
 
-LABEL
+NETLIST - Resumo
+É a apresentação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
+
+LABEL - Resumo
 A ferramenta label serve para que os nós sejam nomeados e também é utilizada como uma conexão com o nó em questão, sem que seja necessário ligar um fio ao nó.
 
-5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)
-6. O que é um “SUBCKT”? Faça um exemplo.
-7. Como incluir novos modelos de componentes em um simulador SPICE?
+Componentes Básicos
+Os componentes mais utilizados no Spice são os resistores, diodos, capacitores e indutores.
+
+Subcircuito (SUBCKT)
+Os subcircuitos são circuitos transformados num espécie de caixa preta para serem utilizados com bastante frequência. Um exemplo de subckt são os amplificadores operacionais (AMPOP) que são compostos por diversos componentes mas no Spice aparecem como uma "caixa preta" de 5 terminais.  
+
+Como incluir novos modelos de componentes em um simulador SPICE?
