@@ -1,11 +1,12 @@
-Exercício 5 - letra a
+Exercício 5 - Tutorial básico sobre a operação do LTSpice
+Letra A
 
-1. O que é um NETLIST?
-R: Resumidamente, é a representação do circuito na forma de texto onde são descrito os nós, componentes e fontes do circuito.
+NETLIST
+Resumidamente, é a representação do(s) circuito(s) na forma de texto onde os componentes e fontes do(s) circuito(s) são representados e analisados através de nós.
 
-2. Como descrever o NETLIST de um circuito?
-3. Como é representado cada um dos componentes? Explique com um exemplo.
-4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
+LABEL
+A ferramenta label serve para que os nós sejam nomeados e também é utilizada como uma conexão com o nó em questão, sem que seja necessário ligar um fio ao nó.
+
 5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)
 6. O que é um “SUBCKT”? Faça um exemplo.
 7. Como incluir novos modelos de componentes em um simulador SPICE?
