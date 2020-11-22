@@ -54,18 +54,31 @@ Aluno:
 
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
 <b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br></b>
+
 ![]
+
 <b>2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo</b><br>
+
 ![]
+
 <b>3. Quando usar .trans ou .op no SPICE?</b><br>
+
 ![]
+
 <b>4. O que faz a diretiva “.step”? Forneça exemplos de utilização.</b><br>
+
 ![]
+
 <b>5. O que faz a diretiva “.means”? Forneça exemplos de utilização.</b><br>
+
 ![]
+
 <b>6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.</b><br>
+
 ![]
+
 <b>7. Como simular um circuito em diferentes temperaturas de funcionamento?</b><br>
+
 ![]
 
 
