@@ -53,6 +53,8 @@ Aluno:
 <b>7. Como incluir novos modelos de componentes em um simulador SPICE?</b><br>
 *Para adicionar um modelo SPICE é necessário que o o arquivo nome.cir já esteja gravado em uma pasta no computador local. Em seguida seleciona-se no QUCS “SPICE netlist” na aba “file components”, colocando-se o nome do arquivo que contém o modelo.*</b><br>
 
+
+
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
 
 <b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br></b>
