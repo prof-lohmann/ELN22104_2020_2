@@ -35,6 +35,8 @@ O *SPICE* tem símbolos "modelos" para certos componentes reais desde que esses 
 ### 7. Como incluir novos modelos de componentes em um simulador SPICE?
 Com o modelo do componente baixado no seu computador, escolha um componente que de adeque e o modelo pode ser incluido usando a diretiva .LIB seguindo o destino até chegar no arquivo do componente ou utilizar o .OP e colar o texto descritivo do modelo do componente.
 
+![](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/Imagens/modelo%20subckt.PNG)
+
 ---
 -----
 
@@ -45,12 +47,12 @@ Com o modelo do componente baixado no seu computador, escolha um componente que 
 ### 1. O que é simulação transiente (. trans)? Quando usar? Faça um exemplo.
 A simulação transiente é uma simulação em função do temppo, útil para circuitos que apresentem mudanças ao decorrer do tempo nos valores analisados.
 
-![]()
+![](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/Imagens/diretira%20.trans.PNG)
 
 ### 2. O que é simulação “DC operating point” (.op)? Quando usar? Faça um exemplo
 A simulação DC ponto de operação faz apenas uma análise do circuito em corrente contínua, útil para analisar o estado inicial de um circuito ou para analisar seu comportamente em corrente contínua.
 
-![]()
+![](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/Imagens/diretiva%20.op.PNG)
 
 ### 3. Quando usar .trans ou .op no SPICE?
 Utilizar .TRANS quando deseja-se analisar as alterações de um circuito no decorrer do tempo e utilizar .OP quando deseja-se analisar um circuito em corrente contínua.
@@ -59,9 +61,7 @@ Utilizar .TRANS quando deseja-se analisar as alterações de um circuito no deco
 A diretiva .STEP faz uma variação de determinado parâmetro de um componente no circuito utilizado.
 Exemplo:
 
-.step param X 5k 10k 1k
-
-![]()
+![](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/Imagens/diretiva%20.step%20param.PNG)
 
 O parâmetro {X} é um resistor que começa em 5k Ω até 10k Ω e varia seu valor em 1k Ω.
 
