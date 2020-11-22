@@ -6,7 +6,7 @@ Aluno:
 
 <b>Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
 
-![]
+![](https://github.com/DaFrancoGui/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Guilherme_Franco/Atividade_1/Imgens/Atividade%201%20-%20Imagens/ex%201.jpeg)
 
 ---
 
@@ -14,7 +14,7 @@ Aluno:
 
 <b>Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
 
-![]
+![](https://github.com/DaFrancoGui/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Guilherme_Franco/Atividade_1/Imgens/Atividade%201%20-%20Imagens/ex%202.jpeg)
 
 ---
 
@@ -22,7 +22,7 @@ Aluno:
 
 <b>Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ, R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
 
-![]
+![](https://github.com/DaFrancoGui/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Guilherme_Franco/Atividade_1/Imgens/Atividade%201%20-%20Imagens/ex%203.jpeg)
 
 ---
 
@@ -30,7 +30,7 @@ Aluno:
 
 <b>Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V</b>
 
-![]
+![](https://github.com/DaFrancoGui/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Guilherme_Franco/Atividade_1/Imgens/Atividade%201%20-%20Imagens/ex%204.jpeg)
 
 ---
 
