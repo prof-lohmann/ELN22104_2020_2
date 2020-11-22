@@ -70,7 +70,7 @@ A diretiva .MEANS avalia as grandezas elétricas definidas pelo usuário.  A uti
 
 ### 6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.
 A simulação DC sweep faz uma variação da tensão de uma determinada fonte de corrente contínua.
-Utiliza-se para analisar o comportamente de um transistor, pro exemplo.
+Utiliza-se para analisar o comportamente de um transistor, por exemplo.
 
 ### 7. Como simular um circuito em diferentes temperaturas de funcionamento?
 Para simular um circuito em diferentes temperaturas no LTSpice, utilizamos a diretiva .STEP TEMP.
