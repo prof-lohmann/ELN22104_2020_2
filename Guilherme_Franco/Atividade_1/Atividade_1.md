@@ -37,6 +37,7 @@ Aluno:
 ## Exercício 5
 
 <b>a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda:</b><br>
+
 <b>1. O que é o NETLIST?</b><br>
 *Trata-se de uma representação em texto do círcuito simulado.*</b><br>
 <b>2. Como descrever o NETLIST de um circuito?</b><br>
@@ -53,6 +54,7 @@ Aluno:
 *Para adicionar um modelo SPICE é necessário que o o arquivo nome.cir já esteja gravado em uma pasta no computador local. Em seguida seleciona-se no QUCS “SPICE netlist” na aba “file components”, colocando-se o nome do arquivo que contém o modelo.*</b><br>
 
 <b>b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo:</b><br>
+
 <b>1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.<br></b>
 
 ![]
