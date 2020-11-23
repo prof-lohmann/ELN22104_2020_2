@@ -53,4 +53,11 @@ Esta função serve para analisar parâmetros em intervalos de tempos determinad
 
 * Simulação DC Sweep (.dc)
 
+Está simulação é utilizada quando se quer variar valores de tensão de uma fonte CC. Segue o exemplo de uma simulação onde se varia gradativamente, de 0 a 10V, a tensão de uma fonte em um circuito puramente resistivo.
+
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/dc%20sweep.JPG?raw=true)
+
+* Variação de temperatura em uma só simulação
+
+Esta funcão é uma extensão da diretiva .step (citada acima), onde adicionamos o parametro de variação de temperatura (temp). 
 
