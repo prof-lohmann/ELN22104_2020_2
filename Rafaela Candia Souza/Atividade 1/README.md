@@ -29,7 +29,7 @@ com a extensão .asc.
 
 A partir daqui, você pode começar a inserir e editar componentes, mas primeiro vamos examinar alguns atalhos de teclado. Você pode encontrar a maioria deles na barra de ferramentas acima da janela do circuito, ou também nos menus Edit e View, se preferir acessá-los dessa forma. Se você ficar preso ao trabalhar com o LTSpice, há um conjunto bastante abrangente de recursos disponíveis no menu Help, incluindo mais exemplos relacionados ao uso. 
 
-##### Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
+#### Aqui está uma lista de algumas teclas de atalho para criar seu esquema:
 
 **R:** Inserir Resistor
 
@@ -64,7 +64,7 @@ A partir daqui, você pode começar a inserir e editar componentes, mas primeiro
 Para alterar as propriedades dos componentes selecionados, basta clicar com o botao esquerdo do mouse sobre o componente desejado.
 
 
-##### Execucao de Simulacoes e Sinais Senoidais:
+#### Execucao de Simulacoes e Sinais Senoidais:
 
 Para rodar a simulacao do circuito feito, basta clicar no botao Run, como na imagem a baixo:
 
@@ -86,7 +86,7 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 2. Como descrever o NETLIST de um circuito?
 
 > O netlist pode ser gerado pelo programa EDFIL, a partir do diagrama esquemático. Primeira linha: Comentário (o editor EDFIL coloca o número de nós nesta linha).Linhas seguintes: Descrição do circuito, com um elemento por linha. A primeira letra determina o tipo de elemento. Exemplo para visualizacao está na imagem abaixo:
-
+>
 > ![imagem 6](https://user-images.githubusercontent.com/12564754/99992759-89310400-2d95-11eb-942f-26aea9776421.PNG)
 
 
@@ -119,6 +119,7 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 
 > É a criacao automaticamente de um símbolo para um modelo customizado, ou você pode associar um subcircuito a um símbolo intrínseco LTspice, desde que o modelo .SUBCKT desejado e o símbolo intrínseco compartilhem uma lista de rede de pinos / portas de idêntica ordem.
 > Exemplo de SUBCKT que descreve um AmpOp::
+```
 > .SUBCKT LM324    1 2 3 4 5
 > *
 >  C1   11 12 5.544E-12
@@ -154,7 +155,7 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 > .MODEL DX D(IS=800.0E-18)
 > .MODEL QX PNP(IS=800.0E-18 BF=250)
 > .ENDS
-
+```
 7. Como incluir novos modelos de componentes em um simulador Spice.
 
 > É possivel baixar um novo componente em repositorios online e anexar na pasta do projeto. (continuar) 
@@ -165,6 +166,7 @@ l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
 > A simulação transiente é uma simulação não linear no domínio de tempo. É possivel a partir desta funcionalidade defenir o tempo de execucao da simulacao. 
 > Exemplo:
+>
 > ![imagem 7](https://user-images.githubusercontent.com/12564754/99994752-30169f80-2d98-11eb-9460-90c390ec5925.png)
 
 2. O que é simulação “ DC operating point” (.0p)? Quando usar? Faça um exemplo.
