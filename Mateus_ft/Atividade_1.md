@@ -6,19 +6,22 @@
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/WhatsApp%20Image%202020-11-16%20at%2016.50.10.jpeg)
 
 Para comprovar os resultados obtidos nos cálculos manuais utilizou-se do simulador ltspice.
-
+***
 **Questão 1 a**
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/simu%20Vo.png)
 
 **Questão 1 b**
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/simu%20Vo_b.png)
-
+***
 **Questão 2**
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/simu%20Q2%20th.png)
+***
+**Questão 3**
 
 Ainda, com o propósito de comprovar o cálculo nodal feito manualmente segue a imagem do resultado na calculador **HP**:
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/hp%20prime%20comprov%20conta%20nodal.png)
 
+***
 **Questão 4**
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/q4.png)
 
@@ -47,6 +50,11 @@ Deve-se identificar os nós do circuito e a referência ground, após é importa
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/images/label.png)
 
 Após nomear a label basta apertar no ok e coloca-la no nó onde desejar.
+
+
+5. Capacitores, resistores, indutores, diodos, fontes de tensão, etc.
+
+6.  são componentes mais complexas representado por componentes Spice mais simples (diodos, transistores, resistores, etc.)
 
 7. Para incluir componentes externos é necessário utilizar bibliotecas externas, essas são disponibilizadas pelos fabricantes e encontradas em seus sites.
 Por exemplo o amplificador operacional TL082 da texas instruments:
