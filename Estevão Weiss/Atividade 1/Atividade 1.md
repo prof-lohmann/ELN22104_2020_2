@@ -43,3 +43,14 @@ Esta simulação é utilizado para circuitos que não terão variações ao long
 
 ![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%201/.op.jpg?raw=true)
 
+* Diretiva .step
+
+Esta função serve para variar determinado parâmetro (valor de resistência, indutância, capacitância, etc) dentro de uma mesma simulação sem que seja preciso fazer várias simulações separadas. 
+
+* Diretiva .meas
+
+Esta função serve para analisar parâmetros em intervalos de tempos determinados. Por exemplo o comportamento transitório de um circuito RC num intervalo de 3u segundos.
+
+* Simulação DC Sweep (.dc)
+
+
