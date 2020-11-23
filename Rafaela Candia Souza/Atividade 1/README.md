@@ -81,14 +81,13 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 ### Questões Propostas (a):
 
 1. O que é NETLIST?
-possui uma lista dos componentes de um circuito e dos nós presentes. Ela é utilizada para aprender sobre a sintaxe e simulação do SPICE. Também pode ajudar na identificação de erros de simulação e problemas de convergência.
+> O NETLIST é a organizacao em lista dos componentes de um circuito e dos nós presentes em formato de texto. Ela é utilizada para aprender sobre a sintaxe e simulação do SPICE. Também pode ajudar na identificação de erros de simulação e problemas de convergência.
 
 2. Como descrever o NETLIST de um circuito?
 
 > O netlist pode ser gerado pelo programa EDFIL, a partir do diagrama esquemático. Primeira linha: Comentário (o editor EDFIL coloca o número de nós nesta linha).Linhas seguintes: Descrição do circuito, com um elemento por linha. A primeira letra determina o tipo de elemento. Exemplo para visualizacao está na imagem abaixo:
 >
 > ![imagem 6](https://user-images.githubusercontent.com/12564754/99992759-89310400-2d95-11eb-942f-26aea9776421.PNG)
-
 
 3. Como é representado cada um dos componentes? Exemplo.
 
@@ -173,11 +172,12 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 2. O que é simulação “ DC operating point” (.0p)? Quando usar? Faça um exemplo.
 
 > É a opcao para simulacao de circuitos de corrente continua, ideal para circuitos que nao tenham dependencia de transicao de tempo. Exemplo:
+> 
 > ![imagem 8](https://user-images.githubusercontent.com/12564754/99996298-4aea1380-2d9a-11eb-8fa9-54717d51f724.png)
 
 3. Quando usar .trans ou .op no SPICE
 
-> O transiente é recomendado para circuitos que possuem dependencia temporal. Ponto de operação é recomendado para circuito sem dependencia tempora.
+> O transiente (.trans) é recomendado para circuitos que possuem dependencia temporal. Ponto de operação (.op) é recomendado para circuito sem dependencia tempora.
 
 4. O que faz a diretiva “.step"? Forneça exemplos de utilização.
 
