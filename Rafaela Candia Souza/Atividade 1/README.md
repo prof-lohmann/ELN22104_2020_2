@@ -119,7 +119,7 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 
 > É a criacao automaticamente de um símbolo para um modelo customizado, ou você pode associar um subcircuito a um símbolo intrínseco LTspice, desde que o modelo .SUBCKT desejado e o símbolo intrínseco compartilhem uma lista de rede de pinos / portas de idêntica ordem.
 > Exemplo de SUBCKT que descreve um AmpOp::
-```
+>```
 > .SUBCKT LM324    1 2 3 4 5
 > *
 >  C1   11 12 5.544E-12
@@ -155,14 +155,15 @@ possui uma lista dos componentes de um circuito e dos nós presentes. Ela é uti
 > .MODEL DX D(IS=800.0E-18)
 > .MODEL QX PNP(IS=800.0E-18 BF=250)
 > .ENDS
-```
+>```
+
 7. Como incluir novos modelos de componentes em um simulador Spice.
 
 > É possivel baixar um novo componente em repositorios online e anexar na pasta do projeto. (continuar) 
 
 ### Questões Propostas (b):
 
-l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
+ l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
 > A simulação transiente é uma simulação não linear no domínio de tempo. É possivel a partir desta funcionalidade defenir o tempo de execucao da simulacao. 
 > Exemplo:
@@ -171,11 +172,12 @@ l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
 2. O que é simulação “ DC operating point” (.0p)? Quando usar? Faça um exemplo.
 
->resposta
+> É a opcao para simulacao de circuitos de corrente continua, ideal para circuitos que nao tenham dependencia de transicao de tempo. Exemplo:
+> ![imagem 8](https://user-images.githubusercontent.com/12564754/99996298-4aea1380-2d9a-11eb-8fa9-54717d51f724.png)
 
 3. Quando usar .trans ou .op no SPICE
 
->resposta
+> O transiente é recomendado para circuitos que possuem dependencia temporal. Ponto de operação é recomendado para circuito sem dependencia tempora.
 
 4. O que faz a diretiva “.step"? Forneça exemplos de utilização.
 
