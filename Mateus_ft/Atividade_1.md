@@ -54,7 +54,7 @@ Após nomear a label basta apertar no ok e coloca-la no nó onde desejar.
 
 5. Capacitores, resistores, indutores, diodos, fontes de tensão, etc.
 
-6.  são componentes mais complexas representado por componentes Spice mais simples (diodos, transistores, resistores, etc.)
+6.  São componentes mais complexos representado por componentes Spice mais simples (diodos, transistores, resistores, etc.)
 
 7. Para incluir componentes externos é necessário utilizar bibliotecas externas, essas são disponibilizadas pelos fabricantes e encontradas em seus sites.
 Por exemplo o amplificador operacional TL082 da texas instruments:
