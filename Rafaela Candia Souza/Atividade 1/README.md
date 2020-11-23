@@ -81,12 +81,14 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 ### Questões Propostas (a):
 
 1. O que é NETLIST?
-
-> Uma netlist é uma representação baseada em texto de um circuito. Ela é utilizada para aprender sobre a sintaxe e simulação do SPICE. Também pode ajudar na identificação de erros de simulação e problemas de convergência.
+possui uma lista dos componentes de um circuito e dos nós presentes. Ela é utilizada para aprender sobre a sintaxe e simulação do SPICE. Também pode ajudar na identificação de erros de simulação e problemas de convergência.
 
 2. Como descrever o NETLIST de um circuito?
 
-> O netlist pode ser gerado pelo programa EDFIL, a partir do diagrama esquemático. Primeira linha: Comentário (o editor EDFIL coloca o número de nós nesta linha).Linhas seguintes: Descrição do circuito, com um elemento por linha. A primeira letra determina o tipo de elemento.
+> O netlist pode ser gerado pelo programa EDFIL, a partir do diagrama esquemático. Primeira linha: Comentário (o editor EDFIL coloca o número de nós nesta linha).Linhas seguintes: Descrição do circuito, com um elemento por linha. A primeira letra determina o tipo de elemento. Exemplo para visualizacao está na imagem abaixo:
+
+> ![imagem 6](https://user-images.githubusercontent.com/12564754/99992759-89310400-2d95-11eb-942f-26aea9776421.PNG)
+
 
 3. Como é representado cada um dos componentes? Exemplo.
 
@@ -111,23 +113,59 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 
 5. Quais os componentes  básicos  implementados  no Spice?
 
-> Biblioteca de componentes passivos ( como R, L, C)e biblioteca de componentes lineares.
+> Biblioteca de componentes passivos (como R, L, C)e biblioteca de componentes lineares.
 
 6. O que é um SUBCKIT? Exemplo.
 
 > É a criacao automaticamente de um símbolo para um modelo customizado, ou você pode associar um subcircuito a um símbolo intrínseco LTspice, desde que o modelo .SUBCKT desejado e o símbolo intrínseco compartilhem uma lista de rede de pinos / portas de idêntica ordem.
-> Exemplo:
->
+> Exemplo de SUBCKT que descreve um AmpOp::
+> .SUBCKT LM324    1 2 3 4 5
+> *
+>  C1   11 12 5.544E-12
+>  C2    6  7 20.00E-12
+>  DC    5 53 DX
+>  DE   54  5 DX
+>  DLP  90 91 DX
+>  DLN  92 90 DX
+>  DP    4  3 DX
+>  EGND 99  0 POLY(2) (3,0) (4,0) 0 .5 .5
+>  FB    7 99 POLY(5) VB VC VE VLP VLN 0 15.91E6 -20E6 20E6 20E6 -20E6
+>  GA    6  0 11 12 125.7E-6
+>  GCM   0  6 10 99 7.067E-9
+>  IEE   3 10 DC 10.04E-6
+>  HLIM 90  0 VLIM 1K
+>  Q1   11  2 13 QX
+>  Q2   12  1 14 QX
+>  R2    6  9 100.0E3
+>  RC1   4 11 7.957E3
+>  RC2   4 12 7.957E3
+>  RE1  13 10 2.773E3
+>  RE2  14 10 2.773E3
+>  REE  10 99 19.92E6
+>  RO1   8  5 50
+>  RO2   7 99 50
+>  RP    3  4 30.31E3
+>  VB    9  0 DC 0
+>  VC 3 53 DC 2.100
+>  VE   54  4 DC .6
+>  VLIM  7  8 DC 0
+>  VLP  91  0 DC 40
+>  VLN   0 92 DC 40
+> .MODEL DX D(IS=800.0E-18)
+> .MODEL QX PNP(IS=800.0E-18 BF=250)
+> .ENDS
 
 7. Como incluir novos modelos de componentes em um simulador Spice.
 
-> resposta
+> É possivel baixar um novo componente em repositorios online e anexar na pasta do projeto. (continuar) 
 
 ### Questões Propostas (b):
 
 l. O que é simulação transiente (trans)? Quando usar? Faça um exemplo.
 
-> resposta
+> A simulação transiente é uma simulação não linear no domínio de tempo. É possivel a partir desta funcionalidade defenir o tempo de execucao da simulacao. 
+> Exemplo:
+> ![imagem 7](https://user-images.githubusercontent.com/12564754/99994752-30169f80-2d98-11eb-9460-90c390ec5925.png)
 
 2. O que é simulação “ DC operating point” (.0p)? Quando usar? Faça um exemplo.
 
