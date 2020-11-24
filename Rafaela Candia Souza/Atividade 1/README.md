@@ -195,7 +195,8 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 5. O que faz a diretiva “means”? Forneça exemplos de utilização.
 
 > A diretiva .means serve para analizar um parametro especifico dentro da analise do circuito. Ela possui os seguintes parametros como possibilidade de analise:
->```A seguinte sintaxe é usada:
+>``` 
+ A seguinte sintaxe é usada:
 
 .MEAS[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name>
 
