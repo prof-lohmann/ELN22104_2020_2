@@ -36,9 +36,9 @@
 
 + A sintaxe para criar um subcircuito é:
 
-SUBCKT <SubName> <N1> <N2> ...
+"SUBCKT <SubName> <N1> <N2> ...
 ...
-.ENDS
+.ENDS"
 
 7. Como incluir novos modelos de componentes em um simulador SPICE?
 
