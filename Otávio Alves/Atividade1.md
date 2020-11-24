@@ -42,9 +42,13 @@
 
 7. Como incluir novos modelos de componentes em um simulador SPICE?
 
-b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação
-do SPICE, respondendo:
++ Basta procurar um modelo SPICE e incluir na biblioteca.
+
+#### b)
 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.
+
++ É  um simulação em que o tepo é um parâmetro. Pode ser usado para observar o valor de uma carga em função do tempo. Um exemplo seria um fonte que varia com o tempo controlando um circuito.
+
 2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo
 3. Quando usar .trans ou .op no SPICE?
 4. O que faz a diretiva “.step”? Forneça exemplos de utilização.
