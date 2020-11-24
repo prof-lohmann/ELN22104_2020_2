@@ -198,7 +198,8 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 ``` 
  A seguinte sintaxe é usada:
 
-.MEAS[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name> [<FIND|DERIV|PARAM> <expr>] [WHEN <expr> | AT=<expr>]] [TD=<val1>] [<RISE|FALL|CROSS>=[<count1>|LAST]]```
+.MEAS[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name> [<FIND|DERIV|PARAM> <expr>] [WHEN <expr> | AT=<expr>]] [TD=<val1>] [<RISE|FALL|CROSS>=[<count1>|LAST]]
+```
 
 >Exemplo de utilizacao: Analise do valor de tensao do resistor R1 em t=30m
 >
