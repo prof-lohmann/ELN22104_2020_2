@@ -181,18 +181,48 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 
 4. O que faz a diretiva “.step"? Forneça exemplos de utilização.
 
->resposta
+> O comando .step repete uma análise de circuito alterando o parâmetro de um componente em cada repetição. Exemplo a baixo:
+>
+>![imagem 9](https://user-images.githubusercontent.com/12564754/100117971-218dbe00-2e54-11eb-8355-f692dac39657.png)
+>
+> Para que o componente se torne uma variavel a ser analisada com valores variaveis deve-se clicar nela (ctrl + botao esquerdo mouse) e nomea-la com a variavel desejada.
+>
+>![imagem 10](https://user-images.githubusercontent.com/12564754/100118306-77fafc80-2e54-11eb-966d-f7191d6919a8.png)
+>
+> Configure a variacao desejada escrevendo da seguinte forma em forma de passo:
+>``` .step param (variavel) (valor inicial) (valor final) (passo de transição)```
 
 5. O que faz a diretiva “means”? Forneça exemplos de utilização.
 
->resposta
+> A diretiva .means serve para analizar um parametro especifico dentro da analise do circuito. Ela possui os seguintes parametros como possibilidade de analise:
+>```A seguinte sintaxe é usada:
+
+.MEAS[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name>
+
++ [<FIND|DERIV|PARAM> <expr>]
+
++ [WHEN <expr> | AT=<expr>]]
+
++ [TD=<val1>] [<RISE|FALL|CROSS>=[<count1>|LAST]]```
+>
+>Exemplo de utilizacao: Analise do valor de tensao do resistor R1 em t=30m
+>
+>![imagem 13](https://user-images.githubusercontent.com/12564754/100128996-bba73380-2e5f-11eb-8a62-53509365fa5f.png)
+
 
 6. O que é a simulação “DC sweep” (dc)? Quando usar? Faça um exemplo.
 
->resposta
+> O DC Sweep funciona de forma semelhante ao .step, o simulador repete a análise do circuito variando a tensão das fontes em corrente contínua do circuito. Este tipo de análise pode ser usado para avaliar o comportamento de um transistor
+>Exemplo de utilizacao:
+>
+>![imagem 12](https://user-images.githubusercontent.com/12564754/100122620-5865d300-2e58-11eb-9777-f2597d13af4c.png)
 
 7. Como simular um circuito em diferentes temperaturas de funcionamento?
 
->resposta
-
+>Para simular um circuito em diferentes temperaturas, basta utilizar a diretiva .step temp conforme as imagens abaixo:
+>
+>![imagem 11](https://user-images.githubusercontent.com/12564754/100120252-8518eb00-2e56-11eb-95d4-327972aa7344.png)
+>
+> Configure a variacao desejada escrevendo da seguinte forma em formato de lista:
+>``` .step temp list (valor inicial) (proximo valor) ... (valor final)```
 
