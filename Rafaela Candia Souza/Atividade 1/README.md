@@ -220,5 +220,6 @@ A partir de agora, se aproximarmos o mouse de alguma linha ou componente, aparec
 >![imagem 11](https://user-images.githubusercontent.com/12564754/100120252-8518eb00-2e56-11eb-95d4-327972aa7344.png)
 >
 > Configure a variacao desejada escrevendo da seguinte forma em formato de lista:
+>
 >``` .step temp list (valor inicial) (proximo valor) ... (valor final)```
 
