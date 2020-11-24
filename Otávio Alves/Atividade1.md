@@ -8,32 +8,37 @@
 
 ### QUESTÃO 5
 
-a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda:
 1. O que é o NETLIST?
 
 + É a descrição do circuito no SPICE. Se trata de uma declaração definindo cada elemento do circuito e suas propriedades
 
 2. Como descrever o NETLIST de um circuito?
 
-Primeiramente deve-se enumerar todos os nós presentes no circuito. Dessa forma, os componentes serão descritos por suas letras de referência, localização entre dois nós e o seu valor.
++ Primeiramente deve-se enumerar todos os nós presentes no circuito. Dessa forma, os componentes serão descritos por suas letras de referência, localização entre dois nós e o seu valor.
 
 3. Como é representado cada um dos componentes? Explique com um exemplo.
 
-O componente é representado por uma letra maiúscula(no caso do SPICE), os dóis nós que se encontram em seus polos e o seu valor. 
++ O componente é representado por uma letra maiúscula(no caso do SPICE), os dóis nós que se encontram em seus polos e o seu valor. 
 
-R25 6 0 100 (Resistor R25 conectado entre os nós 0 e 6 com valor de 100 ohms) 
++ R25 6 0 100 (Resistor R25 conectado entre os nós 0 e 6 com valor de 100 ohms) 
 
 4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
 
-O "label" de um nó seria um nome atribuído ao fio.
++ O "label" de um nó seria um nome atribuído ao fio.
 
 5. Quais os componentes básicos implementados no SPICE? (resistor, capacitor etc)
 
-Resistor, capacitor, indutor, diodo e ground.
++ Resistor, capacitor, indutor, diodo e ground.
 
 6. O que é um “SUBCKT”? Faça um exemplo.
 
-É um subcircuito do SPICE
++ É um subcircuito do SPICE. Um subcircuito simplifica as listas de spice netlists permitindo o reuso de um conjunto de elementos de circuito.
+
++ A sintaxe para criar um subcircuito é:
+
+SUBCKT <SubName> <N1> <N2> ...
+...
+.ENDS
 
 7. Como incluir novos modelos de componentes em um simulador SPICE?
 
