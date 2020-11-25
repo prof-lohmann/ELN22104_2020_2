@@ -2,7 +2,7 @@
 
 ## IMAGENS DAS RESOLUÇÕES DAS QUESTÕES
 
-![resolção](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/resolu%C3%A7%C3%A3o%20parte%201.png)
+![resolução](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/resolu%C3%A7%C3%A3o%20parte%201.png)
 
 ![resolução2](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/resolu%C3%A7%C3%A3o%20parte%202.png)
 
