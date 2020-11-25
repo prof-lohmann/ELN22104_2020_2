@@ -1,4 +1,11 @@
 #atividade 01
+
+Resolva as questões de 1 à 4 de forma manuscrita e coloque uma imagem da resolução no GIT, conforme indicado pelo professor.
+
+1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:
+
+
+
 5. Aprendendo a simular com o simuladores SPICE.
 Atenção: Toda do documentação deve ser feita em MARKDOWN no GIT. 
 
