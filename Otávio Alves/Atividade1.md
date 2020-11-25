@@ -36,7 +36,7 @@
 
 + A sintaxe para criar um subcircuito é:
 
-"SUBCKT <SubName> <N1> <N2> ...
+"SUBCKT SubName N1 N2 ...
 ...
 .ENDS"
 
@@ -47,11 +47,28 @@
 #### b)
 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.
 
-+ É  um simulação em que o tepo é um parâmetro. Pode ser usado para observar o valor de uma carga em função do tempo. Um exemplo seria um fonte que varia com o tempo controlando um circuito.
++ É  um simulação em que o tempo é um parâmetro. Pode ser usado para observar o valor de uma carga em função do tempo. Um exemplo seria um fonte que varia com o tempo controlando um circuito.
 
 2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo
+
++ É uma simulação que analisa o circuito em corrente contínua.
+
 3. Quando usar .trans ou .op no SPICE?
+
++ .trans deve ser usado em simulações em que o tempo é um parâmetro. Já .op deve ser usado em simulações em que os parâmetros não variam com o tempo, ou seja, corrente contínua. 
+
 4. O que faz a diretiva “.step”? Forneça exemplos de utilização.
+
++ É uma simulação em que um parâmetro de um componente muda(aumenta ou diminui) a cada ciclo.
+
 5. O que faz a diretiva “.means”? Forneça exemplos de utilização.
+
++ A diretiva realiza uma análise em um componente do circuito em condições controladas. Ou seja, medir um intervalo ou um ponto na absicissa.
+
 6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.
+
++ A simulação .dc calcula as tensões e correntes contínuas de um circuito para uma de variáveis diversas.
+
 7. Como simular um circuito em diferentes temperaturas de funcionamento?
+
++  Utilizando a diretiva .temp, definindo uma temperatura geral em °C para o circuito. Também é possível utilizar .step para variar a temperatura do circuito.
