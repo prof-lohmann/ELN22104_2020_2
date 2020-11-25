@@ -59,11 +59,56 @@ Para incluir um novo modelo, pode se inserir o texto do subckt em uma diretiva .
 
 # b)
 
-# 
+# O que é simulação transiente? Quando usar?
+Este comando especifica o intervalo de tempo no qual a análise de transitório será realizada e os incrementos de tempo, é usado quando o circuito possui variações no tempo, como ondas senoidais e afins, possibilitando visualizar em gráficos as informações simuladas.
+
+O formato é o seguinte:
+
+.TRAN TSTEP TSTOP <TSTART <TMAX>> <UIC>
+  
+TSTEP: é o incremento de tempo
+ TSTOP: é o tempo final
+ TSTART: é o tempo inicial (se omitido, é assumido TSTART = 0)
+ TMAX: é o tamanho de passo máximo. 
+ UIC significa Use Initial Condition e instrui o PSpice a usar um valor inicial.
+ 
+ Exemplo:
+ ![ex.tran]
+ 
+ # O que é simulação “ DC operating point” (.op)? Quando usar?
+ .op instrui o SPICE a calcular os pontos de operação CC:
+ tensão nos nós;
+ corrente em elemento.
+ Utilizar o circuito que mostrava a netlist obtem-se o seguinte .op:
+ 
+ ![circuito.op]
 
 
+# O que faz a diretiva “.step”? Forneça exemplos de utilização.
+O comando .step varia o valor de um elemento entre um parâmetro inicial e final com um determinado intervalo. 
+
+Exemplo:
+
+![ex.step]
+
+# O que faz a diretiva “.means”? Forneça exemplos de utilização.
 
 
+# O que é a simulação “DC sweep” (.dc)? Quando usar? 
+É uma simulação que varia os valores de uma fonte de tensão CC. Pode-se aninhar comandos DC que são frequentemente utilizados para traçar características do transistor, como a
+corrente de dreno ids versus a tensão dreno-fonte Vds para diferentes tensões da porta Vgs. 
 
+Exemplo:
 
+.DC Vds 0 5 0.5 Vgs 0 5 1
+
+No exemplo acima, a tensão Vds será incrementada de 0 a 5V em passos de 1V para cada valor de Vgs. 
+
+# Como simular um circuito em diferentes temperaturas de funcionamento?
+
+Utilizando .step e o parâmetro temp pode-se variar a temperatura.
+
+.step temp inicial final incremento
+
+.step temp 1 10 2
 
