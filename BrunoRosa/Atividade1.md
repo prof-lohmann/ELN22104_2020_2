@@ -3,11 +3,12 @@ Criei a pasta.
 ## Imagem das resoluções das questões 1, 2, 3 e 4:
 ![resolução](https://github.com/Brunossilvar/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/WhatsApp%20Image%202020-11-25%20at%207.05.07%20PM.jpeg)
 ![resolução](https://github.com/Brunossilvar/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/WhatsApp%20Image%202020-11-25%20at%207.05.08%20PM.jpeg)
-O que é o NETLIST?
-+ Netlist é uma descrição da conectividade de um circuito eletrônico.
 
 ## Questão 5:
 ### A)
+
+O que é o NETLIST?
++ Netlist é uma descrição da conectividade de um circuito eletrônico.
 
 Como descrever o NETLIST de um circuito?
 + Na sua forma mais simples, uma netlist consiste em uma lista dos componentes eletrônicos em um circuito e uma lista dos nós aos quais estão conectados.
