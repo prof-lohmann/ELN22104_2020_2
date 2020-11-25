@@ -3,22 +3,22 @@
 
 **1. Escreva os valores de tensão Vo para cada uma das associações de fontes abaixo:**
 
-![Image Ex1]()
+![Image Ex1](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%201%20-%20Ex1.jpeg)
 
 **2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de
 thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω**
 
-![Image Ex2]()
+![Image Ex2](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%201%20-%20Ex2.jpeg)
 
 **3. Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ,
 R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.**
 
-![Image Ex3]()
+![Image Ex3](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%201%20-%20Ex3.jpeg)
 
 **4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3
 = 10kΩ e gm = 10mA/V.**
 
-![Image Ex4]()
+![Image Ex4](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%201%20-%20Ex4.jpeg)
 
 **5. Aprendendo a simular com o simuladores SPICE.**
 
