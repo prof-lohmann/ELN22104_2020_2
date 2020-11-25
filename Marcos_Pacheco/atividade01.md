@@ -25,8 +25,7 @@ Uma das funcionalidades mais importantes para se manter a organização e entend
 As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
 
 3. Como é representado cada um dos componentes? Explique com um exemplo. 
-Existem diversas formas de se representar os componentes num circuito, o mais comum é uma representação com: letra + índice + valor + símbolo. Porém, cada utilizados do simulador pode ter uma representação própria omitindo algumas informações. Por exemplo:
-•	Para se representar um resistor:
+Para se representar um resistor:
 o	R2=5Ω
 o	R2=5
 o	R=5
