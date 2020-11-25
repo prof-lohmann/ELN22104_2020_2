@@ -11,27 +11,27 @@
 # a)
 
 # O que é o NETLIST? Como descrever a NETLIST?
-Netlist é a forma como um progama SPICE derscreve os componentes de um circuito, indicando os nomes e nós relacionados a cada componente. A netlist pode ser descrita como um texto, no qual cada linha representa um componente, com o nome do componente seguido de seu nó origem, nó destino e de seu valor atribuído.
+Netlist é a forma como um progama SPICE descreve os componentes de um circuito, indicando os nomes e nós relacionados a cada componente. A netlist pode ser descrita como um texto, no qual cada linha representa um componente, com o nome do componente seguido de seu nó origem, nó destino e de seu valor atribuído.
 
 # Como é representado cada um dos componentes? Explique com um exemplo. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
 Cada componente é representado por um símbolo, alguns predefinidos, sendo que existe também a possibilidade de desenhar seu próprio símbolo para um componente não exitente na bilbioteca padrão do SPICE.
 LABEL é o nome dado a um nó, ele auxilia na organização do circuito facilitando a leitura do mesmo, observe o exemplo a seguir:
-![circuito.semlabel] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.semlabel.JPG)
+![circuito.semlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.semlabel.JPG)
 
-![netlist.semlabel] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.semlabel.JPG)
+![netlist.semlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.semlabel.JPG)
 
-![circuito.comlabel] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.comlabel.JPG)
+![circuito.comlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.comlabel.JPG)
 
-![netlist.commlabel] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.comlabel.JPG)
+![netlist.commlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.comlabel.JPG)
 
 
 # Quais os componentes básicos implementados no SPICE?
 Os componentes mais básicos do SPICE possuem ícones de atalhos na parte superior direita do programa, são eles:
-![componentes.basicos] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/componentes.basicos.JPG)
+![componentes.basicos](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/componentes.basicos.JPG)
 
 Além destes, para acessar os demais componentes basta clicar no ícone "component" que se abrirá o seguinte menu:
 
-![biblioteca.componentes] (https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/componentes.bilbioteca.JPG)
+![biblioteca.componentes](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/componentes.bilbioteca.JPG)
 
 # O que é um “SUBCKT”? 
 Um sub-circuito (SUBCKT) permite definir uma coleção de elementos como um sub-circuito, por exemplo, um amplificador operacional e
