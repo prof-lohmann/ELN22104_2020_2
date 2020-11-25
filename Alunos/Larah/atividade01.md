@@ -91,7 +91,7 @@ Exemplo:
 
 ![ex.step](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/ex.step.JPG)
 
-# O que faz a diretiva “.means”? Forneça exemplos de utilização.
+# O que faz a diretiva “.meas”? Forneça exemplos de utilização.
 
 
 # O que é a simulação “DC sweep” (.dc)? Quando usar? 
