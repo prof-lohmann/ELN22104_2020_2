@@ -5,4 +5,4 @@
 ## 
 
 
-![Circuito 1](Figura 1)
+![Circuito 1](Figura 1.png)
