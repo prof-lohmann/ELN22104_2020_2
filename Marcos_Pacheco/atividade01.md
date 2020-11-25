@@ -14,10 +14,10 @@
 4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V.
 ![resolução exercício 04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/atv1-questao04.jpg)
 
-5. Aprendendo a simular com o simuladores SPICE.
-Atenção: Toda do documentação deve ser feita em MARKDOWN no GIT. 
+5. Aprendendo a simular com o simulador LTSPICE 
+## Atenção: Todoo o documento deve ser feito em MARKDOWN no GIT.
 
-a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda: 
+### a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda: 
 1. O que é o NETLIST?
 Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
  
@@ -41,17 +41,11 @@ Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díod
 6. O que é um “SUBCKT”? Faça um exemplo. 
 A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração  adequada descrita anteriormente.
 
-7. Como incluir novos modelos de componentes em um simulador SPICE? 
-https://www.youtube.com/watch?v=RWYQ291X_0o
+7. Como incluir novos modelos de componentes em um simulador SPICE?
+### Assistir vídeo com passo-a-passo
+[! [Inclusão de novos modelos de componentes - LTSPICE] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inclusão de novos modelos de componentes - LTSPICE ")
 
-
-
-
-
-
-
-
-b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo: 
+### b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo: 
 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo. 
 A simulação transiente (.trans) é quando ocorre em função do tempo.
 
