@@ -73,7 +73,7 @@ TSTEP: é o incremento de tempo
  UIC significa Use Initial Condition e instrui o PSpice a usar um valor inicial.
  
  Exemplo:
- ![ex.tran]
+ ![ex.tran](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/ex.tran.JPG)
  
  # O que é simulação “ DC operating point” (.op)? Quando usar?
  .op instrui o SPICE a calcular os pontos de operação CC:
@@ -81,7 +81,7 @@ TSTEP: é o incremento de tempo
  corrente em elemento.
  Utilizar o circuito que mostrava a netlist obtem-se o seguinte .op:
  
- ![circuito.op]
+ ![circuito.op](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.op.JPG)
 
 
 # O que faz a diretiva “.step”? Forneça exemplos de utilização.
@@ -89,7 +89,7 @@ O comando .step varia o valor de um elemento entre um parâmetro inicial e final
 
 Exemplo:
 
-![ex.step]
+![ex.step](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/ex.step.JPG)
 
 # O que faz a diretiva “.means”? Forneça exemplos de utilização.
 
