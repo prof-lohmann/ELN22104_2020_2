@@ -20,6 +20,9 @@ LABEL é o nome dado a um nó, ele auxilia na organização do circuito facilita
 
 ![netlist.semlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.semlabel.JPG)
 
+Por não possuirem labels os nós são identificados por numerações geradas pelo programa SPICE, sendo que o nó GND é identificado por 0.
+Em circuitos menores isso pode não ser um problema, mas quando o projeto é mais complexo o ideal é adicionar labels como demonstrado neste circuito:
+
 ![circuito.comlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/circuito.comlabel.JPG)
 
 ![netlist.commlabel](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/netlist.comlabel.JPG)
@@ -38,11 +41,17 @@ Um sub-circuito (SUBCKT) permite definir uma coleção de elementos como um sub-
 inserir esta descrição no circuito global, como qualquer outro componente. 
 Um sub-circuito é definido através de uma declaração de controle .SUBCKT, seguido pela descrição do circuito como se
 segue:
+
 .SUBCKT SUBNAME N1 N2 N3 ...
+
 Declaração dos elementos
+
 .
+
 .
+
 .
+
 .ENDS SUBNAME
 
 # Como incluir novos modelos de componentes em um simulador SPICE?
