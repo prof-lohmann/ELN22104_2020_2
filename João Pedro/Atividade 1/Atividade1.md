@@ -40,7 +40,7 @@ Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 =
 
 1. .Tran - é uma analise transiente não linear do circuito, que plota a forma de onda, usados em fontes ACs.
 
-![Circuito 7]()
+![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Figura%20.tran.PNG)
 
 2.
 3.
