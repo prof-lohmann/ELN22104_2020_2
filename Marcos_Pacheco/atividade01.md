@@ -42,9 +42,9 @@ Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díod
 A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração  adequada descrita anteriormente.
 
 7. Como incluir novos modelos de componentes em um simulador SPICE?
-### Assistir vídeo com passo-a-passo
+### Assistir vídeo com passo-a-
 [! [Inclusão de novos modelos de componentes - LTSPICE] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inclusão de novos modelos de componentes - LTSPICE ")
-
+ 
 ### b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo: 
 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo. 
 A simulação transiente (.trans) é quando ocorre em função do tempo.
