@@ -45,9 +45,15 @@ Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 =
 
 ![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Figura%20.tran.PNG)
 
-2. Op
-3. 
-4. 
-5.
-6.
-7.
+2. Op - é uma analise de uma solução de ponto de operação CC tornando as capacitâncias em circuito aberto e indutâncias em curto-circuito. Normalmente, uma solução DC é realizada como parte de outra análise para encontrar o ponto operacional do circuito, usados fontes CC.
+
+![Circuito 8](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Figura%201%20a.PNG)
+
+3. Tran em analise AC e Op em analise CC.
+4. Step serve para analise de variações de parâmetros sejam eles (temperatura, tensão, corrente, etc...).
+
+![Circuito 9](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/6Figura4.PNG)
+
+5. Meas serve para analise no tempo especifico de um parâmentro do componente.
+6. 
+7. 
