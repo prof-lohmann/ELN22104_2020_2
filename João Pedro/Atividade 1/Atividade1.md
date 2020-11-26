@@ -30,21 +30,24 @@ Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 =
 
 1. NETLIST - Representação da analise dos circuitos no formato de caixa de texto.
 2. O circuito é analisado pela LKT usando os nós definidos pelo LTspice.
-3.
+3. Pode ser representado gráficamente ou em forma de texto sendo NETLIST.
+
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/5Figura3.PNG)
+
 4. Label é um indicador para nomear os nós que você esta definindo, auxilia em descobrir quais tensões e correntes especificas que voce precisa descobri-las.
 5. Resistor (tecla r), Capacitor (tecla c), indutor (tecla l), terra (tecla g), Fonte de tensão (tecla v) e Ampop's.
 6. É um sub-circuito, por exemplo, um ampop é feito com uma composição de varios componentes (transistores, diodos, resistores...).
-7.
+7. Utilizando o comando _.lib_ você inclui novas bibliotecas de modelos ou subcircuitos.
 
 ## Questão 6
 
-1. Tran - é uma analise transiente não linear do circuito, que plota a forma de onda, usados em fontes ACs.
+1. Tran - é uma analise transiente não linear do circuito, que plota a forma de onda, usados em fontes ACs ou circuitos com transitório.
 
 ![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Figura%20.tran.PNG)
 
-2 - 
-3 - 
-4 - 
-5 - 
-6 - 
-7 - 
+2. Op
+3. 
+4. 
+5.
+6.
+7.
