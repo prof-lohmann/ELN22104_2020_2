@@ -6,11 +6,27 @@
 
 ### Exercício 1
 
+Resolução manuscrita do exercício 1.
+
+![Exercício 1](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Exerc%C3%ADcio%201.jpeg)
+
 ### Exercício 2
+
+Resolução manuscrita do exercício 2.
+
+![Exercício 2](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Exerc%C3%ADcio%202.jpeg)
 
 ### Exercício 3
 
+Resolução manuscrita do exercício 3.
+
+![Exercício 3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Exerc%C3%ADcio%203.jpeg)
+
 ### Exercício 4
+
+Resolução manuscrita do exercício 4.
+
+![Exercício 4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Exerc%C3%ADcio%204.jpeg)
 
 ### Exercício 5
 
