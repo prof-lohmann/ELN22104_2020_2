@@ -69,4 +69,23 @@ A diretiva .step serve para analisar uma variável do circuito conforme a varia�
 
 Na figura é possível observar a variação da corrente no resistor conforme varia o parâmetro do resistência.
 
+#### O que faz a diretiva .means? Forneça exemplos de utilização.
+
+Esta diretiva serve para realizar a medição quando uma condição é alcançada. Por exemplo, medir a tensão ou a corrente de um resistor quando o tempo específico é alcançado.
+
+#### O que é a simulação DC sweep (.dc)? Quando usar? Faça um exemplo.
+
+Esta diretiva é utilizada quando queremos variar os valores de tensões das fontes DCs.
+
+![Figura 8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%209.PNG)
+
+#### Como simular um circuito em diferentes temperaturas de funcionamento?
+
+Para simular um circuito em diferentes temperaturas de funcionamento basta adicionar a diretiva _.step temp_ e adicionar o valor inicial, o final e o passo de incremento, conforme ilustrado na imagem abaixo.
+
+![Figura 9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%208.PNG)
+
+
+
+
 
