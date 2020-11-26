@@ -14,6 +14,7 @@ Adimitindo que o ponto + de _Vo2_ seja o nó "a", o ponto - de _Vo2_ seja o nó 
 Fazendo LKT, podemos equacionar o circuito da seguinte forma: _((Vo-5)/10000) + ((Vo+10)/5100) = 0_. Sendo assim temos como resultado _Vo = -4,93V_, com _Vo_ podemos calcular as correntes sendo _I(R1) = (Vo-5)/10000 = -993,38mA_ e _I(R2) = ((Vo+10)/5100) = -993,38mA_.
 
 ![Circuito 3](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Figura%202.PNG)
+![Circuito 3.1](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/Thevenin.PNG)
 
 ## Questão 3
 Anisando o Circuito, pode-se observar que ao fazer o paralelo de _R1//R3_; _R2//R4_, obtem-se um circuito em série. Sendo assim, _Req = R1//R3 + R2//R4 = 6621,42441ohm_, pode-se calcular o valor da corrente com: _Itotal = (12+10)/Req = 3,32mA_. Sabendo _Itotal_ podemos obter as tensões em cima dos resistores equivalentes: _VR13 = (R1//R3) * Itotal = 8,2439V_ e _VR24 = (R2//R4) * Itotal = 13,7561V_. Por fim, pode-se obter os valores de corrente: _IR3 = VR13 / 3300 = 2,49816mA_ e _IR4 = VR24 / 22000 = 625,277uA_. Portanto _I = IR3 - IR4 = 1,87288mA.
