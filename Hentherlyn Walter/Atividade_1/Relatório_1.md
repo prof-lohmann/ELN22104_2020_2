@@ -33,6 +33,8 @@ Como descrito anteriormente, o software utiliza a lei dos nós para realizar a a
 
 Os componentes básicos que são implementados no SPICE são os resistores, capacitores, indutores, diodos e o terra, com exceção do GND, os componentes são representados, respectivamente através das letras R, C, L, D. Vale ressaltar que todos estes componentes podem ser inseridos através da digitação da letra que o representa e o terra pode ser inserido ao teclarmos a letra G.
 
+![Figura 3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%203.PNG)
+
 #### a.4) O que é LABEL de um nó e qual a vantagem de usar o mesmo?
 
 LABEL ou label net é uma ferramenta que possibilita a identificação de qualquer parte do circuito. Na maioria das vezes o LABEL é utilizado para representar os nós do circuito, como pôde ser observado na Figura 2. Desta forma, facilita o entendimento da NETLIST quando o mesmo se encontra muito grande e cheio de componentes.
@@ -45,5 +47,6 @@ SUBCKT é um  subcircuito é utilizado para facilitar a inserção de componente
 
 #### a.7)Como incluir novos modelos de componentes em um simulador SPICE?
 
-É possível inserir novos modelos de componentes, basta buscar na internet o código do componente desejado e salvar na biblioteca do SPICE com o nome, por exemplo o amp-op lm741. Posteriormente, devemos construir o circuito desejado a partir de um Amp-op básico e, utilizando o comando .lib ou .sub, devemos endereçar o arquivo do componente desejado que foi salvo na biblioteca SPICE.
+É possível inserir novos modelos de componentes, basta buscar na internet o código do componente desejado e salvar na biblioteca do SPICE com o nome, por exemplo o amp-op lm741. Posteriormente, devemos construir o circuito desejado a partir de um Amp-op básico e, utilizando o comando .lib ou .sub, devemos endereçar o arquivo do componente desejado que foi salvo na biblioteca SPICE. Por fim, temos que cubstituir o nome do amp-op básico pelo nome do novo componente, neste caso lm741.
+
 
