@@ -51,8 +51,22 @@ SUBCKT é um  subcircuito é utilizado para facilitar a inserção de componente
 
 #### O que é simulação transiente .TRANS? Quando usar? Faça um exemplo.
 
-A simulação transiente . TRANS é utilizada para fazer análise de circuitos que apresentam regime transitório. Abaixo segue um exemplo de um circuito com e o gráfico do descarregamento do indutor.
+A simulação transiente . TRANS é utilizada para fazer análise de circuitos não lineares que apresentam regime transitório. Abaixo segue um exemplo de um circuito com e o gráfico do descarregamento do indutor.
 
 ![Figura 5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%205.PNG)
+
+#### O que é simulação DC OPERATING (.OP)? Quando usar? Faça um exemplo.
+
+Este tipo de simulação é utilizado quando nos deparamos com circuitos em corrente contínua, lineares e que não apresentam regime transitório.
+
+![Figura 6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%206.PNG)
+
+#### O que faz a diretiva .step? Forneça exemplos de utilização.
+
+A diretiva .step serve para analisar uma variável do circuito conforme a variação de algum parâmetro como, a resistência de um indutor ou a capacitância de um capacitor.
+
+![Figura 7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%207.PNG)
+
+Na figura é possível observar a variação da corrente no resistor conforme varia o parâmetro do resistência.
 
 
