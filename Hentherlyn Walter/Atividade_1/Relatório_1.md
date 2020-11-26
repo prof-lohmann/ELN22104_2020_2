@@ -23,11 +23,11 @@ NETLIST nada mais é do que um arquivo texto gerado pelo próprio software que r
 
 Utilizando o circuito abaixo, iremos descrever a netlist do mesmo para um melhor entendimento. Podemos observar que o circuito é composto por dois resistores, que foram representados por R1 e R2 de 2KΩ  e 1KΩ de resistência respectivamente, uma fonte V1 de 5V e dois nós que conectam os componentes, N1 e N2.
 
-![Figura 1](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Figura%201.PNG)
+![Figura 1](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%201.PNG)
 
 Como descrito anteriormente, o software utiliza a lei dos nós para realizar a análise do circuito, por isso, ele identifica os componentes que se encontram entre os nós e seus valores. Com isso, a NETLIST do circuito é representada como a imagem abaixo.
 
-![Figura 2](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Figura%202.PNG)
+![Figura 2](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%202.PNG)
 
 #### a.3) e a.5) Quais os componentes básicos implementados do SPICE? (resistor, capacitor, etc...) Como é representado cada um dos componentes? Explique com um exemplo.
 
@@ -41,7 +41,7 @@ LABEL ou label net é uma ferramenta que possibilita a identificação de qualqu
 
 SUBCKT é um  subcircuito é utilizado para facilitar a inserção de componentes que serão utilizados constantemente ou que não se encontram disponíveis no SPICE. Os SUBCKTs são muito empregados quando utilizamos os Amplificadores Operacionais, pois desta forma é possível inserir modelos de amp-op de muitos fabricantes diferentes.
 
-![Figura 4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Figura%204.PNG)
+![Figura 4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%204.PNG)
 
 #### a.7)Como incluir novos modelos de componentes em um simulador SPICE?
 
