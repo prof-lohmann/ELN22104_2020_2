@@ -49,4 +49,10 @@ SUBCKT é um  subcircuito é utilizado para facilitar a inserção de componente
 
 É possível inserir novos modelos de componentes, basta buscar na internet o código do componente desejado e salvar na biblioteca do SPICE com o nome, por exemplo o amp-op lm741. Posteriormente, devemos construir o circuito desejado a partir de um Amp-op básico e, utilizando o comando .lib ou .sub, devemos endereçar o arquivo do componente desejado que foi salvo na biblioteca SPICE. Por fim, temos que cubstituir o nome do amp-op básico pelo nome do novo componente, neste caso lm741.
 
+#### O que é simulação transiente .TRANS? Quando usar? Faça um exemplo.
+
+A simulação transiente . TRANS é utilizada para fazer análise de circuitos que apresentam regime transitório. Abaixo segue um exemplo de um circuito com e o gráfico do descarregamento do indutor.
+
+![Figura 5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_1/Imagens/Figura%205.PNG)
+
 
