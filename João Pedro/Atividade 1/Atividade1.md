@@ -55,5 +55,10 @@ Fazendo equivalente em série do circuito na direita, temos _Req = 3300 + 1200 =
 ![Circuito 9](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/6Figura4.PNG)
 
 5. Meas serve para analise no tempo especifico de um parâmentro do componente.
-6. 
-7. 
+6. DC sweep é utilizada para a variação de valores de tensões de fontes CC.
+
+![Circuito 10](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/6Figura6.PNG)
+
+7. utilizando o comando _.step temp T1 T2 time_.
+
+![Circuito 11](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%201/6Figura7.PNG)
