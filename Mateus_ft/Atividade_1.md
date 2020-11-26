@@ -87,6 +87,13 @@ Exemplo:
 
 3. Usar a diretiva .tran quando o circuito analisado for de corrente alternada. Assim o .op será utilizado quando o circuito for de corrente continua.
 
+4. A diretiva .step permite analisar o comportamento do circuito em função de um componente que varia. Conforme os parâmetros definidos. Podendo também variar a temperatura e fazer a mesma análise.
+
+5. 
+
+6. Escolhe uma fonte e faz a variação na tensão da fonte. Permite analisar o comportamento do circuito a partir dessa variação.
+
+7. Usando a diretiva .step
 
 
 
