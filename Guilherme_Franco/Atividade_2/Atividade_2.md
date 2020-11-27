@@ -10,7 +10,7 @@ Aluno:
 resumo deve responder as seguintes perguntas:</b><br>
 
 
-<b>1. O que é o AmpOp?
+<b>1. O que é o AmpOp?</b><br>
   *Resposta:*</b><br>
   
 <b>2. Mostre os simbolos e as características do AmpOp IDEAL?</b><br>
