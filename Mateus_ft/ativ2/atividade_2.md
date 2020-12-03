@@ -33,5 +33,9 @@ Como ja citado na questão 2 os amplificadores operacionais ideais facilitam o c
 
 Exemplo: Inversor:
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/WhatsApp%20Image%202020-12-03%20at%2015.40.09.jpeg)
+
+É notável que pelas condições ideais os calculos ficaram simplificados. As correntes de entrada, e saída do ampop são nulas. Possibilitando fazer V+=V-.
+
 
 
