@@ -37,5 +37,10 @@ Exemplo: Inversor:
 
 É notável que pelas condições ideais os calculos ficaram simplificados. As correntes de entrada, e saída do ampop são nulas. Possibilitando fazer V+=V-.
 
+**5.Descreva as principais características das topologias:**
+
+**a) Seguidor de Tensão (Buffer)**
+
+
 
 
