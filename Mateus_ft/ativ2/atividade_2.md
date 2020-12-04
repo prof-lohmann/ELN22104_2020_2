@@ -51,7 +51,21 @@ Exemplo: Inversor:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/naoinversora.png)
 
-**
+**d) Amplificador Somador Inversor**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/somador%20inversor.png)
+
+**e) Amplificador Somador Não Inversor**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/somador%20nao%20inversor.png)
+
+**f) Amplificador Subtrator**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/subtrator.png)
+
+**g) Amplificador de Instrumentação**
+
+![]()
 
 
 
