@@ -41,6 +41,18 @@ Exemplo: Inversor:
 
 **a) Seguidor de Tensão (Buffer)**
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/buffer.png)
+
+**b) Amplificador Inversor**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/inversora.png)
+
+**c) Amplificador Não Inversor**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/naoinversora.png)
+
+**
+
 
 
 
