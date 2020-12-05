@@ -41,25 +41,73 @@ Exemplo: Inversor:
 
 **a) Seguidor de Tensão (Buffer)**
 
+- Características:
+
+Essa configuração permite obter a tensão de saída (V0) igual a tensão de entrada(Vi). Nesse caso o resistor de entrada R1 tende a infinito e o resistor de realimentação R2 asssume o valor zero. O seguidor de tensão é mostrado a seguir:
+
+
+
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/buffer.png)
 
 **b) Amplificador Inversor**
 
+- Características:
+
+Nesse caso os resistores R1(entrada) e R2(realimentação) assumem valores diferentes de infinito e zero respectivamente.
+
+A tensão de saída V0 no ganho em malha fechada depende dos resistores R1 e R2, assim como da tensão de entrada Vi. A fórmula exemplifica:
+
+V0= -(R2/R1)*Vi
+
+O ganho A= -R2/R1, significa que a tensão de saída sempre irá assumir um valor de sentido contrário da tensao de entrada.
+
+O amplificador inversor é mostrado a seguir:
+ 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/inversora.png)
 
 **c) Amplificador Não Inversor**
+
+- Características:
+
+A tensão de saída nesse caso assume o mesmo sentido da tensao de entrada. Conforme a fórmula:
+
+V0= (1+R2/R1)*Vi
+
+O amplificador não inversor é mostrado a seguir:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/naoinversora.png)
 
 **d) Amplificador Somador Inversor**
 
+- Características:
+
+Nesse caso existem mais de uma tensão de entrada na entrada inversora do ampop. E o terminal não inversor do ampop é aterrado.
+
+Que serão somadas. Conforme a fórmula:
+
+V0= -R2(V1/R1+V2/R2+...Vn/Rn)
+
+O amplificador somador inversor é mostrado a seguir:
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/somador%20inversor.png)
 
 **e) Amplificador Somador Não Inversor**
 
+- Características:
+
+A diferença agora é de que as tensões de entrada serão aplicadas ao terminal inversor do ampop.
+
+O amplificador somador não inversor é mostrado a seguir:
+
+
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/somador%20nao%20inversor.png)
 
 **f) Amplificador Subtrator**
+
+- Características:
+
+No subtrator têm-se sinal de entrada nos dois terminais do ampop. No terminal inversor e no não inversor.
+
+Conforme mostrado a seguir:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/subtrator.png)
 
