@@ -85,7 +85,9 @@ Nesse caso existem mais de uma tensão de entrada na entrada inversora do ampop.
 
 Que serão somadas. Conforme a fórmula:
 
-V0= -R2(V1/R1+V2/R2+...Vn/Rn)
+V0= -R4(V1/R1+V2/R2+...Vn/Rn)
+
+OBS.: R4 é p resistor de realimentação.
 
 O amplificador somador inversor é mostrado a seguir:
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/somador%20inversor.png)
