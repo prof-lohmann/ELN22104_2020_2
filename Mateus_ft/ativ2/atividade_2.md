@@ -119,7 +119,11 @@ Conforme mostrado a seguir:
 
 **g) Amplificador de Instrumentação**
 
-![]()
+É um modelo onde exitem três amplificadores operacionais. Um está configurado em amplificador de diferenças e os outros dois na configuração não inversora.
+
+Como exemplificado abaixo:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/amp%20instrument.gif)
 
 
 
