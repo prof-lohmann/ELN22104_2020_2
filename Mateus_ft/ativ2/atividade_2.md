@@ -119,11 +119,22 @@ Conforme mostrado a seguir:
 
 **g) Amplificador de Instrumentação**
 
-É um modelo onde exitem três amplificadores operacionais. Um está configurado em amplificador de diferenças e os outros dois na configuração não inversora.
+É um modelo onde exitem três amplificadores operacionais. Um está configurado em amplificador de diferenças(subtrator) e os outros dois na configuração não inversora.
+
+- Características: 
+
+O terra em comum dos dois amplificadores nao inversores é suprimido e têm-se uma corrente resultante.
+
+Essa corrente ajuda a calcular as tensões de entrada do amplificador subtrator.
+
+O que resulta em uma tensão de saída calculado em decorrência dessa corrente.
+
 
 Como exemplificado abaixo:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/amp%20instrument.gif)
+
+
 
 
 
