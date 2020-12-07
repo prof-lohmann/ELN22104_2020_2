@@ -109,6 +109,10 @@ O amplificador somador não inversor é mostrado a seguir:
 
 No subtrator têm-se sinal de entrada nos dois terminais do ampop. No terminal inversor e no não inversor.
 
+A fórmula de tensão de saída é dada por:
+
+V0= R6/R5*(V1-V2).  Quando R5=R1 e R6=R2
+
 Conforme mostrado a seguir:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/subtrator.png)
