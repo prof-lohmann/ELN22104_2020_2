@@ -62,18 +62,27 @@ Sendo o Ganho = 1 + (R2/R1), lembrando que R2 é o resistor na realimentação e
 
 ### Amplificador Somador Inversor
 
-O amplificador somador não inversor faz os somatórios das tensões que entram no terminal não inversor, e libera esse resultado na saída.
-O somador não inversor segue a seguinte equação.
-
-Vout = (1 + RF/RA) * (V1/R1 + V2/R2 + V3/R3)
-
 Figura 5 - Somador Inversor
 ![](somador_inversor.png)
+
+O amplificador somador inversor faz os somatórios das tensões que entram no terminal inversor, e libera esse resultado na saída.
+O somador não inversor segue a seguinte equação.
+
+Vout = -RF * (V1/R1 + V2/R2 + V3/R3 ... Vn/Rn)
+
+Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e por conseguinte n resistores. 
 
 ### Amplificador Somador Não Inversor
 
 Figura 6 - Somador Não Inversor
-![](somador_não_inversor.png)
+![](somador_nao_inversor.png)
+
+O amplificador somador não inversor faz os somatórios das tensões que entram no terminal não inversor, e libera esse resultado na saída.
+O somador não inversor segue a seguinte equação.
+
+Vout = (1 + RF/RA) * (V1/R1 + V2/R2 + V3/R3 ... Vn/Rn)
+
+Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e por conseguinte n resistores. 
 
 ### Subtrator
 
