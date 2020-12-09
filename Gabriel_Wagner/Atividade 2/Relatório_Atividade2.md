@@ -14,7 +14,7 @@ Seus terminais são: Entrada inversora, entrada não inversora, terminais de ali
 ### Ampop Ideal
 Figura 1 - Ampop Ideal
 
-![](ampop%20ideal.gif)
+![](ampop_ideal.png)
 
 Referência: http://intranet.deei.fct.ualg.pt/AC/Sebenta_Online/www.isr.uc.pt/~paulino/cse/Sebenta_Online/cap_15/ampopid.htm
 
@@ -89,8 +89,10 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 Figura 7 - Subtrator
 ![](subtrator.png)
 
-O somador subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída.
-O somador subtrator segue a seguinte equação.
+O ampop subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída.
+A equação completa do subtrator é a seguinte:
+
+Vout = V3*(-R
 
 Vout = V1*(R4*(R1+R2))/(R1*((R3+R4)) - V3*
 
