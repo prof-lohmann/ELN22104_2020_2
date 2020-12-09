@@ -1,0 +1,27 @@
+# Atividade 2 - ELN
+
+{Editando!!}
+
+### AmpOp 
+- (Amplificador operacional) é um circuito integrado (CI), capaz de amplificar um sinal de entrada e de realizar operações matemáticas.
+-  Caracteristicas do **Ampop ideal**: impedância de entrada infinita, impedância de saída nula, ganho de tensão infinito e ausência de qualquer limitação em frequência e em amplitude.
+
+
+![bc9defe17d801871540b82d4990d5f97.png](:/84bdaa74bbc2452d95647c9ba7eef155)
+http://www.ufrgs.br/eng04030/Aulas/teoria/cap_15/ampopid.htm
+
+### Malha aberta x Malha fechada
+
+- **Malha fechada:** O sinal de saída possui efeito direto no sinal de controle. Utilizado para enviar o sinal de erro para o controlador e deste modo eliminá-lo.
+- **Malha aberta:** Não depende da saida.
+
+### Topologias
+
+- **Seguidor de Tensão (Buffer):** apresente na saída exatamente a entrada aplicada e que respeite os mesmos valores de tensão à medida do tempo, que os valores de tensão se comportam da mesma forma. No entanto, o circuito pode apresentar outras características interessantes, como uma alta impedância de entrada, ou uma saída de potência elevada, ou mesmo uma proteção elétrica e/ou isolada.
+- **Amplificador Inversor:**
+![ec5d7684d1eb455f0058504810849e49.png](:/4f2ed8864a4645d08475c129c77c96db)
+https://eletronworld.com.br/eletronica/amplificador-operacional-inversor/
+
+Uma das limitações da montagem inversora simples é a dificuldade de na prática construir amplificadores com, simultaneamente, elevados ganho e resistência de entrada.
+
+- **Amplificador Não Inversor:**
