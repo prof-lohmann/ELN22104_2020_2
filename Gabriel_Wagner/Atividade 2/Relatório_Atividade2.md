@@ -87,7 +87,6 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 ### Subtrator
 
 Figura 7 - Subtrator
-![](subtrator.png)
 
 O ampop subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída.
 A equação completa do subtrator é a seguinte:
