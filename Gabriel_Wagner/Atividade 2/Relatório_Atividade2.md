@@ -34,7 +34,6 @@ A malha fechada é uma configuração onde o ampop apresenta realimentação, us
 ### Buffer
 
 Figura 2 - Buffer
-![](buffer.png)
 <img src="buffer.png" width="500">
 
 O buffer é uma implementação do ampop onde a tensão de entrada será a mesma tensão na saida. Muito utilizado quando você quer saber a tensão em uma parte do circuito, por exemplo em um resistor shunt, verificando assim a corrente naquela parte do circuito. A utilização do buffer para medição de tensão é muito interessante pois o ampop faz um isolamento elétrico entre ampop e circuito, pois a impedância de entrada do ampop é muito alta.
