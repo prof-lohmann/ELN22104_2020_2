@@ -34,6 +34,7 @@ A malha fechada é uma configuração onde o ampop apresenta realimentação, us
 ### Buffer
 
 Figura 2 - Buffer
+
 <img src="buffer.png" width="500">
 
 O buffer é uma implementação do ampop onde a tensão de entrada será a mesma tensão na saida. Muito utilizado quando você quer saber a tensão em uma parte do circuito, por exemplo em um resistor shunt, verificando assim a corrente naquela parte do circuito. A utilização do buffer para medição de tensão é muito interessante pois o ampop faz um isolamento elétrico entre ampop e circuito, pois a impedância de entrada do ampop é muito alta.
@@ -41,7 +42,7 @@ O buffer é uma implementação do ampop onde a tensão de entrada será a mesma
 ### Amplificador Inversor
 
 Figura 3 - Inversor
-![](inversor.png)
+
 <img src="inversor.png" width="500">
 
 O amplificador inversor tem a função de amplificar ou atenuar o sinal de entrada, jogando uma tensão com sinal contrário na saída.
@@ -53,7 +54,7 @@ Sendo o Ganho = -R2/R1, lembrando que R2 é o resistor na realimentação e R1 o
 ### Amplificador Não Inversor
 
 Figura 4 - Não Inversor
-![](nao_inversor.png)
+
 <img src="nao_inversor.png" width="500">
 
 O amplificador não inversor tem a função de amplificar ou atenuar o sinal de entrada, jogando uma tensão com o mesmo sinal na saída.
@@ -65,7 +66,7 @@ Sendo o Ganho = 1 + (R2/R1), lembrando que R2 é o resistor na realimentação e
 ### Amplificador Somador Inversor
 
 Figura 5 - Somador Inversor
-![](somador_inversor.png)
+
 <img src="somador_inversor.png" width="500">
 
 O amplificador somador inversor faz os somatórios das tensões que entram no terminal inversor, e libera esse resultado na saída.
@@ -78,7 +79,7 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 ### Amplificador Somador Não Inversor
 
 Figura 6 - Somador Não Inversor
-![](somador_nao_inversor.png)
+
 <img src="somador_nao_inversor.png" width="500">
 
 O amplificador somador não inversor faz os somatórios das tensões que entram no terminal não inversor, e libera esse resultado na saída.
@@ -91,7 +92,7 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 ### Subtrator
 
 Figura 7 - Subtrator
-![](ampopsubtrator.png)
+
 <img src="ampopsubtrator.png" width="500">
 
 O ampop subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída, amplificado, atenuado ou de mesmo módulo.
