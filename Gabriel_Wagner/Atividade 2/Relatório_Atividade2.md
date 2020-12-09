@@ -36,12 +36,16 @@ O buffer é uma implementação do ampop onde a tensão de entrada será a mesma
 
 ### Amplificador Inversor
 O amplificador inversor tem a função de amplificar ou atenuar o sinal de entrada, jogando uma tensão com sinal contrário na saída.
+
 Vout = Ganho * Vin
+
 Sendo o Ganho = -R2/R1, lembrando que R2 é o resistor na realimentação e R1 o resistor da tensão de entrada.
 
 ### Amplificador Não Inversor
 O amplificador não inversor tem a função de amplificar ou atenuar o sinal de entrada, jogando uma tensão com o mesmo sinal na saída.
+
 Vout = Ganho * Vin
+
 Sendo o Ganho = 1 + (R2/R1), lembrando que R2 é o resistor na realimentação e R1 o resistor ligado ao terra.
 
 ### Amplificador Somador Inversor
