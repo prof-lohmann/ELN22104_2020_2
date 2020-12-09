@@ -87,13 +87,23 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 ### Subtrator
 
 Figura 7 - Subtrator
+![](ampopsubtrator.png)
 
-O ampop subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída.
+O ampop subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída, amplificado, atenuado ou de mesmo módulo.
 A equação completa do subtrator é a seguinte:
 
-Vout = V3*(-R
+Vout = (V1*(-R3/R1)) + (V2*(R4/(R2+R4)) * (1 + R3/R1)) + (Vref*(R2/(R2+R4)) * (1+(R3/R1)))
 
-Vout = V1*(R4*(R1+R2))/(R1*((R3+R4)) - V3*
+Como no nosso exemplo o Vref é igual a zero temos a seguinte equação:
+
+Vout = (V1*(-R3/R1)) + (V2*(R4/(R2+R4)) * (1 + R3/R1)) + (0*(R2/(R2+R4)) * (1+(R3/R1)))
+Vout = (V1*(-R3/R1)) + (V2*(R4/(R2+R4)) * (1 + R3/R1))
+
+Fazendo a aproximação onde R1=R2 e R3=R4 temos a seguinte equação:
+
+Vout = (V2 - V1) * (R3/R1)
+
+Onde rapidamente se percebe que o ganho do subtrator é G = R3/R1
 
 ### Amplificador de Instrumentação
 
