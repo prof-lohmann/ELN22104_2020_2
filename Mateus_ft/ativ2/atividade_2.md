@@ -134,6 +134,72 @@ Como exemplificado abaixo:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/amp%20instrument.gif)
 
+**6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias
+Amplificador Inversor e Amplificador não inversor**
+
+No ganho em malha aberta finito o ganho A da equação V0=A(V+ - V-) não é mais considerado infinito. Para efeitos de conta as equações da inversora e não inversora mudam.
+
+- Amplificador inversor:
+
+G=V0/Vi=(-R2/R1)/(1+(R2/R1))/A
+
+obs.: R1-> resistor de entrada. R2-> Resistor de realimentação.
+
+Considerando que A é diferente de infinito ele deve ser considerado na conta.
+
+- Amplificador não inversor:
+
+G= V0/Vi=(1+(R2/R1))/(1+(R2/R1))/A
+
+Da mesma forma o termo A se diferente de infinito influência no resultado.
+
+obs.: R1-> resistor de entrada. R2-> Resistor de realimentação.
+
+
+**7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas
+topologias estudadas**
+
+Vcm é a tensao média nos pinos de entrada do amplificador em relação a fonte de alimentação.
+
+EX.:
+
+OPAMP: OPA336
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm.png)
+
+Pode-se observar nessa imagem que as tensões de entrada do ampop (V+ e V-) podem variar ligeiramente 0.2volts abaixo da tensão Vee e até 1 volt abaixo de Vcc.
+
+Observa-se que nos dois casos apresentados acima a diferença de tensão entre Vee e Vcc é de 5 volts. Porém mudam os valores. Sendo a primeira variando de 5v até 0v e a segunda varia de 2.5V até -2.5V.
+
+Caso 1:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_1%205vground.png)
+
+Vcc= 5V
+
+Vee= 0V
+
+As tensões de entrada do ampop (V+ e V-) podem variar de -0.2V até 4V.
+
+Caso 2:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_2%202.5v-2.5.png)
+
+Vcc= 2.5V
+
+Vee= -2.5V
+
+As tensões de entrada do ampop (V+ e V-) podem variar de -2.7V até 1.5V.
+
+**8. O que é CMRR?**
+
+É a medida da capacidade do dispositivo de rejeitar o sinal comum das entradas positiva(V+) e negativa(V-).
+
+Idealmente o CMRR é infinito. Porém não é isso que acontece no mundor real.
+
+
+
+
 
 
 
