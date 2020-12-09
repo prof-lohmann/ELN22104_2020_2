@@ -66,7 +66,7 @@ Figura 5 - Somador Inversor
 ![](somador_inversor.png)
 
 O amplificador somador inversor faz os somatórios das tensões que entram no terminal inversor, e libera esse resultado na saída.
-O somador não inversor segue a seguinte equação.
+O somador inversor segue a seguinte equação.
 
 Vout = -RF * (V1/R1 + V2/R2 + V3/R3 ... Vn/Rn)
 
@@ -88,6 +88,11 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 
 Figura 7 - Subtrator
 ![](subtrator.png)
+
+O somador subtrator subtrai os sinais que entram nas saídas inversora e não inversora e joga essa tensão na saída.
+O somador subtrator segue a seguinte equação.
+
+Vout = V1*(R4*(R1+R2))/(R1*((R3+R4)) - V3*
 
 ### Amplificador de Instrumentação
 
