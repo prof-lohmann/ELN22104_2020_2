@@ -1,1 +1,33 @@
+# Atividade 1
 
+[Questões 1-4.pdf](:/4e1d435e2b4b4d3dad62f9ed0f075c12)
+
+[Ainda editando!!]
+
+### NETLIST:
+- É uma representação baseada em texto de um circuito. 
+- Para criar a netlist: [clicar em] >> view >> SPICE netlist.
+ - Exemplo: 
+Resistores = R1 e R2; Fonte de tensão= V1.
+	```
+	R1 N002 0 1K tol=1 pwr=0.1
+	R2 N002 N001 1K tol=1 pwr=0.1
+	V1 N001 0 10
+	.backanno
+	.end
+	```
+
+### LABEL:
+- São referências que se pode colocar para identificar melhor o circuito.
+### Componentes básicos:
+- Resistor, capacitor, Led, fonte,  corrente, diodo, indutor entre outros.
+### SUBCKT:
+- É um subcircuito.
+### Transiente(.trans):
+- Permite determinar a resposta do circuito em função de sinais variáveis no domínio do tempo.
+### DC operating point(.op):
+- Não necessita de nenhum parâmetro.
+- Analise não linear.
+### .step:
+- Realiza uma análise seja repetidamente enquanto avalia a temperatura, um parâmetro do modelo, um parâmetro global ou uma fonte independente. 
+Exemplo: step temp -55 125 10 >> Etapa a temperatura de -55 ° C a 125 ° C em etapas de 10 ° C.
