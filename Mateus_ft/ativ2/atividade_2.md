@@ -197,6 +197,49 @@ As tensões de entrada do ampop (V+ e V-) podem variar de -2.7V até 1.5V.
 
 Idealmente o CMRR é infinito. Porém não é isso que acontece no mundor real.
 
+**9. Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão
+de modo comum (VCM), indicando:
+
+**a) o impacto na tensão de saída com relação a tolerância dos resistores no
+circuito:**
+
+Primeiramente foi decidido o opamp a ser utilizado: lm321. Fabricante: Texas instruments.
+
+Para dar seguimento a análise foi consultado o datasheet para saber qual a faixa de operação para as tensões de alimentação e a tensão de modo comum (Vcm).
+
+- Supply voltage:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/supply%20voltage%20lm321.png)
+
+Observa-se que a faixa de tensão de alimentação é de 2.7V a 5.5V
+
+- Voltage common-mode
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm%20lm321.png)
+
+Observa-se que as tensões de entrada devem ser no mínimo 0.5V abaixo da tensão de alimentação Vee, e no máximo 0.5V acima da tensão de alimentação Vcc.
+
+No circuito montado foi escolhido pelas tensões de alimentação de 0v para Vee e 5V para Vcc. Respeitando a faixa de operação apresentada no datasheet.
+
+Para as tensões de entrada foi escolhido 0V para a entrada não inversora e 1mV para a entrada inversora. Respeitando Vcm.
+
+Após simular o circuito em .op:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/simulm321.png)
+
+Para o ampop subtrator V0= R4/R1*(V2-V1). Quando R1=R3 e R4=R2
+
+Portanto observa-se que a na simulação V0 apresenta uma variação da tensão de saída de 617,94mV 
+isso pode-se explicar pois os resistores R1 e R3, como também R2 e R4 não são exatamente iguais, justamente pela tolerância dos resistores. Isso também é explicado pelo cmrr.
+
+**b) Qual erro na tensão de saída com relação CMRR do AmpOp.**
+
+
+**c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça
+o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.**
+
+
+
 
 
 
