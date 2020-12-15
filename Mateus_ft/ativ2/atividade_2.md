@@ -1,7 +1,5 @@
 **1. O que é o AmpOp?**
 
-**R:**
-
 Um componente que amplifica o sinal de saída em relação ao de entrada.
 
 
@@ -62,7 +60,7 @@ V0= -(R2/R1)*Vi
 O ganho A= -R2/R1, significa que a tensão de saída sempre irá assumir um valor de sentido contrário da tensao de entrada.
 
 O amplificador inversor é mostrado a seguir:
- 
+
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/inversora.png)
 
 **c) Amplificador Não Inversor**
