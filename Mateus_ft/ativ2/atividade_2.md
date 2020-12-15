@@ -159,43 +159,19 @@ obs.: R1-> resistor de entrada. R2-> Resistor de realimentação.
 **7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas
 topologias estudadas**
 
-Vcm é a tensao média nos pinos de entrada do amplificador em relação a fonte de alimentação.
+Vcm é a tensao média nos pinos de entrada do amplificador, multiplicado por um ganho de modo comum. Idealmente Vcm é zero. O efeito é um acrescimo indesejado na tensão de saída V0.
 
-EX.:
 
-OPAMP: OPA336
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm.png)
-
-Pode-se observar nessa imagem que as tensões de entrada do ampop (V+ e V-) podem variar ligeiramente 0.2volts abaixo da tensão Vee e até 1 volt abaixo de Vcc.
-
-Observa-se que nos dois casos apresentados acima a diferença de tensão entre Vee e Vcc é de 5 volts. Porém mudam os valores. Sendo a primeira variando de 5v até 0v e a segunda varia de 2.5V até -2.5V.
-
-Caso 1:
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_1%205vground.png)
-
-Vcc= 5V
-
-Vee= 0V
-
-As tensões de entrada do ampop (V+ e V-) podem variar de -0.2V até 4V.
-
-Caso 2:
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_2%202.5v-2.5.png)
-
-Vcc= 2.5V
-
-Vee= -2.5V
-
-As tensões de entrada do ampop (V+ e V-) podem variar de -2.7V até 1.5V.
 
 **8. O que é CMRR?**
 
 É a medida da capacidade do dispositivo de rejeitar o sinal comum das entradas positiva(V+) e negativa(V-).
 
 Idealmente o CMRR é infinito. Porém não é isso que acontece no mundor real.
+
+CMRR= |Av/Acm| Av= ganho em malha aberta. Acm= Ganho de modo comum.
+
+
 
 **9. Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão
 de modo comum (VCM), indicando:
@@ -230,17 +206,105 @@ Após simular o circuito em .op:
 Para o ampop subtrator V0= R4/R1*(V2-V1). Quando R1=R3 e R4=R2
 
 Portanto observa-se que a na simulação V0 apresenta uma variação da tensão de saída de 617,94mV 
-isso pode-se explicar pois os resistores R1 e R3, como também R2 e R4 não são exatamente iguais, justamente pela tolerância dos resistores. Isso também é explicado pelo cmrr.
+isso pode-se explicar pois os resistores R1 e R3, como também R2 e R4 não são exatamente iguais, justamente pela tolerância dos resistores. Isso também é explicado pela tensão de offset, Vcm e CMRR.
 
 **b) Qual erro na tensão de saída com relação CMRR do AmpOp.**
+Datasheet:
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/Cmrrlm321.png)
+
+Observa-se pelo datasheet que o erro é de 64dB a 94dB
 
 **c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça
 o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.**
 
 
+**10. Faça um resumo explicando as limitações de tensão de entrada e saída de um
+AmpOp. De exemplos, utiliza-se valores de datasheet.**
+
+EX.:
+
+OPAMP: OPA336
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm.png)
+
+Pode-se observar nessa imagem que as tensões de entrada do ampop (V+ e V-) podem variar ligeiramente 0.2volts abaixo da tensão Vee e até 1 volt abaixo de Vcc.
+
+Observa-se que nos dois casos apresentados acima a diferença de tensão entre Vee e Vcc é de 5 volts. Porém mudam os valores. Sendo a primeira variando de 5v até 0v e a segunda varia de 2.5V até -2.5V.
+
+Caso 1:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_1%205vground.png)
+
+Vcc= 5V
+
+Vee= 0V
+
+As tensões de entrada do ampop (V+ e V-) podem variar de -0.2V até 4V.
+
+Caso 2:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/vcm_2%202.5v-2.5.png)
+
+Vcc= 2.5V
+
+Vee= -2.5V
+
+As tensões de entrada do ampop (V+ e V-) podem variar de -2.7V até 1.5V.
 
 
+
+**a) Defina o que é um AmpOp Rail-to-rail**
+
+É um Amplificador Operacional em que a tensão de saída atingi o mesmo nível que as tensões de alimentação do AmpOp Vcc e Vee.
+
+Um amplificador operacional com entrada e saída Rail to Rail alimentado com 12V pode aceitar sinais de ate 12V na entrada sem saturar e fornecer o mesmo sinal de 12v na saída.
+
+**11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de
+um amplificador inversor?**
+
+ A saída do amplificador operacional é idealmente nula quando as
+entradas em potencial zero(ground). Entretando nos amplificadores reais, devido a um
+desbalanceamento nas entradas existe uma tensão cc equivalente na entrada, isso é, o offset. O valor da tensão de "offset" nos amplificadores comerciais estão situado
+na faixa de 1 a 100 mV. Nos amplificadores existem entradas
+para ajuste da tensão de "offset".
+
+- É possivel simular o efeito do offset na saída de um amplificador colocando potencial zero(ground) nas duas entradas.
+
+A saída resultará no offset.
+
+Para o componente lm321:
+
+- Datasheet:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_datash.png)
+
+- Simulação:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_simu.png)
+
+OBS.: A tensão de saída tem o efeito de offset somado a tensao de modo comum(Vcm).
+
+**12. Como minimizar o efeito da tensão de offset?**
+
+Nos amplificadores comerciais existe dois pinos de ajuste de offset. A utilização de um potenciometro nesses pinos resolve o problema da tensão de offset.
+
+**13. O que é a variação da tensão de offset pela temperatura?**
+
+
+**a) Como verificar esse parâmetro no datasheet?**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_datash.png)
+
+No datasheet as informações são para temperatura de 25°C. Quando há variação de temperatura 
+
+**14. O que são as correntes de polarização(Ibias) de AmpOp?**
+
+
+**a) Como minimizar o efeito destas correntes? Descreva as aproximações e os
+possíveis circuitos para mitigar o problema.**
+
+**b) Descreva a corrente de offset na polarização dos AmpOp**
 
 
 
