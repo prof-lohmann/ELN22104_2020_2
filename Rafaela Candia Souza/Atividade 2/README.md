@@ -20,16 +20,34 @@
 > * VS+: alimentação positiva
 > * VS−: alimentação negativa
 >
-> Fisicamente sua estrutura em circuito integrado é organizada em pares ou quarteto. Como exemplo abaixo temos um LM358.
+> As caracteristicas ideais de um AmpOp sao:
+>
+> * Impedancia de entrada infinita;
+> * Impedancia de saida nula;
+> * Ganho de tensao infinito;
+> * Resposta em frequencia infinita;
+> * Insensibilidade a temperatura.
+> 
+> Fisicamente sua estrutura em circuito integrado é organizada em pares ou quartetos. Como exemplo abaixo temos um LM358.
 >
 > ![Capture](https://user-images.githubusercontent.com/12564754/102249035-a95d6a00-3ee0-11eb-9228-acd0030f68d1.PNG) 
 >
+> A entrada positiva não-inversora produz uma saída que está em fase com o sinal aplicado, enquanto a entrada inversora resulta numa saída com polaridade oposta.
 
 ### AmpOp em Malha Aberta e Malha Fechada
 
+> Malha aberta: Uma configuração sem realimentação do retorno da saída do amp-op à sua entrada. O ganho do amp-op de malha aberta geralmente excede 10.000.
+> Exemplo: 
+>
+> ![malha_aberta](https://user-images.githubusercontent.com/12564754/102251474-9bf5af00-3ee3-11eb-935a-546c97a68ea3.PNG)
+>
+> Malha fechada: Uma configuração que tem um caminho de realimentação da saída do ampOp à sua entrada negativa ou positiva.
+> Exemplo:
+>
+> ![malha_fechada](https://user-images.githubusercontent.com/12564754/102251814-10305280-3ee4-11eb-9ac6-4adf18d3d9e2.PNG)
 >
 
-#### Exemplos de como resolver e calcular circuitos com AmpOps em Malha Fechada:
+#### Calcular circuitos de AmpOps em malha aberta e fechada
 
 >
 
