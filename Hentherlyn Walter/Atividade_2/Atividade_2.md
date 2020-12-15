@@ -2,6 +2,6 @@
 
 ## Resumo sobre Amplificadores Operacionais
 
-### Questão 1:
-#### o que é _AmpOp_?
+### Questão 1: O que é _AmpOp_?
+ 
 
