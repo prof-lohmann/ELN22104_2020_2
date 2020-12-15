@@ -281,7 +281,7 @@ Para o componente lm321:
 
 - Simulação:
 
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_simu.png)
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_simu_2.png)
 
 OBS.: A tensão de saída tem o efeito de offset somado a tensao de modo comum(Vcm).
 
@@ -296,7 +296,7 @@ Nos amplificadores comerciais existe dois pinos de ajuste de offset. A utilizaç
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ2/imagens/offset_inversora_datash.png)
 
-No datasheet as informações são para temperatura de 25°C. Quando há variação de temperatura 
+
 
 **14. O que são as correntes de polarização(Ibias) de AmpOp?**
 
