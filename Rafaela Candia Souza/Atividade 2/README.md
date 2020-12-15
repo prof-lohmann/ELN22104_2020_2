@@ -3,10 +3,26 @@
 
 ### O que é o AmpOp?
 
+> O Amplificador operacional é um circuito integrado, capaz de amplificar um sinal de entrada e realizar operações matemáticas.
+> Sua principal característica é possuir duas entradas e uma saída que será resultante a partir da operacao realizada em sua configuracao.
+
+### Simbologia e as características do AmpOp
+
+> O diagrama abaixo mostra um típico Amplificador Operacional.
+>
+>![Opamppinouts](https://user-images.githubusercontent.com/12564754/102247973-6bac1180-3edf-11eb-9dbc-ea5f073403fe.png)
 > 
-
-### Simbologia e as características do AmpOp IDEAL
-
+> Os seus terminais são:
+>
+> * V+: entrada não-inversora
+> * V−: entrada inversora
+> * Vout: saída
+> * VS+: alimentação positiva
+> * VS−: alimentação negativa
+>
+> Fisicamente sua estrutura em circuito integrado é organizada em pares ou quarteto. Como exemplo abaixo temos um LM358.
+>
+> ![Capture](https://user-images.githubusercontent.com/12564754/102249035-a95d6a00-3ee0-11eb-9228-acd0030f68d1.PNG) 
 >
 
 ### AmpOp em Malha Aberta e Malha Fechada
@@ -26,6 +42,7 @@
 >
 
 ##### Amplificador Inversor:
+
 
 >
 
@@ -53,7 +70,7 @@
 
 >
 
-####Exemplo com circuitos com ganhos em malha fechada elevado:
+#### Exemplo com circuitos com ganhos em malha fechada elevado:
 
 >
 
