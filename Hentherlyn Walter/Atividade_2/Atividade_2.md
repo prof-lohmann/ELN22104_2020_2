@@ -2,11 +2,11 @@
 
 ## Resumo sobre Amplificadores Operacionais
 
-### Questão 1: O que é _AmpOp_?
+### Questão 1: O que é _Amp Op_?
 
 O Amplificador Operacional é um circuito integrado amplificador e é responsável por ampliar sinais fracos na faixa de microvolt (uV) ou milivolt (mV). Sendo assim, ele é projetado para operar como um medidor da diferença entre os sinais de tensão aplicados aos seus dois terminais de entrada.
 
-### Questão 2: Mostre os símbolos e as características do AmpOp IDEAL?
+### Questão 2: Mostre os símbolos e as características do _Amp Op_ IDEAL?
 
 O símbolo mais básico do Amplificador Operacional apresenta três terminais sendo, dois terminais de entrada, entrada inversora (terminal 1) e entrada não inversora (terminal 2) e um terminal de saída (3).
 
