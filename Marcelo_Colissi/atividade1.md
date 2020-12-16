@@ -1,6 +1,6 @@
 # Atividade 1
-
-
+![PARTE1](https://github.com/MarceloColissiH/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcelo_Colissi/FOTOSATV1/foto1.jpg)
+![PARTE2](https://github.com/MarceloColissiH/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcelo_Colissi/FOTOSATV1/foto2.jpg)
 
 ### Questão 5
 
