@@ -71,13 +71,24 @@ Amplificador Não-Inversor com ganho 10V/V
 
 
 + Amplificador Somador Inversor
+    - Saída é o valor inverso da soma ponderada das entradas
+
+    Vout = - Rf (V1/R1 + V2/R2 + ... + Vn/Rn)
 
 + Amplificador Somador Não Inversor
+    - Saída corresponde a soma ponderada das entradas
+    - Caso os valores de resistores sejam iguais temos:
+
+    Vout = [1/(n + 1)] (V1 + V2 + ... + Vn)
 
 + Subtrator
-    
+    - Saída corresponde a subtração das entradas
+    - Caso os valores de resistores sejam iguais temos:
+
+    Vout = V2 - V1
+
 + Amplificador de Instrumentação
-    - baixos erros de resistores
+    - 
 
 ## Tensão de modo comum
 
