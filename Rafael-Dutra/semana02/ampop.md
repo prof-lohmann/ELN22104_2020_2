@@ -34,11 +34,17 @@ Ganho em Malha Fechada:
 
 Para obter a relação entrada-saída podemos aplicar lei de kirchhoff das correntes, e percorrer a malha.
 
-![foto]()
+![exemplo de como obter ganho em malha fechada]()
 
-### Ganho finito de Malha aberta
+### Ganho finito de Malha aberta (Av)
 
-Ao considerarmos um ganho finito não podemos considerar que V+ = V-
+Ao considerarmos um ganho finito não podemos considerar que V+ = V-, então por exemplo o ganho do AmpOp não-inversor se torna:
+
+    G = [1 + (R2/R1)]/[1 + ((1 + R2/R1)/ Av)]
+
+Se Av tende ao infinito voltamos ao ganho:
+
+    G = 1 + R2/R1
 
 Exemplo com ganho em Malha aberta finito: 
 
@@ -98,7 +104,9 @@ considerando um amplificador subtrator com ganho 1000, usar um ex com 1% e 5% de
 
 ## CMRR
 
-oq é
+É a razão de rejeição de modo comum, pode ser utilizada para medir a eficácia de um amplificador subtrator e é definida como:
+
+    CMRR = 20log (Ad/Acm)
 
 impacto do erro dos resistores no CMRR usando como exemplo o ampop subtator anterior
 
@@ -108,7 +116,11 @@ AmpOp Rail-to-rail
 
 ## Tensão de *offset*
 
-oq é , como calcular num ampo inversor, como minimizar
+É uma  tensão que surge devido a um desequilíbrio CC, ela pode ser medida ao observar a saída do AmpOp ao anularmos as entradas. 
+
+Para minimizar o efeito da tensão de *offset* é possivel adicionar a entrada do AmpOp uma fonte de mesmo valor mas polaridade oposta a tensão de *offset*.   
+
+![como calcular num ampo inversor]()
 
 variação com a temperatura
 
