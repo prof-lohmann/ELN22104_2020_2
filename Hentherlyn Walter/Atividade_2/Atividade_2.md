@@ -51,9 +51,20 @@ A configuração Inversora consiste em um Amp Op e dois resistores R1 e R2. O re
 Nesta configuração, o sinal de entrada V1 é conectado diretamente ao terminal de entrada positivo do Amp Op e o Resistor 1 é conectado ao terra.
 
 #### Amplificador Somador Inversor;
+
+Esta configuração, conforme a figura abaixo, é um circuito responsável por somar algebricamente as n tensões, cada uma multiplicada por um ganho constante, ou seja, cada entrada gera um ganho à saída. É importante citar que nesta modelo, as n entradas são conectadas os terminal 1, ou entrada inversora.
+
 #### Amplificador Somador Não Inversor;
+
+O circuito do somador não inversor assemelha-se muito ao somador inversor, porém, neste caso as n entradas são conectadas ao terminal 2, ou entrada não inversora, por isso a tensão de saída não sofre inversão de sinal.
+
 #### Subtrator;
+
+Esta configuração permite que tenhamos uma tensão de saída igual a diferença entre as duas entradas multiplicada por um ganho.
+
 #### Amplificador de Instrumentação;
+
+O amplificador de instrumentação, representado na figura abaixo, é composto por dois amplificadores não inversores e um amplificador diferença. Desta forma, a resistência de entrada vista por cada uma das fontes é infinita e o ganho de tensão é dado pelo produto de dois cocientes entre as resistências.
 
 ### Questão 6:Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor. 
 
