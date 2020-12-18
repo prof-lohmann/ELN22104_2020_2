@@ -51,7 +51,7 @@ Eletrônica I</b>
 <b>f) Subtrator</b><br>
 *O amplificador subtrator realiza um resultado na saída de uma tensão igual à diferença entre os sinais aplicados, multiplicada por um ganho (G).*<br><br>
 <b>g) Amplificador de Instrumentação</b>
-*Os amplificadores de instrumentação são conhecidos por terem uma entrada diferencial e uma elevada impedância de entrada.*<br><br>
+*Os amplificadores de instrumentação são conhecidos por terem uma entrada diferencial e uma elevada impedância de entrada.*<br>
 
 ---
 
