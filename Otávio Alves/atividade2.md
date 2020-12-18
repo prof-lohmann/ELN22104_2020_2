@@ -46,6 +46,7 @@ G=V0/Vi=(-R2/R1)/(1+(R2/R1))/Av
 - CMRR= |Av/Acm| 
 - Av= ganho em malha aberta; Acm= Ganho de modo comum;
 ### QUESTÃO 9) Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
+- Tomando como exemplo o amplificador LM321 da Texas Instruments
 #### a) o impacto na tensão de saída com relação a tolerância dos resistores no circuito;
 #### b) Qual erro na tensão de saída com relação CMRR do AmpOp.
 - Verificando o datasheet que indica o erro entre 65 e 85db
