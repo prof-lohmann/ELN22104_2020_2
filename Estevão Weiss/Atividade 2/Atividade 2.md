@@ -5,8 +5,7 @@
 AmpOp (amplificador operacional) é um circuito integrado (CI) capaz de amplificar sinais com um ganho muito elevado. 
 
 * AmpOp Ideal e suas características
-
-------COLOCAR IMAGEM-----------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20ideal.JPG?raw=true)
 
 As características de um AmpOp Ideal são: Impedância de entrada infinita, impedância de saída nula e ganho infinito. Essas situações não são encotradas na prática e são utilizadas para fins didáticos.
 
@@ -21,37 +20,38 @@ O método mais utilizado nos cálculos dos circuitos com AmpOp em malha fechada 
 * Topologias principais e suas características
 
 Seguidor de Tensão (Buffer)
-----------IMAGEM BRUFFER---------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20buffer.JPG?raw=true)
 
 Nesta topologia a entrada é realimentada diretamente com o sinal de saída do ampop e é conhecido por seu ganho unitário, sendo a saída igual a entrada e vice e versa.
 
 Amplificador Inversor
-----------IMAGEM INVERSOR--------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20inversor.JPG?raw=true)
 
 O amOp inversor tem como sua característica principal a inversão do sinal de entrada junto com um ganho, descrito na fórmula da imagem acima.
 
 Amplificador Não Inversor
-----------IMAGEM NÃO INVERSOR---------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20n%C3%A3o-inversor.JPG?raw=true)
 
 O ampOp não inversor, como o nome já diz, não inverte o sinal de entrada e tem seu ganho descrito pela formúla da imagem acima.
 
 Amplificador Somador Inversor
-----------IMAGEM DO SOMADOR INVERSOR---------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20somador%20inversor.JPG?raw=true)
+
 
 A topologia do somador inversor tem como sua principal característica a soma de dois ou mais sinais de entrada, junto com a inversão desses sinais e o ganho descrito na fórmula da imagem acima.
 
 Amplificador Somador Não Inversor 
-----------SOMADOR NÃO INVERSOR------------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20somador%20n%C3%A3o%20inversor.JPG?raw=true)
 
 A topologia do somador não inversor tem como sua principal característica a soma de dois ou mais sinais de entrada junto com o ganho descrito na fórmula da imagem acima.
 
 Amplificador Substrator
----------Subtrator---------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20subtrator.JPG?raw=true)
 
 Como o nome já diz, essa topologia substrai sinais de entrada de acordo com a fórmula descrita na imagem acima.
 
 Amplificador de Instrumentação
----------- Amplificador de instrumentação--------------
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/Ampop%20de%20instrumenta%C3%A7%C3%A3o.JPG?raw=true)
 
 Esta configuração é uma junção de topologias, nela temos um amplificador subtrator em conjunto com dois amplificadores inversores. O controle do ganho é feito através da variação da resistência Rg, como pode ser visto na fórmula descrita na imagem.
 
