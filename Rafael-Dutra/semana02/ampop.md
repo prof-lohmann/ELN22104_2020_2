@@ -34,33 +34,40 @@ Ganho em Malha Fechada:
 
 Para obter a relação entrada-saída podemos aplicar lei de kirchhoff das correntes, e percorrer a malha. Esse exemplo mostra como obter o ganho de um Ampop inversor:
 
-![Exemplo de como obter ganho em malha fechada](mf.md)
+![Exemplo de como obter ganho em malha fechada](./exem/mf.md)
 
 ### Ganho finito de Malha aberta (Av)
 
 Ao considerarmos um ganho finito não podemos considerar que V+ = V-, então por exemplo o ganho do AmpOp não-inversor se torna:
 
-    G = [1 + (R2/R1)]/[1 + ((1 + R2/R1)/ Av)]
+![Ganho finito em Malha Aberta de um não-Inversor](./img/gfninv.png)
 
 Se Av tende ao infinito voltamos ao ganho:
 
     G = 1 + R2/R1
 
-Exemplo com ganho em Malha aberta finito: 
+Também para o AmpOp inversor o ganho é alterado:
 
-Amplificador Inversor com ganho -1000V/V
+![Ganho finito em Malha Aberta de um Inversor](./img/gfinv.png)
 
-Amplificador Inversor com ganho -10V/V
+Influência do ganho de Malha Aberta finito para ganhos em Malha Fechada:
 
-Amplificador Não-Inversor com ganho 1000V/V
-
-Amplificador Não-Inversor com ganho 10V/V
-
-
+Modelo       | Ganho Ideal (v/v)  | Ganho Av  (dB) | Ganho M.F. (v/v)  | Erro  
+:-----------:| :-----------------:|:--------------:| :----------------:|:-------:
+Não Inversor |  10                | 20             |  5                | 50 %
+Inversor     | -10                | 20             | -4,76             | 52,4 %
+Não Inversor |  1000              | 20             |  9,9              | 10001 %
+Inversor     | -1000              | 20             | -9,9              | 10001 %
+Não Inversor |  10                | 120            |  9,9999           | 0,001 %
+Inversor     | -10                | 120            | -9,9999           | 0,001 %
+Não Inversor |  1000              | 120            |  999              | 0,1 %
+Inversor     | -1000              | 120            | -999              | 0,1 %
 
 ## Topologias de AmpOps :
 
 + Seguidor de Tensão
+    - Elevada impedância de entrada, idealmente infinita
+    - Baixa impedância de saída, idealmente nula
     - Saída igual a entrada, ganho unitário.
     
     G = 1
@@ -75,7 +82,6 @@ Amplificador Não-Inversor com ganho 10V/V
 
     G = (R1 + R2)/R1
 
-
 + Amplificador Somador Inversor
     - Saída é o valor inverso da soma ponderada das entradas
 
@@ -87,14 +93,16 @@ Amplificador Não-Inversor com ganho 10V/V
 
     Vout = [1/(n + 1)] (V1 + V2 + ... + Vn)
 
-+ Subtrator
++ Amplificador Subtrator
+    - Baixa impedância de entrada
     - Saída corresponde a subtração das entradas
     - Caso os valores de resistores sejam iguais temos:
 
     Vout = V2 - V1
 
 + Amplificador de Instrumentação
-    - gkkuy
+    - Um circuito que funciona como um Subtrator mas com elevada impedância
+    - É possivel controlar o ganho alterando o valor de apenas um único resistor  
 
 ## Tensão de modo comum
 
