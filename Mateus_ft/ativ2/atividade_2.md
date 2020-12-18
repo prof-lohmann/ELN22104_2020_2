@@ -298,9 +298,13 @@ Nos amplificadores comerciais existe dois pinos de ajuste de offset. A utilizaç
 
 **14. O que são as correntes de polarização(Ibias) de AmpOp?**
 
+Idealmente as impedâncias de entrada do ampop são infinitas. Entretanto no mundo real não é isso que acontece. Existem correntes que circulam no ampop. Isso ocorre porque existem dois transistores internos no ampop que geram essas correntes nos terminais de entrada. Essas correntes variam com a temperatura e com a alimentação do dispositivo. 
+
 
 **a) Como minimizar o efeito destas correntes? Descreva as aproximações e os
 possíveis circuitos para mitigar o problema.**
+
+
 
 **b) Descreva a corrente de offset na polarização dos AmpOp**
 
