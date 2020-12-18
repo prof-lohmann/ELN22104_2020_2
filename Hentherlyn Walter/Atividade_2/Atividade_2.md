@@ -74,7 +74,7 @@ O amplificador de instrumentação, representado na figura abaixo, é composto p
 
 ### Questão 8: O que é CMRR?
 
-O CMRR é a relação de rejeição de modo comum.  De forma ideal, quando dois sinais de mesma frequência, amplitude e fase, são aplicados às entradas de um Amp Op, os mesmo devem se cancelar e nenhuma saída deve aparecer. Na prática, esta saída não é nula e é especificada em relação ao ganho máximo. A capacidade do Amplificador Operacional em rejeitar este sinal é a rejeição de modo comum, sendo medida de decibéis (dB).
+O CMRR é a relação de rejeição de modo comum.  De forma ideal, quando dois sinais de mesma frequência, amplitude e fase, são aplicados às entradas de um Amp Op, os mesmos devem se cancelar e nenhuma saída deve aparecer. Na prática, esta saída não é nula e é especificada em relação ao ganho máximo. A capacidade do Amplificador Operacional em rejeitar este sinal é a rejeição de modo comum, sendo medida de decibéis (dB).
 
 ### Questão 9: Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
 #### O impacto na tensão de saída com relação a tolerância dos resistores no circuito; 
