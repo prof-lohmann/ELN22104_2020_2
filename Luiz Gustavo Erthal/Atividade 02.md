@@ -12,7 +12,7 @@ Um amplificador operacional, ou ampop, é um amplificador diferencial de ganho m
 
 Um AmpOp ideal possui cinco terminais, sendo dois de entrada (inversora [-] e não inversora [+]), dois de alimentação [Vcc e -Vee] e um terminal de saída.
 
-![Ex2](Image URL)
+![Ex2](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex2.png)
 
 ### 3. O que significa Malha Aberta e Malha Fechada?
 
@@ -26,7 +26,7 @@ Diferentemente da de malha aberta, esta é uma configuração em que o amplifica
 
 ### 4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.
 
-![Ex4](Image URL)
+![Ex4](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex4.png)
 
 Assumindo que se trata de um AmpOp 
 
@@ -38,7 +38,7 @@ Um circuito _buffer_ fornece um meio de isolar um sinal de entrada de uma carga 
 
 > V0 = V1
 
-![Ex5a](Image URL)
+![Ex5a](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex5a.png)
 
 ​	b. **Amplificador Inversor**
 
