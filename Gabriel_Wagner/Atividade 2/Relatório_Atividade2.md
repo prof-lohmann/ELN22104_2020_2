@@ -12,7 +12,7 @@ Os amplificadores operacionais são circuitos integrados capazes de realizar vá
 Seus terminais são: Entrada inversora, entrada não inversora, terminais de alimentação e saída.
 
 ### Ampop Ideal
-Figura 1 - Ampop Ideal
+Figura 0 - Ampop Ideal
 
 ![](ampop_ideal.png)
 
@@ -34,7 +34,7 @@ A malha fechada é uma configuração onde o ampop apresenta realimentação, us
 Os cálculos em malha fechada dependem muito dos reistores empregados, anteriormente tínhamos ganhos muito altos, teoricamente infinitos, mas na malha fechada isso não acontece.
 Tomando como exemplo o amplificador inversor, temos que:
 
-Figura 0 - Inversor
+Figura 1 - Inversor.
 
 <img src="inversor.png" width="500">
 
@@ -60,7 +60,7 @@ Vout = -(R2/R1) * V3.
 
 ### Buffer
 
-Figura 2 - Buffer
+Figura 2 - Buffer.
 
 <img src="buffer.png" width="500">
 
@@ -68,7 +68,7 @@ O buffer é uma implementação do ampop onde a tensão de entrada será a mesma
 
 ### Amplificador Inversor
 
-Figura 3 - Inversor
+Figura 3 - Inversor.
 
 <img src="inversor.png" width="500">
 
@@ -80,7 +80,7 @@ Sendo o Ganho = -R2/R1, lembrando que R2 é o resistor na realimentação e R1 o
 
 ### Amplificador Não Inversor
 
-Figura 4 - Não Inversor
+Figura 4 - Não Inversor.
 
 <img src="nao_inversor.png" width="500">
 
@@ -92,7 +92,7 @@ Sendo o Ganho = 1 + (R2/R1), lembrando que R2 é o resistor na realimentação e
 
 ### Amplificador Somador Inversor
 
-Figura 5 - Somador Inversor
+Figura 5 - Somador Inversor.
 
 <img src="somador_inversor.png" width="500">
 
@@ -105,7 +105,7 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 
 ### Amplificador Somador Não Inversor
 
-Figura 6 - Somador Não Inversor
+Figura 6 - Somador Não Inversor.
 
 <img src="somador_nao_inversor.png" width="500">
 
@@ -118,7 +118,7 @@ Conforme você vai adicionando mais sinais, a equação aumenta até n fontes e 
 
 ### Subtrator
 
-Figura 7 - Subtrator
+Figura 7 - Subtrator.
 
 <img src="ampopsubtrator.png" width="500">
 
@@ -140,7 +140,7 @@ Onde rapidamente se percebe que o ganho do subtrator é G = R3/R1
 
 ### Amplificador de Instrumentação
 
-Figura 8 - Circuito com três ampops para instrumentação 
+Figura 8 - Circuito com três ampops para instrumentação.
 
 <img src="instrumentação.png" width="500">
 
@@ -220,7 +220,7 @@ Lembramos que o ampop trabalha com a amplificação de sinais diferentes, então
 ### Influência da tolerância dos resistores no CMRR
 Para analisar o efeito do descasamento dos resistores, foi montado dois circuitos subtratores com ganho 1000 V/V. Os resistores de realimentação foram variados em uma taxa de 1% e 5%. Segue a montagem abaixo.
 
-Figura 9 - Montagem dos dois subtratores
+Figura 9 - Montagem dos dois subtratores.
 
 <img src="subtrator_tolerancia.png" width="500">
 
@@ -228,11 +228,11 @@ Com essa variação a tensão de saída de ambos ampops variou diferentemente.
 
 Segue abaixo as tensões de saída do LT1001A e as tensões de saída do OP296:
 
-Figura 10 - Tensões de saída do LT1001A
+Figura 10 - Tensões de saída do LT1001A.
 
 <img src="subtrator_tolerancia_lt.png" width="500">
 
-Figura 11 - Tensões de saída do OP296
+Figura 11 - Tensões de saída do OP296.
 
 <img src="subtrator_tolerancia_ad.png" width="500">
 
@@ -244,7 +244,7 @@ Devido a tensão de modo comum e as oscilações das tensões de saída, que sã
 
 Podemos observar através da imagem abaixo:
 
-Figura 12 - Limitações de entrada e saída, training Texas Instruments
+Figura 12 - Limitações de entrada e saída, training Texas Instruments.
 
 <img src="input_output_limitations_trainingti.png" width="500">
 
@@ -261,7 +261,7 @@ O mesmo acontece com as tensões de saída, com:
 
 Tomando como exemplo o LM324 podemos encontrar rapidamente as limitações no datasheet. Como na imagem abaixo:
 
-Figura 13 - Limitações de entrada e saída, LM324, Texas Instruments
+Figura 13 - Limitações de entrada e saída, LM324, Texas Instruments.
 
 <img src="input_output_limitations_lm324.png" width="500">
 
@@ -283,7 +283,7 @@ Existem alguns ampops que apresentam um potenciômetro que deixa você ajustar a
 ### Temperatura x offset
 A temperatura está muito relacionada com a tensão de offset. Como os transistores são componentes muito sensíveis a temperatura, o aumento ou diminuição dela, ocasiona o aumento ou diminuição do descasamento dos transistores de entrada, aumentando ou diminuindo o offset. Os ampops apresentam temperaturas de trabalho em seu datasheet, e os mais sensíveis apresentam curvas de tmperatura pelo offset como o gráfico abaixo.
 
-Figura 14 - Temperatura x offset, Texas Instruments
+Figura 14 - Temperatura x offset, Texas Instruments.
 
 <img src="offset_temperature.png" width="500">
 
