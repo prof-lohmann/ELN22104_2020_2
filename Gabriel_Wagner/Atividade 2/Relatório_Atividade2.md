@@ -270,7 +270,72 @@ Referência: LM324; Texas Instruments; https://www.ti.com/lit/ds/symlink/lm324.p
 O datasheet demonstra como em algumas condições você pode mitigar essas limitações. Dando como exemplo a escolha das tensões de alimentação e a resistência de carga que o ampop está trabalhando.
 
 ### Ampop Rail-to-rail
-Ampops eram comumemte alimentados com alimentação única, VCC na alimentação positiva e 0V na alimentação negativa. Como demonstrado anteriormente, isso gerava uma baixa variação de tensões nas entradas e saídas, que são limitadas por problemas internos, para aumentar a variação ou alcance das tensões de entrada foram construídos os ampops rail-to-rail, eles apresentam alimentação dupla e simétrica, com +VCC na alimentação positiva e -VCC na alimentação negativa. Essa característica diminui muitos as limitações de entrada e saída além de problemas com ruído.
+Ampops eram comumemte alimentados com alimentação única, VCC na alimentação positiva e 0V na alimentação negativa. Como demonstrado anteriormente, isso gerava uma baixa variação de tensões nas entradas e saídas, que são limitadas por problemas internos. Para aumentar a variação ou alcance das tensões de entrada foram construídos os ampops rail-to-rail, eles apresentam alimentação dupla e simétrica, com +VCC na alimentação positiva e -VCC na alimentação negativa. Essa característica diminui muitos as limitações de entrada e saída, além de problemas com ruído.
+
+### Tensão de offset
+A tensão de offset é definida como a tensão que deve ser aplicada aos dois terminais de entrada para se obter 0V na saída. Idealmente a tensão de saída devia ser zero quando as entradas recebem 0V, mas não é isso que acontece. A tensão de offset é modelada como uma pequena tensão de entrada em série com uma das entradas do ampop. Esse efeito ocorre devido a descasamentos dos transistores de entrada, durante a fabricação da matriz de silício dos transistores.
+Dando como exemplo o ampop inversor, basta aterrar a entrada e ver a tensão de offset na saída. É importante lembrar que a tensão de offset estará multiplicada pelo ganho, e que uma tensão de saída negativa significará que a entrada positiva é aquela que apresenta o offset.
+
+### Minimizando o offset
+Podemos minimizar o offset colocando uma fonte de tensão de sinal contrário na entrada com offset.
+Existem alguns ampops que apresentam um potenciômetro que deixa você ajustar a tensão de offset, mas essa característica é muito inviável na produção e venda em escala industrial. Recomenda-se comprar um ampop com baixo offset caso haja a necessidade.
+
+### Temperatura x offset
+A temperatura está muito relacionada com a tensão de offset. Como os transistores são componentes muito sensíveis a temperatura, o aumento ou diminuição dela, ocasiona o aumento ou diminuição do descasamento dos transistores de entrada, aumentando ou diminuindo o offset. Os ampops apresentam temperaturas de trabalho em seu datasheet, e os mais sensíveis apresentam curvas de tmperatura pelo offset como o gráfico abaixo.
+
+Figura 14 - Temperatura x offset, Texas Instruments
+
+<img src="offset_temperature.png" width="500">
+
+Referência: Dc parameters: input offset voltage; Texas Instruments; https://www.ti.com/lit/an/sloa059/sloa059.pdf?ts=1608267520346&ref_url=https%253A%252F%252Fwww.google.com%252F
+
+### Correntes de polarização 
+As correntes de polarização são correntes que podem sair ou entrar nas entradas do ampop, dependendo dos transistores de entrada. Elas são idealmente iguais, se anulando, mas na prática são diferentes. A diferença dessas correntes é a corrente de offset de entrada.
+Quando a corrente de offset é pequena, um casamento das impedâncias de entrada pode cancelar a corrente de offset.
+A corrente de polarização é dada pela seguinte equação:
+
+IB = (IB1+IB2)/2
+
+Sendo IB1 e IB2 as correntes em cada entrada.
+Já a corrente de offset é dada pelo módulo da diferença das duas correntes.
+
+IOS = |IB1 - IB2|
+
+Alguns dos métodos de diminuição dessas correntes de polarização, consistem em medir a corrente de polarização e somar a ela outra corrente de mesmo módulo, mas com sinal contrário. Note que a soma não será exata, e uma corrente fluirá em algum dos dois sentidos.
+Agora sabemos que existe uma corrente de entrada, que poderá gerar uma queda de tensão nas entradas. Tomando como exemplo a configuração inversora podemos colocar um resistor na entrada não inversora mitigando o problema.
+Para efeitos de cálculo chamaremos RR como resistor de realimentação, R1 resistor na entrada inversora e R3 o resistor a ser achado, na entrada não inversora.
+Além disso IB2 a corrente na entrada não inversora e IB1 a corrente na entrada inversora.
+
+A tensão na saída nessa configuração será:
+
+Vout = -IB2 * R3 + R2* (IB1-((IB2* R3)/R1))
+
+Considerando as correntes de entradas iguais temos:
+
+Vout = Ib * (R2 - R3* (1+(R2/R1)))
+
+Podemos considerar Vout igual a zero, já que o objetivo de colocar o resistor na entrada não inversora, é mitigar tensões de entrada que resultarão em tensões na saída. Então temos:
+
+R3 = R2/(1+(R2/R1) = (R1* R2) / (R1+R2)
+
+Rapidamente se percebe que R3 deve ser igual a associação paralela entre R1 e R2, ou seja, o resistor de realimentação e o resistor da entrada inversora.
+
+Avaliando as correntes finitas, seguindo as seguintes equações:
+
+IB1 = IB + (IOS/2) e 
+
+IB2 = IB - (IOS/2)
+
+Podemos susbtituir na equação logo acima -> Vout = Ib * (R2 - R3* (1+(R2/R1)))
+
+Então teremos que:
+
+Vout = IOS * R2
+
+Sendo assim R2 muito menor do que o seu valor sem a adição de R3.
+Por fim, chegamos a conclusão que devemos adiconar um resistor na entrada não inversora, de valor igual a resistência cc vista pelo terminal inversor, desta maneira diminuindo os efeitos das correntes de polarização nas entradas
+
+
 
 
 
