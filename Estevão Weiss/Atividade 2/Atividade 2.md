@@ -18,7 +18,7 @@ Os sistemas em malha aberta independem do sinal de saída, não são realimentad
 
 O método mais utilizado nos cálculos dos circuitos com AmpOp em malha fechada é a Primeira Lei de Kirchhoff (Lei dos Nós), onde as correntes nos terminais de entrada são utilizadas para obter os parâmetros.
 
-* Topologias principais e suas características
+# Topologias principais e suas características
 
 - Seguidor de Tensão (Buffer)
 
