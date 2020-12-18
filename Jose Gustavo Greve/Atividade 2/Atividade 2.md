@@ -22,7 +22,7 @@
 ### g) Um circuito que fornece uma saída baseado na diferença entre duas entradas. Um potenciômetro é utilizado para ajustar o fator de escala do circuito.
 ![](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%202/Amplificador%20para%20instrumenta%C3%A7%C3%A3o.PNG)
 ### 6)
-### 7) Tensão de modo comum de entrada (Vcm) é a média das tensões das entradas do ampop. 
+### 7) Tensão de modo comum de entrada (Vcm) é a média das tensões das entradas do ampop. Na prática, a tensão de saída de um amplificador operacional depende do nível médio, ou de modo comum, do sinal aplicado nas entradas. Esta dependência, designada Ganho de Modo Comum, indica basicamente que a tensão na saída é uma função não apenas da diferença de potencial entre os terminais positivo e negativo da entrada, mas também do nível médio comum a ambos.
 ### 8) Trata-se de uma característica dos amplificadores operacionais. Quando dois sinais da mesma amplitude, frequência e fase são aplicados às entradas (inversora e não inversora) de um operacional eles devem se cancelar e nenhuma saída deve ocorrer.
 ### 9) 
 ### 10) a) As limitações das tensões de entrada e saída são dadas pela tensão de alimentação do amp op que está sendo aplicado no sistema. Quando atinge o valor da tensão de alimentação, ocorre o efeito de saturação, ou seja, a tensão de saída fica limitada ao valor da tensão de alimentação do componente. O AmpOp Rail-to-rail opera assim, tendo o minímo possível de perda no valor de alimentação.
