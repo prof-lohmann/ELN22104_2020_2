@@ -5,7 +5,8 @@
 + É um circuito capaz de amplificar um sinal de entrada, além de poder fazer operações matemáticas como soma, subtração.
 
 2. Mostre os simbolos e as características do AmpOp IDEAL?
-(foto)
+
+![ampop](https://github.com/yannsavordelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/ampop.jpg)
 +  Possui 2 terminais de entrada, um com sinal negativo que e denominado entrada inversora, um terminal com o valor + que e chamada de entrada não inversora, além disso tem 2 outras entradas um é o terminal de alimentação positiva (+vcc), e outro de alimentação negativa (vcc) alem de um terminal de saída.
   Um ampop IDEAL é caracterizado por um ganho infinito em malha aberta, uma rsposta de frequência infinita, impedância de entrada infinita, impedância de saída infinita e insensibilidade a temperatura.
   
