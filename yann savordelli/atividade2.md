@@ -47,6 +47,8 @@ b) Qual erro na tensão de saída com relação CMRR do AmpOp.
 c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.
 
 10. Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
+
+![tabela tensão do ampop](https://github.com/yannsavordelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/10.png)
 + Pelo datasheet do AmpOp OPA192 é mostrado que as tensões de entrada variam entre 0.1V abaixo de Vee e 0.1V acima do Vcc.
 
 a) Defina o que é um AmpOp Rail-to-rail.
@@ -59,9 +61,13 @@ a) Defina o que é um AmpOp Rail-to-rail.
 + A utilização de um potenciômetro nos pinos de ajuste de offset nos AmpOps comercias.
 
 13. O que é a variação da tensão de offset pela temperatura?
+
+![tabela](https://github.com/yannsavordelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/13.png)
 + É justamente a intenção de encontrar o setpoint pela temperatura do AmpOp. Como o offset se trata como um "erro" entre medidas desejadas e medidas encontradas, o offset pode variar de acordo com a temperatura.
 a) Como verificar esse parâmetro no datasheet?
 14. O que são as correntes de polarização(Ibias) de AmpOp?
+
+![tabela](https://github.com/yannsavordelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/14.png)
 + É o valor médio de duas correntes IB+ e IB- de entrada quando uma tensão é aplicada em uma das entradas, sendo a segunda entrada aterrada de forma que Vo = 0
 
 a) Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema. 
