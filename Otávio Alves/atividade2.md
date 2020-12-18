@@ -49,7 +49,7 @@ G=V0/Vi=(-R2/R1)/(1+(R2/R1))/Av
 #### a) o impacto na tensão de saída com relação a tolerância dos resistores no circuito;
 #### b) Qual erro na tensão de saída com relação CMRR do AmpOp.
 - Verificando o datasheet que indica o erro entre 65 e 85db
-![lm321](https://github.com/alvesotavio21/ELN22104_2020_2/tree/prof-lohmann-Alunos_01)
+![lm321](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/lm321.png)
 #### c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.
 ### QUESTÃO 10) Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
 ![datasheetOPA192](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/data%20sheet.png)
