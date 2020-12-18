@@ -53,28 +53,53 @@
 
 #### Topologias para Ampops:
 
->
+> Abaixo temos algumas opcoes de  configuracao de circuitos utilizando  os Amplificadores Operacionais.
 
 ##### Seguidor de Tensão (Buffer):
 
+> O Seguidor de tensao ou seguidor unitario atua como um isolador (buffer). Este circuito fornece um ganho unitario, sem inversao  de polaridade de fase  mantendo a saida com a mesma integridade do sinal de entrada. 
+> Abaixo temos uma ilustracao com o seguidor unitario:
+>
+> ![seguidor_unitario](https://user-images.githubusercontent.com/12564754/102254617-a1ed8f00-3ee7-11eb-9a4e-acc5080b18a2.PNG)
+>
+> Tambem a casos em que o seguidor de tensao possui resistores em serie colocada no terminal nao-inversor para alterar o valor do ganho do ampOp. 
+> Outra utilidade seria para o casamento de impedancias de saidado sistema.
+> Abaixo temos uma ilustracao com o seguidor com resistencias:
+>
+> ![seguidor tensao](https://user-images.githubusercontent.com/12564754/102647610-c5614580-4144-11eb-98d5-6ee4af73ce14.PNG)
 >
 
 ##### Amplificador Inversor:
 
-
+> 
+> Este amplificador é chamado de inversor porque além de amplificar o sinal de entrada, o sinal de saída possui polaridade invertida, ou seja, valores positivos na entrada se tornam valores negativos na saída e vice-versa.
+> Exemplo de Amplificador Inversor:
 >
+> ![inversor](https://user-images.githubusercontent.com/12564754/102647951-69e38780-4145-11eb-96f3-9898952b6e93.PNG)
+
 
 ##### Amplificador Não Inversor:
 
+> 
+> Este amplificador é chamado de nao-inversor porque além de amplificar o sinal de entrada, o sinal de saída nao possui a polaridade invertida
+> Exemplo de Amplificador Nao-Inversor:
+>
+> ![nao inversor](https://user-images.githubusercontent.com/12564754/102648330-132a7d80-4146-11eb-9368-bf43135b1faf.PNG)
 >
 
 ##### Amplificador Somador Inversor:
 
+> O amplificador somador inversor realiza o somatórios das tensões que entram no terminal inversor, resultando na saida o resultado desta operacao.
+> Exemplo de Amplificador Somador Inversor: 
 >
+>![somador_inversor](https://user-images.githubusercontent.com/12564754/102648755-d9a64200-4146-11eb-9924-81b4634fb6e3.PNG)
 
 ##### Amplificador Somador Não Inversor:
 
+> O amplificador somador Nao-inversor realiza o somatórios das tensões que entram no nao-terminal inversor, resultando na saida o resultado desta operacao.
+> Exemplo de Amplificador Somador Inversor: 
 >
+> ![somador-naoinver](https://user-images.githubusercontent.com/12564754/102648998-3dc90600-4147-11eb-8479-bab8e12d9142.PNG)
 
 ##### Subtrator:
 
@@ -122,7 +147,7 @@
 
 ### Tensão de offset em Ampops
 
->
+> 
 
 ### Corrente de offset na polarização dos AmpOp
 
@@ -138,5 +163,5 @@
 
 #### Variação da tensão de offset pela temperatura
 
->
+> 
 
