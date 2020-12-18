@@ -34,6 +34,11 @@
 ![instrumentação](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/instrumenta%C3%A7%C3%A3o.png)
 - Os amplificadores para instrumentação se caracterizam por ter uma entrada diferencial e uma elevadíssima impedância de entrada que é conseguida reduzindo-se o ganho da primeira etapa, normalmente funcionando como seguidor de tensão
 ### QUESTÃO 6) Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor
+- A Equação de um Ampop ideal seria V0 = Av(V+ - V-) onde Av seria o ganho em malha aberta. Numa situação ideal, Av é infinito, logo, no problema proposto, ele deve ser considerado nas equações, alterando as mesmas.
+- Não-Inversor
+G= V0/Vi=(1+(R2/R1))/(1+(R2/R1))/Av
+- Inversor
+G=V0/Vi=(-R2/R1)/(1+(R2/R1))/Av
 ### QUESTÃO 7)  Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
  - A tensão comum é definida como a tensão média nos pinos de entrada inversora e não inversora. Se a tensão do modo comum ficar muito alta ou muito baixa, as entradas serão fechadas para baixo e a operação adequada cessa.De forma ideal, a tensão de modo comum é nula e o seu efeito nas topologias se trata de um acréscimo indesejado na tensão de saída de Vo.
 ### QUESTÃO 8) O que é CMRR?
@@ -43,6 +48,8 @@
 ### QUESTÃO 9) Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
 #### a) o impacto na tensão de saída com relação a tolerância dos resistores no circuito;
 #### b) Qual erro na tensão de saída com relação CMRR do AmpOp.
+- Verificando o datasheet que indica o erro entre 65 e 85db
+![lm321](https://github.com/alvesotavio21/ELN22104_2020_2/tree/prof-lohmann-Alunos_01)
 #### c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.
 ### QUESTÃO 10) Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
 ![datasheetOPA192](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/data%20sheet.png)
