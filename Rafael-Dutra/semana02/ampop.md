@@ -32,9 +32,9 @@ Ganho em Malha Fechada:
 
 ### Cálculo do ganho em Malha Fechada
 
-Para obter a relação entrada-saída podemos aplicar lei de kirchhoff das correntes, e percorrer a malha.
+Para obter a relação entrada-saída podemos aplicar lei de kirchhoff das correntes, e percorrer a malha. Esse exemplo mostra como obter o ganho de um Ampop inversor:
 
-![exemplo de como obter ganho em malha fechada]()
+![Exemplo de como obter ganho em malha fechada](mf.md)
 
 ### Ganho finito de Malha aberta (Av)
 
@@ -58,7 +58,7 @@ Amplificador Não-Inversor com ganho 10V/V
 
 
 
-## topologias de AmpOps :
+## Topologias de AmpOps :
 
 + Seguidor de Tensão
     - Saída igual a entrada, ganho unitário.
@@ -94,7 +94,7 @@ Amplificador Não-Inversor com ganho 10V/V
     Vout = V2 - V1
 
 + Amplificador de Instrumentação
-    - 
+    - gkkuy
 
 ## Tensão de modo comum
 
