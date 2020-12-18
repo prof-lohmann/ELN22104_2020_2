@@ -64,6 +64,19 @@ Quando tratamos de amplificadores de diferenças utilizamos a fórmula Vo=Ad*Vd 
 
 * Razão de Rejeição de Modo Comum (CMRR)
 
+A eficiência de um ampOp é mensurada pela razão entre os ganhos de entrada diferencial e de modo comum. Razão esta que é definida como CMRR = 20log (|Ad|/|Acm|).
+
+* Amplificador Operacional Rail-to-rail
+
+Esses tipos de amplificadores tem como característica 
+
+* Tensão de Desvio (Offset)
+
+Por definção, a tensão de offset é a tensão que aparece no terminal de saída (na ordem de milivolts) quando os terminais de entrada são curtocircuitados e causa um desiquilibrio  interno. A solução para esse desequilibrio é conectar uma fonte de tensão de mesma amplitude, mas de polaridade oposta, ao valor da tensão de offset.
+
+
+
+
 
 
 
