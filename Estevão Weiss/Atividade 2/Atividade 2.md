@@ -46,6 +46,14 @@ Amplificador Somador Não Inversor
 A topologia do somador não inversor tem como sua principal característica a soma de dois ou mais sinais de entrada junto com o ganho descrito na fórmula da imagem acima.
 
 Amplificador Substrator
+---------Subtrator---------
+
+Como o nome já diz, essa topologia substrai sinais de entrada de acordo com a fórmula descrita na imagem acima.
+
+Amplificador de Instrumentação
+---------- Amplificador de instrumentação--------------
+
+Esta configuração é uma junção de topologias, nela temos um amplificador subtrator em conjunto com dois amplificadores inversores. O controle do ganho é feito através da variação da resistência Rg, como pode ser visto na fórmula descrita na imagem.
 
 
 
