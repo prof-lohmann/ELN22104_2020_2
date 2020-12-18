@@ -38,6 +38,16 @@ O ampOp não inversor, como o nome já diz, não inverte o sinal de entrada e te
 Amplificador Somador Inversor
 ----------IMAGEM DO SOMADOR INVERSOR---------
 
+A topologia do somador inversor tem como sua principal característica a soma de dois ou mais sinais de entrada, junto com a inversão desses sinais e o ganho descrito na fórmula da imagem acima.
+
+Amplificador Somador Não Inversor 
+----------SOMADOR NÃO INVERSOR------------
+
+A topologia do somador não inversor tem como sua principal característica a soma de dois ou mais sinais de entrada junto com o ganho descrito na fórmula da imagem acima.
+
+Amplificador Substrator
+
+
 
 
 
