@@ -32,8 +32,9 @@ g) Amplificador de Instrumentação;
 + Faz o tratamento de sinais cm baixa variação de tensão.
 
 6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.
-a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB. 
-b) Dica veja o problema 2.20 pg 83 do livro texto.
++ A Equação de um Ampop ideal seria V0 = Av(V+ - V-) onde Av seria o ganho em malha aberta. Numa situação ideal, Av é infinito, logo, no problema proposto, ele deve ser considerado nas equações, alterando as mesmas.
++ Não-Inversor G= V0/Vi=(1+(R2/R1))/(1+(R2/R1))/Av
++ Inversor G=V0/Vi=(-R2/R1)/(1+(R2/R1))/Av
 
 7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
 + A tensão comum é definida como a tensão média nos pinos de entrada inversora e não inversora. Se a tensão do modo comum ficar muito alta ou muito baixa, as entradas serão fechadas para baixo e a operação adequada cessa. De forma ideal, a tensão de modo comum é nula e o seu efeito nas topologias se trata de um acréscimo indesejado na tensão de saída de Vo.
