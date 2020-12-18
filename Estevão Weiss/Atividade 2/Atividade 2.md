@@ -72,7 +72,9 @@ Esses tipos de amplificadores tem como característica
 
 * Tensão de Desvio (Offset)
 
-Por definção, a tensão de offset é a tensão que aparece no terminal de saída (na ordem de milivolts) quando os terminais de entrada são curtocircuitados e causa um desiquilibrio  interno. A solução para esse desequilibrio é conectar uma fonte de tensão de mesma amplitude, mas de polaridade oposta, ao valor da tensão de offset.
+Por definção, a tensão de offset é a tensão que aparece no terminal de saída (na ordem de milivolts) quando os terminais de entrada são curtocircuitados e causa um desiquilibrio  interno. A solução para esse desequilibrio é conectar uma fonte de tensão de mesma amplitude, mas de polaridade oposta, ao valor da tensão de offset. Vale ressaltar que mesmo conseguindo anular a tensão de offset conectando um fonte auxiliar, a variação de temperatura também faz aparece esse desequilíbrio, sendo esse coeficiente expresso no datasheet  em  uV/C°.
+
+* Correntes de Polarização (
 
 
 
