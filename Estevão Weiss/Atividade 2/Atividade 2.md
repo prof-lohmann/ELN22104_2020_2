@@ -55,6 +55,19 @@ Amplificador de Instrumentação
 
 Esta configuração é uma junção de topologias, nela temos um amplificador subtrator em conjunto com dois amplificadores inversores. O controle do ganho é feito através da variação da resistência Rg, como pode ser visto na fórmula descrita na imagem.
 
+* Questão 6!!!!!!!!!!!!!!!!!!!!
+Até agora todas as nossas análises foram feitas através de modelos de ampOps ideias, com suas características ideais, que fazem com que o ganho do amplificador tenda ao infinito. Como na prática não existem modelos ideais, os ampOps reais têm suas NÃO-IDEALIDADES, obviamente não se consegue ganhos infinitos e a limitação de ganho de um ampOp real fica na ordem de 10^5 a 10^6.
+
+* Tensão de Modo Comum (Vcm)
+
+Quando tratamos de amplificadores de diferenças utilizamos a fórmula Vo=Ad*Vd + Acm*Vcm, onde Ad e Vd são, respectivamente, o ganho e a entrada diferencial do ampOp (a parcela útil que será amplificada) e Acm e Vcm são o ganho de modo comum (idealmente nulo) e a entrada de modo comum, sendo as duas últimas as parcelas rejeitadas (não amplificadas) pelo ampOp.
+
+* Razão de Rejeição de Modo Comum (CMRR)
+
+
+
+
+
 
 
 
