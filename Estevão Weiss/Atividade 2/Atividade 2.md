@@ -62,8 +62,16 @@ Como o nome já diz, essa topologia substrai sinais de entrada de acordo com a f
 
 Esta configuração é uma junção de topologias, nela temos um amplificador subtrator em conjunto com dois amplificadores inversores. O controle do ganho é feito através da variação da resistência Rg, como pode ser visto na fórmula descrita na imagem.
 
-* Questão 6!!!!!!!!!!!!!!!!!!!!
-Até agora todas as nossas análises foram feitas através de modelos de ampOps ideias, com suas características ideais, que fazem com que o ganho do amplificador tenda ao infinito. Como na prática não existem modelos ideais, os ampOps reais têm suas NÃO-IDEALIDADES, obviamente não se consegue ganhos infinitos e a limitação de ganho de um ampOp real fica na ordem de 10^5 a 10^6.
+------------------------------------------------------------------------------------------------------------
+
+* Ganho em Malha Aberta Finito
+
+Até agora as nossas análises foram feitas através de modelos de ampOps ideias, com suas características ideais, que fazem com que o ganho do amplificador tenda ao infinito. Como na prática não existem modelos ideais, os ampOps reais têm suas NÃO-IDEALIDADES, obviamente não se consegue ganhos infinitos e a limitação de ganho de um ampOp real fica na ordem de 10^5 a 10^6.
+
+* Resolução Questão 6)
+
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/quest%C3%A3o%206%20-1.jpg?raw=true)
+![](https://github.com/estevaoweiss/ELN22104_2020_2/blob/main/Estev%C3%A3o%20Weiss/Atividade%202/quest%C3%A3o%206%20-2.jpg?raw=true)
 
 * Tensão de Modo Comum (Vcm)
 
@@ -75,13 +83,15 @@ A eficiência de um ampOp é mensurada pela razão entre os ganhos de entrada di
 
 * Amplificador Operacional Rail-to-rail
 
-Esses tipos de amplificadores tem como característica 
+Esses tipos de amplificadores tem como característica principal o "ajusta automático" da tensão de saída de acorda com as tensões de alimentação do ampOp.
 
 * Tensão de Desvio (Offset)
 
 Por definção, a tensão de offset é a tensão que aparece no terminal de saída (na ordem de milivolts) quando os terminais de entrada são curtocircuitados e causa um desiquilibrio  interno. A solução para esse desequilibrio é conectar uma fonte de tensão de mesma amplitude, mas de polaridade oposta, ao valor da tensão de offset. Vale ressaltar que mesmo conseguindo anular a tensão de offset conectando um fonte auxiliar, a variação de temperatura também faz aparece esse desequilíbrio, sendo esse coeficiente expresso no datasheet  em  uV/C°.
 
-* Correntes de Polarização (
+* Correntes de Polarização
+
+São correntes indesejáveis que surgem, naturalmente, com a aplicação de tensões nas entradas. Uma maneira que anular essas correntes é aterrar os terminais de entrada para que essas correntes não circulem internamente pelo ampOp.
 
 
 
