@@ -56,19 +56,19 @@ Eletrônica I</b>
 ---
 
 <b>6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.</b><br>
-<b>a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/Ve -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.<br></b>
+<b>a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/Ve -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.<br></b>
 *Imagem será colocada.*<br>
-<b>b) Dica veja o problema 2.20 pg 83 do livro texto.</b><br><br>
+<b>b) Dica veja o problema 2.20 pg 83 do livro texto.</b><br>
 
 ---
 
 <b>7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas</b><br>
-*A tensão comum é basicamente a tensão média nos pinos de entrada inversora e não inversora. Se a tensão do modo comum ficar muito alta ou muito baixa, as entradas serão fechadas para baixo e a operação adequada irá parar.*<br><br>
+*A tensão comum é basicamente a tensão média nos pinos de entrada inversora e não inversora. Se a tensão do modo comum ficar muito alta ou muito baixa, as entradas serão fechadas para baixo e a operação adequada irá parar.*<br>
  
  ---
  
 <b>8. O que é CMRR?</b><br>
-*CMRR trata-se de uma característica dos amplificadores operacionais. Quando dois sinais da mesma amplitude, freqüência e fase são aplicados às entradas (inversora e não inversora) de um operacional eles devem se cancelar e nenhuma saída deve ocorrer.*<br><br>
+*CMRR trata-se de uma característica dos amplificadores operacionais. Quando dois sinais da mesma amplitude, freqüência e fase são aplicados às entradas (inversora e não inversora) de um operacional eles devem se cancelar e nenhuma saída deve ocorrer.*<br>
  
  ---
  
@@ -79,7 +79,7 @@ Eletrônica I</b>
 <b>b) Qual erro na tensão de saída com relação CMRR do AmpOp</b><br>
 *Imagem será colocada.*<br>
 <b>c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM). Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%</b><br>
-*Imagem será colocada.*<br><br>
+*Imagem será colocada.*<br>
  
 ---
 
@@ -91,17 +91,17 @@ Eletrônica I</b>
 ---
 
 <b>11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?</b><br>
-*A tensão de offset faz com que apareça um deslocamento no nível CC do sinal de saída, poderiamos calcular aplicando um ground em ambas de suas entradas.*<br><br>
+*A tensão de offset faz com que apareça um deslocamento no nível CC do sinal de saída, poderiamos calcular aplicando um ground em ambas de suas entradas.*<br>
 
 ---
 
 <b>11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?</b><br>
-*Este componente tem como principal característica a capacidade de aproveitar praticamente todo o range de alimentação em sua saída, na prática contando com apenas alguns mV de perda entre os limites de alimentação*<br><br>
+*Este componente tem como principal característica a capacidade de aproveitar praticamente todo o range de alimentação em sua saída, na prática contando com apenas alguns mV de perda entre os limites de alimentação*<br>
 
 ---
 
 <b>12. Como minimizar o efeito da tensão de offset?</b><br>
-*A utilização de um potenciômetro nos pinos de ajuste de offset em qualquer AmpOp*<br><br>
+*A utilização de um potenciômetro nos pinos de ajuste de offset em qualquer AmpOp*<br>
 
 ---
 
