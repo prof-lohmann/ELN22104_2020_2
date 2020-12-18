@@ -55,10 +55,10 @@ Em (1) sabemos que a impedância é muito alta, ou seja, não há corrente que v
 > V0 = - (R2/R1)*V1
 
 
-## c. **Amplificador Não Inversor**
-
+c. **Amplificador Não Inversor**
 
 ![Ex5c](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex5c.png)
+
 Desta vez, a entrada inversora está aterrada. Como a diferença de potêncial em (1) continua sendo zero, a corrente flue de V0 para o terra (3). As correntes são novamente as mesmas para as resistores.
 > V0 = V1 [1 + (R2/R1)]
 
