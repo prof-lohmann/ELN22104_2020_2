@@ -87,6 +87,8 @@ O CMRR é a relação de rejeição de modo comum.  De forma ideal, quando dois 
 
 ### Questão 12: Como minimizar o efeito da tensão de offset?
 
+Para minimizar o efeito da tensão de offset é necessário conectar à entrada do ampop uma fonte de tensão de mesmo valor, porém com polaridade oposta. Desta forma, idealmente uma iria anular a outra, entretanto, na prática existem outros efeitos geram alterações, como a variação da temperatura e as correntes indesejadas.
+
 ### Questão 13: O que é a variação da tensão de offset pela temperatura?
 
 Idealmente, um amp op não sofre alteração no seu comportamento devido à variação da temperatura, porém na prática, a mudança de temperatura pode provocar muitas alerações no comportamento de um Amplificador operacional. A este efeito damos o nome de DRIFT.
