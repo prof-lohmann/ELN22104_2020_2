@@ -46,13 +46,18 @@ Um circuito _buffer_ fornece um meio de isolar um sinal de entrada de uma carga 
 ![Ex5a](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex5a.png)
 
 ​	b. **Amplificador Inversor**
+
 ![Ex5b](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%2002%20-%20Ex5b.png)
+
 
 Considerando que o ganho nessa configuração em malha fechada será G = V0/V1.
 Em (1) sabemos que a impedância é muito alta, ou seja, não há corrente que vá para a entrada inversora. A corrente i1 é a mesma de i2. Logo:
 > V0 = - (R2/R1)*V1
 
+
 ## c. **Amplificador Não Inversor**
+
+
 ![Ex5c](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex5c.png)
 Desta vez, a entrada inversora está aterrada. Como a diferença de potêncial em (1) continua sendo zero, a corrente flue de V0 para o terra (3). As correntes são novamente as mesmas para as resistores.
 > V0 = V1 [1 + (R2/R1)]
