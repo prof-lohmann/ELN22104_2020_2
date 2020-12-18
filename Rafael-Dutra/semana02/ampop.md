@@ -40,81 +40,93 @@ Para obter a relação entrada-saída podemos aplicar lei de kirchhoff das corre
 
 Ao considerarmos um ganho finito não podemos considerar que V+ = V-, então por exemplo o ganho do AmpOp não-inversor se torna:
 
-![Ganho finito em Malha Aberta de um não-Inversor](./img/gfninv.png)
+![Ganho finito em Malha Aberta de um não-Inversor](./img/inv_ganhofinito.jpeg)
 
 Se Av tende ao infinito voltamos ao ganho:
 
-    G = 1 + R2/R1
+![Ganho não inversor ideal](./img/ganhoideal.jpeg)
 
 Também para o AmpOp inversor o ganho é alterado:
 
-![Ganho finito em Malha Aberta de um Inversor](./img/gfinv.png)
+![Ganho finito em Malha Aberta de um Inversor](./img/ninv_ganhofinito.jpeg)
 
 Influência do ganho de Malha Aberta finito para ganhos em Malha Fechada:
 
-Modelo       | Ganho Ideal (v/v)  | Ganho Av  (dB) | Ganho M.F. (v/v)  | Erro  
+Modelo       | Ganho Ideal v/v    | Ganho Av  dB   | Ganho M.F. v/v    | Erro  %
 :-----------:| :-----------------:|:--------------:| :----------------:|:-------:
-Não Inversor |  10                | 20             |  5                | 50 %
-Inversor     | -10                | 20             | -4,76             | 52,4 %
-Não Inversor |  1000              | 20             |  9,9              | 10001 %
-Inversor     | -1000              | 20             | -9,9              | 10001 %
-Não Inversor |  10                | 120            |  9,9999           | 0,001 %
-Inversor     | -10                | 120            | -9,9999           | 0,001 %
-Não Inversor |  1000              | 120            |  999              | 0,1 %
-Inversor     | -1000              | 120            | -999              | 0,1 %
+Não Inversor |  10                | 20             |  5                | 50 
+Inversor     | -10                | 20             | -4,76             | 52,4 
+Não Inversor |  1000              | 20             |  9,9              | 10001 
+Inversor     | -1000              | 20             | -9,9              | 10001 
+Não Inversor |  10                | 120            |  9,9999           | 0,001 
+Inversor     | -10                | 120            | -9,9999           | 0,001 
+Não Inversor |  1000              | 120            |  999              | 0,1 
+Inversor     | -1000              | 120            | -999              | 0,1 
 
 ## Topologias de AmpOps :
 
-+ Seguidor de Tensão
-    - Elevada impedância de entrada, idealmente infinita
-    - Baixa impedância de saída, idealmente nula
-    - Saída igual a entrada, ganho unitário.
+### Seguidor de Tensão
++ Elevada impedância de entrada, idealmente infinita
++ Baixa impedância de saída, idealmente nula
++ Saída igual a entrada, ganho unitário.
     
     G = 1
 
-+ Amplificador Inversor
-    - Ganho negativo.
+### Amplificador Inversor
++ Ganho negativo.
 
     G = - R2/R1
 
-+ Amplificador Não Inversor
-    - Ganho positivo.
+### Amplificador Não Inversor
++ Ganho positivo.
 
     G = (R1 + R2)/R1
 
-+ Amplificador Somador Inversor
-    - Saída é o valor inverso da soma ponderada das entradas
+### Amplificador Somador Inversor
++ Saída é o valor inverso da soma ponderada das entradas
 
     Vout = - Rf (V1/R1 + V2/R2 + ... + Vn/Rn)
 
-+ Amplificador Somador Não Inversor
-    - Saída corresponde a soma ponderada das entradas
-    - Caso os valores de resistores sejam iguais temos:
+### Amplificador Somador Não Inversor
++ Saída corresponde a soma ponderada das entradas
++ Caso os valores de resistores sejam iguais temos:
 
     Vout = [1/(n + 1)] (V1 + V2 + ... + Vn)
 
-+ Amplificador Subtrator
-    - Baixa impedância de entrada
-    - Saída corresponde a subtração das entradas
-    - Caso os valores de resistores sejam iguais temos:
+### Amplificador Subtrator
++ Baixa impedância de entrada
++ Saída corresponde a subtração das entradas
++ Caso os valores de resistores sejam iguais temos:
 
     Vout = V2 - V1
 
-+ Amplificador de Instrumentação
-    - Um circuito que funciona como um Subtrator mas com elevada impedância
-    - É possivel controlar o ganho alterando o valor de apenas um único resistor  
+### Amplificador de Instrumentação
++ Um circuito que funciona como um Subtrator mas com elevada impedância
++ É possivel controlar o ganho alterando o valor de apenas um único resistor  
 
 ## Tensão de modo comum
 
-oq é
+É o valor das tensões de entrada do AmpOp.
 
-considerando um amplificador subtrator com ganho 1000, usar um ex com 1% e 5% de erro nos resistores
+![Definição de tensão de modo comum](./img/vcm.png)
+
+Esse valor gera um erro na saída do AmpOp, esse erro é proprocional a tensão de modo comum e é chamado de ganho em modo comum.
+
+Considerando um amplificador subtrator com ganho 1000, temos:
+
+![Calculo de modo comum]()
+
+, usar um ex com 1% e 5% de erro nos resistores
 
 ## CMRR
 
 É a razão de rejeição de modo comum, pode ser utilizada para medir a eficácia de um amplificador subtrator e é definida como:
 
-    CMRR = 20log (Ad/Acm)
+![Definição de CMRR](./img/cmrr.png)
+
+Ad - ganho diferencial
+
+Acm - ganho em modo comum 
 
 impacto do erro dos resistores no CMRR usando como exemplo o ampop subtator anterior
 
@@ -124,11 +136,9 @@ AmpOp Rail-to-rail
 
 ## Tensão de *offset*
 
-É uma  tensão que surge devido a um desequilíbrio CC, ela pode ser medida ao observar a saída do AmpOp ao anularmos as entradas. 
+É uma  tensão que surge devido a um desequilíbrio CC interno ao AmpOp , sua consequência pode ser observada na saída do AmpOp ao anularmos as entradas. 
 
 Para minimizar o efeito da tensão de *offset* é possivel adicionar a entrada do AmpOp uma fonte de mesmo valor mas polaridade oposta a tensão de *offset*.   
-
-![como calcular num ampo inversor]()
 
 variação com a temperatura
 
