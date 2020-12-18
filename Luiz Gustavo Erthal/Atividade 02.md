@@ -28,7 +28,12 @@ Diferentemente da de malha aberta, esta é uma configuração em que o amplifica
 
 ![Ex4](https://github.com/LGErthal/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Luiz%20Gustavo%20Erthal/Images/Atividade%202%20-%20Ex4.png)
 
-Assumindo que se trata de um AmpOp 
+Assumindo que se trata de um AmpOp ideal, com ganho infinito, um curto-circuito virtual existe entre os dois terminais de entrada. 
+Ou seja, (1) Vld = 0. Não há corrente na entrada inversora. O resistor R2 e resistor R1 compartilham da mesma corrente. Podemos então calcular o ganho a partir desses dois.
+
+> V0 = V1 + (V1/R1)*R2
+
+> V0 = V1*[1 + (R2/R2)]
 
 ### 5. Descreva as principais características das topologias:
 
