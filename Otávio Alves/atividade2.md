@@ -26,8 +26,8 @@
 - O amplificador somador é um circuito com AMPOP que permite realizar a soma de dois ou mais sinais.O amplificador somador é uma variação do amplificador inversor. Facilmente podemos ver a semelhança no circuito e no sinal de saída, que de fato, possui polaridade invertida em relação aos sinais de entrada.
 ![somador-inversor](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/somador-inversor.png)
 e) Amplificador Somador Não inversor;
-
-- 
+[somador-nao-inversor](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/somador%20nao-inversor.png)
+- A diferença entre o somador inversor é de que as tensões de entrada serão aplicadas ao terminal inversor do ampop.
 
 f) Subtrator;
 
