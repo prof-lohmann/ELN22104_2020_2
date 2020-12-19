@@ -113,5 +113,13 @@ Idealmente, um amp op não sofre alteração no seu comportamento devido à vari
 No manual dos fabricantes podemos encontrar informações sobre o comportamento da tensão e da corrente conforme a variação de temperatura. Normalmente, a variação de corrente é representada por ΔI/Δt e seu valor é dado em nA/°C e a variação de tensão é representada por ΔV/Δt e seu valor é fornecido em uV/°C.
 
 ### Questão 14: O que são as correntes de polarização (Ibias) de AmpOp?
+
+As correntes de polarização são correntes indesejadas que entram ou saem da entrada do AmpOp devido às correntes de base ou de fuga dos transistores.
+
 #### Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema.
+
+Da mesma forma que a tensão de offset, é possível adicionar uma fonte de corrente com a mesma amplitude, frequência e fase da corrente de polarização, porém de sentido oposto, com o objetivo de minimizar o efeito indesejado. É possível que a soma da corrente de polarização com a fonte de corrente não resulte em 0, pois estamos tratando de AmpOps não ideias, desta forma, podemos adicionar um resistor ao ciruito de forma a mitigar com o problema.
+
 #### Descreva a corrente de offset na polarização dos AmpOp.
+
+Como já dito anteriormente, o amplificador operacional apresenta impedância de entrada infinita, já os ampops não ideais apresentam correntes de polarização nas suas entradas. Como na prática a simetria de entrada não é perfeita, as duas correntes de polarização são diferentes. A corrente de offset é dada pelo módulo da diferença entre as duas correntes de polarização.
