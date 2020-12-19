@@ -90,6 +90,10 @@ Esta configuração permite que tenhamos uma tensão de saída igual a diferenç
 
 #### Amplificador de Instrumentação;
 
+![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Amplificador%20de%20instrumenta%C3%A7%C3%A3o-.JPG)
+
+_Figura 9._
+
 O amplificador de instrumentação, representado na figura abaixo, é composto por dois amplificadores não inversores e um amplificador diferença. Desta forma, a resistência de entrada vista por cada uma das fontes é infinita e o ganho de tensão é dado pelo produto de dois cocientes entre as resistências.
 
 ### Questão 6:Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor. 
