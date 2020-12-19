@@ -57,6 +57,6 @@ Características: Impedância de entrada infinita, ganho em malha aberta (Av) in
 ## Questão 13
 
 ### Datasheet:
- Achando o Vio, você obtém a Tensão de offset na entrada.
+ Achando o _Vio_, você obtém a Tensão de offset na entrada.
 ## Questão 14
  Os amplificadores operacionais apresentarem uma resistência de entrada não infinita, característica que se associa apenas aos sinais dinâmicos aplicados, a natureza própria dos transístores obriga à existência de correntes não nulas através dos terminais de entrada, V+ e V-, designadas correntes de polarização, as quais, por acção do desemparelhamento inexorável entre componentes, são, também, distintas entre si, estas correntes associam-se à corrente na base dos transístores bipolares, e às correstes de fuga ou de saturação inversa nos transístores de efeito de campo.
