@@ -36,63 +36,65 @@ Malha aberta nada mais é do que um Amp Op sem realimentação da saída para a 
 
 ### Questão 4: Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.
 
-Adicionar a foto da resolução.
+![Figura_3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/C%C3%A1lculo%20do%20Inversor.jpeg)
+
+_Figura 3._
 
 ### Questão 5: Descreva as principais características das topologias:
 
 #### Seguidor de Tensão (Buffer);
 
-![Figura_3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Buffer.JPG)
+![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Buffer.JPG)
 
-_Figura 3._
+_Figura 4._
 
 O Seguidor de tensão é obtido através de um Amp Op com configuração não inversora com R1 = oo e R2 = 0, para obtermos o amplificador de ganho unitário. Este circuito é chamado de seguidor de tensão visto que a saída “segue” a entrada.
 
 #### Amplificador Inversor;
 
-![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Inversor.JPG)
+![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Inversor.JPG)
 
-_Figura 4._
+_Figura 5._
 
 A configuração Inversora consiste em um Amp Op e dois resistores R1 e R2. O resistor 2 é conectado entre o terminal de saída (3) e o terminal da entrada inversora (1), o que caracteriza uma realimentação negativa. Podemos observar que R2 fecha a malha em torno do Amplificador. Outra característica importante desta configuração é que o terminal 2 é aterrado e um resistor R1 é conectado entre o terminal 1 e uma fonte de sinal de entrada com tensão V1.
 
 #### Amplificador não inversor;
 
-![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/N%C3%A3o%20inversor.JPG)
+![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/N%C3%A3o%20inversor.JPG)
 
-_Figura 5._
+_Figura 6._
 
 Nesta configuração, o sinal de entrada V1 é conectado diretamente ao terminal de entrada positivo do Amp Op e o Resistor 1 é conectado ao terra.
 
 #### Amplificador Somador Inversor;
 
-![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20inversor.JPG)
+![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20inversor.JPG)
 
-_Figura 6._
+_Figura 7._
 
 Esta configuração, conforme a figura abaixo, é um circuito responsável por somar algebricamente as n tensões, cada uma multiplicada por um ganho constante, ou seja, cada entrada gera um ganho à saída. É importante citar que nesta modelo, as n entradas são conectadas os terminal 1, ou entrada inversora.
 
 #### Amplificador Somador Não Inversor;
 
-![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20nao%20inversor.JPG)
+![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20nao%20inversor.JPG)
 
-_Figura 7._
+_Figura 8._
 
 O circuito do somador não inversor assemelha-se muito ao somador inversor, porém, neste caso as n entradas são conectadas ao terminal 2, ou entrada não inversora, por isso a tensão de saída não sofre inversão de sinal.
 
 #### Subtrator;
 
-![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Subtrator.JPG)
+![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Subtrator.JPG)
 
-_Figura 8._
+_Figura 9._
 
 Esta configuração permite que tenhamos uma tensão de saída igual a diferença entre as duas entradas multiplicada por um ganho.
 
 #### Amplificador de Instrumentação;
 
-![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Amplificador%20de%20instrumenta%C3%A7%C3%A3o-.JPG)
+![Figura_10](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Amplificador%20de%20instrumenta%C3%A7%C3%A3o-.JPG)
 
-_Figura 9._
+_Figura 10._
 
 O amplificador de instrumentação, representado na figura abaixo, é composto por dois amplificadores não inversores e um amplificador diferença. Desta forma, a resistência de entrada vista por cada uma das fontes é infinita e o ganho de tensão é dado pelo produto de dois cocientes entre as resistências.
 
@@ -100,7 +102,7 @@ O amplificador de instrumentação, representado na figura abaixo, é composto p
 
 Idealmente o ganho em malha aberta tendem ao infinito, porém, na prática, os ampops apresentam características não ideais bem como, tensão de offset e corrente de polarização o que não possibilita ganhos infinitos.
 
-Adicionar a foto da resolução.
+
 
 #### Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
 
@@ -119,6 +121,14 @@ O CMRR é a relação de rejeição de modo comum.  De forma ideal, quando dois 
 ### Questão 10: Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet. 
 
 Os Amplificadores Operacionais apresentam limitações de tensão de entrada e de saída pois, na prática, eles apresentam características não ideais, o que acaba limitando sua área de funcionamento.
+
+![Figura_10](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Lm741.JPG)
+
+_Figura 10._
+
+![Figura_11](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Datasheet.JPG)
+
+_Figura 11._
 
 #### Defina o que é um AmpOp Rail-to-rail.
 
