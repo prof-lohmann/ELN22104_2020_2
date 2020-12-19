@@ -76,7 +76,9 @@ Para reduzir o efeito da tensão de offset é utilizado um divisor de tensão co
 ## a) Como verificar esse parâmetro no datasheet?
 No AmpOp ideal não há sensibilidade a temperatura, porém na não idealidade a variação da tensão de offset pela temperatura acontece quando existe uma variação de temperatura no ambiente que acaba causando o aumento das características elétricas do amplificador. 
 a) Como verificar esse parâmetro no datasheet?
-Nos datasheet podemos indentificar através do termo "input offset voltage drift" como mostrada na imagem abaixo
+No datasheet podemos indentificar através do termo "input offset voltage drift" como mostrada na imagem abaixo
+
+![Datasheet](https://github.com/larissasander/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Exemplo%20ATV%202%20-%2013.jpg)
 
 
 ## 14) O que são as correntes de polarização(Ibias) de AmpOp?
