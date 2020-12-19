@@ -13,6 +13,12 @@ O ganho de malha aberta, não há realimentação entre a saída e a entrada, o 
 
 ## 4) Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada
 
+![Exemplo](https://github.com/larissasander/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Exemplo%20ATV%202-4.jpg)
+
+Utilizando o exemplo do capítulo 2 do livro texto, o circuito mostrado na imagem está em malha fechada, pois o resistor R2 gera a realimentação entra a entrada inversora e a saída. Determinando o ganho G da malha como G = V out/v1, temos que Vout/V1 = -R2/R1. Conseguimos então calcular a corrente i1 pela equação i1 = V1/R1 e como o ganho não é infinito, a tensão de entrada é Vout/A. Temos então que i1 = [v1-(-Vout/A)/R1 = (V1+ Vout/A)R1.
+
+A tensão de saída vai ser G = Vout/V1 = (-R2/R1)/[1+(1+R2/R1/A)
+
 ## 5) Descreva as principais características das topologias:
 
 ## a) Seguidor de Tensão (Buffer):
@@ -53,11 +59,12 @@ CMRR significa rejeição de Modo Comum, os sinais opostos nas entradas são alt
 ## b) Qual erro na tensão de saída com relação CMRR do AmpOp.
 ## c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.
 
+
 ## 10) Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
+A saída de um AmpOp é no máximo o valor de alimentação positivo do AmpOp, sendo que este valor é chamado de saturação do AmpOp, isto é o que ocorre em teoria. Já na prática, temos que a saturação é 90% o valor de alimentação positiva.
+
 ## a) Defina o que é um AmpOp Rail-to-rail.
 AmpOp Rail-to-rail possui tensão na saída que alcança o mesmo nível que as tensões de alimentação do AmpOp, neste amplificador temos que a saturação ocorre somente no limite do valor de alimentação, positiva e negativa.
-
-
 
 ## 11) O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?
 Em um AmpOp ideal, a saída é nula quando suas entradas estão em curto circuito. Já no AmpOp real, a saída pode ser diferente de zero quando as duas entradas estão no potencial zero, isso quer dizer que existe uma tensão CC equivalente na entrada que é chamada de tensão offset, o valor desta tensão está geralmente situada na faixa de 1 a 100mV. Podemos calcular através da seguinte equação Vo (offset) = V10*([R1+Rf)/R1)
@@ -67,8 +74,10 @@ Para reduzir o efeito da tensão de offset é utilizado um divisor de tensão co
 
 ## 13) O que é a variação da tensão de offset pela temperatura?
 ## a) Como verificar esse parâmetro no datasheet?
+No AmpOp ideal não há sensibilidade a temperatura, porém na não idealidade a variação da tensão de offset pela temperatura acontece quando existe uma variação de temperatura no ambiente que acaba causando o aumento das características elétricas do amplificador. 
+a) Como verificar esse parâmetro no datasheet?
+Nos datasheet podemos indentificar através do termo "input offset voltage drift" como mostrada na imagem abaixo
 
-É justamente a intenção de encontrar o setpoint pela temperatura do AmpOp. Como o offset se trata como um "erro" entre medidas desejadas e medidas encontradas, o offset pode variar de acordo com a temperatura. a) Como verificar esse parâmetro no datasheet?
 
 ## 14) O que são as correntes de polarização(Ibias) de AmpOp?
 ## a) Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema.
