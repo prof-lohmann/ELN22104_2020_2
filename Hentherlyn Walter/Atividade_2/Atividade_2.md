@@ -42,25 +42,49 @@ Adicionar a foto da resolução.
 
 #### Seguidor de Tensão (Buffer);
 
+![Figura_3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Buffer.JPG)
+
+_Figura 3._
+
 O Seguidor de tensão é obtido através de um Amp Op com configuração não inversora com R1 = oo e R2 = 0, para obtermos o amplificador de ganho unitário. Este circuito é chamado de seguidor de tensão visto que a saída “segue” a entrada.
 
 #### Amplificador Inversor;
+
+![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Inversor.JPG)
+
+_Figura 4._
 
 A configuração Inversora consiste em um Amp Op e dois resistores R1 e R2. O resistor 2 é conectado entre o terminal de saída (3) e o terminal da entrada inversora (1), o que caracteriza uma realimentação negativa. Podemos observar que R2 fecha a malha em torno do Amplificador. Outra característica importante desta configuração é que o terminal 2 é aterrado e um resistor R1 é conectado entre o terminal 1 e uma fonte de sinal de entrada com tensão V1.
 
 #### Amplificador não inversor;
 
+![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/N%C3%A3o%20inversor.JPG)
+
+_Figura 5._
+
 Nesta configuração, o sinal de entrada V1 é conectado diretamente ao terminal de entrada positivo do Amp Op e o Resistor 1 é conectado ao terra.
 
 #### Amplificador Somador Inversor;
+
+![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20inversor.JPG)
+
+_Figura 6._
 
 Esta configuração, conforme a figura abaixo, é um circuito responsável por somar algebricamente as n tensões, cada uma multiplicada por um ganho constante, ou seja, cada entrada gera um ganho à saída. É importante citar que nesta modelo, as n entradas são conectadas os terminal 1, ou entrada inversora.
 
 #### Amplificador Somador Não Inversor;
 
+![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Somador%20nao%20inversor.JPG)
+
+_Figura 7._
+
 O circuito do somador não inversor assemelha-se muito ao somador inversor, porém, neste caso as n entradas são conectadas ao terminal 2, ou entrada não inversora, por isso a tensão de saída não sofre inversão de sinal.
 
 #### Subtrator;
+
+![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_2/Imagens/Subtrator.JPG)
+
+_Figura 8._
 
 Esta configuração permite que tenhamos uma tensão de saída igual a diferença entre as duas entradas multiplicada por um ganho.
 
