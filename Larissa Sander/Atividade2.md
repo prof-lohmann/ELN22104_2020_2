@@ -6,6 +6,8 @@ AmpOp é um aplificador operacional diferencial com alto ganho, impedância muit
 ## 2) Mostre os simbolos e as características do AmpOp IDEAL
 O AmpOp ideal temos que nenhuma corrente de entrada seja drenada, ou seja a corrente do terminal 1 e do terminal 2 são iguais a zero, sendo assim, a impedância de entrada é supostamente infinita. Possui também ganho de tensão infinito, ganho de modo comum igual a zero, insensibilidade à temperatura, resposta de frequência infinita e  impedância de saída iguala zero. Sua simbologia está representada na figura abaixo:
 
+![Simbologia](https://github.com/larissasander/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Simbologia%20-%20ATV2.jpg)
+
 ## 3) O que significa Malha Aberta e Malha Fechada?
 O ganho de malha aberta, não há realimentação entre a saída e a entrada, o amplificador operacional diferencial mostra em sua saída um sinal resultante de uma amplificação da diferença entre os potenciais de entrada. No ganho de malha fechada há um caminho de realimentação negativo do retorno de saído do AmpOp à sua entrada. O ganho de malha fechada é sempre inferior ao de malha aberta.
 
