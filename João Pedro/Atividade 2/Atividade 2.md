@@ -17,3 +17,18 @@ Características: Impedância de entrada infinita, ganho em malha aberta (Av) in
   O ganho de malha fechada é uma configuração que tem um caminho de realimentação negativo do retorno de saída do amp-op à sua entrada.
 
 ## Questão 4
+
+## Questão 5
+### a) Buffer:
+ Um circuito buffer fornece um meio de isolar um sinal de entrada de uma carga ao utilizar um estágio com ganho unitário de tensão, sem inversão de fase ou polaridade, e agir como um circuito ideal com impedância de entrada muito alta e impedância de saída muito baixa.
+### b) Amplificador Inversor:
+ O multiplicador de ganho constante inversor, que fornece um ganho ou amplificação precisos, tendo na saída o sinal invertido ao da entrada.
+### c) Amplificador Não Inversor:
+ O multiplicador de ganho constante Não inversor, que fornece um ganho ou amplificação precisos, não tendo na saída o sinal invertido ao da entrada.
+### d) Amplificador Somador Inversor:
+ Sendo a saída a soma das entradas, cada uma multiplicada por um ganho diferente, com a inversão do sinal na saída.
+### e) Amplificador Somador Não Inversor:
+ Sendo a saída a soma das entradas, cada uma multiplicada por um ganho diferente, não tendo inversão do sinal na saída.
+### f) Subtrator:
+ Empregados para proporcionar a subtração de dois sinais de entrada.
+### g) Amplificador de Instrumentação:
