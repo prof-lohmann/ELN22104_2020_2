@@ -36,6 +36,8 @@ Malha aberta nada mais é do que um Amp Op sem realimentação da saída para a 
 
 ### Questão 4: Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.
 
+Adicionar a foto da resolução.
+
 ### Questão 5: Descreva as principais características das topologias:
 
 #### Seguidor de Tensão (Buffer);
@@ -68,9 +70,15 @@ O amplificador de instrumentação, representado na figura abaixo, é composto p
 
 ### Questão 6:Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor. 
 
+Idealmente o ganho em malha aberta tendem ao infinito, porém, na prática, os ampops apresentam características não ideais bem como, tensão de offset e corrente de polarização o que não possibilita ganhos infinitos.
+
+Adicionar a foto da resolução.
+
 #### Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
 
 ### Questão 7:	Explique o que é a tensão de modo comum (VCM) e quais os efeitos desta tensão nas topologias estudadas.
+
+Na forma ideal dos AmpOps, a tensão de modo comum, ou VCM, é nula, entretanto, na prática ela se caracteriza como a média dos valores aplicados às entradas inversora e não inversora, tendo como efeito uma alteração na tensão de saída do amplificador.
 
 ### Questão 8: O que é CMRR?
 
@@ -81,9 +89,16 @@ O CMRR é a relação de rejeição de modo comum.  De forma ideal, quando dois 
 #### Qual erro na tensão de saída com relação CMRR do AmpOp. 
 
 ### Questão 10: Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet. 
+
+Os Amplificadores Operacionais apresentam limitações de tensão de entrada e de saída pois, na prática, eles apresentam características não ideais, o que acaba limitando sua área de funcionamento.
+
 #### Defina o que é um AmpOp Rail-to-rail.
 
+O AmpOp Rail-to-Rail é um modelo de amplificador com alimentação simétrica que têm como característica principal a expansão da área de funcionamento, ou seja, foram criados para aumentar a variação das tensões que podem ser aplicadas na entrada e na saída.
+
 ### Questão 11: O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?
+
+A tensão em offset nada mais é do que a tensão que aparece na saída do ampop, quando ambas as entradas são 0. Esta tensão pode interferir direta e negativamente na utilização do amplificador em aplicações de instrumentação. Uma forma de calcular a tensão de saída, neste caso, é aterrar as duas entradas (inversora e não inversora) e depois fazer a análise.
 
 ### Questão 12: Como minimizar o efeito da tensão de offset?
 
