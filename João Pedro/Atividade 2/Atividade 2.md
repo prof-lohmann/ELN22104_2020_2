@@ -23,18 +23,25 @@ Características: Impedância de entrada infinita, ganho em malha aberta (Av) in
 ## Questão 5
 ### a) Buffer:
  Um circuito buffer fornece um meio de isolar um sinal de entrada de uma carga ao utilizar um estágio com ganho unitário de tensão, sem inversão de fase ou polaridade, e agir como um circuito ideal com impedância de entrada muito alta e impedância de saída muito baixa.
+![Buffer](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/Buffer.PNG)
 ### b) Amplificador Inversor:
  O multiplicador de ganho constante inversor, que fornece um ganho ou amplificação precisos, tendo na saída o sinal invertido ao da entrada.
+![Amplificador Inversor](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/Ampop%20inver.PNG)
 ### c) Amplificador Não Inversor:
  O multiplicador de ganho constante Não inversor, que fornece um ganho ou amplificação precisos, não tendo na saída o sinal invertido ao da entrada.
+![Amplificador Não Inversor](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/ampop%20nao%20inv.PNG)
 ### d) Amplificador Somador Inversor:
  Sendo a saída a soma das entradas, cada uma multiplicada por um ganho diferente, com a inversão do sinal na saída.
+![Amplificador Somador Inversor](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/Somador%20inver.PNG)
 ### e) Amplificador Somador Não Inversor:
  Sendo a saída a soma das entradas, cada uma multiplicada por um ganho diferente, não tendo inversão do sinal na saída.
+![Somador Não Inversor](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/Somador%20nao%20inver.PNG)
 ### f) Subtrator:
  Empregados para proporcionar a subtração de dois sinais de entrada.
+![Subtrator](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/Subtrator.PNG)
 ### g) Amplificador de Instrumentação:
  É um dos modelos mais especiais dos amp-op’s, na verdade este componente é desenvolvido através de um arranjo com outros amplificadores operacionais, tradicionalmente envolvendo características bastante distintas quando comparado a um amp-op de uso comum.
+![Amplificador de Instrumentação](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%202/Figuras/instrumenta%C3%A7%C3%A3o.PNG)
 
 ## Questão 6
 
