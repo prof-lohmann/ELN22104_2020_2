@@ -47,9 +47,9 @@
 > ![malha_fechada](https://user-images.githubusercontent.com/12564754/102251814-10305280-3ee4-11eb-9ac6-4adf18d3d9e2.PNG)
 >
 
-#### Calcular circuitos de AmpOps em malha aberta e fechada
+#### Calcular circuitos de AmpOps em malha fechada
 
->
+>  Para resolver e calcular os circuitos em malha fechada, análise nodal é a melhor forma, pois a entrada do AmpOp é teoricamente zero, portanto, toda corrente passaria para o resistor de realimentação. Muitos circuitos já foram simplificados possuindo suas próprias topologias e formulas deduzida. Caso ocorra de ter 2 fontes ou mais, é possível separar por analise de sobreposição facilitando o cálculo.
 
 #### Topologias para Ampops:
 
@@ -103,7 +103,10 @@
 
 ##### Subtrator:
 
+> Responde à diferença de dois sinais que aplicados em suas entradas e idealmente rejeita sinais ue sao comuns às duas entradas. Para encontrar o valor na saída é feito sobreposição de fontes para encontrar o resultado.
+> Exemplo de Amplificador Subtrator:
 >
+> ![subtrator](https://user-images.githubusercontent.com/12564754/106810456-b890a680-664b-11eb-81d5-4d7c01ffa94a.PNG)
 
 ##### Amplificador de Instrumentação:
 
