@@ -13,6 +13,7 @@
 >
 
 | Ampop  | V+ e V- Max  | V+ e V- Mim |  Vout modo comum  | CMRR  | VS+ e VS- Max  | VS+ e VS- Mim  | V Ofsset | I Polarizacao | I Consumo | G Malha aberta | Impedância entrada |
-| AD8040 |              |             |dfsdfds    | zebra stripes | are neat       |    $1          |          |               |           |                 |                   |
-| AD8539 |              |             |dfsdfds    | zebra stripes | are neat       |    $1          |          |               |           |                 |                   |
+--- | --- | --- | --- | ---| --- | ---| --- | ---| --- | --- | ---
+| AD8040 |              |             |dfsdfds            |       | are neat       |    $1          |          |               |           |                |                    |
+| AD8539 |              |             |dfsdfds            |       | are neat       |    $1          |          |               |           |                |                    |
 
