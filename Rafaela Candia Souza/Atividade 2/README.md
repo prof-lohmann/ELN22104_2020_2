@@ -131,7 +131,12 @@
 
 ### O que é CMRR?
 
->
+> CMRR significa rejeição de modo comum, é utilizada para medir a eficácia de um amplificador diferencial, geralmente medida pelo grau de sua rejeição a sinais de modo comum.
+> Teoricamente esse diferencial deveria ser zero, mas na prática ainda é visto um sinal. Valores altos de CMRR podem ocasionar em um erro grande na medida no sinal de saída.
+> A rejeição do modo comum pode ser medido desta forma:
+>```
+> 
+>```
 
 ### As limitações de tensão de entrada e saída de um AmpOp
 
