@@ -166,13 +166,13 @@
 
 #### Calculo do efeito resultante na tensão de saída de um amplificador inversor
 
->
+> Para calcular o efeito sobre a tensão de saída pelo teorema de superposição, anulando as fontes uma por uma e vendo seus efeitos no sinal de saída.
 
 #### Como minimizar efeitos da tensão de offset em ampops
 
->
+> É possível acoplar um capacitor na entrada inversora, mas somente em aplicações que não exijam uma amplificação de sinais cc ou frequências muitos baixas ou procurando outro AmpOp com tensão de offset menor.
 
 #### Variação da tensão de offset pela temperatura
 
-> 
+> As variacoes termicas podem provicar alteracoes acentuadas nas caracteriscas eletricasde um amplificados. Este fenomeno é chamado de DRIFT nos datasheets dos ampops. A variacao da corrente é representada por ΔI/ΔT e seu valor é fornecido em nA/ºC. A variacao da tensao é representada por ΔV/ΔT e seu valor fornecido é em µV/ºC.
 
