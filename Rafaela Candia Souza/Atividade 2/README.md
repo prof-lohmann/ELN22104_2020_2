@@ -138,20 +138,17 @@
 > Teoricamente esse diferencial deveria ser zero, mas na prática ainda é visto um sinal. Valores altos de CMRR podem ocasionar em um erro grande na medida no sinal de saída.
 > A rejeição do modo comum pode ser medido desta forma:
 >```
-> CMRR=20\log _{ }\left(\frac{\left|Ad\right|}{\left|Acm\right|}\right)
+> CMRR = 20log(|ad|/|acm|)
 >```
 
 ### As limitações de tensão de entrada e saída de um AmpOp
 
->
+> Existe um limite de tensão na entrada de acordo com a alimentação do ampop. Por exemplo temos o LM324, de acordo com seu datasheet, os limites de tensão de alimentação vão de 3 a 26V, mas para tensão de entrada vai de 0 a -2V. Caso alimente um AmpOp com ±15V, sua saída vai ser saturada em ±13V.
 
-#### Exemplo:
-
->
 
 ### O que é um AmpOp Rail-to-rail?
 
->
+> Um amplificador preciso cuja tensão na saída tende alcançar o mesmo nível que as tensões de alimentação do AmpOp. A maioria dos amplificadores possui uma saída limitada entre a alimentação negativa e a positiva a partir de 0,2V.
 
 ### Tensão de offset em Ampops
 
@@ -164,7 +161,7 @@
 
 > É definida como a diferença entre as correntes de polarização de entrada do ampop, seu calculo é dado por:
 > ```
-> <a href="https://www.codecogs.com/eqnedit.php?latex=Ios=\left|Ib1-Ib2\right|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Ios=\left|Ib1-Ib2\right|" title="Ios=\left|Ib1-Ib2\right|" /></a>
+> Ios=|Ib1-Ib2|
 > ```
 
 #### Calculo do efeito resultante na tensão de saída de um amplificador inversor
