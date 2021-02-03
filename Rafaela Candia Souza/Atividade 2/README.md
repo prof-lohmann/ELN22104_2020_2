@@ -119,15 +119,18 @@
 
 ### Tensão de modo comum (VCM)
 
->
+> É a diferença potencial entre os sinais de sua entrada, saída inversora e não inversora. Em alguns circuitos pode ocasionar problemas, faixa de tensão do modo comum e a taxa de rejeição do modo comum (CMRR) são descritas para que possíveis erros de medidas não ocorram. A faixa de tensão do modo comum é definida como a máxima variação de tensão permitida em cada entrada. Caso não esteja dentro da faixa não apenas pode causar um erro de medição, mas também em possível dano aos componentes circuito.
+
 
 ### Correntes de polarização (Ibias) de um AmpOp
 
->
+> Para o AmpOp operar, deve ter uma corrente para fazer o funcionamento dos componentes internos do mesmo, de forma a possuir uma corrente medida com o AmpOp em repouso.
+> Correntes de polarização de entrada significa fontes de correntes cc ligadas ao AmpOp. O fabricantes especifica o valor média de Ibias, bem como sua diferença, corrente de
+> offset entre outras especificacoes.
 
 #### Minimizar o efeito destas correntes
 
->
+> Adicionar um resistor em série com o terminal de entrada inversora. O resitor em série deve ser igual à associação em paralelo de R1 e R2. Outra forma de minimizar o efeito caso o resistor não seja suficiente é procurando outro AmpOp com corrente de offset menor.
 
 ### O que é CMRR?
 
@@ -135,7 +138,7 @@
 > Teoricamente esse diferencial deveria ser zero, mas na prática ainda é visto um sinal. Valores altos de CMRR podem ocasionar em um erro grande na medida no sinal de saída.
 > A rejeição do modo comum pode ser medido desta forma:
 >```
-> 
+> CMRR=20\log _{ }\left(\frac{\left|Ad\right|}{\left|Acm\right|}\right)
 >```
 
 ### As limitações de tensão de entrada e saída de um AmpOp
@@ -152,11 +155,17 @@
 
 ### Tensão de offset em Ampops
 
+>  É um desequilíbrio nas entradas do AmpOp, devido a altos valores de ganho. Nos circuitos é visto como uma fonte de tensão na entrada não inversora do circuito.
+> Para calcular o efeito sobre a tensão de saída pelo teorema de superposição, anulando as fontes uma por uma e vendo seus efeitos no sinal de saída, como no exemplo a seguir:
 > 
+> Este valores de offset sao fornecidos em datasheets dos amplificadores operacionais.
 
 ### Corrente de offset na polarização dos AmpOp
 
->
+> É definida como a diferença entre as correntes de polarização de entrada do ampop, seu calculo é dado por:
+>```
+> Ios=\left|Ib1-Ib2\right|
+>```
 
 #### Calculo do efeito resultante na tensão de saída de um amplificador inversor
 
