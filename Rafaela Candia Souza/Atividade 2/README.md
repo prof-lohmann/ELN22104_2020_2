@@ -163,9 +163,9 @@
 ### Corrente de offset na polarização dos AmpOp
 
 > É definida como a diferença entre as correntes de polarização de entrada do ampop, seu calculo é dado por:
->```
+>
 > Ios=\left|Ib1-Ib2\right|
->```
+>
 
 #### Calculo do efeito resultante na tensão de saída de um amplificador inversor
 
