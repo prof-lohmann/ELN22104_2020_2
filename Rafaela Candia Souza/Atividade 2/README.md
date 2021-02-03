@@ -56,7 +56,6 @@
 > Abaixo temos algumas opcoes de  configuracao de circuitos utilizando  os Amplificadores Operacionais.
 
 ##### Seguidor de Tensão (Buffer):
-
 > O Seguidor de tensao ou seguidor unitario atua como um isolador (buffer). Este circuito fornece um ganho unitario, sem inversao  de polaridade de fase  mantendo a saida com a mesma integridade do sinal de entrada. 
 > Abaixo temos uma ilustracao com o seguidor unitario:
 >
@@ -70,16 +69,12 @@
 >
 
 ##### Amplificador Inversor:
-
-> 
 > Este amplificador é chamado de inversor porque além de amplificar o sinal de entrada, o sinal de saída possui polaridade invertida, ou seja, valores positivos na entrada se tornam valores negativos na saída e vice-versa.
 > Exemplo de Amplificador Inversor:
 >
 > ![inversor](https://user-images.githubusercontent.com/12564754/102647951-69e38780-4145-11eb-96f3-9898952b6e93.PNG)
 
-
 ##### Amplificador Não Inversor:
-
 > 
 > Este amplificador é chamado de nao-inversor porque além de amplificar o sinal de entrada, o sinal de saída nao possui a polaridade invertida
 > Exemplo de Amplificador Nao-Inversor:
@@ -88,11 +83,10 @@
 >
 
 ##### Amplificador Somador Inversor:
-
 > O amplificador somador inversor realiza o somatórios das tensões que entram no terminal inversor, resultando na saida o resultado desta operacao.
 > Exemplo de Amplificador Somador Inversor: 
 >
->![somador_inversor](https://user-images.githubusercontent.com/12564754/102648755-d9a64200-4146-11eb-9924-81b4634fb6e3.PNG)
+> ![somador_inversor](https://user-images.githubusercontent.com/12564754/102648755-d9a64200-4146-11eb-9924-81b4634fb6e3.PNG)
 
 ##### Amplificador Somador Não Inversor:
 
@@ -110,7 +104,10 @@
 
 ##### Amplificador de Instrumentação:
 
+> O circuito com ampops de instrumenação funciona como um subtrator com um inversor em cada entrada. Devido aos inversores na entrada, a impedância de entrada tem valor altíssimo, diminuindo as correntes de entrada do circuito. Além disso, apresenta uma grande atenuação do sinal de modo comum, ou seja alto CMRR, e apresenta também baixo offset. Esse circuito é muito utilizado em equipamentos de medição e teste.
+> Exemplo de Amplificador de Instrumentação:
 >
+> ![kisspng-instrumentation-amplifier-operational-](https://user-images.githubusercontent.com/12564754/106811272-d9a5c700-664c-11eb-95d8-afbc48fc1310.jpg)
 
 ### Efeito do ganho em malha aberta finito para as topologias Amplificador Inversor e Amplificador não inversor
 
@@ -118,7 +115,7 @@
 
 #### Exemplo com circuitos com ganhos em malha fechada elevado:
 
->
+> 
 
 ### Tensão de modo comum (VCM)
 
