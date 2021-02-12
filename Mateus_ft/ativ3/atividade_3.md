@@ -62,13 +62,64 @@ ty: +/- 0.1 uA
 
 max: +/- 0.9 uA
 
+
 - Ganho em malha aberta
 
 min: 65 dB
 
 ty: 74 dB
 
-- Impedância de entrada
+- Impedância de entrada:
 
 Rin: 6 Mega ohms
+
+
+
+
+**Datasheet do ampop AD8039 utilizado:**
+
+- link: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
+
+- Máxima e mínima tensão de alimentação:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/supply%20voltage.png)
+
+Maxima= 5.5V
+Minima= 2.7V
+
+- Tensão de modo comum  e Máxima e mínima tensão de entrada:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/VCM_MAINPUJT.png)
+
+Analisando temos:  VSS − 0.3 V to VDD + 0.3 V
+
+Portanto -0.3V < Vcm < (V+) +0.3V
+
+- CMRR:
+
+min: 110 dB
+
+ty: 140 dB
+
+- Tensão de offset:
+
+- Corrente de polarização:
+
+- Consumo de corrente:
+
+
+- Ganho em malha aberta:
+
+- Impedância de entrada:
+
+  Rin: 6 Mega ohms
+
+
+
+
+
+
+
+
+
 
