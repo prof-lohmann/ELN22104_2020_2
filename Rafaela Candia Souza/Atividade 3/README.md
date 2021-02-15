@@ -12,12 +12,12 @@
 > * VS−: alimentação negativa
 >
 
-| Ampop  | V+ e V-   |  Vout modo comum  | CMRR  | VS+ e VS- Max  | VS+ e VS- Mim  | V Ofsset | I Polarizacao | I Consumo | G Malha aberta | Impedância entrada |
+| Ampop  |    V+ e V-   |  Vout modo comum  | CMRR  | VS+ e VS- | V Offset | I Polarizacao | I Consumo | G Malha aberta | Impedância entrada |
 --- | ---  | --- | ---| --- | ---| --- | ---| --- | --- | ---
-| AD8040 |        ± 5 V       |± 0.5 V            |       | are neat       |    $1          |          |               |           |                |                    |
-| AD8539 |                  |dfsdfds            |       | are neat       |    $1          |          |               |           |                |                    |
-
-### 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique osefeitos decorrentes da máxima e mínima tensão de entrada.
+| AD8040 |± 5 V|–5.2 até +5.2 V|–4.5 V até +3 V| ± 5 V  |   6 mV max |1.3 μA  | 1.3 mA  | –3 dB (G = +1) |                    |
+| AD8539 |     |               |               |        | 13 µV max  |25 pA   | 180 µA  |                |             |
+  
+### 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique osbefeitos decorrentes da máxima e mínima tensão de entrada.
 
 #### 1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
 #### 2. Responda quais os valores das tensões de saturação?
