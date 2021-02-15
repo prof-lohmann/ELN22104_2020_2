@@ -103,12 +103,30 @@ ty: 140 dB
 
 - Tensão de offset:
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/voff.png)
+
+ty: 5uV
+
+max: 13uV
+
 - Corrente de polarização:
+
+ty: 15 pA
+
+max: 25 pA
 
 - Consumo de corrente:
 
+ty: 20uA
+
+max: 50uA
+
 
 - Ganho em malha aberta:
+
+min: 115dB
+
+ty: 141dB
 
 - Impedância de entrada:
 
