@@ -32,11 +32,14 @@ SPECIFICATIONS WITH +5 V SUPPLY:
 
 - Tensão de modo comum:
 
+Vcm= 2.5v
+
+- Máxima e mínima tensão de entrada:
+
 Em "Input Common-Mode Voltage Range" ou seja Vcm de entrada está especificado os valores de -0.2V à 5.2V. Portanto
 
 -0.2V < Vcm < (V+) +0.2V 
 
-Dessa forma ja responde o outro item. (- Máxima e mínima tensão de entrada)
 
 - CMRR:
 
@@ -87,19 +90,14 @@ Rin: 6 Mega ohms
 Maxima= 5.5V
 Minima= 2.7V
 
-- Tensão de modo comum  e Máxima e mínima tensão de entrada:
+- Máxima e mínima tensão de entrada
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/VCM_MAINPUJT.png)
 
 Analisando temos:  VSS − 0.3 V to VDD + 0.3 V
 
-Portanto -0.3V < Vcm < (V+) +0.3V
 
-- CMRR:
 
-min: 110 dB
-
-ty: 140 dB
 
 - Tensão de offset:
 
@@ -109,6 +107,16 @@ ty: 5uV
 
 max: 13uV
 
+
+- Vcm:
+
+Vcm= 2.5V
+
+- CMRR:
+
+min: 110 dB
+
+ty: 140 dB
 - Corrente de polarização:
 
 ty: 15 pA
