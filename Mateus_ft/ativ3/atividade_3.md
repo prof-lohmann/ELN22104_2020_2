@@ -157,6 +157,9 @@ A tensão de entrada é senoidal com 5.2V de amplitude. Entretando o ampop satur
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/VOUT%20BUFFER.png)
 
 
+**3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.**
+
+
 
 
 
