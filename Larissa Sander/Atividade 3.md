@@ -143,5 +143,14 @@ Temos que os erros em relação aos ganho são:
 
 
 
+### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+
+
+Utilizaria o AD8539, pois apresenta um offset menor que o do AD8040.
+
+Escolheria o modelo LTC 2063 da Analog, pois possui um offset típico em 1uV e chega ao máximo em 5uV, como podemos ver na especificação no seu datasheet. Utilizando ele nesta faixa de tensão com um ganhi de 100V/V, ele não iria saturar.
+
+![Datasheet](https://github.com/larissasander/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Larissa%20Sander/Datasheet%20LTC2063.png)
+
 
 
