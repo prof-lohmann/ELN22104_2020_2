@@ -68,4 +68,10 @@ Ao colocar uma onda senoidal de 10mVpp, deveríamos obter no seu vale -500mV e e
 
 Com um offset de 1.60mV em um ganho de -100V/V, obtemos cerca de -160mV no gráfico de análise do circuito. No gráfico do SPICE, encontramos o valor de Vmin = -668,26mV e Vmax = 327,68mV, o que nos dá aproximadamente o offset amplificado
 
+### AD8539
+
+![circuito5](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%203%20-%20AD8539%20circuito.png)
+
+Neste circuito, novamente teríamos um circuito ideal em -500mV de valor mínimo e 500mV de valor máximo. O gráfico analisado é o seguinte:
+
 
