@@ -30,3 +30,5 @@
 
 ### AD8040
 
+![circuito1](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8040%20sem%20satura%C3%A7%C3%A3o%20circuito.png)
+
