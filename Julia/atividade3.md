@@ -49,3 +49,8 @@ Abaixo temos um segundo gráfico, com a alimentação do AmpOp de modo especific
 Usamos alimentação de ±2.5V e a fonte na entrada não inversora foi de 2.5V com frequência de 1kHz. A partir de 2.5V temos uma saturação. Abaixo temos um gráfico mostrando a tensão em Vout quando temos 2.6V no AD8539 (quando já está saturado).
 
 ![grafico3](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8539%20grafico.png)
+
+Assim, notamos que o limite de funcionamento apresentado nos dois Amplificadores operacionais é sempre igual a soma das tensões de alimentação, caso seja duplamente alimentado, ou igual a alimentação simples do AmpOp. Acima desses valores sempre ocorrerá a saturação do componente.
+
+## 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
+
