@@ -32,3 +32,5 @@
 
 ![circuito1](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8040%20sem%20satura%C3%A7%C3%A3o%20circuito.png)
 
+A alimentação utilizada no AmpOp foi de -5V na entrada V- e 5V na entrada V+ . O AmpOp trabalha fora da saturação no máximo em ±5V. Acima disso, vemos a tensão sendo ceifada no pico de no máximo 5V. No gráfico abaixo podemos perceber o funcionamento do AD8040 como um seguidor de tensão, para uma fon te de 5V com frequência de 1kHz (totalizando 10Vpp).
+
