@@ -54,3 +54,10 @@ Assim, notamos que o limite de funcionamento apresentado nos dois Amplificadores
 
 ## 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 
+Ao aplicar 0V no circuito com o AD 8040, obtemos Vout=-169,90mV. Como o valor do offset é 100 vezes menor do que o valor de Vout, fica 1,7mV, o que condiz com o offset apresentado pelo datasheet. Aplicando 0V no circuito com o AD 8539, obtemos Vout=1,38mV. Como o valor medido em Vout é 100 vezes o offset,assim fica 13uV.
+
+Aplicando um sinal senoidal de 10mVpp@1kHz temos o seguinte resultado:
+
+### AD8040
+
+
