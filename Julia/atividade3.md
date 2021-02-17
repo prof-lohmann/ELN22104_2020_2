@@ -35,3 +35,7 @@
 A alimentação utilizada no AmpOp foi de -5V na entrada V- e 5V na entrada V+ . O AmpOp trabalha fora da saturação no máximo em ±5V. Acima disso, vemos a tensão sendo ceifada no pico de no máximo 5V. No gráfico abaixo podemos perceber o funcionamento do AD8040 como um seguidor de tensão, para uma fon te de 5V com frequência de 1kHz (totalizando 10Vpp).
 
 ![grafico1](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8040%20sem%20satura%C3%A7%C3%A3o%20grafico.png)
+
+A fonte segue quase que idealmente, porém fazendo a medição exatamente na crista e no vale, com Vmax=4.998245 e Vmin=-4.997561, e um offset de 1.75mV no máximo e 2.44mV no mínimo, dentro do especificado pelo datasheet, com valor típico de 1.60mV porém máximo de 5mV.
+
+Abaixo temos um segundo gráfico, com a alimentação do AmpOp de modo especificado pelo datasheet, porém foi aplicado 6V na fonte utilizada na entrada não inversora. Assim podemos perceber como a saturação fica evidente.
