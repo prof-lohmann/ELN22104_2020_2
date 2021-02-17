@@ -39,3 +39,5 @@ A alimentação utilizada no AmpOp foi de -5V na entrada V- e 5V na entrada V+ .
 A fonte segue quase que idealmente, porém fazendo a medição exatamente na crista e no vale, com Vmax=4.998245 e Vmin=-4.997561, e um offset de 1.75mV no máximo e 2.44mV no mínimo, dentro do especificado pelo datasheet, com valor típico de 1.60mV porém máximo de 5mV.
 
 Abaixo temos um segundo gráfico, com a alimentação do AmpOp de modo especificado pelo datasheet, porém foi aplicado 6V na fonte utilizada na entrada não inversora. Assim podemos perceber como a saturação fica evidente.
+
+![grafico2](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8040%20com%20satura%C3%A7%C3%A3o%20grafico.png)
