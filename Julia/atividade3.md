@@ -60,4 +60,6 @@ Aplicando um sinal senoidal de 10mVpp@1kHz temos o seguinte resultado:
 
 ### AD8040
 
+![circuito4](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%203%20-%20AD8040%20circuito.png)
+
 
