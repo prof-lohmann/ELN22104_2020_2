@@ -26,3 +26,7 @@
 + Ganho em malha aberta: 0,1 V a 7 V
 + Impedância de entrada: 10 kΩ e 300 pF
 
+## 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada. 
+
+### AD8040
+
