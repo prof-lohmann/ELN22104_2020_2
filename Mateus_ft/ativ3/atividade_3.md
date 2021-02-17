@@ -139,6 +139,24 @@ ty: 141dB
 - Impedância de entrada:
 
   Rin: 6 Mega ohms
+  
+  
+  **2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.**
+
+
+- AD8539
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/LT_BUFFER.png)
+
+A tensão de entrada é senoidal com 5.2V de amplitude. Entretando o ampop satura em 5v(Tensão de alimentação)
+
+5.2V é a tensão máxima recomendada para tensão de entrada  --> vcc+0.2= 5+0.2=5.2V 
+
+- AD8040
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/VOUT%20BUFFER.png)
+
+
 
 
 
