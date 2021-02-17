@@ -96,3 +96,23 @@ Os erros em relação ao ganho é:
 + 50mV - 3,08%
 + 200mV - 1%
 + 500mV - 0,6%
+
+### AD8539
+
+![circuito7](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%204%20-%20AD8539%20circuito.png)
+
+Aplicando 0V na entrada, obtemos o valor de 137uV na saída Vout. Isso está dentro do especificado pelo datasheet, pois com um offset médio de 13uV com ganho 10V/V, o valor fica dentro do normal.
+
+Aplicando os sinais contínuos, obtemos:
+
++ 5mV - Vout = 50,14mV
++ 50mV - Vout = 500,14mV
++ 200mV - Vout = 2,0001V
++ 500mV  Vout = 2,47V (Saturou)
+
+O erro em relação ao ganho é:
+
++ 5mv - 0,28%
++ 50mV - 0,028%
++ 200mV - 0,005%
++ 500mV - Saturou
