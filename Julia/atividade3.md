@@ -116,3 +116,12 @@ O erro em relação ao ganho é:
 + 50mV - 0,028%
 + 200mV - 0,005%
 + 500mV - Saturou
+
+## Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+
+Seria utilizado o AD 8539, pois ele apresenta um offset muito menor do que o AD 8040. Com  13uV no AD 8539 e 1,6mV no AD 8040, um offset mais de 100 vezes maior de um para o outro. Sendo assim o AD 8539 é a melhor opção
+
+## Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+
+O modelo LTC 2064, pois ele não irá saturar em momento algum e o offset será muito menor do que o AD 8539, com offset em 1uV e chegando ao máximo em 5uV.
+
