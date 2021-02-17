@@ -31,8 +31,8 @@ Impedância de entrada: 10 KOhm e 300 pF
 ![Circuito 1G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G2.PNG)\
 Os Valores apresentados de saturação são -5 V e 5 V.
 
-![Circuito 2]()
-![Circuito 2G]()
+![Circuito 2](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q2-85.PNG)
+![Circuito 2G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G2-85.PNG)
 Os Valores apresentados de saturação são -2,5 V e 2,5 V.
 
 ## Questão 3
