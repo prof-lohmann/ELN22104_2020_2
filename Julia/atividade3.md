@@ -78,3 +78,5 @@ Neste circuito, novamente teríamos um circuito ideal em -500mV de valor mínimo
 
 Haviamos obtido um offset de 1,38mV. Obtendo o relatório do SPICE, chegamos ao valor máximo de Vmax = 493,57mV e Vmin = -492,04mV. Isso nos dá um offset maior do que o previsto em simulação. 
 
+## 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
+
