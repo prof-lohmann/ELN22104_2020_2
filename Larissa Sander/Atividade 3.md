@@ -118,28 +118,39 @@ No gráfico acima está um exemplo aplicando 5 mV.
 
 500 mV - Vout = 4,966 V
 
-Temos que os erros em relação aos ganho são:
+Temos que os erros em relação ao ganho são:
 
+5mv - 30,6%
 
+50mV - 3,08%
 
+200mV - 1%
 
-
-
+500mV - 0,6%
 
 #### AD8539
 
 ![Circuito AD8539](https://github.com/larissasander/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Larissa%20Sander/Simula%C3%A7%C3%A3o%20-%20Quest%C3%A3o%204%20-%20AD8539.png)
 
 
-5 mV -> Vout = 50,14 mV
+5 mV -> Vout = 50,3 mV
 
-50 mV -> Vout = 500,14 mV
+50 mV -> Vout = 500,3 mV
 
-200 mV -> Vout = 2,0001 V
+200 mV -> Vout = 2,0002 V
 
-500 mV -> Vout = 2,47V (Saturou)
+500 mV -> Vout = 4,963 V (Saturou)
 
 
+Temos que os erros em relação ao ganho são:
+
+5mv - 0,28%
+
+50mV - 0,028%
+
+200mV - 0,005%
+
+500mV - Saturou
 
 
 
