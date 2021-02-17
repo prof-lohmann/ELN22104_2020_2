@@ -62,4 +62,10 @@ Aplicando um sinal senoidal de 10mVpp@1kHz temos o seguinte resultado:
 
 ![circuito4](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%203%20-%20AD8040%20circuito.png)
 
+Ao colocar uma onda senoidal de 10mVpp, deveríamos obter no seu vale -500mV e em sua crista 500mV. Porém, obtemos o seguinte gráfico ao simular o circuito:
+
+![grafico4](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%203%20-%20AD8040%20grafico.png)
+
+Com um offset de 1.60mV em um ganho de -100V/V, obtemos cerca de -160mV no gráfico de análise do circuito. No gráfico do SPICE, encontramos o valor de Vmin = -668,26mV e Vmax = 327,68mV, o que nos dá aproximadamente o offset amplificado
+
 
