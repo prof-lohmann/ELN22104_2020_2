@@ -24,6 +24,20 @@
 ## 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
 - Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
 - Responda quais os valores das tensões de saturação?
+### AD8040
+![buffer-AD8040](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quest%C3%A3o%202%20parte%201.jpeg)
+
+De acordo com o datasheet do ampop, os pinos de alimentação foram alimentados com 5V e -5V e na entrada uma fonte sinusoidal com aplitude de 12V e frequência de 1kHz
+![grafico-buffer-AD8040](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quest%C3%A3o%202%20parte%202.jpeg)
+![grafico2-buffer-AD8040](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quest%C3%A3o%202%20parte%203.jpeg)
+Pode-se observar através dos gráficos que existe uma saturação quando a tensão de saída atinge os valores ao redor de 5V e -5V
+### AD8539
+![buffer-AD8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quest%C3%A3o%202%20parte%204.jpeg)
+
+De acordo com o datasheet do ampop, os pinos de alimentação foram alimentados com 2.5V e -2.5V e na entrada uma fonte sinusoidal com aplitude de 5.5V e frequência de 1kHz
+![grafico-buffer-AD8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quets%C3%A3o%202%20parte%205.jpeg)
+![grafio-buffer-AD8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/quest%C3%A3o%202%20parte%206.jpeg)
+Pode-se observar através dos gráficos que existe uma saturação quando a tensão de saída atinge os valores ao redor de 2.5V e -2.5V
 ## 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 - Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 - Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
