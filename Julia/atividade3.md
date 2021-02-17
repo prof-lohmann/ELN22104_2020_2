@@ -46,3 +46,6 @@ Abaixo temos um segundo gráfico, com a alimentação do AmpOp de modo especific
 
 ![circuito3](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8539%20circuito.png)
 
+Usamos alimentação de ±2.5V e a fonte na entrada não inversora foi de 2.5V com frequência de 1kHz. A partir de 2.5V temos uma saturação. Abaixo temos um gráfico mostrando a tensão em Vout quando temos 2.6V no AD8539 (quando já está saturado).
+
+
