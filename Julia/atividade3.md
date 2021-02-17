@@ -41,3 +41,8 @@ A fonte segue quase que idealmente, porém fazendo a medição exatamente na cri
 Abaixo temos um segundo gráfico, com a alimentação do AmpOp de modo especificado pelo datasheet, porém foi aplicado 6V na fonte utilizada na entrada não inversora. Assim podemos perceber como a saturação fica evidente.
 
 ![grafico2](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8040%20com%20satura%C3%A7%C3%A3o%20grafico.png)
+
+### AD8539 
+
+![circuito3](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%202%20-%20AD8539%20circuito.png)
+
