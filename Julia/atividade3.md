@@ -74,4 +74,7 @@ Com um offset de 1.60mV em um ganho de -100V/V, obtemos cerca de -160mV no gráf
 
 Neste circuito, novamente teríamos um circuito ideal em -500mV de valor mínimo e 500mV de valor máximo. O gráfico analisado é o seguinte:
 
+![grafico5](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/quest%C3%A3o%203%20-%20AD8539%20grafico.png)
+
+Haviamos obtido um offset de 1,38mV. Obtendo o relatório do SPICE, chegamos ao valor máximo de Vmax = 493,57mV e Vmin = -492,04mV. Isso nos dá um offset maior do que o previsto em simulação. 
 
