@@ -80,3 +80,19 @@ Haviamos obtido um offset de 1,38mV. Obtendo o relatório do SPICE, chegamos ao 
 
 ## 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
+![circuito6](https://github.com/Julialcomelli/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Julia/questao%204%20AD8040.jpeg)
+Utilizamos um resistor de 9k Ohm na realimentação e um de 1k Ohm na entrada inversora indo ao terra. Aplicando 0V na entrada, temos o valor de aproximadamente -15,3mV na saída Vout. O offset foi negativo, e está dentro do especificado pelo datasheet.
+
+Aplicando sinais contínuos, obtemos:
+
++ 5mV - Vout = 34,7mV
++ 50mV - Vout = 484,6mV
++ 200mV - Vout = 1,98V
++ 500mV - Vout = 4,97V
+
+Os erros em relação ao ganho é:
+
++ 5mv - 30,6%
++ 50mV - 3,08%
++ 200mV - 1%
++ 500mV - 0,6%
