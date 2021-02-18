@@ -4,7 +4,7 @@
 - Máxima e mínima tensão de alimentação: 2.7V a 12.0V
 - Tensão de modo comum: -5.2V a +5.2V
 - CMRR: -4.5V a +3.0V
-- Máxima e mínima tensão de entrada: 200mV
+- Máxima e mínima tensão de entrada: +/-200mV em relação ao Vcm
 - Tensão de offset: 6mV
 - Corrente de polarização: 0.7µA a 1.3µA
 - Consumo de corrente: 1.3A
