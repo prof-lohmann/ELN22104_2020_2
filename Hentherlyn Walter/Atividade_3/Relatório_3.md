@@ -143,11 +143,50 @@ _Figura 14_
 
 Conforme o gráfico acima, a tensão de crista foi 497,07 mV e a de vale foi -492,61 mV. No caso do AmpOp AD8539 a tensão de offset foi 0,02286 mV, associando ao ganho de -100V/V temos cerca de -2,286 mV que fazem com que a diferença entre o ideal e o simulado quase desapareçam.
 
-### Questão 4: Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule
-os resistores para ter um ganho igual 10V/V.
+### Questão 4: Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
-2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal
-de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+
+#### AD8040
+
+Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
+
+![Figura_15](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8040%20-%200V.JPG)
+
+_Figura 15_
+
+![Figura_16](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8040%20-%200V%20-%20grafico.JPG)
+
+_Figura 16_
+
+Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme no gráfico acima.
+
+Aplicando:
+5 mV: 48,376 mV
+50 mV: 497,65 mV
+200 mV: 1,9960 V
+500 mV: 4,975 V
+
+#### AD8539
+
+Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
+
+![Figura_17]()
+
+_Figura 17_
+
+![Figura_18]()
+
+_Figura 18_
+
+Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme no gráfico acima.
+
+Aplicando:
+5 mV: 50,136 mV
+50 mV: 500,13 mV
+200 mV: 2,0000 V
+500 mV: 2,2795 V
+
 
 ### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
