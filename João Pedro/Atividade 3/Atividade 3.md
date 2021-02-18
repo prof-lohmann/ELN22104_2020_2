@@ -83,15 +83,39 @@ Aplicando 0V na entrada obteve-se na saída o resultado de -169,85 mV conforme o
 
 ![Circuito 8](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.1-85.PNG)
 ![Circuito 8G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/4.2-8539.PNG)
-Aplicando 0V na entrada obteve-se na saída o resultado de -169,85 mV conforme o gráfico acima.
+Aplicando 0V na entrada obteve-se na saída o resultado de 1,38 mV conforme o gráfico acima.
 
 
 ### Parte 2
 
 ### AD8040
 
-![Circuito 9](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.2-80.PNG)
+![Circuito 9](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.2-80.PNG)\
+Aplicação:\
+1. Vin = 5 mV -->> Vo = -115,2 mV
+2. Vin = 50 mV -->> Vo = 380,50 mV
+3. Vin = 200 mV -->> Vo = 2,031 V
+4. Vin = 500 mV -->> Vo = 4,98 V
+
+1. E%1 = 56,6 %
+2. E%2 = 31,4 %
+3. E%3 = 1,5 %
+4. E%4 = 0,4 %
+
+Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Podemos afirmar que o valor do ganho também será mais preciso com o valor de entrada mais próximo do valor de alimentação.
 
 ### AD8539
 
 ![Circuito 10](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.2-85.PNG)
+Aplicação:\
+1. Vin = 5 mV -->> Vo = -115,2 mV
+2. Vin = 50 mV -->> Vo = 380,50 mV
+3. Vin = 200 mV -->> Vo = 2,031 V
+4. Vin = 500 mV -->> Vo = 4,98 V
+
+1. E%1 = 56,6 %
+2. E%2 = 31,4 %
+3. E%3 = 1,5 %
+4. E%4 = 0,4 %
+
+Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Podemos afirmar que o valor do ganho também será mais preciso com o valor de entrada mais próximo do valor de alimentação.
