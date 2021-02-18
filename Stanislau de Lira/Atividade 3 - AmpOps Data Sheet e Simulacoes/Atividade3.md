@@ -44,9 +44,15 @@
 ### Circuito Amplificador Não Inversor
 
 #### AD8040
-
+5mv  0.0457061
+50mv 0.48261
+200mv 1.61178
+500mv	 1.61179
 #### AD8539
-
+0.0500452
+0.210097
+0.213337
+0.213337
 ## Qual AmpOp Escolher
 Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
