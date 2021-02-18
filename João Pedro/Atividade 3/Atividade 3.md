@@ -36,8 +36,13 @@ Os Valores apresentados de saturação são -5 V e 5 V.
 Os Valores apresentados de saturação são -2,5 V e 2,5 V.
 
 ## Questão 3
+
+### AD8040
+
 ![Circuito 3](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q3.1-80.PNG)
 ![Circuito 3G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G3.1-80.PNG)
+
+### AD8539
 
 ![Circuito 4](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q3.1-85.PNG)
 ![Circuito 4G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G3.1-85.PNG)
