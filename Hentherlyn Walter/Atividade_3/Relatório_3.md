@@ -94,25 +94,25 @@ No gráfico acima apresentado, foi aplicada uma tensão de 5,5V na fonte colocad
 
 Simulando o circuito mostrado na figura abaixo com o AmpOp AD8040 e aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 16,96 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,1696 mV  que se encaixa nas especificações presentes no datasheet.
 
-![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V.JPG)
+![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V.JPG)
 
-_Figura 5_
+_Figura 7_
 
-![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V%20-%20grafico.JPG)
+![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V%20-%20grafico.JPG)
 
-_Figura 6_
+_Figura 8_
 
 #### AD8539
 
 Da mesma forma que o item anterior, simulou-se o circuito mostrado na figura abaixo, porém com o AmpOp AD8539. Aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 2,286 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,02286 mV ou 22,86 uV, valor que não se encaixa nas especificações presentes no datasheet.
 
-![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20com%200V.JPG)
+![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20com%200V.JPG)
 
-_Figura 7_
+_Figura 9_
 
-![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20com%200V%20-%20grafico.JPG)
+![Figura_10](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20com%200V%20-%20grafico.JPG)
 
-_Figura 8_
+_Figura 10_
 
 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
@@ -120,26 +120,26 @@ _Figura 8_
 
 Aplicou-se um sinal senoidal de 5 mV de amplitude com frequência de 1 kHz com o AmpOp AD8040 conforme o circuito abaixo.
 
-![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20circuito.JPG)
+![Figura_11](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20circuito.JPG)
 
-_Figura 9_
+_Figura 11_
 
-![Figura_10](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20grafico.JPG)
+![Figura_12](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20grafico.JPG)
 
-_Figura 10_
+_Figura 12_
 
 Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e -500 mV conforme foi imposto à entrada inversora, porém ao simular obtivemos os resultados apresentados no gráfico acima, 481,27 mV no pico e -515,38 mV no vale. Para o entendimento desta diferença é necessário lembrar da existência do offset. No caso do AmpOp AD8040 a tensão de offset foi 0,1696 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -6,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
 
 #### AD8539
 Aplicando o mesmo circuito, porém agora com o AmpOp AD8539, obteve-se os seguintes resultados:
 
-![Figura_11](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8539%20-%20circuito.JPG)
+![Figura_13](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8539%20-%20circuito.JPG)
 
-_Figura 11_
+_Figura 13_
 
-![Figura_12](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8539%20-%20grafico.JPG)
+![Figura_14](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8539%20-%20grafico.JPG)
 
-_Figura 12_
+_Figura 14_
 
 Conforme o gráfico acima, a tensão de crista foi 497,07 mV e a de vale foi -492,61 mV. No caso do AmpOp AD8539 a tensão de offset foi 0,02286 mV, associando ao ganho de -100V/V temos cerca de -2,286 mV que fazem com que a diferença entre o ideal e o simulado quase desapareçam.
 
