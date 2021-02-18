@@ -75,7 +75,7 @@ De acordo com a equação do circuito, podemos observar que o ganho do amplifica
 
 ### AD8040
 
-![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.1-8040.PNG)
+![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/4.1-8040.PNG)
 ![Circuito 7G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G4.1-8040.PNG)
 
 ### AD8539
