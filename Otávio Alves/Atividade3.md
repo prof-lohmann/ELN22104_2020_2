@@ -3,7 +3,7 @@
 ### AD8040
 - Máxima e mínima tensão de alimentação: 2.7V a 12.0V
 - Tensão de modo comum: -5.2V a +5.2V
-- CMRR: -4.5V a +3.0V
+- CMRR: Min= 80dB e Typ=90dB
 - Máxima e mínima tensão de entrada: +/-200mV em relação ao Vcm
 - Tensão de offset: 6mV
 - Corrente de polarização: 0.7µA a 1.3µA
@@ -13,7 +13,7 @@
 ### AD8539
 - Máxima e mínima tensão de alimentação: 2.7V a 5.5V
 - Tensão de modo comum: 2.5V
-- CMRR: 0V a 5.0V
+- CMRR: Min= 115dB e Typ= 135dB
 - Máxima e mínima tensão de entrada: 0V a 4.8V
 - Tensão de offset: 15µV
 - Corrente de polarização: 25pA
