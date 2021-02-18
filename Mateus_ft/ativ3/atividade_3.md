@@ -181,7 +181,7 @@ Essa é a tensao de offset do ampop pois nao existe nenhuma tensão de entrada a
 
 Os resistores R1 e R2 foram escolhidos sendo 1k e 100k respectivamente pois dessa forma a corrente de polarização não irá interferir no circuito, uma vez que a corrente que circulará no circuito será na casa de uA e a corrente de polarização é da ordem de pA.
 
-Também foi considerado o ganho de -100V/V = (R2/R1)*Vin
+Também foi considerado o ganho de -100V/V = -(R2/R1)*Vin
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora_vin0v.png)
 
@@ -197,6 +197,51 @@ Na simulação contata-se que Voff= 13.7uV. Uma vez que V0= 1.37mV com um ganho 
 
 Como esperado na simulação o ganho de -100*Vin. Para Vin=-5mv ---> V0=500mv
 
+**Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V**
+
+**B)2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.**
+
+
+- AD8539
+
+
+Vin= 5mV:
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_5m.png)
+
+
+Vin= 50mV:
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_50m.png)
+
+
+Vin= 200mV:
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_200m.png)
+
+
+Vin= 500mV:
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_500m.png)
+
+Vin= 500mV. Vcc alterado +6V:
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_500m_vcc6%2B.png)
+
+Para todas as simulações V0 reagiu de forma esperada com um ganho de 10V/v da tensão de entrada Vin.
+
+Ainda para a maioria dos sinais existe um resíduo no sinal de aproximadamente 13uV. O que se explica pelo offset do ampop.
+
+
+
+
+
+
 
 
 
@@ -205,8 +250,46 @@ Como esperado na simulação o ganho de -100*Vin. Para Vin=-5mv ---> V0=500mv
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
 você utilizaria? Justifique a sua resposta.**
 
-Utilizaria o ampop AD8539 pois é um amplificador de altissima precisão com tensão de deslocamento extremamente baixa, corrente de polarização de entrada baixa e baixa potência
-consumo. 
+Comparando o V0ff e Ibias dos dois ampops:
+
+- AD8040
+
+
+Voff:
+
+
+ty: 1.4 mV
+
+max: 5  mV
+
+Corrente de polarização:
+
+ty: 0.8 uA
+
+max: 1.2 uA
+
+
+
+
+- AD8539
+Voff:
+
+
+ty: 5uV
+
+max: 13uV
+
+Ibias:
+
+ty: 15 pA
+
+max: 25 pA
+
+ A aplicação utilizará sinais na faixa de uV à mV. Portanto o AD8539 é mais indicado para essa aplicação. A corrente de polarização e a tensão de offset do AD8539 são milhões de vezes menores que a do AD8040.
+
+
+
+
 
 
 
