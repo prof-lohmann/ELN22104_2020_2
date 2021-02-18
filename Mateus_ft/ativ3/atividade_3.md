@@ -79,7 +79,7 @@ Rin: 6 Mega ohms
 
 
 
-**Datasheet do ampop AD8039 utilizado:**
+**Datasheet do ampop AD8539 utilizado:**
 
 - link: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
 
@@ -159,6 +159,8 @@ A tensão de entrada é senoidal com 5.2V de amplitude. Entretando o ampop satur
 
 **3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.**
 
+**A) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.**
+
 - AD8040
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora.png)
@@ -172,6 +174,30 @@ Voff= 85,9/100 = 0,859mV
 Voff= 0,859mV
 
 Essa é a tensao de offset do ampop pois nao existe nenhuma tensão de entrada apenas a realimentação negativa. Com Vin=0V.
+
+
+
+- AD8539
+
+Os resistores R1 e R2 foram escolhidos sendo 1k e 100k respectivamente pois dessa forma a corrente de polarização não irá interferir no circuito, uma vez que a corrente que circulará no circuito será na casa de uA e a corrente de polarização é da ordem de pA.
+
+Também foi considerado o ganho de -100V/V = (R2/R1)*Vin
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora_vin0v.png)
+
+
+
+Na simulação contata-se que Voff= 13.7uV. Uma vez que V0= 1.37mV com um ganho de 100V/V. Sendo que a entrada Vin foi zerada(OV) única tensão restante é a tensão de offset.
+
+**B) Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.**
+
+- AD8539
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora_vin5mv.png)
+
+Como esperado na simulação o ganho de -100*Vin. Para Vin=-5mv ---> V0=500mv
+
+
 
 
 
