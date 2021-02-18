@@ -88,9 +88,9 @@ _Figura 6_
 No gráfico acima apresentado, foi aplicada uma tensão de 5,0V na fonte conectada à entrada não inversora, conforme pode-se observar a saturação acontece e a tensão não ultrapassa os 2,5V da alimentação simétrica.
 
 ### Questão 3: Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
-1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+#### 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
-#### AD8040
+##### AD8040
 
 Simulando o circuito mostrado na figura abaixo com o AmpOp AD8040 e aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 16,96 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,1696 mV  que se encaixa nas especificações presentes no datasheet.
 
@@ -102,7 +102,7 @@ _Figura 7_
 
 _Figura 8_
 
-#### AD8539
+##### AD8539
 
 Da mesma forma que o item anterior, simulou-se o circuito mostrado na figura abaixo, porém com o AmpOp AD8539. Aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 1,387 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,01387 mV ou 13,87 uV, valor que se encaixa nas especificações presentes no datasheet.
 
@@ -114,9 +114,9 @@ _Figura 9_
 
 _Figura 10_
 
-2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
+#### 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
-#### AD8040
+##### AD8040
 
 Aplicou-se um sinal senoidal de 5 mV de amplitude com frequência de 1 kHz com o AmpOp AD8040 conforme o circuito abaixo.
 
@@ -130,7 +130,7 @@ _Figura 12_
 
 Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e -500 mV conforme foi imposto à entrada inversora, porém ao simular obtivemos os resultados apresentados no gráfico acima, 481,27 mV no pico e -515,38 mV no vale. Para o entendimento desta diferença é necessário lembrar da existência da tensão de offset. No caso do AmpOp AD8040 a tensão de offset foi 0,1696 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -16,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
 
-#### AD8539
+##### AD8539
 
 Aplicando o mesmo circuito, porém agora com o AmpOp AD8539, obteve-se os seguintes resultados:
 
