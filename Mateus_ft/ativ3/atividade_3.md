@@ -160,6 +160,14 @@ A tensão de entrada é senoidal com 5.2V de amplitude. Entretando o ampop satur
 **3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.**
 
 
+**Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
+pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
+você utilizaria? Justifique a sua resposta.**
+
+Utilizaria o ampop AD8539 pois é um amplificador de altissima precisão com tensão de deslocamento extremamente baixa, corrente de polarização de entrada baixa e baixa potência
+consumo. 
+
+
 
 
 
