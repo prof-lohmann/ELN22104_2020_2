@@ -69,6 +69,8 @@ O mesmo era para ser nesse circuito, porém ao simular obtivemos os resultados a
 
 ## Questão 4
 
+De acordo com a equação do circuito, podemos observar que o ganho do amplificador não inversor é gual a G = 1 + R2/R1, será utilizado R2 = 100k ohms e R1 = 10k ohms.
+
 ### Parte 1
 
 ### AD8040
