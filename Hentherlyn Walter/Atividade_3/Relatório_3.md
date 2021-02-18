@@ -159,13 +159,21 @@ _Figura 15_
 
 _Figura 16_
 
-Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme no gráfico acima.
+Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme o gráfico acima.
 
 Aplicando:
 5 mV: 48,376 mV
 50 mV: 497,65 mV
 200 mV: 1,9960 V
 500 mV: 4,975 V
+
+Pode-se perceber que conforme cada década de aumento da tensão aplicada a tensão de saída dimunui por década. Calculando o erro percentual com relação ao ganho de 10V/v, temos:
+5 mV: 3,36 %
+50 mV: 0,472 %
+200 mV: 0,2 %
+500 mV: 0,5 %
+
+Quanto mais baixa é a tensão aplicada, maior é o erro.
 
 #### AD8539
 
@@ -187,9 +195,14 @@ Aplicando:
 200 mV: 2,0000 V
 500 mV: 2,2795 V
 
+Calculando o erro percentual com relação ao ganho de 10V/V, temos:
+5 mV: 0,27 %
+50 mV: 0,0,26 %
+200 mV: 0,00 %
+500 mV: > 100 % - Houve saturação.
 
-### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
-pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
-você utilizaria? Justifique a sua resposta.
+Podemos perceber que o AmpOp AD8539 apresenta uma faixa de erro muito menor quando aplicado com tensões de entrada mais baixas, ao contrário do AmpOp AD8040.
+
+### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
 Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
 como subtrator.
