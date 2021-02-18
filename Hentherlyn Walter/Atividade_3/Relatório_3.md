@@ -62,7 +62,6 @@ _Figura 2_
 Nesta simulação, utilizou-se uma alimentação de 5V na entrada V+ e -5V na entrada V-, conforme descrito no datasheet, com uma frequência de 1 kHz. Analisando o gráfico acima, podemos perceber que o AmpOp trabalha fora de saturação, já que atinge no máximo 5 V e no mínimo -5V, conforme a alimentação. Além disso, é possível perceber que o circuito se trata de um seguidor de tensão, pois faz uma cópia quase perfeita da tensão de entrada na sua saída. Analisando os valores de pico máximo e mínimo obtemos respectivamente, 4,9979V e -4,9977V. Sendo assim, obtemos uma tensão de offset de 2,1 mV no pico máximo e 2,3 mV no vale, valores que se encaixam nas especificações encontradas no datasheet.
 
 ![Figura_3](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Gr%C3%A1fico%20Quest%C3%A3o%201.1.JPG)
-
 _Figura 3_
 
 No gráfico acima, foi aplicada uma tensão de 6V na fonte colocada na entrada não inversora, conforme pode-se observar a saturação acontece e a tensão não ultrapassa os 5V da alimentação simétrica.
@@ -70,17 +69,14 @@ No gráfico acima, foi aplicada uma tensão de 6V na fonte colocada na entrada n
 #### AD8539
 
 ![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%202.5%20V.JPG)
-
 _Figura 4_
 
 ![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%202.5%20V%20-%20grafico.JPG)
-
 _Figura 5_
 
 Nesta simulação utilizou-se uma alimentação de ± 2,5V, com uma frequência de 1 kHz. Aplicando uma tensão de 2.5V na entrada inversora observa-se que o AmpOp não satura e trabalha com 2,4986 V na crista e -2,4981 V no vale, o que nos resulta em uma tensão de offset de 1,4 mV e 1,9 mV, respectivamente, valores que também obedecem as especificações do datasheet.
 
 ![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%203%20V.JPG)
-
 _Figura 6_
 
 No gráfico acima apresentado, foi aplicada uma tensão de 5,0V na fonte conectada à entrada não inversora, conforme pode-se observar a saturação acontece e a tensão não ultrapassa os 2,5V da alimentação simétrica.
@@ -93,11 +89,9 @@ No gráfico acima apresentado, foi aplicada uma tensão de 5,0V na fonte conecta
 Simulando o circuito mostrado na figura abaixo com o AmpOp AD8040 e aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 16,96 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,1696 mV  que se encaixa nas especificações presentes no datasheet.
 
 ![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V.JPG)
-
 _Figura 7_
 
 ![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V%20-%20grafico.JPG)
-
 _Figura 8_
 
 ##### AD8539
@@ -105,11 +99,9 @@ _Figura 8_
 Da mesma forma que o item anterior, simulou-se o circuito mostrado na figura abaixo, porém com o AmpOp AD8539. Aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 1,387 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,01387 mV ou 13,87 uV, valor que se encaixa nas especificações presentes no datasheet.
 
 ![Figura_9](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20-%200V.JPG)
-
 _Figura 9_
 
 ![Figura_10](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20-%200V%20-%20grafico.JPG)
-
 _Figura 10_
 
 #### 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
@@ -119,11 +111,9 @@ _Figura 10_
 Aplicou-se um sinal senoidal de 5 mV de amplitude com frequência de 1 kHz com o AmpOp AD8040 conforme o circuito abaixo.
 
 ![Figura_11](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20circuito.JPG)
-
 _Figura 11_
 
 ![Figura_12](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20grafico.JPG)
-
 _Figura 12_
 
 Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e -500 mV conforme foi imposto à entrada inversora, porém ao simular obtivemos os resultados apresentados no gráfico acima, 481,27 mV no pico e -515,38 mV no vale. Para o entendimento desta diferença é necessário lembrar da existência da tensão de offset. No caso do AmpOp AD8040 a tensão de offset foi 0,1696 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -16,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
@@ -133,11 +123,9 @@ Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e 
 Aplicando o mesmo circuito, porém agora com o AmpOp AD8539, obteve-se os seguintes resultados:
 
 ![Figura_13](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20-%205mV.JPG)
-
 _Figura 13_
 
 ![Figura_14](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8539%20-%205mV%20-%20grafico.JPG)
-
 _Figura 14_
 
 Conforme o gráfico acima, a tensão de crista foi 496,01 mV e a de vale foi -493,21 mV. No caso do AmpOp AD8539 a tensão de offset foi 0,01387 mV, associando ao ganho de -100V/V temos cerca de -1,387 mV que fazem com que a diferença entre o ideal e o simulado quase desapareçam.
@@ -151,11 +139,9 @@ Conforme o gráfico acima, a tensão de crista foi 496,01 mV e a de vale foi -49
 Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
 
 ![Figura_15](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8040%20-%200V.JPG)
-
 _Figura 15_
 
 ![Figura_16](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8040%20-%200V%20-%20grafico.JPG)
-
 _Figura 16_
 
 Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme o gráfico acima.
@@ -179,11 +165,9 @@ Quanto mais baixa é a tensão aplicada, maior é o erro.
 Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
 
 ![Figura_17](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V.JPG)
-
 _Figura 17_
 
 ![Figura_18](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V%20-%20grafico.JPG)
-
 _Figura 18_
 
 Aplicando 0V na entrada obteve-se na saída o resultado de 137,3 uV conforme no gráfico acima.
