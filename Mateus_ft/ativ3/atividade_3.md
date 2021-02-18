@@ -159,6 +159,21 @@ A tensão de entrada é senoidal com 5.2V de amplitude. Entretando o ampop satur
 
 **3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.**
 
+- AD8040
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora.png)
+
+Observa-se que a tensão dissipada total é de aproximadamente 85,9mV. Vr1+ Vo= 19.52+66.38= 85,9 mV
+
+Para um ganho de R2/R1= 100.
+
+Voff= 85,9/100 = 0,859mV
+
+Voff= 0,859mV
+
+Essa é a tensao de offset do ampop pois nao existe nenhuma tensão de entrada apenas a realimentação negativa. Com Vin=0V.
+
+
 
 **Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
