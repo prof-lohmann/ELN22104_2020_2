@@ -71,21 +71,21 @@ No gráfico acima, foi aplicada uma tensão de 6V na fonte colocada na entrada n
 
 #### AD8539
 
-![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%204V.JPG)
+![Figura_4](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%202.5%20V.JPG)
 
 _Figura 4_
 
-![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%204V%20-%20gr%C3%A1fico.JPG)
+![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%202.5%20V%20-%20grafico.JPG)
 
 _Figura 5_
 
-Da mesma forma que a simulação anterior, utilizou-se uma alimentação de ± 5V, com uma frequência de 1 kHz. Aplicando uma tensão de 5V na entrada inversora observa-se que o AmpOp não satura e trabalha com 4,9978 V na crista e 4,9975 V no vale, o que nos resulta em uma tensão de offset de 2,2 mV e 2,5 mV, respectivamente, valores que também obedecem as especificações do datasheet.
+Nesta simulação utilizou-se uma alimentação de ± 2,5V, com uma frequência de 1 kHz. Aplicando uma tensão de 2.5V na entrada inversora observa-se que o AmpOp não satura e trabalha com 2,4986 V na crista e -2,4981 V no vale, o que nos resulta em uma tensão de offset de 1,4 mV e 1,9 mV, respectivamente, valores que também obedecem as especificações do datasheet.
 
-![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%205.5V.JPG)
+![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%203%20V.JPG)
 
 _Figura 6_
 
-No gráfico acima apresentado, foi aplicada uma tensão de 5,5V na fonte colocada na entrada não inversora, conforme pode-se observar a saturação acontece e a tensão não ultrapassa os 5V da alimentação simétrica.
+No gráfico acima apresentado, foi aplicada uma tensão de 5,0V na fonte conectada à entrada não inversora, conforme pode-se observar a saturação acontece e a tensão não ultrapassa os 2,5V da alimentação simétrica.
 
 ### Questão 3: Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
