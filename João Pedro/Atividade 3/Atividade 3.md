@@ -34,7 +34,7 @@ Essa simulação utiliza-se uma alimentação de 5V e -5V nas entradas _V+_ e _V
 Ao trocarmos o valor da fonte de entrada para 6 V, observa-se o momento de saturação em 5 V e -5 V.
 
 ![Circuito 2](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q2-85.PNG)\
-Essa simulação utiliza-se uma alimentação de 2.5V e -2.5V nas entradas _V+_ e _V-_, de acordo com o datasheet. A fonte de alimentação esta com 3 V, sendo assim, já haverá a saturação, pois a alimentação do Ampop é de +-2.5 V. Pode ser percebido que também o Ampop trabalha dentro das especificações do datasheet encontradas.
+Essa simulação utiliza-se uma alimentação de 2,5V e -2,5V nas entradas _V+_ e _V-_, de acordo com o datasheet. A fonte de alimentação esta com 3 V, sendo assim, já haverá a saturação, pois a alimentação do Ampop é de +-2,5 V. Pode ser percebido que também o Ampop trabalha dentro das especificações do datasheet encontradas.
 ![Circuito 2G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G2-85.PNG)\
 Os Valores apresentados de saturação são -2,5 V e 2,5 V.
 
@@ -59,13 +59,13 @@ Na simulação, ao aplicarmos na entrada inversora 0V obtemos uma tensão de sa�
 
 ![Circuito 5](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q3.2-80.PNG)
 ![Circuito 5G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G3.2-80.PNG)\
-Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e -500 mV conforme foi imposto à entrada inversora, porém ao simular obtivemos os resultados apresentados no gráfico acima, 329.5 mV no pico e -669,0 mV no vale. Para o entendimento desta diferença é necessário lembrar da existência da tensão de offset. No caso do AmpOp AD8040 a tensão de offset foi 1,6996 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -169,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
+Idealmente era esperado que os valores para a tensão de saída fossem 500 mV e -500 mV conforme foi imposto à entrada inversora, porém ao simular obtivemos os resultados apresentados no gráfico acima, 329,5 mV no pico e -669,0 mV no vale. Para o entendimento desta diferença é necessário lembrar da existência da tensão de offset. No caso do AmpOp AD8040 a tensão de offset foi 1,6996 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -169,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
 
 ### AD8539
 
 ![Circuito 6](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q3.2-85.PNG)
 ![Circuito 6G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G3.2-85.PNG)\
-O mesmo era para ser nesse circuito, porém ao simular obtivemos os resultados apresentados no gráfico acima, 496.54 mV no pico e -494,00 mV no vale. O mesmo entendimento se aplica para essa tensão de offset. No caso do AmpOp AD8549 a tensão de offset foi 1,6996 mV, associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -169,96 mV que é praticamente a diferença existente entre os valores ideais e simulados.
+O mesmo era para ser nesse circuito, porém ao simular obtivemos os resultados apresentados no gráfico acima, 498,54 mV no pico e -498,20 mV no vale. O mesmo entendimento se aplica para essa tensão de offset. No caso do AmpOp AD8539 a tensão de offset foi 13,86 uV associando este valor ao ganho de -100V/V, ou seja, multiplcando Voff pelo ganho, temos cerca de -1,386 mV que é praticamente a diferença existente entre os valores ideais e simulados.
 
 ## Questão 4
 
