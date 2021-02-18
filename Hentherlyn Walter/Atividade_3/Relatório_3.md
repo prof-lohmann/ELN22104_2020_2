@@ -53,7 +53,7 @@
 
 #### AD8040
 
-![Figura_1](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201.1.JPG)
+![Figura_1](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8040%20com%205V.JPG)
 
 _Figura 1_
 
