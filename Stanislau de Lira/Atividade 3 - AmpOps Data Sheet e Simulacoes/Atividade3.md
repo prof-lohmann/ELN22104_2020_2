@@ -1,71 +1,61 @@
-# AMPLIFICADORES OPERACIONAIS
+# ATIVIDADE 3 - Data Sheet e Simulações com AmpOps
 
-## O que é um AmpOP?
-É um circuito integrado, capaz de amplificar o sinal de entrada e realizar operações matemáticas, com entradas de alimentação, saida, entrada inversa e não inversora.
+## Dados Data Sheet:
 
-## AmpOp Ideal
-![](https://github.com/StanisLK/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Stanislau%20de%20Lira/Atividade%202%20-%20Amplificadores%20Operacionais/images/ampopideal.JPG)
+### AD8040
 
-Um AmpOP ideal possui as entradas não inversoras e inversoras com a impedancia infinita, o ganho é infinito, e a impedancia na saida é nula, e é não sensivel a temperatura.
+- Máxima e mínima tensão de alimentação: 2.7 V a 12.0 V
+- Tensão de modo comum: –0.2 V a +5.2 V
+- CMRR: 90 dB (Typ)
+- Máxima e mínima tensão de entrada: The input voltage range extends
+200 mV beyond each rail without phase reversal
+- Tensão de offset: 6 mV max
+- Corrente de polarização: +0.7 µA a –1.5 µA
+- Consumo de corrente: 1.3 mA a 1.5 mA
+- Ganho em malha aberta: 74 dB
+- Impedância de entrada: 6 MΩ e 2 pF
 
-## Malha Aberta e Malha Fechada
-Acontece uma malha fechada quando as entradas inversoras ou não inversoras do AmpOp são realimentados por sua saída, e em malha aberta não há realimentação.
+### AD8539
 
-## Calculando Circuitos de Malha Fechada
-Para calcular os circuitos de malha fechada utilizamos a equação do ampop ideal como base, e fazendo uma análise de nós obtemos uma equação para o circuito.
-## Seguidor de Tensão (Buffer)
-É um circuito que temos na saída a mesma tensão da entrada, é utilizado para conectar uma tensão aliada de uma resistencia a uma resistencia de saida sem que ela sofra os efeitos da resistencia de entrada.
+- Máxima e mínima tensão de alimentação: 2.7 V a 5.5 V
+- Tensão de modo comum: 0 V a 5 V
+- CMRR: 135 dB (Typ)
+- Máxima e mínima tensão de entrada: 0 V a 5 V
+- Tensão de offset: 13 µV max
+- Corrente de polarização: 60 pA max
+- Consumo de corrente: 210 µA max
+- Ganho em malha aberta: 60 dB max
+- Impedância de entrada:
 
-## Amplificador Inversor
-É um circuito que tem como objetivo amplificar a tensão de entrada e inverter o seu sinal na saida do AmpOP
+## Simulação com AD8040 e AD8539
 
-## Amplificador Não Inversor
-É um circuito que tem como objetivo amplificar a tensão de entrada e manter o seu sinal na saida do AmpOP
+### Circuito Seguidor de Tensão
 
-## Amplificador Somador Inversor
-É um circuito que tem como objetivo somar as tensões de entrada, realizar a amplificação e inverter o seu sinal na saida do AmpOP
+#### AD8040
 
-## Amplificador Somador Não Inversor
-É um circuito que tem como objetivo somar as tensões de entrada, realizar a amplificação e manter o seu sinal na saida do AmpOP
+#### AD8539
 
-## Subtrator ou Diferencial
-É um circuito que tem como objetivo subtrair as tensões da entrada inversora e não inversora e realizar a amplificação 
+### Circuito Amplificador Inversor
 
-## Amplificador de Instrumentação
-É uma composição de um amplificador subtrator e buffers gerando uma impedancia de entrada infinita, alto ganho e facil ajuste de ganho.
+#### AD8040
 
-## Ganho de Malha Aberta Finito (inversor e não inversor)
-Os ganhos em um mundo real não sao infinitos.
-## CMRR
-CMRR é a rejeição em modo comum, quando dois sinais da mesma amplitude, frequência e fase são aplicados às entradas eles se cancelariam e não deveria ocorrer nenhuma saída, porem na pratica não é o que acontece e essa saída é o CMRR, sendo medido em dB.
+#### AD8539
 
-## Tensão de Modo Comum (Vcm)
-A tensão de modo comum é um offset da tensão que é "comum" as duas entradas do AmpOp
+### Circuito Amplificador Não Inversor
 
-### Exemplo Tensão de Modo Comum com Subtrator
+#### AD8040
 
-## Limitações de Tensão de Entrada e Saída (datasheet)
-O limite da tensão de saida tende ao VCC do AmpOp (saturação) e depende o AmpOp utilizado.
+#### AD8539
 
-### AmpOp Rail-to-rail
-É um Amplificador Operacional cuja tensão na saída alcança o mesmo nível que as tensões de alimentação do AmpOp
+## Qual AmpOp Escolher
+Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
+pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
+você utilizaria?
 
-## Tensão de Offset
-É a tensão necessária entre os terminais de entrada para anular a saida, já que um ampop com ambas as saídas no terra o seu sinal de saída não é 0, devido a sua construção interna.
-Efeito resultante na saída de um amp inversor e não inversor:
-V0=Vos*(1+R2/R1)
-### Minimizando o Ofeito da Tensão Offset
-Para minimizar o efeito da tensão offset é necessario conectar um capacitor na entrada w=1/CR1, tendo V0=Vos.
-### Variação da Tensão Offset Pela Temperatura
-O coeficiente de variação da tensão do offset pela temperatura é conhecido como drift ou TCVos.
-## Correntes de Polarização(Ibias)
-É a corrente que circula nas entradas de um ampop (mesmo que aterradas) devido a construção interna no ampop com transistores
-Ibias = (Ib+ + Ib-)/2
+Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
+como subtrator.
 
-### Minimizando o Efeito da Corrente de Polarização
-Utilizar um R3=(R1.R2)/(R1+R2) entao teremos um Vout em função da corrente de offset, que é menor que a corrente de polarização Vout = Iof.R2
 
-### Corrente de Offset na Polarização
-É o modulo da diferença das correntes nas entradas do ampop Iof = |Ib+ - Ib-|
+
 
 
