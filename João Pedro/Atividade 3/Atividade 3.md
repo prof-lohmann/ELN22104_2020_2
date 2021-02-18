@@ -76,12 +76,15 @@ De acordo com a equação do circuito, podemos observar que o ganho do amplifica
 ### AD8040
 
 ![Circuito 7](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/4.1-8040.PNG)
-![Circuito 7G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G4.1-8040.PNG)
+![Circuito 7G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G4.1-8040.PNG)\
+Aplicando 0V na entrada obteve-se na saída o resultado de -169,85 mV conforme o gráfico acima.
 
 ### AD8539
 
 ![Circuito 8](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.1-85.PNG)
-![Circuito 8G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/G4.1-85.PNG)
+![Circuito 8G](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/4.2-8539.PNG)
+Aplicando 0V na entrada obteve-se na saída o resultado de -169,85 mV conforme o gráfico acima.
+
 
 ### Parte 2
 
