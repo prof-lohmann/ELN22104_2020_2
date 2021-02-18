@@ -147,18 +147,18 @@ _Figura 16_
 Aplicando 0V na entrada obteve-se na saída o resultado de -1,527 mV conforme o gráfico acima.
 
 Aplicando:
-5 mV: 48,376 mV
-50 mV: 497,65 mV
-200 mV: 1,9960 V
-500 mV: 4,975 V
+1. 5 mV: 48,376 mV
+2. 50 mV: 497,65 mV
+3. 200 mV: 1,9960 V
+4. 500 mV: 4,975 V
 
 Pode-se perceber que conforme cada década de aumento da tensão aplicada a tensão de saída dimunui por década. Calculando o erro percentual com relação ao ganho de 10V/V, temos:
-5 mV: 3,36 %
-50 mV: 0,472 %
-200 mV: 0,2 %
-500 mV: 0,5 %
+1. 5 mV: 3,36 %
+2. 50 mV: 0,472 %
+3. 200 mV: 0,2 %
+4. 500 mV: 0,5 %
 
-Quanto mais baixa é a tensão aplicada, maior é o erro.
+Ou seja, quanto mais baixa é a tensão aplicada, maior é o erro.
 
 #### AD8539
 
@@ -173,19 +173,26 @@ _Figura 18_
 Aplicando 0V na entrada obteve-se na saída o resultado de 137,3 uV conforme no gráfico acima.
 
 Aplicando:
-5 mV: 50,136 mV
-50 mV: 500,13 mV
-200 mV: 2,0000 V
-500 mV: 2,2795 V
+1. 5 mV: 50,136 mV
+2. 50 mV: 500,13 mV
+3. 200 mV: 2,0000 V
+4. 500 mV: 2,2795 V
 
 Calculando o erro percentual com relação ao ganho de 10V/V, temos:
-5 mV: 0,27 %
-50 mV: 0,0,26 %
-200 mV: 0,00 %
-500 mV: > 100 % - Houve saturação.
+1. 5 mV: 0,27 %
+2. 50 mV: 0,0,26 %
+3. 200 mV: 0,00 %
+4. 500 mV: > 100 % - Houve saturação.
 
 Podemos perceber que o AmpOp AD8539 apresenta uma faixa de erro muito menor quando aplicado com tensões de entrada mais baixas, ao contrário do AmpOp AD8040.
 
 ### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
-Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
-como subtrator.
+
+Neste caso seria mais interessante utilizar o AmpOp AD8539, uma vez que, este dispositivo apresentou uma faixa de erro muito menor quando aplicado com tensóes de entrada mais baixas.
+
+### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+
+Neste sentido, podemos utilizar os AmpOp's LTC 2063, LTC 2064 e LTC 2065 que apresentam tensões de offset máxima de ±10 uV, ou seja, muito menores que a tensão de offset do AmpOp AD8539, como podemos observar no datasheet abaixo.
+
+![Figura_19](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%204%20-%20Datasheet%20LTC%202063-2064-2065.JPG)
+_Figura 19_
