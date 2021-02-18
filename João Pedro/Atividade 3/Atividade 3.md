@@ -118,6 +118,6 @@ Aplicação:\
 3. E%3 = 8,7 %
 4. E%4 = 100,0 %
 
-Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Porém como a alimentação do AD8539 é de +-2,5 V, quando aplica-se 500 mV na entrada, há uma saturação em 2.49 V, sendo assim o erro chega a 100%.
+Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Porém como a alimentação do AD8539 é de +-2,5 V, quando aplica-se 500 mV na entrada, há uma saturação em 2.49 V, sendo assim o erro chega a 100%. 
 
 
