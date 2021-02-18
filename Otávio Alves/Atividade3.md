@@ -41,6 +41,12 @@ Pode-se observar através dos gráficos que existe uma saturação quando a tens
 ## 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 - Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 - Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
+### AD8040
+![inversor-AD8040](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/ad8040%20inversor.jpeg)
+Aplicando 0V na entrada, tem-se na tensão de saída 169,90mV. Como o ganho é de -100V/100V, o valor do offset será 100 vezes menor que a tensão de saída.
+### AD8539
+![inversor-AD8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/8539%20inversor.jpeg)
+Da mesma forma, aplicando 0V na entrada, tem-se na tensão de saída 1,38mV. Tanto no circuito com o ampop AD8040 e com o Ad8539 os valores de offset condizem com o datasheet.
 ## 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 - Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 - Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
