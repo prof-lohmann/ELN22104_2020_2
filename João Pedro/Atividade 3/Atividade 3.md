@@ -108,14 +108,16 @@ Concluimos que quanto maior for o valor de tensão na entrada, menor será o err
 
 ![Circuito 10](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Atividade%203/Figuras/Q4.2-85.PNG)
 Aplicação:\
-1. Vin = 5 mV -->> Vo = -115,2 mV
-2. Vin = 50 mV -->> Vo = 380,50 mV
-3. Vin = 200 mV -->> Vo = 2,031 V
-4. Vin = 500 mV -->> Vo = 4,98 V
+1. Vin = 5 mV -->> Vo = 55,0 mV
+2. Vin = 50 mV -->> Vo = 549,0 mV
+3. Vin = 200 mV -->> Vo = 2,19 V
+4. Vin = 500 mV -->> Vo = 2,49 V
 
-1. E%1 = 56,6 %
-2. E%2 = 31,4 %
-3. E%3 = 1,5 %
-4. E%4 = 0,4 %
+1. E%1 = 9,1 %
+2. E%2 = 8,9 %
+3. E%3 = 8,7 %
+4. E%4 = 100,0 %
 
-Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Podemos afirmar que o valor do ganho também será mais preciso com o valor de entrada mais próximo do valor de alimentação.
+Concluimos que quanto maior for o valor de tensão na entrada, menor será o erro do valor na saída. Porém como a alimentação do AD8539 é de +-2,5 V, quando aplica-se 500 mV na entrada, há uma saturação em 2.49 V, sendo assim o erro chega a 100%.
+
+
