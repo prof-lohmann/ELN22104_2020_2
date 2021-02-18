@@ -77,9 +77,9 @@ _Figura 4_
 
 ![Figura_5](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%204V%20-%20gr%C3%A1fico.JPG)
 
-Da mesma forma que a simulação anterior, utilizou-se uma alimentação de ± 5V, com uma frequência de 1 kHz. Aplicando uma tensão de 5V na entrada inversora observa-se que o AmpOp não satura e trabalha com 4,9978 V na crista e 4,9975 V no vale, o que nos resulta em uma tensão de offset de 2,2 mV e 2,5 mV, respectivamente, valores que também obedecem as especificações do datasheet.
-
 _Figura 5_
+
+Da mesma forma que a simulação anterior, utilizou-se uma alimentação de ± 5V, com uma frequência de 1 kHz. Aplicando uma tensão de 5V na entrada inversora observa-se que o AmpOp não satura e trabalha com 4,9978 V na crista e 4,9975 V no vale, o que nos resulta em uma tensão de offset de 2,2 mV e 2,5 mV, respectivamente, valores que também obedecem as especificações do datasheet.
 
 ![Figura_6](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%201%20-%20AD8539%20com%205.5V.JPG)
 
