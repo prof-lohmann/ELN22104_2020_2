@@ -63,29 +63,33 @@ Novamente, o desejado seria alcançar os 500mV de máximo e -500mV de mínimo. N
 ![grafico-naoinversor-ad8040](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/grafico%20ad8040%20exerc%204.jpeg)
 Aplicando 0V na entrada do circuito não inversor para o ampop AD8040,tem-se na saída -15.295mv.Tal valor é oriundo também do valor de offset do ampop.
 Aplicando os valores de sinal contínuo solicitados, tem-se os valores de saída:
-5mV --> 35.8mV
-50mV --> 485.8mV
-200mV --> 1.9868V
-500mV --> 4.972V
+- 5mV --> 35.8mV
+- 50mV --> 485.8mV
+- 200mV --> 1.9868V
+- 500mV --> 4.972V
+
 Como o ganho era de 10V/V, era esperado um valor 10 vezes maior que o valor aplicado na entrada. Segue abaixo os erros relaticos em relação ao ganho:
-5mV --> 28.4%
-50mV --> 2.84%
-200mV --> 0.66%
-500mV --> 0.56%
+
+- 5mV --> 28.4%
+- 50mV --> 2.84%
+- 200mV --> 0.66%
+- 500mV --> 0.56%
 ### AD8539
 ![naoinversor-ad8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/ad8539%20exerc%204.jpeg)
 ![grafico-naoinversor-ad8539](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/grafico%208539%20exerc%204.jpeg)
 Aplicando 0V na entrada do circuito não inversor para o ampop AD8539,tem-se na saída 1.2mV.Tal valor é oriundo também do valor de offset do ampop.
 Aplicando os valores de sinal contínuo solicitados, tem-se os valores de saída:
-5mV --> 51.2mV
-50mV --> 501.2mV
-200mV --> 2.0024V
-500mV --> 2.479V
+- 5mV --> 51.2mV
+- 50mV --> 501.2mV
+- 200mV --> 2.0024V
+- 500mV --> 2.479V
+
 Como o ganho era de 10V/V, era esperado um valor 10 vezes maior que o valor aplicado na entrada. Segue abaixo os erros relaticos em relação ao ganho:
-5mV --> SATUROU
-50mV --> SATUROU
-200mV --> SATUROU
-500mV --> 99.99%
+
+- 5mV --> SATUROU
+- 50mV --> SATUROU
+- 200mV --> SATUROU
+- 500mV --> 99.99%
 #### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. 
 Eu escolheria o amplficador 8539 por apresentar menos sinais de saturação com um ganho de 100V/V, apesar da simulação ter sido com um frequência alta(1kHz), esse amplificador apresentou melhor comportamento nessas condições.
 #### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
