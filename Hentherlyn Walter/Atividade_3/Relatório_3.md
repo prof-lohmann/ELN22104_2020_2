@@ -94,11 +94,11 @@ No gráfico acima apresentado, foi aplicada uma tensão de 5,5V na fonte colocad
 
 Simulando o circuito mostrado na figura abaixo com o AmpOp AD8040 e aplicando à sua entrada inversora 0V obtemos uma tensão de saída (Vo) de 16,96 mV. Sabendo que o valor da tensão de offset é igual a Vo dividido pelo ganho, temos que Voff é igual a 0,1696 mV  que se encaixa nas especificações presentes no datasheet.
 
-![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V.JPG)
+![Figura_7](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20circuito.JPG)
 
 _Figura 7_
 
-![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%202%20-%20AD8040%20com%200V%20-%20grafico.JPG)
+![Figura_8](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%203%20-%20AD8040%20-%20grafico.JPG)
 
 _Figura 8_
 
