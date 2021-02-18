@@ -144,7 +144,7 @@ _Figura 15_
 ![Figura_16](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8040%20-%200V%20-%20grafico.JPG)
 _Figura 16_
 
-Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme o gráfico acima.
+Aplicando 0V na entrada obteve-se na saída o resultado de -1,527 mV conforme o gráfico acima.
 
 Aplicando:
 5 mV: 48,376 mV
@@ -152,7 +152,7 @@ Aplicando:
 200 mV: 1,9960 V
 500 mV: 4,975 V
 
-Pode-se perceber que conforme cada década de aumento da tensão aplicada a tensão de saída dimunui por década. Calculando o erro percentual com relação ao ganho de 10V/v, temos:
+Pode-se perceber que conforme cada década de aumento da tensão aplicada a tensão de saída dimunui por década. Calculando o erro percentual com relação ao ganho de 10V/V, temos:
 5 mV: 3,36 %
 50 mV: 0,472 %
 200 mV: 0,2 %
@@ -164,10 +164,10 @@ Quanto mais baixa é a tensão aplicada, maior é o erro.
 
 Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
 
-![Figura_17](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V.JPG)
+![Figura_17](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%204%20-%20AD8539%20-%200V.JPG)
 _Figura 17_
 
-![Figura_18](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V%20-%20grafico.JPG)
+![Figura_18](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Quest%C3%A3o%204%20-%20AD8539%20-%200V%20-%20grafico.JPG)
 _Figura 18_
 
 Aplicando 0V na entrada obteve-se na saída o resultado de 137,3 uV conforme no gráfico acima.
