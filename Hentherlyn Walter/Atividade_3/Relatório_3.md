@@ -179,15 +179,15 @@ Quanto mais baixa é a tensão aplicada, maior é o erro.
 
 Sabendo que o ganho do amplificador não inversor é gual a G= 1 + Rf/R1, será utilizado Rf = 900 ohms e R1 = 100 ohms.
 
-![Figura_17]()
+![Figura_17](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V.JPG)
 
 _Figura 17_
 
-![Figura_18]()
+![Figura_18](https://github.com/Hentherlyn-Walter/ELN22104_2020_2/blob/main/Hentherlyn%20Walter/Atividade_3/Imagens/Questao%204%20-%20AD8539%20-%200V%20-%20grafico.JPG)
 
 _Figura 18_
 
-Aplicando 0V na entrada obteve-se na saída o resultado de 1,527 mV conforme no gráfico acima.
+Aplicando 0V na entrada obteve-se na saída o resultado de 137,3 uV conforme no gráfico acima.
 
 Aplicando:
 5 mV: 50,136 mV
