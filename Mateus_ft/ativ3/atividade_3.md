@@ -281,7 +281,7 @@ ty: 15 pA
 
 max: 25 pA
 
- A aplicação utilizará sinais na faixa de uV à mV. Portanto o AD8539 é mais indicado para essa aplicação. A corrente de polarização e a tensão de offset do AD8539 são milhões de vezes menores que a do AD8040.
+ A aplicação utilizará sinais na faixa de uV à mV. Portanto o AD8539 é mais indicado para essa aplicação. A corrente de polarização e a tensão de offset do AD8539 são milhões de vezes menores que a do AD8040..
 
 
 
