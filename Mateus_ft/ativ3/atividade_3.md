@@ -161,21 +161,6 @@ A tensão de entrada é senoidal com 2.8V de amplitude. Entretando o ampop satur
 
 **A) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.**
 
-- AD8040
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora.png)
-
-Observa-se que a tensão dissipada total é de aproximadamente 85,9mV. Vr1+ Vo= 19.52+66.38= 85,9 mV
-
-Para um ganho de R2/R1= 100.
-
-Voff= 85,9/100 = 0,859mV
-
-Voff= 0,859mV
-
-Essa é a tensao de offset do ampop pois nao existe nenhuma tensão de entrada apenas a realimentação negativa. Com Vin=0V.
-
-
 
 - AD8539
 
@@ -210,11 +195,15 @@ Vin= 5mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_5m.png)
 
+Voff= 13.73uV
+
 
 Vin= 50mV:
 
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_50m.png)
+
+Voff= 13.6uV
 
 
 Vin= 200mV:
@@ -222,16 +211,22 @@ Vin= 200mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_200m.png)
 
+Voff= 13uV
+
 
 Vin= 500mV:
 
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_500m.png)
 
+Observa-se que com a tensão de alimentação em 2.5V o ampop satura. Dessa forma foi alterado a tensão de aliemtação para +6V.
+
 Vin= 500mV. Vcc alterado +6V:
 
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_500m_vcc6%2B.png)
+
+Voff=25uV
 
 Para todas as simulações V0 reagiu de forma esperada com um ganho de 10V/v da tensão de entrada Vin.
 
