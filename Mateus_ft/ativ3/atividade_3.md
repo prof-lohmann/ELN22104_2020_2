@@ -154,6 +154,10 @@ A tensão de entrada é senoidal com 2.8V de amplitude. Entretando o ampop satur
 
 - AD8040
 
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/buffer_80.png)
+
+Como especificado no datasheet a maxima tensão de entrada é de Vcc + 0.2v. Entretanto a saída V0 satura em 5v (Vcc).
+
 
 **3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.**
 
