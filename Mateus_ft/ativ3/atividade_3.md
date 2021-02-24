@@ -192,6 +192,11 @@ Também foi considerado o ganho de -100V/V = -(R2/R1)*Vin
 
 Como esperado na simulação o ganho de -100*Vin. Para Vin=-5mv ---> V0=500mv
 
+- AD8040
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora_80_5m.png)
+
+Como esperado na simulação o ganho de -100*Vin. Entretanto o sinal foi V0 foi deslocado do eixo Y. É um sinal atrasado em relação ao Vin. Portanto a amplitude é de 1V como esperando. Porém varia de -400mV até 600mv.
+
 **Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V**
 
 **B)2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.**
@@ -241,6 +246,25 @@ Voff=25uV
 Para todas as simulações V0 reagiu de forma esperada com um ganho de 10V/v da tensão de entrada Vin.
 
 Ainda para a maioria dos sinais existe um resíduo no sinal de aproximadamente 13uV. O que se explica pelo offset do ampop.
+
+- AD8040
+
+Vin= 5mV
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_5mV.png)
+
+Vin= 50mV
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_50mV.png)
+
+Vin= 200mV
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_200mV.png)
+
+Vin= 500mV
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_500mV.png)
 
 
 
