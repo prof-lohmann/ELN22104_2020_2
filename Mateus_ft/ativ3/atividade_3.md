@@ -176,6 +176,14 @@ Também foi considerado o ganho de -100V/V = -(R2/R1)*Vin
 
 Na simulação contata-se que Voff= 13.7uV. Uma vez que V0= 1.37mV com um ganho de 100V/V. Sendo que a entrada Vin foi zerada(OV) única tensão restante é a tensão de offset.
 
+- AD8040
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/inversora_80_0v.png)
+
+Os resistores R1 e R2 foram escolhidos sendo 1Oohm e 100ohms respectivamente pois dessa forma a corrente de polarização não irá interferir no circuito, uma vez que a corrente que circulará no circuito será na casa de mA e a corrente de polarização é da ordem de uA.
+
+Também foi considerado o ganho de -100V/V = -(R2/R1)*Vin
+
 **B) Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.**
 
 - AD8539
