@@ -41,5 +41,6 @@ No gráfico acima, foi aplicada uma tensão de 6V na fonte colocada na entrada n
 ### AD8539
 
 ![image](https://user-images.githubusercontent.com/75046369/109438416-add9ef00-7a08-11eb-9733-9b1bb897d014.png)
+No AD8539 utilizamos alimentação de ±2.5V. A fonte na entrada não inversora foi de 2.5V com frequência de 1kHz. A partir de 2,5V temos saturação.
 ![image](https://user-images.githubusercontent.com/75046369/109438450-d3ff8f00-7a08-11eb-81a1-f05916f50266.png)
 
