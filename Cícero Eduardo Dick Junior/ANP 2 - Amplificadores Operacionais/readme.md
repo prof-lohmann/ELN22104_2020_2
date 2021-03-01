@@ -10,7 +10,7 @@ O AmpOp é feito com um grande número de transistores, resistores e, normalment
 
 #### Figura 1 - Ampop Ideal
 
-![ampop ideal img]()
+![ampop ideal img](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/ampop%20ideal.PNG)
 
 Os terminais **Vcc+** e **Vcc-** são para a alimentação do circuito e são, geralmente, simétricos. Os terminais **V+** e **V-** são para a entrada do sinal. Por último, o terminal **V0** é onde o sinal sai amplificado.
 
@@ -31,7 +31,7 @@ Quando um AmpOp trabalha com uma realimentação, seja positiva ou negativa, é 
 
 #### Figura 2 - Configuração inversora
 
-![ampop inversor]()
+![ampop inversor](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/ampop%20inversor.PNG)
 
 ## Como calcular AmpOps em Malha Fechada
 
@@ -52,7 +52,7 @@ G = - R1/R2
 
 #### Figura 3 - Configuração Não Inversora
 
-![ampop nao inversor]()
+![ampop nao inversor](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/ampop%20nao%20inversor.PNG)
 
 Para esta congiguração, o ganho G é obtido à partir da equação abaixo:
 ```
@@ -65,7 +65,7 @@ Eventualmente nos deparamos com circuitos onde ambas as entradas recebem um sina
 
 Figura 4 - Amplificador de Diferenças
 
-![amplificador de diferenças]()
+![amplificador de diferenças](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/amplificador%20subtrator.PNG)
 
 Nesse caso, usamos a técnica de superposição de fontes para calcular o ganho para a saída V0. Decompomos o circuito em dois circuitos diferentes, em um deles curto-circuitamos V1 e no outro fazemos isso com V2. Dessa forma teremos, respectivamente, um circuito inversor com V0' e um circuito não inversor com V0'' e a saída total V0 é dada por:
 ```
@@ -79,7 +79,7 @@ V0 = V2*(-R1/R2) + V1*(R4/(R4 + R3))*(1 + R1/R2)
 
 Figura 5 - *Buffer*
 
-![buffer]()
+![buffer](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/buffer.PNG)
 
 No caso do seguidor de tensão, o ganho diferencial é 1, isso significa que o não há amplificação do sinal, ou seja, o mesmo sinal na entrada **V+** aparece na saída **V0**.
 
@@ -94,14 +94,14 @@ Para o amplificador não inversor o ganho é positivo, por isso é chamado dessa
 ### Amplificador Somador Inversor
 
 Figura 6 - Amplificador Somador Inversor
-![somador inversor]()
+![somador inversor](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/somador%20inversor.PNG)
 
 O amplificador somador tem esse nome pois sua saída é a soma ponderada dos sinais de entrada. Ele pode ser calculado utilizando superposição.
 
 ### Amplificador Somador Não Inversor
 
 Figura 7 - Amplificador Somador Não Inversor
-![Somador nao inversor]()
+![Somador nao inversor](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/Somador%20nao%20inversor.PNG)
 
 ### Amplificador Subtrator
 
@@ -110,7 +110,7 @@ O amplificador subtrator é a topologia apresentada na Figura 4. Muito utilizado
 ### Amplificador de Instrumentação
 
 Figura 8 - Amplificador de Instrumentação
-![amplificador de instrumentaçao]()
+![amplificador de instrumentaçao](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/amplificador%20de%20instrumentaçao.PNG)
 
 O amplificador de instrumentação é uma versão mais precisa do Amplificador Subtrator e não apresenta tantos problemas quanto seu antecessor. A saída do circuito é dada pela equação:
 ```
@@ -134,7 +134,7 @@ Exemplo:
 Considerando o seguinte circuito:
 
 Figura 9 - AmpOp Inversor
-![Exemplo 6]()
+![Exemplo 6](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/exemplo%206.PNG)
 
 Se considerarmos o AmpOp ideal e com ganho em malha aberta infinito, a tensão Vout fica:
 ```
@@ -161,7 +161,7 @@ Analisando os resultados, podemos concluir que um ganho em malha aberta baixo po
 Em algumas aplicações, os AmpOps acabam tendo uma tensão de modo comum nos seus terminais de entrada. Esse é um caso muito comum para o amplificador subtrator e de instrumentação quando utilizados para medir a tensão de um resistor, por exemplo:
 
 Figura 10 - Tensão de Modo Comum
-![Tensao de modo comum]()
+![Tensao de modo comum](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/tensao%20de%20modo%20mum.PNG)
 
 A tensão de saída de um AmpOp é dada por:
 ```
@@ -188,7 +188,7 @@ Os AmpOps Rail-to-Rail são mais precisos e alcançam em sua saída uma tensão 
 A tensão de Offset é um sinal parasita que aparece na saída do circuito do AmpOp. Ela é comumente modelada como uma fonte de tensão na entrada não inversora do AmpOp.
 
 Figura 11 - Modelo de Offset
-![offset]()
+![offset](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%202%20-%20Amplificadores%20Operacionais/Img/offset.PNG)
 
 Em circuitos em corrente alternada, é possível colocar um capacitor na saída do ampop para minimizar o efeito da tensão de offset. Alguns AmpOps também possuem dois terminais extras ondep pode ser conectado um potenciômetro para anular os efeitos do offset.
 
