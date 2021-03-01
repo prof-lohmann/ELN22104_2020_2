@@ -33,7 +33,9 @@
 ![image](https://user-images.githubusercontent.com/75046369/109438272-fe048180-7a07-11eb-8a4e-dcceb59830fd.png)
 Para alimentação do AmpOp, foi utilizado -5V na entrada -V e 5V na entrada +V, seguindo as especificações encontradas no datasheet, o AmpOp trabalha fora da saturação no máximo em ±5V. Acima disso, podemos observar essa tensão sendo ceifada no pico de no máximo 5V, justamente por ser a tensão limite de alimentação. No gráfico abaixo podemos perceber o funcionamento do AD8040 como um seguidor de tensão, para uma fon te de 5V com frequência de 1kHz.
 ![image](https://user-images.githubusercontent.com/75046369/109438396-8edb5d00-7a08-11eb-8b1d-170994987418.png)
+Obtemos um valor máximo de Vmax=4.998245 e um valor mínimo de Vmin=-4.997561, onde temos um offset de 1.75mV no máximo e 2.44mV no mínimo, nos indicando que está dentro do especificado pelo datasheet, onde mostra um valor típico de 1.60mV porém máximo de 5mV.
 ![image](https://user-images.githubusercontent.com/75046369/109438479-f2658a80-7a08-11eb-978b-59d46daad63a.png)
+No gráfico acima, foi aplicada uma tensão de 6V na fonte colocada na entrada não inversora, com a alimentação do AmpOp de modo especificado pelo datasheet.
 
 
 ### AD8539
