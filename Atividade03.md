@@ -31,3 +31,13 @@
   ### AD4080
   
 ![image](https://user-images.githubusercontent.com/75046369/109438272-fe048180-7a07-11eb-8a4e-dcceb59830fd.png)
+Para alimentação do AmpOp, foi utilizado -5V na entrada -V e 5V na entrada +V, seguindo as especificações encontradas no datasheet, o AmpOp trabalha fora da saturação no máximo em ±5V. Acima disso, podemos observar essa tensão sendo ceifada no pico de no máximo 5V, justamente por ser a tensão limite de alimentação. No gráfico abaixo podemos perceber o funcionamento do AD8040 como um seguidor de tensão, para uma fon te de 5V com frequência de 1kHz.
+![image](https://user-images.githubusercontent.com/75046369/109438396-8edb5d00-7a08-11eb-8b1d-170994987418.png)
+![image](https://user-images.githubusercontent.com/75046369/109438479-f2658a80-7a08-11eb-978b-59d46daad63a.png)
+
+
+### AD8539
+
+![image](https://user-images.githubusercontent.com/75046369/109438416-add9ef00-7a08-11eb-9733-9b1bb897d014.png)
+![image](https://user-images.githubusercontent.com/75046369/109438450-d3ff8f00-7a08-11eb-81a1-f05916f50266.png)
+
