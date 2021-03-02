@@ -108,12 +108,14 @@ Ao calcular o erro percentual em relação ao ganho de 10V/V, obtemos:
     500mV -> *saturação*
     
 
-### Caso   deseja-se   projetar   um   amplificador   subtrator   com   ganho   de   100V/V,   para   sinais   muitopequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampopsvocê utilizaria? Justifique a sua resposta.
+### Caso   deseja-se   projetar   um   amplificador   subtrator   com   ganho   de   100V/V,   para   sinais   muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+
+Utilizaria o AD8539 pois esse ampop se comportou melhor do que o AD8040 quando lhe foi aplicado baixas tensões de entrada.
 
 
-### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicaçãocomo subtrator.
+### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
 
-
+Um terceiro ampop que seria uma melhor escolha é o LTC 2063 já que ele possui tensões de offset máximas menores que as tensões de offset do AD8539.
 
 
 
