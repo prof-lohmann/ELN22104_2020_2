@@ -19,6 +19,8 @@ Figura 2 - Buffer AD8539 com sinal 12,2Vpp senoidal de 1kHz.
 
 <img src="ad8539_buffersin.jpg" width="1000">
 
+Percebe-se que ambas as saturações apresentam os valores de alimentação, +-12V e +-2,5V respectivamente.
+
 ## Parte 3
 
 Figura 3 - Inversor AD8040 com sinal 0V e ganho -100 V/V.
