@@ -11,11 +11,11 @@ Visualização das características dos ampops AD8040 e AD8539.
 
 ## Parte 2
 
-Figura 1 - Buffer AD8040 com sinal 0Vpp senoidal de 1kHz.
+Figura 1 - Buffer AD8040 com sinal 12,2Vpp senoidal de 1kHz.
 
 <img src="ad8040_buffersin.jpg" width="1000">
 
-Figura 2 - Buffer AD8539 com sinal 0Vpp senoidal de 1kHz.
+Figura 2 - Buffer AD8539 com sinal 12,2Vpp senoidal de 1kHz.
 
 <img src="ad8539_buffersin.jpg" width="1000">
 
