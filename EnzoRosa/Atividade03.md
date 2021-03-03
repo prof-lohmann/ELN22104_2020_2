@@ -34,6 +34,21 @@
 
 Observando o gráfico acima, vemos que o ampop está fora da saturação, pois atingiu no máximo +5V e -5V.
 
+### AD8539
+
+![132](https://user-images.githubusercontent.com/75050609/109876108-1d8deb00-7c50-11eb-9874-b54f73ce04ad.PNG)
+
+De acordo com o datasheet do ampop, temos uma alimentação de +2,5V e -2,5V e como a fonte de alimentação é 3V haverá saturação, dado que a alimentação do ampop é +2,5V.
+
+![125](https://user-images.githubusercontent.com/75050609/109879137-f3d6c300-7c53-11eb-9f5b-27ad6471393e.PNG)
+
+Podemos observar que há uma saturação quando a tensão de saída alcança os valores de +2,5V e -2,5V.
+
+## 3) Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual a -100V/V.
+
+
+
+
 
 
 
