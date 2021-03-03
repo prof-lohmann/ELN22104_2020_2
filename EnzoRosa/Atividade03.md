@@ -1,3 +1,12 @@
 # Atividade 03
-## Nome enzo
-### eln
+
+## Questão 1:
+
+### AD8040
+###
+
+
+
+
+
+
