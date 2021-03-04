@@ -46,7 +46,7 @@ O efeito do offset aparece novamente. Dessa vez com o valor máximo do datasheet
 
 Figura 5 - Inversor AD8040 com sinal senoidal de 10mVpp@1kHz e ganho -100 V/V.
 
-<img src="ad8040inversorsenoidal.jpg" width="1000"
+<img src="ad8040inversorsenoidal.jpg" width="1000">
 
 O valor está deslocado 200 mV do valor correto, tanto para o pico positivo quanto negativo. Esse efeito está descrito no datasheet.
 
