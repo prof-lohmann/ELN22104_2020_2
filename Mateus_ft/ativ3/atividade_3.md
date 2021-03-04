@@ -249,22 +249,7 @@ Ainda para a maioria dos sinais existe um resíduo no sinal de aproximadamente 1
 
 - AD8040
 
-Vin= 5mV
 
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_5mV.png)
-
-Vin= 50mV
-
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_50mV.png)
-
-Vin= 200mV
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_200mV.png)
-
-Vin= 500mV
-
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_80_500mV.png)
 
 
 
