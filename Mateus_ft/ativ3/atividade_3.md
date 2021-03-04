@@ -253,17 +253,27 @@ Vin= 5mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_8040_5m.png)
 
+Voff=1,7mV
+
 Vin= 50mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_8040_50mV.png)
+
+Voff=1,6mV
 
 Vin= 200mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_8040_200mV.png)
 
+Voff=1,3mV
+
 Vin= 500mV:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/ativ3/imagens/ninv_8040_500mV.png)
+
+Voff -> inexistente;
+
+Ampop saturou;
 
 
 
