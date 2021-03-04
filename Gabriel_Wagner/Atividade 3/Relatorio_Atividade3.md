@@ -66,15 +66,39 @@ Figura 8 - Não Inversor AD8539 com sinal 0V e ganho 10 V/V.
 
 <img src="ad8539ninversor.jpg" width="1000">
 
-A tensão de offset aparece novamemte em ambas as simulações.
+A tensão de offset aparece novamente em ambas as simulações. Sendo o efeito mais perceptível no AD8040.
 
 Figura 9 - Não Inversor AD8040 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 10 V/V.
 
 <img src="ad8040tensoes.jpg" width="1000">
 
+Tabela 1 - Erro da Tensão de saída calculada x simulação do ampop AD8040.
+
+Vin(V) | Vout teórico(v) | Vout simulação(V) | Erro (%)
+-- | ------------------ | ----------- | --------
+5m | 50m | 74,4m | 48,8
+50m | 500m | 568m | 13,6
+200m | 2 | 2,214 | 10,7
+500m | 5 | 5 | 0
+
 Figura 10 - Não Inversor AD8539 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 10 V/V.
 
 <img src="ad8539tensoes.jpg" width="1000">
+
+Tabela 2 - Erro da Tensão de saída calculada x simulação do ampop AD8539.
+
+Vin(V) | Vout teórico(v) | Vout simulação(V) | Erro (%)
+-- | ------------------ | ----------- | --------
+5m | 50m | 55m | 10
+50m | 500m | 550m | 10
+200m | 2 | 2,2 | 10
+500m | 5 | 2,478 | 50
+
+Obs. O erro de 50% na última linha do AD8539 se deve a saturação do sinal, pois as tensões de alimentação desse ampop são de +-2,5 v.
+
+Podemos perceber alguns detalhes, o erro do ampop AD8040 aumenta conforme diminuímos as tensões de entrada. Grande parte devido a tensão de offset, que têm uma grandeza de tensão na ordem de mV.
+
+Outro detalhe é que o erro ao ampop AD8539 é mais equilibrado, apresentando valores constantes com regularidade.
 
 
 
