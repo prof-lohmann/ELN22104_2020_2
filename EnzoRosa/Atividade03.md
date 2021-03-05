@@ -46,6 +46,9 @@ Podemos observar que há uma saturação quando a tensão de saída alcança os 
 
 ## 3) Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual a -100V/V.
 
+###AD8040
+
+
 
 
 
