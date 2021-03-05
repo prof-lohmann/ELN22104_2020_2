@@ -48,6 +48,36 @@ Podemos observar que há uma saturação quando a tensão de saída alcança os 
 
 ###AD8040
 
+![123](https://user-images.githubusercontent.com/75050609/110173688-bb62f080-7ddd-11eb-8fa1-d2e52d5990d0.PNG)
+
+Ao aplicarmos 0V na entrada inversora, temos uma tensão de saida de 169,90mV. Sabendo que a tensão é o Vo dividido pelo ganho, o valor do offset será 100 vezes menor que a tensão de saída.
+
+![147](https://user-images.githubusercontent.com/75050609/110175233-362d0b00-7de0-11eb-8ef3-779450d2cc6e.PNG)
+
+![125](https://user-images.githubusercontent.com/75050609/110177220-64601a00-7de3-11eb-9d92-4756898f5077.jpeg)
+
+Neste circuito podemos observar que tais valores de 500mV de máximo e -500mV de mínimo não foram alcançados devido ao valor do offset do aparelho.
+
+###AD8539
+
+![1212](https://user-images.githubusercontent.com/75050609/110176105-93758c00-7de1-11eb-9aca-784e00a39cf3.PNG)
+
+Ao aplicarmos 0V na entrada inversora, temos uma tensão de saída de 1,38mV. Podemos dizer que o valor do offset condiz com o datasheet.
+
+![125](https://user-images.githubusercontent.com/75050609/110176991-f9aede80-7de2-11eb-9ffc-240be49c116c.PNG)
+
+![125](https://user-images.githubusercontent.com/75050609/110177790-42b36280-7de4-11eb-960c-87bbbed79080.jpeg)
+
+Neste circuito podemos observar que chegamos mais proximos do 500mV de máximo e -500mV de mínimo, pois o valor do offset do aparelho é diferente em comparação ao primeiro circuito.
+
+## 4) Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual a 10V/V.
+
+
+
+
+
+
+
 
 
 
