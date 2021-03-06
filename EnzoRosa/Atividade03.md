@@ -72,6 +72,56 @@ Neste circuito podemos observar que chegamos mais proximos do 500mV de máximo e
 
 ## 4) Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual a 10V/V.
 
+### AD8040
+
+![122](https://user-images.githubusercontent.com/75050609/110217619-d42ddd80-7e93-11eb-9f1d-dc91ae474f8c.jpeg)
+
+![123](https://user-images.githubusercontent.com/75050609/110217621-d6903780-7e93-11eb-94b4-4a1e2c92bd08.jpeg)
+
+Aplicando 0V na entrada, atingiu-se na saída o resultado de -15,289mV. Aplicando os valores solicitados, temos:
+
+* 5mV: 35,5mV
+* 50mV: 485,3mV
+* 200mV: 1,986V
+* 500mV: 4,931V
+
+Calculando o erro percentual em relação ao ganho 10V/V, temos: 
+
+* 5mV: 28,1%
+* 50mV: 2,81%
+* 200mV: 0,63%
+* 500mV: 0,53$
+
+### AD8539
+
+![155](https://user-images.githubusercontent.com/75050609/110217957-c416fd80-7e95-11eb-8397-4ecd46cbf295.jpeg)
+
+![143](https://user-images.githubusercontent.com/75050609/110217959-c6795780-7e95-11eb-8537-4c45064f2304.jpeg)
+
+Aplicando 0V na entrada, atingiu-se na saída o resultado de 1,2mV. Aplicando os valores solicitados, temos:
+
+* 5mV: 50,8mV
+* 50mV: 500,8mV
+* 200mV: 2,00V
+* 500mV: 2,480V
+
+Calculando o erro percentual em relação ao ganho 10V/V, temos: 
+
+* 5mV: Saturou
+* 50mV: Saturou
+* 200mV: Saturou
+* 500mV: 99% 
+
+### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique sua resposta. 
+
+Eu optaria pelo AD8539, pois esse ampop apresentou melhor comportamento nessas condições com um ganho de 100V/V.
+
+### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator. 
+
+Escolheria o ampop LTC2063 pois ele possui tensões de offset máximas menores que o do ampop AD8539.
+
+
+
 
 
 
