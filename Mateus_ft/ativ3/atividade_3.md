@@ -114,9 +114,9 @@ Vcm= 2.5V
 
 - CMRR:
 
-min: 110 dB
+min: 115 dB
 
-ty: 140 dB
+ty: 150 dB
 - Corrente de polarização:
 
 ty: 15 pA
@@ -326,7 +326,10 @@ ty: 15 pA
 
 max: 25 pA
 
- A aplicação utilizará sinais na faixa de uV à mV. Portanto o AD8539 é mais indicado para essa aplicação. A corrente de polarização e a tensão de offset do AD8539 são milhões de vezes menores que a do AD8040..
+ A aplicação utilizará sinais na faixa de uV à mV. Portanto o AD8539 é mais indicado para essa aplicação. A corrente de polarização e a tensão de offset do AD8539 são milhões de vezes menores que a do AD8040.
+ 
+ 
+ 
 
 
 
