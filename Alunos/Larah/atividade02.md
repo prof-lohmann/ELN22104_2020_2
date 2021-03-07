@@ -38,6 +38,8 @@ A figura acima mostra um amp op com configuração de realimentação negativa.
 #### a) Seguidor de Tensão (Buffer)
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/amp.op.buffer.simbolo.JPG)
 
+
+
 #### b) Inversor
 
 #### c) Não Inversor
@@ -48,13 +50,11 @@ A figura acima mostra um amp op com configuração de realimentação negativa.
 
 #### f)Subtrator
 
-#### g) Amplificaro de instrumentação
+#### g) Amplificador de instrumentação
 
 ### Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.
 
 #### a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
-
-#### b) Dica veja o problema 2.20 pg 83 do livro texto.
 
 ### 7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
 
