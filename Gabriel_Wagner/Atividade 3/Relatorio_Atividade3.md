@@ -106,7 +106,7 @@ A escolha dos ampops se deram principalmente pois as tensões de entrada são ba
 
 Figura 11 - Característica do ampop TLV2333
 
-<img src="ampop_escolha.png" width="1000">
+<img src="ampop_escolha.jpg" width="1000">
 
 Referência Imagem: Texas Instruments; https://www.ti.com/amplifier-circuit/op-amps/products.html#p2max=0.0015;0.02&sort=p1130;desc
 Produto: Texas Instruments; https://www.ti.com/product/TLV2333
