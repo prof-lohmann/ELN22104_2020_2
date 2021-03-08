@@ -113,7 +113,7 @@ Produto: Texas Instruments; https://www.ti.com/product/TLV2333
 
 Percebe-se que esse ampop apresenta tensão de offset de 15 uV e CMRR de 130 dB, com um valor de 0,607 dólares.
 
-Verificando ampops da Analog Devices, temos o AD8539, com tensão de offset de 15 uV e CMRR típico de 150 dB, custando 0,72 dólares.
+Verificando ampops da Analog Devices, temos o ampop utilizado neste relatório, o ampop AD8539, com tensão de offset de 15 uV e CMRR típico de 150 dB, custando 0,72 dólares.
 
 Produto: Analog Devices; https://www.analog.com/en/products/ad8539.html
 
