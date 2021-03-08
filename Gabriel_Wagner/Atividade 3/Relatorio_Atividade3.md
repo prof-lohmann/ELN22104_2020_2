@@ -100,6 +100,24 @@ Podemos perceber alguns detalhes, o erro do ampop AD8040 aumenta conforme diminu
 
 Outro detalhe é que o erro ao ampop AD8539 é mais equilibrado, apresentando valores constantes com regularidade.
 
+## Parte 5
+
+A escolha dos ampops se deram principalmente pois as tensões de entrada são baixas, na ordem de milivolt e microvolt, então tensões de modo comum e tensões de offset altas vão gerar erro na tensão da saída.
+
+Figura 11 - Característica do ampop TLV2333
+
+<img src="ampop_escolha.png" width="1000">
+
+Referência Imagem: Texas Instruments; https://www.ti.com/amplifier-circuit/op-amps/products.html#p2max=0.0015;0.02&sort=p1130;desc
+Produto: Texas Instruments; https://www.ti.com/product/TLV2333
+
+Percebe-se que esse ampop apresenta tensão de offset de 15 uV e CMRR de 130 dB, com um valor de 0,607 dólares.
+
+Verificando ampops da Analog Devices, temos o AD8539, com tensão de offset de 15 uV e CMRR típico de 150 dB, custando 0,72 dólares.
+
+Produto: Analog Devices; https://www.analog.com/en/products/ad8539.html
+
+
 
 
 
