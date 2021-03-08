@@ -15,10 +15,25 @@ Eletrônica I</b>
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
 <p align="center"><img src="../../Imagens/Atividade 1/1.png" align="center"><br></p>
 
+*No LTSpice podemos ver que batem as afirmações teóricas para o Exercício 1a*
+
+<p align="center"><img src="../../Imagens/Atividade 1/1alt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex1a.png" align="center"><br></p>
+
+*No LTSpice podemos ver que batem as afirmações teóricas para o Exercício 1b*
+
+<p align="center"><img src="../../Imagens/Atividade 1/1blt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex1b.png" align="center"><br></p>
+
 ---
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
 <p align="center"><img src="../../Imagens/Atividade 1/2.png" align="center"><br></p>
+
+*No LTSpice podemos ver que batem as afirmações teóricas, porém como mostrado pelo LTSpice no resultado final já temos o valor com seu sinal trocado, pela polaridade do circuito*
+
+<p align="center"><img src="../../Imagens/Atividade 1/2lt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex2.png" align="center"><br></p>
 
 ---
 
