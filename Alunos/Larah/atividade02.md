@@ -38,15 +38,21 @@ A figura acima mostra um amp op com configuração de realimentação negativa.
 #### a) Seguidor de Tensão (Buffer)
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/amp.op.buffer.simbolo.JPG)
 
-
+Possui ganho unitário G=1 o que implica em ter Vo igual a Vin e pode ser utilizado, por exemplo, em conjunto com multiplexadores, quando se desejar selecionar determinada entrada e não alterar o seu valor na saída. Em um ampop ideal o buffer terá impedância de saída nula e impedÂncia de entrada infita, sendo que em um modelo real buscasse aproximar ao máximo destas características.
 
 #### b) Inversor
 
+Possui ganho G = -R2/R1, com alta impedância de entrada, baixa impedancia de saída, ganho estável e tensão de saída amplificada defasada de 180 graus em relação a tensão de entrada.
+
 #### c) Não Inversor
 
+Possui ganho G = 1 + R2/R1, com alta impedancia de entrada, baixa impedância de saída e ganho estável.
+
 #### d) Somador inversor
+Possui ganho G = -Rf*(V1/R1 + V2/R2+...+Vn/Rn), usando da realimentação negativa e do terra virtual consegue-se obter o inverso de uma soma ponderada das entradas como resultado na saída.
 
 #### e) Somador não inversor
+
 
 #### f)Subtrator
 
