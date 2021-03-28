@@ -35,8 +35,7 @@ ________________________________________________________________________________
 ### 4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
 ### 5. Quais os componentes básicos implementados no SPICE?
 ### 6. O que é um “SUBCKT”? Faça um exemplo.
-### 7. Como incluir novos modelos de componentes em um simulador SPICE?
- 
+### 7. Como incluir novos modelos de componentes em um simulador SPICE?\
  
 ## FUNCIONAMENTO DOS PARÂMETROS DE SIMULAÇÃO SPICE
 ### 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.
