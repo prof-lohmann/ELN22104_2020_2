@@ -54,16 +54,14 @@ ________________________________________________________________________________
 • VISUALIZAÇÃO DO NETLIST:\
            o 1 – clicar em “View” (barra de ferramentas);\
            o 2 – selecionar “SPICE Netlist”.\
-![resolução exercício 05_1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_1.jpg)\
+![resolução exercício 05_1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_1.jpg)
+
+>>2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.\
 • DESCRIÇÃO DAS INFORMAÇÕES NO NETLIST:\
            o 1ª. coluna: declaração dos componentes;\
            o 2ª. e 3ª. colunas: indicação dos nós de conexão do componente;\
            o 4ª. coluna: valor físico do componente.\
- ![resolução exercício 05_2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_2.jpg)\
-
-
-
->>2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
+ ![resolução exercício 05_2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_2.jpg)
 
 >>3. Para se representar um resistor:
     o	R2=5Ω
