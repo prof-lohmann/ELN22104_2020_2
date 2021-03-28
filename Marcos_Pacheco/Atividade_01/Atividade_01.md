@@ -50,11 +50,11 @@ ________________________________________________________________________________
 # RESPOSTAS
 ## FUNCIONAMENTO DO SPICE
 
->1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
+>>1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
 
->2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
+>>2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
 
->3. Para se representar um resistor:
+>>3. Para se representar um resistor:
     o	R2=5Ω
     o	R2=5
     o	R=5
