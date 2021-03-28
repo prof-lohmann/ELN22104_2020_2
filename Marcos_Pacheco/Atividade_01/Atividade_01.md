@@ -1,3 +1,5 @@
+![logo_ifsc](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/logo_ifsc.jpg)
+
 # ATIVIDADE_01
 ## Aluno: Marcos Paulo Pacheco
 
