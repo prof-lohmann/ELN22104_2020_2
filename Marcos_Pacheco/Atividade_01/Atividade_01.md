@@ -3,6 +3,8 @@
 # ATIVIDADE_01
 ## Aluno: Marcos Paulo Pacheco
 
+# PRIMEIRA PARTE: 
+
 ## Resolva as questões de 1 à 4 de forma manuscrita e coloque uma imagem da resolução no GIT, conforme indicado pelo professor
 
 1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:
@@ -15,7 +17,7 @@
 ![resolução exercício 03](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao03.jpg)
 
 4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V.
-![resolução exercício 04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao04.jpg) ### OBS: O exercício 4 foi corrigido conforme correção em vídeo aula.
+![resolução exercício 04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao04.jpg) OBS: O exercício 4 foi corrigido conforme correção em vídeo aula.
 
 
 ### 5. Aprendendo a simular com o simulador LTSPICE
