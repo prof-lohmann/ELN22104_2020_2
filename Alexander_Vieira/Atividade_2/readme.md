@@ -14,7 +14,7 @@ Devido ao ampops reais possuírem desempenho muito próximo dos ampops ideais, e
 
 ### Amplificador Operacional Ideal
 <p align="center">
-    <img src="ampop1.PNG" width="400">
+    <img src="ampop1.png" width="400">
     <br><br>    
     Figura 1 - Atividade 2
 </p>
@@ -33,7 +33,7 @@ Referencia: [edisciplinas.usp.br/pluginfile.php/3874541/mod_resource/content/0/A
 </p>
 
 <p align="center">
-    <img src="ampop2.PNG" width="500">
+    <img src="ampop2.png" width="500">
     <br><br>    
     Figura 2 - Atividade 2
 </p>
@@ -59,47 +59,47 @@ Levando em consideração as características do amplificador operacional ideal:
 * Inicialmente temos;
 
 <p align="center">
-    <img src="ampop4.PNG" width="150">
+    <img src="ampop4.png" width="150">
 </p>
 
 * Considerando V2 igual a 0;
 
 <p align="center">
-    <img src="ampop5.PNG" width="150">
+    <img src="ampop5.png" width="150">
 </p>
 
 * Aplicando a malha de realimentação;
 
 <p align="center">
-    <img src="ampop6.PNG" width="200">
+    <img src="ampop6.png" width="200">
 </p>
 
 * Considerando o ampop ideal, a corrente em R1 deve ser a mesma em R2, pois a impedância de entrada seria infinita, logo;
 
 <p align="center">
-    <img src="ampop7.PNG" width="150">+
+    <img src="ampop7.png" width="150">+
 </p>
 
 * Aplicando “i” a equação;
 
 <p align="center">
-    <img src="ampop8.PNG" width="250">
+    <img src="ampop8.png" width="250">
 </p>
 
 * Isolando o termo Vout;
 
 <p align="center">
-    <img src="ampop9.PNG" width="200">
+    <img src="ampop9.png" width="200">
 </p>
 
 * Levando em consideração o ganho infinito de um ampop ideal, podemos chegar ao final da equação;
 
 <p align="center">
-    <img src="ampop10.PNG" width="200">
+    <img src="ampop10.png" width="200">
 </p>
 
 <p align="center">
-    <img src="ampop3.PNG" width="500">
+    <img src="ampop3.png" width="500">
     <br><br>    
     Figura 3 - Atividade 2
 </p>
@@ -115,7 +115,7 @@ A topologia Buffer ou Seguidor de tensão, permite isolar um sinal da entrada de
 </p>
 
 <p align="center">
-    <img src="ampop11.PNG" width="500">
+    <img src="ampop11.png" width="500">
     <br><br>    
     Figura 4 - Atividade 2
 </p>
@@ -129,7 +129,7 @@ A topologia Amplificador inversor, permite obter uma tensão com sinal oposto ao
 </p>
 
 <p align="center">
-    <img src="ampop12.PNG" width="400">
+    <img src="ampop12.png" width="400">
     <br><br>    
     Figura 5 - Atividade 2
 </p>
@@ -143,7 +143,7 @@ A topologia Amplificador não inversor, permite obter uma tensão com o mesmo si
 </p>
 
 <p align="center">
-    <img src="ampop12-1.PNG" width="400">
+    <img src="ampop12-1.png" width="400">
     <br><br>    
     Figura 6 - Atividade 2
 </p>
@@ -157,9 +157,9 @@ A topologia Amplificador somador inversor, permite obter uma soma ponderada e in
 </p>
 
 <p align="center">
-    <img src="ampop14.PNG" width="400">
+    <img src="ampop14.png" width="400">
     <br><br>
-    <img src="ampop13.PNG" width="400">
+    <img src="ampop13.png" width="400">
     <br><br> 
     Figura 7 - Atividade 2
 </p>
@@ -173,9 +173,9 @@ A topologia Amplificador somador, permite obter uma soma ponderada não invertid
 </p>
 
 <p align="center">
-    <img src="ampop16.PNG" width="200">
+    <img src="ampop16.png" width="200">
     <br><br>
-    <img src="ampop15.PNG" width="400">
+    <img src="ampop15.png" width="400">
     <br><br> 
     Figura 8 - Atividade 2
 </p>
@@ -189,7 +189,7 @@ O Amplificador subtrator tem a finalidade de amplificar as diferenças de tensõ
 </p>
 
 <p align="center">
-    <img src="ampop17.PNG" width="500">
+    <img src="ampop17.png" width="500">
     <br><br> 
     Figura 9 - Atividade 2
 </p>
@@ -203,9 +203,9 @@ Esta topologia visa resolver a inconveniência da necessidade de de uma resisten
 </p>
 
 <p align="center">
-    <img src="ampop19.PNG" width="200">
+    <img src="ampop19.png" width="200">
     <br><br>
-    <img src="ampop18.PNG" width="400">
+    <img src="ampop18.png" width="400">
     <br><br> 
     Figura 10 - Atividade 2
 </p>
@@ -282,7 +282,7 @@ O ganho em malha aberto finito pode ser demonstrado ao compararmos o ganho nomin
 </p>
 
 <p align="center">
-    <img src="ampop20.PNG" width="600">
+    <img src="ampop20.png" width="600">
 </p>
 
 <p align="justify">
@@ -297,7 +297,7 @@ Este parâmetro pode ser calculado utilizando as expressões abaixo:
 </p>
 
 <p align="center">
-    <img src="ampop21.PNG" width="600">
+    <img src="ampop21.png" width="600">
 </p>
 
 <p align="justify">
@@ -313,7 +313,7 @@ Exemplo da influência da tolerância dos resistores para o CMRR
 </p>
 
 <p align="center">
-    <img src="ampop22.PNG" width="600">
+    <img src="ampop22.png" width="600">
 </p>
 
 <p align="justify">
@@ -327,7 +327,7 @@ Diferente do componente ideal um ampop real possui limitações físicas que sã
 </p>
 
 <p align="center">
-    <img src="ampop23.PNG" width="600">
+    <img src="ampop23.png" width="600">
     <br><br> 
     Figura 11 - Atividade 2
 </p>
@@ -339,7 +339,7 @@ Como é possivel verificar na imagem acima o circuito interno de um Ampop é com
 </p>
 
 <p align="center">
-    <img src="ampop24.PNG" width="650">
+    <img src="ampop24.png" width="650">
     <img src="ampop25png.PNG" width="650">
     <br><br> 
     Figura 11-12 - Atividade 2
