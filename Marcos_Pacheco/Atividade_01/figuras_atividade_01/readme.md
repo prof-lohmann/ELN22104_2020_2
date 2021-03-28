@@ -1,1 +1,3 @@
-###pasta de arquivo de figuras
+### ORGANIZAÇÃO DE IMAGENS
+## reorganização das imagens da atividade_01
+
