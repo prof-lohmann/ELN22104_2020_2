@@ -54,8 +54,7 @@ ________________________________________________________________________________
 •	VISUALIZAÇÃO DO NETLIST:
 o	1 – clicar em “View” (barra de ferramentas);
 o	2 – selecionar “SPICE Netlist”.
-
-
+![resolução exercício 05_1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_1.jpg)
 
 •	DESCRIÇÃO DAS INFORMAÇÕES NO NETLIST:
 o	1ª. coluna: Declaração dos componentes;
