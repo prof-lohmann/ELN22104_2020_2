@@ -51,13 +51,13 @@ ________________________________________________________________________________
 ## FUNCIONAMENTO DO SPICE
 
 >>1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise. O NETLIST é uma descrição de um circuito em forma de texto detalhando todos os componentes que o compõe. Nessa lista, é possível observar além dos componentes, os conectores e nós (desde que devidamente identificados no circuito em simulação pelo próprio usuário). Ao se “setar” o NETLIST, aparecerá uma caixa de texto com todas as declarações realizadas.\
-• VISUALIZAÇÃO DO NETLIST:
-           o 1 – clicar em “View” (barra de ferramentas);
+• VISUALIZAÇÃO DO NETLIST:\
+           o 1 – clicar em “View” (barra de ferramentas);\
            o 2 – selecionar “SPICE Netlist”.
 ![resolução exercício 05_1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_1.jpg)\
-• DESCRIÇÃO DAS INFORMAÇÕES NO NETLIST:
-           o 1ª. coluna: declaração dos componentes;
-           o 2ª. e 3ª. dolunas: indicação dos nós de conexão do componente;
+• DESCRIÇÃO DAS INFORMAÇÕES NO NETLIST:\
+           o 1ª. coluna: declaração dos componentes;\
+           o 2ª. e 3ª. dolunas: indicação dos nós de conexão do componente;\
            o 4ª. doluna: valor físico do componente.
  ![resolução exercício 05_2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_2.jpg)\
 
