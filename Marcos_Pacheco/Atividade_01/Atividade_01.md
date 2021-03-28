@@ -50,7 +50,7 @@ ________________________________________________________________________________
 # RESPOSTAS
 ## FUNCIONAMENTO DO SPICE
 
->>1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise. O NETLIST é uma descrição de um circuito em forma de texto detalhando todos os componentes que o compõe. Nessa lista, é possível observar além dos componentes, os conectores e nós (desde que devidamente identificados no circuito em simulação pelo próprio usuário). Ao se “setar” o NETLIST, aparecerá uma caixa de texto com todas as declarações realizadas.
+>>1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise. O NETLIST é uma descrição de um circuito em forma de texto detalhando todos os componentes que o compõe. Nessa lista, é possível observar além dos componentes, os conectores e nós (desde que devidamente identificados no circuito em simulação pelo próprio usuário). Ao se “setar” o NETLIST, aparecerá uma caixa de texto com todas as declarações realizadas.\
 • VISUALIZAÇÃO DO NETLIST:
            o 1 – clicar em “View” (barra de ferramentas);
            o 2 – selecionar “SPICE Netlist”.
