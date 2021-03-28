@@ -37,6 +37,7 @@ ________________________________________________________________________________
 ### 6. O que é um “SUBCKT”? Faça um exemplo.
 ### 7. Como incluir novos modelos de componentes em um simulador SPICE?
  
+ 
 ## FUNCIONAMENTO DOS PARÂMETROS DE SIMULAÇÃO SPICE
 ### 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.
 ### 2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo
