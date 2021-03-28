@@ -26,15 +26,29 @@
 ### a) Faça um resumo em forma de tutorial sobre o como funciona o SPICE e responda: 
 ________________________________________________________________________________________________________________________________________________________________________________
 
-## FAQ
-# 1. O que é o NETLIST?
-# 2. Como descrever o NETLIST de um circuito?
-# 3. Como é representado cada um dos componentes? Explique com um exemplo.
-# 4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
-# 5. Quais os componentes básicos implementados no SPICE?
-# 6. O que é um “SUBCKT”? Faça um exemplo.
-# 7. Como incluir novos modelos de componentes em um simulador SPICE?
+# FAQ 
 
+## FUNCIONAMENTO DO SPICE
+### 1. O que é o NETLIST?
+### 2. Como descrever o NETLIST de um circuito?
+### 3. Como é representado cada um dos componentes? Explique com um exemplo.
+### 4. O que é o “LABEL” de um nó e qual a vantagem de usar o mesmo?
+### 5. Quais os componentes básicos implementados no SPICE?
+### 6. O que é um “SUBCKT”? Faça um exemplo.
+### 7. Como incluir novos modelos de componentes em um simulador SPICE?
+ 
+## FUNCIONAMENTO DOS PARÂMETROS DE SIMULAÇÃO SPICE
+### 1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.
+### 2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo
+### 3. Quando usar .trans ou .op no SPICE?
+### 4. O que faz a diretiva “.step”? Forneça exemplos de utilização.
+### 5. O que faz a diretiva “.means”? Forneça exemplos de utilização.
+### 6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.
+### 7. Como simular um circuito em diferentes temperaturas de funcionamento?
+
+________________________________________________________________________________________________________________________________________________________________________________
+# RESPOSTAS
+## FUNCIONAMENTO DO SPICE
 
 1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
 
@@ -56,25 +70,19 @@ Observa-se que quanto  mais completos forem as informações, mais fácil será 
 7. Assistir vídeo com passo-a-passo
 [! [] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")[![Inserção novos modelos - LTSPICE](http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)](http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")
 
- 
-### b) Faça um resumo em forma de tutorial sobre o como funciona os parâmetros de simulação do SPICE, respondendo: 
-1. O que é simulação transiente (.trans)? Quando usar? Faça um exemplo.\
-R: A simulação transiente (.trans) é quando ocorre em função do tempo.
+# RESPOSTAS
+## FUNCIONAMENTO DOS PARÂMETROS DE SIMULAÇÃO SPICE
 
-2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo\
-R: A simulação (.op) é aquela análise em corrente contínua.
+1. A simulação transiente (.trans) é quando ocorre em função do tempo.
 
-3. Quando usar .trans ou .op no SPICE?\
-R: A decisão de se usar a função “.trans” ou a “.op”, é quando existe a necessidade de análise em função do tempo ou corrente contínua, respectivamente.
+2. A simulação (.op) é aquela análise em corrente contínua.
 
-4. O que faz a diretiva “.step”? Forneça exemplos de utilização.\
-R: A diretiva “.step” indica qual o valor de uma determinada constante que vai ser multiplicada a um componente de tempos em tempos.
+3. A decisão de se usar a função “.trans” ou a “.op”, é quando existe a necessidade de análise em função do tempo ou corrente contínua, respectivamente.
 
-5. O que faz a diretiva “.means”? Forneça exemplos de utilização.\
-R: A diretiva “.means” mostra o valor médio de alguma variável que está sendo analisada.
+4. A diretiva “.step” indica qual o valor de uma determinada constante que vai ser multiplicada a um componente de tempos em tempos.
 
-6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.\
-R: Este comando produz uma "varredura" ou variação da tensão de uma fonte de tensão especificada desde um valor inicial até um valor  final com incrementos sucessivos (o valor do incremento é indicado pelo projetista). 
+5. A diretiva “.means” mostra o valor médio de alguma variável que está sendo analisada.
 
-7. Como simular um circuito em diferentes temperaturas de funcionamento?\
-R: Para se simular um circuito em diferente temperaturas de funcionamento, o projetista deverá utilizar a função “.temp” durante a simulação.
+6. Este comando produz uma "varredura" ou variação da tensão de uma fonte de tensão especificada desde um valor inicial até um valor  final com incrementos sucessivos (o valor do incremento é indicado pelo projetista). 
+
+7. Para se simular um circuito em diferente temperaturas de funcionamento, o projetista deverá utilizar a função “.temp” durante a simulação.
