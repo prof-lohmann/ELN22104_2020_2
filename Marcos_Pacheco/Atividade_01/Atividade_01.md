@@ -50,24 +50,24 @@ ________________________________________________________________________________
 # RESPOSTAS
 ## FUNCIONAMENTO DO SPICE
 
-1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
+>1. Uma das funcionalidades mais importantes para se manter a organização e entendimento dos circuitos em análise são as NETLIST, que são representações de textos e símbolos.
 
-2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
+>2. As NETLISTS podem ser descritas com letras (exemplo: resistor = R1, R2…), símbolos (Ω, Σ, Δ...) e representação numérica (1, 2, 3…). Muito comum nas diversas descrições são as combinações de letras, números e símbolos, como já indicados.
 
-3. Para se representar um resistor:
+>3. Para se representar um resistor:
     o	R2=5Ω
     o	R2=5
     o	R=5
 Observa-se que quanto  mais completos forem as informações, mais fácil será a compreensão inicial do circuito.
 
-4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação de daqueles valores de forma mais ágil.
+>4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação de daqueles valores de forma mais ágil.
 
-5. Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díodo.
+>5. Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díodo.
 
-6. A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração  adequada descrita anteriormente.
+>6. A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração  adequada descrita anteriormente.
 
 
-7. Assistir vídeo com passo-a-passo
+>7. Assistir vídeo com passo-a-passo
 [! [] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")[![Inserção novos modelos - LTSPICE](http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)](http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")
 
 # RESPOSTAS
