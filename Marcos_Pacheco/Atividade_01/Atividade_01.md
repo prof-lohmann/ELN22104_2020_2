@@ -63,11 +63,12 @@ ________________________________________________________________________________
            o 4ª. coluna: valor físico do componente.\
  ![resolução exercício 05_2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_2.jpg)
 
->>3. Para se representar um resistor:
-    o	R2=5Ω
-    o	R2=5
-    o	R=5
-Observa-se que quanto  mais completos forem as informações, mais fácil será a compreensão inicial do circuito.
+>>3. Os componentes são representados por uma letra seguido por um índice para valorização do respectivo parâmetro. Por exemplo no circuito ilustrativo:\
+• RESISTOR: representado pela letra "R", seguido pelo índice (1,2,3...);/
+• CAPACITOR: presentado pela letra "C", seguido pelo índice(1);/
+• FONTE: presentado pela letra "V", seguido pelo índice (1)\
+Observa-se que quanto  mais completos forem as informações, mais fácil será a compreensão inicial do circuito.\
+![resolução exercício 05_3](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_3.jpg)
 
 >>4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação de daqueles valores de forma mais ágil.
 
