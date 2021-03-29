@@ -71,10 +71,8 @@ ________________________________________________________________________________
 Observa-se que quanto  mais completas forem as informações, mais fácil será a compreensão inicial do circuito, ainda mais naqueles que sejam mais complexos, com mais componentes representados, por exemplo.\
 ![resolução exercício 05_3](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_3.jpg)
 
->>4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação daqueles valores de forma mais ágil. 
-
-
-
+>>4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação daqueles valores de forma mais ágil. A figura a seguir indica como esse recurso pode ser interessante, mostrando que partes do circuito com funções específicas, podem "ficar separadas" do circuito principal, porém, mantendo suas funcionalidades, ou seja, o LABEL faz a conexão física entre esses pontos de maneira "virtual".\
+![resolução exercício 05_4](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_4.jpg)
 
 >>5. Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díodo.
 
