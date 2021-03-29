@@ -64,9 +64,10 @@ ________________________________________________________________________________
  ![resolução exercício 05_2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_2.jpg)
 
 >>3. Os componentes são representados por uma letra seguido por um índice para valorização do respectivo parâmetro. Por exemplo no circuito ilustrativo:\
-• RESISTOR: representado pela letra "R", seguido pelo índice (1,2,3...);/
-• CAPACITOR: presentado pela letra "C", seguido pelo índice(1);/
+• RESISTOR: representado pela letra "R", seguido pelo índice (1,2,3...);\
+• CAPACITOR: presentado pela letra "C", seguido pelo índice(1);\
 • FONTE: presentado pela letra "V", seguido pelo índice (1)\
+• FATOR MÚLTIPLICADOR: caso o valor numérico do parâmetro possua fatores multiplicadores ou divisores de potências de "10", no exemplo tem-se K (x10^3) e m (x10^-3).\
 Observa-se que quanto  mais completos forem as informações, mais fácil será a compreensão inicial do circuito.\
 ![resolução exercício 05_3](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_3.jpg)
 
