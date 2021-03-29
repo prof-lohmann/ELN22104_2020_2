@@ -82,12 +82,12 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
            o A declaração ".SUBCKT" inicia a definição de um subcircuito;\
            o A definição termina com uma declaração ".ENDS";\
            o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\
-           o Sempre que o subcircuito é chamado por uma declaração "NOME", todas as declarações na definição substituem a declaração de chamada. 
-           o EXEMPLO: 
+           o Sempre que o subcircuito é chamado por uma declaração "NOME", todas as declarações na definição substituem a declaração de chamada;\ 
+           o EXEMPLO:\ 
  
  .subckt LMX24_LM2902 IN+ IN- VCC VEE OUT
-******************************************************
-* MODEL DEFINITIONS:
+--------------------------------------------------------
+ MODEL DEFINITIONS:
 .model BB_SW VSWITCH(Ron=50 Roff=1e12 Von=700e-3 Voff=0)
 .model ESD_SW VSWITCH(Ron=50 Roff=1e12 Von=250e-3 Voff=0)
 .model OL_SW VSWITCH(Ron=1e-3 Roff=1e9 Von=900e-3 Voff=800e-3)
@@ -96,25 +96,27 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 
 Componentes como amplificador operacional é composto por vários subcircuitos que realizam funções determinadas, e que podem ser utilizados ainda em outras estruturas de outros componentes, caso inserido no projeto dele. Importante verificar acima, que esse subcircuito possui cinco portas: IN+ IN- VCC VEE OUT, cuja sequência deverá ser respeitada, a fim de se obter os efeitos desejados.
  
- >>7. A maneira mais prática de se inserir novos modelos de componentes no Spice, é seguindo os passos como demonstrado a seguir:
-           • 1 ETAPA: buscar o modelo do componente a que se desejar inserir. O mais adequado é realizar a buscativa em sites de fabricantes conhecidos, como no exemplo que segue. Exemplo: inserir o amplificador operacional LM324, no caso foi procurado no site da fabricante “Texas Instruments”.
-
+ >>7. A maneira mais prática de se inserir novos modelos de componentes no Spice, é seguindo os passos como demonstrado a seguir:\
+           • 1 ETAPA: buscar o modelo do componente a que se desejar inserir. O mais adequado é realizar a buscativa em sites de fabricantes conhecidos, como no exemplo que segue. Exemplo: inserir o amplificador operacional LM324, no caso foi procurado no site da fabricante “Texas Instruments”.\
+![resolução exercício 05_7.1]
  
            • 2 ETAPA: Buscar no site da empresa escolhida o “modelo Spice” do componente desejado. No caso da empresa Texas, o local do arquivo seguiu o seguinte caminho: 
                       o _Desenvolvimento de design;
                       o _Ferramentas de design e simulação;
                       o _modelo PSPICELMX24-LM9202(Rev.A) – modelo equivalente.
-
+![resolução exercício 05_7.2]
  
            • 3 ETAPA: fazer o download do arquivo;
            • 4 ETAPA: salvar o arquivo.cir em local a escolha;
-
+![resolução exercício 05_7.3]
  
            • 5 ETAPA: na tela do programa SPICE, no projeto em desenvolvimento, no botão “.op” (barra de ferramentas). Abrirá uma caixa com espaço para se indicar o caminho correto, onde o arquivo.cir foi salvo. Deve-se descrever o caminho da seguinte forma:
            o .lib [caminho do arquivo.cir]
-
+![resolução exercício 05_7.4]
 
            • 6 ETAPA: biblioteca inserida (novo modelo) e circuito pronto a ser simulado.
+ ![resolução exercício 05_7.5]
+ 
  
 Através do vídeo a seguir, o procedimento poderá ser verificado também de forma visual:\
 [! [] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")[![Inserção novos modelos - LTSPICE](http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)](http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")
