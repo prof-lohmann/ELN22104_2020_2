@@ -68,7 +68,7 @@ ________________________________________________________________________________
 • CAPACITOR: presentado pela letra "C", seguido pelo índice(1);\
 • FONTE: presentado pela letra "V", seguido pelo índice (1)\
 • FATOR MÚLTIPLICADOR: caso o valor numérico do parâmetro possua fatores multiplicadores ou divisores de potências de "10", no exemplo tem-se K (x10^3) e m (x10^-3).\
-Observa-se que quanto  mais completos forem as informações, mais fácil será a compreensão inicial do circuito.\
+Observa-se que quanto  mais completas forem as informações, mais fácil será a compreensão inicial do circuito, ainda mais naqueles que sejam mais complexos, com mais componentes representados, por exemplo.\
 ![resolução exercício 05_3](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_3.jpg)
 
 >>4. O LABEL de um nó é uma indicação de pontos com os mesmos parâmetros físicos (valores). A utilização deste recurso além de facilitar a organização de circuitos mais complexos e com muitos componentes, permite a recuperação de daqueles valores de forma mais ágil.
