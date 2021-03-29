@@ -83,7 +83,7 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
            o A definição termina com uma declaração ".ENDS";\
            o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\
            o Sempre que o subcircuito é chamado por uma declaração <NOME>, todas as declarações na definição substituem a declaração de chamada. 
-
+ 
 
 >>7. Assistir vídeo com passo-a-passo
 [! [] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")[![Inserção novos modelos - LTSPICE](http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)](http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")
