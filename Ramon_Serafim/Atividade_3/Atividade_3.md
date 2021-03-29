@@ -58,12 +58,12 @@ Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
 ### AmpOp AD8040
 
 
-
-(imagem Esquematico AD8040 1)
-
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8040%201.PNG?raw=true">
 
 
-(imagem Vout AD8040 1)
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8040%201.PNG?raw=true">
+
 
 
 
@@ -74,12 +74,13 @@ Observando o gráfico de saída, o AmpOp não saturou pois atingiu +2V e -2V.
 ### AmpOp AD8539
 
 
-
-(imagem Esquematico AD8539 1)
-
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8539%201.PNG?raw=true">
 
 
-(imagem Vout AD8539 1)
+
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8539%201.PNG?raw=true">
+
 
 
 
@@ -94,32 +95,32 @@ Observando o gráfico de saída, o AmpOp saturou. Como a tensão de alimentaçã
 ### AmpOp AD8040
 
 
-
-(imagem Esquematico AD8040 2)
-
-
-
-(imagem Vout AD8040 2 offset)
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8040%202.PNG?raw=true">
 
 
 
-(imagem Vout AD8040 2 ganho)
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8040%202%20offset.PNG?raw=true">
+
+
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8040%202%20ganho.PNG?raw=true">
+
 
 
 
 ### AmpOp AD8539
 
 
-
-(imagem Esquematico AD8539 2)
-
-
-
-(imagem Vout AD8539 2 offset)
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8539%202.PNG?raw=true">
 
 
 
-(imagem Vout AD8539 2 ganho)
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8539%20%202%20offset.PNG?raw=true">
+
+
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8539%20%202%20ganho.PNG?raw=true">
+
 
 
 
@@ -130,12 +131,11 @@ Observando o gráfico de saída, o AmpOp saturou. Como a tensão de alimentaçã
 ### AmpOp AD8040
 
 
-
-(imagem Esquematico AD8040 3)
-
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8040%203.PNG?raw=true">
 
 
-(imagem Vout AD8040 3 offset)
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8040%203%20offset.PNG?raw=true">
 
 
 
@@ -144,9 +144,13 @@ Colocando 0V na entrada, verificamos uma tensão de offset de -15.296mV. Aplican
 
 
 5mV: 34.699mV
+
 50mV: 484.665mV
+
 200mV: 1.984V
+
 500mV: 4.966V
+
 
 
 
@@ -155,19 +159,23 @@ Erro percentual com relação ao ganho calculado:
 
 
 5mV: 30.66%
+
 50mV: 3.06%
+
 200mV: 0.8%
+
 500mV: 0.68%
+
 
 ### AmpOp AD8539
 
 
-
-(imagem Esquematico AD8539 3)
-
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Esquematico%20AD8539%203.PNG?raw=true">
 
 
-(imagem Vout AD8539 3 offset)
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-1/Ramon_Serafim/Atividade_3/Vout%20AD8539%203%20offset.PNG?raw=true">
+
 
 
 
@@ -176,9 +184,13 @@ Colocando 0V na entrada, verificamos uma tensão de offset de 137.296uV. Aplican
 
 
 5mV: 50.137mV
+
 50mV: 500.136mV
+
 200mV: 2.000V
+
 500mV: 2.476V
+
 
 
 
@@ -187,9 +199,13 @@ Erro percentual com relação ao ganho calculado:
 
 
 5mV: 0.27%
+
 50mV: 0.03%
+
 200mV: 0% 
+
 500mV: 50.48%
+
 
 
 
