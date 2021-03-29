@@ -75,7 +75,7 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 ![resolução exercício 05_4](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_4.jpg)
 
 >>5. Os componentes mais básicos no SPICE são: resistor, capacitor, indutor e díodo, além do terra. Importante salientar que os componentes podem ser inseridos tanto pela barra de ferramentas, através dos botões dos respectivos símbolos ou por teclas de atalho, pelas letrass R, C, L, D e G, respectivamente.\
-
+![resolução exercício 05_5](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_5.jpg)
 
 >>6. A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração  adequada descrita anteriormente.
 
