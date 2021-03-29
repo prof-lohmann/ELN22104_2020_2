@@ -97,13 +97,14 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 Componentes como amplificador operacional é composto por vários subcircuitos que realizam funções determinadas, e que podem ser utilizados ainda em outras estruturas de outros componentes, caso inserido no projeto dele. Importante verificar acima, que esse subcircuito possui cinco portas: IN+ IN- VCC VEE OUT, cuja sequência deverá ser respeitada, a fim de se obter os efeitos desejados.
  
  >>7. A maneira mais prática de se inserir novos modelos de componentes no Spice, é seguindo os passos como demonstrado a seguir:\
-           • 1 ETAPA: buscar o modelo do componente a que se desejar inserir. O mais adequado é realizar a buscativa em sites de fabricantes conhecidos, como no exemplo que segue. Exemplo: inserir o amplificador operacional LM324, no caso foi procurado no site da fabricante “Texas Instruments”.\
+           • 1 ETAPA: buscar o modelo do componente a que se desejar inserir. O mais adequado é realizar a buscativa em sites de fabricantes conhecidos. Exemplo: inserir o amplificador operacional LM324, no caso foi procurado no site da fabricante “Texas Instruments”.\
+           
 ![resolução exercício 05_7.1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.1.jpg)
  
            • 2 ETAPA: Buscar no site da empresa escolhida o “modelo Spice” do componente desejado. No caso da empresa Texas, o local do arquivo seguiu o seguinte caminho:\ 
-                      o _Desenvolvimento de design;\
-                      o _Ferramentas de design e simulação;\
-                      o _modelo PSPICELMX24-LM9202(Rev.A) – modelo equivalente.\
+                      o Desenvolvimento de design;\
+                      o Ferramentas de design e simulação;\
+                      o modelo PSPICELMX24-LM9202(Rev.A)-modelo equivalente.\
 ![resolução exercício 05_7.2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.2.jpg)
  
            • 3 ETAPA: fazer o download do arquivo;\
