@@ -81,7 +81,7 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
                       • .SUBCKT <NOME> [NÓ]*\
                                  o A declaração ".SUBCKT" inicia a definição de um subcircuito;\
                                  o A definição termina com uma declaração ".ENDS";\ 
-                                 o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\ 
+                                 o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\
                                  o Sempre que o subcircuito é chamado por uma declaração <NOME>, todas as declarações na definição substituem a declaração de chamada. 
 
 
