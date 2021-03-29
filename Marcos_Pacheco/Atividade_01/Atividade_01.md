@@ -98,27 +98,26 @@ Componentes como amplificador operacional é composto por vários subcircuitos q
  
  >>7. A maneira mais prática de se inserir novos modelos de componentes no Spice, é seguindo os passos como demonstrado a seguir:\
            • 1 ETAPA: buscar o modelo do componente a que se desejar inserir. O mais adequado é realizar a buscativa em sites de fabricantes conhecidos, como no exemplo que segue. Exemplo: inserir o amplificador operacional LM324, no caso foi procurado no site da fabricante “Texas Instruments”.\
-![resolução exercício 05_7.1]
+![resolução exercício 05_7.1](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.1.jpg)
  
-           • 2 ETAPA: Buscar no site da empresa escolhida o “modelo Spice” do componente desejado. No caso da empresa Texas, o local do arquivo seguiu o seguinte caminho: 
-                      o _Desenvolvimento de design;
-                      o _Ferramentas de design e simulação;
-                      o _modelo PSPICELMX24-LM9202(Rev.A) – modelo equivalente.
-![resolução exercício 05_7.2]
+           • 2 ETAPA: Buscar no site da empresa escolhida o “modelo Spice” do componente desejado. No caso da empresa Texas, o local do arquivo seguiu o seguinte caminho:\ 
+                      o _Desenvolvimento de design;\
+                      o _Ferramentas de design e simulação;\
+                      o _modelo PSPICELMX24-LM9202(Rev.A) – modelo equivalente.\
+![resolução exercício 05_7.2](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.2.jpg)
  
-           • 3 ETAPA: fazer o download do arquivo;
-           • 4 ETAPA: salvar o arquivo.cir em local a escolha;
-![resolução exercício 05_7.3]
+           • 3 ETAPA: fazer o download do arquivo;\
+           • 4 ETAPA: salvar o arquivo.cir em local a escolha;\
+![resolução exercício 05_7.3](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.3.jpg)
  
-           • 5 ETAPA: na tela do programa SPICE, no projeto em desenvolvimento, no botão “.op” (barra de ferramentas). Abrirá uma caixa com espaço para se indicar o caminho correto, onde o arquivo.cir foi salvo. Deve-se descrever o caminho da seguinte forma:
-           o .lib [caminho do arquivo.cir]
-![resolução exercício 05_7.4]
+           • 5 ETAPA: na tela do programa SPICE, no projeto em desenvolvimento, no botão “.op” (barra de ferramentas). Abrirá uma caixa com espaço para se indicar o caminho correto, onde o arquivo.cir foi salvo. Deve-se descrever o caminho da seguinte forma:\
+           o .lib [caminho do arquivo.cir]\
+![resolução exercício 05_7.4](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.4.jpg)
 
-           • 6 ETAPA: biblioteca inserida (novo modelo) e circuito pronto a ser simulado.
- ![resolução exercício 05_7.5]
- 
- 
-Através do vídeo a seguir, o procedimento poderá ser verificado também de forma visual:\
+           • 6 ETAPA: biblioteca inserida (novo modelo) e circuito pronto a ser simulado.\
+ ![resolução exercício 05_7.5](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_7.5.jpg)
+  
+           • Através do vídeo a seguir, o procedimento poderá ser verificado também de forma visual:\
 [! [] (http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)] (http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")[![Inserção novos modelos - LTSPICE](http://img.youtube.com/vi/RWYQ291X_0o/0.jpg)](http://www.youtube.com/watch?v=RWYQ291X_0o "Inserção novos modelos - LTSPICE")
 
 
