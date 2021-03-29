@@ -79,11 +79,10 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 
 >>6. A diretiva “.SUBCKT” é usada para definir um subcircuito que é chamado usando a declaração conforme indicada a seguir:\
                       • .SUBCKT <NOME> [NÓ]*\
-                                 o A declaração ".SUBCKT" inicia a definição de um subcircuito;\
-                                 o A definição termina com uma declaração ".ENDS";\ 
-                                 o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\
-                                 o Sempre que o subcircuito é chamado por uma declaração <NOME>, todas as declarações na definição substituem a declaração de chamada. 
-
+           o A declaração ".SUBCKT" inicia a definição de um subcircuito;\
+           o A definição termina com uma declaração ".ENDS";\
+           o Todas as declarações entre .SUBCKT e .ENDS são incluídas na definição;\
+           o Sempre que o subcircuito é chamado por uma declaração <NOME>, todas as declarações na definição substituem a declaração de chamada. 
 
 
 >>7. Assistir vídeo com passo-a-passo
