@@ -108,11 +108,17 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 # RESPOSTAS
 ## FUNCIONAMENTO DOS PARÂMETROS DE SIMULAÇÃO SPICE
 
-1. A simulação transiente (.trans) é quando ocorre em função do tempo.
+>>1. A simulação transiente [.trans] é a análise não linear com regime transitório que ocorre num determinado domínio. Pode ser usado em circuitos  com fonte de alimentação alternada ou em circuitos com características não lineares como aqueles que possuem capacitores e indutores, por exemplo (circuitos AC). Nessa simulação é apresentado um gráfico como resultado. Para inserir a função pode ser acessada através da barra de ferramentas – “Edit” – “SPICE Analysis” – aba “Transiente” (na caixa de comando que abre). Durante a definição da diretiva podem ser inseridos os seguintes parâmetros:\
+           • Tempo final [Stop Time];\
+           • Tempo inicial [Time to star saving data];\
+           • Intervalos de tempo de simulação [Maximum Timestep];\
+![resolução exercício 05_8](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_8.jpg)
 
-2. A simulação (.op) é aquela análise em corrente contínua.
+>>2. A simulação “DC operating point” [ .op] é a análise linear não apresentando regime transitório. Pode ser usado em circuitos de características lineares, como aqueles puramente resistivos, por exemplo (circuitos CC). Para inserir a função pode ser acessado através da barra de ferramentas – “Edit” – “SPICE Analysis” – aba “DC op pnt” (na caixa de comando que abre), ou diretamente do botão [.op] na barra de ferramenta. Nessa simulação é apresentado uma tabela como resultado não sendo necessário indicar nenhum parâmetro para a simulação.\
+![resolução exercício 05_9](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_9.jpg)
 
-3. A decisão de se usar a função “.trans” ou a “.op”, é quando existe a necessidade de análise em função do tempo ou corrente contínua, respectivamente.
+>>3. A diretiva [.trans] é usada quando há valores que se alternam (amplitude) no domínio de estudo, num determinado intervalo; e, a diretiva [.op] quando não há variação no domínio em análise, para se analisar valores instantâneos.
+
 
 4. A diretiva “.step” indica qual o valor de uma determinada constante que vai ser multiplicada a um componente de tempos em tempos.
 
