@@ -42,7 +42,7 @@ ________________________________________________________________________________
 ### 2. O que é simulação “ DC operating point” (.op)? Quando usar? Faça um exemplo
 ### 3. Quando usar .trans ou .op no SPICE?
 ### 4. O que faz a diretiva “.step”? Forneça exemplos de utilização.
-### 5. O que faz a diretiva “.means”? Forneça exemplos de utilização.
+### 5. O que faz a diretiva “.meas”? Forneça exemplos de utilização.
 ### 6. O que é a simulação “DC sweep” (.dc)? Quando usar? Faça um exemplo.
 ### 7. Como simular um circuito em diferentes temperaturas de funcionamento?
 
@@ -119,10 +119,19 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 
 >>3. A diretiva [.trans] é usada quando há valores que se alternam (amplitude) no domínio de estudo, num determinado intervalo; e, a diretiva [.op] quando não há variação no domínio em análise, para se analisar valores instantâneos.
 
+>>4. a diretiva .step é usada quando se pretende variar um parâmetro determinado numa circuito específica. Nessa diretiva é necessário informar (exemplo considerando a figura a seguir):\
+           o descrição da diretiva [.step param Rx 1K 3K 10];
+           o valor do parâmetro inicial = 1K;
+           o valor do parâmetro final = 3K;
+           o valor do incremento da função = 10;
+           o a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};
+Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferramentas – “Edit” – “SPICE Analysis”, ou diretamente no botão “.op” na barra de ferramentas. O resultado é um gráfico indicando o comportamento da variação do parâmetro escolhido. 
+![resolução exercício 05_10]
 
-4. A diretiva “.step” indica qual o valor de uma determinada constante que vai ser multiplicada a um componente de tempos em tempos.
-
-5. A diretiva “.means” mostra o valor médio de alguma variável que está sendo analisada.
+>>5. a diretiva “.meas” avalia um valor de um dado específico ou uma expressão em um ponto determinado ou quando uma condição desejada é atendida. A sintaxe pode ser descrita de várias formas (desde que atenda as condições da própria sintaxe imposta pelo software) que poderá ser melhor visualizada no próprio “Help” do programa. Existem inclusive exemplos de funções para cálculos de potência entre outros. A seguir a sintaxe usada no exemplo em simulação aqui indicada:\
+• Syntax: .meas[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name> + [<FIND|DERIV|PARAM> <expr>] + [WHEN <expr> | AT=<expr>]] + [TD=<val1>] [<RISE|FALL|CROSS>=[<count1>|LAST]]\
+Depois de se realizar a simulação, a seguinte análise poderá ser verificada seguindo o seguinte caminho - Barra de ferramentas – “View” – “SPICE Error Log”\
+![resolução exercício 05_11]
 
 6. Este comando produz uma "varredura" ou variação da tensão de uma fonte de tensão especificada desde um valor inicial até um valor  final com incrementos sucessivos (o valor do incremento é indicado pelo projetista). 
 
