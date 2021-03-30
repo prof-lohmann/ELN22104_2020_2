@@ -131,7 +131,7 @@ Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferr
 >>5. a diretiva “.meas” avalia um valor de um dado específico ou uma expressão em um ponto determinado ou quando uma condição desejada é atendida. A sintaxe pode ser descrita de várias formas (desde que atenda as condições da própria sintaxe imposta pelo software) que poderá ser melhor visualizada no próprio “Help” do programa. Existem inclusive exemplos de funções para cálculos de potência entre outros. A seguir a sintaxe usada no exemplo em simulação aqui indicada:\
 • Syntax: .meas[SURE] [AC|DC|OP|TRAN|TF|NOISE] <name> + [<FIND|DERIV|PARAM> <expr>] + [WHEN <expr> | AT=<expr>]] + [TD=<val1>] [<RISE|FALL|CROSS>=[<count1>|LAST]]\
 Depois de se realizar a simulação, a seguinte análise poderá ser verificada seguindo o seguinte caminho - Barra de ferramentas – “View” – “SPICE Error Log”\
-![resolução exercício 05_11]
+![resolução exercício 05_11](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_11.jpg)
 
 6. Este comando produz uma "varredura" ou variação da tensão de uma fonte de tensão especificada desde um valor inicial até um valor  final com incrementos sucessivos (o valor do incremento é indicado pelo projetista). 
 
