@@ -120,11 +120,11 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 >>3. A diretiva [.trans] é usada quando há valores que se alternam (amplitude) no domínio de estudo, num determinado intervalo; e, a diretiva [.op] quando não há variação no domínio em análise, para se analisar valores instantâneos.
 
 >>4. a diretiva .step é usada quando se pretende variar um parâmetro determinado numa circuito específica. Nessa diretiva é necessário informar (exemplo considerando a figura a seguir):\
-           o descrição da diretiva [.step param Rx 1K 3K 10];
-           o valor do parâmetro inicial = 1K;
-           o valor do parâmetro final = 3K;
-           o valor do incremento da função = 10;
-           o a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};
+           o descrição da diretiva [.step param Rx 1K 3K 10];\
+           o valor do parâmetro inicial = 1K;\
+           o valor do parâmetro final = 3K;\
+           o valor do incremento da função = 10;\
+           o a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};\
 Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferramentas – “Edit” – “SPICE Analysis”, ou diretamente no botão “.op” na barra de ferramentas. O resultado é um gráfico indicando o comportamento da variação do parâmetro escolhido.\ 
 ![resolução exercício 05_10](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_10.jpg)
 
