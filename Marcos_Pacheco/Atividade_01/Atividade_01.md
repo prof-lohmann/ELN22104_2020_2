@@ -125,7 +125,7 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
            o valor do parâmetro final = 3K;
            o valor do incremento da função = 10;
            o a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};
-Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferramentas – “Edit” – “SPICE Analysis”, ou diretamente no botão “.op” na barra de ferramentas. O resultado é um gráfico indicando o comportamento da variação do parâmetro escolhido. 
+Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferramentas – “Edit” – “SPICE Analysis”, ou diretamente no botão “.op” na barra de ferramentas. O resultado é um gráfico indicando o comportamento da variação do parâmetro escolhido.\ 
 ![resolução exercício 05_10]
 
 >>5. a diretiva “.meas” avalia um valor de um dado específico ou uma expressão em um ponto determinado ou quando uma condição desejada é atendida. A sintaxe pode ser descrita de várias formas (desde que atenda as condições da própria sintaxe imposta pelo software) que poderá ser melhor visualizada no próprio “Help” do programa. Existem inclusive exemplos de funções para cálculos de potência entre outros. A seguir a sintaxe usada no exemplo em simulação aqui indicada:\
