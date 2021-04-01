@@ -133,6 +133,20 @@ Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferr
 Depois de se realizar a simulação, a seguinte análise poderá ser verificada seguindo o seguinte caminho - Barra de ferramentas – “View” – “SPICE Error Log”\
 ![resolução exercício 05_11](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_11.jpg)
 
-6. Este comando produz uma "varredura" ou variação da tensão de uma fonte de tensão especificada desde um valor inicial até um valor  final com incrementos sucessivos (o valor do incremento é indicado pelo projetista). 
+>6. A simulação “DC sweep” [ .dc] realiza a variação do valor DC em uma fonte. Sendo uma importante análise para calcular, por exemplo, a função de transferência DC de um amplificador ou traças as curvas características de um transistor a fim de verificação de seu respectivo modelo. Para inserir a função pode ser acessada através da barra de ferramentas – “Edit” – “SPICE Analysis” – aba “DC sweep”, ou através do botão [.op] na barra de ferramentas onde poderá ser inserida a função de forma descritiva como aparece exemplo. Durante a definição da diretiva podem ser inseridos os seguintes parâmetros:\
+• Nome da primeira fonte [Name of 1st source to sweep]: Vs;\
+• Tipo de análise Type of sweep]: linear;\
+• Valor inicial [Start value]: -10\
+- Valor final [Stop value]: 10\
+-- Incremento [Increment]: 1\
+Os valores acima estão indicados a fim de ilustrar o exemplo que segue, salienta-se que mais essa simulação pode ser realizada com mais de uma fonte simultaneamente.\
+![resolução exercício 05_12](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_12.jpg)
 
-7. Para se simular um circuito em diferente temperaturas de funcionamento, o projetista deverá utilizar a função “.temp” durante a simulação.
+
+7.Para análises da influência da variação da temperatura em circuitos eletrônicos, como os seus efeitos no funcionamento de amplificadores operacionais, por exemplo, pode-se usar a diretiva [. step temp]\
+o descrição da diretiva [.step temp 0 10 1];\
+o valor do parâmetro inicial = 0;\
+o valor do parâmetro final = 10;\
+o valor do incremento da função = 1;\
+![resolução exercício 05_13]
+
