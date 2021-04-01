@@ -120,11 +120,11 @@ Observa-se que quanto  mais completas forem as informações, mais fácil será 
 >>3. A diretiva [.trans] é usada quando há valores que se alternam (amplitude) no domínio de estudo, num determinado intervalo; e, a diretiva [.op] quando não há variação no domínio em análise, para se analisar valores instantâneos.
 
 >>4. a diretiva .step é usada quando se pretende variar um parâmetro determinado numa circuito específica. Nessa diretiva é necessário informar (exemplo considerando a figura a seguir):\
-           o descrição da diretiva [.step param Rx 1K 3K 10];\
-           o valor do parâmetro inicial = 1K;\
-           o valor do parâmetro final = 3K;\
-           o valor do incremento da função = 10;\
-           o a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};\
+           • descrição da diretiva [.step param Rx 1K 3K 10];\
+           • valor do parâmetro inicial = 1K;\
+           • valor do parâmetro final = 3K;\
+           • valor do incremento da função = 10;\
+           • a variável deverá ser indicada “entre chaves” no circuito da seguinte forma: {Rx};\
 Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferramentas – “Edit” – “SPICE Analysis”, ou diretamente no botão “.op” na barra de ferramentas. O resultado é um gráfico indicando o comportamento da variação do parâmetro escolhido.\ 
 ![resolução exercício 05_10](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_10.jpg)
 
@@ -133,20 +133,19 @@ Essa diretiva poderá ser inserida na caixa de texto localizada na barra de ferr
 Depois de se realizar a simulação, a seguinte análise poderá ser verificada seguindo o seguinte caminho - Barra de ferramentas – “View” – “SPICE Error Log”\
 ![resolução exercício 05_11](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_11.jpg)
 
->6. A simulação “DC sweep” [ .dc] realiza a variação do valor DC em uma fonte. Sendo uma importante análise para calcular, por exemplo, a função de transferência DC de um amplificador ou traças as curvas características de um transistor a fim de verificação de seu respectivo modelo. Para inserir a função pode ser acessada através da barra de ferramentas – “Edit” – “SPICE Analysis” – aba “DC sweep”, ou através do botão [.op] na barra de ferramentas onde poderá ser inserida a função de forma descritiva como aparece exemplo. Durante a definição da diretiva podem ser inseridos os seguintes parâmetros:\
+>>6. A simulação “DC sweep” [ .dc] realiza a variação do valor DC em uma fonte. Sendo uma importante análise para calcular, por exemplo, a função de transferência DC de um amplificador ou traças as curvas características de um transistor a fim de verificação de seu respectivo modelo. Para inserir a função pode ser acessada através da barra de ferramentas – “Edit” – “SPICE Analysis” – aba “DC sweep”, ou através do botão [.op] na barra de ferramentas onde poderá ser inserida a função de forma descritiva como aparece exemplo. Durante a definição da diretiva podem ser inseridos os seguintes parâmetros:\
 • Nome da primeira fonte [Name of 1st source to sweep]: Vs;\
 • Tipo de análise Type of sweep]: linear;\
 • Valor inicial [Start value]: -10\
-- Valor final [Stop value]: 10\
--- Incremento [Increment]: 1\
+• Valor final [Stop value]: 10\
+• Incremento [Increment]: 1\
 Os valores acima estão indicados a fim de ilustrar o exemplo que segue, salienta-se que mais essa simulação pode ser realizada com mais de uma fonte simultaneamente.\
 ![resolução exercício 05_12](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_12.jpg)
 
-
-7.Para análises da influência da variação da temperatura em circuitos eletrônicos, como os seus efeitos no funcionamento de amplificadores operacionais, por exemplo, pode-se usar a diretiva [. step temp]\
-o descrição da diretiva [.step temp 0 10 1];\
-o valor do parâmetro inicial = 0;\
-o valor do parâmetro final = 10;\
-o valor do incremento da função = 1;\
-![resolução exercício 05_13]
+>>7.Para análises da influência da variação da temperatura em circuitos eletrônicos, como os seus efeitos no funcionamento de amplificadores operacionais, por exemplo, pode-se usar a diretiva [. step temp]\
+• descrição da diretiva [.step temp 0 10 1];\
+• valor do parâmetro inicial = 0;\
+• valor do parâmetro final = 10;\
+• valor do incremento da função = 1;\
+![resolução exercício 05_13](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade_01/figuras_atividade_01/atv1-questao05_13.jpg)
 
