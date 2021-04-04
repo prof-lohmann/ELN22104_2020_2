@@ -13,8 +13,8 @@ resumo deve responder as seguintes perguntas:
 	O amplificador operacional (AmpOp), é um circuito integrado (CI) composto por componentes semicondutores, capaz de amplificar um sinal de entrada, sendo capaz de realizar operações de soma, subtração, derivação, integração e multiplicação.
 	Os AmpOps internamente são constituídos com um grande número (dezenas) de transistores, resistores e (normalmente) tem também um capacitor interno.
 
->>2. Mostre os símbolos e as características do AmpOp IDEAL?\
-Abaixo alguns símbolos do AmpOp:\
+>>2. Mostre os símbolos e as características do AmpOp IDEAL?
+Abaixo alguns símbolos do AmpOp:
 - Símbolo clássico (mais básico) do AmpOp com apenas 3 terminais\
 ![Atividade 02-2a](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-2a.jpg)\
 - Símbolo do AmpOp conectado à fonte de alimentação CC simétrica (5 terminais)\
@@ -31,21 +31,17 @@ A estrutura de um amplificador operacional é simples, pois ele possui dois term
 -- Insensibilidade à temperatura.
 
 
-	O que significa Malha Aberta e Malha Fechada?
-	Malha Aberta ou sem realimentação: tipo de configuração muito útil quando se utiliza circuitos comparadores. O ganho nessa configuração apresenta um valor muito alto, teoricamente infinito.
+>>3. O que significa Malha Aberta e Malha Fechada?\
+Malha Aberta ou sem realimentação: tipo de configuração muito útil quando se utiliza circuitos comparadores. O ganho nessa configuração apresenta um valor muito alto, teoricamente infinito.\
+![Atividade 02-3a](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-3a.jpg)
+Malha Fechada - este tipo de configuração pode ser classificado em dois tipos:\
+Realimentação positiva: quando a porta não inversora é alimentada pelo sinal de entrada e a porta inversora é aterrada. Esse tipo de circuito pode apresentar uma certa instabilidade. Uma aplicação prática deste tipo de configuração é a dos circuitos osciladores.\
+![Atividade 02-3b](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-3b.jpg)
+Realimentação negativa: quando a porta inversora é alimentada pelo sinal de entrada e a porta não inversora é aterrada. Este modo de configuração é o mais comum em circuitos que utilizam AmpOps, apresentando uma resposta linear e ganho controlado.
+![Atividade 02-3c](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-3c.jpg)
  
-
-	Malha Fechada - este tipo de configuração pode ser classificado em dois tipos:
-	Realimentação positiva: quando a porta não inversora é alimentada pelo sinal de entrada e a porta inversora é aterrada. Esse tipo de circuito pode apresentar uma certa instabilidade. Uma aplicação prática deste tipo de configuração é a dos circuitos osciladores.
-
- 
-	Realimentação negativa: quando a porta inversora é alimentada pelo sinal de entrada e a porta não inversora é aterrada. Este modo de configuração é o mais comum em circuitos que utilizam AmpOps, apresentando uma resposta linear e ganho controlado.
-
- 
-
-
-4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.
- 
+>>4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.\
+![Atividade 02-3c](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-4.jpg)
 	Circuito em malha fechada através de Rf com realimentação na entrada inversora.
 	Ganho em malha fechada pela equação de saída: G=Vo/Vi=-Rf/R1
 	Supor que ganho de malha aberta [A] ≠ ∞
