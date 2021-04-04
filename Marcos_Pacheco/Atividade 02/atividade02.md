@@ -46,7 +46,7 @@ Realimentação negativa: quando a porta inversora é alimentada pelo sinal de e
 -Ganho em malha fechada pela equação de saída: G=Vo/Vi=-Rf/R1\
 -Supor que ganho de malha aberta [A] ≠ ∞\
 -Vi de entrada nos terminais do AmpOp: Vi=Vo/A\
--Observar que a entrada positiva (+) está aterrada, então:Vi-=-Vo/A\ 
+-Observar que a entrada positiva (+) está aterrada, então:Vi-=-Vo/A;\ 
 -A corrente i1 pode ser assim definida: i1=[(vi-(-Vo/A))/R1] = ((Vi+Vo/A)/R1)\
 -Considerando a impedância de entrada infinita do AmpOp, força a corrente i1 circular totalmente através de Rf\
 -A tensão de saída pode ser calculada da seguinte forma:\ 
@@ -62,38 +62,38 @@ a) Seguidor de Tensão (Buffer): Este tipo de configuração a tensão de saída
 	O sinal da saída, possui mesma polaridade e fase do sinal de entrada;
 	Atua como circuito isolador de estágios;
 	Casador de impedâncias.
- 
+ ![Atividade 02-5a](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5a.jpg)
 
 	V"- = V0 = V" 1
 	V"0"=V"1" 
 b) Amplificador Inversor: configuração de ganho constante. A saída é obtida pela multiplicação da entrada por um ganho (G) constante, fixados pelo valor que o resistor R1 e o resistor de realimentação Rf impõem ao circuito.  Outra característica também, seria a inversão do sinal de saída em relação ao da entrada.
-
+![Atividade 02-5b](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5b.jpg)
 
 
  
 
 
 c) Amplificador Não Inversor: este tipo de configuração com o uso de AmpOp também é conhecido como multiplicador de ganho constante. Observa-se pela fórmula demonstrada a seguir que a fase da saída é a mesma que a da entrada.
- 
+![Atividade 02-5c](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5c.jpg)
 
 
 d) Amplificador Somador Inversor: neste caso há uma soma das contribuições do sinal de cada entrada (n entradas) para o valor final de saída, ou seja, cada entrada é multiplicada por um fator de ganho constante, observando ainda que pela formulação demonstrada, o sinal de tensão da saída sofre inversão de fase. 
-
+![Atividade 02-5d](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5d.jpg)
  
 
 
 
 e) Amplificador Somador Não Inversor: neste caso há uma soma das contribuições do sinal de cada entrada (n entradas) para o valor final de saída, ou seja, cada entrada é multiplicada por um fator de ganho constante, observando ainda que pela formulação demonstrada, o sinal de tensão da saída não sofre inversão de fase. 
- 
+![Atividade 02-5e](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5e.jpg)
 
 
 
 f) Subtrator: este circuito também é conhecido como amplificador diferencial, pois o sinal de saída é resultante da diferença (subtração) dos sinais de entrada, multiplicados pelo fator de ganho (G).
-
+![Atividade 02-5f](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5f.jpg)
  
 
 g) Amplificador de Instrumentação: esta configuração é constituída por dois amplificadores não inversores em cada entrada de um amplificador subtrator. Neste circuito, a resistência de entrada vista por cada umas das duas fontes é infinita, e o ganho de tensão será dado pelo produto de dois quocientes entre as resistências.
-
+![Atividade 02-5g](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-5g.jpg)
  
 
 	R3 = R1
@@ -154,7 +154,7 @@ Tensão de offset é um deslocamento no nível CC do sinal de saída, e nos caso
 
 12. Como minimizar o efeito da tensão de offset?
 Alguns AmpOps, possuem dois terminais adicionais, onde um circuito pode ser implementado a fim de zerar a tensão CC de saída devido a tensão de offset. Por exemplo, um potenciômetro pode ser conectado entre os terminais de anulação de offset e o terminal central do potenciômetro é conectado na fonte de alimentação negativa do AmpOp. Movendo-se o terminal central do potenciômetro pode-se contrabalancear a assimetria presente no circuito interno do AmpOp que deu origem à tensão de offset, ainda pode-se acoplar um capacitor na entrada para diminuir esses efeitos indesejados.
-
+![Atividade 02-12](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-12.jpg)
  
 
 13. O que é a variação da tensão de offset pela temperatura?
@@ -162,7 +162,7 @@ A tensão de offset de entrada (Vos) é provocada pelo desequilíbrio das não i
 
 a) Como verificar esse parâmetro no datasheet?
 Para a verificação do parâmetro de tensão de offset influenciado pela temperatura num datasheet de um componente real, escolheu-se um AmpOp da empresa Texas Instrument. Essa caraterística pode ser verificada na linha indicada na figura a seguir:
-
+![Atividade 02-13](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-13.jpg)
  
 
 
@@ -173,11 +173,7 @@ Corrente de polarização (Ibias) é o valor médio entre as duas correntes de p
 a) Como minimizar o efeito destas correntes? Descreva as aproximações e os
 possíveis circuitos para mitigar o problema.
 Para minimizar o efeito das correntes de polarização de entrada, deve-se colocar na entrada não inversora uma resistência igual ao valor da resistência CC vista pelo terminal inversor.
-
-
- 
-
-
+![Atividade 02-14](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-14.jpg)
 b) Descreva a corrente de offset na polarização dos AmpOp.
 As correntes de offset são a diferença entre as correntes de polarização de entrada, sendo assim definidas:
 	IB1 – corrente de polarização na entrada 1
