@@ -46,7 +46,7 @@ Realimentação negativa: quando a porta inversora é alimentada pelo sinal de e
 -Ganho em malha fechada pela equação de saída: G=Vo/Vi=-Rf/R1\
 -Supor que ganho de malha aberta [A] ≠ ∞\
 -Vi de entrada nos terminais do AmpOp: Vi=Vo/A\
--Observar que a entrada positiva (+) está aterrada, então: Vi- = -Vo/A\ 
+-Observar que a entrada positiva (+) está aterrada, então:Vi-=-Vo/A\ 
 -A corrente i1 pode ser assim definida: i1=[(vi-(-Vo/A))/R1] = ((Vi+Vo/A)/R1)\
 -Considerando a impedância de entrada infinita do AmpOp, força a corrente i1 circular totalmente através de Rf\
 -A tensão de saída pode ser calculada da seguinte forma:\ 
