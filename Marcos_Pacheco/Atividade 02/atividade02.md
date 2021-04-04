@@ -37,23 +37,23 @@ Malha Aberta ou sem realimentação: tipo de configuração muito útil quando s
 Malha Fechada - este tipo de configuração pode ser classificado em dois tipos:\
 Realimentação positiva: quando a porta não inversora é alimentada pelo sinal de entrada e a porta inversora é aterrada. Esse tipo de circuito pode apresentar uma certa instabilidade. Uma aplicação prática deste tipo de configuração é a dos circuitos osciladores.\
 ![Atividade 02-3b](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-3b.jpg)\
-Realimentação negativa: quando a porta inversora é alimentada pelo sinal de entrada e a porta não inversora é aterrada. Este modo de configuração é o mais comum em circuitos que utilizam AmpOps, apresentando uma resposta linear e ganho controlado.
+Realimentação negativa: quando a porta inversora é alimentada pelo sinal de entrada e a porta não inversora é aterrada. Este modo de configuração é o mais comum em circuitos que utilizam AmpOps, apresentando uma resposta linear e ganho controlado.\
 ![Atividade 02-3c](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-3c.jpg)\
  
 >>4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.\
 ![Atividade 02-3c](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-4.jpg)\
-- Circuito em malha fechada através de Rf com realimentação na entrada inversora.
-- Ganho em malha fechada pela equação de saída: G=Vo/Vi=-Rf/R1
-- Supor que ganho de malha aberta [A] ≠ ∞
-- Vi de entrada nos terminais do AmpOp: Vi=Vo/A
-- Observar que a entrada positiva (+) está aterrada, então: Vi- = -Vo/A 
-- A corrente i1 pode ser assim definida: i1=[(vi-(-Vo/A))/R1] = ((Vi+Vo/A)/R1)
-- Considerando a impedância de entrada infinita do AmpOp, força a corrente i1 circular totalmente através de Rf
-- A tensão de saída pode ser calculada da seguinte forma: 
-- Vo= -Vo/A-i1.R2= -Vo/A-((Vi+Vo/A)/R1).Rf
-- Rearranjando matematicamente o ganho em malha fechada [G] é dado como:
-- G≡Vo/Vi=((-Rf)/R1)/(1+((1+Rf/R1))/A)
-- Observar que o valor de A se próxima de ∞ e o valor de G se aproxima de um valor ideal -Rf/R1
+-Circuito em malha fechada através de Rf com realimentação na entrada inversora.\
+-Ganho em malha fechada pela equação de saída: G=Vo/Vi=-Rf/R1\
+-Supor que ganho de malha aberta [A] ≠ ∞\
+-Vi de entrada nos terminais do AmpOp: Vi=Vo/A\
+-Observar que a entrada positiva (+) está aterrada, então: Vi- = -Vo/A\ 
+-A corrente i1 pode ser assim definida: i1=[(vi-(-Vo/A))/R1] = ((Vi+Vo/A)/R1)\
+-Considerando a impedância de entrada infinita do AmpOp, força a corrente i1 circular totalmente através de Rf\
+-A tensão de saída pode ser calculada da seguinte forma:\ 
+-Vo= -Vo/A-i1.R2= -Vo/A-((Vi+Vo/A)/R1).Rf\
+-Rearranjando matematicamente o ganho em malha fechada [G] é dado como:\
+-G≡Vo/Vi=((-Rf)/R1)/(1+((1+Rf/R1))/A)\
+-Observar que o valor de A se próxima de ∞ e o valor de G se aproxima de um valor ideal -Rf/R1\
 
 
 5. Descreva as principais características das topologias:
