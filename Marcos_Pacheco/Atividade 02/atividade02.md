@@ -103,16 +103,14 @@ g) Amplificador de Instrumentação: esta configuração é constituída por doi
 
 
 
-6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias
-Amplificador Inversor e Amplificador não inversor.
-a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V
+>> 6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias\
+Amplificador Inversor e Amplificador não inversor.\
+a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V\
 e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação
 com erros percentuais e utilize uma variação de ganho em malha aberta entre
-120dB e 20dB.
+120dB e 20dB.\
 b) Dica veja o problema 2.20 pg 83 do livro texto.
-	A Equação de um Ampop ideal seria V0 = Av(V+ - V-) onde Av seria o ganho em malha aberta. Numa situação ideal, Av é infinito, logo, no problema proposto, ele deve ser considerado nas equações, alterando as mesmas.
-	Não-Inversor G= V0/Vi=(1+(R2/R1))/(1+(R2/R1))/Av
-	Inversor G=V0/Vi=(-R2/R1)/(1+(R2/R1))/Av
+	
 
 
 7. Explique o que é a tensão de modo comum (VCM) e quais os efeitos desta tensão nas
@@ -142,37 +140,32 @@ o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%.
 10. Faça um resumo explicando as limitações de tensão de entrada e saída de um
 AmpOp. De exemplos, utiliza-se valores de datasheet.
 
-As limitações de entrada e saída de um AmpOp ocorrem da forma que a saída, idealmente, é no máximo o valor de alimentação positivo do AmpOp. Esse valor máximo é chamado de saturação do AmpOp. Na prática é um pouco diferente, a saturação do AmpOp é na ordem de 90% do valor da alimentação positiva. Por exemplo, um AmpOp que tem seu Vcc+ em 15V, pode apresentar em Vout, idealmente, 15V, porém na prática esse valor deve chegar em torno de 13,5V. Isso também vale para valores negativos.
 
 a) Defina o que é um AmpOp Rail-to-rail.
 É um Amplificador Operacional cuja tensão na saída alcança o mesmo nível que as tensões de alimentação do AmpOp, ou seja, apresentam alimentação dupla e simétrica, com +VCC na alimentação positiva e -VCC na alimentação negativa. Por exemplo, um amplificador operacional com entrada e saída Rail to Rail alimentado com 5V pode aceitar sinais de até 5Vpp na entrada sem saturar e dar o mesmo sinal de 5Vpp na saída, é como se ele tivesse um controle de ganho automático integrado.
 
 
-11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de
-um amplificador inversor?
+>> 11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de
+um amplificador inversor?\
 Tensão de offset é um deslocamento no nível CC do sinal de saída, e nos casos de se estar trabalhando com tensão CA, este deslocamento, associado com o sinal de entrada amplificada (pelo ganho G), pode levar o AmpOp à saturação. Esse fenômeno ocorre principalmente pelas não idealidades dos componentes reais, como por exemplo, um casamento de impedância não ideal dos dispositivos de entrada. Uma forma de se calcular o resultado na tensão de saída de um amplificador inversor, seria aterrar a entrada e verificar a tensão de offset na saída (multiplicada pelo ganho G) com polaridade invertida àquela que a originou.
 
-12. Como minimizar o efeito da tensão de offset?
+>> 12. Como minimizar o efeito da tensão de offset?\
 Alguns AmpOps, possuem dois terminais adicionais, onde um circuito pode ser implementado a fim de zerar a tensão CC de saída devido a tensão de offset. Por exemplo, um potenciômetro pode ser conectado entre os terminais de anulação de offset e o terminal central do potenciômetro é conectado na fonte de alimentação negativa do AmpOp. Movendo-se o terminal central do potenciômetro pode-se contrabalancear a assimetria presente no circuito interno do AmpOp que deu origem à tensão de offset, ainda pode-se acoplar um capacitor na entrada para diminuir esses efeitos indesejados.
 ![Atividade 02-12](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-12.jpg)
  
 
-13. O que é a variação da tensão de offset pela temperatura?
-A tensão de offset de entrada (Vos) é provocada pelo desequilíbrio das não idealidades presente no estágio diferencial da entrada (circuito interno do AmpOp), ocasionando descasamento de impedâncias, que é influenciado também pela operação do componente fora, principalmente, dos intervalos de temperatura em que esse é projetado (acima ou abaixo).
-
-a) Como verificar esse parâmetro no datasheet?
-Para a verificação do parâmetro de tensão de offset influenciado pela temperatura num datasheet de um componente real, escolheu-se um AmpOp da empresa Texas Instrument. Essa caraterística pode ser verificada na linha indicada na figura a seguir:
+>> 13. O que é a variação da tensão de offset pela temperatura?\
+A tensão de offset de entrada (Vos) é provocada pelo desequilíbrio das não idealidades presente no estágio diferencial da entrada (circuito interno do AmpOp), ocasionando descasamento de impedâncias, que é influenciado também pela operação do componente fora, principalmente, dos intervalos de temperatura em que esse é projetado (acima ou abaixo).\
+a) Como verificar esse parâmetro no datasheet?\
+Para a verificação do parâmetro de tensão de offset influenciado pela temperatura num datasheet de um componente real, escolheu-se um AmpOp da empresa Texas Instrument. Essa caraterística pode ser verificada na linha indicada na figura a seguir:\
 ![Atividade 02-13](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-13.jpg)
  
-
-
-14. O que são as correntes de polarização (Ibias) de AmpOp?
-Corrente de polarização (Ibias) é o valor médio entre as duas correntes de polarização de cada entrada (IB1  e IB2), a saber:
+>> 14. O que são as correntes de polarização (Ibias) de AmpOp?
+Corrente de polarização (Ibias) é o valor médio entre as duas correntes de polarização de cada entrada (IB1  e IB2), a saber:\
 	Ibias = (IB1  + IB2) / 2
-
 a) Como minimizar o efeito destas correntes? Descreva as aproximações e os
-possíveis circuitos para mitigar o problema.
-Para minimizar o efeito das correntes de polarização de entrada, deve-se colocar na entrada não inversora uma resistência igual ao valor da resistência CC vista pelo terminal inversor.
+possíveis circuitos para mitigar o problema.\
+Para minimizar o efeito das correntes de polarização de entrada, deve-se colocar na entrada não inversora uma resistência igual ao valor da resistência CC vista pelo terminal inversor.\
 ![Atividade 02-14](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2002/Figuras_atividade_02/Atividade%2002-14.jpg)
 b) Descreva a corrente de offset na polarização dos AmpOp.
 As correntes de offset são a diferença entre as correntes de polarização de entrada, sendo assim definidas:
@@ -180,6 +173,7 @@ As correntes de offset são a diferença entre as correntes de polarização de 
 	IB2 – corrente de polarização na entrada 2
 	Corrente de entrada de offset = IOS = | IB1 - IB2|
 
+>> REFERÊNCIAS UTILIZADAS NA PESQUISA PARA ELABORAÇÃO DESTE TRABALHO
 https://slideplayer.com.br/slide/1749154/
 https://www.feg.unesp.br/Home/PaginasPessoais/ProfMarceloWendling/3---amplificadores-operacionais-v2.0.pdf
 https://wiki.sj.ifsc.edu.br/images/8/82/2_Ampop.pdf
