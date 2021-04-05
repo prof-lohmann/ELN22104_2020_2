@@ -93,3 +93,4 @@ Como o ganho era de 10V/V, era esperado um valor 10 vezes maior que o valor apli
 #### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. 
 Eu escolheria o amplficador 8539 por apresentar menos sinais de saturação com um ganho de 100V/V, apesar da simulação ter sido com um frequência alta(1kHz), esse amplificador apresentou melhor comportamento nessas condições.
 #### Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+![INA_592](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Fotos%20atividade%203/INA%20592.png)
