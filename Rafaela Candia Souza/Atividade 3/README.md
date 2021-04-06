@@ -3,7 +3,7 @@
 ### 1. Verifique no datasheet dos Ampops indicados os valores dos itens abaixo:
 
 >
->![Opamppinouts](https://user-images.githubusercontent.com/12564754/102247973-6bac1180-3edf-11eb-9dbc-ea5f073403fe.png)
+> ![Opamppinouts](https://user-images.githubusercontent.com/12564754/102247973-6bac1180-3edf-11eb-9dbc-ea5f073403fe.png)
 >
 > * V+: entrada não-inversora
 > * V−: entrada inversora
@@ -36,11 +36,23 @@
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
 
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
-##### AD8539
+
 ##### AD8040
+> ![AD8040-c](https://user-images.githubusercontent.com/12564754/113771997-7bec3480-96fa-11eb-9dd9-d7f9d4bacb85.PNG)
+> Ao aplicar 0V no circuito , obtemos Vout ≅ -70mV. Vale lembrar que esse valor está sendo sempre multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que 
+> o valor de Vout, o que nos dá aproximadamente 1,7V de offset. 
+##### AD8539
+>
+> Ao aplicar 0V no circuito , obtemos Vout ≅ -699uV. Vale lembrar que esse valor está sendo sempre multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que > o valor de Vout, o que nos dá aproximadamente 69,9mV de offset.
+
 #### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
-##### AD8539
+
 ##### AD8040
+> ![AD8040-d](https://user-images.githubusercontent.com/12564754/113771824-45161e80-96fa-11eb-9042-2ccfa9927029.PNG)
+>
+
+##### AD8539
+>
 ### 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
