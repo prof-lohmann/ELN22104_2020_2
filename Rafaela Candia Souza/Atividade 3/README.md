@@ -19,10 +19,17 @@
   
 ### 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique osbefeitos decorrentes da máxima e mínima tensão de entrada.
 
-#### 1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
-#### 2. Responda quais os valores das tensões de saturação?
+#### Responda quais os valores das tensões de saturação?
 
-### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule osresistores para ter um ganho igual -100V/V. 
+##### AD8040
+> ![AD8040-a](https://user-images.githubusercontent.com/12564754/113760899-337a4a00-96ed-11eb-8d7c-5c834b3d527e.PNG)
+> Este circuito se trata de um seguidor de tensão. Nessa simulação foi utilizada alimentação de 5V e -5V nas entradas V+ e V- e 5V na entrada nao-inversora. Analisando o gráfico > presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±5 V. 
+> ![AD8040-b](https://user-images.githubusercontent.com/12564754/113762037-886a9000-96ee-11eb-80c2-3f106d2c4073.PNG)
+> Ao colocar 5,2V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
+
+##### AD8539
+
+### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
 
 #### 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 #### 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
