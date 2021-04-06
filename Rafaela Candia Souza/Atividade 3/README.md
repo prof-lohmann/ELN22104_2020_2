@@ -22,21 +22,28 @@
 #### Responda quais os valores das tensões de saturação?
 
 ##### AD8040
-> ![AD8040-a](https://user-images.githubusercontent.com/12564754/113760899-337a4a00-96ed-11eb-8d7c-5c834b3d527e.PNG)
-> Este circuito se trata de um seguidor de tensão. Nessa simulação foi utilizada alimentação de 5V e -5V nas entradas V+ e V- e 5V na entrada nao-inversora. Analisando o gráfico > presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±5 V. 
+> ![AD8040-a](https://user-images.githubusercontent.com/12564754/113762392-e9926380-96ee-11eb-8859-31a416cf17eb.PNG)
+> Este circuito se trata de um seguidor de tensão. Nessa simulação foi utilizada alimentação de ±5 V nas entradas V+ e V- e 5V na entrada nao-inversora. Analisando o gráfico > presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±5 V. 
 > ![AD8040-b](https://user-images.githubusercontent.com/12564754/113762037-886a9000-96ee-11eb-80c2-3f106d2c4073.PNG)
 > Ao colocar 5,2V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ##### AD8539
+> ![AD8534-a](https://user-images.githubusercontent.com/12564754/113763196-c916d900-96ef-11eb-9bba-3d73700b4cdd.PNG)
+> Nessa simulação foi utilizada alimentação de ±2,5 V nas entradas V+ e V- e 2V na entrada nao-inversora. Analisando o gráfico  presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±2,5 V. 
+> ![AD8534-b](https://user-images.githubusercontent.com/12564754/113763614-3dea1300-96f0-11eb-9abc-fe497f3f6b13.PNG)
+> Ao colocar 2,59V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
 
-#### 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
-#### 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
-
+#### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+##### AD8539
+##### AD8040
+#### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
+##### AD8539
+##### AD8040
 ### 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
-#### 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
-#### 2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+#### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+#### b) Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
 
-### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+### 5. Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
