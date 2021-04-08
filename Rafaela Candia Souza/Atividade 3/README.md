@@ -98,7 +98,7 @@
 
 | V in  |    5mV  |  50mV | 200mV | 500mV | 
 --- | ---  | --- | ---| --- 
-| V out |+2,7 a +12 V| -0,2 a +5,2 V| -4,5 a +3 V| 200 mV a 5,2 V  |  
-| E% |  +2,7 a +5,5 V   |   0 a +5 V    | 0 a +5 V    |    0 a +5 V    | 
+| V out |50,2mV| 500,01mV| 2,01V| 4,72V  |  
+| E% |  0.40%   |   0,002%    | 0,50%   |    5,93 %  | 
 
 ### 5. Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
