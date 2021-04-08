@@ -49,7 +49,7 @@
 > ![AD8040c](https://user-images.githubusercontent.com/12564754/114095658-10d66580-9894-11eb-8618-22fad36bcc80.PNG)
 > 
 > Ao aplicar 0V no circuito , obtemos Vout ≅ 70mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
-> o valor de Vout, o que nos dá aproximadamente 0,7mV de offset conforme o datasheet informa. 
+> o valor de Vout, o que nos dá aproximadamente 0,7mV de offset, estando dentro do valor conforme o datasheet informa. 
 ##### AD8539
 > ![AD8539c](https://user-images.githubusercontent.com/12564754/114095979-804c5500-9894-11eb-88e2-2334ecd57630.PNG)
 > 
@@ -74,12 +74,16 @@
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 ##### AD8040
->
+> ![AD8040e](https://user-images.githubusercontent.com/12564754/114098313-8db70e80-9897-11eb-93d2-b7ba44e415a5.PNG)
 > 
-
+> Ao aplicar 0V no circuito , obtemos Vout ≅ 70µV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 10 vezes menor do que 
+> o valor de Vout, o que nos dá aproximadamente 7mV de offset conforme o datasheet informa. 
 ##### AD8539
->  
->
+> ![AD8539e](https://user-images.githubusercontent.com/12564754/114098767-37969b00-9898-11eb-8c03-50ad3bea4f32.PNG)
+> 
+> Ao aplicar 0V no circuito , obtemos Vout ≅ 25µV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 10 vezes menor do que  o valor de Vout,
+> o que nos dá aproximadamente 2,5µV de offset, estando dentro do valor conforme o datasheet informa.
+
 
 #### b) Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
 
