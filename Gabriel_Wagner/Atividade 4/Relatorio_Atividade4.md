@@ -45,7 +45,7 @@ Vout = Vin - VDO
 
 ## Parte 01.1:
 
-<img src="1.jpg" width="1000">
+<img src="1.jpg" width="500">
 
 Qual relação entre a tensão de alimentação do ampop e a tensão de
 saída?
@@ -62,7 +62,7 @@ As tensões de alimentação devem ser maiores que a soma da tensão de zenner e
 
 ## Parte 01.2:
 
-<img src="2.jpg" width="1000">
+<img src="2.jpg" width="500">
 
 Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de
 12Vrms?
@@ -84,7 +84,7 @@ Podemos melhorar o circuito fazendo o balanço correto na escolha do capacitor e
  
 ## Parte 01.3:
 
-<img src="3.jpg" width="1000">
+<img src="3.jpg" width="500">
 
 Qual a Tensão VGS? Descreva como obter o valor
 A tensão VGS é a tensão gate-source do MOS, é a tensão que polariza esse transistor, possibilitando a passagem de corrente, além disso é a tensão que controla a resistência
