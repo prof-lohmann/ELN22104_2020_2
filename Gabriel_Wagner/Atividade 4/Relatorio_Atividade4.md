@@ -62,7 +62,8 @@ Vin  -> A tensão de entrada será limitada pela escolha do diodo zenner.
 Vout -> A tensão de saída será limitada por questões do ampop, como explicado anteriormente(tensões de alimentação e limites na saída).
 
 * Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
- As tensões de alimentação devem ser maiores que a soma da tensão de zenner e a queda de tensão no transistor NMOS.
+
+As tensões de alimentação devem ser maiores que a soma da tensão de zenner e a queda de tensão VGS no transistor NMOS.
 
 ## Parte 01.2:
 
