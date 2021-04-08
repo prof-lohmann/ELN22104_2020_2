@@ -62,9 +62,20 @@
 
 ##### AD8040
 > Sabendo que o ganho do amplificador não inversor é calculado por: G= 1 + Rf/R1, utilizaremos os valores:
-> ´ Rf = 900 ohms e R1 = 100 ohms. ´
+> Rf = 1KΩ e R1 = 100Ω. 
 > 
 
+##### AD8539
+> Sabendo que o ganho do amplificador não inversor é calculado por: G= 1 + Rf/R1, utilizaremos os valores:
+> Rf = 1KΩ e R1 = 100Ω. 
+>
+
 #### b) Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+
+
+##### AD8040
+
+
+##### AD8539
 
 ### 5. Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
