@@ -23,15 +23,19 @@
 
 ##### AD8040
 > ![AD8040a](https://user-images.githubusercontent.com/12564754/114089080-1cbe2980-988c-11eb-871b-da7faa2b6068.PNG)
+> 
 > Este circuito se trata de um seguidor de tensão. Nessa simulação foi utilizada alimentação de ±5 V nas entradas V+ e V- e 5V na entrada nao-inversora. Analisando o gráfico
 > presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±5 V. 
 > ![AD8040b](https://user-images.githubusercontent.com/12564754/114089471-90f8cd00-988c-11eb-8a3e-a09d7d053fcd.PNG)
+> 
 > Ao colocar 5,2V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ##### AD8539
 > ![AD8539a](https://user-images.githubusercontent.com/12564754/114094945-46c71a00-9893-11eb-8858-fe1b5bfdafca.PNG)
+> 
 > Nessa simulação foi utilizada alimentação de ±2,5 V nas entradas V+ e V- e 2V na entrada nao-inversora. Analisando o gráfico  presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±2,5 V. 
 > ![AD8539b](https://user-images.githubusercontent.com/12564754/114095084-652d1580-9893-11eb-939a-7254330aa9d0.PNG)
+> 
 > Ao colocar 2,59V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
@@ -43,35 +47,38 @@
 
 ##### AD8040
 > ![AD8040c](https://user-images.githubusercontent.com/12564754/114095658-10d66580-9894-11eb-8618-22fad36bcc80.PNG)
+> 
 > Ao aplicar 0V no circuito , obtemos Vout ≅ 70mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
 > o valor de Vout, o que nos dá aproximadamente 0,7mV de offset conforme o datasheet informa. 
 ##### AD8539
 > ![AD8539c](https://user-images.githubusercontent.com/12564754/114095979-804c5500-9894-11eb-88e2-2334ecd57630.PNG)
+> 
 > Ao aplicar 0V no circuito , obtemos Vout ≅ 1,40mV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
 > o que nos dá aproximadamente 14µV de offset conforme o datasheet informa.
 
 #### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
 ##### AD8040
-> 
->
+> ![AD8040d](https://user-images.githubusercontent.com/12564754/114096647-63645180-9895-11eb-9508-abb370bd9a37.PNG)
+> O sinal de saída esta invertido, como esperado para um circuito inversor. Apresenta o valor de saída 100 vezes maior do que o de entrada como previsto para o ganho definido no circuito. O Offset do amplificador fica aparente ao vermos o Vmax= 560mv e Vmim= -420mV.
 
 ##### AD8539
-> 
->
+> ![AD8539d](https://user-images.githubusercontent.com/12564754/114096669-6cedb980-9895-11eb-8965-3427563344aa.PNG)
+> O sinal de saída esta invertido, como esperado para um circuito inversor. Apresenta o valor de saída 100 vezes maior do que o de entrada como previsto para o ganho definido no circuito. O Offset do amplificador fica aparente ao vermos o Vmax= 495mv e Vmim= -495mV.
 
 ### 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
+
+> O ganho do amplificador nao inversor é calculado por: G=R1/R2, utilizaremos os valores:
+> ` R1 = 1KΩ e R2 = 100Ω. ` 
 
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 ##### AD8040
-> Sabendo que o ganho do amplificador não inversor é calculado por: G= 1 + Rf/R1, utilizaremos os valores:
-> Rf = 1KΩ e R1 = 100Ω. 
+>
 > 
 
 ##### AD8539
-> Sabendo que o ganho do amplificador não inversor é calculado por: G= 1 + Rf/R1, utilizaremos os valores:
-> Rf = 1KΩ e R1 = 100Ω. 
+>  
 >
 
 #### b) Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
