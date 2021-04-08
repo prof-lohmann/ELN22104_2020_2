@@ -29,23 +29,26 @@
 > Ao colocar 5,2V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ##### AD8539
-> 
+> ![AD8539a](https://user-images.githubusercontent.com/12564754/114094945-46c71a00-9893-11eb-8858-fe1b5bfdafca.PNG)
 > Nessa simulação foi utilizada alimentação de ±2,5 V nas entradas V+ e V- e 2V na entrada nao-inversora. Analisando o gráfico  presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±2,5 V. 
-> 
+> ![AD8539b](https://user-images.githubusercontent.com/12564754/114095084-652d1580-9893-11eb-939a-7254330aa9d0.PNG)
 > Ao colocar 2,59V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
 
+> O ganho do amplificador inversor é calculado por: G=R1/R2, utilizaremos os valores:
+> ` R1 = 1KΩ e R2 = 100KΩ. ` 
+
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 ##### AD8040
-> 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ -1,79mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
-> o valor de Vout, o que nos dá aproximadamente 17,9mV de offset. 
+> ![AD8040c](https://user-images.githubusercontent.com/12564754/114095658-10d66580-9894-11eb-8618-22fad36bcc80.PNG)
+> Ao aplicar 0V no circuito , obtemos Vout ≅ 70mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
+> o valor de Vout, o que nos dá aproximadamente 0,7mV de offset conforme o datasheet informa. 
 ##### AD8539
-> 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ 1,37mV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
-> o que nos dá aproximadamente 13,7mV de offset.
+> ![AD8539c](https://user-images.githubusercontent.com/12564754/114095979-804c5500-9894-11eb-88e2-2334ecd57630.PNG)
+> Ao aplicar 0V no circuito , obtemos Vout ≅ 1,40mV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
+> o que nos dá aproximadamente 14µV de offset conforme o datasheet informa.
 
 #### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
