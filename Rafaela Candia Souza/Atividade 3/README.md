@@ -22,15 +22,15 @@
 #### Responda quais os valores das tensões de saturação?
 
 ##### AD8040
-> ![AD8040-a](https://user-images.githubusercontent.com/12564754/113762392-e9926380-96ee-11eb-8859-31a416cf17eb.PNG)
+> 
 > Este circuito se trata de um seguidor de tensão. Nessa simulação foi utilizada alimentação de ±5 V nas entradas V+ e V- e 5V na entrada nao-inversora. Analisando o gráfico > presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±5 V. 
-> ![AD8040-b](https://user-images.githubusercontent.com/12564754/113762037-886a9000-96ee-11eb-80c2-3f106d2c4073.PNG)
+> 
 > Ao colocar 5,2V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ##### AD8539
-> ![AD8534-a](https://user-images.githubusercontent.com/12564754/113763196-c916d900-96ef-11eb-9bba-3d73700b4cdd.PNG)
+> 
 > Nessa simulação foi utilizada alimentação de ±2,5 V nas entradas V+ e V- e 2V na entrada nao-inversora. Analisando o gráfico  presente na imagem, o AmpOp trabalha fora de saturação, já que atinge no máximo ±2,5 V. 
-> ![AD8534-b](https://user-images.githubusercontent.com/12564754/113763614-3dea1300-96f0-11eb-9abc-fe497f3f6b13.PNG)
+> 
 > Ao colocar 2,59V na entrada nao-inversora, o AmpOp comeca a apresentar sinais de saturação.
 
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V. 
@@ -38,17 +38,18 @@
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 ##### AD8040
-> ![AD8040-c](https://user-images.githubusercontent.com/12564754/113771997-7bec3480-96fa-11eb-9dd9-d7f9d4bacb85.PNG)
-> Ao aplicar 0V no circuito , obtemos Vout ≅ -70mV. Vale lembrar que esse valor está sendo sempre multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que 
-> o valor de Vout, o que nos dá aproximadamente 1,7V de offset. 
+> ![AD8040-c](https://user-images.githubusercontent.com/12564754/114077047-c0eca400-987d-11eb-9750-62f6e5fe6eb7.PNG)
+> Ao aplicar 0V no circuito , obtemos Vout ≅ -1,79mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
+> o valor de Vout, o que nos dá aproximadamente 17,9mV de offset. 
 ##### AD8539
->
-> Ao aplicar 0V no circuito , obtemos Vout ≅ -699uV. Vale lembrar que esse valor está sendo sempre multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que > o valor de Vout, o que nos dá aproximadamente 69,9mV de offset.
+>![AD8534-c](https://user-images.githubusercontent.com/12564754/114077748-83d4e180-987e-11eb-8238-ee726524cc50.PNG)
+> Ao aplicar 0V no circuito , obtemos Vout ≅ -700uV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
+> o que nos dá aproximadamente 700mV de offset.
 
 #### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
 ##### AD8040
-> ![AD8040-d](https://user-images.githubusercontent.com/12564754/113771824-45161e80-96fa-11eb-9042-2ccfa9927029.PNG)
+> 
 >
 
 ##### AD8539
