@@ -48,12 +48,12 @@
 ##### AD8040
 > ![AD8040c](https://user-images.githubusercontent.com/12564754/114095658-10d66580-9894-11eb-8618-22fad36bcc80.PNG)
 > 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ 70mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
+> Ao aplicar 0V no circuito, obtemos Vout ≅ 70mV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 100 vezes menor do que 
 > o valor de Vout, o que nos dá aproximadamente 0,7mV de offset, estando dentro do valor conforme o datasheet informa. 
 ##### AD8539
 > ![AD8539c](https://user-images.githubusercontent.com/12564754/114095979-804c5500-9894-11eb-88e2-2334ecd57630.PNG)
 > 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ 1,40mV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
+> Ao aplicar 0V no circuito, obtemos Vout ≅ 1,40mV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 100 vezes menor do que  o valor de Vout,
 > o que nos dá aproximadamente 14µV de offset conforme o datasheet informa.
 
 #### b) Aplique um sinal senoidal de 10mVpp 1kHz na entrada e verifique o sinal de saída. Explique o resultado.
@@ -74,23 +74,31 @@
 #### a) Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 ##### AD8040
-> ![AD8040e](https://user-images.githubusercontent.com/12564754/114098313-8db70e80-9897-11eb-93d2-b7ba44e415a5.PNG)
+> ![AD8040e](https://user-images.githubusercontent.com/12564754/114100925-66fad700-989b-11eb-90ba-026f03174496.PNG)
 > 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ 70µV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 10 vezes menor do que 
-> o valor de Vout, o que nos dá aproximadamente 7mV de offset conforme o datasheet informa. 
+> Ao aplicar 0V no circuito, obtemos Vout ≅ 700µV. Este valor está sendo multiplicado pelo ganho, o que significa que o valor do offset é 10 vezes menor do que 
+> o valor de Vout, o que nos dá aproximadamente 70µV de offset, estando dentro do valor conforme o datasheet informa. 
 ##### AD8539
-> ![AD8539e](https://user-images.githubusercontent.com/12564754/114098767-37969b00-9898-11eb-8c03-50ad3bea4f32.PNG)
+> ![AD8539e](https://user-images.githubusercontent.com/12564754/114101104-a295a100-989b-11eb-89e7-5959b09c0179.PNG)
 > 
-> Ao aplicar 0V no circuito , obtemos Vout ≅ 25µV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 10 vezes menor do que  o valor de Vout,
-> o que nos dá aproximadamente 2,5µV de offset, estando dentro do valor conforme o datasheet informa.
+> Ao aplicar 0V no circuito, obtemos Vout ≅ 250µV. Este valor está multiplicado pelo ganho, ou seja, o valor do offset é 10 vezes menor do que  o valor de Vout,
+> o que nos dá aproximadamente 25µV de offset, estando 12µV fora do valor conforme o datasheet informa.
 
 
 #### b) Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
 
-
 ##### AD8040
 
+| V in  |    5mV  |  50mV | 200mV | 500mV | 
+--- | ---  | --- | ---| --- 
+| V out |49,7mV| 500,02mV| 2,02V| 4,84V  |  
+| E% |  0,60%   |   0,04%   | 1,00%    |    3,30%   | 
 
 ##### AD8539
+
+| V in  |    5mV  |  50mV | 200mV | 500mV | 
+--- | ---  | --- | ---| --- 
+| V out |+2,7 a +12 V| -0,2 a +5,2 V| -4,5 a +3 V| 200 mV a 5,2 V  |  
+| E% |  +2,7 a +5,5 V   |   0 a +5 V    | 0 a +5 V    |    0 a +5 V    | 
 
 ### 5. Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
