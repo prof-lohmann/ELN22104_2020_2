@@ -58,17 +58,17 @@ O valor da simulação está de acordo com o valor calculado.
 
 ## Parte 4
 
-Figura 7 - Não Inversor AD8040 com sinal 0V e ganho 10 V/V.
+Figura 7 - Não Inversor AD8040 com sinal 0V e ganho 11 V/V.
 
 <img src="ad8040ninversor.jpg" width="1000">
 
-Figura 8 - Não Inversor AD8539 com sinal 0V e ganho 10 V/V.
+Figura 8 - Não Inversor AD8539 com sinal 0V e ganho 11 V/V.
 
 <img src="ad8539ninversor.jpg" width="1000">
 
 A tensão de offset aparece novamente em ambas as simulações. Sendo o efeito mais perceptível no AD8040.
 
-Figura 9 - Não Inversor AD8040 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 10 V/V.
+Figura 9 - Não Inversor AD8040 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 11 V/V.
 
 <img src="ad8040tensoes.jpg" width="1000">
 
@@ -81,7 +81,7 @@ Vin(V) | Vout teórico(v) | Vout simulação(V) | Erro (%)
 200m | 2 | 2,214 | 10,7
 500m | 5 | 5 | 0
 
-Figura 10 - Não Inversor AD8539 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 10 V/V.
+Figura 10 - Não Inversor AD8539 com sinais de 5mV, 50mV, 200mV e 500mV e ganho 11 V/V.
 
 <img src="ad8539tensoes.jpg" width="1000">
 
