@@ -63,7 +63,7 @@ Vout -> A tensão de saída será limitada por questões do ampop, como explicad
 
 * Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
 
-As tensões de alimentação devem ser maiores que a soma da tensão de zenner e a queda de tensão VGS no transistor NMOS.
+As tensões de alimentação devem apresentar valores de modo a não saturar o sinal, que é constituído pela soma da tensão de saída e a tensão VGS.
 
 ## Parte 01.2:
 
@@ -74,9 +74,9 @@ As tensões de alimentação devem ser maiores que a soma da tensão de zenner e
 
 O circuito dobrador de tensão segue a seguinte fórmula:
 
-Obs.: Consideraremos a tensão de entrada muito maior que a queda de tensão nos diodos.
+Obs.: Consideraremos a tensão de entrada muito maior que as quedas de tensão nos diodos.
 
-Vout = 2* Vinpico -VD1 - VD2
+Vout = 2 * Vinpico - VD1 - VD2
 
 Para um sinal de 12rms temos uma saída de:
 
@@ -145,6 +145,37 @@ O capacitor C1 será escolhido com base no retificador de onda completa, levando
 C = IL/(2 * f * Vr)
 C = 1,1/(2 * 60 * 1)
 C = 9,17 mF
+
+ Circuito referência de tensão zener (R1 e D3):
+ 
+* Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
+
+A tensão de zener deve ser suficiente para fornecer a soma das tensões de saída e a tensão VGS desejada. Além disso sua tensão de zener deve ter valor Rz baixo para melhor regulação.
+
+* Qual a influência da regulação de linha e da regulação de carga para este circuito?
+
+A regulação de carga e linha vai medir a efetividade do regulador. Por esse motivo, projetamos um circuito que tenha baixa variação na tensão de saída, no melhor dos casos com regulação de linha e carga próximos de zero.
+
+* Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de
+saída do regulador linear? 
+
+O diodo zener estará limitando a tensão de saída, de modo que a variação de vout seja baixa, próxima de zero. Assim temos que:
+
+Regulação de linha = (delta Vout) / (delta Vin) = (0) / (delta Vin) = 0 V/V
+
+Então mesmo que a tensão de entrada varie, a de saída variará pouco.
+
+O mesmo ocorre para o regulador de carga, que mesmo variando a carga, a regulação permanecerá a mesma.
+
+Regulação de carga = (delta Vout) / (delta Iout) = (0) / (delta Iout) = 0 V/A
+
+* Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
+
+Sabendo da importância que o zener tem na tensão de saída, não queremos que correntes variantes atrapalhem sua regulação. Então uma topologia de corrente constante resolveria o problema.
+
+
+
+
 
 
 
