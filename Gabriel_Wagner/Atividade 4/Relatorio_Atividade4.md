@@ -45,6 +45,8 @@ Vout = Vin - VDO
 
 ## Parte 01.1:
 
+Figura 1 - Parte 01.1
+
 <img src="1.jpg" width="500">
 
 * Qual relação entre a tensão de alimentação do ampop e a tensão de
@@ -66,6 +68,8 @@ Vout -> A tensão de saída será limitada por questões do ampop, como explicad
 As tensões de alimentação devem apresentar valores de modo a não saturar o sinal, que é constituído pela soma da tensão de saída e a tensão VGS.
 
 ## Parte 01.2:
+
+Figura 2 - Parte 01.2
 
 <img src="2.jpg" width="500">
 
@@ -92,6 +96,8 @@ Além disso, sabemos que a saída está em funcão de aproximadamente duas vezes
 Podemos melhorar o circuito fazendo o balanço correto na escolha do capacitor e além disso, podemos adicionar um regulador linear de tensão na saída do dobrador, limitando a tensão de saída que irá alimentar o ampop.
  
 ## Parte 01.3:
+
+Figura 3 - Parte 01.3
 
 <img src="3.jpg" width="500">
 
