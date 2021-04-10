@@ -102,5 +102,54 @@ RDS dele. Quanto maior a tensão VGS, menor a resistência RDS desse MOS.
 
 Podemos perceber através do circuito empregado, que a tensão VGS para esse circuito, é a subtração entre a tensão de saída do ampop U1 e a tensão de saída da fonte(Vout).
 
+Tomando a tensão de saída como 15 V, e olhando o datasheet do NMOS IR540, que para uma corrente IDS de 1 A, precisa de uma tensão VGS de 4,5 V, temos que:
+
+Saída do ampop U1 = 4,5 + 15 = 19,5 V
+
+Podemos arredondar para 20 V devido a quedas de tensões que podem variar no circuito.
+
+* Qual a corrente de alimentação do AmpOp?
+
+Olhando o datasheet do LM324, podemos verificar uma corrente de alimentação mínima de 3 mA.
+
+* Qual a tensão de alimentação do AmpOP?
+
+O ampop LM324 pode ser alimentado com até 32 V de alimentação única, pórem ele estará sendo alimentado com uma tensão de 24 V, oferecendo uma margem de erro. É necessária uma tensão de 20 V na saída do LM324, por esse motivo foi escolhida essa margem.
+
+* Qual fator devo considerar para escolher o transistor Q1?
+
+É necessário um hfe ou beta de valor alto, maior que 100. Para que a corrente que alimente a base desse bjt seja muito menor que a corrente do diodo zener.
+
+* Qual valor da tensão do diodo zener D6?
+
+Foi escolhida uma tensão de zener de 24 V, para que o ampop U1 receba tensão suficiente na alimentação, podendo fornecer assim, 20 V na saída.
+
+* Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
+
+A resistência de zener deve ser analisada para resolver esse problema. A corrente que atravessa o zener pode variar em algum momento, então é necessário que a resistência de zener seja baixa para que a tensão de regulação do zener não varie muito.
+
+* Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
+aumento de 10mA na corrente de alimentação, o circuito proposto continuará
+funcionando?
+
+Sim, se a corrente de alimentação for maior que a mínima corrente de alimentação o ampop continuará funcionando.
+
+## Parte 02: Calculando e dimensionando os componentes
+
+* Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
+
+Os diodos D1 e D2 devem ter uma queda de tensão menor que 1 V, para que essa queda não consuma grande parte da tensão do circuito. Além disso, ambos devem poder dissipar mais que 18,7 W de potência, sem danificar o componente.
+
+O capacitor C1 será escolhido com base no retificador de onda completa, levando em conta que o produto da capacitância e da resistência de carga são muito maiores que o período da onda. Deste modo temos que:
+
+C = IL/(2 * f * Vr)
+C = 1,1/(2 * 60 * 1)
+C = 9,17 mF
+
+
+
+
+
+
 
 
