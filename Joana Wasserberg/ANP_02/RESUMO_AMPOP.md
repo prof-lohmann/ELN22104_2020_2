@@ -14,7 +14,7 @@ Um Amplificador Operacional, em teoria, é amplificar um sinal da forma mais pr�
 
 ### 2. Mostre os simbolos e as características do AmpOp IDEAL.
 
-![Simbolos AmpOp]()
+![Simbolos AmpOp](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_02/Imagens/Simbolos%20Ampop.PNG)
 
 O AmpOp é projetado para operar como um sensor da diferença entre os sinais de tensão aplicados em seus dois terminais de entrada. Essa diferença é multiplicada por um certo valor *A* que resulta em uma tensão na saída do AmpOp. O ganho *A* é chamado ganho diferencial, ou ganho de malha aberta e no AmpOp ideal ele é infinito.
 
@@ -42,7 +42,7 @@ Para exemplificar, alguns exemplos de AmpOp em malha fechada para calcular G.
 
 ### **AmpOp Inversor**
 
-![Ampop inversor]()
+![Ampop inversor](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_02/Imagens/Ampop%20Inversor.PNG)
 
 Para o AmpOp como inversor, o ganho é dado por:
 
@@ -53,7 +53,7 @@ Vout = (- R1/R2) * (V+ - V-)
 
 ### **AmpOp Não Inversor**
 
-![Ampop não inversor]()
+![Ampop não inversor](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_02/Imagens/Ampop%20n%C3%A3o%20inversor.PNG)
 
 Para o AmpOp como não inversor, o ganho é dado por:
 
@@ -63,7 +63,7 @@ Vout = (1 + R1/R2) * (V+ - V-)
 
 ### **Característica Mista**
 
-![Ampop diferencial]()
+![Ampop diferencial](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_02/Imagens/Ampop%20diferencial.PNG)
 
 Caso o AmpOp esteja com alimentação nas duas entradas, utilizamos o método de superposição de fontes. Curto-circuitamos uma de cada vez, calculamos os valores de Vout e somamos os valores finais. Para o exemplo da figura teríamos duas configurações, um inversor e outro não inversor.
 
