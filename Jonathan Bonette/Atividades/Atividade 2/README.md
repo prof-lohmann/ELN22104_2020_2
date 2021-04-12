@@ -32,7 +32,17 @@ Eletrônica I</b>
 ---
 
 <b>4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
-*Usando o método de nós, I1=I2-I_ => I1=I2, assim I1=(Vo-0)/R1 e I2=(0-V+)/R2, logo Vo=(-R1/R2)*V+, e seu amplificador será G=(-R1/R2)*
+
+<b>Amplificador Inversor</b>
+<p align="center"><img src="../../Imagens/Atividade 2/mf_inv.png" align="center" width="600"><br></p>
+`como não temos corrente passando (em vermelho) para o ampop, então a corrente que passa pelo **Rf** é a mesma que passa em **R1** (trajetória em azul), logo **Rf = R1**,`
+`também podemos observar que pelo comportamento do circuito, o valor do terra do ponto não inversor passará para o ponto inversor (em amarelo),`
+`pelo método de nós podemos análisar que **If = (Vo - 0)/R1**`
+
+<b>Amplificador Não-Inversor</b>
+<p align="center"><img src="../../Imagens/Atividade 2/mf_ninv.png" align="center" width="600"><br></p>
+`teste aqui é um codigo`
+
 
 ---
 
