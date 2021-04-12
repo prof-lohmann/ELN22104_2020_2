@@ -43,7 +43,7 @@ Nesse estado a equação que rege o regulador é:
 
 Vout = Vin - VDO
 
-## Parte 01.1:
+### Parte 01.1:
 
 Figura 1 - Parte 01.1
 
@@ -67,7 +67,7 @@ Vout -> A tensão de saída será limitada por questões do ampop, como explicad
 
 As tensões de alimentação devem apresentar valores de modo a não saturar o sinal, que é constituído pela soma da tensão de saída e a tensão VGS.
 
-## Parte 01.2:
+### Parte 01.2:
 
 Figura 2 - Parte 01.2
 
@@ -95,7 +95,7 @@ Além disso, sabemos que a saída está em funcão de aproximadamente duas vezes
 
 Podemos melhorar o circuito fazendo o balanço correto na escolha do capacitor e além disso, podemos adicionar um regulador linear de tensão na saída do dobrador, limitando a tensão de saída que irá alimentar o ampop.
  
-## Parte 01.3:
+### Parte 01.3:
 
 Figura 3 - Parte 01.3
 
@@ -152,7 +152,7 @@ C = IL/(2 * f * Vr)
 C = 1,1/(2 * 60 * 1)
 C = 9,17 mF
 
- Circuito referência de tensão zener (R1 e D3):
+ ### Parte 02.1: Circuito referência de tensão zener (R1 e D3):
  
 * Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
 
@@ -179,6 +179,22 @@ Regulação de carga = (delta Vout) / (delta Iout) = (0) / (delta Iout) = 0 V/A
 
 Sabendo da importância que o zener tem na tensão de saída, não queremos que correntes variantes atrapalhem sua regulação. Então uma topologia de corrente constante resolveria o problema.
 
+* Acerca do espelho de corrente. Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+
+Para controlar a corrente nessa topologia, podemos adicionar um potenciômetro em paralelo com a tensão de referência na saída. E para um melhor ajuste, podemos também adicionar resistores em série com o potenciômetro, diminuindo a excursão de tensão do potenciômetro.
+
+A figura abaixo exemplifica o procedimento.
+
+Figura 4 - Espelho de corrente com potenciômetro.
+
+<img src="espelho_pot.jpg" width="500">
+
+ ### Parte 02.2: Escolhendo o transistor M1 e calculando R2 e R3.
+
+* Qual a corrente contínua necessária?
+
+
+* Quais os limites de tensão para este circuito?
 
 
 
