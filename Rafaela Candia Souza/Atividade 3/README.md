@@ -2,16 +2,6 @@
 ## Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
 ### 1. Verifique no datasheet dos Ampops indicados os valores dos itens abaixo:
 
->
-> ![Opamppinouts](https://user-images.githubusercontent.com/12564754/102247973-6bac1180-3edf-11eb-9dbc-ea5f073403fe.png)
->
-> * V+: entrada não-inversora
-> * V−: entrada inversora
-> * Vout: saída
-> * VS+: alimentação positiva
-> * VS−: alimentação negativa
->
-
 | Ampop  |    V+ e V-   |  Vout modo comum  | CMRR  | VS+ e VS- | V Offset | I Polarizacao | I Consumo | G Malha aberta | Impedância entrada |
 --- | ---  | --- | ---| --- | ---| --- | ---| --- | --- 
 | AD8040 |+2,7 a +12 V| -0,2 a +5,2 V| -4,5 a +3 V| 200 mV a 5,2 V  |   6 mV max |-1,5 uA a +0,7   | 1.3 mA  |±4 V |  6 MΩ e 2 pF      |
@@ -102,3 +92,15 @@
 | E% |  0.40%   |   0,002%    | 0,50%   |    5,93 %  | 
 
 ### 5. Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+
+> O AD8539 é mais adequado para esta aplicacao, devido sua tensao de offset ser menor e possuir menor erro com relação ao ganho calculado conforme na tabela anterior.
+> 
+> Outro Ampop que poderia ser utilizado é o TSV7721, ou qualquer outro da familia TSV772x. Isso devido aos seguintes parametro:
+
+* Gain bandwidth product 22 MHz, unity gain stable
+* High accuracy input offset voltage: 50 µV typ., 200 µV max.
+* Low input bias current: 2 pA typ.
+* Low input voltage noise density: 7 nV/√Hz
+
+> Informacoes retiradas do site: https://www.st.com/en/amplifiers-and-comparators/tsv7722.html?ecmp=tt20710_gl_ps_apr2021&aw_kw=op%20amps&aw_m=p&aw_c=12734036595&aw_tg=kwd-195551462&aw_gclid=Cj0KCQjw38-DBhDpARIsADJ3kjnoNdUDcL6AZw-5mIA6CAceAqqaI4IQC4-vTQXelF0c-zaOuvBwBEQaAnl3EALw_wcB&gclid=Cj0KCQjw38-DBhDpARIsADJ3kjnoNdUDcL6AZw-5mIA6CAceAqqaI4IQC4-vTQXelF0c-zaOuvBwBEQaAnl3EALw_wcB
+
