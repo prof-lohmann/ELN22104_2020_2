@@ -34,40 +34,81 @@ Eletrônica I</b>
 <b>4. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
 
 <b>Amplificador Inversor</b>
-<p align="center"><img src="../../Imagens/Atividade 2/mf_inv.png" align="center" width="600"><br></p>
-`como não temos corrente passando (em vermelho) para o ampop, então a corrente que passa pelo **Rf** é a mesma que passa em **R1** (trajetória em azul), logo **Rf = R1**,`
+<p align="center"><img src="../../Imagens/Atividade 2/mf_inv - exemplo.png" align="center" width="300"><br></p>
+
+`Como não temos corrente passando (em vermelho) para o ampop, então a corrente que passa pelo` **Rf** `é a mesma que passa em` **R1** `(trajetória em azul), logo` **If = I1**`,`
 `também podemos observar que pelo comportamento do circuito, o valor do terra do ponto não inversor passará para o ponto inversor (em amarelo),`
-`pelo método de nós podemos análisar que **If = (Vo - 0)/R1**`
+`portanto utilizando o método de nós podemos análisar que `**If = (Vo - 0)/Rf**`, da mesma forma,` **I1 = (0 - V1)/R1**` e como, `**If = I1**` substituindo e colocando Vo em evidência, temos que `**Vo = (-Rf/R1)V1**`. sendo o ganho `**G = (-Rf/R1)**`.`
+
 
 <b>Amplificador Não-Inversor</b>
-<p align="center"><img src="../../Imagens/Atividade 2/mf_ninv.png" align="center" width="600"><br></p>
-`teste aqui é um codigo`
+<p align="center"><img src="../../Imagens/Atividade 2/mf_ninv - exemplo.png" align="center" width="300"><br></p>
 
+`Como não temos corrente passando (em vermelho) para o ampop, então a corrente que passa pelo` **Rf** `é a mesma que passa em` **R1** `(trajetória em azul), logo` **If = I1**`,`
+`também podemos observar que pelo comportamento do circuito, o valor do` **V1**` do ponto não inversor passará para o ponto inversor (em amarelo),`
+`portanto utilizando o método de nós podemos análisar que `**If = (Vo - V1)/Rf**`, da mesma forma,` **I1 = (V1 - 0)/R1**` e como, `**If = I1**` substituindo e colocando Vo em evidência, temos que `**Vo = (1+(Rf/R1))V1**`. sendo o ganho `**G = (1+(Rf/R1))**`.`
 
 ---
 
 <b>5. Descreva as principais características das topologias:</b>
 
 <b>a) Seguidor de Tensão (Buffer)</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/buffer.png" align="center" width="300"><br></p>
 *A ideia de um buffer, ou seguidor de tensão, é a de um circuito que apresente na saída exatamente a entrada aplicada*<br><br>
+
 <b>b) Amplificador Inversor</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/mf_inv.png" align="center" width="300"><br></p>
 *Este amplificador é chamado de inversor porque, além de amplificar o sinal de entrada, o sinal de saída possui polaridade invertida, ou seja, valores positivos na entrada se tornam valores negativos na saída e vice-versa.*<br><br>
+
 <b>c) Amplificador Não Inversor</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/mf_ninv.png" align="center" width="300"><br></p>
 *Este amplificador é chamado de não-inversor porque o sinal de saída possui mesma polaridade do sinal de entrada*<br><br>
+
 <b>d) Amplificador Somador Inversor</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/somador.png" align="center" width="300"><br></p>
 *O amplificador somador é um circuito com AMPOP que permite realizar a soma de dois ou mais sinais.*<br><br>
+
 <b>e) Amplificador Somador Não Inversor</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/somador ninv.png" align="center" width="300"><br></p>
 *A diferença entre o somador inversor é de que as tensões de entrada serão aplicadas ao terminal inversor do ampop.*<br><br>
+
 <b>f) Subtrator</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/sub.png" align="center" width="300"><br></p>
 *O amplificador subtrator realiza um resultado na saída de uma tensão igual à diferença entre os sinais aplicados, multiplicada por um ganho (G).*<br><br>
+
 <b>g) Amplificador de Instrumentação</b>
+<p align="center"><img src="../../Imagens/Atividade 2/instrumentação.png" align="center" width="300"><br></p>
 *Os amplificadores de instrumentação são conhecidos por terem uma entrada diferencial e uma elevada impedância de entrada.*<br>
 
 ---
 
 <b>6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.</b><br>
+<p align="center"><img src="../../Imagens/Atividade 2/ex6 inversor.png" align="center" width="300"><br></p>
+
+`A impedância de entrada infinita do amplificador operacional força a corrente `**I1** `a fluir inteiramente através de `**R2**`. A tensão de saída` **Vo**` pode, portanto, ser determinada a partir das equações que já vimos anteriormente, fazendo por nós, temos que,` **I1 = ((V1 - (-Vo/A))/R1)** `e como,` **Vo = -Vo/A - I1xR2**,` sendo nosso ganho definido por` **G = Vo/V1**`, substituindo e isolando, temos que `**G = (-R2/R1)/(1 + (1 + R2/R1)/A)**`. Notamos que conforme A se aproxima de ∞, G se aproxima do valor ideal de `**-R2/R1**`. Além disso, a partir da figura, vemos que conforme A se aproxima de ∞, a tensão no terminal de entrada inversor se aproxima de` **zero**`.`
+
+<p align="center"><img src="../../Imagens/Atividade 2/ex6 ninversor.png" align="center" width="300"><br></p>
+
+`Como fizemos para a configuração de inversão, agora consideramos o efeito do ganho de malha aberta A do amp op finito no ganho da configuração de não inversão. Supondo que o amplificador operacional seja ideal, resumindo as operações, e usando as mesmas análises por nós, chegamos que `**G = (1 + (R2/R1))/(1 + ((1 + R2/R1)/A))**`. Observamos que o denominador é idêntico ao da configuração inversora. Isso não é coincidência, pois é a prova de que ambas as configurações de inversão e não inversora têm o mesmo loop, que pode ser facilmente visto se a fonte do sinal de entrada for eliminada (ou seja, em curto-circuito). Os numeradores, no entanto, são diferentes, pois o numerador fornece o ganho de malha fechada ideal ou nominal (para a configuração inversora e para a configuração não inversora). Finalmente, notamos que a expressão de ganho na figura se reduz ao valor ideal para A = ∞.`
+
 <b>a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/Ve -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.<br></b>
-*Imagem será colocada.*<br>
+
+<b>Inversor</b>
+|Av | G (em módulo) | Erro (dado pela expressão do livro) | 
+| :------------: | :------------: | :------------: |
+| 10000  | 909 | 9,1 |
+| -10000 | 90,83 | 90,9 |
+| 10 | 9,98 | 0,2 |
+| -10 |  9,01 | 9,8 |
+
+<b>Não-Inversor</b>
+|Av | G (em módulo) | Erro (dado pela expressão do livro) | 
+| :------------: | :------------: | :------------: |
+| 10000 | 909 | 9,1 |
+| -10000 | 90,88 | 90,9 |
+| 10 | 9,9 | 0,12 |
+| -10 | 9,09 | 9,3 |
+
 <b>b) Dica veja o problema 2.20 pg 83 do livro texto.</b><br>
 
 ---
