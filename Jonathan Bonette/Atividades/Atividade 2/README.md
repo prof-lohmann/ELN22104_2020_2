@@ -131,16 +131,39 @@ Eletrônica I</b>
 
 <b>9. Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:</b><br>
 <b>a) o impacto na tensão de saída com relação a tolerância dos resistores no circuito</b><br>
-*Imagem será colocada.*<br>
+
+**Ampop: OPA2991 da Texas instruments.**
+
+*Olhando seu datasheet vimos qual a faixa de operação para as tensões de alimentação e a tensão de modo comum (Vcm).*
+
+<p align="center"><img src="../../Imagens/Atividade 2/9.1.png" align="center"><br></p>
+
+*O circuito foi montado dentro das especificações do fabricante, como mostra a figura abaixo:*
+
+<p align="center"><img src="../../Imagens/Atividade 2/9.2.png" align="center"><br></p>
+
+*Para analisar o efeito dos resistores, foi montado dois circuitos subtratores com ganhos 1000V/V. Percebeu-se que a diferença pelo efeito da Vcm, offset e CMRR.*
+
 <b>b) Qual erro na tensão de saída com relação CMRR do AmpOp</b><br>
-*Imagem será colocada.*<br>
+
+*Olhando no datasheet, podemos observar os erros do CMRR.*
+
+<p align="center"><img src="../../Imagens/Atividade 2/9.3.png" align="center"><br></p>
+
 <b>c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM). Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%</b><br>
-*Imagem será colocada.*<br>
- 
+
+*O datasheet demonstra em algumas situações, que podemos aliviar as limitações apenas modificando as tensões de alimentação e as resistências do ampop que estamos trabalhando.
+
 ---
 
 <b>10. Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.</b><br>
-*Imagem será colocada.*<br>
+
+*Vejamos como a tensão de modo comum e as oscilações de tensão de entrada e saída são normalmente definidas em uma planilha de dados.
+A faixa de tensão de modo comum é definida aqui com os limites mínimo e máximo dados em relação às fontes de alimentação. A alimentação negativa, V-, é zero volts neste caso, portanto, zero volts menos 0,1 V nos dá -0,1 V para a limitação mínima do modo comum. A alimentação positiva, V +, é de 5 V, então 5 V menos 3,5 V nos dá 1,5 V para a limitação máxima do modo comum. Portanto, a aplicação de uma tensão de modo comum de entrada abaixo de -0,1 V ou acima de 1,5 V resultará em uma saída não linear.
+A oscilação de saída é dada aqui, e é o mesmo tipo de definição que é relativa às tensões de alimentação. A tensão de saída mínima é V-/+ 0,2 V, ou 0,2 V neste caso, e a tensão de saída máxima é V+/- 0,2 V ou 4,8 V. Conduzir a saída abaixo de 0,2 V ou acima de 4,8 V fará com que a saída se torne não linear.*
+
+<p align="center"><img src="../../Imagens/Atividade 2/10.png" align="center"><br></p>
+
 <b>a) Defina o que é um AmpOp Rail-to-rail.</b><br>
 *Este componente tem como principal característica a capacidade de aproveitar praticamente todo o range de alimentação em sua saída, na prática contando com apenas alguns mV de perda entre os limites de alimentação*<br>
 
@@ -165,6 +188,10 @@ Eletrônica I</b>
 *É a forma de encontrar o setpoint pela temperatura do AmpOp.*<br>
 <b>a) Como verificar esse parâmetro no datasheet?</b><br>
 *Podemos achar na aba de Offset Voltage. (Imagem será colocada).*<br>
+
+**Modelo: OPA2991**
+
+<p align="center"><img src="../../Imagens/Atividade 2/13.png" align="center"><br></p>
 
 ---
 
