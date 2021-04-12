@@ -152,7 +152,7 @@ Eletrônica I</b>
 
 <b>c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM). Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%</b><br>
 
-*O datasheet demonstra em algumas situações, que podemos aliviar as limitações apenas modificando as tensões de alimentação e as resistências do ampop que estamos trabalhando.
+*O datasheet demonstra em algumas situações, que podemos aliviar as limitações apenas modificando as tensões de alimentação e as resistências do ampop que estamos trabalhando.*
 
 ---
 
@@ -187,7 +187,7 @@ A oscilação de saída é dada aqui, e é o mesmo tipo de definição que é re
 <b>13. O que é a variação da tensão de offset pela temperatura?</b><br>
 *É a forma de encontrar o setpoint pela temperatura do AmpOp.*<br>
 <b>a) Como verificar esse parâmetro no datasheet?</b><br>
-*Podemos achar na aba de Offset Voltage. (Imagem será colocada).*<br>
+*Podemos achar na aba de Offset Voltage.*<br>
 
 **Modelo: OPA2991**
 
