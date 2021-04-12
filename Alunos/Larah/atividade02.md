@@ -53,18 +53,31 @@ Possui ganho G = -Rf*(V1/R1 + V2/R2+...+Vn/Rn), usando da realimentação negati
 
 #### e) Somador não inversor
 
+Semelhante ao somador inversor, possui realimentação negativa, obtem uma soma ponderada das entradas como resultado na saída.
 
 #### f)Subtrator
 
+Obtem como resposta a diferença entre os seus sinais de entrada. 
+
 #### g) Amplificador de instrumentação
 
+Também é um aplificador diferencial  com ganho G = R4/R3 *[1 + (R2+R2')/(2*R1)]
+
+[fig 2.20]
+
 ### Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.
+
+O ganho em malha aberta finito considera algumas não idealidades dos amplificadores, tronando o projeto mais preciso e aplicavel em questões mais complexas. 
 
 #### a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
 
 ### 7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
 
+O sinal de entrada de modo comum é a média dos sinais de entrada, um amplificador de diferenças ideal rejeita sinais de modo comum, sendo que a eficácia de um amplificador de diferenças não ideal é medida pelo quanto ele consegue rejeitar esse sinal.
+
 ### 8. O que é CMRR?
+
+É o valor que quantifica quanto do sinal de modo comum é rejeitado (razão de rejeição de modo comum).
 
 ### 9. Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
 
