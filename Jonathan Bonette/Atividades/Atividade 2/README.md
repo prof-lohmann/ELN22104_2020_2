@@ -11,8 +11,6 @@ Eletrônica I</b>
 *Jonathan Chrysostomo Cabral Bonette*
 </td></tr></table>
 
-<p align=center>OBS: por contratempos de dispositivos, as imagens serão editadas e colocadas aqui posteriormente, todos os exercícios terão uma imagem representativa.</p>
-
 <b>a) Faça um resumo em forma de tutorial sobre o os Amplificadores Operacionais. Este resumo deve responder as seguintes perguntas:<br></b><br>
 <b>1. O que é o AmpOp?</b><br>
 
