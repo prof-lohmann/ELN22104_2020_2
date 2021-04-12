@@ -54,30 +54,37 @@ Eletrônica I</b>
 
 <b>a) Seguidor de Tensão (Buffer)</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/buffer.png" align="center" width="500"><br></p>
+
 *A ideia de um buffer, ou seguidor de tensão, é a de um circuito que apresente na saída exatamente a entrada aplicada*<br><br>
 
 <b>b) Amplificador Inversor</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/mf_inv.png" align="center" width="500"><br></p>
+
 *Este amplificador é chamado de inversor porque, além de amplificar o sinal de entrada, o sinal de saída possui polaridade invertida, ou seja, valores positivos na entrada se tornam valores negativos na saída e vice-versa.*<br><br>
 
 <b>c) Amplificador Não Inversor</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/mf_ninv.png" align="center" width="500"><br></p>
+
 *Este amplificador é chamado de não-inversor porque o sinal de saída possui mesma polaridade do sinal de entrada*<br><br>
 
 <b>d) Amplificador Somador Inversor</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/somador.png" align="center" width="500"><br></p>
+
 *O amplificador somador é um circuito com AMPOP que permite realizar a soma de dois ou mais sinais.*<br><br>
 
 <b>e) Amplificador Somador Não Inversor</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/somador ninv.png" align="center" width="500"><br></p>
+
 *A diferença entre o somador inversor é de que as tensões de entrada serão aplicadas ao terminal inversor do ampop.*<br><br>
 
 <b>f) Subtrator</b><br>
 <p align="center"><img src="../../Imagens/Atividade 2/sub.png" align="center" width="500"><br></p>
+
 *O amplificador subtrator realiza um resultado na saída de uma tensão igual à diferença entre os sinais aplicados, multiplicada por um ganho (G).*<br><br>
 
 <b>g) Amplificador de Instrumentação</b>
 <p align="center"><img src="../../Imagens/Atividade 2/instrumentação.png" align="center" width="500"><br></p>
+
 *Os amplificadores de instrumentação são conhecidos por terem uma entrada diferencial e uma elevada impedância de entrada.*<br>
 
 ---
