@@ -14,15 +14,73 @@ Eletrônica I</b>
 ## Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539
 
 <b>1. Verifique no datasheet dos Ampops indicados os valores dos itens abaixo:</b><br>
+
+### AD8040
+*O datasheet fornece informações para três tensões diferentes **Vs=±5V**, **Vs=5V** e **Vs=3V**. Analisaremos apenas para **Vs=±5V** por hora.*
+
 <b>◦ Máxima e mínima tensão de alimentação</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1a.png" align="center"><br></p>
+
 <b>◦ Tensão de modo comum</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1b.png" align="center"><br></p>
+
+*Sendo **Vs=±5V**, **Vs=5V** ou **Vs=3V**.*
+
 <b>◦ CMRR</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1c+-5.png" align="center"><br></p>
+
+*Sendo **Vs=±5V**.*
+
 <b>◦ Máxima e mínima tensão de entrada</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1d+-5.png" align="center"><br></p>
+
 <b>◦ Tensão de offset</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1e.png" align="center"><br></p>
+
 <b>◦ Corrente de polarização</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1f.png" align="center"><br></p>
+
 <b>◦ Consumo de corrente</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1g.png" align="center"><br></p>
+
 <b>◦ Ganho em malha aberta</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1h+-5.png" align="center"><br></p>
+
 <b>◦ Impedância de entrada</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/1i+-5.png" align="center"><br></p>
+
+***Analog Devices: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8029_8030_8040.pdf***
+
+### AD8539
+<b>◦ Máxima e mínima tensão de alimentação</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2a.png" align="center" width="500"><br></p>
+
+<b>◦ Tensão de modo comum</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2b.png" align="center" width="500"><br></p>
+
+<b>◦ CMRR</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2c.png" align="center" width="500"><br></p>
+
+<b>◦ Máxima e mínima tensão de entrada</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2d.png" align="center" width="500"><br></p>
+
+<b>◦ Tensão de offset</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2e.png" align="center" width="500"><br></p>
+
+<b>◦ Corrente de polarização</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2f.png" align="center" width="500"><br></p>
+
+<b>◦ Consumo de corrente</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2g.png" align="center" width="500"><br></p>
+
+<b>◦ Ganho em malha aberta</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2h.png" align="center" width="500"><br></p>
+
+<b>◦ Impedância de entrada</b><br>
+<p align="center"><img src="../../Imagens/Atividade 3/2i.png" align="center" width="500"><br></p>
+
+
+Analog Devices: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
 
 ---
 
