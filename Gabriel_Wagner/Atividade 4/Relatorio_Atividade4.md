@@ -179,9 +179,11 @@ Regulação de carga = (delta Vout) / (delta Iout) = (0) / (delta Iout) = 0 V/A
 
 Sabendo da importância que o zener tem na tensão de saída, não queremos que correntes variantes atrapalhem sua regulação. Então uma topologia de corrente constante resolveria o problema.
 
-* Acerca do espelho de corrente. Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+* Acerca do fonte de corrente. Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
 
-Para controlar a corrente nessa topologia, podemos adicionar um potenciômetro em paralelo com a tensão de referência na saída. E para um melhor ajuste, podemos também adicionar resistores em série com o potenciômetro, diminuindo a excursão de tensão do potenciômetro.
+Para controlar a corrente nessa topologia, basta alterarmos o valor do resistor R1, usando por exemplo, um potenciômetro. Porém alterar o valor do resistor dimensionado pode causar aumento de ruído.
+
+Um aspecto que pode melhorar a topologia, é adicionar um potenciômetro em paralelo com a tensão de referência na saída. E para um melhor ajuste, podemos também adicionar resistores em série com o potenciômetro, diminuindo a excursão de tensão do potenciômetro. Dessa maneira deixaremos a tensão que entra no ampop mais fixa.
 
 A figura abaixo exemplifica o procedimento.
 
