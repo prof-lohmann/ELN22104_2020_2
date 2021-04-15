@@ -15,3 +15,5 @@
 Conforme requerido, a seguir estão dispostos os valores dos parâmetros de datasheet solicitados para a pesquisa, 
 relacionados ao AmpOp AD 8040 e AD8539, considerando indicação na Tabela 1:
 ![figura01](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2001.jpg)
+
+## PARA TODAS AS SIMULAÇÕES ABAIXO UTILIZE A ALIMENTAÇÃO SIMÉTRICA RECOMENDADA NO DATASHEET.
