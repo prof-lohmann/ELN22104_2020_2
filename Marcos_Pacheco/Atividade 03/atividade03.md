@@ -96,9 +96,8 @@ de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.\
 	Assim, dependendo do ganho do amplificador em uso, esse erro percentual, pode inviabilizar totalmente o uso de determinado componente, por isso, o estudo prévio sobre as características de cada AmpOp, antes de sua respectiva implementação em quaisquer circuitos, é de extrema importância.\
 	Por outro lado, o AmpOp AD8539, apresentou valores bem menores em relação ao erro percentual, quando são aplicados valores de entrada de baixa tensão. Somente quando se aplicou um sinal de entrada tal, que fez o componente operar na faixa de saturação, o erro foi bem mais pronunciado.
 
-
-
-
+>> 5. Caso deseje-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.\
+	Pelos estudos até o momento realizados, para um projeto que trabalhe com ganho [G] de 100V/V, baixa frequência e sinais de entrada de pequena magnitude na ordem de +/-10x10-6 à +/-30x10-3, o AmpOp AD8539 indicou um melhor desempenho, pois apresenta um offset cerca de 100 vezes menor, e relação ao AD8040.\
 
 
 
