@@ -70,12 +70,37 @@ A mesma observação ocorreu no AD8539 em relação a inversão de fase que já 
 ![figura14]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2014.jpg)\
 
 	
+>> 4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule
+os resistores para ter um ganho igual 10V/V.\
+	Diante aos quesitos de simulação, antes da realização das primeiras observações, foi necessário calcular os resistores R1 e Rf (resistor de realimentação), conforme já realizado também, no item anterior. A seguir será demonstrado o desenvolvimento dos equacionamentos:\
+![figura15]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2015.jpg)\
+	Pelo demonstrado na Tabela anterior, o valor de Rf é 9 vezes maior que o valor de R1, então para facilitação das demais análises, se escolheu o valor de R1 = 1 KΩ e consequentemente o Rf = 9 kΩ.\ 
+	4.1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.\
+•	AMPOP AD8040\
+	Conforme solicitado, foi aplicado 0 V no sinal de entrada e os seguintes gráficos foram obtidos através da simulação do circuito em estudo:\
+![figura16]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2016.jpg)\
+	O circuito em estudo está apresentando um ganho [G] em malha fechada de 10 V/V (conforme quesito de análise). O valor de saída foi avaliado na simulação em Vout = -15,296 mV. Aquela saída apresentou o sinal amplificado do próprio offset do sinal de entrada.\ 
+	O sinal de offset pode ser afetado por duas condições de circuitos, independentes, que pode ser pela própria tensão de offset de entrada (conforme já verificado nas outras análises) ou por uma corrente de offset que ocorre devida à diferença nas correntes resultas nas entradas inversora e não inversora, provada pelo desbalanceamento entre os transistores de entrada. Como uma das entradas estava aterrada e a outra estava com sinal de entrada em 0 V, o sinal de offset resultou num valor negativo, fato que pode ser observado no circuito em estudo.\
+•	AMPOP AD8539\
+	Conforme solicitado, foi aplicado 0 V no sinal de entrada não inversora e os seguintes gráficos foram obtidos através da simulação do circuito em estudo:\
+![figura17]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2017.jpg)\
+Através da análise do gráfico da saída Vout = 137,2956 µV, percebe-se mais uma que esse valor apresentado, é o próprio offset de entrada amplificado pelo ganho em malha fechada de fator G=10 V/V. Com o auxílio da Tabela 1, pode-se verificar que aquele sinal de entrada na configuração desse  circuito com alimentação simétrica de +/- 2,5 V, pode apresentar um offset de 5 à 15 [µV], comprovando que o sinal de saída obtido e observado está dentro daquele intervalo  do sinal de entrada de offset, porém, amplificado pelo próprio ganho [G] do AmpOp.\
+4.2. Aplique um sinal contínuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal
+de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.\
+	Na figura a seguir, encontram-se todas as simulações realizadas com os valores de sinal contínuo (CC), conforme requerido:\
+![figura18]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2018.jpg)\
+![figura19]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2019.jpg)\
+	A Tabela 8, expõe os erros percentuais dos valores de saída [Vout] medidos durante as simulações, com aqueles esperados, ou seja, sinal de entrada amplificado integralmente pelo ganho [G]:\
+![figura20]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2020.jpg)\
+	Na análise dos erros percentuais do sinal de saída [Vout] para o AmpOp AD8040, percebe-se que aqueles são bem mais significativos quando são aplicados sinais de entrada de baixa tensão, isso deve ao fato de que esse componente, segundo catálogo do fabricante e conforme analisado em tópicos anteriores, apresentar um offset na ordem de 10-3 [mV].\ 
+	Assim, dependendo do ganho do amplificador em uso, esse erro percentual, pode inviabilizar totalmente o uso de determinado componente, por isso, o estudo prévio sobre as características de cada AmpOp, antes de sua respectiva implementação em quaisquer circuitos, é de extrema importância.\
+	Por outro lado, o AmpOp AD8539, apresentou valores bem menores em relação ao erro percentual, quando são aplicados valores de entrada de baixa tensão. Somente quando se aplicou um sinal de entrada tal, que fez o componente operar na faixa de saturação, o erro foi bem mais pronunciado.
 
-	
-	
-	
-	
-	
+
+
+
+
+
 
 
 
