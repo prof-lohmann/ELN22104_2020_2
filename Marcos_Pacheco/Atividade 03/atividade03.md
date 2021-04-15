@@ -21,7 +21,7 @@ relacionados ao AmpOp AD 8040 e AD8539, considerando indicação na Tabela 1:
 >> 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.\
 2.1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.\
 2.2. Responda quais os valores das tensões de saturação?\
-•	AMPOP AD8040\
+### •	AMPOP AD8040\
 	Conforme especificações do AmPop AD8040 (data sheet), circuito foi simulado com Vin = 5 Vpico senoidal na entrada não-versora (10 V pico a pico de sinal de entrada e alimentação simétrica de VCC1 = +5V e VEE1 = -5V) com 1 KHz de frequência.\
 	O gráfico do sinal de saída encontra-se fase com sinal de entrada e mesmos valores de pico (num primeiro momento de análise), demonstrando o funcionamento do circuito como “seguidor de tensão”.\
 ![figura02]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2002.jpg)\
