@@ -41,4 +41,42 @@ A tabela abaixo, resume de forma detalhada, os valores medidos na simulação.\
 	Nessa simulação com o AmPop AD 8539, não foi observado um valor de offset já no sinal de entrada, o que já era esperado pela própria análise do datasheet antecipadamente (Vcm = 2,50 V)= 5 à 15 [µV] de offset), ou seja, seria um valor muito pequeno e que talvez a própria precisão do software utilizado não foi capaz de se sensibilizar àquela presença. Porém, observa-se o efeito do offset no sinal da saída amplificada pelo ganho do próprio AmpOp.\
 	E, quando inserido um sinal de entrada de 2,6 V de pico, na saída o sinal se apresentou saturado em torno de 2,5 V.
 
+>> 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.\
+Diante aos quesitos de simulação, antes da realização das primeiras observações, foi necessário calcular os resistores R1 e Rf (resistor de realimentação). A seguir será demonstrado o desenvolvimento dos equacionamentos:\
+![figura08]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2008.jpg)\
+Pelo demonstrado na Tabela anterior, o valor de Rf é 100 vezes maior que o valor de R1, então para facilitação das demais análises, se escolheu o valor de R1 = 1 KΩ e consequentemente o Rf = 100 kΩ.\
+3.1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.\
+•	AMPOP AD8040\
+	Conforme solicitado, foi aplicado 0 V no sinal de entrada e os seguintes gráficos foram obtidos através da simulação do circuito em estudo:\
+![figura09]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2009.jpg)\
+	Verifica-se através do gráfico do sinal de saída [Vout], a interferência do offset de entrada amplificado pelo ganho [G] do AmpOp. O sinal encontrado foi de -169,899 mV, aproximadamente.\
+	Conforme já dito, o valor do Vout é o próprio sinal de offset de entrada amplificado 100 vezes, ou seja, seu valor ainda no sinal de entrada Vin é de aproximadamente 1,699 mV (praticamente o mesmo valor encontrado na primeira parte do trabalho e discriminado na Tabela 2)\
+•	AMPOP AD8539\
+	Conforme solicitado, foi aplicado 0 V no sinal de entrada e os seguintes gráficos foram obtidos através da simulação do circuito em estudo:\
+![figura10]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2010.jpg)\
+Verifica-se através do gráfico do sinal de saída [Vout], a interferência do offset de entrada amplificado pelo ganho [G] do AmpOp. O sinal encontrado foi de 1,3866 mV, aproximadamente.\
+	Conforme já dito, o valor do Vout é o próprio sinal de offset de entrada amplificado 100 vezes, ou seja, seu valor ainda no sinal de entrada Vin é de aproximadamente 13,866 µV, corroborando com a primeira análise de data sheet do componente, discriminado na Tabela 1 ( offset em Vcm (2,50 V) = 5 à 15 [µV] ).\
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
 
