@@ -101,7 +101,7 @@ de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.\
 
 >> 6. Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.\
 Uma opção seria o amplificador LTC1053, pois apresenta ganho mínimo de 116 e típico de 160. O ajuste de ganho, caso necessário para 100 vezes, pode ser feito através da escolha (relação) dos resistores para a configuração de um amplificador subtrator. Ainda, o AmpOp sugerido, possui offset de entrada típico de +/-0,5 [µV] e máximo +/- 5 [µV].\ 
-Na buscativa de um amplificador condizendo ao solicitado, no mesmo catálogo, encontra-se o LTC1051, porém com vários desses modelos em descontinuação de fabricação.
+Na buscativa de um amplificador condizendo ao solicitado, no mesmo catálogo, encontra-se o LTC1051, porém com vários desses modelos em descontinuação de fabricação.\
 ![figura21]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2021.jpg)\
 https://www.analog.com/media/en/technical-documentation/data-sheets/10513fa.pdf
 
