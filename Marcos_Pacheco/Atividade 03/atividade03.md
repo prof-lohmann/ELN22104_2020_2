@@ -56,14 +56,19 @@ Pelo demonstrado na Tabela anterior, o valor de Rf é 100 vezes maior que o valo
 ![figura10]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2010.jpg)\
 Verifica-se através do gráfico do sinal de saída [Vout], a interferência do offset de entrada amplificado pelo ganho [G] do AmpOp. O sinal encontrado foi de 1,3866 mV, aproximadamente.\
 	Conforme já dito, o valor do Vout é o próprio sinal de offset de entrada amplificado 100 vezes, ou seja, seu valor ainda no sinal de entrada Vin é de aproximadamente 13,866 µV, corroborando com a primeira análise de data sheet do componente, discriminado na Tabela 1 ( offset em Vcm (2,50 V) = 5 à 15 [µV] ).\
-	
-	
-	
-	
-	
-	
-	
-	
+	3.2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.\
+•	AMPOP AD8040\
+	Continuando com o solicitado, foi inserido um valor de 10 mVpp na entrada e os seguintes gráficos foram obtidos:\
+![figura11]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2011.jpg)\
+A primeira observação a se fazer é a inversão de fase do sinal de saída, provocada pelo ganho negativo imposto pelo quesito de análise, ainda, o sinal encontra-se deslocado em relação a simetria inicial em comparação ao eixo vertical [mV]. Para ilustrar melhor os dados obtidos, os mesmos podem ser observados na Tabela 5.\
+![figura12]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2012.jpg)\
+	Esta análise evidencia ainda mais a influência do offset em circuitos com AmpOp.\
+•	AMPOP AD8539\
+	Continuando com o solicitado, foi inserido um valor de 10 mVpp na entrada e os seguintes gráficos foram obtidos:\
+![figura13]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2013.jpg)\
+A mesma observação ocorreu no AD8539 em relação a inversão de fase que já foi comentada no AD8040, porém agora não houve deslocamento do sinal em relação a simetria inicial em comparação ao eixo vertical [mV]. Para ilustrar melhor os dados obtidos, os mesmos podem ser observados na Tabela 6.\
+![figura14]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2014.jpg)\
+
 	
 
 	
