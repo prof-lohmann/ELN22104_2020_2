@@ -30,7 +30,6 @@ A fim de se observar o valor de saturação do sinal de saída, inseriu-se 6 V (
 	Na primeira simulação, em princípio se observou que o sinal de saída era de mesma amplitude do sinal de entrada, porém, através da própria simulação, foram feitas algumas medições, comprovando que essa conclusão não era totalmente verdadeira, sendo possível verificar o efeito do offset já no sinal de entrada. A tabela abaixo resume o exposto nesse parágrafo:\
 ![figura04]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2004.jpg)\
 Pela análise da Tabela 2, percebe-se que o offset de entrada em torno de 2 mV está dentro do especificado no datasheet (Tabela 1) que é de no máximo 6 mV.\
-
 •	AMPOP AD8539\
 	Através das especificações do AmPop AD8539 (datasheet), o circuito foi simulado com Vin = 2,5 V pico senoidal na entrada não inversa (5 V pico a pico de sinal de entrada e alimentação simétrica de VCC1 = +2,5V e VEE1 = -2,5V) com 1 KHz de frequência.\
 	O gráfico do sinal de saída encontra-se fase com sinal de entrada, porém, conforme observado na simulação anterior com o AmPop AD8040, é provável que o sinal de saída (amplificado pelo próprio ganho do AmPop), bem como o sinal de entrada, já apresentem um sinal de offset em relação ao sinal inserido pela fonte Vin.\
@@ -40,6 +39,6 @@ Como na simulação anterior, a fim de se observar o valor de saturação no sin
 A tabela abaixo, resume de forma detalhada, os valores medidos na simulação.\
 ![figura07]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2003/figuras_atividade_03/figura%2007.jpg)\
 	Nessa simulação com o AmPop AD 8539, não foi observado um valor de offset já no sinal de entrada, o que já era esperado pela própria análise do datasheet antecipadamente (Vcm = 2,50 V)= 5 à 15 [µV] de offset), ou seja, seria um valor muito pequeno e que talvez a própria precisão do software utilizado não foi capaz de se sensibilizar àquela presença. Porém, observa-se o efeito do offset no sinal da saída amplificada pelo ganho do próprio AmpOp.\
-	E, quando inserido um sinal de entrada de 2,6 V de pico, na saída o sinal se apresentou saturado em torno de 2,5 V.\
+	E, quando inserido um sinal de entrada de 2,6 V de pico, na saída o sinal se apresentou saturado em torno de 2,5 V.
 
 
