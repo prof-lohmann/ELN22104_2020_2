@@ -47,15 +47,16 @@
 > ![malha_fechada](https://user-images.githubusercontent.com/12564754/102251814-10305280-3ee4-11eb-9ac6-4adf18d3d9e2.PNG)
 >
 
-#### Calcular circuitos de AmpOps em malha fechada
+#### Calcular circuitos de AmpOps em malha aberta e fechada
 
->  Para resolver e calcular os circuitos em malha fechada, análise nodal é a melhor forma, pois a entrada do AmpOp é teoricamente zero, portanto, toda corrente passaria para o resistor de realimentação. Muitos circuitos já foram simplificados possuindo suas próprias topologias e formulas deduzida. Caso ocorra de ter 2 fontes ou mais, é possível separar por analise de sobreposição facilitando o cálculo.
+>
 
 #### Topologias para Ampops:
 
 > Abaixo temos algumas opcoes de  configuracao de circuitos utilizando  os Amplificadores Operacionais.
 
 ##### Seguidor de Tensão (Buffer):
+
 > O Seguidor de tensao ou seguidor unitario atua como um isolador (buffer). Este circuito fornece um ganho unitario, sem inversao  de polaridade de fase  mantendo a saida com a mesma integridade do sinal de entrada. 
 > Abaixo temos uma ilustracao com o seguidor unitario:
 >
@@ -69,12 +70,16 @@
 >
 
 ##### Amplificador Inversor:
+
+> 
 > Este amplificador é chamado de inversor porque além de amplificar o sinal de entrada, o sinal de saída possui polaridade invertida, ou seja, valores positivos na entrada se tornam valores negativos na saída e vice-versa.
 > Exemplo de Amplificador Inversor:
 >
 > ![inversor](https://user-images.githubusercontent.com/12564754/102647951-69e38780-4145-11eb-96f3-9898952b6e93.PNG)
 
+
 ##### Amplificador Não Inversor:
+
 > 
 > Este amplificador é chamado de nao-inversor porque além de amplificar o sinal de entrada, o sinal de saída nao possui a polaridade invertida
 > Exemplo de Amplificador Nao-Inversor:
@@ -83,10 +88,11 @@
 >
 
 ##### Amplificador Somador Inversor:
+
 > O amplificador somador inversor realiza o somatórios das tensões que entram no terminal inversor, resultando na saida o resultado desta operacao.
 > Exemplo de Amplificador Somador Inversor: 
 >
-> ![somador_inversor](https://user-images.githubusercontent.com/12564754/102648755-d9a64200-4146-11eb-9924-81b4634fb6e3.PNG)
+>![somador_inversor](https://user-images.githubusercontent.com/12564754/102648755-d9a64200-4146-11eb-9924-81b4634fb6e3.PNG)
 
 ##### Amplificador Somador Não Inversor:
 
@@ -97,17 +103,11 @@
 
 ##### Subtrator:
 
-> Responde à diferença de dois sinais que aplicados em suas entradas e idealmente rejeita sinais ue sao comuns às duas entradas. Para encontrar o valor na saída é feito sobreposição de fontes para encontrar o resultado.
-> Exemplo de Amplificador Subtrator:
 >
-> ![subtrator](https://user-images.githubusercontent.com/12564754/106810456-b890a680-664b-11eb-81d5-4d7c01ffa94a.PNG)
 
 ##### Amplificador de Instrumentação:
 
-> O circuito com ampops de instrumenação funciona como um subtrator com um inversor em cada entrada. Devido aos inversores na entrada, a impedância de entrada tem valor altíssimo, diminuindo as correntes de entrada do circuito. Além disso, apresenta uma grande atenuação do sinal de modo comum, ou seja alto CMRR, e apresenta também baixo offset. Esse circuito é muito utilizado em equipamentos de medição e teste.
-> Exemplo de Amplificador de Instrumentação:
 >
-> ![kisspng-instrumentation-amplifier-operational-](https://user-images.githubusercontent.com/12564754/106811272-d9a5c700-664c-11eb-95d8-afbc48fc1310.jpg)
 
 ### Efeito do ganho em malha aberta finito para as topologias Amplificador Inversor e Amplificador não inversor
 
@@ -115,64 +115,53 @@
 
 #### Exemplo com circuitos com ganhos em malha fechada elevado:
 
-> 
+>
 
 ### Tensão de modo comum (VCM)
 
-> É a diferença potencial entre os sinais de sua entrada, saída inversora e não inversora. Em alguns circuitos pode ocasionar problemas, faixa de tensão do modo comum e a taxa de rejeição do modo comum (CMRR) são descritas para que possíveis erros de medidas não ocorram. A faixa de tensão do modo comum é definida como a máxima variação de tensão permitida em cada entrada. Caso não esteja dentro da faixa não apenas pode causar um erro de medição, mas também em possível dano aos componentes circuito.
-
+>
 
 ### Correntes de polarização (Ibias) de um AmpOp
 
-> Para o AmpOp operar, deve ter uma corrente para fazer o funcionamento dos componentes internos do mesmo, de forma a possuir uma corrente medida com o AmpOp em repouso.
-> Correntes de polarização de entrada significa fontes de correntes cc ligadas ao AmpOp. O fabricantes especifica o valor média de Ibias, bem como sua diferença, corrente de
-> offset entre outras especificacoes.
+>
 
 #### Minimizar o efeito destas correntes
 
-> Adicionar um resistor em série com o terminal de entrada inversora. O resitor em série deve ser igual à associação em paralelo de R1 e R2. Outra forma de minimizar o efeito caso o resistor não seja suficiente é procurando outro AmpOp com corrente de offset menor.
+>
 
 ### O que é CMRR?
 
-> CMRR significa rejeição de modo comum, é utilizada para medir a eficácia de um amplificador diferencial, geralmente medida pelo grau de sua rejeição a sinais de modo comum.
-> Teoricamente esse diferencial deveria ser zero, mas na prática ainda é visto um sinal. Valores altos de CMRR podem ocasionar em um erro grande na medida no sinal de saída.
-> A rejeição do modo comum pode ser medido desta forma:
->```
-> CMRR = 20log(|ad|/|acm|)
->```
+>
 
 ### As limitações de tensão de entrada e saída de um AmpOp
 
-> Existe um limite de tensão na entrada de acordo com a alimentação do ampop. Por exemplo temos o LM324, de acordo com seu datasheet, os limites de tensão de alimentação vão de 3 a 26V, mas para tensão de entrada vai de 0 a -2V. Caso alimente um AmpOp com ±15V, sua saída vai ser saturada em ±13V.
+>
 
+#### Exemplo:
+
+>
 
 ### O que é um AmpOp Rail-to-rail?
 
-> Um amplificador preciso cuja tensão na saída tende alcançar o mesmo nível que as tensões de alimentação do AmpOp. A maioria dos amplificadores possui uma saída limitada entre a alimentação negativa e a positiva a partir de 0,2V.
+>
 
 ### Tensão de offset em Ampops
 
->  É um desequilíbrio nas entradas do AmpOp, devido a altos valores de ganho. Nos circuitos é visto como uma fonte de tensão na entrada não inversora do circuito.
-> Para calcular o efeito sobre a tensão de saída pelo teorema de superposição, anulando as fontes uma por uma e vendo seus efeitos no sinal de saída, como no exemplo a seguir:
 > 
-> Este valores de offset sao fornecidos em datasheets dos amplificadores operacionais.
 
 ### Corrente de offset na polarização dos AmpOp
 
-> É definida como a diferença entre as correntes de polarização de entrada do ampop, seu calculo é dado por:
-> ```
-> Ios=|Ib1-Ib2|
-> ```
+>
 
 #### Calculo do efeito resultante na tensão de saída de um amplificador inversor
 
-> Para calcular o efeito sobre a tensão de saída pelo teorema de superposição, anulando as fontes uma por uma e vendo seus efeitos no sinal de saída.
+>
 
 #### Como minimizar efeitos da tensão de offset em ampops
 
-> É possível acoplar um capacitor na entrada inversora, mas somente em aplicações que não exijam uma amplificação de sinais cc ou frequências muitos baixas ou procurando outro AmpOp com tensão de offset menor.
+>
 
 #### Variação da tensão de offset pela temperatura
 
-> As variacoes termicas podem provicar alteracoes acentuadas nas caracteriscas eletricasde um amplificados. Este fenomeno é chamado de DRIFT nos datasheets dos ampops. A variacao da corrente é representada por ΔI/ΔT e seu valor é fornecido em nA/ºC. A variacao da tensao é representada por ΔV/ΔT e seu valor fornecido é em µV/ºC.
+> 
 
