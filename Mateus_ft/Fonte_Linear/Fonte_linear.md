@@ -58,3 +58,9 @@ Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
 aumento de 10mA na corrente de alimentação, o circuito proposto continuará
 funcionando?
 
+**Projeto no ltspice:**
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/alimenta%C3%A7ao%20opamp.png)
+
+
+
