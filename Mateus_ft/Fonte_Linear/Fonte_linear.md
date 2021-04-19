@@ -1,4 +1,4 @@
-**Parte 01: Entendendo um regulador linear**
+# Parte 01: Entendendo um regulador linear
 
 - Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
 
@@ -39,4 +39,22 @@ Tensão de ripple na realimentação do ampop. O que ocasiona ruído na saída
 
 Sim. Adicionar um regulador linear. Assim eliminando os ruídos.
 
+
+
+## Projeto do circuito de alimentação do ampop:
+
+Ampop utilizado: LM324
+
+Datasheet utilizado: https://www.ti.com/lit/ds/symlink/lm324.pdf?ts=1618824027289&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM324
+
+- Qual a Tensão VGS? Descreva como obter o valor.
+- Qual a corrente de alimentação do AmpOp?
+- Qual a tensão de alimentação do AmpOP?
+- Qual fator devo considerar para escolher o transistor Q1?
+- Qual valor da tensão do diodo zener D6?
+- Como escolher o diodo zener D6, maximizando a eficiência energética e
+minimizando os ruídos no circuito?
+Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
+aumento de 10mA na corrente de alimentação, o circuito proposto continuará
+funcionando?
 
