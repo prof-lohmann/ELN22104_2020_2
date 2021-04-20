@@ -55,14 +55,48 @@ Conforme o datasheet a tensão Vgs para uma corrente de 1A é de 4V.
 
 
 - Qual a corrente de alimentação do AmpOp?
+
+Como especificado no datasheet:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/icc_.png)
+
+Corrente de alimentação(Icc)= de 1mA até 3mA
+
 - Qual a tensão de alimentação do AmpOP?
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/supplyvoltage.png)
+
+Supply voltage(Vcc) = 32 V (máx)
+
+Vee= 0V (gnd) no projeto
+
+
 - Qual fator devo considerar para escolher o transistor Q1?
+
+O beta precisa ser bastante elevado.
+```
+Beta= Ic/Ib
+Beta^^^
+Ic= Ie
+```
+
 - Qual valor da tensão do diodo zener D6?
+  
+  Considerando que a tensão de saída do ampop deve ser de 21V. Pois Vgs=4V
+  
+  Logo 15+4= 19V
+  A tensão do diodo zener deve ser maior que 19V.
+  
+  Ainda deve se observar que no datasheet a tensão Vcm= Vcc-2
+  
+  ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vcm.png)
+  
+  
 - Como escolher o diodo zener D6, maximizando a eficiência energética e
 minimizando os ruídos no circuito?
-Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
-aumento de 10mA na corrente de alimentação, o circuito proposto continuará
-funcionando?
+
+Escolhendo um diodo zener que passe a menor corrente possível. Para isso precisa ser um zener com um resistor pequeno
 
 **Projeto no ltspice:**
 
