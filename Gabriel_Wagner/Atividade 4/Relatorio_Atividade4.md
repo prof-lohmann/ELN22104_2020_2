@@ -195,11 +195,35 @@ Figura 4 - Espelho de corrente com potenciômetro.
 
 * Qual a corrente contínua necessária?
 
+Para o transistor M1, foi especificado uma corrente de 1 A, sendo necessário um VGS de 4,5 V.
+
+Enquanto que para os resistores de ganho, a corrente deve ser baixa, de modo que a carga receba corrente suficiente. Uma corrente na ordem de micro amperes é suficiente.
+
 
 * Quais os limites de tensão para este circuito?
 
+As tensões que chegam nesse circuito estão limitadas pela tensão de entrada, que nesse momento estarão entre 15 e 16 V. É desejado que a tensão VDO nessa parte do circuito, que se resume nesse momento ao transistor MOS, seja a menor possível.
+A tensão VGS será limitada pela regulação da tensão de zener vezes o ganho.
+E a maior tensão aplicada nos resistores de ganho, é a tensão de saída, que para o projeto vale 15 V.
 
+#### Ao escolher o transistor obtenha:
 
+* Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+L = 100 uH
+W = 100 uW
+u0 = Valor Padrão = 600 cm²/V/s
+C0x = KP/u0 = 41,68 mF/m²
+VA = 1/LAMBDA= 1/0.00291031 = 343,61 v
+Vt = 3.56362 V
+
+* Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+* Quais as tensões máximas de operação deste componente?
+
+A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão vDS não pode exceder 100 v.
+
+* Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
+* Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
+* Qual o valor da capacitância de gate? 
 
 
 
