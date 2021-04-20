@@ -48,6 +48,12 @@ Ampop utilizado: LM324
 Datasheet utilizado: https://www.ti.com/lit/ds/symlink/lm324.pdf?ts=1618824027289&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM324
 
 - Qual a Tensão VGS? Descreva como obter o valor.
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vgs_idreno.png)
+
+Conforme o datasheet a tensão Vgs para uma corrente de 1A é de 4V.
+
+
 - Qual a corrente de alimentação do AmpOp?
 - Qual a tensão de alimentação do AmpOP?
 - Qual fator devo considerar para escolher o transistor Q1?
