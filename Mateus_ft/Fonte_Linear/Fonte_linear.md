@@ -96,7 +96,7 @@ Ic= Ie
 - Como escolher o diodo zener D6, maximizando a eficiência energética e
 minimizando os ruídos no circuito?
 
-Escolhendo um diodo zener que passe a menor corrente possível. Para isso precisa ser um zener com um resistor pequeno
+Escolhendo um diodo zener que passe a menor corrente possível. Para isso precisa ser um zener com um resistor de zener pequeno
 
 **Projeto no ltspice:**
 
