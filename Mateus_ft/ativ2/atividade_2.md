@@ -305,6 +305,8 @@ Idealmente as impedâncias de entrada do ampop são infinitas. Entretanto no mun
 possíveis circuitos para mitigar o problema.**
 
 
+Escolhendo resistores e cargas para que a corrente que circule seja centenas de vezes maior que a Ibias. Dessa forma a corrente de polarizaçao e a de offset não interfirá no circuito.
+
 
 **b) Descreva a corrente de offset na polarização dos AmpOp**
 
