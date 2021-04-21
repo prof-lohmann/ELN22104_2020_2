@@ -37,3 +37,73 @@ A figura acima mostra um amp op com configuração de realimentação negativa.
 ### Descreva as principais características das topologias:
 #### a) Seguidor de Tensão (Buffer)
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/amp.op.buffer.simbolo.JPG)
+
+Possui ganho unitário G=1 o que implica em ter Vo igual a Vin e pode ser utilizado, por exemplo, em conjunto com multiplexadores, quando se desejar selecionar determinada entrada e não alterar o seu valor na saída. Em um ampop ideal o buffer terá impedância de saída nula e impedÂncia de entrada infita, sendo que em um modelo real buscasse aproximar ao máximo destas características.
+
+#### b) Inversor
+
+Possui ganho G = -R2/R1, com alta impedância de entrada, baixa impedancia de saída, ganho estável e tensão de saída amplificada defasada de 180 graus em relação a tensão de entrada.
+
+#### c) Não Inversor
+
+Possui ganho G = 1 + R2/R1, com alta impedancia de entrada, baixa impedância de saída e ganho estável.
+
+#### d) Somador inversor
+Possui ganho G = -Rf*(V1/R1 + V2/R2+...+Vn/Rn), usando da realimentação negativa e do terra virtual consegue-se obter o inverso de uma soma ponderada das entradas como resultado na saída.
+
+#### e) Somador não inversor
+
+Semelhante ao somador inversor, possui realimentação negativa, obtem uma soma ponderada das entradas como resultado na saída.
+
+#### f)Subtrator
+
+Obtem como resposta a diferença entre os seus sinais de entrada. 
+
+#### g) Amplificador de instrumentação
+
+Também é um aplificador diferencial  com ganho G = R4/R3 *[1 + (R2+R2')/(2*R1)]
+
+[fig 2.20]
+
+### Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor.
+
+O ganho em malha aberta finito considera algumas não idealidades dos amplificadores, tronando o projeto mais preciso e aplicavel em questões mais complexas. 
+
+#### a) Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
+
+### 7. Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
+
+O sinal de entrada de modo comum é a média dos sinais de entrada, um amplificador de diferenças ideal rejeita sinais de modo comum, sendo que a eficácia de um amplificador de diferenças não ideal é medida pelo quanto ele consegue rejeitar esse sinal.
+
+### 8. O que é CMRR?
+
+É o valor que quantifica quanto do sinal de modo comum é rejeitado (razão de rejeição de modo comum).
+
+### 9. Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
+
+#### a) o impacto na tensão de saída com relação a tolerância dos resistores no circuito;
+
+#### b) Qual erro na tensão de saída com relação CMRR do AmpOp.
+
+#### c) Dica de exemplos com valores diferentes de tensão de modo comum (VCM) . Faça o mesmo circuito com resistores com tolerâncias bem distintas, ex. 1% e 5%. Atividade 01 2/2
+
+### 10. Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
+
+#### a) Defina o que é um AmpOp Rail-to-rail.
+
+### 11. O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?
+
+### 12. Como minimizar o efeito da tensão de offset?
+
+### 13. O que é a variação da tensão de offset pela temperatura?
+
+#### a) Como verificar esse parâmetro no datasheet?
+
+### 14. O que são as correntes de polarização(Ibias) de AmpOp?
+
+#### a) Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema.
+
+#### b) Descreva a corrente de offset na polarização dos AmpOp.
+
+
+

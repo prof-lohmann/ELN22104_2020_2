@@ -92,7 +92,15 @@ Exemplo:
 ![ex.step](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/ex.step.JPG)
 
 # O que faz a diretiva “.meas”? Forneça exemplos de utilização.
+A diretiva .meas é útil quando se precisa adquirir valores do circuito de forma precisa como tensões de pico a pico.
 
+Exemplo:
+
+![ex.meas](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/.meas.JPG)
+
+Resultado:
+
+![ex.meas](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/.meas.resultado.JPG)
 
 # O que é a simulação “DC sweep” (.dc)? Quando usar? 
 É uma simulação que varia os valores de uma fonte de tensão CC. Pode-se aninhar comandos DC que são frequentemente utilizados para traçar características do transistor, como a
