@@ -68,5 +68,31 @@ Corrente de alimentação, ICC_min = 1,0 mA e ICC_max = 3,0 mA\
 Pelo datasheet a tensão VCC_MAX = 32 V.\
 Por uma análise rápida, a tensão Vout = 15 V (dado de projeto), a tensão VGS = 4,5 V (dado do datasheet), fazendo uma análise reversa partindo do sinal da saída:\
 ![figura12]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura12.jpg)\
+• Qual fator devo considerar para escolher o transistor Q1?\
+O valor de Q1 (NPN) deve ter um β(beta) bastante elevado. Observa-se que na base do Q1 tem o diodo D6 (zener), fato que ratifica o já elencado, pois o β tem que ser alto o suficiente para que a corrente de base de Q1 seja suficientemente menor que a corrente de D6.\
+• Qual valor da tensão do diodo zener D6?\
+Considerando o valor de saída do AmpOp, foi estimado em Vo_ampop =  20,0 V, Vripple_pós_retificador = 1V, e que a queda de tensão em cada um dos diodos (incluindo o zener) Vdiodo = 0,7 V (x3), estima-se um valor de tensão para o diodo zener D6 de:\
+![figura13]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura13.jpg)\
+• Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?\
+Para se maximizar a eficiência energética e minimizar os ruídos do circuito, deve-se escolher um diodo zener com uma resistência interna baixa, pois assim, o 
+sistema tenderá a ter uma maior estabilidade.\
+• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+Projete o circuito de alimentação do AmpOp com as especificações acima.\\\\\\\\\\\\\\\\
+
+
+
+### REFERÊNCIAS
+https://www.embarcados.com.br/aprenda-a-analisar-o-ripple-da-sua-fonte/#:~:text=Uma%20fonte%20de%20alimenta%C3%A7%C3%A3o%20do,n%C3%ADvel%20DC%2C%20conhecida%20como%20ripple.&text=Calcula%2Dse%20tamb%C3%A9m%20o%20fator,sa%C3%ADda%20e%20o%20valor%20DC.
+
+https://sites.unipampa.edu.br/gama/files/2019/07/matheuscortez-2017.pdf
+
+http://repositorio.unicamp.br/jspui/bitstream/REPOSIP/261542/1/Pelicia_MarcosMauricio_M.pdf
+
+
+
+
+
+
+
 
 
