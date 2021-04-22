@@ -115,8 +115,16 @@ Essa será a tensao de alimentação do ampop.
 
 
 
+
+
 O diodo zener escolhido tem a tensão de funcionamento de 24V. Portanto atende ao resquisito de Vzener>19V
 
 O transistor Q1 escolhido tem um beta de: 
+
+
+Portanto o projeto corresponde a todas as especificações.
+
+# Parte 02:  Calculando e dimensionando os componentes
+
 
 
