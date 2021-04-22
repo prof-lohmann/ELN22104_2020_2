@@ -162,10 +162,9 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 
 ---
 
-<b>Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+<b>Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.</b><br>
+``Seria considerado o uso do AmpOp AD8539, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o AmpOp 8040.``
   
-  ``Seria considerado o uso do AmpOp AD8539, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o AmpOp 8040.``
-  
-Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
+<b>Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
 como subtrator</b><br>
 ``Um AmpOp que poderiamos utilizar é o ``**TLV4333**``, pois as tensões de entrada são baixas.``
