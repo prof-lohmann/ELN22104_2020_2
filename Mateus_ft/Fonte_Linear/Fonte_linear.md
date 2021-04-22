@@ -88,7 +88,6 @@ Ic= Ie
   Logo 15+4= 19V
   A tensão do diodo zener deve ser maior que 19V.
   
-  Ainda deve se observar que no datasheet a tensão Vcm= Vcc-2
   
   ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vcm.png)
   
@@ -102,5 +101,22 @@ Escolhendo um diodo zener que passe a menor corrente possível. Para isso precis
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/alimenta%C3%A7ao%20opamp.png)
 
+
+Observa-se que no circuito a associação de capacitores e indutores formam um multiplicador de tensão. Que resulta na label Vcc1= 2*Vi - 2vd
+
+Sendo Vi --> Tensão da fonte (17v)
+Vd --> Tensao do diodo (0,7v)
+
+Entretando essa saída sofre com ruídos. Para resolver o problema foi adicionado um reguldador de tensão com diodo zener e transistor tbj.
+
+Observa-se que a tensão de saída vcc2 ja regulada é estável em 23,48V.
+
+Essa será a tensao de alimentação do ampop.
+
+
+
+O diodo zener escolhido tem a tensão de funcionamento de 24V. Portanto atende ao resquisito de Vzener>19V
+
+O transistor Q1 escolhido tem um beta de: 
 
 
