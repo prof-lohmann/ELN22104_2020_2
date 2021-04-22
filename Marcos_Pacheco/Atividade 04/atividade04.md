@@ -18,13 +18,13 @@ Conceitos importantes:\
 ![figura01]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura01.jpg)\
 • Regulação de linha: (página 105) é definido como a relação entre a variação da tensão de saída com a tensão de entrada.
 ![figura02]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura02.jpg)\
-• Regulação de Carga: (página 105) é definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.
+• Regulação de Carga: (página 105) é definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.\
 ![figura03]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura03.jpg)\
 • Conceito de LDO – Low Dropout Voltage: é a diferença entre a tensão de saída nominal e a menor tensão de entrada necessária para que o regulador funcione adequadamente. Valores típicos:\
     -	LDO (low) = VDO < 0,6 V;\
     -	HDO (high) = VDO > 0,6 V.\
 O valor de VDO (dropout voltage) pode ser assim definido:\
-![figura04]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura04.jpg)\
+![figura04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura04.jpg)\
 
 >> 2 - Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema:
 ![figura05]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura05.jpg)\
@@ -41,7 +41,6 @@ Primeiramente analisar quais restrições de alimentação que o AmpOp a ser esc
 o sinal de saída do mesmo não sature. Observar também que o sinal Vout além da influência do próprio AmpOp, tem àquela provocada pela tensão de saída do NMOS, ou seja, 
 o valor de VGS (tensão gate-source).\
 
-
 >> 3 - Circuito proposto (01) para a alimentação do AmpOp:
 ![figura06]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura06.jpg)\
 a)	Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?\
@@ -52,8 +51,22 @@ No circuito apresentado tem-se dois capacitores indicados, C2 e C3. Assim a esco
 c)	Podemos melhorar?\
 Pode-se melhor o circuito exposto, considerando o já observado no item anterior, através do adequado dimensionamento dos capacitores (C2 e C3), a fim de diminuir os efeitos de ripple, e, com a inserção de um regulador linear de tensão na da saída do circuito dobrador de tensão que por sua vez é a própria alimentação VCC do AmpOp.\
 
-
-
-
+>> 4 - Circuito proposto (02) para a alimentação do AmpOp:
+![figura08]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura08.jpg)\
+Vamos projetar esse circuito de alimentação do AmpOp?\
+Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, Vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V. Pontos Importantes para iniciar o projeto responda justificando as escolhas.\
+• Qual a Tensão VGS? Descreva como obter o valor.\
+Datasheet usado: (https://www.vishay.com/docs/91021/91021.pdf)
+![figura09]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura09.jpg)\
+Pelo gráfico acima disponibilizado no datasheet do componente, a tensão VGS para uma corrente Iout de 1 A, indica uma tensão VGS = 4,5 V.\
+• Qual a corrente de alimentação do AmpOp?\
+Datasheet usado: (https://www.mouser.com/datasheet/2/149/LM324-195664.pdf)
+![figura10]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura10.jpg)\
+Corrente de alimentação, ICC_min = 1,0 mA e ICC_max = 3,0 mA\
+• Qual a tensão de alimentação do AmpOP?\
+![figura11](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura11.jpg)\
+Pelo datasheet a tensão VCC_MAX = 32 V.\
+Por uma análise rápida, a tensão Vout = 15 V (dado de projeto), a tensão VGS = 4,5 V (dado do datasheet), fazendo uma análise reversa partindo do sinal da saída:\
+![figura12]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura12.jpg)\
 
 
