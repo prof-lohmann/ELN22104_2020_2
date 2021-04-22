@@ -166,7 +166,7 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
 você utilizaria? Justifique a sua resposta.
   
-``Seria considerado o uso do ``**AmpOp AD8539**``, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o ``**AmpOp 8040**``.``
+``Seria considerado o uso do AmpOp AD8539, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o AmpOp 8040.``
 
 
 Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
