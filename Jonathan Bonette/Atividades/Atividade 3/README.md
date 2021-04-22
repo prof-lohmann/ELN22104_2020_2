@@ -96,23 +96,24 @@ Eletrônica I</b>
 <p align="center"><img src="../../Imagens/Atividade 3/q2a 8539.png" align="center"><br></p>
 
 <b>2. Responda quais os valores das tensões de saturação?</b><br>
-``Podemos ver que para o circuito seguidor de tensão ``**8040**``, a saturação apresenta o valor da alimentação de ``**±5V**`` e para o circuito seguidor de tensão ``**8539**``, a saturação apresenta o valor da alimentação de ``**±2.5V**`` ``
+``Podemos ver que para o circuito seguidor de tensão ``**8040**``, a saturação apresenta o valor da alimentação de ``**±5V**`` e para o circuito seguidor de tensão ``**8539**``, a saturação apresenta o valor da alimentação de ``**±2.5V**``.``
 
 ---
 
 <b>3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.</b><br>
-*Sendo **G = -100V/V** e **R1 = 1kΩ**, e como **G = -Rf/R1**, assim **Rf = 100kΩ**.*
+*Sendo **G = -100V/V** e **R1 = 1kΩ**, e como **G = -Rf/R1**, assim **Rf = 100kΩ**.*<br>
 <b>1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.</b><br>
 
 ### 8040
 ``Aplicando 0V na entrada do nosso circuito inversor, podemos ver uma saída de aproximadamente -168mV, isso se dá pelo Voff presente no circuito, podemos ver o Voff aplicando alguns cálculos:
-Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então, ``**Vo = G2xVoff**``, sendo`` **G2 = (Rf/R1 + 1)**``. Assim ``**Voff = Vo/G2**``, então, ``**Voff = 1.68mV**``. Como a Voff máxima é 6mV, então nosso circuito está dentro do ideal.
+Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então, ``**Vo = G2xVoff**``, sendo`` **G2 = (Rf/R1 + 1)**``. Assim ``**Voff = Vo/G2**``, então, ``**Voff = 1.68mV**``. Como a Voff máxima é 6mV, então nosso circuito está dentro do ideal.``
 
 <p align="center"><img src="../../Imagens/Atividade 3/q3 8040 a.png" align="center"><br></p>
 
 ### 8539
 ``Aplicando 0V na entrada do nosso circuito inversor, podemos ver uma saída de aproximadamente 1.386591mV, isso se dá pelo Voff presente no circuito, podemos ver o Voff aplicando alguns cálculos:
-Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G2xVoff**``, sendo ``**G2 = (Rf/R1 + 1)**``. Assim ``**Voff = Vo/G2**``, então,`` **Voff = 0.0137mV**``. Como a Voff máxima é 6mV, então nosso circuito está dentro do ideal.
+Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G2xVoff**``, sendo ``**G2 = (Rf/R1 + 1)**``. Assim ``**Voff = Vo/G2**``, então,`` **Voff = 0.0137mV**``. Como a Voff máxima é 6mV, então nosso circuito está dentro do ideal.``
+
 <p align="center"><img src="../../Imagens/Atividade 3/q3 8539 a.png" align="center"><br></p>
 
 <b>2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.</b><br>
@@ -126,7 +127,7 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 ---
 
 <b>4. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.</b><br>
-*Sendo **G = 10V/V** e **R1 = 10kΩ**, e como **G = (1 + Rf/R1)**, assim **Rf = 90kΩ**.*
+*Sendo **G = 10V/V** e **R1 = 10kΩ**, e como **G = (1 + Rf/R1)**, assim **Rf = 90kΩ**.*<br>
 <b>1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.</b><br>
 
 ### 8040
@@ -140,12 +141,14 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 ### 8040
 <p align="center"><img src="../../Imagens/Atividade 3/q4 8040 b.png" align="center"><br></p>
 
+<p align="center">
 | Vnin(V)| Vteórico(V) | Vsimulado(V) | Erro(%) |
 |:--:|:--:|:--:|:--:|
 | 5m | 50m | 34.7m | 30,6 |
 | 50m | 500m | 484.7m | 3,06 |
 | 200m | 2 | 1.98 | 0,78 |
 | 500m | 5 | 4.96 | 0,68 |
+</p>
 
 ### 8539
 <p align="center"><img src="../../Imagens/Atividade 3/q4 8539 b.png" align="center"><br></p>
@@ -165,10 +168,9 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
 você utilizaria? Justifique a sua resposta.
   
-``Seria considerado o uso do ``**AmpOp AD8539**``, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o ``**AmpOp 8040**``.
+``Seria considerado o uso do ``**AmpOp AD8539**``, pois o mesmo, nas simulações se comportou melhor quando foi aplicado baixas tensões de entrada do que o ``**AmpOp 8040**``.``
 
 
 Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
 como subtrator</b><br>
-
-
+``Um AmpOp que poderiamos utilizar é o ``**TLV4333**``, pois as tensões de entrada são baixas.``
