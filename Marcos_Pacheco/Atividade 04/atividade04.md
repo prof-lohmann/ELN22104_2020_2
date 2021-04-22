@@ -14,11 +14,11 @@ Conceitos importantes:\
      -	Das varrições na tensão CC da fonte de alimentação que alimenta o circuito regulador\
 • Tensão de saída e tensão de ripple:\
      -  Tensão de saída: É a tensão, ou faixa de tensões, que um regulador fornece em sua saída se a tensão de entrada estiver dentro dos parâmetros aceitáveis.\
-     -  Tensão de ripple: (página 111) é uma ondulação de tensão fornecida pela fonte, que é dependente do valor da capacitância do capacitor (cuja função, no filtro, é manter a forma de onde de saída o mais próximo de uma tensão CC) e da corrente consumida pela carga. Essa ondulação (ripple) surge após a retificação na saída da etapa do filtro.\ 
+     -  Tensão de ripple: (página 111) é uma ondulação de tensão fornecida pela fonte, que é dependente do valor da capacitância do capacitor (cuja função, no filtro, é manter a forma de onde de saída o mais próximo de uma tensão CC) e da corrente consumida pela carga. Essa ondulação (ripple) surge após a retificação na saída da etapa do filtro. 
 ![figura01]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura01.jpg)\
-• Regulação de linha: (página 105) é definido como a relação entre a variação da tensão de saída com a tensão de entrada.\
+• Regulação de linha: (página 105) é definido como a relação entre a variação da tensão de saída com a tensão de entrada.
 ![figura02]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura02.jpg)\
-• Regulação de Carga: (página 105) é definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.\
+• Regulação de Carga: (página 105) é definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.
 ![figura03]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura03.jpg)\
 • Conceito de LDO – Low Dropout Voltage: é a diferença entre a tensão de saída nominal e a menor tensão de entrada necessária para que o regulador funcione adequadamente. Valores típicos:\
     -	LDO (low) = VDO < 0,6 V;\
