@@ -24,7 +24,7 @@ Conceitos importantes:\
     -	LDO (low) = VDO < 0,6 V;\
     -	HDO (high) = VDO > 0,6 V.\
 O valor de VDO (dropout voltage) pode ser assim definido:\
-![figura04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura04.jpg)\
+![figura04](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura04.jpg)
 
 >> 2 - Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema:
 ![figura05]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura05.jpg)\
@@ -39,7 +39,7 @@ alimentação do AmpOp (para não saturar o sinal) e com os respectivos limites 
 c)	Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?\
 Primeiramente analisar quais restrições de alimentação que o AmpOp a ser escolhido apresenta (estudo de datasheet), em relação às tensões de alimentação, a fim de que 
 o sinal de saída do mesmo não sature. Observar também que o sinal Vout além da influência do próprio AmpOp, tem àquela provocada pela tensão de saída do NMOS, ou seja, 
-o valor de VGS (tensão gate-source).\
+o valor de VGS (tensão gate-source).
 
 >> 3 - Circuito proposto (01) para a alimentação do AmpOp:
 ![figura06]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura06.jpg)\
@@ -49,7 +49,7 @@ a)	Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm par
 b)	Quais problemas apresentam esse circuito? \
 No circuito apresentado tem-se dois capacitores indicados, C2 e C3. Assim a escolha de seus respectivos valores, deve-se levar em consideração os efeitos de ripple que irá ser inserido no sinal da tensão. Ainda, conforme calculado anteriormente o circuito é um dobrador de tensão, ou seja, pequenas variações do sinal de entrada Vin, pode provocar efeitos graves no funcionamento do AmpOp, pois esse mesmo sinal será aplicado no VCC do AmpOp (podendo saturar o sinal saída ou mesmo danificá-lo permanentemente).\
 c)	Podemos melhorar?\
-Pode-se melhor o circuito exposto, considerando o já observado no item anterior, através do adequado dimensionamento dos capacitores (C2 e C3), a fim de diminuir os efeitos de ripple, e, com a inserção de um regulador linear de tensão na da saída do circuito dobrador de tensão que por sua vez é a própria alimentação VCC do AmpOp.\
+Pode-se melhor o circuito exposto, considerando o já observado no item anterior, através do adequado dimensionamento dos capacitores (C2 e C3), a fim de diminuir os efeitos de ripple, e, com a inserção de um regulador linear de tensão na da saída do circuito dobrador de tensão que por sua vez é a própria alimentação VCC do AmpOp.
 
 >> 4 - Circuito proposto (02) para a alimentação do AmpOp:
 ![figura08]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura08.jpg)\
