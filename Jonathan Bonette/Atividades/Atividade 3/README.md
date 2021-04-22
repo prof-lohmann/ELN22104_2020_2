@@ -76,10 +76,10 @@ Eletrônica I</b>
 <p align="center"><img src="../../Imagens/Atividade 3/2g.png" align="center"><br></p>
 
 <b>◦ Ganho em malha aberta</b><br>
-<p align="center"><img src="../../Imagens/Atividade 3/2h.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 3/2i.png" align="center"><br></p>
 
 <b>◦ Impedância de entrada</b><br>
-**Não presente no datasheet.**
+``Não presente no datasheet.``
 
 ***Analog Devices: https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf***
 
@@ -141,14 +141,12 @@ Vimos que, ``**Vo = G1xV3 + G2xVoff**``, como ``**G1 = 0**``, então,`` **Vo = G
 ### 8040
 <p align="center"><img src="../../Imagens/Atividade 3/q4 8040 b.png" align="center"><br></p>
 
-<p align="center">
 | Vnin(V)| Vteórico(V) | Vsimulado(V) | Erro(%) |
 |:--:|:--:|:--:|:--:|
 | 5m | 50m | 34.7m | 30,6 |
 | 50m | 500m | 484.7m | 3,06 |
 | 200m | 2 | 1.98 | 0,78 |
 | 500m | 5 | 4.96 | 0,68 |
-</p>
 
 ### 8539
 <p align="center"><img src="../../Imagens/Atividade 3/q4 8539 b.png" align="center"><br></p>
