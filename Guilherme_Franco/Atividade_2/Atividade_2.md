@@ -30,4 +30,8 @@ V0 = A(V+ - V-)
   *Resposta:* Malha aberta trata-se de uma configuração de circuito na qual o AmpOp não apresenta realimentação. Algumas características desta configuração são o ganho **A** tendendo ao infinito e a tensão de saída, V0, tendendo aos valores da alimentação VEE ou VCC. Por outro lado, Malha Fechada ocorre quando, na configuração de circuito, o AmpOp apresenta realimentação, geralmente no terminal negativo do componente.</b><br>
 
 ### <b>4.Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
-<b>*Resposta:* Para circuitos de malha fechada, a equação é similar a de malha aberta, porém depende das características do circuito.
+<b>*Resposta:* Para circuitos de malha fechada, a equação é similar a de malha aberta, porém depende das características do circuito. Para este tipo de circuito, a saída do AmpOp pode ser obtida a partir da seguinte equação:
+```
+ V0= G(V+ - V-)
+``` 
+ 
