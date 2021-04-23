@@ -42,5 +42,6 @@ V0 = A(V+ - V-)
   <b> a) **Seguidor de Tensão (Buffer)**
    
   <b> b) **Amplificador Inversor**
- ![image](https://user-images.githubusercontent.com/61738767/115918148-896d2280-a44d-11eb-9a90-09c9408cea89.png) </b><b>
+ ![image](https://user-images.githubusercontent.com/61738767/115918148-896d2280-a44d-11eb-9a90-09c9408cea89.png)</b><b>
+ 
  <b> Nesta configuração, o AmpOp desempenha a função de amplificar a saída e invertê-la. </b><b>
