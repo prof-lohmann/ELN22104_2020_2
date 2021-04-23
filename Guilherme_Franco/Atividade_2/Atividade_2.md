@@ -38,5 +38,5 @@ V0 = A(V+ - V-)
   ```
   G= -R1/R2
   ```
-  ###5.Descreva as principais características das topologias:</b><b>
-<b>a) **Seguidor de Tensão (Buffer)**
+  ### <b>5.Descreva as principais características das topologias:</b><b>
+  <b> a) **Seguidor de Tensão (Buffer)**
