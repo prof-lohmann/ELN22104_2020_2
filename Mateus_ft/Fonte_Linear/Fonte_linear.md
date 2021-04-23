@@ -99,17 +99,22 @@ Escolhendo um diodo zener que passe a menor corrente possível. Para isso precis
 
 **Projeto no ltspice:**
 
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/alimenta%C3%A7ao%20opamp.png)
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/alimentac_opamp_circ.png)
 
 
-Observa-se que no circuito a associação de capacitores e indutores formam um multiplicador de tensão. Que resulta na label Vcc1= 2*Vi - 2vd
+Observa-se que no circuito a associação de capacitores c2 e c3 com os diodos d3 e d4 formam um multiplicador de tensão retificado, sendo c3 o capacitor responsável por retificar o sinal. Que resulta na label Vcc1
 
-Sendo Vi --> Tensão da fonte (17v)
-Vd --> Tensao do diodo (0,7v)
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vripple_aliment.png)
 
 Entretando essa saída sofre com ruídos. Para resolver o problema foi adicionado um reguldador de tensão com diodo zener e transistor tbj.
 
-Observa-se que a tensão de saída vcc2 ja regulada é estável em 23,48V.
+A tensão de ripple simulada é de 1,08V. Para resolver esse problema foi adicionado ao circuito um regulador de tensão com o regulador zener EDZV24B e o transistor tbj BC547C.
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vcc2_opamp.png)
+
+Observa-se que a tensão de saída vcc2 ja regulada é estável em aproximadamente 23,75V.
 
 Essa será a tensao de alimentação do ampop.
 
@@ -119,7 +124,9 @@ Essa será a tensao de alimentação do ampop.
 
 O diodo zener escolhido tem a tensão de funcionamento de 24V. Portanto atende ao resquisito de Vzener>19V
 
-O transistor Q1 escolhido tem um beta de: 
+O transistor Q1 escolhido tem um beta de 520. Portanto corresponde ao requisito de projeto.
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/bc547c_beta.png)
 
 
 Portanto o projeto corresponde a todas as especificações.
