@@ -34,4 +34,8 @@ V0 = A(V+ - V-)
 ```
  V0= G(V+ - V-)
 ``` 
- 
+ <b>No qual G é o ganho diferencial em malha fechada, cuja equação para mensurá-lo varia de acordo com o circuito projetado. No exemplo acima (configuração inversora), o ganho G é dado pela equação:
+  ```
+  G= -R1/R2
+  ```
+  
