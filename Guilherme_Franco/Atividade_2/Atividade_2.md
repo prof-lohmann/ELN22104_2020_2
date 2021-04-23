@@ -10,10 +10,10 @@ Aluno:
 resumo deve responder as seguintes perguntas:</b><br>
 
 
-<b>1. O que é o AmpOp?</b><br>
+### <b>1. O que é o AmpOp?</b><br>
   *Resposta:* Basicamente, um AmpOp é um circuito integrado capaz de amplificar sinais elétricos fracos.</b><br>
   
-<b>2. Mostre os simbolos e as características do AmpOp IDEAL?</b><br>
+### <b>2. Mostre os simbolos e as características do AmpOp IDEAL?</b><br>
   *Resposta:* 
   
   ![imagem1](https://user-images.githubusercontent.com/61738767/115885309-392e9a00-a426-11eb-87bb-e7fc54085abf.png)
@@ -26,8 +26,8 @@ V0 = A(V+ - V-)
 <b>No qual, **A** representa o **ganho diferencial** ou ganho de malha aberta. Em um AmpOp ideal, este ganho diferencial é infinito.</b><br>
 <b>Outra informação que pode ser abstraida da equação é a de que o AmpOp responde apenas à diferença de sinal, descartando, assim, entradas de valores iguais. Este fenômeno recebe o nome de *Rejeição de Modo Comum*. Em um AmpOp ideal, por sua vez, não apresenta corrente na entrada, isto é, sua impedância de entrada é infinita, enquanto que a impedância de saída é nula, para que não haja desvios de corrente quando houver uma carga conectada ao AmpOp.</b><br>
 
-<b>3. O que significa **Malha Aberta** e **Malha fechada**?</b><br>
+### <b>3. O que significa **Malha Aberta** e **Malha fechada**?</b><br>
   *Resposta:* Malha aberta trata-se de uma configuração de circuito na qual o AmpOp não apresenta realimentação. Algumas características desta configuração são o ganho **A** tendendo ao infinito e a tensão de saída, V0, tendendo aos valores da alimentação VEE ou VCC. Por outro lado, Malha Fechada ocorre quando, na configuração de circuito, o AmpOp apresenta realimentação, geralmente no terminal negativo do componente.</b><br>
 
-<b>4.Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
+### <b>4.Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
 <b>*Resposta:* Para circuitos de malha fechada, a equação é similar a de malha aberta, porém depende das características do circuito.
