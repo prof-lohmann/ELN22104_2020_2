@@ -55,12 +55,13 @@ V0 = A(V+ - V-)
 
 ![image](https://user-images.githubusercontent.com/61738767/115919729-9b4fc500-a44f-11eb-8177-618573b68d33.png)</b><b>
  
- <b> Nesta configuração. a tensão de saída assume o mesmo sentido da tensão de entrada, atenuando-a. Esta configuração obedece as seguintes equações:
+ <b> Nesta configuração. a tensão de saída assume o mesmo sentido da tensão de entrada, atenuando-a. Esta configuração obedece a seguinte equaçãe:
 
 ```
 V0 = G * V
 ```
+E o ganho pode ser obtido a partir de:
 ```
 G = 1 + (R2/R1)
-
+```
 
