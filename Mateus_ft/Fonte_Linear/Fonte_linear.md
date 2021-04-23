@@ -133,7 +133,7 @@ Portanto o projeto corresponde a todas as especificações.
 - Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
 1,1A. Justifique a escolha dos componentes.
 
-D1 e D2 vão influenciar na tensão final. Pois vão ter uma queda de tensão de aproximadamente 0.7V para diodo de silício. O 1n4148 é um diodo de silício justificando sua escolha.
+D1 e D2 vão influenciar na tensão final. Pois terá queda de tensão de aproximadamente 0.7V para diodo de silício. O 1n4148 é um diodo de silício justificando sua escolha.
 
 
 
