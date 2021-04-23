@@ -27,6 +27,7 @@ V0 = A(V+ - V-)
 <b>Outra informação que pode ser abstraida da equação é a de que o AmpOp responde apenas à diferença de sinal, descartando, assim, entradas de valores iguais. Este fenômeno recebe o nome de *Rejeição de Modo Comum*. Em um AmpOp ideal, por sua vez, não apresenta corrente na entrada, isto é, sua impedância de entrada é infinita, enquanto que a impedância de saída é nula, para que não haja desvios de corrente quando houver uma carga conectada ao AmpOp.</b><br>
 
 <b>3. O que significa **Malha Aberta** e **Malha fechada**?</b><br>
-  *Resposta:* Malha aberta trata-se de uma configuração de circuito na qual o AmpOp apresenta realimentação, sendo esta usualmente negativa. Algumas características desta configuração são o ganho **A** tendendo ao infinito e a tensão de saída, V0, tendendo aos valores da alimentação VEE ou VCC.</b><br>
+  *Resposta:* Malha aberta trata-se de uma configuração de circuito na qual o AmpOp não apresenta realimentação. Algumas características desta configuração são o ganho **A** tendendo ao infinito e a tensão de saída, V0, tendendo aos valores da alimentação VEE ou VCC. Por outro lado, Malha Fechada ocorre quando, na configuração de circuito, o AmpOp apresenta realimentação, geralmente no terminal negativo do componente.</b><br>
 
-<b>4.
+<b>4.Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.</b><br>
+<b>*Resposta:*
