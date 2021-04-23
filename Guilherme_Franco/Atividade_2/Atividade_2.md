@@ -18,6 +18,5 @@ resumo deve responder as seguintes perguntas:</b><br>
   
   ![image](https://user-images.githubusercontent.com/61738767/115885309-392e9a00-a426-11eb-87bb-e7fc54085abf.png)
   
-<b>Como visto na imagem acima, os terminais VCC e VEE são utilizados para alimentação do componente, usualmente utiliza-se a mesma tensão para ambos (simétricos). Os terminais V+ e V- são utilizados para a entrada do sinal e, por fim, o terminal V0 é saída do componente por onde passa o sinal amplificado.</b><br>
-  
+<b>Como visto na imagem acima, os terminais VCC e VEE são utilizados para alimentação do componente, usualmente utiliza-se a mesma tensão para ambos (simétricos). Os terminais V+ e V- são utilizados para a entrada do sinal e, por fim, o terminal V0 é saída do componente por onde passa o sinal amplificado.</b><br>  
 <b> dfglhkndfgdfghdfgh
