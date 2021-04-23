@@ -15,6 +15,8 @@ resumo deve responder as seguintes perguntas:</b><br>
   
 <b>2. Mostre os simbolos e as características do AmpOp IDEAL?</b><br>
   *Resposta:* 
+  
   ![image](https://user-images.githubusercontent.com/61738767/115885309-392e9a00-a426-11eb-87bb-e7fc54085abf.png)
+  
 </b><br>
   
