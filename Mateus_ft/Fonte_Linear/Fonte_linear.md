@@ -89,9 +89,6 @@ Ic= Ie
   A tensão do diodo zener deve ser maior que 19V.
   
   
-  ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vcm.png)
-  
-  
 - Como escolher o diodo zener D6, maximizando a eficiência energética e
 minimizando os ruídos no circuito?
 
@@ -132,6 +129,20 @@ O transistor Q1 escolhido tem um beta de 520. Portanto corresponde ao requisito 
 Portanto o projeto corresponde a todas as especificações.
 
 # Parte 02:  Calculando e dimensionando os componentes
+
+- Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
+1,1A. Justifique a escolha dos componentes.
+
+D1 e D2 vão influenciar na tensão final. Pois vão ter uma queda de tensão de aproximadamente 0.7V para diodo de silício. O 1n4148 é um diodo de silício justificando sua escolha.
+
+
+
+```
+Vrp= Icarga/C*f
+1=1,1/120*C1
+C1=9,2mF
+Obs: Frequencia do retificador de onda completa é 2*F do sinal original. Portanto 2*60=120hz
+```
 
 
 
