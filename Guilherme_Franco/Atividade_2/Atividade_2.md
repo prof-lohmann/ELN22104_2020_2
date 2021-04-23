@@ -52,3 +52,15 @@ V0 = A(V+ - V-)
  <b> Nesta configuração, o AmpOp desempenha a função de amplificar a saída e invertê-la. </b><b>
  
  <b> c) **Amplificador Não Inversor**
+
+![image](https://user-images.githubusercontent.com/61738767/115919729-9b4fc500-a44f-11eb-8177-618573b68d33.png)</b><b>
+ 
+ <b> Nesta configuração. a tensão de saída assume o mesmo sentido da tensão de entrada, atenuando-a. Esta configuração obedece as seguintes equações:
+
+```
+V0 = G * V
+```
+```
+G = 1 + (R2/R1)
+
+
