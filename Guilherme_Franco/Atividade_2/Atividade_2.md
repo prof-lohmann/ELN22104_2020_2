@@ -39,10 +39,16 @@ V0 = A(V+ - V-)
   G= -R1/R2
   ```
   ### <b>5.Descreva as principais características das topologias:</b><b>
-  <b> a) **Seguidor de Tensão (Buffer)**
+  <b> a) **Seguidor de Tensão (Buffer)**</b><b>
+  
+  ![image](https://user-images.githubusercontent.com/61738767/115919005-a22a0800-a44e-11eb-9814-7039a5355704.png)
+
+<b> Nesta configuração, o ganho diferencial é 1, portanto não amplificação do sinal. Dessa forma, o sinal de saída é o mesmo que o sinal de entrada.
    
   <b> b) **Amplificador Inversor**</b><b>
  
  ![image](https://user-images.githubusercontent.com/61738767/115918148-896d2280-a44d-11eb-9a90-09c9408cea89.png)</b><b>
  
  <b> Nesta configuração, o AmpOp desempenha a função de amplificar a saída e invertê-la. </b><b>
+ 
+ <b> c) **Amplificador Não Inversor**
