@@ -217,13 +217,56 @@ VA = 1/LAMBDA= 1/0.00291031 = 343,61 v
 Vt = 3.56362 V
 
 * Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+
+VGS(v) | Vt0(V) | RDS(ohms)
+------ | ------ | --------
+2  | 3,56362 | infinito
+3  | 3,56362 | infinito 
+4  | 3,56362 | 0,09163354
+5  | 3,56362 | 0,027838764
+10 | 3,56362 | 0,006212661
+
+
 * Quais as tensões máximas de operação deste componente?
 
 A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão vDS não pode exceder 100 v.
 
 * Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
 * Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
-* Qual o valor da capacitância de gate? 
+
+* Qual o valor da capacitância de gate?
+
+CGS = Ciss - Crss = 1700p - 120p = 1580 pF típico.
+
+Justifique a escolha dos resistores R2 e R3.
+
+Foi escolhido um zener(D3) com tensão de zener de 6,2V, e devemos levar em conta que necessitamos de uma tensão por volta de 20 V, para alimentarmos 4,5 V de tensão VGS e 15 V na saída. Por esse motivo, optei por resistores na ordem de quilo-ohms oferecendo uma corrente maior na saída, com um ganho no ampop de (1+(25k/10k)) V/V.
+
+## Parte 03
+
+## Parte 03.1 Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+
+* Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+
+Excesso de corrente que ultrapassa valores nominais calculados no projeto. Possibilidade de queima de componentes do circuito, bem como excesso de corrente na carga, gerando possível queima e mal funcionamento.
+
+* O que deve fazer um circuito de proteção de sobrecorrente?
+
+Proteger carga e circuito, enquanto durar a sobrecorrente. 
+
+* O que é a proteção foldback?
+
+Quando um circuito está sendo alimentado em sobre-corrente, proteções normais tendem a diminuir a tensão até zero, porém eles mantém a corrente constante, dissipando grandes valores de potência nos componentes. O circuito com proteção de foldback surge para resolver esse problema.
+
+Figura 5 - Proteção Foldback.
+
+<img src="foldback.jpg" width="500">
+
+Referência: Training Texas; Fórum Training Texas; https://e2e.ti.com/support/power-management/f/power-management-forum/474341/tps54620-over-current-protection-foldback
+
+Olhando a curva da tensão de saída x corrente de saída, durante a sobrecorrente. Percebe-se como é importante a atuação da proteção foldback, que diminui correntes e tensões quase linearmente.
+
+Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
 
 
 
