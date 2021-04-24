@@ -244,7 +244,7 @@ Foi escolhido um zener(D3) com tensão de zener de 6,2V, e devemos levar em cont
 
 ## Parte 03
 
-## Parte 03.1 Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+### Parte 03.1 Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
 * Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
 
