@@ -256,7 +256,7 @@ Proteger carga e circuito, enquanto durar a sobrecorrente.
 
 * O que é a proteção foldback?
 
-Quando um circuito está sendo alimentado em sobre-corrente, proteções normais tendem a diminuir a tensão até zero, porém eles mantém a corrente constante, dissipando grandes valores de potência nos componentes. O circuito com proteção de foldback surge para resolver esse problema.
+Quando um circuito está sendo alimentado em sobre-corrente, proteções normais tendem a diminuir a tensão até zero, porém elas mantém a corrente constante, dissipando grandes valores de potência nos componentes. O circuito com proteção de foldback surge para resolver esse problema.
 
 Figura 5 - Proteção Foldback.
 
@@ -264,7 +264,7 @@ Figura 5 - Proteção Foldback.
 
 Referência: Training Texas; Fórum Training Texas; https://e2e.ti.com/support/power-management/f/power-management-forum/474341/tps54620-over-current-protection-foldback
 
-Olhando a curva da tensão de saída x corrente de saída, durante a sobrecorrente. Percebe-se como é importante a atuação da proteção foldback, que diminui correntes e tensões quase linearmente.
+Olhando a curva da tensão de saída x corrente de saída durante a sobrecorrente, percebe-se como é importante a atuação da proteção foldback, que diminui correntes e tensões quase linearmente.
 
 Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
 
