@@ -268,6 +268,21 @@ Olhando a curva da tensão de saída x corrente de saída durante a sobrecorrent
 
 Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
 
+Devido a condições externas e cenários inesperados, o LDO pode sofrer com uma corrente mais elevada, podendo danificar partes mais sensíveis do circuito, bem como gasto excessivo de energia. A proteção contra esse tipo de problema é muito importante para um LDO. Levando isso em consideração, podemos exemplificar esses circuitos com dois tipos muito usados de proteção. A proteção foldback citada acima e a proteção "brick-wall".
+
+A proteção "brick-wall", coloca um limite superior para a corrente fornecida pelo LDO. Quando esse limite é atingido, a saída para de ser regulada e é limitada por:
+
+V(out) = I(limite) * R(carga)
+
+O transistor próximo a saída, continuará dissipando potência desde que não ultrapasse a temperatua máxima da sua junção. Caso isso aconteça, um circuito de desligamento forçado por temperatura entra em ação.
+
+Um exemplo de LDO que segue essa topologia, é o TPS7A16 da Texas Instruments.
+Referência: Texas Instruments; https://www.ti.com/product/TPS7A16
+
+A proteção foldback, da mesma maneira que a proteção "brick-wall", coloca um limite superior para a proteção contra sobrecorrente, seu principal objetivo é diminuir a corrente linearmente com a tensão de saída, deixando a tensão de entrada constante, diminuindo a potência dissipada em cima do transistor de saída. Nessa topologia não há a necessidade de um circuito de desligamento forçado por temperatura.
+Temos como exemplo de um LDO com foldback o TLV717P da Texas Instruments.
+Referência: Texas Instruments; https://www.ti.com/product/TLV717P
+
 
 
 
