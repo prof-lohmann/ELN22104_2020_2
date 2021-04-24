@@ -65,3 +65,33 @@ E o ganho pode ser obtido a partir de:
 G = 1 + (R2/R1)
 ```
 
+<b> d) **Amplificador Somador Inversor**
+ 
+ ![image](https://user-images.githubusercontent.com/61738767/115921252-9ee44b80-a451-11eb-978c-464d58f638d3.png)
+
+<b> Esta configuração recebe este nome devido sua saída ser a soma ponderada dos sinais de entrada. Sua equação geral é:
+ ```
+ V0 = - (Rf/R1 * V1 + Rf/R2 * V2 + ... + Rf/Rn * Vn
+ ```
+ 
+ <b> e) **Amplificador Somador Não Inversor**
+ 
+ ![image](https://user-images.githubusercontent.com/61738767/115921996-ace69c00-a452-11eb-92e6-62f1d4ebf82b.png)
+ 
+ <b> f) **Subtrator**
+
+![image](https://user-images.githubusercontent.com/61738767/115924503-2fbd2600-a456-11eb-98a9-492c81fcb7fa.png)
+
+<b> Nesta configuração, há a subtração dos sinais que entram nas saídas inversora e não inversora e joga a tensão resultante na saída amplificado ou atenuado. Esta obedece a seguinte equação (seja R1=R2 e R3=R4):
+ ```
+ V0 = (V2-V1) * (R3/R1)
+ ```
+ E o ganho pode ser obtido a partir de:
+ ```
+ G = (R3/R1)
+ ```
+ 
+ <b> g) **Amplificador de instrumentação**
+ 
+ 
+
