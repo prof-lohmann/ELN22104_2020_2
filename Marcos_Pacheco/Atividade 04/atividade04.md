@@ -96,10 +96,10 @@ A regulação de linha é responsável pela efetividade do circuito regulador. O
 saída do regulador linear?\
 Na configuração do circuito em estudo, o Diodo Zener está limitando a tensão de saída, mantendo-a com um valor muito próximo a zero. Assim, mesmo que haja variação na tensão de entrada, o sinal de saída não sofrerá variações significativas. O mesmo pode ser observado no regulador de carga, ou seja, havendo variação na carga, o sinal de saída mudará muito pouco. Logicamente, se essas variações ocorrerem nos limites aceitáveis sem que haja danos aos componentes.\
 •	Podemos melhorar esse circuito? Quais problemas podem identificar nesta topologia? Sugestão de melhoria:
-![figura16] (https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura16.jpg)\
+![figura16](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura16.jpg)\
 A fim de evitar problemas com variações de tensão no regulador de linha, o circuito poderia ser melhorado inserindo-se uma fonte de corrente sobre o Diodo Zener para evitar que a sua resistência interna sofra variação.\
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar?
-![figura17]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura17.jpg)\
+![figura17](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura17.jpg)\
 Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?\
 Para deixar a fonte com valor ajustável, pode-se conectar um potenciômetro com resistência elevada entre os pontos Vref e o GND.
 
