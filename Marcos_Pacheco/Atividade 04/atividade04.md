@@ -80,6 +80,18 @@ sistema tenderá a ter uma maior estabilidade.\
 Projete o circuito de alimentação do AmpOp com as especificações acima.\\\\\\\\\\\\\\\\
 
 
+>> Parte 02 - Calculando e dimensionando os componentes\
+a)	Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.\
+A escolha dos diodos D1 e D2 serão escolhidos através de pesquisas em datasheet, porém antes deve-se dimensionar adequadamente, mantendo a coerência com os parâmetros do circuito dado e com os quesitos de projeto. Assim, os principais valores de tensão e corrente para os diodos serão discutidos na sequência:\
+![figura14]
+Com alguns parâmetros cálculos dos diodos, o componente selecionado foi o que segue (conforme pesquisa em datasheet - http://pdf.datasheetcatalog.net/datasheet/mcc/1N4006.pdf)
+![figura15]
+•	Diodos escolhidos (D1 = D2) – 1N4001\
+•	Capacitor C1 = 9,17 mF\
+
+
+
+
 
 ### REFERÊNCIAS
 https://www.embarcados.com.br/aprenda-a-analisar-o-ripple-da-sua-fonte/#:~:text=Uma%20fonte%20de%20alimenta%C3%A7%C3%A3o%20do,n%C3%ADvel%20DC%2C%20conhecida%20como%20ripple.&text=Calcula%2Dse%20tamb%C3%A9m%20o%20fator,sa%C3%ADda%20e%20o%20valor%20DC.
