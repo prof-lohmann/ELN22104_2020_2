@@ -105,7 +105,7 @@ Observa-se que no circuito a associação de capacitores c2 e c3 com os diodos d
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vripple_aliment.png)
 
-Entretando essa saída sofre com ruídos. Para resolver o problema foi adicionado um reguldador de tensão com diodo zener e transistor tbj.
+Entretando essa saída sofre com ruídos. Para resolver o problema foi adicionado um regulador de tensão com diodo zener e transistor tbj.
 
 A tensão de ripple simulada é de 1,08V. Para resolver esse problema foi adicionado ao circuito um regulador de tensão com o regulador zener EDZV24B e o transistor tbj BC547C.
 
@@ -133,7 +133,9 @@ Portanto o projeto corresponde a todas as especificações.
 - Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
 1,1A. Justifique a escolha dos componentes.
 
-D1 e D2 vão influenciar na tensão final. Pois terá queda de tensão de aproximadamente 0.7V para diodo de silício. O 1n4148 é um diodo de silício justificando sua escolha.
+D1 e D2 vão influenciar na tensão final. Pois terá queda de tensão de aproximadamente 0.7V para diodo de silício. Outro aspecto a ser observado é a tensão reversa que para esse diodo é de 53Vrms, segundo datasheet:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/reverse%20voltage.png)
 
 
 
@@ -143,6 +145,43 @@ Vrp= Icarga/C*f
 C1=9,2mF
 Obs: Frequencia do retificador de onda completa é 2*F do sinal original. Portanto 2*60=120hz
 ```
+
+- Circuito referência de tensão zener (R1 e D3):
+ Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
+ 
+ Menor ruído na saída. Que influencia no Rzener do diodo.
+ 
+ O diodo ptz12b atende a tais requisitos.
+ 
+ ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/rzenerptz12b.png)
+ 
+ Tensão regulada em 12v.
+ 
+ 
+
+ 
+ - Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?
+ 
+ A tensão de entrada é multiplicada pelo ganho do ampop. Portanto a regulaçao de linha de entrada será multiplicada pelo ganho na saída do ampop.
+
+Desta forma será projetado um circuito que tenha baixa variação de tensão de carga e linha. Para que a tensão de saída seja estável.
+
+O diodo zener estará regulando a tensão de entrada do ampop em 12volts, de tal forma que a variação Vout seja baixa, quase nula. Eliminando as variações de tensão do circuito.
+
+Regulação de linha = (delVout)/(delVin) = 0/delVin = 0 
+
+Da mesma forma para o regulador de carga:
+
+Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
+
+
+
+
+
+
+ 
+ 
+ 
 
 
 
