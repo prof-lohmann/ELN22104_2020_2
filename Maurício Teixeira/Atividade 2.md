@@ -1,17 +1,17 @@
 # 01. O que é um AmpOp?
   Amplificadores operacionais são circuitos integrados (CI) que possuem a capacidade de amplificar o sinal que recebem em sua entrada e também de realizar algumas funções matemáticas, como soma, subtração, multiplicação, derivação e integração. Amplificadores operacionais possuem dois terminais de entrada, denominados como entrada inversora (Sinal negativo) e entrada não inversora (Sinal positivo). Além deles, possui dois terminais de entrada de alimentação, positiva (Vcc+) e negativa (Vcc-). E por fim temos a saída Vout.
-
+![Ampop](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Ampop.png)
 # 02. Mostre os símbolos e as características do AmpOp IDEAL.
   Um AmpOp ideal pode ser representado pela seguinte imagem:
-  
-  AmpOps ideais possuem uma impedância de entrada infinita, levando os valores de uama possível corrente de entrada a zero, para que a corrente no terminal inversor (v1) e não inversor (v2) seja igual a zero. No terminal de saída 3, temos uma fonte de tensão ideal representada pela expressão (v2-v1). Quando temos v1=v2 em um AmpOp ideal, teremos uma condição especial chamada de rejeição de modo comum, onde temos saída igual a zero. Além disso, o AmpOp ideal deve ter um ganho "A" constante, para amplificar sinal de qualquer frequência, sempre com o mesmo ganho, e esse ganho "A" deve tender ao infinito. Possui também ganho de modo comum igual a zero, insensibilidade à temperatura, resposta de frequência infinita e impedância de saída iguala zero.
+  ![Ampop ideal](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Ampop%20ideal.png)
+  AmpOps ideais possuem uma impedância de entrada infinita, levando os valores de uama possível corrente de entrada a zero, para que a corrente no terminal inversor (v1) e não inversor (v2) seja igual a zero. No terminal de saída 3, temos uma fonte de tensão ideal representada pela expressão (v2-v1). Quando temos v1=v2 em um AmpOp ideal, teremos uma condição especial chamada de rejeição de modo comum, onde temos saída igual a zero. Além disso, o AmpOp ideal deve ter um ganho "A" constante, para amplificar sinal de qualquer frequência, sempre com o mesmo ganho, e esse ganho "A" deve tender ao infinito. Possui também ganho de modo comum igual a zero, insensibilidade à temperatura, resposta de frequência infinita e impedância de saída igual a zero.
 
 # 03. O que significa Malha Aberta e Malha Fechada?
   Quando o AmpOp não possui realimentação, seja pelo terminal não inversor, ou inversor ele é denominado como Malha aberta. Nesse tipo de configuração, o amplificador mostra em sua saída um sinal resultante de uma amplificação da diferença entre os potenciais de entrada com um valor alto e impreciso. Malha fechada é justamente o contrário, quando o AmpOp recebe realimentação, que geralmente acontece no terminal inversor. Nesse segundo tipo de configuração, trocamos o ganho pela precisão, tendo um ganho menor porém estável e preciso.
 
 # 04. Exemplifique como resolver e calcular circuitos com AmpOps em Malha Fechada.
   Utilizaremos o exemplo presente no capítulo 2 do livro do Sedra Smith - Microeletrônica. 
- 
+![Exemplo 2.4 do livro](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Exemplo%202.4%20do%20livro.jpg)
 A figura acima representa a configuração do AmpOp na figura 2.4 (Capítulo 2). 
 
 Podemos constatar que esse circuito está em Malha Fechada devido ao posicionamento do resistor R2 que gera a realimentação entre a entrada inversora e a saída.
@@ -28,15 +28,19 @@ G ≡ Vout/v1 = (-R2/R1)/[1+(1+R2/R1)/A]
 
 # 05. Descreva as principais características das topologias:
 ### a. Seguidor de tensão (Buffer);
+![seguidor de tensão](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Seguidor%20de%20tens%C3%A3o.png)
 Um seguidor de tensão nada mais é que um circuito amplificador operacional que não apresenta ganho de. Isso significa que o Ampop não fornece nenhuma amplificação ou atenuação ao sinal. Um circuito de amplificador operacional é um circuito com uma impedância de entrada muito alta, esta alta impedância de entrada é a razão pela qual os seguidores de tensão são usados. A alta impedância faz com que seu uso em circuitos divisores de tensão seja muito importante quando colocados em série com cargas de baixa impedância que não receberiam o nível de tensão adequeda para funcionar. Eles atuam como amortecedores isolantes, isolando um circuito para que a potência do circuito seja muito pouco alterada.
 
 ### b. Amplificador inversor;
+![Amplificador inversor](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/amplificador-inversor-com-ampop.png)
 O amplificador inversor possui dois resistores de realimentação e possui como característica a amplificação do sinal de entrada e a inversão da polaridade do sinal de saída.
 
 ### c. Amplificador não inversor;
+![Amplificador não inversor](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/amplificador-n%C3%A3o-inversor-com-ampop.png)
 Em um AmpOp não inversor, temos dois resistores de realimentação, assim como no amplificador inversor, porém, teremos um sinal de saída de mesma polaridade do sinal de entrada, caso seja uma fonte senoidal, ou de mesmo sinal caso seja uma fonte comum. Porém, diferente do Buffer, ele terá um ganho ou atenuação no sinal, com seu ganho G.
 
 ### d. Amplificador Somador Inversor;
+![Amplificador somador inversor](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/amplificador-somador-inversor-com-ampop.png)
 O amplificador somador inversor permite realizar a soma de dois ou mais sinais, basta apenas ligar os sinais adicionais a resistores de entrada que na saída teremos a soma ponderada dos sinais de entrada com polaridade inversa.
 
 ### e. Amplificador Somador Não Inversor;
@@ -44,10 +48,11 @@ Possui a mesma funcionalidade do somador inversor, com a diferença de que não 
 
 ### f. Subtrator;
 O amplificador subtrator ou diferencial, permite realizar a subtração (diferença) de dois sinais por meio da combinação do amplificador inversor com o amplificador não-inversor, onde uma das entradas é no terminal inversor e a saída correspondente possui polaridade invertida e a outra entrada é no terminal não-inversor e a saída correspondente mantém a polaridade.
-![texto](link)
+![Subtrator](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/amplificador-subtrator-com-ampop.png)
 
 ### g. Amplificador de instrumentação;
 Os amplificadores de instrumentação surgem como grandes aliados conseguindo agregar características como elevado CMR, elevada impedância nas entradas, baixo offset e baixa corrente de bias. Em resumo, podemos dizer que agrega a maior quantidade possível das características mais desejadas pelos projetistas.
+![Amlificador de instrumentação](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/amplificador-de-instrumentacao-ina-ad8221.png)
 
 # 6. Explique o efeito do ganho em Malha Aberta Finito para as topologias Amplificador Inversor e Amplificador Não Inversor.
 ### A. Exemplifique com circuitos com ganhos em malha fechada elevado (Ex. 1000V/V e -1000V/V) e com ganhos menores (Ex. 10V/V e -10V/V ), faça a comparação com erros percentuais e utilize uma variação de ganho em malha aberta entre 120dB e 20dB.
@@ -55,7 +60,7 @@ Como o ganho em malha aberta é finito, a tensão entre os terminais de entrada 
 i1 = [v1 - (-Vout/A)]/R1 = (v1 + Vout/A)/R1
 Dessa forma, temos que a tensão Vout é:
 G ≡ Vout/v1 = (-R2/R1)/[1+(1+R2/R1)/A]
-No circuito de um Ampop inversor ou não inversor, utilizaremos R1 = 1k e R2 = 1M. O cálculo de Vout fica:
+No circuito de um Ampop inversor ou não inversor, utilizaremos R1 = 1 e R2 = 1k. O cálculo de tensão de saída fica:
 G = (-R2/R1)/[1+(1+R2/R1)/A]
 G = -1000/(1002/1000) = -998V/V
 E = |(|-998| - 1000)|/1000*100 = 0,2% de erro percentual
