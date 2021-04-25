@@ -82,7 +82,7 @@ Projete o circuito de alimentação do AmpOp com as especificações acima.\\\\\
 
 >> Parte 02 - Calculando e dimensionando os componentes\
 a)	Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.\
-A escolha dos diodos D1 e D2 serão escolhidos através de pesquisas em datasheet, porém antes deve-se dimensionar adequadamente, mantendo a coerência com os parâmetros do circuito dado e com os quesitos de projeto. Assim, os principais valores de tensão e corrente para os diodos serão discutidos na sequência:\
+A escolha dos diodos D1 e D2 foi realizada através de pesquisas em datasheet, porém antes deve-se dimensionar adequadamente, mantendo a coerência com os parâmetros do circuito dado e com os quesitos de projeto. Assim, os principais valores de tensão e corrente para os diodos serão discutidos na sequência:\
 ![figura14](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura14.jpg)\
 Com alguns parâmetros cálculos dos diodos, o componente selecionado foi o que segue (conforme pesquisa em datasheet - http://pdf.datasheetcatalog.net/datasheet/mcc/1N4006.pdf)
 ![figura15](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura15.jpg)\
