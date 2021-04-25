@@ -86,7 +86,37 @@ A escolha dos diodos D1 e D2, será realizada através de pesquisas em datasheet
 Com alguns parâmetros calculados dos diodos, o componente selecionado foi o que segue (conforme pesquisa em datasheet - http://pdf.datasheetcatalog.net/datasheet/mcc/1N4006.pdf)
 ![figura15](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura15.jpg)\
 •	Diodos escolhidos (D1 = D2) – 1N4001\
-•	Capacitor C1 = 9,17 mF
+•	Capacitor C1 = 9,17 mF\
+b) Circuito referência de tensão zener (R1 e D3):\
+• Quais fatores devo considerar para escolher o diodo zener para essa aplicação?\
+Deve-se considerar um Diodo Zener com a menor taxa de ruído de regulação de linha (baixo valor de resistência interna). Ainda, observar que a tensão do Diodo Zener deve ser tal que supra a necessidade das tensões de saída e a queda de tensão VGS.\
+• Qual a influência da regulação de linha e da regulação de carga para este circuito?\
+A regulação de linha é responsável pela efetividade do circuito regulador. O circuito terá uma variação de tensão de saída baixa, assim, tanto os reguladores de linha como de carga terão variações muito pequenas.\
+• Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de
+saída do regulador linear?\
+Na configuração do circuito em estudo, o Diodo Zener está limitando a tensão de saída, mantendo-a com um valor muito próximo a zero. Assim, mesmo que haja variação na tensão de entrada, o sinal de saída não sofrerá variações significativas. O mesmo pode ser observado no regulador de carga, ou seja, havendo variação na carga, o sinal de saída mudará muito pouco. Logicamente, se essas variações ocorrerem nos limites aceitáveis sem que haja danos aos componentes.\
+•	Podemos melhorar esse circuito? Quais problemas podem identificar nesta topologia? Sugestão de melhoria:
+![figura16] (https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura16.jpg)\
+A fim de evitar problemas com variações de tensão no regulador de linha, o circuito poderia ser melhorado inserindo-se uma fonte de corrente sobre o Diodo Zener para evitar que a sua resistência interna sofra variação.\
+No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar?
+![figura17]( https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura17.jpg)\
+Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?\
+Para deixar a fonte com valor ajustável, pode-se conectar um potenciômetro com resistência elevada entre os pontos Vref e o GND.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
