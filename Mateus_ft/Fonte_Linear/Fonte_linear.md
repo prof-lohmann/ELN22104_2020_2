@@ -1,3 +1,6 @@
+Aluno: Mateus Fontana Tatim  
+email: mateus.f02@aluno.ifsc.edu.br
+***
 # Parte 01: Entendendo um regulador linear
 
 - Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
@@ -174,6 +177,8 @@ Da mesma forma para o regulador de carga:
 
 Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
 
+
+- 
 
 
 
