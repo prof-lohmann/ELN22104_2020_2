@@ -1,3 +1,6 @@
+Aluno: Mateus Fontana Tatim  
+email: mateus.f02@aluno.ifsc.edu.br
+***
 **1. O que é o AmpOp?**
 
 Um componente que amplifica o sinal de saída em relação ao de entrada.
