@@ -77,7 +77,7 @@ Considerando o valor de saída do AmpOp, foi estimado em Vo_ampop =  20,0 V, Vri
 Para se maximizar a eficiência energética e minimizar os ruídos do circuito, deve-se escolher um diodo zener com uma resistência interna baixa, pois assim, o 
 sistema tenderá a ter uma maior estabilidade.\
 • Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
-Projete o circuito de alimentação do AmpOp com as especificações acima.\\\\\\\\\\\\\\\\
+Projete o circuito de alimentação do AmpOp com as especificações acima.
 
 >> Parte 02 - Calculando e dimensionando os componentes\
 a)	Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.\
