@@ -1,6 +1,3 @@
-Aluno: Mateus Fontana Tatim  
-email: mateus.f02@aluno.ifsc.edu.br
-***
 # Parte 01: Entendendo um regulador linear
 
 - Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
@@ -178,8 +175,57 @@ Da mesma forma para o regulador de carga:
 Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
 
 
-- 
+- Podemos melhorar esse circuito?
 
+Sim. Eliminar um dos fatores da regulação de linha do circuito. Com uma fonte de corrente. A corrente será constante no zener portanto a tensão não varia no zener.
+
+
+- Escolhendo transistor M1 e calculando R2 e R3:
+
+-Qual a corrente contínua necessária?
+
+Para o transistor M1 é requisito de projeto que seja de 1A.
+
+- Quais os limites de tensão para este circuito?
+
+ A tensão será limitada pelo ganho da não inversora.
+ 
+ - Quais as tensões máxima desse componente?
+ -
+ Segundo datasheet:
+ 
+ ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/irf540%20vgs.png)
+ 
+ Vds= 100V (máx)
+ 
+ Vgs= +/- 20V (máx)
+ 
+ 
+ - Justifique a escolha dos resistores R2 e R3.
+
+Vou= 15V --> requisito do projeto
+
+Vin= 12,5V --> Regulado pelo diodo zener
+
+Configuração do ampop é uma não inversora.
+
+Portanto:
+
+```
+Vout= (R2/R3+1)*Vin
+
+Vou/Vin=R2/R3 +1
+R2/R3= 15/12,5 -1
+R2/R3=0,2
+
+R3=1K
+R2=0,2*1000
+R2=200
+
+
+```
+ 
+ A escolha do R3 foi pensada na corrente que vai circular nele. Que será na casa de mA. Tendo o valor de R3 calculei o R2 na formula.
 
 
 
