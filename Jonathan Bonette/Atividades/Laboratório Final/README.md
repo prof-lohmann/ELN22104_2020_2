@@ -35,7 +35,15 @@ Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, r
 <b>• Conceito de LDO – Low Dropout Voltage<br><br></b>
 `Os reguladores lineares de baixa queda (LDO) são uma maneira simples e barata de regular uma tensão de saída que é alimentada por uma entrada de tensão mais alta em uma variedade de aplicações. Os LDO são diferenciados por sua capacidade de manter a regulação com pequenas diferenças entre a tensão de alimentação e a tensão de carga.`
 
-Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema: Qual relação entre a tensão de alimentação do ampop e a tensão de saída? O que devemos considerar para esse circuito operar como um LDO? Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
+<b>Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema:<br></b>
+<b>Qual relação entre a tensão de alimentação do ampop e a tensão de saída?<br></b>
+`Pelo circuito AmpOp, a tensão de saída será limitada pela alimentação do circuito, assim como todas seus parâmetros. Dependendo das suas limitações os valores podem ser restringidos à um valor menor que as tensões de alimentação.`
+
+<b>O que devemos considerar para esse circuito operar como um LDO?<br></b>
+`Devemos considerar as tensões de entrada e saída, analsiando podemos ver que a tensão de entrada ela será limitada pela escolha do diodo e a tensão de saída será limitada pelos limites impostos pelo AmpOp.`
+
+<b>Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?<br></b>
+`Podemos obter analisando a simulação, onde os modos aparecerão nantes da saturação do sinal, da mesma forma utilizando um dobrador de tensão, podemos obter os valores de VCC e VEE`
 
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem1.png" align="center"><br></p>
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem2.png" align="center"><br></p>
