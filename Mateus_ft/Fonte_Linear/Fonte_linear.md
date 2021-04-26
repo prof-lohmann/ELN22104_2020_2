@@ -194,7 +194,7 @@ Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de 
 
 - Quais os limites de tensão para este circuito?
 
-   A tensão será limitada pelo ganho da não inversora.
+   Os limites de tensão para esse circuito será a própria tensão da fonte retificada, que estará em 17V. A saída do ampop Vout que é especificada pelo projeto para 15V. Importante ressaltar que a tensão sobre o mosfet Vgs será regulada pelo zener de entrada do ampop vezes o ganho. 
  
  - Quais as tensões máxima desse componente?
  
@@ -232,6 +232,20 @@ R2=200
 ```
  
  A escolha do R3 foi pensada na corrente que vai circular nele. Que será na casa de mA. Tendo o valor de R3 calculei o R2 na formula.
+ 
+ 
+
+## Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+
+- Primeiramente reflita e pesquise sobre o que é sobrecorrente? 
+
+- Quais os impactos neste circuito? 
+ 
+- O que deve fazer um circuito de proteção de sobrecorrente? 
+
+- O que é a proteção foldback?
+
+- Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador? 
 
 
 
