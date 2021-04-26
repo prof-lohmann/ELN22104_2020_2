@@ -239,11 +239,20 @@ R2=200
 
 - Primeiramente reflita e pesquise sobre o que é sobrecorrente? 
 
+ A sobrecorrente é circulação de excesso de corrente no circuito. Uma corrente que excede o valor nominal
+ 
 - Quais os impactos neste circuito? 
+ 
+ Se um curto circuito ou uma sobrecarga ocorrer pode danificar os componentes do circuito danificando todo o projeto e acabando com a sua eficácia.
  
 - O que deve fazer um circuito de proteção de sobrecorrente? 
 
+O circuito de proteção de sobrecorrente deve interromper a corrente que circula no circuito, automaticamente, sempre que a intensidade de corrente atingir valores que
+podem causar danos aos demais dispositivos.
+
 - O que é a proteção foldback?
+
+Foldback é uma limitação de corrente. Quando a carga tenta provocar sobrecorrente da alimentação, a proteção foldback reduz a saída de tensão e corrente para bem abaixo dos limites normais de operação. Sob um curto-circuito , em que a tensão de saída é reduzida a zero, a corrente é tipicamente limitados a uma pequena fracção da corrente máxima.
 
 - Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador? 
 
