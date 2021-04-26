@@ -1,3 +1,6 @@
+Aluno: Mateus Fontana Tatim  
+email: mateus.f02@aluno.ifsc.edu.br
+***
 **1. Verifique no datasheet dos Ampops indicados os valores:** 
 
 - Máxima e mínima tensão de alimentação
