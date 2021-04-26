@@ -49,9 +49,9 @@ Datasheet utilizado: https://www.ti.com/lit/ds/symlink/lm324.pdf?ts=161882402728
 
 - Qual a Tensão VGS? Descreva como obter o valor.
 
-![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/vgs_idreno.png)
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/irf540vgs.png)
 
-Conforme o datasheet a tensão Vgs para uma corrente de 1A é de 4V.
+Conforme o datasheet a tensão Vgs para uma corrente de 1A é de 4,5V.
 
 
 - Qual a corrente de alimentação do AmpOp?
@@ -85,8 +85,8 @@ Ic= Ie
   
   Considerando que a tensão de saída do ampop deve ser de 21V. Pois Vgs=4V
   
-  Logo 15+4= 19V
-  A tensão do diodo zener deve ser maior que 19V.
+  Logo 15+4,5= 19,5V
+  A tensão do diodo zener deve ser maior que 19,5V.
   
   
 - Como escolher o diodo zener D6, maximizando a eficiência energética e
@@ -119,7 +119,7 @@ Essa será a tensao de alimentação do ampop.
 
 
 
-O diodo zener escolhido tem a tensão de funcionamento de 24V. Portanto atende ao resquisito de Vzener>19V
+O diodo zener escolhido tem a tensão de funcionamento de 24V. Portanto atende ao resquisito de Vzener>19,5V
 
 O transistor Q1 escolhido tem um beta de 520. Portanto corresponde ao requisito de projeto.
 
