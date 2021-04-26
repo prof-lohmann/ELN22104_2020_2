@@ -234,6 +234,11 @@ R2=200
  A escolha do R3 foi pensada na corrente que vai circular nele. Que será na casa de mA. Tendo o valor de R3 calculei o R2 na formula.
  
  
+ # Circuito montado:
+ 
+ ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/circ_pront_irf540.png)
+ 
+ 
 
 ## Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
