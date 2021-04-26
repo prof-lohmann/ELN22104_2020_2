@@ -1,0 +1,18 @@
+Q5.
+a)
+1- Netlist é uma descrição do circuito em função dos seus nós e os componentes entre eles.
+2- Cada linha tem um componente, dois nós e o valor do componente.
+3- No Netlist cada componente é representado por uma letra e um índice
+4- Uma label é como uma malha, pontos do circuito na mesma label tem a mesma tensão
+5- Resistor, capacitor, indutor, diodo, fonte
+6- Um SUBCKT é um subcircuito feito de componentes simples (resistores, diodos...) para representar componentes mais complexos
+7- Acredito que dê para criar seus próprios SUBCKT's ou baixa-los de repositórios online
+
+b)
+1- Uma simulação em função do tempo
+2- É um tipo de simulação onde deseja-se apenas uma análise de corrente contínua.
+3- Quando quiser fazer uma simulação em função do tempo ou uma analise de corretne continua.
+4- Determina qual a constante que vai multiplicar um valor de um resistor em cada aumento.
+5- Determina os valores médios de alguma variavel
+6- Simulação feita por varredura
+7- Diretiva .temp
