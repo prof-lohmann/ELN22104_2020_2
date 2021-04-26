@@ -45,6 +45,8 @@ Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, r
 <b>Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?<br></b>
 `Podemos obter analisando a simulação, onde os modos aparecerão nantes da saturação do sinal, da mesma forma utilizando um dobrador de tensão, podemos obter os valores de VCC e VEE`
 
+------------------
+
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem1.png" align="center"><br></p>
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem2.png" align="center"><br></p>
 
