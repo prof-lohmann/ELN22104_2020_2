@@ -1,0 +1,31 @@
+Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
+1.Verifique no datasheet dos Ampops indicados os valores dos itens abaixo:
+◦ Máxima e mínima tensão de alimentação
+◦ Tensão de modo comum
+◦ CMRR
+◦ Máxima e mínima tensão de entrada
+◦ Tensão de offset
+◦ Corrente de polarização
+◦ Consumo de corrente
+◦ Ganho em malha aberta
+◦ Impedância de entrada
+Para todas simulações abaixo utilize a alimentação simétrica recomendada no datasheet.
+2.Simule um circuito seguidor de tensão com cada um dos ampops indicadosefeitos decorrentes da máxima e mínima tensão de entrada.
+1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
+2. Responda quais os valores das tensões de saturação?
+e verifique os
+3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os
+resistores para ter um ganho igual -100V/V.
+1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída.
+Explique o resultado.
+4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule
+os resistores para ter um ganho igual 10V/V.
+1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal
+de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
+pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
+você utilizaria? Justifique a sua resposta.
+Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
+como subtrator.
