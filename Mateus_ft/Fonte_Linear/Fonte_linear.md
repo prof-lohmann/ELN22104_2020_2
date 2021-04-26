@@ -1,43 +1,43 @@
 # Parte 01: Entendendo um regulador linear
 
-- Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
+  - Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
 
-Existe uma diferença de tensão entre a tensão de saída e a tensão de alimentação que deve ser respeitada, pois o ampop satura quando a tensão de saída se aproxima da tensão de alimentação. Dessa forma é importante consultar o datasheet para consultar tais informações.
-
-
-- O que devemos considerar para esse circuito operar como um LDO?
-
-Uma baixa queda de tensão no mosfet. Tendo em vista que a potência dissipada no mosfet é diretamente proporcional a corrente que por ele passa e pela diferença de potencial. 
-
-P=V*I
+  Existe uma diferença de tensão entre a tensão de saída e a tensão de alimentação que deve ser respeitada, pois o ampop satura quando a tensão de saída se aproxima da tensão de   alimentação. Dessa forma é importante consultar o datasheet para consultar tais informações.
 
 
-- Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
+  - O que devemos considerar para esse circuito operar como um LDO?
+
+  Uma baixa queda de tensão no mosfet. Tendo em vista que a potência dissipada no mosfet é diretamente proporcional a corrente que por ele passa e pela diferença de potencial. 
+
+    P=V*I
 
 
-Com um dobrador de tensão. Pois a tensão de alimentação do ampop precisa ser maior do que a tensão que o circuito original fornece.
+  - Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
 
 
-- Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
+  Com um dobrador de tensão. Pois a tensão de alimentação do ampop precisa ser maior do que a tensão que o circuito original fornece.
 
-Vp= 12*(2/sqrt(2))
-Vp= 16,97 V
+
+  - Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
+
+  Vp= 12*(2/sqrt(2))
+  Vp= 16,97 V
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/dobrador%20de%20tensao.png)
 
-Vcc= 2*Vp - 2Vd
+  Vcc= 2*Vp - 2Vd
 
-Vcc= 2*16,97 - 2*0,7
+  Vcc= 2*16,97 - 2*0,7
 
-Vcc= 32,54 V
+  Vcc= 32,54 V
 
 -  Quais problemas apresentam esse circuito?
 
-Tensão de ripple na realimentação do ampop. O que ocasiona ruído na saída
+  Tensão de ripple na realimentação do ampop. O que ocasiona ruído na saída
 
 - Podemos melhorar?
 
-Sim. Adicionar um regulador linear. Assim eliminando os ruídos.
+  Sim. Adicionar um regulador linear. Assim eliminando os ruídos.
 
 
 
@@ -56,11 +56,11 @@ Conforme o datasheet a tensão Vgs para uma corrente de 1A é de 4V.
 
 - Qual a corrente de alimentação do AmpOp?
 
-Como especificado no datasheet:
+  Como especificado no datasheet:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/icc_.png)
 
-Corrente de alimentação(Icc)= de 1mA até 3mA
+  Corrente de alimentação(Icc)= de 1mA até 3mA
 
 - Qual a tensão de alimentação do AmpOP?
 
@@ -168,54 +168,54 @@ Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de 
  
  - Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?
  
- A tensão de entrada é multiplicada pelo ganho do ampop. Portanto a regulaçao de linha de entrada será multiplicada pelo ganho na saída do ampop.
+   A tensão de entrada é multiplicada pelo ganho do ampop. Portanto a regulaçao de linha de entrada será multiplicada pelo ganho na saída do ampop.
 
-Desta forma será projetado um circuito que tenha baixa variação de tensão de carga e linha. Para que a tensão de saída seja estável.
+  Desta forma será projetado um circuito que tenha baixa variação de tensão de carga e linha. Para que a tensão de saída seja estável.
 
-O diodo zener estará regulando a tensão de entrada do ampop em 12volts, de tal forma que a variação Vout seja baixa, quase nula. Eliminando as variações de tensão do circuito.
+  O diodo zener estará regulando a tensão de entrada do ampop em 12volts, de tal forma que a variação Vout seja baixa, quase nula. Eliminando as variações de tensão do circuito.
 
-Regulação de linha = (delVout)/(delVin) = 0/delVin = 0 
+  Regulação de linha = (delVout)/(delVin) = 0/delVin = 0 
 
-Da mesma forma para o regulador de carga:
+  Da mesma forma para o regulador de carga:
 
-Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
+  Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
 
 
-- Podemos melhorar esse circuito?
+  - Podemos melhorar esse circuito?
 
-Sim. Eliminar um dos fatores da regulação de linha do circuito. Com uma fonte de corrente. A corrente será constante no zener portanto a tensão não varia no zener.
+  Sim. Eliminar um dos fatores da regulação de linha do circuito. Com uma fonte de corrente. A corrente será constante no zener portanto a tensão não varia no zener.
 
 
 ## Escolhendo transistor M1 e calculando R2 e R3:
 
--Qual a corrente contínua necessária?
+- Qual a corrente contínua necessária?
 
-Para o transistor M1 é requisito de projeto que seja de 1A.
+  Para o transistor M1 é requisito de projeto que seja de 1A.
 
 - Quais os limites de tensão para este circuito?
 
- A tensão será limitada pelo ganho da não inversora.
+   A tensão será limitada pelo ganho da não inversora.
  
  - Quais as tensões máxima desse componente?
- -
- Segundo datasheet:
  
- ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/irf540%20vgs.png)
+   Segundo datasheet:
  
- Vds= 100V (máx)
+   ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/irf540%20vgs.png)
  
- Vgs= +/- 20V (máx)
+   Vds= 100V (máx)
+   
+   Vgs= +/- 20V (máx)
  
  
  - Justifique a escolha dos resistores R2 e R3.
 
-Vou= 15V --> requisito do projeto
+  Vou= 15V --> requisito do projeto
 
-Vin= 12,5V --> Regulado pelo diodo zener
+  Vin= 12,5V --> Regulado pelo diodo zener
 
-Configuração do ampop é uma não inversora.
+  Configuração do ampop é uma não inversora.
 
-Portanto:
+  Portanto:
 
 ```
 Vout= (R2/R3+1)*Vin
