@@ -209,11 +209,17 @@ E a maior tensão aplicada nos resistores de ganho, é a tensão de saída, que 
 #### Ao escolher o transistor obtenha:
 
 * Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+
 L = 100 uH
+
 W = 100 uW
+
 u0 = Valor Padrão = 600 cm²/V/s
+
 C0x = KP/u0 = 41,68 mF/m²
+
 VA = 1/LAMBDA= 1/0.00291031 = 343,61 v
+
 Vt = 3.56362 V
 
 * Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
