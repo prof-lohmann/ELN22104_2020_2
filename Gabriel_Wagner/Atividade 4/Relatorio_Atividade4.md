@@ -224,13 +224,13 @@ Vt = 3.56362 V
 
 * Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
 
-VGS(v) | Vt0(V) | RDS(ohms)
------- | ------ | --------
-2  | 3,56362 | infinito
-3  | 3,56362 | infinito 
-4  | 3,56362 | 0,09163354
-5  | 3,56362 | 0,027838764
-10 | 3,56362 | 0,006212661
+VGS(v) | Vt0(V)   | RDS teórico + (RS+RD modelo spice)(ohms) | RDS Simulação(ohms)
+------ | -------  | ---------------------------------------- | -------------------
+2      | 3,56362  | infinito | 4 Mega
+3      | 3,56362  | infinito | 4 Mega
+4      | 3,56362  | 0,137 | 0,156
+5      | 3,56362  | 0,073 | 0,074
+10     | 3,56362  | 0,051 | 0,051
 
 
 * Quais as tensões máximas de operação deste componente?
@@ -238,7 +238,9 @@ VGS(v) | Vt0(V) | RDS(ohms)
 A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão vDS não pode exceder 100 v.
 
 * Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
-* Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
+
+A simulação está de acordo com os valores do datasheet.
+
 
 * Qual o valor da capacitância de gate?
 
