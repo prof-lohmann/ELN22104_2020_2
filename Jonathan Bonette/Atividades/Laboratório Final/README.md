@@ -1,7 +1,7 @@
 <table align="center"><tr><td align="center" width="9999"><br>
 <img src="../../Imagens/logoifsc.png" align="center" width="150" alt="Logo IFSC">
 
-# Atividade 3
+# Laboratório Final
 
 <b>Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina<br>
 Campus Florianópolis<br>
