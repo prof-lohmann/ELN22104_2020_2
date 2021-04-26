@@ -235,7 +235,7 @@ VGS(v) | Vt0(V)   | RDS teórico + (RS+RD modelo spice)(ohms) | RDS Simulação(
 
 * Quais as tensões máximas de operação deste componente?
 
-A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão vDS não pode exceder 100 v.
+A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão VDS não pode exceder 100 v.
 
 * Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
 
