@@ -126,27 +126,33 @@ O transistor Q1 escolhido tem um beta de 520. Portanto corresponde ao requisito 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/bc547c_beta.png)
 
 
+
 Portanto o projeto corresponde a todas as especificações.
+
+
+- Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+
+Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de alimentação o ampop funcionará.
+
 
 # Parte 02:  Calculando e dimensionando os componentes
 
-- Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
-1,1A. Justifique a escolha dos componentes.
+## Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
 
-D1 e D2 vão influenciar na tensão final. Pois terá queda de tensão de aproximadamente 0.7V para diodo de silício. Outro aspecto a ser observado é a tensão reversa que para esse diodo é de 53Vrms, segundo datasheet:
+  D1 e D2 vão influenciar na tensão final. Pois terá queda de tensão de aproximadamente 0.7V para diodo de silício. Outro aspecto a ser observado é a tensão reversa que para esse diodo é de 53Vrms, segundo datasheet:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/reverse%20voltage.png)
 
 
 
-```
-Vrp= Icarga/C*f
-1=1,1/120*C1
-C1=9,2mF
-Obs: Frequencia do retificador de onda completa é 2*F do sinal original. Portanto 2*60=120hz
-```
+     ```
+     Vrp= Icarga/C*f
+     1=1,1/120*C1
+     C1=9,2mF
+     Obs: Frequencia do retificador de onda completa é 2*F do sinal original. Portanto 2*60=120hz
+      ```
 
-- Circuito referência de tensão zener (R1 e D3):
+## Circuito referência de tensão zener (R1 e D3):
  Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
  
  Menor ruído na saída. Que influencia no Rzener do diodo.
@@ -180,7 +186,7 @@ Regulação de carga = (delVout)/(delIout) = 0/delIout = 0 V/A
 Sim. Eliminar um dos fatores da regulação de linha do circuito. Com uma fonte de corrente. A corrente será constante no zener portanto a tensão não varia no zener.
 
 
-- Escolhendo transistor M1 e calculando R2 e R3:
+## Escolhendo transistor M1 e calculando R2 e R3:
 
 -Qual a corrente contínua necessária?
 
