@@ -15,20 +15,45 @@ Eletrônica I</b>
 <b>1. Escreve os valores de tensão Vo para cada uma das associações de fontes abaixo:</b><br>
 <p align="center"><img src="../../Imagens/Atividade 1/1.png" align="center"><br></p>
 
+*No LTSpice podemos ver que batem as afirmações teóricas para o Exercício 1a*
+
+<p align="center"><img src="../../Imagens/Atividade 1/1alt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex1a.png" align="center"><br></p>
+
+*No LTSpice podemos ver que batem as afirmações teóricas para o Exercício 1b*
+
+<p align="center"><img src="../../Imagens/Atividade 1/1blt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex1b.png" align="center"><br></p>
+
 ---
 
 <b>2. Para o circuito abaixo, determine as tensões e correntes nodais, o valor da tensão Vo e o equivalente de thevenin. Considere: V1 = 5V, V2 = 10V, R1 = 10kΩ e R2 = 5k1Ω.</b>
 <p align="center"><img src="../../Imagens/Atividade 1/2.png" align="center"><br></p>
+
+*No LTSpice podemos ver que batem as afirmações teóricas, porém como mostrado pelo LTSpice no resultado final já temos o valor com seu sinal trocado, pela polaridade do circuito*
+
+<p align="center"><img src="../../Imagens/Atividade 1/2lt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex2.png" align="center"><br></p>
 
 ---
 
 <b>3. Qual o valor da corrente I para o circuito abaixo? Considere: V1 = 12V, V2 = 10V, R1 = 10kΩ, R2 = 5k1Ω, R3 = 3k3Ω e R4 = 22kΩ.</b>
 <p align="center"><img src="../../Imagens/Atividade 1/3.png" align="center"><br></p>
 
+*No LTSpice podemos ver que batem as afirmações teóricas, o valor real da corrente I1 tem seu sinal trocado pela polaridade do circuito*
+
+<p align="center"><img src="../../Imagens/Atividade 1/3lt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex3 (correntes trocadas).png" align="center"><br></p>
+
 ---
 
 <b>4. Qual o valor da queda de tensão sobre o resistor R3? Considere: V1 = 9V, R1= 3K3Ω, R2 = 1k2Ω, R3 = 10kΩ e gm = 10mA/V</b>
 <p align="center"><img src="../../Imagens/Atividade 1/4.png" align="center"><br></p>
+
+*No LTSpice podemos ver que batem as afirmações teóricas, vemos que o valor real da tensão e da corrente tiveram seus sinais trocados pela polaridade do circuito*
+
+<p align="center"><img src="../../Imagens/Atividade 1/4lt.png" align="center"><br></p>
+<p align="center"><img src="../../Imagens/Atividade 1/ex4.png" align="center"><br></p>
 
 ---
 
