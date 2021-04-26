@@ -19,12 +19,21 @@ Integração dos blocos de uma fonte linear
 Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, revise os conceitos de reguladores LDO.
 
 ## Parte 01: Entendendo um regulador linear  
-Conceitos importantes:<br>
-• Princípios de regulação de tensão;<br>
-• Tensão de saída e tensão de ripple;<br>
-• Regulação de linha;<br>
-• Regulação de Carga;<br>
-• Conceito de LDO – Low Dropout Voltage<br><br>
+<b>Conceitos importantes:<br></b>
+<b>• Princípios de regulação de tensão;<br></b>
+`Geralmente formado por semicondutores, tem por finalidade a manutenção da tensão de saída de um circuito elétrico. Sua função principal é manter a tensão produzida pelo gerador dentro dos limites exigidos pela bateria ou sistema elétrico que está alimentando.`
+
+<b>• Tensão de saída e tensão de ripple;<br></b>
+`A tensão de saída deve ser contínua em relação ao tempo. Ripple geralmente está associada a uma tensão retificada e filtrada por um capacitor, possui uso bastante importante quando o usuário pretende converter uma tensão alternada em uma tensão contínua. É é dado pela subtração da tensão superior menos a tensão inferior, depois de filtrada e retificada. Funciona como uma ondulação na tensão fornecida pela fonte.`
+
+<b>• Regulação de linha;<br></b>
+`A regulação de linha mede a variação da tensão de saída sobre a tensão de entrada.`
+
+<b>• Regulação de Carga;<br></b>
+`O regulador de carga, regula a tensão de saída quando diferentes cargas são conectadas, é dado pela variação da tensão de saída pela corrente de saída.`
+
+<b>• Conceito de LDO – Low Dropout Voltage<br><br></b>
+`Os reguladores lineares de baixa queda (LDO) são uma maneira simples e barata de regular uma tensão de saída que é alimentada por uma entrada de tensão mais alta em uma variedade de aplicações. Os LDO são diferenciados por sua capacidade de manter a regulação com pequenas diferenças entre a tensão de alimentação e a tensão de carga.`
 
 Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema: Qual relação entre a tensão de alimentação do ampop e a tensão de saída? O que devemos considerar para esse circuito operar como um LDO? Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
 
