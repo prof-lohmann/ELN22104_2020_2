@@ -15,4 +15,18 @@
 - A desvantagem desse circuito acredito que seja o ripple de saída, já que a forma de onda de entrada é uma senoide. O capacitor C3 teria que ter um valor próximo ou similar ao capacitor usado para a retificação.
 
 ### Circuito proposto (02) para a alimentação do AmpOp:
+![circuito02](https://user-images.githubusercontent.com/74318416/116098360-64f98c00-a681-11eb-86c3-de3b06bd58df.png)
+## Vamos projetar esse circuito  de alimentação do AmpOp?
+![projeto_alimentacao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/projeto%20circuito%20alimenta%C3%A7%C3%A3o.png)
+- Qual a Tensão VGS? Descreva como obter o valor.
 
+Datasheet(https://www.alldatasheet.com/datasheet-pdf/pdf/580586/NELLSEMI/IRF540.html)
+
+![vgs_irf540](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/vgs%20irf540.png)
+
+- Qual a corrente de alimentação do AmpOp?
+- Qual a tensão de alimentação do AmpOP?
+- Qual fator devo considerar para escolher o transistor Q1?
+- Qual valor da tensão do diodo zener D6?
+- Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito? 
+- Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
