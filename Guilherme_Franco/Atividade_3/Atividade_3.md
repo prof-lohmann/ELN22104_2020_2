@@ -136,8 +136,19 @@ Aluno:
 
 - Para o AD8040 com 1kHz na entrada.
 
+![image](https://user-images.githubusercontent.com/61738767/116321632-ce1bf500-a790-11eb-9a36-d9a03af1bab9.png)
 
 - Para o AD8539 com 1kHz na entrada.
 
 ![image](https://user-images.githubusercontent.com/61738767/116320825-56999600-a78f-11eb-94ea-80716a789bce.png)
 
+
+*Considerações:*
+---
+
+### 4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
+
+- Aplicando 0 na entrada do AD8040
+
+
+- Aplicando 0 na entrada do AD8539
