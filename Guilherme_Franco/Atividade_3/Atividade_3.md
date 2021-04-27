@@ -160,3 +160,16 @@ Aluno:
 ![image](https://user-images.githubusercontent.com/61738767/116324083-cc086500-a795-11eb-8bd8-600a193d9112.png)
 
 - Aplicando um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada do AD8539.
+
+![image](https://user-images.githubusercontent.com/61738767/116324431-85ffd100-a796-11eb-8e4f-b3f431adb2e6.png)
+
+*Considerações:* Devido as tensões de offset serem admitidas na simulação, percebeu-se que houve um aumento no erro percentual do AD8040 conforme diminuia-se a tensão de entrada (denotando que este amplificador não é recomendado para sinais de baixa tensão). Em contra partida, à medida que aumentava-se a tensão de entrada no AD8539, percebeu-se um aumento no erro percentual, principalmente devido à saturação do componente ser ±2,5V.
+
+---
+Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+
+*Resposta:* Como citado anteriormente, o AD8539 possui um desempenho melhor com sinais de entrada de baixa tensão que o AD8040. Portanto, o AD8539 seria a melhor opção.
+
+
+Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
+como subtrator.
