@@ -184,6 +184,30 @@ Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de 
   - Podemos melhorar esse circuito?
 
   Sim. Eliminar um dos fatores da regulação de linha do circuito. Com uma fonte de corrente. A corrente será constante no zener portanto a tensão não varia no zener.
+  
+  - Calculo do R1:
+
+Para calcular o resitor R1 foi calculado a diferença de potencial que ele está sujeito que é:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/VSRET_VZENER_VR1.png)
+
+A corrente que passa por R1, que é a mesma corrente de zener pois o ampop consome uma corrente muito inferior na casa de nA o que não influência na conta
+
+Corrente de zener simulada:
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/IR1_IZENER.png)
+
+
+Portanto R1:
+
+```
+(Vs_ret-vzener)/R1=Izener
+R1= (Vs_ret-vzener)/Izener
+
+R1=3,50/3,48*10^-3
+R1= 1005,7 ohms
+
+```
 
 
 ## Escolhendo transistor M1 e calculando R2 e R3:
@@ -191,10 +215,29 @@ Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de 
 - Qual a corrente contínua necessária?
 
   Para o transistor M1 é requisito de projeto que seja de 1A.
+  
+  ## Ao escolher o transistor obtenha:
+ 
+
+- Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+
+L= 100uH;   
+
+W= 100uW;
+
+u0 (valor padrão) = 600 cm²/V/s;  
+
+C0x = KP/u0 = 25,0081/600 = 41,68 mF/m²  
+
+VA = 1/LAMBDA = 1/0.00291031 = 343,61 v 
+
+Vt = 3.56362 V
+
+Dados retirados do modelo spice do mosfet irf540. Disponivel em:  https://www.vishay.com/docs/90183/sihf540.lib
 
 - Quais os limites de tensão para este circuito?
 
-   Os limites de tensão para esse circuito será a própria tensão da fonte retificada, que estará em 17V. A saída do ampop Vout que é especificada pelo projeto para 15V. Importante ressaltar que a tensão sobre o mosfet Vgs será regulada pelo zener de entrada do ampop vezes o ganho. 
+   Os limites de tensão para esse circuito será a própria tensão da fonte retificada, que estará em 17V. A saída do ampop Vout que é especificada pelo projeto para 15V. Importante ressaltar que a tensão sobre o mosfet Vgs será a tensão de saída do ampop subtraída da tensão Vout. 
  
  - Quais as tensões máxima desse componente?
  
@@ -209,7 +252,7 @@ Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de 
  
  - Justifique a escolha dos resistores R2 e R3.
 
-  Vou= 15V --> requisito do projeto
+  Vout= 15V --> requisito do projeto
 
   Vin= 12,5V --> Regulado pelo diodo zener
 
@@ -226,7 +269,7 @@ R2/R3=0,2
 
 R3=2K
 R2=0,2*2000
-R2=200
+R2=400
 
 
 ```
