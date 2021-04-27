@@ -52,6 +52,14 @@
 ### Além disso, devemos ressaltar que a corrente de picos nos diodos, quando o circuito foi ligado, marca aproximadamente 15A, muito abaixo do valor do informado no DATASHEET do  diodo, 30A. A importância disto se dá no caso de acontecer uma elevação excessiva dos capacitores, de forma com que a corrente de pico fique com um valor muito elevado, ficando sujeita a queima dos diodos.
 ![figura3](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/Figura%203%20atividade%204.PNG)
 ![figura4](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/image.png)
+### Parte 03
+### Segundo o site GMaster Treinamentos sobrecorrente é a corrente elétrica onde valor ultrapassa o valor nominal suportável. Para condutores, o valor nominal é a capacidade máxima de condução de um valor de corrente medido em A. 
+ 
+### A sobrecorrente neste circuito causará queima de componentes, com possibilidade de ser transistores, diodos, resistores, transformador, já que foi feito para suportar um limite máximo de 2A, neste caso. Porém com a proteção de sobrecorrente, através de um circuito para proteção da fonte, dificulta a queima. No caso de acontecer um curto-circuito na saída da fonte ou até aumento na carga, a proteção feita diminuirá a tensão de saída, a fim de que não tenham falhas.
+### Um circuito de proteção de sobrecorrente precisa conseguir atuar no momento que a corrente de saída é maior que a projetada para o circuito, sendo esta por curto-circuito ou sobrecarga. Neste projeto em específico, a fonte foi planejada para 15 W e 1 A, o limite é quando a corrente extrapola 1,2 A. 
+### Segundo o site QA Stack o foldback é um método usado em fontes de alimentação para protegê-las de situações atuais, como curto-circuito na saída com um fio ou conexão de muitos equipamentos à fonte de alimentação.
+### Caso o intuito seja fazer um circuito LDO, devemos levar em consideração alguns fatores como colocar um capacitor de saída, projetar o circuito pensando na temperatura máxima dos componentes, colocar medidas de proteção como por exemplo um limitador de corrente.
+
 
 
 
