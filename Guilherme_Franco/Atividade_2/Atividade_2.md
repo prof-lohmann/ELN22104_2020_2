@@ -141,13 +141,17 @@ G = 1 + (R2/R1)
  *Resposta:* Além dos terminais de compensação de tensão de desvio localizados no próprio AmpOp, pode-se utilizar componentes passivos como resistores e potênciometros.
  
  ### 13.O que é a variação da tensão de offset pela temperatura?
+ 
  *Resposta:* Esta variação quer dizer que o valor de offset varia de acordo com a mudança de temperatura.
  
  <b> a) Como verificar esse parâmetro no datasheet?
+ 
  *Resposta:* Existe uma seção do datasheet no qual são apresentadas tabelas de operação do componente em questão, junto delas valores como valor típico e outro que é dado junto com uma faixa de temperatura.
  
  ### 14.O que são as correntes de polarização(Ibias) de AmpOp?
+ 
 <b> *Resposta:* Independentemente do facto de os amplificadores operacionais apresentarem uma resistência de entrada não infinita, característica que se associa apenas aos sinais dinâmicos aplicados, a natureza própria dos transístores obriga à existência de correntes não nulas através dos terminais de entrada, IB+ e IB-, designadas correntes de polarização, as quais, por ação do desemparelhamento inexorável entre componentes, são, também, distintas entre si (estas correntes associam-se à corrente na base dos transístores bipolares, e às correstes de fuga ou de saturação inversa nos transístores de efeito de campo).
  
  <b> a)Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema.
+ 
  <b> *Resposta:* A existência das correntes de polarização obriga à utilização de componentes externos adicionais, tipicamente resistências, como forma de compensar os erros de tensão induzidos na saída.
