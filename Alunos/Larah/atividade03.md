@@ -47,11 +47,35 @@ resistores para ter um ganho igual -100V/V.
 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída.
 Explique o resultado.
 
+AD8040
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.esquematico.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.op.PNG)
+
+AD8539
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.inversor.anp03.esquematico.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.inversor.anp03.op.PNG)
+
 4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule
 os resistores para ter um ganho igual 10V/V.
 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
 2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal
 de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
+
+AD8040
+
+![](
+
+![](
+
+AD8539
+
+![](
+
+![](
 
 Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
