@@ -128,7 +128,7 @@ Aluno:
 
 - Para o AD8040
 
-![image](https://user-images.githubusercontent.com/61738767/116321015-b2641f00-a78f-11eb-991d-74d0093fb33a.png)
+![image](https://user-images.githubusercontent.com/61738767/116321463-7e3d2e00-a790-11eb-8022-f2e209858f48.png)
 
 - Para o AD8539
 
@@ -136,7 +136,6 @@ Aluno:
 
 - Para o AD8040 com 1kHz na entrada.
 
-![image](https://user-images.githubusercontent.com/61738767/116321153-ed665280-a78f-11eb-9d34-54e9e6fb04b7.png)
 
 - Para o AD8539 com 1kHz na entrada.
 
