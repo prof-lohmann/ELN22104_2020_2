@@ -83,7 +83,7 @@ Ic= Ie
 
 - Qual valor da tensão do diodo zener D6?
   
-  Considerando que a tensão de saída do ampop deve ser de 21V. Pois Vgs=4V
+  Considerando que a tensão de saída do ampop deve ser de 19,5V. Pois Vgs=4,5V
   
   Logo 15+4,5= 19,5V
   A tensão do diodo zener deve ser maior que 19,5V.
