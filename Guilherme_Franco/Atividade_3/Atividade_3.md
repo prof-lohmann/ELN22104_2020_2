@@ -19,7 +19,6 @@ Aluno:
 ### 1.1.Para o AD8040
 
 - Máxima e mínima tensão de alimentação 
-
 ![image](https://user-images.githubusercontent.com/61738767/116282433-220ee580-a761-11eb-92b7-9028e2878fa0.png)
 
 - Tensão de modo comum
@@ -47,5 +46,47 @@ Aluno:
 ![image](https://user-images.githubusercontent.com/61738767/116313942-d2daac00-a784-11eb-851b-4c9a10e60f6d.png)
 
 - Ganho em malha aberta
+
+![image](https://user-images.githubusercontent.com/61738767/116314186-28af5400-a785-11eb-9903-b710742e47e2.png)
+
+- Impedância de entrada
+
+![image](https://user-images.githubusercontent.com/61738767/116314299-4da3c700-a785-11eb-86ae-f813eca99149.png)
+
+### 1.2.Para o AD8539
+
+- Máxima e mínima tensão de alimentação
+
+
+
+- Tensão de modo comum
+
+
+
+- CMRR
+
+
+
+- Máxima e mínima tensão de entrada
+
+
+
+- Tensão de offset
+
+
+
+- Corrente de polarização
+
+
+
+- Consumo de corrente
+
+
+
+- Ganho em malha aberta
+
+
+
+- Impedância de entrada
 
 
