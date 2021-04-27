@@ -4,7 +4,7 @@ Aluno:
 
 ## Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
 
-### 1. Verifique no datasheet dos Ampops indicados os valores:** 
+### 1. Verifique no datasheet dos Ampops indicados os valores:
 
 - Máxima e mínima tensão de alimentação
 - Tensão de modo comum
