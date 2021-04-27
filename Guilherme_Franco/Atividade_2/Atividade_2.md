@@ -100,7 +100,7 @@ G = 1 + (R2/R1)
  V0 = (V1-V2)(1+2Rx/R)R4/R3
  ```
  ### 6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor
-<b>*Respost:* Em termos ideais, o ganho de um AmpOp em malha aberta é infinito. No entanto, na prática, seu ganho é finito com seu valor bem elevado. Com isso, deve-se considerar os diferente fatores que influenciam no ganho para as diferente topologias de circuito, como por exemplo tensão de offset, corrente de polarização, tensão de modo comum e outros.<b></b>
+<b>*Resposta:* Em termos ideais, o ganho de um AmpOp em malha aberta é infinito. No entanto, na prática, seu ganho é finito com seu valor bem elevado. Com isso, deve-se considerar os diferente fatores que influenciam no ganho para as diferente topologias de circuito, como por exemplo tensão de offset, corrente de polarização, tensão de modo comum e outros.<b></b>
  
 <b>Considerando um ganho finito, a equação para o sinal de saída da topologia inversora segue a seguinte forma:
  ```
@@ -110,3 +110,44 @@ G = 1 + (R2/R1)
   ```
   G = v0/v1 = (1 +  R2/R1)/ (1 + (1 + (R2/R1))/A)
   ```
+
+### 7.Explique o que é a tensão de modo comum(VCM) e quais os efeitos desta tensão nas topologias estudadas.
+<b>*Resposta:* Em linhas gerais, VCM é a tensão média entre os sinais de entrada do AmpOp multiplicado por um ganho de modo comum. Idealmente, VCM é zero, porém, na prática, isso não ocorre, o que ocasiona no surgimento de um acréscimo não desejado de tensão no sinal de saída.
+ 
+<b> A tensão de saída nesta ocorrência obedece a seguinte equação:
+ ```
+ V0 = A*(V+ - V-) + ACM(VCM)
+ ```
+ 
+ ### 8.O que é **CMRR**?
+ <b>*Resposta:* CMRR é o acrônimo para Common Mode Rejection Ratio ou Relação de Rejeição em Modo Comum. Trata-se de uma característica dos amplificadores operacionais. Quando dois sinais da mesma amplitude, frequência e fase são aplicados às entradas (inversora e não inversora) de um operacional eles devem se cancelar e nenhuma saída deve ocorrer.
+ 
+ ### 9.Utilizando o Amplificador Subtrator com ganho 1000V/V, demonstre o efeito da tensão de modo comum (VCM), indicando:
+ 
+ ### 10.Faça um resumo explicando as limitações de tensão de entrada e saída de um AmpOp. De exemplos, utiliza-se valores de datasheet.
+ 
+ <b>a) Defina o que é um AmpOp Rail-to-rail.
+ *Resposta:* Em linhas gerais, trata-se de um Amplificador Operacional cuja tensão na saída se aproxima dos valores de tensões de sua alimentação.
+ 
+ ### 11.O que é tensão de offset? Como calcular o efeito resultante na tensão de saída de um amplificador inversor?
+ *Resposta:* O offset é definido como uma tensão residual que aparece na saída do AmpOp quando as entradas inversora e não inversora são iguais a 0. Esta tensão residual pode ser prejudicial em aplicações de instrumentação, influenciando diretamente na precisão dos amplificadores.
+ 
+ Calcula-se o efeito resultante da saída de um aplificador inversor simples utilizando a seguinte equação:
+ ```
+ V0= -(R2/R1)V1 + (1 + R2/R1)Vos
+ ```
+ 
+ ### 12.Como minimizar o efeito da tensão de offset?
+ *Resposta:* Além dos terminais de compensação de tensão de desvio localizados no próprio AmpOp, pode-se utilizar componentes passivos como resistores e potênciometros.
+ 
+ ### 13.O que é a variação da tensão de offset pela temperatura?
+ *Resposta:* Esta variação quer dizer que o valor de offset varia de acordo com a mudança de temperatura.
+ 
+ <b> a) Como verificar esse parâmetro no datasheet?
+ *Resposta:* Existe uma seção do datasheet no qual são apresentadas tabelas de operação do componente em questão, junto delas valores como valor típico e outro que é dado junto com uma faixa de temperatura.
+ 
+ ### 14.O que são as correntes de polarização(Ibias) de AmpOp?
+ *Resposta:* Independentemente do facto de os amplificadores operacionais apresentarem uma resistência de entrada não infinita, característica que se associa apenas aos sinais dinâmicos aplicados, a natureza própria dos transístores obriga à existência de correntes não nulas através dos terminais de entrada, IB+ e IB-, designadas correntes de polarização, as quais, por ação do desemparelhamento inexorável entre componentes, são, também, distintas entre si (estas correntes associam-se à corrente na base dos transístores bipolares, e às correstes de fuga ou de saturação inversa nos transístores de efeito de campo).
+ 
+ <b> a)Como minimizar o efeito destas correntes? Descreva as aproximações e os possíveis circuitos para mitigar o problema.
+ *Resposta:* A existência das correntes de polarização obriga à utilização de componentes externos adicionais, tipicamente resistências, como forma de compensar os erros de tensão induzidos na saída.
