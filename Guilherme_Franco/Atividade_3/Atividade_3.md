@@ -108,6 +108,8 @@ Aluno:
 
 *Referência:*https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
 
+---
+
 ### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
 
 - Para o AD8040
@@ -125,3 +127,18 @@ Aluno:
 ### 3.Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 
 - Para o AD8040
+
+![image](https://user-images.githubusercontent.com/61738767/116321015-b2641f00-a78f-11eb-991d-74d0093fb33a.png)
+
+- Para o AD8539
+
+![image](https://user-images.githubusercontent.com/61738767/116320570-d96e2100-a78e-11eb-9df8-7cadfa8eb2a9.png)
+
+- Para o AD8040 com 1kHz na entrada.
+
+
+
+- Para o AD8539 com 1kHz na entrada.
+
+![image](https://user-images.githubusercontent.com/61738767/116320825-56999600-a78f-11eb-94ea-80716a789bce.png)
+
