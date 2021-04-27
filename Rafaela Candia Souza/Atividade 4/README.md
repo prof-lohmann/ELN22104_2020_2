@@ -33,13 +33,13 @@
 ##### Responda: 
 
 > - Qual a Tensão VGS? Descreva como obter o valor.
-> O valor de VGS é obtido subtraindo o valor de saida (Vout) do valor de tensao da saida do ampop (LM324). Analisando o datasheet do MOSFET IRF540, temos que o Gate-Source Threshold Voltage esperado para a opecao do mesmo sera um valor entre 2 a 4V.
+> ##### O valor de VGS é obtido subtraindo o valor de saida (Vout) do valor de tensao da saida do ampop (LM324). Analisando o datasheet do MOSFET IRF540, temos que o Gate-Source Threshold Voltage esperado para a opecao do mesmo sera um valor entre 2 a 4V.
 > - Qual a corrente de alimentação do AmpOp?
-> Segundo o datasheet do Ampop LM324, a corrente de alimentacao pode variar de 12 a 50mA. 
+> ##### Segundo o datasheet do Ampop LM324, a corrente de alimentacao pode variar de 12 a 50mA. 
 > - Qual a tensão de alimentação do AmpOP?
-> Segundo o datasheet do Ampop LM324, a tensao de alimentacao varia entre -0,3 a 32V.
+> ##### Segundo o datasheet do Ampop LM324, a tensao de alimentacao varia entre -0,3 a 32V.
 > - Qual fator devo considerar para escolher o transistor Q1?
-> O transistor deve operar dentro da faixa de tensao e corrente tolerados pelo LM324. 
+> ##### O transistor deve operar dentro da faixa de tensao e corrente tolerados pelo LM324. 
 > - Qual valor da tensão do diodo zener D6?
 
 > - Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
