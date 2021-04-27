@@ -54,6 +54,9 @@ Aluno:
 
 ![image](https://user-images.githubusercontent.com/61738767/116314299-4da3c700-a785-11eb-86ae-f813eca99149.png)
 
+
+*Referência:*https://www.analog.com/media/en/technical-documentation/data-sheets/AD8029_8030_8040.pdf
+
 ### 1.2.Para o AD8539
 
 - Máxima e mínima tensão de alimentação
@@ -70,10 +73,14 @@ Aluno:
 
 - CMRR
 
+![image](https://user-images.githubusercontent.com/61738767/116315221-9ad46880-a786-11eb-96b1-3070e61d7411.png)
+
+![image](https://user-images.githubusercontent.com/61738767/116315290-b2abec80-a786-11eb-8f3b-cce41d2ce8f6.png)
 
 
 - Máxima e mínima tensão de entrada
 
+![image](https://user-images.githubusercontent.com/61738767/116315364-cbb49d80-a786-11eb-8bed-0c578a9b219d.png)
 
 
 - Tensão de offset
@@ -83,16 +90,22 @@ Aluno:
 
 - Corrente de polarização
 
+![image](https://user-images.githubusercontent.com/61738767/116315424-e1c25e00-a786-11eb-93cf-b8077b110690.png)
 
 
 - Consumo de corrente
 
+![image](https://user-images.githubusercontent.com/61738767/116315447-ea1a9900-a786-11eb-8eb3-0d4da153e2e5.png)
 
 
 - Ganho em malha aberta
 
+![image](https://user-images.githubusercontent.com/61738767/116315725-4c739980-a787-11eb-82c3-43273a931bad.png)
 
 
 - Impedância de entrada
 
 
+*Referência:*https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
+
+### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada. 
