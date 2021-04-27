@@ -14,3 +14,4 @@
   A relação é dada por: Tensão saída = Tensão entrada(V+) * (R2+R3)/R3. O ampop desliga o mosfet quando a tensão de saída é fora da tensão desejada, com o mosfet desligado a saída cai para 0v.  
 ### O que devemos considerar para esse circuito operar como um LDO?
 ### Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
+  Pode-se utilizar uma fonte simétrica para alimentar o ampop.
