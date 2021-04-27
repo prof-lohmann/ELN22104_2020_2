@@ -118,6 +118,6 @@ Concluímos então que para valores até 2.5V o Ampop AD8539 possui muito mais p
 ## Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
 Independentemente da frequência utilizada, ertamente o Amplificador escolhido seria o AD8539 devido a sua precisão ser maior nessa faixa de tensão.
 
-##Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
+## Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
 Para justificar a troca do Ampop AD8539, Escolhemos um Ampop trazendo valores máximos de offset muito baixos resultado em uma alta precisão.
 ![Ampop Escolhido](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Atividade%203/Ampop%20escolhido.jpg)
