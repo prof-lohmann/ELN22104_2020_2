@@ -94,7 +94,7 @@ minimizando os ruídos no circuito?
 
 Escolhendo um diodo zener que passe a menor corrente possível. Para isso precisa ser um zener com um resistor de zener pequeno
 
-**Projeto no ltspice:**
+### Projeto no ltspice:
 
 ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/alimentac_opamp_circ.png)
 
