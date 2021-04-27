@@ -22,6 +22,31 @@
 > ![figura2](https://user-images.githubusercontent.com/12564754/115305876-6422a080-a13d-11eb-9d1a-5cbae9928abc.PNG)
 
 ##### Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms? Quais problemas apresentam esse circuito? Podemos melhorar?
+###### Em teoria, teremos um VCC de 24Vrms. Porem, o circuito real teria problemas como queda de tensao dos diodos, a carga dos capacitores e o fato deste circuito dobrador de tensao teria drenagem de corrente para cada semi ciclo, gerando ripple. A melhoria recomendada para este circuito seria substituir od diodos por schottky, por possuirem menor queda de tensao de suas juncoes e aumentar a frequencia de operacao da fonte para diminuir o ripple.
 
+#### Circuito proposto (02) para a alimentação do AmpOp:
+
+> ![figura3](https://user-images.githubusercontent.com/12564754/116309279-f569c680-a77e-11eb-9f5d-917d43a399ba.PNG)
+
+##### Vamos projetar esse circuito de alimentação do AmpOp?
+##### Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V.
+##### Responda: 
+
+• Qual a Tensão VGS? Descreva como obter o valor.
+• Qual a corrente de alimentação do AmpOp?
+• Qual a tensão de alimentação do AmpOP?
+• Qual fator devo considerar para escolher o transistor Q1?
+• Qual valor da tensão do diodo zener D6?
+• Como escolher o diodo zener D6, maximizando a eficiência energética e
+minimizando os ruídos no circuito?
+• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
+aumento de 10mA na corrente de alimentação, o circuito proposto continuará
+funcionando?
+
+
+
+
+
+	
 
 
