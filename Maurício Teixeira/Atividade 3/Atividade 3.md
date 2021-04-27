@@ -88,8 +88,11 @@ Aplicando 0V(zero) de tensão na entrada, foi verificado que o valor da tensão 
 Para analisar a faixa de erro encontrada em vários níveis de tensão diferente, foram determinados pelo professor os seguintes valores de tensão contínua; 5mV, 50mV, 200mV e 500mV e a partir de simulações, foram encontrados os seguintes valores:
 
 Vin= 5mV -> Vout= 34.70mV -> E%= 30,6%
+
 Vin= 50mV -> Vout= 484.66mV -> E%= 3,07%
+
 Vin= 200mV -> Vout= 1.98V -> E%= 1%
+
 Vin= 500mV -> Vout= 4.97V -> E%= 0,6%
 
 Após a análise dos dados obtidos empiricamente, é fácil observar que com tensões cada vez mais altas, o "erro" ou a distorção gerada pelo offset se torna cada vez mais insignificante em termos proposcionais.
@@ -101,9 +104,12 @@ Após a análise dos dados obtidos empiricamente, é fácil observar que com ten
 Aplicando 0V(zero) de tensão na entrada, foi verificado que o valor da tensão de offset do Ampop 8539 é de aproximadamente 137.30µV. Este valor, é o valor necessário de tensão entre os terminais de entrada para anular o de saída. O valor da tensão de offset encontrado nunca será maior do que o especificado em datasheet.
 Para analisar a faixa de erro encontrada em vários níveis de tensão diferente, foram determinados pelo professor os seguintes valores de tensão contínua; 5mV, 50mV, 200mV e 500mV e a partir de simulações, foram encontrados os seguintes valores:
 
-Vin= 5mV -> Vout= 50.13mV -> E%= 0,26%
+Vin= 5mV -> Vout= 50.13mV -> E%= 0,26% 
+
 Vin= 50mV -> Vout= 500.14mV -> E%= 0,028%
+
 Vin= 200mV -> Vout= 2.00V -> E%= 0%
+
 Vin= 500mV -> Vout= 2.47V -> E%= 50,6%
 
 Neste caso podemos observar que o Ampop chegou no seu ponto de saturação na última simulação, uma vez que o mesmo estava sendo alimentado com 2.5V, impossibilitando que o circuito tivesse um ganho suficiente para entregar 5V na saída.
