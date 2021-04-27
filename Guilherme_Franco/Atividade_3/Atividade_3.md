@@ -26,10 +26,26 @@ Aluno:
 
 ![image](https://user-images.githubusercontent.com/61738767/116312985-8b9feb80-a783-11eb-8883-029833bd2314.png)
 
-
 - CMRR
 
 ![image](https://user-images.githubusercontent.com/61738767/116313224-de79a300-a783-11eb-89e8-04b3d986198a.png)
 
+- Máxima e mínima tensão de entrada
+
+![image](https://user-images.githubusercontent.com/61738767/116313661-6790da00-a784-11eb-8ff1-f0f7aec19639.png)
+
+- Tensão de offset
+
+![image](https://user-images.githubusercontent.com/61738767/116313738-85f6d580-a784-11eb-8fa9-6ed26a5daf86.png)
+
+- Corrente de polarização
+
+![image](https://user-images.githubusercontent.com/61738767/116313824-a7f05800-a784-11eb-8cfe-82c8aa166e5f.png)
+
+- Consumo de corrente
+
+![image](https://user-images.githubusercontent.com/61738767/116313942-d2daac00-a784-11eb-851b-4c9a10e60f6d.png)
+
+- Ganho em malha aberta
 
 
