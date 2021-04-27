@@ -136,7 +136,7 @@ Aluno:
 
 - Para o AD8040 com 1kHz na entrada.
 
-
+![image](https://user-images.githubusercontent.com/61738767/116321153-ed665280-a78f-11eb-9d34-54e9e6fb04b7.png)
 
 - Para o AD8539 com 1kHz na entrada.
 
