@@ -50,7 +50,7 @@
 ![figura2](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/image.png)
 ### É possível perceber que o valor obtido, Vr = 3,04 V, está um pouco abaixo do valor calculado, V r= 3,3 V. Desta forma, o circuito precisa ser melhorado para encontrar um valor de tensão mais constante, a fim de reduzir a tensão de ripper na entrada do ampop, já que este é o problema crucial.
 ### Além disso, devemos ressaltar que a corrente de picos nos diodos, quando o circuito foi ligado, marca aproximadamente 15A, muito abaixo do valor do informado no DATASHEET do  diodo, 30A. A importância disto se dá no caso de acontecer uma elevação excessiva dos capacitores, de forma com que a corrente de pico fique com um valor muito elevado, ficando sujeita a queima dos diodos.
-
+![figura3](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/image.png)
 
 
 
