@@ -49,9 +49,9 @@ Explique o resultado.
 
 AD8040
 
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.esquematico.PNG)
+![ESQUEMATICO](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.esquematico.PNG)
 
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.op.PNG)
+![OP](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.op.PNG)
 
 AD8539
 
