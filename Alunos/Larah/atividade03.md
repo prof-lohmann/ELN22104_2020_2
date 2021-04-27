@@ -1,15 +1,19 @@
 Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
+
 1.Verifique no datasheet dos Ampops indicados os valores dos itens abaixo:
-◦ Máxima e mínima tensão de alimentação
-◦ Tensão de modo comum
-◦ CMRR
-◦ Máxima e mínima tensão de entrada
-◦ Tensão de offset
-◦ Corrente de polarização
-◦ Consumo de corrente
-◦ Ganho em malha aberta
-◦ Impedância de entrada
+
+- Máxima e mínima tensão de alimentação
+- Tensão de modo comum
+- CMRR
+- Máxima e mínima tensão de entrada
+- Tensão de offset
+- Corrente de polarização
+- Consumo de corrente
+- Ganho em malha aberta
+- Impedância de entrada
+
 Para todas simulações abaixo utilize a alimentação simétrica recomendada no datasheet.
+
 2.Simule um circuito seguidor de tensão com cada um dos ampops indicadosefeitos decorrentes da máxima e mínima tensão de entrada.
 1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
 2. Responda quais os valores das tensões de saturação?
