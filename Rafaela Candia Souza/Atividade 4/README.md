@@ -41,11 +41,13 @@
 > - Qual fator devo considerar para escolher o transistor Q1?
 > ##### O transistor deve operar dentro da faixa de tensao e corrente tolerados pelo LM324. 
 > - Qual valor da tensão do diodo zener D6?
-> ##### O diodo zener terá uma tensao de referencia para que a saida do transistor tenha o valor de alimentacao do ampop. A alimentacao do ampop, determinado pelo datasheet é 32V e a queda de base emissor do transistor é 0.7V, a queda de tensao do mosfet (4V) e a queda de tensao do proprio ampop (1V). Logo o zener deve ser de ser no minimo 20,7V.
+> ##### O diodo zener terá uma tensao de referencia para que a saida do transistor tenha o valor de alimentacao do ampop. A queda de base emissor do transistor é 0.7V, a queda de tensao do mosfet (4V) e a queda de tensao do proprio ampop (1V). Logo o zener deve ser de ser no minimo 20,7V para a fonte de 15V.
 > - Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
 > ##### Ajustar o resistor de polarizacao do zener para entregar somente o necessario para a polarizacao do mesmo.
 > - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
-> #####
+> ##### Se o transistor escolhido para o circuito for por exemplo o BC541, o  circuito continuará funcionando.
+### Circuito cimulado para estudos:
+> ![figura7](https://user-images.githubusercontent.com/12564754/116324739-0c1c1780-a797-11eb-8da8-ae303bf4ff67.PNG)
 
 ### Parte 02: Calculando e dimensionando os componentes
 
