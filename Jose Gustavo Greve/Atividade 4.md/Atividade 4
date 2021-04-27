@@ -30,7 +30,7 @@
 ### 1.2) Circuito proposto (01) para a alimentação do AmpOp:
 ### a) Considerando a queda de tensão nos diodos D4 e D5, em 0,7 V, cada componente (atentar ao valor de rms).
 ### Vcc=2*Vinp-VD4-VD5
-### Vcc=(12*2√2)-0,7-0,7
+### Vcc=(12*2√2)-1,4
 ### Vcc=32,54 V
 ### b)Quais problemas apresentam esse circuito? 
 ### No circuito temos dois capacitores indicados, C2 e C3. Dessa forma para escolher seus valores,devemos levar em consideração os efeitos de ripple que irá ser inserido no sinal da tensão. 
@@ -43,8 +43,10 @@
 ### Se a intenção for que o circuito consiga operar como LDO, precisamos que a queda de tensão na saída seja baixa, como por exemplo entre 0,1V e 0,5 V. Além disto, a tensão de saída está diretamente ligada a tensão de referência e à relação dos resistores, ou seja :
 ### Vou= Vref (1+ R1/R2)
 ### Em relação ao ampop, precisamos extrair as características elétricas do DATASHEET, já para o amplificador LM324, a alimentação de ± 16V ou de 0 a 32Vcc. Para encontrar a tensão esperada foi utilizada a tipologia dobrador de tensão, desta forma a tensão será de:
-### VP= (2122^(½)) -(0,7) = 33,3 V
+### VP= (2*12*√2) -(0,7) = 33,3 V
 ### Para saber  qual tensão teremos para um sinal Vin+ de 12Vrms e utilizando o circuito dobrador, quais problemas tem o circuito e como podemos melhorá-lo precisamos inicialmente achar o capacitor para o circuito, considerando sua corrente de 0,5A apenas para alimentação dos ampop, além dos valores abaixo:
-### Vp=33, 3V   f= 60Hz   Vr= 10% de VP
+### Vp=33, 3V   f= 60Hz   Vr= 10% de Vp
+
+
 
 
