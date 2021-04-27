@@ -58,10 +58,14 @@ Aluno:
 
 - Máxima e mínima tensão de alimentação
 
+![image](https://user-images.githubusercontent.com/61738767/116314806-f8b48080-a785-11eb-8175-c0ee7ee0e845.png)
 
 
 - Tensão de modo comum
 
+![image](https://user-images.githubusercontent.com/61738767/116315000-43ce9380-a786-11eb-95f9-8f5d4f218ba7.png)
+
+![image](https://user-images.githubusercontent.com/61738767/116315043-58ab2700-a786-11eb-9687-58837c5b382f.png)
 
 
 - CMRR
@@ -74,6 +78,7 @@ Aluno:
 
 - Tensão de offset
 
+![image](https://user-images.githubusercontent.com/61738767/116314837-0538d900-a786-11eb-91cb-77b296474539.png)
 
 
 - Corrente de polarização
