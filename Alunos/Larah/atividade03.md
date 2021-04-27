@@ -12,6 +12,14 @@ Simulação de circuitos com Amplificadores operacionais AD8040 e AD8539.
 - Ganho em malha aberta
 - Impedância de entrada
 
+AD8040: Tensão máxima de alimentação 12V e mínima 2,7V
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.tabelageral.PNG)
+
+AD8539: Tensão máxima de alimentação 5,5V e mínima 2,7V
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.tabelageral.PNG)
+
 Para todas simulações abaixo utilize a alimentação simétrica recomendada no datasheet.
 
 2.Simule um circuito seguidor de tensão com cada um dos ampops indicadosefeitos decorrentes da máxima e mínima tensão de entrada.
