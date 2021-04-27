@@ -43,6 +43,15 @@ Datasheet(https://www.ti.com/lit/ds/snosc16d/snosc16d.pdf)
 Vmax = 32V 
 
 - Qual fator devo considerar para escolher o transistor Q1?
+- 
+O beta precisa ser elevado.
+
 - Qual valor da tensão do diodo zener D6?
+-
+![tensao_diodo_zener](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20diodo%20zener.png)
+
 - Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito? 
+
+O zener precisa da menor impedância possível para evitar oscilações na corrente.
+
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
