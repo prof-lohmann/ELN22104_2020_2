@@ -143,12 +143,20 @@ Aluno:
 ![image](https://user-images.githubusercontent.com/61738767/116320825-56999600-a78f-11eb-94ea-80716a789bce.png)
 
 
-*Considerações:*
 ---
 
 ### 4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
 - Aplicando 0 na entrada do AD8040
 
+![image](https://user-images.githubusercontent.com/61738767/116322639-ce1cf480-a792-11eb-9329-01cf8c7fe47e.png)
 
 - Aplicando 0 na entrada do AD8539
+
+![image](https://user-images.githubusercontent.com/61738767/116324199-10940080-a796-11eb-9f7b-5506fa03278d.png)
+
+- Aplicando um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada do AD8040.
+
+![image](https://user-images.githubusercontent.com/61738767/116324083-cc086500-a795-11eb-8bd8-600a193d9112.png)
+
+- Aplicando um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada do AD8539.
