@@ -97,7 +97,15 @@ G = 1 + (R2/R1)
 
 <b>Nesta configuração, há um incremento quanto ao incoveniente do Amplificador Subtrator no que diz respeito entre o ganho de tensão e a resistência de entrada vista por cada uma das fontes de sinal. A saída do circuito é dada pela sequinte equação:
  ```
- V0 = (V1-V2)(1+2RX/R)R4/R3
+ V0 = (V1-V2)(1+2Rx/R)R4/R3
  ```
- 
-
+ ### 6. Explique o efeito do ganho em MALHA ABERTA FINITO, para as topologias Amplificador Inversor e Amplificador não inversor
+<b>Em termos ideais, o ganho de um AmpOp em malha aberta é infinito. No entanto, na prática, seu ganho é finito com seu valor bem elevado. Com isso, deve-se considerar os diferente fatores que influenciam no ganho para as diferente topologias de circuito, como por exemplo tensão de offset, corrente de polarização, tensão de modo comum e outros.<b></b>
+<b>Considerando um ganho finito, a equação para o sinal de saída da topologia inversora segue a seguinte forma:
+ ```
+ G = v0/v1 = (-R2/R1)/ 1 + (1 + R2/R1)/A
+ ```
+ <b>Para a topologia não inversora, tem-se:
+  ```
+  G = v0/v1 = (1 +  R2/R1)/ (1 + (1 + (R2/R1))/A)
+  ```
