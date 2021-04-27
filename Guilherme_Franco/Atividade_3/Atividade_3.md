@@ -16,8 +16,20 @@ Aluno:
 - Ganho em malha aberta
 - Impedância de entrada
 
-### 1.1.Máxima e mínima tensão de alimentação do AD8029
+### 1.1.Para o AD8040
+
+- Máxima e mínima tensão de alimentação 
 
 ![image](https://user-images.githubusercontent.com/61738767/116282433-220ee580-a761-11eb-92b7-9028e2878fa0.png)
 
-<b>Na figura acima, destaca-se que a faixa de operação do componente é de no mínimo 2,7V e no máximo 12V. 
+- Tensão de modo comum
+
+![image](https://user-images.githubusercontent.com/61738767/116312985-8b9feb80-a783-11eb-8883-029833bd2314.png)
+
+
+- CMRR
+
+![image](https://user-images.githubusercontent.com/61738767/116313224-de79a300-a783-11eb-89e8-04b3d986198a.png)
+
+
+
