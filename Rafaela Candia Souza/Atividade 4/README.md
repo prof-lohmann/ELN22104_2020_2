@@ -33,9 +33,9 @@
 ##### Responda: 
 
 > - Qual a Tensão VGS? Descreva como obter o valor.
-
+> O valor de VGS é obtido subtraindo o valor de saida (Vout) do valor de tensao da saida do ampop (LM324). Analisando o datasheet do MOSFET IRF540, temos que o Gate-Source Threshold Voltage corresponde a um valor entre 2 á 4V.
 > - Qual a corrente de alimentação do AmpOp?
-
+> 
 > - Qual a tensão de alimentação do AmpOP?
 
 > - Qual fator devo considerar para escolher o transistor Q1?
