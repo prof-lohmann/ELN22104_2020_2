@@ -93,5 +93,11 @@ G = 1 + (R2/R1)
  
  <b> g) **Amplificador de instrumentação**
  
+ ![image](https://user-images.githubusercontent.com/61738767/116251167-cb93ae00-a744-11eb-8559-0a807dc25b74.png)
+
+<b>Nesta configuração, há um incremento quanto ao incoveniente do Amplificador Subtrator no que diz respeito entre o ganho de tensão e a resistência de entrada vista por cada uma das fontes de sinal. A saída do circuito é dada pela sequinte equação:
+ ```
+ V0 = (V1-V2)(1+2RX/R)R4/R3
+ ```
  
 
