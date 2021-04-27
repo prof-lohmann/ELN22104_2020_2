@@ -120,4 +120,5 @@ Independentemente da frequência utilizada, ertamente o Amplificador escolhido s
 
 ## Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação como subtrator.
 Para justificar a troca do Ampop AD8539, Escolhemos um Ampop trazendo valores máximos de offset muito baixos resultado em uma alta precisão.
+
 ![Ampop Escolhido](https://github.com/mauriciots96/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Maur%C3%ADcio%20Teixeira/Atividade%203/Ampop%20escolhido.jpg)
