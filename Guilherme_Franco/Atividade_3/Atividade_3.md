@@ -19,6 +19,7 @@ Aluno:
 ### 1.1.Para o AD8040
 
 - Máxima e mínima tensão de alimentação 
+
 ![image](https://user-images.githubusercontent.com/61738767/116282433-220ee580-a761-11eb-92b7-9028e2878fa0.png)
 
 - Tensão de modo comum
