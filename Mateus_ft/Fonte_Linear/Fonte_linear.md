@@ -279,7 +279,7 @@ R2=400
  
  # Circuito montado:
  
- ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/circ_pront_irf540.png)
+ ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/CIRCUITOCOMPLETO.png)
  
  
 
