@@ -15,3 +15,14 @@
 ### O que devemos considerar para esse circuito operar como um LDO?
 ### Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
   Pode-se utilizar uma fonte simétrica para alimentar o ampop.
+  
+### Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
+
+  Pela fórmula temos:
+  
+  ![image](https://user-images.githubusercontent.com/58013651/116172357-0237dd00-a6e1-11eb-92fc-26a46f9fb9a7.png)
+  
+  
+### Quais problemas apresentam esse circuito? Podemos melhorar?
+
+  Esse circuito pode gerar PSRR, no caso a saída do ampop pode apresentar ruído devido a instabilidade da alimentação do ampop devido ao ripple gerado pela descarga do capacitor. Para se melhorar esse circuito pode-se utilizar um CI regulador linear ou montar um circuito com um transistor NPN, resistor e diodo zêner com a mesma função de corrigir o ruído na alimentação do ampop. Outro problema desse circuito é que nem todo ampop pode funcionar corretamente com ele, sendo indicado uma fonte simétrica.
