@@ -23,9 +23,20 @@ AD8539: Tensão máxima de alimentação 5,5V e mínima 2,7V
 Para todas simulações abaixo utilize a alimentação simétrica recomendada no datasheet.
 
 2.Simule um circuito seguidor de tensão com cada um dos ampops indicadosefeitos decorrentes da máxima e mínima tensão de entrada.
-1. Dica utilize um sinal senoidal de 1kHz para auxiliar na visualização.
-2. Responda quais os valores das tensões de saturação?
-e verifique os
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD840.buffer.anp03.esquematico.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vin.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vo.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.esquematico.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vin.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.PNG)
+
+
 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os
 resistores para ter um ganho igual -100V/V.
 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
