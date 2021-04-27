@@ -108,4 +108,6 @@ Aluno:
 
 *Referência:*https://www.analog.com/media/en/technical-documentation/data-sheets/AD8538_8539.pdf
 
-### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada. 
+### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
+
+- Para o AD8040
