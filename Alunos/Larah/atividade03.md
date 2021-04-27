@@ -26,7 +26,7 @@ Para todas simulações abaixo utilize a alimentação simétrica recomendada no
 
 AD8040
 
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD840.buffer.anp03.esquematico.PNG)
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.esquematico.PNG)
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vin.PNG)
 
