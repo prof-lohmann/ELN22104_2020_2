@@ -111,3 +111,17 @@ Aluno:
 ### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
 
 - Para o AD8040
+
+![image](https://user-images.githubusercontent.com/61738767/116319004-20a6e280-a78c-11eb-84f2-2291c6efde84.png)
+
+- Para o AD8539
+
+![image](https://user-images.githubusercontent.com/61738767/116319351-c1959d80-a78c-11eb-9f6b-b6e7a602fa91.png)
+
+*Considerações:* De acordo com os gráficos, o AD8040 saturou com ±5V e o AD8539 com ±2,5V.
+
+---
+
+### 3.Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
+
+- Para o AD8040
