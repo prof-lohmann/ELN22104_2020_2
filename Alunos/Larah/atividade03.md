@@ -32,6 +32,14 @@ AD8040
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vo.PNG)
 
+8040 SATURAÇÃO
+
+Aplicando 6V na entrada pode-se observar a saturação em +5V e -5V:
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.VIN.SATURACAO.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vo.SATURACAO.PNG)
+
 AD8539
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.esquematico.PNG)
@@ -40,6 +48,9 @@ AD8539
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.PNG)
 
+AD8539 SATURAÇÃO
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.SATURACAO.PNG)
 
 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os
 resistores para ter um ganho igual -100V/V.
