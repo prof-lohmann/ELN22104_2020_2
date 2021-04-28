@@ -83,17 +83,23 @@
 ##### c) Escolhendo o transistor M1 e calculando R2 e R3.
 
 > - Qual a corrente contínua necessária?
-
+> ######
 > - Quais os limites de tensão para este circuito?
-
+> ######
 > - Quais os os parâmetros L, W, uo, Cox, VA e Vt?
-
+> ######
 > - Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+> ######
 > - Quais as tensões máximas de operação deste componente?
+> ######
 > - Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
+> ######
 > - Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
+> ######
 > - Qual o valor da capacitância de gate?
+> ######
 > - Justifique a escolha dos resistores R2 e R3.
+> 
 
 ### Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
