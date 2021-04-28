@@ -70,33 +70,33 @@ Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, r
 ### Vamos projetar esse circuito de alimentação do AmpOp?
 Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V.<br>
 Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
-• Qual a Tensão VGS? Descreva como obter o valor.<br>
+<b>• Qual a Tensão VGS? Descreva como obter o valor.</b><br>
 `Pelo datasheet, Vgs para 1A é de 4,5V.`
 
 <p align="center"><img src="../../Imagens/Laboratório Final/2.png" align="center"><br></p><br>
 
 `Podemos obteresse valor fazendo a subtração da tensão de saída do AmpOp U1 e a tensão de saída da fonte (Vout). Olhando para o datasheet, podemos fazer VoutU1 = 4,5V + 15V, assim VoutU1 = 19,5V. O datasheet apresenta 20V, logo vemos que possui uma pequena variação do resultado teórico o que é completamente normal.`<br>
 
-• Qual a corrente de alimentação do AmpOp?<br>
+<b>• Qual a corrente de alimentação do AmpOp?</b><br>
 `O datasheet apresenta um valor de de 3 mA.`
 
 <p align="center"><img src="../../Imagens/Laboratório Final/3.png" align="center"><br></p><br>
 
-• Qual a tensão de alimentação do AmpOP?<br>
+<b>• Qual a tensão de alimentação do AmpOP?</b><br>
 `Pelo datasheet podemos ver que pode ser alimentado até 32V.`
 
 <p align="center"><img src="../../Imagens/Laboratório Final/4.png" align="center"><br></p><br>
 
-• Qual fator devo considerar para escolher o transistor Q1?<br>
+<b>• Qual fator devo considerar para escolher o transistor Q1?</b><br>
 `O beta a ser utilizado precisa ser de um valor consideravelmente alto.`
 
-• Qual valor da tensão do diodo zener D6?<br>
+<b>• Qual valor da tensão do diodo zener D6?</b><br>
 `Como VoutU1 = 19,5V, então precisamos utilizar uma tensão para o diodo zener D6 maior que esse valor, uma tensão na segunda dezena seria bom para trabalhar.`
 
-• Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?<br>
+<b>• Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?</b><br>
 `Teremos que ter em mente um diodo zener que tenha uma baixíssima corrente, então devemos usar um que tenha uma baixa resistência, utilizando dessa forma não haverá muito problema de variação de tensão.`
 
-• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?<br>
+<b>• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?</b><br>
 `Sim, se na minha alimentação possuir uma corrente maior que a mínima corrente que passa no AmpOp, o curcuito proposto funcionará adequadamente.`
 
 # (AINDA FALTA) <b>Projete o circuito de alimentação do AmpOp com as especificações acima.</b><br>
