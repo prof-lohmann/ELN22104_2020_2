@@ -277,9 +277,17 @@ R2=400
  A escolha do R3 foi pensada na corrente que vai circular nele. Que será na casa de mA. Tendo o valor de R3 calculei o R2 na formula.
  
  
- # Circuito montado:
+ # Circuito do primeiro bloco montado montado:
  
  ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/CIRCUITOCOMPLETO.png)
+ 
+ # Segundo Bloco
+ 
+ ![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/circuito_adic_controle_de%20corrente.png)
+ 
+ No segundo bloco foi projetado uma fonte de corrente com dois tjb pnp. Dessa forma minimizando ao máximo a tensão de linha sobre o diodo zener. Uma vez que a corrente não varia a tensão não vai variar igualmente.
+ 
+ 
  
  
 
@@ -303,6 +311,16 @@ podem causar danos aos demais dispositivos.
 Foldback é uma limitação de corrente. Quando a carga tenta provocar sobrecorrente da alimentação, a proteção foldback reduz a saída de tensão e corrente para bem abaixo dos limites normais de operação. Sob um curto-circuito , em que a tensão de saída é reduzida a zero, a corrente é tipicamente limitados a uma pequena fracção da corrente máxima.
 
 - Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador? 
+
+
+
+# Terceiro bloco
+
+
+![](https://github.com/tatimmtt/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Mateus_ft/Fonte_Linear/imagens/implementa%C3%A7%C3%A3o_prote%C3%A7%C3%A3o_corrente.png)
+
+
+
 
 
 
