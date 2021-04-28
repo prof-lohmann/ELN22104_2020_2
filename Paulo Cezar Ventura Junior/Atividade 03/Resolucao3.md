@@ -17,20 +17,20 @@ Tensão de offset: Máximo de 6 mV
 Corrente de polarização: 0,7 a 1,3 uA
 Consumo de corrente: 1,3 mA
 Ganho em malha aberta: Vo = -4,0 a 4,0 V, 74 dB
-Resistência de entrada: 6M Ohm
+Resistência de entrada: 6M Ohm e 2 pF
 ```
 
 ### AD8539
 ```
 Máxima e mínima tensão de alimentação: 2,7 a 5,5 V
-Tensão de modo comum: 0 a 2,7 V ---------- CORRIGIR
-CMRR: Vcm = 0 a 2,5 V
-Máxima e mínima tensão de entrada: 0 a 2,7 V
-Tensão de offset: Máximo de 13 uV
-Corrente de polarização: 15 a 25 pA
+Tensão de modo comum: 0 a 5,0 V
+CMRR: Vcm = 0 a 5,0 V
+Máxima e mínima tensão de entrada: 0 a 5,0 V
+Tensão de offset: Máximo de 15 uV
+Corrente de polarização: 25 a 60 pA
 Consumo de corrente: 180 uA
-Ganho em malha aberta: Não foi encontrado
-Resistência de entrada: Não foram encontrados dados
+Ganho em malha aberta: 0,1 a 7,0 V
+Resistência de entrada: 10k Ohm e 300 pF
 ```
 
 ## 2. Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
