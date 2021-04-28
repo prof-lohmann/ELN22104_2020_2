@@ -61,4 +61,5 @@ funcionando?
   Para os valores solicitados, o capacitor será C= (Imáx*T)/(Vr*2)= Icarga/(f*2*Vr)=9,167mF
 Considerando o uso de diodo de Si, temos que a queda de tensão em cada um é de 0,7V.
 
+- Circuito referência de tensão zener (R1 e D3):
 
