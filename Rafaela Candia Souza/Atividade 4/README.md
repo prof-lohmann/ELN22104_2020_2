@@ -61,7 +61,7 @@
 ##### b) Circuito referência de tensão zener (R1 e D3):
 
 > - Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
-> ##### A tensao que chegara ao circuito de referencia será entre 15,2 a 16,2V devido as quedas dos diodos e variacao do ripple. Como a saída desejada é 12V, utilizarei uma referencia de 12V, utilizando o zener 1N4742A. O resistor R1 deverá limitar uma corente de 21mA determinada pelo datasheet do zener. Logo, temos que no pior caso: 16,2/21m = 771,42 calculado, o resistor mais proximo comercialmente é 820 ohms. 
+> ##### A tensao que chegara ao circuito de referencia será entre 15,2 a 16,2V devido as quedas dos diodos e variacao do ripple. Como a saída desejada é 12V, utilizarei uma referencia de 6,2V, utilizando o zener1N4735. O resistor R1 deverá limitar uma corente de 41mA determinada pelo datasheet do zener. Logo, temos que no pior caso: 16,2/41m = 395,12 calculado, o resistor mais proximo comercialmente é 430 ohms. 
 > - Qual a influência da regulação de linha e da regulação de carga para este circuito?
 > ##### Manter uma tensao constante para a carga, evitar variacoes na carga e ruidos para a carga.
 > - Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?
@@ -80,14 +80,16 @@
 
 ##### Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
 ###### Podemos por um potenciometro em paralelo com o zener para regular a tensao de referencia.
-##### c) Escolhendo o transistor M1 e calculando R2 e R3.
 
+##### c) Escolhendo o transistor M1 e calculando R2 e R3.
+> ###### Mosfet IRF540
 > - Qual a corrente contínua necessária?
-> ######
+> ###### 1,1A
 > - Quais os limites de tensão para este circuito?
-> ######
+> ###### 16,2V
 > - Quais os os parâmetros L, W, uo, Cox, VA e Vt?
-> ######
+> ###### Vt = VGS - VDS -> VDS = VGS, logo Vt segundo o datasheet está entre 2 a 4V
+> ###### 
 > - Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
 > ######
 > - Quais as tensões máximas de operação deste componente?
@@ -104,10 +106,11 @@
 ### Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
 ##### O que é sobrecorrente? 
+> É uma carga de corrente que possui magnitude acima da qual o equipamento foi projetado para funcionar. 
 ##### Quais os impactos neste circuito?
+> trenar corrente do mosfet M1 e ampop de modo a queimar ambos.
 ##### O que deve fazer um circuito de proteção de sobrecorrente? 
-##### O que é a proteção foldback?
-
+> Evitar que o circuito opere com corrente acima do dimencionamento do circuito. Esta protecao pode ser feita de dois modos, desarmando o circuito para que pare de operar, ou diminuir a tensao para manter o circuito operado em 1,1A.
 
 ##### Exemplo de circuito:
 
