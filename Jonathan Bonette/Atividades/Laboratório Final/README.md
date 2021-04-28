@@ -52,7 +52,16 @@ Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, r
 
 ### Circuito proposto (01) para a alimentação do AmpOp:
 
-Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms? Quais problemas apresentam esse circuito? Podemos melhorar?
+<b>Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?</b><br>
+`Como a queda de tensão para VD4 e VD5 é de 0,7V, e Vin+ = 12Vrms, então: `
+
+<p align="center"><img src="../../Imagens/Laboratório Final/1.png" align="center"><br></p><br>
+
+<b>Quais problemas apresentam esse circuito?</b><br>
+`Sua tensão de ripple na realimentação do circuito do AmpOp, onde quando utilizado dessa forma, apresenta rúidos na saída. Então precisamos tomar cautela na escolha do capacitor, pois precisamos levar em conta o tempo de carga, que será longo se caso o capacitor for de alta capacitância.`<br>
+
+<b>Podemos melhorar?</b><br>
+`Alguns macetes podem ser aplicados como, adicionar no nosso circuito um regulador linear de tensão na saída do dobrador, fazendo a limitação da tensão de saída que irá alimentar o AmpOp e também escolhendo os componentes corretos para a operação, como por exemplo do capacitor.`<br>
 
 ### Circuito proposto (02) para a alimentação do AmpOp:
 
@@ -62,23 +71,67 @@ Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para u
 Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V.<br>
 Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
 • Qual a Tensão VGS? Descreva como obter o valor.<br>
+`Pelo datasheet, Vgs para 1A é de 4,5V.`
+
+<p align="center"><img src="../../Imagens/Laboratório Final/2.png" align="center"><br></p><br>
+
+`Podemos obteresse valor fazendo a subtração da tensão de saída do AmpOp U1 e a tensão de saída da fonte (Vout). Olhando para o datasheet, podemos fazer VoutU1 = 4,5V + 15V, assim VoutU1 = 19,5V. O datasheet apresenta 20V, logo vemos que possui uma pequena variação do resultado teórico o que é completamente normal.`<br>
+
 • Qual a corrente de alimentação do AmpOp?<br>
+`O datasheet apresenta um valor de de 3 mA.`
+
+<p align="center"><img src="../../Imagens/Laboratório Final/3.png" align="center"><br></p><br>
+
 • Qual a tensão de alimentação do AmpOP?<br>
+`Pelo datasheet podemos ver que pode ser alimentado até 32V.`
+
+<p align="center"><img src="../../Imagens/Laboratório Final/4.png" align="center"><br></p><br>
+
 • Qual fator devo considerar para escolher o transistor Q1?<br>
+`O beta a ser utilizado precisa ser de um valor consideravelmente alto.`
+
 • Qual valor da tensão do diodo zener D6?<br>
+`Como VoutU1 = 19,5V, então precisamos utilizar uma tensão para o diodo zener D6 maior que esse valor, uma tensão na segunda dezena seria bom para trabalhar.`
+
 • Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?<br>
-• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?<br><br>
-Projete o circuito de alimentação do AmpOp com as especificações acima.
+`Teremos que ter em mente um diodo zener que tenha uma baixíssima corrente, então devemos usar um que tenha uma baixa resistência, utilizando dessa forma não haverá muito problema de variação de tensão.`
+
+• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?<br>
+`Sim, se na minha alimentação possuir uma corrente maior que a mínima corrente que passa no AmpOp, o curcuito proposto funcionará adequadamente.`
+
+# (AINDA FALTA) <b>Projete o circuito de alimentação do AmpOp com as especificações acima.</b><br>
 
 ## Parte 02
 Calculando e dimensionando os componentes<br>
 a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.<br>
+`Analsando podemos ver que certamente D1 e D2 influenciarão diretamente na tensão final do meu circuito, para que não cause grande efeito, seria bom que essa queda de tensão não passasse de 1V, para não consumir a tensão do meu circuito, outras análises podem ser feitas analisando o datasheet. Para o C1, precisariamos olhar com base no retificador de onda, levando em consideração o período, olhando para o datasheet vemos que a Vr (reserva) = 53Vrms, assim, temos que: C = 9,17 mF`
+
+<p align="center"><img src="../../Imagens/Laboratório Final/5.png" align="center"><br></p><br>
+
 b) Circuito referência de tensão zener (R1 e D3):<br>
 • Quais fatores devo considerar para escolher o diodo zener para essa aplicação?<br>
+`Precisa ter um valor de Rz baixo para apresentar menores ruídos na saída.`
+
 • Qual a influência da regulação de linha e da regulação de carga para este circuito?<br>
+`Como ela mede a efetividade, temos que ter uma baixa variação na saída do circuito, ou seja, teremos que ter uma variação quase nula.`
+
 • Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?<br>
+`O zener vai estar limirtando a tensão de saída, por esse modo teremos que Vout tendendo a 0, então teremos que:`
+
+`Regulação de linha = ΔVout/ΔVin = 0/ΔVin = 0 V/V`
+
+`Dessa forma mesmo o valor da tensão sendo variado a saída terá pouca variação.`
+
+`Olhando para a outra regulação, vemos que:`
+
+`Regulação de carga = ΔVout/ΔIout = 0/ΔIout = 0 V/A`
+
+`Dessa forma mesmo que a carga varie, dado a regulação, permanecerá com o mesmo valor.`
+
 Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?<br>
-Sugestão de melhoria:<br>
+`Se pudermos fazer algo para que as correntes não interfiram na regulação, poderemos melhorar esse circuito, algo para deixar a corrente constante já serviria.`
+
+# (AINDA FALTA) Sugestão de melhoria:<br>
 
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem4.png" align="center"><br></p>
 
