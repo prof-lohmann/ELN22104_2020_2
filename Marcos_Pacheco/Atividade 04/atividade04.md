@@ -98,9 +98,9 @@ Na configuração do circuito em estudo, o Diodo Zener está limitando a tensão
 •	Podemos melhorar esse circuito? Quais problemas podem identificar nesta topologia? Sugestão de melhoria:
 ![figura16](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura16.jpg)\
 A fim de evitar problemas com variações de tensão no regulador de linha, o circuito poderia ser melhorado inserindo-se uma fonte de corrente sobre o Diodo Zener para evitar que a sua resistência interna sofra variação.\
-No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar?
+• No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar?
 ![figura17](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura17.jpg)\
-Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?\
+• Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?\
 Para deixar a fonte com valor ajustável, pode-se conectar um potenciômetro com resistência elevada entre os pontos Vref e o GND.\
 c)Escolhendo o transistor M1 e calculando R2 e R3.\
 • Qual a corrente contínua necessária?\
