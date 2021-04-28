@@ -43,11 +43,11 @@ Datasheet(https://www.ti.com/lit/ds/snosc16d/snosc16d.pdf)
 Vmax = 32V 
 
 - Qual fator devo considerar para escolher o transistor Q1?
-- 
+
 O beta precisa ser elevado.
 
 - Qual valor da tensão do diodo zener D6?
--
+
 ![tensao_diodo_zener](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20diodo%20zener.png)
 
 - Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito? 
@@ -55,3 +55,29 @@ O beta precisa ser elevado.
 O zener precisa da menor impedância possível para evitar oscilações na corrente.
 
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+
+Sim, uma vez que a corrente de alimentação é maior que a mínima corrente de alimentação o ampop funcionará.
+
+### Circuito de alimentação montado no LTSPICE
+
+![circuito_alimentação](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20de%20alimenta%C3%A7%C3%A3o%20ampop.png)
+
+![dobrador](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20dobrador%20de%20tens%C3%A3o.png)
+
+![simulacao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/simula%C3%A7%C3%A3o%20circuito%20de%20alimenta%C3%A7%C3%A3o.png)
+
+- Como pode-se obersevar, a tensão de pico é aproximadamente 32V, que seria o Vin_pico dobrado, por conta do dobrador de tensão e o capacitor C3 irá retificar este sinal. A tensão de ripple se encontra na faixa de 1,98V. Para corrigir o ripple , foi utilizado um regulador de tensão, composto pelo transistor bipolar de junção 2SC4081 e o diodo Zener EDZV24B.
+
+Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/35878/ROHM/2SC4081.html)
+![transistor_Q1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/transistor%20Q1%20beta.png)
+
+Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/448069/ROHM/EDZV24B.html)
+![Z6](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/DIODO%20ZENER%20D6%20DATASHEET.png)
+
+- Dito anteriormente, o transistor Q1 deveria ter um beta elevado e o diodo D6 com uma baixa impedância e uma corrente de operação mínima.  Logo, por conta desses parâmetros, esss foram os dispositivoss escolhidos.
+
+![tensao_regulada](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tensao%20de%20alimenta%C3%A7%C3%A3o%20regulada.png)
+
+- Como se pode observar, após a ação do regulador, a tensão de entrada do Ampop se estabilizou em 23,78V
+
+
