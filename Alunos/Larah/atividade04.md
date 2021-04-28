@@ -48,7 +48,7 @@ Máxima de 32V e mínima de +16V ou -16V.
 
 - Qual fator devo considerar para escolher o transistor Q1?
 
-O ganho deve ser alto. 
+O ganho deve ser alto para que a corrente de dreno seja baixa. 
 
 - Qual valor da tensão do diodo zener D6?
 
