@@ -71,7 +71,15 @@
 ### Foldback é o método usado em fontes de alimentação para protegê-las de situações atuais, como curto-circuito na saída com um fio ou conexão de muitos equipamentos à fonte de alimentação.
 ### Com a corrente normal (lado alto) limitando, há uma tampa de corrente dura que o suprimento é limitado para protegê-lo. À medida que a resistência da carga se aproxima de 0, a corrente é limitada a um valor fixo e a tensão começa a cair. Isso pode causar uma grande quantidade de dissipação de energia no suprimento.
 ### Com a proteção foldback, quando a tensão cai, o limite de corrente também cai de maneira bastante linear. Isso fornece proteção mais segura contra curtos-circuitos, pois um curto-circuito "muito ruim" resultará em muito pouco consumo de corrente, para que o suprimento não fique sentado assando na corrente máxima.
-
+## Componentes utilizados para a construção da fonte.
+### 1-Transformador de 220/12V;
+### 2-Diodos 1N4007;
+### 3-Diodos Zener DTDZV27 e EDZV11B;
+### 4-Capacitores de 2,5mF e 9,1mF;
+### 5-Transistores tipo BJT 2n3904 e 2SA1774;
+### 6-Transistores tipo MOS 2N7002 e IRF540;
+### 7-Aplificadores operacionais LM324;
+### 8- Resistores.
 
 
 
