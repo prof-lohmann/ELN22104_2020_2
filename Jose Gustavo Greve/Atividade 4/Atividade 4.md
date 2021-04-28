@@ -11,7 +11,7 @@
 ## 1.1) a)	Qual relação entre a tensão de alimentação do ampop e a tensão de saída? 
 ### Sabe-se que o ampop tem um limite de saturação, por isso a tensão de saída do ampop esta diretamente relacionada a tensão de alimentação, uma vez que a tensão máxima de saída será levemente menor que a tensão de alimentação do ampop.
 ### b) O que devemos considerar para esse circuito operar como um LDO? Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
-### Para que possa operar como LDO a queda de tensão na saída deve ser baixa, geralmente, 0,1V a 0,5V. A tensão de saída está diretamente ligada a tensão de referência e a relação dos resistores, logo Vout=Vref(1+R1/R2). as características elétricas do ampop devem ser retiradas do DATASHEET e para o amplificador em questão, LM324 a alimentação pode ser de +-16V ou 0 a 32Vcc. para se obter a tensão desejada se utilizou da tipologia dobrador de tensão, sendo assim a tensão será de VP = (2x12x2^1/2)-0,7=33,3 V.
+### Para que possa operar como LDO a queda de tensão na saída deve ser baixa, geralmente, 0,1V a 0,5V. A tensão de saída está diretamente ligada a tensão de referência e a relação dos resistores, logo Vout=Vref(1+R1/R2). as características elétricas do ampop devem ser retiradas do DATASHEET e para o amplificador em questão, LM324 a alimentação pode ser de +-16V ou 0 a 32Vcc. para se obter a tensão desejada se utilizou da tipologia dobrador de tensão, sendo assim a tensão será de VP = (2x12x√2)-0,7=33,3 V.
 ## 1.2) Circuito proposto (01) para a alimentação do AmpOp:
 ### a) Considerando a queda de tensão nos diodos D4 e D5, em 0,7 V, cada componente.
 ### Vcc=2*Vinp-VD4-VD5
