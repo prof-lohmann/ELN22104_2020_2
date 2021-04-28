@@ -104,6 +104,37 @@ Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Com
 Para deixar a fonte com valor ajustável, pode-se conectar um potenciômetro com resistência elevada entre os pontos Vref e o GND.
 
 
+c)Escolhendo o transistor M1 e calculando R2 e R3.
+• Qual a corrente contínua necessária?
+A corrente necessário conforme quesito de projeto é de 1,1 A.
+
+• Quais os limites de tensão para este circuito?
+Os limites de tensão para este circuito também foram especificados pelos quesitos de projeto em: Tensão de entrada + Vripple + Vdiodo = 15 + 1 + 0,7 ≈17 V. A tensão VGS, em M1,  está limitada pela regulação de tensão pelo Diodo Zener (D3) multiplicada pelo próprio ganho β (M1).
+
+• Ao escolher o transistor obtenha: Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+Data sheet utilizado: https://pdf1.alldatasheet.com/datasheet-pdf/view/250771/VISHAY/IRF540.html
+Foi escolhido o transistor IRF540.
+
+
+![figura18]
+
+
+Como não foram encontradas essas informações em pesquisas de datasheet desse componente (IRF540), foi procurado um modelo na internet para se inserir na biblioteca do simulador LTSPICE, a fim de se obter esses valores. Foi também utilizado como base teórica para entendimento dos parâmetros o capítulo 5 do livro base (CAPÍTULO 5.13):
+
+![figura19]
+
+• Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+
+• Quais as tensões máximas de operação deste componente?
+As tensões máximas de operação deste componente são VGS = +/- 20 V e VDS = 100 V. (valores disponíveis de datasheet)
+
+• Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
+
+• Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
+• Qual o valor da capacitância de gate?
+• Justifique a escolha dos resistores R2 e R3.
+
+
 
 
 
