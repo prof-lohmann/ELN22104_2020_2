@@ -51,21 +51,24 @@
 
 ### Parte 02: Calculando e dimensionando os componentes
 
-#### Considerando o circuito a cima responda:
-
 ##### a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
-
-###### blabla
+> Para dimencionar o Capacitor C1, devemos levar em conta o calculo do ripple para que sejá o valor estipulado de 1V, logo temos que:
+> ![ripple](https://user-images.githubusercontent.com/12564754/116431002-b9397300-a81d-11eb-8437-570f539e2952.png)
+> Como se trata de uma forma de onda retificada de forma completa, temos que nossa frequencia será duplicada.
+> Logo temos que: 1.1/120*1=C2f, nosso capacitor sera de 9.166uF.
+> Para os diodos D1 e D2, deve-se levar em consideracao a corrente especificada, logo escolhi o diodo 1N4007 que suporta este valor. 
 
 ##### b) Circuito referência de tensão zener (R1 e D3):
 
 > - Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
+> A tensao que chegara ao circuito de referencia será entre 15,2 a 16,2V devido as quedas dos diodos e variacao do ripple. Como a saída desejada é 12V, utilizarei uma referencia de 12V, utilizando o zener 1N4742A. O resistor R1 deverá limitar uma corente de 21mA determinada pelo datasheet do zener. Logo, temos que no pior caso: 16,2/21m = 771,42 calculado, o resistor mais proximo comercialmente é 820 ohms. 
 > - Qual a influência da regulação de linha e da regulação de carga para este circuito?
+> Manter uma tensao constante para a carga, evitar variacoes na carga e ruidos para a carga.
 > - Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?
+> Manter uma referencia fixa para o ampop e por consequencia, manter o circuito estavel.
 
 ##### Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
-
-###### blabla
+###### Sim. Por um capacitor em paralelo com o zener, para evitar a oscilacao de tensao.
 
 ##### Sugestão de melhoria:
 
@@ -76,7 +79,7 @@
 > ![figura5](https://user-images.githubusercontent.com/12564754/116311196-5c887a80-a781-11eb-9104-b52fe3d1118e.PNG)
 
 ##### Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
-
+###### Podemos por um potenciometro em paralelo com o zener para regular a tensao de referencia.
 ##### c) Escolhendo o transistor M1 e calculando R2 e R3.
 
 > - Qual a corrente contínua necessária?
@@ -100,6 +103,6 @@
 ##### O que é a proteção foldback?
 
 
-#####Exemplo de circuito:
+##### Exemplo de circuito:
 
 > ![figura6](https://user-images.githubusercontent.com/12564754/116313992-e5ed7c00-a784-11eb-83b3-58cb9f170a82.PNG)
