@@ -32,25 +32,35 @@ Aluno:
       
 - Qual relação entre a tensão de alimentação do AmpOp e a tensão de saída?
 
-*Resposta:* 
+*Resposta:* A relação que pode ser feita é a de que a tensão de saída estará limitada pelo valor de alimentação do próprio AmpOp por saturação. Portanto, deve-se ter atenção às próprias restrições de alimentação do AmpOp, uma vez que o respectivo valor de saída irá saturar quando essa tensão se aproximar daquele valor de alimentação, outro cuidado que se deve ter é no que diz respeito sobre a tensão de offset, o que pode prejudicar a avaliação de sinal de saída do AmpOp.
   
 - O que devemos considerar para esse circuito operar como um LDO?
 
-*Resposta:*
+*Resposta:* Deve-se observar a queda de tensão do `Vin` ao ser limitada pelo diodo zenner e a limitação do sinal de saída do AmpOp `Vout` causado pela saturação do próprio componente.
   
 - Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
 
-*Resposta:*
+*Resposta:* Deve-se, num primeiro momento, verificar as tensões máximas de alimentação do AmpOp, para que o sinal de saída não sature, fazendo uma análise prévia do datasheet do componente, e observar a influência do valor de `VGS`.
 
 
-   ![image](https://user-images.githubusercontent.com/61738767/116454439-602a0900-a836-11eb-910e-012f71b0c076.png)
-   
-   
+   ![image](https://user-images.githubusercontent.com/61738767/116483027-ac883f80-a85c-11eb-894b-8f2bda074649.png)
+ 
+      
 - Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
 
-*Resposta:* 
+     ![image](https://user-images.githubusercontent.com/61738767/116481637-f91e4b80-a859-11eb-867b-54a5e853c72b.png)
+
+
+*Resposta:* Assumindo que a queda de tensão em D4 e D5 sejam ambas 0,7V, tem-se:
+
+![image](https://user-images.githubusercontent.com/61738767/116482281-43ec9300-a85b-11eb-95b4-d75edfbe3f56.png)
+
   
 - Quais problemas apresentam esse circuito? Podemos melhorar?
 
-*Resposta:*
+*Resposta:* Deve-se se atentar com a tensão de ripple, devido a presença dos capacitores C2 e C3, por isso, o efeito ripple deve ser considerado quando forem escolhidos os valores destes capacitores. Por se tratar de um dobrador de tensão, pequenas variações no sinal de entrada podem provocar ruídos no sinal de saída ou até mesmo danificar o componente. Para corrigir este equívoco, basta escolher corretamente os valores de capacitores e adicionar um regulador linear de tensão na saída, reduzindo o ruído e limitando a tensão que alimentará o componente.
+
+
+   ![image](https://user-images.githubusercontent.com/61738767/116454439-602a0900-a836-11eb-910e-012f71b0c076.png)
+
   
