@@ -72,9 +72,15 @@ de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
 
 AD8040
 
-![](
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.esquematico.PNG)
 
-![](
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.op5m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.op50m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.op200m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.op500m.PNG)
 
 AD8539
 
