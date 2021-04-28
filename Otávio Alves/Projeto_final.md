@@ -80,4 +80,61 @@ Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/448069/ROHM/EDZV24B.h
 
 - Como se pode observar, após a ação do regulador, a tensão de entrada do Ampop se estabilizou em 23,78V
 
+## Parte 02 - Calculando e dimensionando os componentes
+![letra_a](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/letra%20a%20parte%2002.png)
+
+![capacitor_C1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20C1.png)
+
+- O modelo escolhido para D1 e D2 foi o 1N914, simplesmente por possuir uma tensão reversa dentros dos parâmetros que o circuito necessita, ou seja, uma tensão reversa maior do que a que foi calculada. Como se pode observar no datasheet, a tensão reversa do diodo é de 53V.
+
+Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/222796/HY/1N914.html)
+![tensao_reversa](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20reversa%201N914.png)
+
+- Simulando a corrente no diodo D1 para descobrir o tempo de condução
+
+![conduçao_1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%20diodo%20D1%20e%20D2.png)
+
+![conduçao_2](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%20diodo%20D1%20e%20D2%20parte%202.png)
+
+![conducao_3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20tempo%20de%20condu%C3%A7%C3%A3o.png)
+
+![letra_b](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/letra%20B%20parte%2002.png)
+
+O diodo zener deve possuir o menor ruído possível de regulação de linha. Uma baixa impedância pode ser viável.
+
+Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/36703/JGD/1N750.html)
+
+![D3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/DIODO%20D3%20datasheet.png)
+
+- Para este circuito não tem influência de regulação de carga porque o diodo zener esta ligada a saída não inversora do amp op e por esta não passa corrente. No entanto este circuito tem influencia de regulação de linha já que a tensão de entrada pode sofrer oscilações, neste caso o diodo zener tende a manter a tensão de saída constante. Sendo assim, aumenta ou diminui a queda de tensão sobre o resistor R1, o qual tem a função principal de limitar a corrente do zener. Tudo que variar no diodo zener será multiplicado pelo ganho e refletirá na saída (Vout).
+
+- Um problema nessa topologia seria as correntes que geram variação de tensão sobre o diodo zener. Uma solução seria um componente que manteria essa corrente constante, para evitar variações sobre o zener. Esse componente pode ser uma fonte de corrente.
+
+- Cálculo do resistor R1
+
+![resistor_r1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20R1.png)
+
+![fonte de corrente](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/projeto%20fonte%20de%20corrente.png)
+
+![transistor_mosfet](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/fonte%20de%20corrente%20e%20mosfet.png)
+
+- O transistor Q2 limita a tensão sobre o resistor R1, estes dois definem a corrente de saída da fonte de forma independente a tensão de alimentação. O resistor R5 causa a queda de tensão entre o coletor de Q2 e o terra, enquanto o transistor Q3 mantém o a tensão coletor-emissor de Q2 estável, o que reduz variações secundárias da corrente de saída com a tensão de alimentação. Para esta aplicação foi escolhido o transistor 
+BC557B.  O  R1 já foi dimensionado anteriormente e o R5 deve obedecer:
+
+R5 < (VIN – 2 * VBE) / (IE / hFE)
+
+No entanto Vin é menor que 2VBE por isso R5 admitiria um valor negativo. Diante disso R5= 20k. Foi escolhido este valor para R5 ter uma corrente mínima.
+
+- Podemos melhorar ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+
+Um potenciômetro entre Vref e GND deixaria o valor fonte mais ajustável.
+
+### Escolhendo o transistor M1 e calculando R2 e R3
+
+- Qual a corrente contínua necessária?
+A mesma corrente do projeto, 1A.
+
+- Quais os limites de tensão para este circuito?
+
+A limitação do circuito se dá pelo valor de entrada
 
