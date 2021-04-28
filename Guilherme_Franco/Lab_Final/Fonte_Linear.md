@@ -1,15 +1,15 @@
-# Atividade 3
+# Laboratório Final - **Fonte Linear**
 Aluno: 
 * Guilherme da Costa Franco
 
 ## Integração dos blocos de uma fonte linear
----
+
 ### Parte 01: Entendendo um regulador linear.
 
 ##### Conceitos importantes:
 
 1. Princípio de regulação de tensão;
-
+   - Trata-se de um circuito cujo objetivo é manter W!
 
 2. Tensão de saída e tensão de _ripple_;
 
