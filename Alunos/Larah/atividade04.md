@@ -78,3 +78,12 @@ Considerando o uso de diodo de Si, temos que a queda de tensão em cada um é de
 
 - Circuito referência de tensão zener (R1 e D3):
 
+## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
+
+- Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+  Como o nome já diz é quando a corrente que percorre um circuito eletrônico ultrapassa o valor esperado para a operação correta do circuito. Componentes com restrições de corrente máxima irão sobreaquecer e queimar, como resistores, transistores, diodos e etc.
+ 
+- O que deve fazer um circuito de proteção de sobrecorrente?
+  Impedir que a sobrecorrente chegue e afete o circuito projetado e demais componente.
+  
+- O que é a proteção foldback?
