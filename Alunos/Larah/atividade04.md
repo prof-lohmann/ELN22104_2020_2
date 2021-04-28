@@ -34,6 +34,7 @@ Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vri
 1V, considere as quedas de tensão nos diodos de 0,7V.
 
 - Qual a Tensão VGS? Descreva como obter o valor.
+
 Para uma corrente de saída de 1A tem-se a tensão VGS de 4,5V, informação obtida no datasheet do mosfet.
 
 - Qual a corrente de alimentação do AmpOp?
@@ -58,6 +59,7 @@ funcionando?
 1,1A. Justifique a escolha dos componentes.
 
   Considerando que os diodos estão funcionando como retificadores de onda completa, cada um irá operar em um semiciclo da alimentação, aplicando sempre uma corrente no mesmo sentido para a carga. Precisamos saber o valor dos capacitores a serem utilizados e a corrente de pico sobre os diodos.
+  
   Para os valores solicitados, o capacitor será C= (Imáx*T)/(Vr*2)= Icarga/(f*2*Vr)=9,167mF
 Considerando o uso de diodo de Si, temos que a queda de tensão em cada um é de 0,7V.
 
