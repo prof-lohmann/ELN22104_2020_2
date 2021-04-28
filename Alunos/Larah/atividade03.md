@@ -40,17 +40,11 @@ Aplicando 6V na entrada pode-se observar a saturação em +5V e -5V:
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.buffer.anp03.GRAFICO.Vo.SATURACAO.PNG)
 
-AD8539
+AD8539 SATURAÇÃO
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.esquematico.PNG)
 
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vin.PNG)
-
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.PNG)
-
-AD8539 SATURAÇÃO
-
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.SATURACAO.PNG)
 
 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os
 resistores para ter um ganho igual -100V/V.
@@ -84,9 +78,15 @@ AD8040
 
 AD8539
 
-![](
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.esquematico.PNG)
 
-![](
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op5m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op50m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op200m.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op500m.PNG)
 
 Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
