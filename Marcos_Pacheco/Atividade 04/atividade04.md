@@ -121,6 +121,16 @@ As tensões máximas de operação deste componente são VGS = +/- 20 V e VDS = 
 • Qual o valor da capacitância de gate?\
 • Justifique a escolha dos resistores R2 e R3.\
 
+>> Parte 03
+• Adicionando um circuito de proteção de sobre corrente ao regulador linear.\
+• Primeiramente reflita e pesquise sobre o que é sobrecorrente?\
+Sobrecorrente é a circulação de excesso de corrente no circuito de um aparelho elétrico, ou seja, quando uma corrente excede o valor nominal para o qual o circuito em questão foi projetado.\
+• Quais os impactos neste circuito?\
+Caso haja uma sobrecorrente no circuito, pode simplesmente ocasionar queima nos componentes ou provocar um funcionamento totalmente inesperado.\
+• O que deve fazer um circuito de proteção de sobrecorrente?\ 
+A função do circuito de proteção de sobrecorrente é impedir que essa corrente circule no circuito, protegendo os componentes de queima ou funcionamento anormal.\
+• O que é a proteção foldback?\
+É um tipo de proteção contra curto-circuito, evitando que a alimentação de entrada exceda as especificações de projeto. Quando ocorre uma sobrecorrente no circuito, a proteção foldback atua reduzindo o valor da tensão de saída e correntes a valores abaixo dos limites normais de funcionamento do circuito.
 
 ### REFERÊNCIAS
 https://www.embarcados.com.br/aprenda-a-analisar-o-ripple-da-sua-fonte/#:~:text=Uma%20fonte%20de%20alimenta%C3%A7%C3%A3o%20do,n%C3%ADvel%20DC%2C%20conhecida%20como%20ripple.&text=Calcula%2Dse%20tamb%C3%A9m%20o%20fator,sa%C3%ADda%20e%20o%20valor%20DC.
@@ -129,9 +139,9 @@ https://sites.unipampa.edu.br/gama/files/2019/07/matheuscortez-2017.pdf
 
 http://repositorio.unicamp.br/jspui/bitstream/REPOSIP/261542/1/Pelicia_MarcosMauricio_M.pdf
 
+https://eletrorede.eng.br/blog/2019/09/06/protecao-contra-sobrecorrente/#:~:text=O%20que%20%C3%A9%20sobrecorrente%3F,que%20excede%20o%20valor%20nominal.
 
-
-
+https://qastack.com.br/electronics/2931/what-is-foldback-short-circuit-protection-in-a-power-supply#:~:text=prote%C3%A7%C3%A3o%20contra%20curto%2Dcircuito%20foldback%3A%20%C3%A9%20um%20m%C3%A9todo%20usado%20em,equipamentos%20%C3%A0%20fonte%20de%20alimenta%C3%A7%C3%A3o.
 
 
 
