@@ -85,9 +85,11 @@ A escolha dos diodos D1 e D2, será realizada através de pesquisas em datasheet
 ![figura14](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura14.jpg)\
 Com alguns parâmetros calculados dos diodos, o componente selecionado foi o que segue (conforme pesquisa em datasheet - http://pdf.datasheetcatalog.net/datasheet/mcc/1N4006.pdf)
 ![figura15](https://github.com/MPP13/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura15.jpg)\
-•	Diodos escolhidos (D1 = D2) – 1N4001\
+•	Diodos escolhidos (D1 = D2) – 1N4007\
+Conforme poderá ser verificado no datasheet acima, o diodo escolhido pode suportar uma tensão reversa de até 1 kV, dando robustes e segurando de proteção para o circuito. Além de suportar a corrente de projeto.\
 •	Capacitor C1 = 9,17 mF\
-b) Circuito referência de tensão zener (R1 e D3):\
+
+>> b) Circuito referência de tensão zener (R1 e D3):\
 • Quais fatores devo considerar para escolher o diodo zener para essa aplicação?\
 Deve-se considerar um Diodo Zener com a menor taxa de ruído de regulação de linha (baixo valor de resistência interna). Ainda, observar que a tensão do Diodo Zener deve ser tal que supra a necessidade das tensões de saída e a queda de tensão VGS.\
 • Qual a influência da regulação de linha e da regulação de carga para este circuito?\
