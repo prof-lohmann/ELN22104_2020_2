@@ -40,7 +40,11 @@ Esse valor precisa ser somado a tensão de saída do mosfet para se definir a te
 
 - Qual a corrente de alimentação do AmpOp?
 
+Típica de 1.4mA e maxima de 3mA
+
 - Qual a tensão de alimentação do AmpOP?
+
+Máxima de 32V e mínima de +16V ou -16V.
 
 - Qual fator devo considerar para escolher o transistor Q1?
 
