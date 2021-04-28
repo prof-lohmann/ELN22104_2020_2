@@ -46,7 +46,7 @@
 > ##### Ajustar o resistor de polarizacao do zener para entregar somente o necessario para a polarizacao do mesmo.
 > - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
 > ##### Se o transistor escolhido para o circuito for por exemplo o BC541, o  circuito continuará funcionando.
-### Circuito cimulado para estudos:
+### Circuito simulado para estudos:
 > ![figura7](https://user-images.githubusercontent.com/12564754/116324739-0c1c1780-a797-11eb-8da8-ae303bf4ff67.PNG)
 
 ### Parte 02: Calculando e dimensionando os componentes
