@@ -1,4 +1,4 @@
-# Trabalho 04 Larah
+# Atividade 04 Larah
 
 -----------------------
 
@@ -50,3 +50,15 @@ minimizando os ruídos no circuito?
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
 aumento de 10mA na corrente de alimentação, o circuito proposto continuará
 funcionando?
+
+-------------------------------------------
+## Parte 02: Calculando e dimensionando os componentes
+
+- Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
+1,1A. Justifique a escolha dos componentes.
+
+  Considerando que os diodos estão funcionando como retificadores de onda completa, cada um irá operar em um semiciclo da alimentação, aplicando sempre uma corrente no mesmo sentido para a carga. Precisamos saber o valor dos capacitores a serem utilizados e a corrente de pico sobre os diodos.
+  Para os valores solicitados, o capacitor será C= (Imáx*T)/(Vr*2)= Icarga/(f*2*Vr)=9,167mF
+Considerando o uso de diodo de Si, temos que a queda de tensão em cada um é de 0,7V.
+
+
