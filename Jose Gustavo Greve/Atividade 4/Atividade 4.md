@@ -8,19 +8,6 @@
 ### Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, revise os conceitos de reguladores LDO e tenha em mãos os roteiros anteriores. 
 
 ## Parte 1: Entendendo um regulador linear
-### Princípios de regulação de tensão:
-### Tem a função de deixar a tensão do circuito aproximadamente constante em seus terminais de saída. Mesmo havendo mudanças em alguns dados do circuito.
-### Tensão de saída:
-### Após o retificador a tensão de saída é necessária ser constante.
-### Tensão de ripple: 
-### É uma ondulação de tensão fornecida pela fonte, que é dependente do valor da capacitância do capacitor e da corrente consumida pela carga.
-### Essa ondulação (ripple) surge após a retificação na saída da etapa do filtro.
-### Regulação de linha: 
-### É definido como a relação entre a variação da tensão de saída com a tensão de entrada.
-### Regulação de Carga: 
-### É definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.
-### Conceito de LDO – Low Dropout Voltage: 
-### É a diferença entre a tensão de saída nominal e a menor tensão de entrada necessária para que o regulador funcione corretamente.
 ## 1.1) a)	Qual relação entre a tensão de alimentação do ampop e a tensão de saída? 
 ### Sabe-se que o ampop tem um limite de saturação, por isso a tensão de saída do ampop esta diretamente relacionada a tensão de alimentação, uma vez que a tensão máxima de saída será levemente menor que a tensão de alimentação do ampop.
 ### b) O que devemos considerar para esse circuito operar como um LDO? Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
