@@ -20,3 +20,4 @@
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/Equa%C3%A7%C3%A3o%20do%20Vin12V.PNG)
 
 ### Proposta de Circuito 2
+#### a)
