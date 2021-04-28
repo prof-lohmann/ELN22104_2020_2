@@ -209,21 +209,87 @@ E a maior tensão aplicada nos resistores de ganho, é a tensão de saída, que 
 #### Ao escolher o transistor obtenha:
 
 * Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+
 L = 100 uH
+
 W = 100 uW
+
 u0 = Valor Padrão = 600 cm²/V/s
+
 C0x = KP/u0 = 41,68 mF/m²
+
 VA = 1/LAMBDA= 1/0.00291031 = 343,61 v
+
 Vt = 3.56362 V
 
 * Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+
+VGS(v) | Vt0(V)   | RDS teórico + (RS+RD modelo spice)(ohms) | RDS Simulação(ohms)
+------ | -------  | ---------------------------------------- | -------------------
+2      | 3,56362  | infinito | 4 Mega
+3      | 3,56362  | infinito | 4 Mega
+4      | 3,56362  | 0,137 | 0,156
+5      | 3,56362  | 0,073 | 0,074
+10     | 3,56362  | 0,051 | 0,051
+
+
 * Quais as tensões máximas de operação deste componente?
 
-A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão vDS não pode exceder 100 v.
+A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão VDS não pode exceder 100 v.
 
 * Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
-* Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
-* Qual o valor da capacitância de gate? 
+
+A simulação está de acordo com os valores do datasheet.
+
+
+* Qual o valor da capacitância de gate?
+
+CGS = Ciss - Crss = 1700p - 120p = 1580 pF típico.
+
+Justifique a escolha dos resistores R2 e R3.
+
+Foi escolhido um zener(D3) com tensão de zener de 6,2V, e devemos levar em conta que necessitamos de uma tensão por volta de 20 V, para alimentarmos 4,5 V de tensão VGS e 15 V na saída. Por esse motivo, optei por resistores na ordem de quilo-ohms oferecendo uma corrente maior na saída, com um ganho no ampop de (1+(25k/10k)) V/V.
+
+## Parte 03
+
+### Parte 03.1 Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+
+* Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+
+Excesso de corrente que ultrapassa valores nominais calculados no projeto. Possibilidade de queima de componentes do circuito, bem como excesso de corrente na carga, gerando possível queima e mal funcionamento.
+
+* O que deve fazer um circuito de proteção de sobrecorrente?
+
+Proteger carga e circuito, enquanto durar a sobrecorrente. 
+
+* O que é a proteção foldback?
+
+Quando um circuito está sendo alimentado em sobre-corrente, proteções normais tendem a diminuir a tensão até zero, porém elas mantém a corrente constante, dissipando grandes valores de potência nos componentes. O circuito com proteção de foldback surge para resolver esse problema.
+
+Figura 5 - Proteção Foldback.
+
+<img src="foldback.jpg" width="500">
+
+Referência: Training Texas; Fórum Training Texas; https://e2e.ti.com/support/power-management/f/power-management-forum/474341/tps54620-over-current-protection-foldback
+
+Olhando a curva da tensão de saída x corrente de saída durante a sobrecorrente, percebe-se como é importante a atuação da proteção foldback, que diminui correntes e tensões quase linearmente.
+
+Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
+
+Devido a condições externas e cenários inesperados, o LDO pode sofrer com uma corrente mais elevada, podendo danificar partes mais sensíveis do circuito, bem como gasto excessivo de energia. A proteção contra esse tipo de problema é muito importante para um LDO. Levando isso em consideração, podemos exemplificar esses circuitos com dois tipos muito usados de proteção. A proteção foldback citada acima e a proteção "brick-wall".
+
+A proteção "brick-wall", coloca um limite superior para a corrente fornecida pelo LDO. Quando esse limite é atingido, a saída para de ser regulada e é limitada por:
+
+V(out) = I(limite) * R(carga)
+
+O transistor próximo a saída, continuará dissipando potência desde que não ultrapasse a temperatua máxima da sua junção. Caso isso aconteça, um circuito de desligamento forçado por temperatura entra em ação.
+
+Um exemplo de LDO que segue essa topologia, é o TPS7A16 da Texas Instruments.
+Referência: Texas Instruments; https://www.ti.com/product/TPS7A16
+
+A proteção foldback, da mesma maneira que a proteção "brick-wall", coloca um limite superior para a proteção contra sobrecorrente, seu principal objetivo é diminuir a corrente linearmente com a tensão de saída, deixando a tensão de entrada constante, diminuindo a potência dissipada em cima do transistor de saída. Nessa topologia não há a necessidade de um circuito de desligamento forçado por temperatura.
+Temos como exemplo de um LDO com foldback o TLV717P da Texas Instruments.
+Referência: Texas Instruments; https://www.ti.com/product/TLV717P
 
 
 
