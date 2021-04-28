@@ -6,15 +6,6 @@
 
 ## Introdução 
 ### Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, revise os conceitos de reguladores LDO e tenha em mãos os roteiros anteriores. 
-## Componentes utilizados para a construção da fonte.
-### 1-Transformador de 220/12V;
-### 2-Diodos 1N4007;
-### 3-Diodos Zener DTDZV27 e EDZV11B;
-### 4-Capacitores de 2,5mF e 9,1mF;
-### 5-Transistores tipo BJT 2n3904 e 2SA1774;
-### 6-Transistores tipo MOS 2N7002 e IRF540;
-### 7-Aplificadores operacionais LM324;
-### 8- Resistores.
 
 ## Parte 1: Entendendo um regulador linear
 ## 1.1) a)	Qual relação entre a tensão de alimentação do ampop e a tensão de saída? 
