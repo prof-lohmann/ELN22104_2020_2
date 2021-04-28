@@ -88,8 +88,7 @@ Com alguns parâmetros calculados dos diodos, o componente selecionado foi o que
 •	Diodos escolhidos (D1 = D2) – 1N4007\
 Conforme poderá ser verificado no datasheet acima, o diodo escolhido pode suportar uma tensão reversa de até 1 kV, dando robustes e segurando de proteção para o circuito. Além de suportar a corrente de projeto.\
 •	Capacitor C1 = 9,17 mF\
-
->> b) Circuito referência de tensão zener (R1 e D3):\
+b) Circuito referência de tensão zener (R1 e D3):\
 • Quais fatores devo considerar para escolher o diodo zener para essa aplicação?\
 Deve-se considerar um Diodo Zener com a menor taxa de ruído de regulação de linha (baixo valor de resistência interna). Ainda, observar que a tensão do Diodo Zener deve ser tal que supra a necessidade das tensões de saída e a queda de tensão VGS.\
 • Qual a influência da regulação de linha e da regulação de carga para este circuito?\
@@ -108,20 +107,17 @@ c)Escolhendo o transistor M1 e calculando R2 e R3.\
 • Qual a corrente contínua necessária?\
 A corrente necessário conforme quesito de projeto é de 1,1 A.\
 • Quais os limites de tensão para este circuito?\
-Os limites de tensão para este circuito também foram especificados pelos quesitos de projeto em: Tensão de entrada + Vripple + Vdiodo = 15 + 1 + 0,7 ≈17 V. A tensão VGS, em M1,  está limitada pela regulação de tensão pelo Diodo Zener (D3) multiplicada pelo próprio ganho β (M1).
-• Ao escolher o transistor obtenha: Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+Os limites de tensão para este circuito também foram especificados pelos quesitos de projeto em: Tensão de entrada + Vripple + Vdiodo = 15 + 1 + 0,7 ≈17 V. A tensão VGS, em M1,  está limitada pela regulação de tensão pelo Diodo Zener (D3) multiplicada pelo próprio ganho β (M1).\
+• Ao escolher o transistor obtenha: Quais os os parâmetros L, W, uo, Cox, VA e Vt?\
 Data sheet utilizado: https://pdf1.alldatasheet.com/datasheet-pdf/view/250771/VISHAY/IRF540.html\
 Foi escolhido o transistor IRF540.
 ![figura18]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura18.jpg)\
 Como não foram encontradas essas informações em pesquisas de datasheet desse componente (IRF540), foi procurado um modelo na internet para se inserir na biblioteca do simulador LTSPICE, a fim de se obter esses valores. Foi também utilizado como base teórica para entendimento dos parâmetros o capítulo 5 do livro base (CAPÍTULO 5.13):
 ![figura19]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura19.jpg)\
-• Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V\
 • Quais as tensões máximas de operação deste componente?\
 As tensões máximas de operação deste componente são VGS = +/- 20 V e VDS = 100 V. (valores disponíveis de datasheet)\
-• Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.\
-• Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.\
 • Qual o valor da capacitância de gate?\
-• Justifique a escolha dos resistores R2 e R3.\
+De acordo com o datasheet 1.700 pF.
 
 >> Parte 03
 • Adicionando um circuito de proteção de sobre corrente ao regulador linear.\
