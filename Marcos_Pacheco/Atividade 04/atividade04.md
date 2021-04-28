@@ -109,11 +109,11 @@ A corrente necessário conforme quesito de projeto é de 1,1 A.\
 • Quais os limites de tensão para este circuito?\
 Os limites de tensão para este circuito também foram especificados pelos quesitos de projeto em: Tensão de entrada + Vripple + Vdiodo = 15 + 1 + 0,7 ≈17 V. A tensão VGS, em M1,  está limitada pela regulação de tensão pelo Diodo Zener (D3) multiplicada pelo próprio ganho β (M1).\
 • Ao escolher o transistor obtenha: Quais os os parâmetros L, W, uo, Cox, VA e Vt?\
-Data sheet utilizado: https://pdf1.alldatasheet.com/datasheet-pdf/view/250771/VISHAY/IRF540.html\
+Data sheet utilizado:https://pdf1.alldatasheet.com/datasheet-pdf/view/250771/VISHAY/IRF540.html\
 Foi escolhido o transistor IRF540.
-![figura18]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura18.jpg)\
+![figura18](https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura18.jpg)\
 Como não foram encontradas essas informações em pesquisas de datasheet desse componente (IRF540), foi procurado um modelo na internet para se inserir na biblioteca do simulador LTSPICE, a fim de se obter esses valores. Foi também utilizado como base teórica para entendimento dos parâmetros o capítulo 5 do livro base (CAPÍTULO 5.13):
-![figura19]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura19.jpg)\
+![figura19](https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura19.jpg)\
 • Quais as tensões máximas de operação deste componente?\
 As tensões máximas de operação deste componente são VGS = +/- 20 V e VDS = 100 V. (valores disponíveis de datasheet)\
 • Qual o valor da capacitância de gate?\
