@@ -12,7 +12,7 @@
 - Calculando Vcc
 
 ![calculo_vcc](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20vcc.png)
-- A desvantagem desse circuito acredito que seja o ripple de saída, já que a forma de onda de entrada é uma senoide. O capacitor C3 teria que ter um valor próximo ou similar ao capacitor usado para a retificação.
+- A desvantagem desse circuito acredito que seja o ripple de saída, já que a forma de onda de entrada é uma senoide. O capacitor C3 teria que ter um valor próximo ou similar ao capacitor usado para a retificação. A melhoria desse circuito seria a adição de um regulador linear para eliminar possíveis ruídos.
 
 ### Circuito proposto (02) para a alimentação do AmpOp:
 ![circuito02](https://user-images.githubusercontent.com/74318416/116098360-64f98c00-a681-11eb-86c3-de3b06bd58df.png)
