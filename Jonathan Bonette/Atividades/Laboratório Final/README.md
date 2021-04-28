@@ -102,8 +102,8 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
 # (AINDA FALTA FAZER O UPLOAD DA SIMULAÇÃO) <b>Projete o circuito de alimentação do AmpOp com as especificações acima.</b><br>
 
 ## Parte 02
-<b>Calculando e dimensionando os componentes<br>
-<b>a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.<br>
+<b>Calculando e dimensionando os componentes</b><br>
+<b>a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.</b><br>
 `Analsando podemos ver que certamente D1 e D2 influenciarão diretamente na tensão final do meu circuito, para que não cause grande efeito, seria bom que essa queda de tensão não passasse de 1V, para não consumir a tensão do meu circuito, outras análises podem ser feitas analisando o datasheet. Para o C1, precisariamos olhar com base no retificador de onda, levando em consideração o período, olhando para o datasheet vemos que a Vr (reserva) = 53Vrms, assim, temos que: C = 9,17 mF`
 
 <p align="center"><img src="../../Imagens/Laboratório Final/5.png" align="center"><br></p><br>
