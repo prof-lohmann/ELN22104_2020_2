@@ -32,7 +32,7 @@ Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, r
 <b>• Regulação de Carga;<br></b>
 `O regulador de carga, regula a tensão de saída quando diferentes cargas são conectadas, é dado pela variação da tensão de saída pela corrente de saída.`
 
-<b>• Conceito de LDO – Low Dropout Voltage<br><br></b>
+<b>• Conceito de LDO – Low Dropout Voltage<br></b>
 `Os reguladores lineares de baixa queda (LDO) são uma maneira simples e barata de regular uma tensão de saída que é alimentada por uma entrada de tensão mais alta em uma variedade de aplicações. Os LDO são diferenciados por sua capacidade de manter a regulação com pequenas diferenças entre a tensão de alimentação e a tensão de carga.`
 
 <b>Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema:<br></b>
@@ -99,7 +99,11 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
 <b>• Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?</b><br>
 `Sim, se na minha alimentação possuir uma corrente maior que a mínima corrente que passa no AmpOp, o curcuito proposto funcionará adequadamente.`
 
-# (AINDA FALTA FAZER O UPLOAD DA SIMULAÇÃO) <b>Projete o circuito de alimentação do AmpOp com as especificações acima.</b><br>
+<b>Projete o circuito de alimentação do AmpOp com as especificações acima.</b><br>
+
+<p align="center"><img src="../../Imagens/Laboratório Final/p1.png" align="center"><br></p><br>
+
+***Colocar a imagem da simulação do LtSpice***
 
 ## Parte 02
 <b>Calculando e dimensionando os componentes</b><br>
@@ -131,7 +135,8 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
 <b>Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?</b><br>
 `Se pudermos fazer algo para que as correntes não interfiram na regulação, poderemos melhorar esse circuito, algo para deixar a corrente constante já serviria.`
 
-# (AINDA FALTA FAZER O UPLOAD DA SIMULAÇÃO) Sugestão de melhoria:<br>
+<b>Sugestão de melhoria:</b><br>
+***Colocar a imagem da simulação do LtSpice***
 
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem4.png" align="center"><br></p>
 
@@ -197,6 +202,8 @@ Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Com
 `Com a aplicação de um circuito LDO, dependendo de falhas de projeto, condições adversas, o circuito pode sofrer correntes acima do limite além do gasto energético ser maior do que o esperado. Algumas coisas que o peojetista pode levar em consideração é a aplicação de proteções, como a própria foldback citada acima. `
 
 `Procurando na internet vemos que existe um catálogo extenso de LDOs que seguem a topologia juntamente com a proteção. Inclusive alguns alguns da prórpia Texas, muito utilizado por nés durante esse semestre.`
+
+***Colocar a imagem da simulação do LtSpice***
 
 <b>Exemplo de circuito: (Vide roteiro 01)</b><br>
 
