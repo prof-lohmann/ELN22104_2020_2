@@ -48,14 +48,22 @@ Máxima de 32V e mínima de +16V ou -16V.
 
 - Qual fator devo considerar para escolher o transistor Q1?
 
+O ganho deve ser alto. 
+
 - Qual valor da tensão do diodo zener D6?
+
+A tensão do zener precisa ser superior a tensão de saída do ampop, que nesse projeto precisa ser de aproximadamente 19,5V (saída de 15V somada da tensão Vgs do mosfet).
 
 - Como escolher o diodo zener D6, maximizando a eficiência energética e
 minimizando os ruídos no circuito?
 
+Para minimizar os ruídos no crcuito o zener deve possuir uma tensão baixa e com a menor variação posível, o que leva a escolher um diodo zener com resistência pequena.
+
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
 aumento de 10mA na corrente de alimentação, o circuito proposto continuará
 funcionando?
+
+Sim.
 
 -------------------------------------------
 ## Parte 02: Calculando e dimensionando os componentes
