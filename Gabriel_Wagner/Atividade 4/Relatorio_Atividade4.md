@@ -293,21 +293,6 @@ Referência: Texas Instruments; https://www.ti.com/product/TLV717P
 
 ## Parte 04 - Simulação
 
-Figura 6 - Circuito LTSpice.
-
-<img src="circuito.jpg" width="500">
-
-Figura 7 - Tensão Vin x Vout.
-
-<img src="vinxvout.jpg" width="500">
-
-Figura 8 - Tensão de alimentação dos ampops.
-
-<img src="vampop.jpg" width="500">
-
-Figura 9 - Tensão Vin x Vout. Simulando a sobrecorrente.
-
-<img src="vinxvoutprotecao.jpg" width="500">
 
 
 
