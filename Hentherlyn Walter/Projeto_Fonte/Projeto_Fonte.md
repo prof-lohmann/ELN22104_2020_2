@@ -4,7 +4,9 @@
 
 ### Circuito 1
 
-Primeira figura
+![image](https://user-images.githubusercontent.com/74205954/116479443-076a6880-a856-11eb-97f0-9dab844fc8a4.png)
+
+_Figura 1
 
 #### Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
 
@@ -27,7 +29,9 @@ Primeira figura
 
 #### Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
 
-Figura do circuito dobrador de tensão
+![image](https://user-images.githubusercontent.com/74205954/116479687-721ba400-a856-11eb-9fd8-a212af7cf0fe.png)
+
+_Figura 2: Circuito de alimentação 1 - dobrador de tensão.
 
    Para o circuito dobrador de tensão devemos utilizar a equação descrita abaixo:
     
@@ -46,9 +50,23 @@ Figura do circuito dobrador de tensão
 
 #### Alimentação do AmpOp: Considere AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V
 
-#### Qual a Tensão VGS? Descreva como obter o valor.
+![image](https://user-images.githubusercontent.com/74205954/116482020-b3ae4e00-a85a-11eb-93af-5c4fd1941b02.png)
+
+_Figura 3: Circuito de alimentação 2.
+
+#### Qual a tensão VGS? Descreva como obter o valor.
+
+   Sabendo que Iout deve ser 1 A, analisando o Datasheet do MOSFET podemos perceber que Vgs deve ser de aproximadamente 4V.
+   
+   ![image](https://user-images.githubusercontent.com/74205954/116484955-849adb00-a860-11eb-983f-4a80ed0eeca6.png)
+   
+   _Figura 4: Tensão Vgs - DataSheet Mosfet IRF540.
+   
+   Analisando o circuito podemos perceber que a tensão de saída do circuito (Vout) se dá pela soma entre a tensão Vgs do MOSFET e a tensão de saída do AmpOp. Sabendo disso, para encontrarmos a tensão Vgs, devemos subtrair a tensão de saída (Vout) da tensão de saída do AmpOp
 
 #### Qual a corrente de alimentação do AmpOp?
+
+
 
 #### Qual a tensão de alimentação do AmpOP?
 
@@ -61,17 +79,9 @@ Figura do circuito dobrador de tensão
 #### Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
 
 ## Parte 2
-
 #### A) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes
-
 #### B) Circuito referência de tensão zener (R1 e D3):
 ##### B.1) Quais fatores devo considerar para escolher o diodo zener para essa aplicação? 
-
-
 ##### B.2) Qual a influência da regulação de linha e da regulação de carga para este circuito?
-
-
 ##### B.3) Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear? 
-
-
 #### Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
