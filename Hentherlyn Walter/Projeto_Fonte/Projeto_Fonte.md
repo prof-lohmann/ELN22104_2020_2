@@ -4,17 +4,43 @@
 
 ### Circuito 1
 
+Primeira figura
+
 #### Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
+
+   A tensão de saída depende da tensão de alimentação do AmpOp, pois o AmpOp tende a saturar quando a tensão de saída se tende à tensão de alimentação.
 
 #### O que devemos considerar para esse circuito operar como um LDO?
 
+   Para este circuito operar como um LDO devemos utilizar a equação ilustrada abaixo.
+    
+   Vin >= Vout + Vdo
+    
+   Onde:
+   Vin - Tensão de entrada que é limitada pelo diodo Zenner escolhido.
+   Vout - Tensão de saída que é limitada pelo AmpOp escolhido.
+   Vdo - Tensão do Zenner
+
 #### Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
+
+   A tensão de alimentação do AmpOp deve ser no mínimo a soma da tensão de saída (Vout) com a tensão de polarização do mosfet (Vgs).
 
 #### Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
 
+Figura do circuito dobrador de tensão
+
+   Para o circuito dobrador de tensão devemos utilizar a equação descrita abaixo:
+    
+   Vcc = 2*Vin*sqrt(2) - VD4 - VD5
+   Vcc = 2*12*sqrt(2) - 0,7 - 0,7 = 32,54 V
+
 ####  Quais problemas apresentam esse circuito?
 
+   Este circuito apresenta ruído na tensão de saída devido à tensão de ripple existente.
+
 #### Podemos melhorar?
+
+  Podemos melhorar o desempenho do circuito adicionando um regulador linear na saída do dobrador para limitar a tensão de alimentação do AmpOp.
 
 ### Circuito 2
 
