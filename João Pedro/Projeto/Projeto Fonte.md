@@ -49,3 +49,14 @@ O modelo escolhido para D1 e D2 foram 1N4007G, de acordo com os parâmetros adot
 
 #### Levando em consideração o tempo de polarização do diodo, podendo ser calculado o _tcod_, sabendo que a tensão de polarização é de 0,7V, por fim, sabe-se a porcentagem do ciclo a ser usada.
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/tempo.PNG)
+
+### b) Apresentando o circuito
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/circui2.PNG)
+#### O diodo zenner deve possuir menor impedância, pois sua tensão varia muito, portanto, a escolha foi o diodo zenner 1N4733 possuindo uma tensão zennner 5,11V e corrente zenner 49mA.
+#### O diodo zenner tende a manter a tensão de saída constante. Sendo assim, aumenta ou diminuição da queda de tensão sobre o resistor R1, ao qual tem como função de limitar a corrente do zenner, Portanto, Tudo que variar no diodo zenner será multiplicado pelo ganho e refletirá na saída.
+
+#### Calculando o R1 temos que:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/Zenner.PNG)
+
+#### O transistor Q4 limita a tensão sobre o resistor R1, os mesmo definem a corrente de saída da fonte de forma independente a tensão de alimentação. O resistor R5 causa a queda de tensão entre o coletor de Q4 e o ground, enquanto o transistor Q3 mantém o a tensão _Vce_ de Q4 estável, reduzindo assim, variações secundárias da corrente de saída com a tensão de alimentação. Para esta aplicação foi escolhido o transistor BC53PA. O R1 já foi dimensionado anteriormente e o R5 deve obedecer:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/R5.PNG)
