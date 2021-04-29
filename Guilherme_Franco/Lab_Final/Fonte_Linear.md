@@ -63,4 +63,34 @@ Aluno:
 
    ![image](https://user-images.githubusercontent.com/61738767/116454439-602a0900-a836-11eb-910e-012f71b0c076.png)
 
+#### Considerando o AmpOp LM324, MOSFET IRF540, Vout = 15V, Iout = 1A, Vin+ = 12 Vrms, Vripple_pós_retificador = 1V e as quedas de tensão nos diodos de 0,7V:
+
+- Qual a Tensão VGS? Descreva como obter seu valor.
+
+*Resposta:*
+
+- Qual a corrente de alimentação do AmpOp?
+
+*Resposta:*
+
+- Qual a tensão de alimentação do AmpOp?
+
+*Resposta:*
+
+- Qual fator devo considerar para escolher o transistor Q1?
+
+*Resposta:*
   
+- Qual valor da tensão do diodo zener D6?
+
+*Resposta:*
+
+- Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
+
+*Resposta:*
+
+- Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+
+*Resposta:*
+
+### Parte 02: Calculando e dimensionando os componentes
