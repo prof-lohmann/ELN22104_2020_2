@@ -1,0 +1,53 @@
+## Nome: José Gustavo dos Santos Greve 
+## Professor: Daniel Lohmann 
+
+## Objetivos
+## Integração dos blocos de uma fonte linear.
+
+## Introdução 
+### Neste roteiro iremos integrar os circuitos estudados anteriormente, para isso, revise os conceitos de reguladores LDO e tenha em mãos os roteiros anteriores. 
+
+### Parte 1: Entendendo um regulador linear
+### Princípios de regulação de tensão:
+### Tem a função de deixar a tensão do circuito aproximadamente constante em seus terminais de saída. Mesmo havendo mudanças em alguns dados do circuito.
+### Tensão de saída:
+### Após o retificador a tensão de saída é necessária ser constante.
+### Tensão de ripple: 
+### É uma ondulação de tensão fornecida pela fonte, que é dependente do valor da capacitância do capacitor e da corrente consumida pela carga.
+### Essa ondulação (ripple) surge após a retificação na saída da etapa do filtro.
+### Regulação de linha: 
+### É definido como a relação entre a variação da tensão de saída com a tensão de entrada.
+### Regulação de Carga: 
+### É definido como a relação entre a variação da tensão de saída com a variação da corrente consumida pela carga.
+### Conceito de LDO – Low Dropout Voltage: 
+### É a diferença entre a tensão de saída nominal e a menor tensão de entrada necessária para que o regulador funcione corretamente.
+### 1.1) a)	Qual relação entre a tensão de alimentação do ampop e a tensão de saída? 
+### A tensão de saída sempre será limitada pela alimentação do ampop, bem como as limitações do próprio ampop em relação a tensão na saída, que podem restringir essa tensão em um valor menor que as tensões de alimentação.
+### b) O que devemos considerar para esse circuito operar como um LDO?
+### Na entrada não inversora do AmpOp tem-se conectado o diodo D3 (zener) que irá limitar esse sinal (V_in). Já a saída (Vout)  está limitada pelos valores de sua própria alimentação do AmpOp (para não saturar o sinal) e com os respectivos limites de saída que devem ser observados.
+### c) Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
+### As tensões de alimentação devem apresentar valores de modo a não saturar o sinal, que é constituído pela soma da tensão de saída e a tensão VGS.
+### 1.2) Circuito proposto (01) para a alimentação do AmpOp:
+### a) Considerando a queda de tensão nos diodos D4 e D5, em 0,7 V, cada componente (atentar ao valor de rms).
+### Vcc=2*Vinp-VD4-VD5
+### Vcc=(12*2√2)-1,4
+### Vcc=32,54 V
+### b)Quais problemas apresentam esse circuito? 
+### No circuito temos dois capacitores indicados, C2 e C3. Dessa forma para escolher seus valores,devemos levar em consideração os efeitos de ripple que irá ser inserido no sinal da tensão. 
+### Ainda, conforme calculado anteriormente o circuito é um dobrador de tensão, ou seja, pequenas variações do sinal de entrada Vin, pode provocar efeitos graves no funcionamento do AmpOp,
+### pois esse mesmo sinal será aplicado no VCC do AmpOp (podendo saturar o sinal saída ou mesmo danificá-lo permanentemente).
+### c) Podemos melhorar?
+### Para melhorar o circuito podemos fazer o balanço correto na escolha do capacitor, também podemos adicionar um regulador linear de tensão na saída do dobrador, limitando a tensão de saída que irá alimentar o ampop.
+### Parte 1.3)
+### Sabendo que o ampop possui um limite de saturação, desta forma a tensão de saída do ampop está diretamente relacionada à tensão de alimentação. A tensão máxima de saída será um pouco menor que a tensão de alimentação  do ampop.
+### Se a intenção for que o circuito consiga operar como LDO, precisamos que a queda de tensão na saída seja baixa, como por exemplo entre 0,1V e 0,5 V. Além disto, a tensão de saída está diretamente ligada a tensão de referência e à relação dos resistores, ou seja :
+### Vou= Vref (1+ R1/R2)
+### Em relação ao ampop, precisamos extrair as características elétricas do DATASHEET, já para o amplificador LM324, a alimentação de ± 16V ou de 0 a 32Vcc. Para encontrar a tensão esperada foi utilizada a tipologia dobrador de tensão, desta forma a tensão será de:
+### VP= (2*12*√2) -(0,7) = 33,3 V
+### Para saber  qual tensão teremos para um sinal Vin+ de 12Vrms e utilizando o circuito dobrador, quais problemas tem o circuito e como podemos melhorá-lo precisamos inicialmente achar o capacitor para o circuito, considerando sua corrente de 0,5A apenas para alimentação dos ampop, além dos valores abaixo:
+### Vp=33, 3V   f= 60Hz   Vr= 10% de Vp
+![figura01](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204.md/image.png)
+
+
+
+
