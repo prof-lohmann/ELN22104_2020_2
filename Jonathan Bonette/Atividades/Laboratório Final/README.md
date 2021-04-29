@@ -180,7 +180,7 @@ Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Com
 <b>Justifique a escolha dos resistores R2 e R3.</b><br>
 `Precisamos verificar quais são minhas tensões de entrada e saída do circuito proposto, como Vin = 12,5V e Vout = 15V (dados definidos antetiormente).`
 
-`Para um amplificador operacional não inversor, usamos as fórmulas pré-estabelecidas, dessa forma: R3 = 2kΩ e R2 = 400Ω.`
+`Para um amplificador operacional não inversor, usamos as fórmulas pré-estabelecidas, dessa forma devemos escolher um diodo em uma faixa que meu Rz dê o equivalente a aproximadamente 10Ω, levando em consideração a nossa Vout, onde influenciará o ganho, dessa forma: R2 = 14,2kΩ e R3 = 10kΩ.`
 
 ## Parte 03
 <b>Adicionando um circuito de proteção de sobre corrente ao regulador linear.</b><br>
