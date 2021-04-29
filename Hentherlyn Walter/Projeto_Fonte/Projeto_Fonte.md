@@ -35,7 +35,7 @@ _Figura 2: Circuito de alimentação 1 - dobrador de tensão.
 
    Para o circuito dobrador de tensão devemos utilizar a equação descrita abaixo:
     
-   Vcc = 2*Vin*sqrt(2) - VD4 - VD5
+   Vcc = 2*Vin,pico*sqrt(2) - Vdiodo4 - Vdiodo5
    Vcc = 2*12*sqrt(2) - 0,7 - 0,7 = 32,54 V
 
 ####  Quais problemas apresentam esse circuito?
@@ -56,32 +56,92 @@ _Figura 3: Circuito de alimentação 2.
 
 #### Qual a tensão VGS? Descreva como obter o valor.
 
-   Sabendo que Iout deve ser 1 A, analisando o Datasheet do MOSFET podemos perceber que Vgs deve ser de aproximadamente 4V.
+   Sabendo que Iout deve ser 1 A, analisando o Datasheet do MOSFET podemos perceber que Vgs deve ser de aproximadamente 4 V.
    
-   ![image](https://user-images.githubusercontent.com/74205954/116484955-849adb00-a860-11eb-983f-4a80ed0eeca6.png)
+   
    
    _Figura 4: Tensão Vgs - DataSheet Mosfet IRF540.
-   
-   Analisando o circuito podemos perceber que a tensão de saída do circuito (Vout) se dá pela soma entre a tensão Vgs do MOSFET e a tensão de saída do AmpOp. Sabendo disso, para encontrarmos a tensão Vgs, devemos subtrair a tensão de saída (Vout) da tensão de saída do AmpOp
 
 #### Qual a corrente de alimentação do AmpOp?
 
-
+   Através do Datasheet do AmpOp LM324, podemos observar que a corrente mínima de alimentação é de 3mA.
+   
+   
+   
+   _Figura 5: Corrente de alimantação - DataSheet LM324.
 
 #### Qual a tensão de alimentação do AmpOP?
 
+   Analisando o Datasheet percebemos que a tensão máxima de operação do é AmpOp LM324 é de 32V.
+   
+   
+   
+   _Figura 6: Tensão de alimantação - DataSheet LM324.
+
 #### Qual fator devo considerar para escolher o transistor Q1?
 
-#### Qual valor da tensão do diodo zener D6?
+É necessário utilizar um beta bastante elevado, para que a corrente de alimentação do Bjt seja muito menor que a do Zenner.
 
+#### Qual valor da tensão do diodo zener D6?
+   
+   Primeiramente devemos verificar qual deverá ser a tensão de saída do AmpOp. Analisando o circuito podemos perceber que a tensão de saída do AmpOp (Vop) se dá pela soma entre a tensão Vgs do MOSFET e a tensão de saída do circuito (Vout). 
+   
+   Vop = Vgs + Vout 
+   Vop = 4 + 15 = 19
+   
+   Desta forma, o valor escolhido para a tensão de Zenner deve ser maior que 19V. Pois assim o AmpOp receberá tensão suficiente e conseguirá fornecer 19V na sua saída.
+   
 #### Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito? 
 
-#### Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+   Para maximizarmos a eficiência energética e minimizarmos os ruídos do circuito devemos escolher um diodo Zenner com a menor resistência possível. Desta forma, mesmo que a corrente varie, a tensão de regulação do Zenner não irá variar tanto.
+
+#### Considere que, por alterações futuras no circuito, o AmpOp poderá ter um aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
+
+Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este aumento de corrente o circuito continuará funcionando.
 
 ## Parte 2
+
 #### A) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes
+
+   Os diodos precisam apresentar uma queda de tensão menor do que 1V, a fim de consumir a menor tensão possível do circuito. Para selecioná-lo devemos realizar alguns cálculos, como a tensão reversa (VD) e a corrente média (Imed).
+   
+   Vp = Vin * sqrt(2) = 12 * sqrt(2) = 16,97 V
+   VD = 2 * Vp = 2 * 16,97 = 33,94 V
+   
+   Imed = Icarga * ( 1 + pi * sqrt( Vp/ (2 * Vripple) )
+   
+   O capacitor deve ser escolhido com base no retificador, sendo assim:
+   
+   C1 = Icarga / (2*f*Vripple) =  1,1 / (2*60*1) = 9,17mF
+   
 #### B) Circuito referência de tensão zener (R1 e D3):
+
+   Calculando R1:
+   
+   Diodo 1N750 - VD = 5 V; Iz = 20 mA;
+   Vdiodo = 0,7 V
+   Vz = 4,7 V
+   
+   V = Vp - 2 * Vdiodo = 16,97 - 1,4 = 15,57 V
+   
+   R1 = (V - Vz) / Iz = (15,75 - 4,7) / 20m = 543,5 ohms
+
 ##### B.1) Quais fatores devo considerar para escolher o diodo zener para essa aplicação? 
+
+   Para escolhermos o Zenner, devemos considerar que ele deve fornecer tensão suficiente para o AmpOp e, além disso, devemos considerar que sua resistência deve ser baixa, para uma melhor regulação e maximização de sua eficiência.
+
 ##### B.2) Qual a influência da regulação de linha e da regulação de carga para este circuito?
+
+   A regulação de linha e de carga medem a eficiência do regulador, por isso projetamos o circuito para que ele apresente a menor variação detensão possível e assim a regulação de tensão e carga fique aproximadamente zero.
+
 ##### B.3) Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear? 
+
+   O diodo Zenner será responsável por limitar a tensão de saída a fim de que a variação da tensão de saída seja aproximadamente zero.
+
+  Reg.linha = ΔVout / ΔVin = 0 / ΔVin = 0 V/v
+  Reg.carga = ΔVout / ΔIout = 0 / ΔIout = 0 V/A
+   
 #### Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
+
+   
+
