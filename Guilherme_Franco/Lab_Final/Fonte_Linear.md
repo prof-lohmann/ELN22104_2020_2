@@ -182,27 +182,34 @@ b) Circuito referência de tensão zener (R1 e D3):
    |        10           |        0,051        |      0,051         |
    
    - Quais as tensões máximas de operação deste componente?
+    
    *Resposta:* De acordo com o datasheet do IR540, o `Vgs` máximo é de ±20V, enquanto que o `VDS`máximo não pode ultrapassar 100V.
    
    - Qual o valor da capacitância de gate?
+   
    *Resposta:* A capacitância de gate `Cgs` pode ser encontrada pela equação `Ciss = Cgd + Cgs`, no qual `Ciss = 1700pF` e `Cgd = Crss = 120 pF`, tem-se que `Cgs = 1580pF`.
    
    - Justifique a escolha dos resistores R2 e R3.
+   
    *Resposta:* Como a tensão de saída requisitado pelo projeto é 15V e a tensão de entrada regulada pelo diodo zener é de 12,5V, pode-se assumir que o melhor cenário, para se obter uma corrente maior na saída, seria utilizar resistores na faixa de kΩ.
  
 ---
    ### Parte 3 Adicionando um circuito de proteção de sobre corrente ao regulador linear
    
    - Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+   
    *Resposta:*
    
    - O que deve fazer um circuito de proteção de sobrecorrente?
+   
    *Resposta:*
    
    - O que é a proteção foldback?
+   
    *Resposta:*
    
    - Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
+   
    *Resposta:*
    
    
