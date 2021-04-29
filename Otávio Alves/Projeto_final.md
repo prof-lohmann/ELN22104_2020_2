@@ -92,6 +92,8 @@ Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/58830/DIODES/1N4007.h
 
 ![tensao reversa](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tensao%20reversa%201N4007.png)
 
+- Simulando a corrente no diodo D1 para obter o tempo de condução.
+
 ![condução](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%201N4007.png)
 
 ![calculo_condução](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20tempo%20de%20condu%C3%A7%C3%A3o.png)
@@ -155,7 +157,7 @@ Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 
 - Justifique a escolha dos resistores R2 e R3.
 
-![dimensionamento_R2_R3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/dimensionando%20R2%20e%20R3.png)
+![dimensionamento_R2_R3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20R2%20e%20R3.png)
 
 - Circuito montado
 
