@@ -161,7 +161,7 @@ Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 
 - Circuito montado
 
-![circuito_montado](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20montado%20parte%2002.png)
+![circuito_montado](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20montado%20parte%202.png)
 
 ## Parte 03 - Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
