@@ -22,6 +22,8 @@ AD8539: Tensão máxima de alimentação 5,5V e mínima 2,7V
 
 Para todas simulações abaixo utilize a alimentação simétrica recomendada no datasheet.
 
+----------------------------------------------------------------------------------
+
 ### 2.Simule um circuito seguidor de tensão com cada um dos ampops indicados e verifique os efeitos decorrentes da máxima e mínima tensão de entrada.
 
 AD8040
@@ -45,6 +47,8 @@ AD8539 SATURAÇÃO
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.esquematico.PNG)
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.buffer.anp03.GRAFICO.Vo.PNG)
+
+----------------------------------------------------------------------------------
 
 ### 3. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 
@@ -81,6 +85,8 @@ AD8539
 #### Conclusão
 
 Apesar de ambos possuirem ganhos na tensão de acordo com a topologia aplicada o AD8539 foi muito mais preciso.
+
+----------------------------------------------------------------------------------
 
 ### 4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
@@ -121,11 +127,11 @@ AD8539
 
 ![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op500m.PNG)
 
-### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
-pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
-você utilizaria? Justifique a sua resposta.
+----------------------------------------------------------------------------------
 
-AD8539 Por ter uma precisão muito melhor quea do AD8040.
+### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+
+AD8539 Por ter uma precisão muito melhor que a do AD8040.
 
 Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
 como subtrator.
