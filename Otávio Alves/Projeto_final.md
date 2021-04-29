@@ -1,4 +1,7 @@
-# PROJETO FINAL
+# PROJETO FINAL - FONTE LINEAR
+
+### OTÁVIO ALVES PEREIRA DA SILVA
+
 ## Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema: Qual relação entre a tensão de alimentação do ampop e a tensão de saída? O que devemos considerar para esse circuito operar como um LDO? Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
 ![figura01](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/figura%2001.png)
 - A tensão de saída do ampop será aproximadamente a tensão de alimentação. 
@@ -141,7 +144,17 @@ A limitação do circuito se dá pelo valor de entrada
 
 - Quais o parâmetros L, W, Uo, Cox, VA e Vt?
 
-![irf540](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/caracter%C3%ADsticas%20IRF540.png)
+Modelo SPICE(https://www.vishay.com/docs/90183/sihf540.lib)
+
+![irf540](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/PAR%C3%82METROS%20IRF540.png)
+
+- Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+
+Fórmula utilizada para os cálculos, retirada do livro SEDRA
+
+![SEDRA](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/Calculo%20Rds%20livro.jpeg)
+
+![calculoRDS](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20RDS.png)
 
 - Quais as tensões máximas de operação deste componente?
 
@@ -149,7 +162,7 @@ Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 
 ![tensao_operacao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20de%20opera%C3%A7%C3%A3o%20IRF%20540.png)
 
-- Qaul o valor da capacitância de gate?
+- Qual o valor da capacitância de gate?
 
 Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 
@@ -166,6 +179,12 @@ Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 - Vout e Iout
 
 ![Vout_Iout](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/Vout%20e%20Iout.png)
+
+- Tensão e corrente na saída em fase, praticamente sem ripple.
+
+![ripple](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/RIPPLE%20TENSAO%20DE%20SAIDA.png)
+
+Tensão de ripple na saída de aproximadamente 1.7mV.
 
 ## Parte 03 - Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
@@ -202,3 +221,7 @@ Circuitos LDO não foram projetados para correntes elevadas, logo, para esse tip
 - Tensão na carga R6
 
 ![cargaR6](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20sobre%20a%20carga%20R6.png)
+
+# CONCLUSÃO
+
+- Pode-se dizer que o circuito foi bem implementado, principalmente na fução de retificar o sinal. Os sinais de Vout e Iout e a tensão de ripple na saída demonstram que, apesar de não chegar no resultado ideal, foi muito satisfatório para a funcção que o circuito estava determinado a cumprir.
