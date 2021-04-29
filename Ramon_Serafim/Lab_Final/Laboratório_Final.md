@@ -66,7 +66,11 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.
 
 • **Qual a Tensão VGS? Descreva como obter o valor.**
 
-		Visualizar no datasheet para uma corrente de 1A. Tensão VGS para 1A é de 4V **(Colocar foto do datasheet)**
+
+Visualizar no datasheet do componente, encontrar o gráfico IDxVGS, encontrar a corrente desejada que nesse caso é 1A e traçar uma reta até encontrar a tensão que satisfaz a curva, nesse caso foi encontrado uma tensão VGS de 4V.
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/IDxVGS.PNG?raw=true">
+
 
 • **Qual a corrente de alimentação do AmpOp?**
 
@@ -164,6 +168,12 @@ Sim, utilizar uma fonte de corrente. A corrente  será constante no zener, a ten
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo
 zener D3. Vamos projetar?
 
+Utilizando transistores 2N2907 para fazer a fonte de corrente, suporta a corrente e tensão necessarias para o circuito. Corrente que passa no resistor R1 é a mesma que passa no D3 (em teoria). R5 acaba por ser um resistor grande, no mínimo 14kΩ.
+
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/Fonte%20corrente%20continua.PNG?raw=true">
+
+
 **Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?**
 
 Podemos colocar um circuito sobrecorrente que determina a faixa de operação da fonte.
@@ -216,15 +226,17 @@ Vt = 3.56362 V
 
 Segundo o datasheet, Vds possui limite de 100V e  Vgs possui limites de ±20V.
 
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/tensoes%20maximas.PNG?raw=true">
+
+
 **Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.**
 
-
-**Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.**
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/IDxVGS.PNG?raw=true">
 
 
 **Qual o valor da capacitância_de_gate?**
 
-
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/capacitancia%20de%20gate.PNG?raw=true">
 
 
 **Justifique a escolha dos resistores R2 e R3.**
@@ -384,26 +396,33 @@ Uma outra categoria de regulador de tensão que pode ser empregado no projeto de
 
 
 Link para as topologias:
+
 https://www.newtoncbraga.com.br/index.php/como-funciona/6102-art767.html
+
 
 
 
 Datasheets:
 
 AmpOp LM324:
+
 https://www.ti.com/lit/ds/symlink/lm324.pdf?ts=1618824027289&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLM324
 
 
 
+
 MOSFET IRF540:
+
 https://www.vishay.com/docs/91021/91021.pdf
 
 
 
 NPN BC547C:
+
 https://datasheetspdf.com/pdf/128408/ONSemiconductor/BC547C/1 
 
 
 
 1N4001:
+
 https://www.vishay.com/docs/88503/1n4001.pdf
