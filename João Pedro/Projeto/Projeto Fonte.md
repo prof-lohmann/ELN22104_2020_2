@@ -40,4 +40,9 @@
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/circ%20dobr.PNG)
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/Vripple.PNG)
 
-#### Pela escolha do trasistor TIP31 possuir um beta elevado e o diodo zenner 1N5361 com imppedância baixa, obteve um ripple baixo de 0,43V e estabelecendo uma tensão de alimentação sendo _Vcc_= 
+#### Pela escolha do trasistor TIP31 possuir um beta elevado e o diodo zenner 1N5361 com imppedância baixa, obteve um ripple baixo de 0,43V e estabelecendo uma tensão de alimentação sendo _Vcc_= 26,1V
+
+## Parte 2
+### Cosiderando os valores propóstos, VD sendo a tensão reversa e IDmed sendo a corrente média, temos:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/expre%C3%A7%C3%B5es.PNG)
+O modelo escolhido para D1 e D2 foram 1N4007G, de acordo com os parâmetros adotados, portanto, a tensão reversa _VD_ é maior do que a que foi calculada. A tensão reversa do diodo D1 e D2 são de 1000V.
