@@ -44,15 +44,25 @@ Vp=16.97V
 
 
 
+
 **Quais problemas apresentam esse circuito? Podemos melhorar?**
 
-		Esse circuito apresenta variação na tensão de ripple, isso ligado a alimentação do AmpOp pode ocasionar ruído na saída do circuito. Para melhorar podemos utilizar um regulador linear que ajuda a eliminar os ruídos do circuito.
+
+Esse circuito apresenta variação na tensão de ripple, isso ligado a alimentação do AmpOp pode ocasionar ruído na saída do circuito. Para melhorar podemos utiliz um regulador linear que ajuda a eliminar ruídos do circuito.    
+
+Circuito Dobrador de tensão:
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/dobredor%20de%20tensao%20sem%20reg.PNG?raw=true">
+
+Simulação Dobrador de tensão:
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/simula%C3%A7ao%20dobrador%20de%20tensao%20sem%20reg.PNG?raw=true">
 
 
-
-Vamos projetar esse circuito de alimentação do AmpOp?
+Vamos projetar esse circuito de alimentação do AmpOP?
 Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V.
 Pontos Importantes para iniciar o projeto responda justificando as escolhas.
+
 
 • **Qual a Tensão VGS? Descreva como obter o valor.**
 
@@ -85,6 +95,16 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.
 Projete o circuito de alimentação do AmpOp com as especificações acima.
 
 
+Circuito  Dobrador de tensão com regulador linear:
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/Dobrador%20de%20tens%C3%A3o%20com%20reg%20linear.PNG?raw=true">
+
+Simulação Dobrador de tensão com regulador linear:
+
+<img src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/simulacao%20dobrador%20de%20tensao%20com%20reg%20linear.PNG?raw=true">
+
+
+
 
 ## Parte 2
 
@@ -106,62 +126,120 @@ Projete o circuito de alimentação do AmpOp com as especificações acima.
 
 ​		Devemos analisar o pico de corrente em cima do diodo, na simulação estava apresentando 4A de pico, primeiramente escolhi o 1N4148 mas ele 		suporta um pico de 2A somente, após rever alguns diodos foi escolhido o 1N4001 que possui pico de corrente de 30A, utilizável para a aplicação que 		queremos.
 
+Circuito Retificador de onda:
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/Retificador%20de%20onda.PNG?raw=true">
+
+Simulação antes e pós retificador de onda (vermelho = pós retificador):
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/simula%C3%A7ao%20antes%20e%20p%C3%B3s%20retificador%20de%20onda.PNG?raw=true">
+
+Visualizando a tensão_de_ripple pós retificador:
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/simulacao%20vripple%20pos%20retificador.PNG?raw=true">
 
 
 **b) Circuito referência de tensão zener (R1 e D3):**
+
+
 **• Quais fatores devo considerar para escolher o diodo zener para essa aplicação?**
+
 		Menor ruído na saída, resultando em um diodo com resistência zener baixa.
 
-• **Qual a influência da regulação de linha e da regulação de carga para este circuito?**
+• **Qual a influência da regulação de linha e da regulação de carga para este circuito?**		
 
-• **Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?**
+Regulação de linha influência a estabilidade da fonte em relação a tensão de entrada, caso apresente muita oscilação nesse momento irá haver efeito cascata em todo o resto do circuito, afetando a saída do AmpOp, entre outros. Regulação de carga afeta a carga  própriamente dita, caso haja muito ruído em  cima da carga pode haver erro de leitura em alguns circuitos, como nesse caso utilizamos uma carga exemplar não haveria problema.
 
-​		regulacao de linha, oq faz a tensao de zener mudar, indepencia do zener precisa ser baixa para nao haver variaçao
 
-regulaçao de carga é a corrente que deixa de passar no zener e passa na carga, pode influenciar o circuito, geralmente diminuir, influencia na tensao de zener
+• **Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?**		
 
+Regulação de linha pode afetar a tensão de zener,  mostrando essa oscilação na saída. Para não apresentar essa variação a resistência de zener precisa ser baixa. Regulação de carga representa a corrente que deixa de passar no zener e vai para a carga,  pode influen no circuito, geralmente diminuir a tensão de zener.
 
 
 **Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?**
-		Sim, utilizar uma fonte de corrente. A corrente será constante em cima do zener portanto a tensão não varia.
 
+Sim, utilizar uma fonte de corrente. A corrente  será constante no zener, a tensão não varia.
 
 
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo
 zener D3. Vamos projetar?
 
+**Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?**
 
-
-Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+Podemos colocar um circuito sobrecorrente que determina a faixa de operação da fonte.
 
 
 
 **c)Escolhendo o transistor M1 e calculando R2 e R3.**
+
 **• Qual a corrente contínua necessária?**
+
 		O pré-requisito do projeto é que a corrente no transistor M1 seja 1A.
 
 
 
 **• Quais os limites de tensão para este circuito?**
+
 		O circuito fica limitado no valor de tensão retificado que fica por volta de 17V.
 
 
-
 Ao escolher o transistor obtenha:
-Quais os os parâmetros L, W, uo, Cox, VA e Vt?
-		Verificar .lib do transistor
-		L=100u W=100u
-		LAMBDA=0.00291031
 
-Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
+**Quais os os parâmetros L, W, uo, Cox, VA e Vt?**
 
 
-Quais as tensões máximas de operação deste componente?
-Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
-Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.
-Qual o valor da capacitância de gate?
-Justifique a escolha dos resistores R2 e R3.
-		Afim de encontrar 15V em Vout, calculamos o ganho na topologia do AmpOp não inversor para encontrar o resultado de 15V.
+Verificando a .lib juntamente com o datasheet podemos verificar os parâmetros.
+
+		
+L=100uH
+
+
+W=100uW
+
+		
+LAMBDA =  0.00291031	
+
+		
+u0 (valor padrão) = 600 cm²/V/s
+
+
+C0x = KP/u0 = 25,0081/600 = 41,68 mF/m²
+
+
+VA = 1/LAMBDA = 1/0.00291031 = 343,61 v
+
+
+Vt = 3.56362 V
+
+
+**Quais as tensões máximas de operação deste componente?**
+
+Segundo o datasheet, Vds possui limite de 100V e  Vgs possui limites de ±20V.
+
+**Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.**
+
+
+**Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos.**
+
+
+**Qual o valor da capacitância_de_gate?**
+
+
+
+
+**Justifique a escolha dos resistores R2 e R3.**
+
+Afim de encontrar 15V em Vout, calculamos o ganho na topologia do AmpOp não inversor para encontrar o resultado de 15V.
+
+Vout= ((R2/R3)+1)* Vin
+
+(Vout/Vin) - 1= R2/R3
+
+15/12 - 1= R2/R3
+
+R2/R3 = 1/4
+
+Utilizando resistores grandes para uma menor corrente, foi utilizado resistores de 25 e 100k.
 
 
 
@@ -170,28 +248,42 @@ Justifique a escolha dos resistores R2 e R3.
 ##### Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
 Cálculo do resistor saindo do ampop, VCC/(corrente desejada geralmente 10m) = R6
+
 		R6 = 23,64/10m
 		R6 = 2364Ω
 
 
-
 **Primeiramente reflita e pesquise sobre o que é sobrecorrente?**
+
 		Sobrecorrente é o excesso de corrente presente no circuito, quando excede o valor nominal. Pode ser classificada em curto-circuito e sobrecarga, a 		diferença das duas é o tempo de operação. Curto-circuito é um pico elevado de corrente em um espaço de tempo muito pequeno, já a sobrecarga é 		o valor da corrente acima da nominal por um longo tempo.
 
 
 
 **Quais os impactos neste circuito?**
+
 		Caso ocorra uma sobrecorrente independente do caso pode danificar os componentes do circuito e/ou diminuindo a vita útil do projeto junto com a 		eficiência do mesmo.
 
 
 
 **O que deve fazer um circuito de proteção de sobrecorrente?**
+
 		Um circuito de proteção deve interromper a corrente que circula no circuito de alguma maneira, dependendo do circuito de proteção, impor limites 		de corrente para não danificar os componentes.
 
 
 
 **O que é a proteção foldback?**
+
 		Proteção contra curto-circuito foldback: é um método usado em fontes de alimentação para protegê-las de situações como curto-circuito na saída 		com um fio ou conexão de muitos equipamentos à fonte de alimentação. Quando a tensão cai, o limite de corrente também cai de maneira linear. 		Isso fornece proteção mais segura contra curtos-circuitos, pois um curto-circuito "muito ruim" resultará em pouco consumo de corrente, para que o 		suprimento não fique recebendo uma corrente máxima. Foldback sobre a proteção de corrente é melhor e mais seguro do que apenas ter uma alta 		limitação de corrente lateral.
+
+Circuito Fonte Completa junto com proteção sobrecorrente:
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/fonte%20completa.PNG?raw=true">
+
+O valor do resistor na saída do AmpOp de proteção foi encontrado arbitráriamente, o Resistor de 100kΩ na prática é utilizado um potenciômetro de 100k.
+
+Demonstrando a tensão_de_ripple em cima da carga:
+
+<img  src="https://github.com/RamonSerafim/ELN22104_2020_2/blob/patch-2/Ramon_Serafim/Lab_Final/ripple%20de%20saida.PNG?raw=true">
 
 
 
