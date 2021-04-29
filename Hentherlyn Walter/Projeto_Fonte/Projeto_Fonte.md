@@ -129,7 +129,9 @@ _Figura 3: Circuito de alimentação 2 proposto.
    VD = 2 * Vp = 2 * 16,97 = 33,94 V
    Imed = Icarga * ( 1 + pi * sqrt( Vp/ (2 * Vripple) ) = 1 + pi * sqrt( 16,97 / (2 * 1) = 10,15 A
    
-   Datasheet1N4148
+   Para D1 e D2 foi escolhido o diodo 1N4148, que possue uma tensáo reversa minima de 100V.
+   
+   ![image](https://user-images.githubusercontent.com/74205954/116559074-6d96d000-a8d6-11eb-9f35-463889fb1e35.png)
    
    O capacitor deve ser escolhido com base no retificador, sendo assim:
    
@@ -165,7 +167,11 @@ _Figura 3: Circuito de alimentação 2 proposto.
 ##### B.4) Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
 
    O problema é a corrente que gera uma variação de tensçao no diodo Zenner. Poderia resolver casa fosse possível colocar algum componente que mantivesse a corrente constante.
-   
+ 
+### No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar?
+
+   ![image](https://user-images.githubusercontent.com/74205954/116562783-d895d600-a8d9-11eb-80d4-0c7c01679d8b.png)
+ 
 #### C) Escolhendo o transistor M1 e calculando R2 e R3.
 
 ##### C.1) Qual a corrente contínua necessária?
@@ -175,6 +181,24 @@ _Figura 3: Circuito de alimentação 2 proposto.
 ##### C.2) Quais os limites de tensão para este circuito?
 
    O limite é dado pela tensão de entrada.
-   
  
+##### C.3) Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+  
+   L = 100 uH
+   Vt = 3.56 V
+   VA = 1/LAMBDA= 1/0.00291031 = 343,6 v
+   W = 100 uW
+   u0 = Valor Padrão = 600 cm²/V/s
+   C0x = KP/u0 = 41,68 mF/m²
+  
+## Parte 3
+
+##### Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+
+   A sobrecorrente nada mais é do que o excesso de corrente que ultrapassa as valores nominais. Isso implica em danificar o circuito, podendo ocasionar a queima de alguns componentes.
+ 
+ #### O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback? O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback?
+   
+   O circuito de proteção de sobrecorrente deve ser capaz de proteger todo o circuito enquanto houver sobrecorrente.
+   A proteção foldback tende a diminuir a corrente enquanto houver o efeito da sobrecorrente, assim os componentes não geram tanta perda em potência.
    
