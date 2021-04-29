@@ -103,7 +103,54 @@ No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para p
 Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?\
 Para deixar a fonte com valor ajustável, pode-se conectar um potenciômetro com resistência elevada entre os pontos Vref e o GND.
 
+c)Escolhendo o transistor M1 e calculando R2 e R3.
+• Qual a corrente contínua necessária?
+A corrente necessário conforme quesito de projeto é de 1,1 A.
 
+• Quais os limites de tensão para este circuito?
+Os limites de tensão para este circuito também foram especificados pelos quesitos de projeto em: Tensão de entrada + Vripple + Vdiodo = 15 + 1 + 0,7 ≈17 V. A tensão VGS, em M1,  está limitada pela regulação de tensão pelo Diodo Zener (D3) multiplicada pelo próprio ganho β (M1).
+
+• Ao escolher o transistor obtenha: Quais os os parâmetros L, W, uo, Cox, VA e Vt?
+Data sheet utilizado: https://pdf1.alldatasheet.com/datasheet-pdf/view/250771/VISHAY/IRF540.html
+Foi escolhido o transistor IRF540.
+
+
+![figura18]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura18.jpg)
+
+
+
+Como não foram encontradas essas informações em pesquisas de datasheet desse componente (IRF540), foi procurado um modelo na internet para se inserir na biblioteca do simulador LTSPICE, a fim de se obter esses valores. Foi também utilizado como base teórica para entendimento dos parâmetros o capítulo 5 do livro base (CAPÍTULO 5.13):
+
+![figura19]( https://github.com/MPP13/ELN22104_2020_2/blob/patch-5/Marcos_Pacheco/Atividade%2004/figuras_atividade_04/figura19.jpg)
+
+L = 100 µm
+W = 100 µm
+µo = 600 cm2/Vs (valor default)
+Cox = KP/µo = 25,0081/600 = 41,68017 mF
+VA = LAMBDA = 0,00291031 V-1
++VTO = Vt = 3.56362 V
+
+• Quais as tensões máximas de operação deste componente?
+As tensões máximas de operação deste componente são VGS = +/- 20 V e VDS = 100 V. (valores disponíveis de datasheet)
+
+
+Parte 03
+• Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+
+• Primeiramente reflita e pesquise sobre o que é sobrecorrente? 
+Sobrecorrente é a circulação de excesso de corrente no circuito de um aparelho elétrico, ou seja, quando uma corrente excede o valor nominal para o qual o circuito em questão foi projetado.
+
+
+• Quais os impactos neste circuito?
+Caso haja uma sobrecorrente no circuito, pode simplesmente ocasionar queima nos componentes ou provocar um funcionamento totalmente inesperado.
+
+
+• O que deve fazer um circuito de proteção de sobrecorrente? 
+A função do circuito de proteção de sobrecorrente é impedir que essa corrente circule no circuito, protegendo os componentes de queima ou funcionamento anormal.
+
+
+• O que é a proteção foldback?
+É um tipo de proteção contra curto-circuito, evitando que a alimentação de entrada exceda as especificações de projeto. Quando ocorre uma sobrecorrente no circuito, a proteção foldback atua reduzindo o valor da tensão de saída e correntes a valores abaixo dos limites normais de funcionamento do circuito.
 
 
 
