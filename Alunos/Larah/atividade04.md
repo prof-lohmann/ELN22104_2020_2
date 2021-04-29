@@ -35,7 +35,7 @@ Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vri
 
 - Qual a Tensão VGS? Descreva como obter o valor.
 
-Para uma corrente de saída de 1A tem-se a tensão VGS de 4,5V, informação obtida no datasheet do mosfet.
+Para uma corrente de saída de 1A tem-se a tensão VGS de 4V, informação obtida no datasheet do mosfet.
 Esse valor precisa ser somado a tensão de saída do mosfet para se definir a tensão de saída do ampop.
 
 - Qual a corrente de alimentação do AmpOp?
@@ -52,24 +52,25 @@ O ganho deve ser alto para que a corrente de dreno seja baixa.
 
 - Qual valor da tensão do diodo zener D6?
 
-A tensão do zener precisa ser superior a tensão de saída do ampop, que nesse projeto precisa ser de aproximadamente 19,5V (saída de 15V somada da tensão Vgs do mosfet).
+A tensão do zener precisa ser superior a tensão de saída do ampop, que nesse projeto precisa ser de aproximadamente 19V (saída de 15V somada da tensão Vgs do mosfet).
 
-- Como escolher o diodo zener D6, maximizando a eficiência energética e
-minimizando os ruídos no circuito?
+- Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
 
-Para minimizar os ruídos no crcuito o zener deve possuir uma tensão baixa e com a menor variação posível, o que leva a escolher um diodo zener com resistência pequena.
+Para minimizar os ruídos no circuito o zener deve possuir uma tensão baixa e com a menor variação posível, o que leva a escolher um diodo zener com resistência pequena.
 
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
 aumento de 10mA na corrente de alimentação, o circuito proposto continuará
 funcionando?
 
-Sim.
+Sim, contanto que os valores minimos do datasheet sejam atendidos.
+
+- Projete o circuito de alimentação do AmpOp com as especificações acima.
+
 
 -------------------------------------------
 ## Parte 02: Calculando e dimensionando os componentes
 
-### Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
-1,1A. Justifique a escolha dos componentes.
+### Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
 
   Considerando que os diodos estão funcionando como retificadores de onda completa, cada um irá operar em um semiciclo da alimentação, aplicando sempre uma corrente no mesmo sentido para a carga. Precisamos saber o valor dos capacitores a serem utilizados e a corrente de pico sobre os diodos.
   
