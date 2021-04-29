@@ -144,7 +144,9 @@ Sim, se a corrente de alimentação for maior que a mínima corrente de alimenta
 
 * Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
 
-Os diodos D1 e D2 devem ter uma queda de tensão menor que 1 V, para que essa queda não consuma grande parte da tensão do circuito. Além disso, ambos devem poder dissipar mais que 18,7 W de potência, sem danificar o componente.
+Os diodos D1 e D2 devem ter uma queda de tensão menor que 1 V, para que essa queda não consuma grande parte da tensão do circuito. Além disso, ambos devem poder dissipar mais que 18,7 W de potência, sem danificar o componente. Outro problema são as correntes de pico durante o transitório, que podem aumentar a queda de tensão do diodo. O valor da corrente aumenta conforme o valor do capacitor de filtro.
+Um diodo como o 1N4001 suporta grandes picos de corrente sem aumentar muito sua queda de tensão direta.
+
 
 O capacitor C1 será escolhido com base no retificador de onda completa, levando em conta que o produto da capacitância e da resistência de carga são muito maiores que o período da onda. Deste modo temos que:
 
@@ -156,7 +158,7 @@ C = 9,17 mF
  
 * Quais fatores devo considerar para escolher o diodo zener para essa aplicação?
 
-A tensão de zener deve ser suficiente para fornecer a soma das tensões de saída e a tensão VGS desejada. Além disso sua tensão de zener deve ter valor Rz baixo para melhor regulação.
+A tensão de zener deve ser suficiente para fornecer as tensões de saída. Além disso o zener deve ter valor Rz baixo para melhor regulação.
 
 * Qual a influência da regulação de linha e da regulação de carga para este circuito?
 
@@ -169,7 +171,7 @@ O diodo zener estará limitando a tensão de saída, de modo que a variação de
 
 Regulação de linha = (delta Vout) / (delta Vin) = (0) / (delta Vin) = 0 V/V
 
-Então mesmo que a tensão de entrada varie, a de saída variará pouco.
+Então mesmo que a tensão de entrada varie, a tensão de saída variará pouco.
 
 O mesmo ocorre para o regulador de carga, que mesmo variando a carga, a regulação permanecerá a mesma.
 
@@ -197,13 +199,12 @@ Figura 4 - Espelho de corrente com potenciômetro.
 
 Para o transistor M1, foi especificado uma corrente de 1 A, sendo necessário um VGS de 4,5 V.
 
-Enquanto que para os resistores de ganho, a corrente deve ser baixa, de modo que a carga receba corrente suficiente. Uma corrente na ordem de micro amperes é suficiente.
-
+Enquanto que para os resistores de ganho, a corrente deve ser baixa, de modo que a carga receba corrente suficiente. Uma corrente na ordem de micro amperes é suficiente para esse exemplo.
 
 * Quais os limites de tensão para este circuito?
 
 As tensões que chegam nesse circuito estão limitadas pela tensão de entrada, que nesse momento estarão entre 15 e 16 V. É desejado que a tensão VDO nessa parte do circuito, que se resume nesse momento ao transistor MOS, seja a menor possível.
-A tensão VGS será limitada pela regulação da tensão de zener vezes o ganho.
+A tensão VGS será limitada pela saída do ampop menos a tensão de saída.
 E a maior tensão aplicada nos resistores de ganho, é a tensão de saída, que para o projeto vale 15 V.
 
 #### Ao escolher o transistor obtenha:
@@ -241,14 +242,13 @@ A tensão VGS do IR540 não pode exceder +-20 V, enquanto que sua tensão VDS n�
 
 A simulação está de acordo com os valores do datasheet.
 
-
 * Qual o valor da capacitância de gate?
 
 CGS = Ciss - Crss = 1700p - 120p = 1580 pF típico.
 
 Justifique a escolha dos resistores R2 e R3.
 
-Foi escolhido um zener(D3) com tensão de zener de 6,2V, e devemos levar em conta que necessitamos de uma tensão por volta de 20 V, para alimentarmos 4,5 V de tensão VGS e 15 V na saída. Por esse motivo, optei por resistores na ordem de quilo-ohms oferecendo uma corrente maior na saída, com um ganho no ampop de (1+(25k/10k)) V/V.
+Foi escolhido um zener(D3) com tensão de zener de 6,2V com RZ valendo 10 ohms. Devemos levar em conta que necessitamos de uma tensão por volta de 15 V na saída. Por esse motivo, optei por resistores na ordem de quilo-ohms oferecendo uma corrente maior na saída, com um ganho no ampop de (1+(14,2k/10k)) V/V.
 
 ## Parte 03
 
@@ -291,6 +291,23 @@ A proteção foldback, da mesma maneira que a proteção "brick-wall", coloca um
 Temos como exemplo de um LDO com foldback o TLV717P da Texas Instruments.
 Referência: Texas Instruments; https://www.ti.com/product/TLV717P
 
+## Parte 04 - Simulação
+
+Figura 6 - Circuito LTSpice.
+
+<img src="circuito.jpg" width="500">
+
+Figura 7 - Tensão Vin x Vout.
+
+<img src="vinxvout.jpg" width="500">
+
+Figura 8 - Tensão de alimentação dos ampops.
+
+<img src="vampop.jpg" width="500">
+
+Figura 9 - Tensão Vin x Vout. Simulando a sobrecorrente.
+
+<img src="vinxvoutprotecao.jpg" width="500">
 
 
 
