@@ -42,7 +42,7 @@
 ![figura5](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/Figura%205%20atividade%204.PNG)
 ### Tensão de saída(Vout) após inclusão de alguns componentes.
 ![figura6](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/Figura%206%20atividade%204.PNG)
-### Observa-se que a tensão Vout está com um pequeno ripper na saída de aproximadamente 20uV. A alimentação do amplificador pode ser melhorada colocando os capacitores C2 E C3 de maior valor no dobrador de tensão o que diminuirá consideravelmente o ripper, mas com valores cada vez maior o tempo para entrarem regime permanente também aumenta tornando-se elevado demais. outra forma é incluir um transistor com alto ganho E com um pequeno capacitor o que deverá deixar a tesão com menor ripper, além de incluir um potenciômetro em paralelo com D6 para regular a fonte de 0 a 27V.
+### Verifica-se que a tensão Vout está com um pequeno ripper na saída de aproximadamente 20uV. Para melhorar a alimentação do amplificador pode ser colocado os capacitores C2 E C3 de maior valor no dobrador de tensão o que diminuirá o ripper, porém com valores cada vez maiores o tempo para entrarem regime permanente também aumenta tornando-se elevado demais. Outra maneira é incluir um transistor com alto ganho e com um pequeno capacitor o que deverá deixar a tesão com menor ripper, além disso incluir um potenciômetro em paralelo com D6 para regular a fonte de 0 a 27V.
 ## Parte 02 Calculando e dimensionando outros componentes.
 ### a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =1,1A. (Vide roteiro 02)
 ### b) Circuito referência de tensão zener (R1 e D3): Ver roteiro 03. Podemos melhorar esse circuito?
@@ -55,18 +55,18 @@
 ![figura10](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/Figura%2010.PNG)
 ### Tensão de saída do regulador após inserção de uma carga de 15 Ohms para simular uma I=1A.
 ![figura11](https://github.com/JoseGustavoGreve/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Jose%20Gustavo%20Greve/Atividade%204/Figura11.PNG)
-### Podemos verificar que corrente de saída realmente está próxima a 1A e Vr está em, aproximadamente, 7,5uV. o que permite verificar que a tensão RMS quase não sofreu alteração com a inclusão da carga.
+### Podemos observar que a corrente de saída realmente está próxima a 1A e Vr está perto de 7,5uV. o que possibilita ver que a tensão RMS quase não sofreu alteração com a inclusão da carga.
 ### Quais problemas podemos identificar nesta topologia? Sugestão de melhoria:
-### O principal problema da fonte de corrente do circuito está em depender do hfe e nas pequenas diferenças características de cada transistor fazendo com que possa haver uma leve variação de tensão VCE. Uma forma de melhorar o circuito seria usar um potenciômetro em paralelo com o diodo D3 o que permitiria ter um melhor controle sobre a tensão de saída.
+### Um dos principais problemas da fonte de corrente do circuito está em precisar do hfe e nas pequenas diferenças características de cada transistor, formando uma leve variação de tensão VCE. Uma maneira de melhorar o circuito seria usar um potenciômetro em paralelo com o diodo D3 o que faz com que tenha um melhor controle sobre a tensão de saída.
 
 ## Parte 03
 ### Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 ### a) Primeiramente reflita e pesquise sobre o que é sobrecorrente?
-### Sobrecorrente é definida como sendo qualquer corrente elétrica que flui por um equipamento com magnitude acima da qual o equipamento foi projetado para funcionar. As sobrecorrentes podem ser sob a forma de uma sobrecarga ou curto-circuito.
+### A definição de sobrecorrente é qualquer corrente elétrica que flui por um equipamento com magnitude acima da qual o equipamento foi projetado para funcionar. As sobrecorrentes podem ser sob a forma de uma sobrecarga ou curto-circuito.
 ### b) Quais os impactos neste circuito?
-### Uma elevada corrente num circuito certamente queimará alguns componentes podendo ser os diodos, transistores, resistores ou até mesmo o transformador que outrora fora projetado para um limite máximo de 2A, mas com a concepção feita no circuito com proteção de sobrecorrente a queima dificilmente ocorrerá, uma vez que foi feito um circuito para proteção da fonte e caso haja elevação na carga ou um curto circuito na saída da fonte está ira diminuir a tensão de saída para que não aconteça nenhum problema.
+### Uma elevada corrente num circuito irá queimará alguns componentes podendo ser os diodos, transistores, resistores, mas com a concepção feita no circuito com proteção de sobrecorrente a queima raramente ocorrerá, sendo que foi feito um circuito para proteção da fonte e caso tenha elevação na carga ou um curto circuito na saída da fonte está ira diminuir a tensão de saída para que não ocorra nenhum problema.
 ### c) O que deve fazer um circuito de proteção de sobrecorrente?
-### Como diz a nomenclatura o circuito deve ser capaz de atuar quando a corrente na saída seja maior que a projetada para o circuito seja por sobrecarga ou por curto circuito. Para o projeto em questão a fonte foi projetada para 15W, 1A tendo seu limite de atuação quando a corrente do circuito ultrapassar 1,2A.
+### O circuito deve ser capaz de atuar quando a corrente na saída seja maior que a projetada para o circuito seja por sobrecarga ou por curto circuito. Para o projeto em questão a fonte foi projetada para 15W, 1A tendo seu limite de atuação quando a corrente do circuito ultrapassar 1,2A.
 ### d) O que é a proteção foldback? Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o que devemos levar em consideração para o regulador?
 ### Foldback é o método usado em fontes de alimentação para protegê-las de situações atuais, como curto-circuito na saída com um fio ou conexão de muitos equipamentos à fonte de alimentação.
 ### Com a corrente normal (lado alto) limitando, há uma tampa de corrente dura que o suprimento é limitado para protegê-lo. À medida que a resistência da carga se aproxima de 0, a corrente é limitada a um valor fixo e a tensão começa a cair. Isso pode causar uma grande quantidade de dissipação de energia no suprimento.
