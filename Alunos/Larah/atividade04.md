@@ -103,11 +103,17 @@ No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para p
 
 • Qual a corrente contínua necessária? 
 
+Corrente de 1A solicitada para o projeto.
+
 • Quais os limites de tensão para este circuito? 
+
+Objetivo de 15V na saída.
 
 Ao escolher o transistor obtenha: 
 
 Quais os os parâmetros L, W, uo, Cox, VA e Vt? 
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/M1.parametros.PNG)
 
 Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V 
 
