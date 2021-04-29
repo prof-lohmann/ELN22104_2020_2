@@ -77,7 +77,7 @@ Sim.
   
 Pelos valores de tensão reversa, e correntes necessárias pode-se usar o diodo 1n5400.
 
-![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/D1eD2.1n5400.PNG)
+![d](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/D1eD2.1n5400.PNG)
 
 b) Circuito referência de tensão zener (R1 e D3):
  • Quais fatores devo considerar para escolher o diodo zener para essa aplicação? 
