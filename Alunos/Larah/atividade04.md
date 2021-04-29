@@ -125,10 +125,13 @@ Justifique a escolha dos resistores R2 e R3
 ## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
 - Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
+
   Como o nome já diz é quando a corrente que percorre um circuito eletrônico ultrapassa o valor esperado para a operação correta do circuito. Componentes com restrições de corrente máxima irão sobreaquecer e queimar, como o mosfet e o ampop da fonte.
  
 - O que deve fazer um circuito de proteção de sobrecorrente?
+
   Impedir que a sobrecorrente chegue e afete o circuito projetado e demais componente.
   
 - O que é a proteção foldback?
+
   É um sistema de proteção de sobre corrente, ele diminui a corrente enquanto diminui a tensão que vai para a carga, isso possibilita que no nosso circuito por exemplo o mosfet não sobre aqueça. Pois caso o dispositivo de proteção de corrente não fosse do tipo foldback provavelmente a tensão que iria para a carga iria diminuir enquanto a corrente se manteria estática, com isso a alta potência dissipada no mosfet do circuito iria se manter enquanto o surto de tensão continuasse. Já com o foldback não pois com a corrente diminuindo linearmente junto a potência dissipada no mosfet iria cair e poderiamos economizar com dissipadores de calor no mosfet.
