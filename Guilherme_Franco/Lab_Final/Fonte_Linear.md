@@ -191,7 +191,7 @@ b) Circuito referência de tensão zener (R1 e D3):
    
    - Justifique a escolha dos resistores R2 e R3.
    
-   *Resposta:* Como a tensão de saída requisitado pelo projeto é 15V e a tensão de entrada regulada pelo diodo zener é de 12,5V, pode-se assumir que o melhor cenário, para se obter uma corrente maior na saída, seria utilizar resistores na faixa de kΩ.
+   *Resposta:* Como a tensão de saída requisitado pelo projeto é 15V e a tensão de entrada regulada pelo diodo zener é de 12,5V, pode-se assumir que o melhor cenário, para se obter uma corrente maior na saída, seria recomendado utilizar resistores na faixa de kΩ.
  
 ---
    ### Parte 3 Adicionando um circuito de proteção de sobre corrente ao regulador linear
