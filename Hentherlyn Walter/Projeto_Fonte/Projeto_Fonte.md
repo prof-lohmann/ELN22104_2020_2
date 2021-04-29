@@ -162,9 +162,19 @@ _Figura 3: Circuito de alimentação 2 proposto.
   Reg.linha = ΔVout / ΔVin = 0 / ΔVin = 0 V/v
   Reg.carga = ΔVout / ΔIout = 0 / ΔIout = 0 V/A
    
-#### Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
+##### B.4) Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
 
    O problema é a corrente que gera uma variação de tensçao no diodo Zenner. Poderia resolver casa fosse possível colocar algum componente que mantivesse a corrente constante.
    
+#### C) Escolhendo o transistor M1 e calculando R2 e R3.
 
+##### C.1) Qual a corrente contínua necessária?
 
+   A mesma corrente do projeto, 1A.
+   
+##### C.2) Quais os limites de tensão para este circuito?
+
+   O limite é dado pela tensão de entrada.
+   
+ 
+   
