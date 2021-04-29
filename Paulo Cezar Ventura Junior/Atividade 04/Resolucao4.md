@@ -87,7 +87,29 @@ R: O ideal a se fazer seria utilizar um diodo zener com baixa corrente, e por co
 
 R: Sim, mesmo se a corrente passar da mínima requisitada pelo AmpOp ainda irá funcionar normalmente.
 
-### Projete o circuito de alimentação do AmpOp com as especificações acima. (completar)
+### Projete o circuito de alimentação do AmpOp com as especificações acima.
+
+![LDO_01](https://github.com/paulocvj/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Paulo%20Cezar%20Ventura%20Junior/Atividade%2004/Exemplos/LDO_01.png)
+
+Vale notar que o Amplificador utilizado (LM324) não foi possível de ser utilizado no LTSpice, porém foi criado um novo modelo no LTSpice, onde seus bornes são o seguinte:
+
+```
+1: Entrada não inversora;
+2: Entrada inversora;
+3: Alimentação positiva;
+4: Alimentação negativa;
+5: Vout;
+```
+
+Portanto, para o resto desse relatório, deve-se considerar essas entradas para o Amplificador em questão.
+
+Para esse circuito, foram simulados os dados comparando o nó Vin com o nó Vout, como segue na imagem abaixo:
+
+![VinxVout](https://github.com/paulocvj/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Paulo%20Cezar%20Ventura%20Junior/Atividade%2004/Exemplos/VinxVout.png)
+
+Verificamos também no seguinte gráfico a comparação junto a alimentação do AmpOp, que não chega ao seu Vcc máximo especificado pelo Datasheet.
+
+![Vcc_Ampop](https://github.com/paulocvj/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Paulo%20Cezar%20Ventura%20Junior/Atividade%2004/Exemplos/Vcc_Ampop.png)
 
 ## Parte 02: Calculando e dimensionando os componentes
 
@@ -130,7 +152,11 @@ De tal forma que mesmo que nossa carga passe a variar, como possuímos regulaç�
 
 R: Sim, podemos agir de forma que a nossa corrente se mantenha constante no circuito, para que a tensão no zener não fique variando.
 
-#### Acerca da fonte de corrente. Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+O circuito abaixo foi projetado com o bloco para deixar a corrente constante no circuito.
+
+![Segundo_bloco](https://github.com/paulocvj/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Paulo%20Cezar%20Ventura%20Junior/Atividade%2004/Exemplos/Segundo_bloco.png)
+
+#### Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
 
 R: Podemos melhorar acrescentando um potenciômetro para ajuste fino em paralelo com a tensão de referência de saída, juntamente com alguns resistores em série ao potenciômetro justamente para liberar ele para um ajuste fino, visto que se utilizar somente ele, a sua variação de resistência afetaria muito mais o circuito do que se utilizasse resistores em série.
 
@@ -167,3 +193,43 @@ VGS (V) | Vt (V) | RDS teórico (Ohm) | RDS Simulado (Ohm)
 4       | 3,56   |  0,137            |  0,156
 5       | 3,56   |  0,073            |  0,074
 10      | 3,56   |  0,051            |  0,051
+
+#### Quais as tensões máximas de operação deste componente?
+
+R: Vgs máximo no IRF540 é +-20V, e sua VDS máxima é 100V.
+
+#### Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet.
+
+R: Todas as simulações ocorreram de acordo com o datasheet.
+
+#### Qual o valor de capacitância do gate?
+
+R: Cgs = Ciss - Crss = 1,7u - 0,12u = 1,58uF.
+
+#### Justifique a escolha dos resistores R2 e R3.
+
+R: Como estamos utilizando uma configuração não inversora no AmpOp, e temos como requisito uma tensão de saída de 15V, e uma de entrada de 12,5V, precisamos de um pequeno ganho para nos adequar as tensões corretas. A relação entre R2 e R3 nos permite ter esse ganho correto, e como o resistor está na casa dos kOhm, a corrente que passa no circuito é na casa dos mA.
+
+## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
+
+#### Primeiramente reflita e pesquise sobre o que é sobrecorrente?
+
+R: Sobrecorrente é um fenômeno que ocorre quando temos uma corrente acima do permitido circulando em nosso circuito, ocorrida seja por um surto elétrico ou por qualquer outro motivo, e que tem chance de danificar os componentes visto que eles foram dimensionados para uma tensão menor do que a de sobrecorrente.
+
+#### Quais os impactos neste circuito?
+
+R: Uma sobrecarga de corrente pode danificar a maioria dos componentes presentes no circuito da fonte, dessa forma estragando todo o projeto.
+
+#### O que deve fazer um circuito de proteção de sobrecorrente?
+
+R: O circuito deve impedir que essa sobrecorrente se propague no circuito, seja por meio de uma interrupção geral na corrente ou também por quaisquer outros métodos, mas sempre impedindo que a corrente acima do nominal chegue nos componentes do circuito.
+
+#### O que é a proteção foldback?
+
+R: O foldback tem como princípio a questão de que, quando a resistência da carga se aproxima de 0, a corrente se limita e a tensão cai, podendo causar danos aos componentes. O foldback age justamente para impedir isso de acontecer, de forma que, quando a tensão cai, o limite de corrente também vai cair, dessa forma mantendo os componentes seguros no circuito.
+
+#### Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o que devemos levar em consideração para o regulador?
+
+R: Foi utilizado o circuito exemplo para o terceiro bloco do projeto da fonte, como segue na imagem abaixo:
+
+![Terceiro_bloco](https://github.com/paulocvj/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Paulo%20Cezar%20Ventura%20Junior/Atividade%2004/Exemplos/Terceiro_bloco.png)
