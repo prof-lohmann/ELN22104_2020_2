@@ -60,3 +60,30 @@ O modelo escolhido para D1 e D2 foram 1N4007G, de acordo com os parâmetros adot
 
 #### O transistor Q4 limita a tensão sobre o resistor R1, os mesmo definem a corrente de saída da fonte de forma independente a tensão de alimentação. O resistor R5 causa a queda de tensão entre o coletor de Q4 e o ground, enquanto o transistor Q3 mantém o a tensão _Vce_ de Q4 estável, reduzindo assim, variações secundárias da corrente de saída com a tensão de alimentação. Para esta aplicação foi escolhido o transistor BC53PA. O R1 já foi dimensionado anteriormente e o R5 deve obedecer:
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/R5.PNG)
+R5 será em torno de 1590ohm
+
+#### A corrente continuará sendo 1A.
+#### Os limites de tensão para o circuito, estão limitados pelo valor de entrada.
+
+#### Os Parâmetros do IRF estão sendo apresentados abaixo:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/IRF540.PNG)
+
+#### Valores de RDS, são mostrados abaixo:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/list.PNG)
+
+#### As tensões máximas de operações do componente MOSFET, Vgs = +-20V:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/IRFdataVGS.PNG)
+
+#### A capacitância de gate é de 1700:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/IRFcapa.PNG)
+
+#### Com a relação apresentada, podemos arbitrar um valor a R3, com isso, podemos calcular R2, como visto abaixo:
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/Rela%C3%A7%C3%A3o%20dos%20Rs.PNG)
+
+
+### Circuito Final
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/final2.PNG)
+Com o ripple de +-0,2V
+
+# Parte 3
+
