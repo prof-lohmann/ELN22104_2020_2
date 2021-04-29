@@ -224,4 +224,4 @@ Circuitos LDO não foram projetados para correntes elevadas, logo, para esse tip
 
 # CONCLUSÃO
 
-- Pode-se dizer que o circuito foi bem implementado, principalmente na fução de retificar o sinal. Os sinais de Vout e Iout e a tensão de ripple na saída demonstram que, apesar de não chegar no resultado ideal, foi muito satisfatório para a funcção que o circuito estava determinado a cumprir.
+- Pode-se dizer que o circuito foi bem implementado, principalmente quando se trata da retificação do sinal. Os sinais de Vout, Iout e a tensão de ripple na saída demonstram que, apesar de não chegar no resultado ideal, foi muito satisfatório para a função que o circuito estava determinado a cumprir.
