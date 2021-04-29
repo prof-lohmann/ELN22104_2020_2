@@ -85,16 +85,7 @@ Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/448069/ROHM/EDZV24B.h
 
 ![capacitor_C1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20C1.png)
 
-- O modelo escolhido para D1 e D2 foi o 1N914, simplesmente por possuir uma tensão reversa dentros dos parâmetros que o circuito necessita, ou seja, uma tensão reversa maior do que a que foi calculada. Como se pode observar no datasheet, a tensão reversa do diodo é de 53V.
-
-Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/222796/HY/1N914.html)
-![tensao_reversa](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20reversa%201N914.png)
-
-- Simulando a corrente no diodo D1 para descobrir o tempo de condução
-
-![conduçao_1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%20diodo%20D1%20e%20D2.png)
-
-![conduçao_2](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%20diodo%20D1%20e%20D2%20parte%202.png)
+- O modelo escolhido para D1 e D2 foi o 1N4007, simplesmente por possuir uma tensão reversa dentros dos parâmetros que o circuito necessita, ou seja, uma tensão reversa maior do que a que foi calculada.
 
 ![conducao_3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20tempo%20de%20condu%C3%A7%C3%A3o.png)
 
@@ -163,6 +154,10 @@ Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
 
 ![circuito_montado](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20montado%20parte%202.png)
 
+- Vout e Iout
+
+![Vout_Iout](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/Vout%20e%20Iout.png)
+
 ## Parte 03 - Adicionando um circuito de proteção de sobre corrente ao regulador linear.
 
 - Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito? O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback?
@@ -185,3 +180,16 @@ Circuitos LDO não foram projetados para correntes elevadas, logo, para esse tip
 
 - O valor do resistor shunt deve ser pequeno para que a queda de tensão seja mínima. Logo, Rshunt = 100mΩ.
 
+![subtrator](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20subtrator.png)
+
+### Circuito de proteção montado
+
+![proteção](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/Circuito%20de%20prote%C3%A7%C3%A3o%20montado.png)
+
+- Vout e Iout com o circuito de proteção
+
+![Vout_iout_protecao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/Iout%20e%20Vou%20com%20circuito%20de%20prote%C3%A7%C3%A3o.png)
+
+- Tensão na carga R6
+
+![cargaR6](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20sobre%20a%20carga%20R6.png)
