@@ -85,9 +85,16 @@ Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/448069/ROHM/EDZV24B.h
 
 ![capacitor_C1](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/calculo%20C1.png)
 
-- O modelo escolhido para D1 e D2 foi o 1N4007, simplesmente por possuir uma tensão reversa dentros dos parâmetros que o circuito necessita, ou seja, uma tensão reversa maior do que a que foi calculada.
+- O modelo escolhido para D1 e D2 foi o 1N4007, simplesmente por possuir uma tensão reversa dentros dos parâmetros que o circuito necessita, ou seja, uma tensão reversa maior do que a que foi calculada. O modello possui uma tensão reversa de pico de 1000V.
 
-![conducao_3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20tempo%20de%20condu%C3%A7%C3%A3o.png)
+
+Datasheet(https://pdf1.alldatasheet.com/datasheet-pdf/view/58830/DIODES/1N4007.html)
+
+![tensao reversa](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tensao%20reversa%201N4007.png)
+
+![condução](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tempo%20de%20condu%C3%A7%C3%A3o%201N4007.png)
+
+![calculo_condução](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/c%C3%A1lculo%20tempo%20de%20condu%C3%A7%C3%A3o.png)
 
 ![letra_b](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/letra%20B%20parte%2002.png)
 
