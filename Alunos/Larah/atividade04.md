@@ -68,7 +68,7 @@ Sim.
 -------------------------------------------
 ## Parte 02: Calculando e dimensionando os componentes
 
-- Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
+### Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
 1,1A. Justifique a escolha dos componentes.
 
   Considerando que os diodos estão funcionando como retificadores de onda completa, cada um irá operar em um semiciclo da alimentação, aplicando sempre uma corrente no mesmo sentido para a carga. Precisamos saber o valor dos capacitores a serem utilizados e a corrente de pico sobre os diodos.
@@ -79,7 +79,7 @@ Pelos valores de tensão reversa, e correntes necessárias pode-se usar o diodo 
 
 ![d](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/D1eD2.1n5400.datasheet.PNG)
 
-b) Circuito referência de tensão zener (R1 e D3):
+### Circuito referência de tensão zener (R1 e D3):
  • Quais fatores devo considerar para escolher o diodo zener para essa aplicação? 
 
 Para evitar que o zener altere significativamente a tensão na saída (ruído), sua resistência Rz deve ser baixa.
@@ -93,13 +93,14 @@ Por estar ligado na entrada não inversora do ampop, a qual não possui corrente
 
 A variação indesejada de tensão que pode ser causada pelo diodo zener será multiplicada pelo ganho do ampop, para que o circuito tenha uma boa regulação de linha essa variação precisa ser mínima.
 
-Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia? Sugestão de melhoria: 
+- Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia? Sugestão de melhoria: 
 
 Sim, eliminando um dos fatores da regulação, mantendo a corrente constante no zener, mantendo a tensão o mais constante possível.
 
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar? 
 
-Escolhendo o transistor M1 e calculando R2 e R3. 
+### Escolhendo o transistor M1 e calculando R2 e R3. 
+
 • Qual a corrente contínua necessária? 
 
 • Quais os limites de tensão para este circuito? 
@@ -118,6 +119,8 @@ Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teó
 Qual o valor da capacitância de gate? 
 
 Justifique a escolha dos resistores R2 e R3
+
+---------------------------------------------------
 
 ## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
