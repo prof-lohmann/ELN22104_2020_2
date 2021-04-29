@@ -2,6 +2,7 @@
 
 ## Parte 1
 
+
 ### Circuito 1
 
 ![image](https://user-images.githubusercontent.com/74205954/116479443-076a6880-a856-11eb-97f0-9dab844fc8a4.png)
@@ -52,35 +53,38 @@ _Figura 2: Circuito de alimentação 1 - dobrador de tensão.
 
 ![image](https://user-images.githubusercontent.com/74205954/116482020-b3ae4e00-a85a-11eb-93af-5c4fd1941b02.png)
 
-_Figura 3: Circuito de alimentação 2.
+_Figura 3: Circuito de alimentação 2 proposto.
 
 #### Qual a tensão VGS? Descreva como obter o valor.
 
    Sabendo que Iout deve ser 1 A, analisando o Datasheet do MOSFET podemos perceber que Vgs deve ser de aproximadamente 4 V.
    
-   
-   
+   ![image](https://user-images.githubusercontent.com/74205954/116503853-70b99e00-a88d-11eb-9073-9a3ce0475efc.png)
+
    _Figura 4: Tensão Vgs - DataSheet Mosfet IRF540.
 
 #### Qual a corrente de alimentação do AmpOp?
 
-   Através do Datasheet do AmpOp LM324, podemos observar que a corrente mínima de alimentação é de 3mA.
+   Através do Datasheet do AmpOp LM324, podemos observar que a corrente de alimentação é de 3mA.
    
-   
-   
+   ![image](https://user-images.githubusercontent.com/74205954/116504220-33094500-a88e-11eb-92db-0df6cdac7041.png)
+
    _Figura 5: Corrente de alimantação - DataSheet LM324.
 
 #### Qual a tensão de alimentação do AmpOP?
 
    Analisando o Datasheet percebemos que a tensão máxima de operação do é AmpOp LM324 é de 32V.
    
-   
+   ![image](https://user-images.githubusercontent.com/74205954/116504153-1705a380-a88e-11eb-86b4-93bbe089956f.png)
    
    _Figura 6: Tensão de alimantação - DataSheet LM324.
 
 #### Qual fator devo considerar para escolher o transistor Q1?
 
-É necessário utilizar um beta bastante elevado, para que a corrente de alimentação do Bjt seja muito menor que a do Zenner.
+   É necessário utilizar um beta bastante elevado, para que a corrente de alimentação do Bjt seja muito menor que a do Zenner, por isso foi escolhido o transistor bipolar de junção 2SC4617.
+
+   ![image](https://user-images.githubusercontent.com/74205954/116504731-65677200-a88f-11eb-9be1-9e96a35666ba.png)
+
 
 #### Qual valor da tensão do diodo zener D6?
    
@@ -91,13 +95,22 @@ _Figura 3: Circuito de alimentação 2.
    
    Desta forma, o valor escolhido para a tensão de Zenner deve ser maior que 19V. Pois assim o AmpOp receberá tensão suficiente e conseguirá fornecer 19V na sua saída.
    
+   ![image](https://user-images.githubusercontent.com/74205954/116505310-e83cfc80-a890-11eb-809c-98fcb52098a5.png)
+   
 #### Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito? 
 
    Para maximizarmos a eficiência energética e minimizarmos os ruídos do circuito devemos escolher um diodo Zenner com a menor resistência possível. Desta forma, mesmo que a corrente varie, a tensão de regulação do Zenner não irá variar tanto.
 
 #### Considere que, por alterações futuras no circuito, o AmpOp poderá ter um aumento de 10mA na corrente de alimentação, o circuito proposto continuará funcionando?
 
-Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este aumento de corrente o circuito continuará funcionando.
+   Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este aumento de corrente o circuito continuará funcionando.
+
+##### Circuito de alimentação montado no LtSpice
+
+   Vp = Vin * sqrt(2) = 12 * sqrt(2) = 16,97 V
+   VD = 2 * Vp = 2 * 16,97 = 33,94 V
+
+   Por C2, C3, D4 e D5 se tratarem de um dobrador de tensão, Vripple deve ser uma valor em torno de 32V.
 
 ![image](https://user-images.githubusercontent.com/74205954/116502483-f9363f80-a889-11eb-8dca-1ca2b3f207fc.png)
 
@@ -107,14 +120,16 @@ Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este
 
 ## Parte 2
 
+
 #### A) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes
 
    Os diodos precisam apresentar uma queda de tensão menor do que 1V, a fim de consumir a menor tensão possível do circuito. Para selecioná-lo devemos realizar alguns cálculos, como a tensão reversa (VD) e a corrente média (Imed).
    
    Vp = Vin * sqrt(2) = 12 * sqrt(2) = 16,97 V
    VD = 2 * Vp = 2 * 16,97 = 33,94 V
+   Imed = Icarga * ( 1 + pi * sqrt( Vp/ (2 * Vripple) ) = 1 + pi * sqrt( 16,97 / (2 * 1) = 10,15 A
    
-   Imed = Icarga * ( 1 + pi * sqrt( Vp/ (2 * Vripple) )
+   Datasheet1N4148
    
    O capacitor deve ser escolhido com base no retificador, sendo assim:
    
@@ -149,5 +164,7 @@ Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este
    
 #### Podemos melhorar esse circuito? Quais problemas podemos identificar nesta topologia?
 
+   O problema é a corrente que gera uma variação de tensçao no diodo Zenner. Poderia resolver casa fosse possível colocar algum componente que mantivesse a corrente constante.
    
+
 
