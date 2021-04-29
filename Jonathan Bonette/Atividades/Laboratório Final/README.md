@@ -103,8 +103,6 @@ Pontos Importantes para iniciar o projeto responda justificando as escolhas.<br>
 
 <p align="center"><img src="../../Imagens/Laboratório Final/p1.png" align="center"><br></p><br>
 
-***Colocar a imagem da simulação do LtSpice***
-
 ## Parte 02
 <b>Calculando e dimensionando os componentes</b><br>
 <b>a) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.</b><br>
@@ -203,8 +201,8 @@ Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Com
 
 `Procurando na internet vemos que existe um catálogo extenso de LDOs que seguem a topologia juntamente com a proteção. Inclusive alguns alguns da prórpia Texas, muito utilizado por nés durante esse semestre.`
 
-***Colocar a imagem da simulação do LtSpice***
-
 <b>Exemplo de circuito: (Vide roteiro 01)</b><br>
 
 <p align="center"><img src="../../Imagens/Laboratório Final/imagem6.png" align="center"><br></p>
+
+<p align="center"><img src="../../Imagens/Laboratório Final/p2.png" align="center"><br></p>
