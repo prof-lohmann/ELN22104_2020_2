@@ -46,3 +46,6 @@
 ### Cosiderando os valores propóstos, VD sendo a tensão reversa e IDmed sendo a corrente média, temos:
 ![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/expre%C3%A7%C3%B5es.PNG)
 O modelo escolhido para D1 e D2 foram 1N4007G, de acordo com os parâmetros adotados, portanto, a tensão reversa _VD_ é maior do que a que foi calculada. A tensão reversa do diodo D1 e D2 são de 1000V.
+
+#### Levando em consideração o tempo de polarização do diodo, sabendo que a tensão de polarização é de 0,7V.
+![](https://github.com/JoaoPedrogrb/ELN22104_2020_2/blob/main/Jo%C3%A3o%20Pedro/Projeto/Imagens/tempo.PNG)
