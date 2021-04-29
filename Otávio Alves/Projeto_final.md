@@ -132,9 +132,56 @@ Um potenciômetro entre Vref e GND deixaria o valor fonte mais ajustável.
 ### Escolhendo o transistor M1 e calculando R2 e R3
 
 - Qual a corrente contínua necessária?
+
 A mesma corrente do projeto, 1A.
 
 - Quais os limites de tensão para este circuito?
 
 A limitação do circuito se dá pelo valor de entrada
+
+- Quais o parâmetros L, W, Uo, Cox, VA e Vt?
+
+![irf540](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/caracter%C3%ADsticas%20IRF540.png)
+
+- Quais as tensões máximas de operação deste componente?
+
+Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
+
+![tensao_operacao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/tens%C3%A3o%20de%20opera%C3%A7%C3%A3o%20IRF%20540.png)
+
+- Qaul o valor da capacitância de gate?
+
+Datasheet(https://www.vishay.com/docs/91021/91021.pdf)
+
+![gate_capacitancia](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/capacitancia%20do%20gate.png)
+
+- Justifique a escolha dos resistores R2 e R3.
+
+![dimensionamento_R2_R3](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/dimensionando%20R2%20e%20R3.png)
+
+- Circuito montado
+
+![circuito_montado](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/circuito%20montado%20parte%2002.png)
+
+## Parte 03 - Adicionando um circuito de proteção de sobre corrente ao regulador linear.
+
+- Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito? O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback?
+
+Sobrecorrente se trata quando há a circulação de uma corrente no circuito acima do valor nominal projetado. Pode ocassionar a queima de componentes do circuito, além de um mau funcionamento do mesmo. O circuito de proteção de sobrecorrente deve interromper a corrente que circula no circuito, automaticamente, sempre que a intensidade de corrente atingir valores que podem causar danos aos demais dispositivos. Foldback é uma limitação de corrente. Quando a carga tenta provocar sobrecorrente da alimentação, a proteção foldback reduz a saída de tensão e corrente para bem abaixo dos limites normais de operação. Sob um curto-circuito , em que a tensão de saída é reduzida a zero, a corrente é tipicamente limitados a uma pequena fracção da corrente máxima.
+
+- Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o que devemos levar em consideração para o regulador? 
+
+Circuitos LDO não foram projetados para correntes elevadas, logo, para esse tipo de problema, são utilizados circuitos de proteção de sobre corrente como o foldback e proteção brick-wall
+
+![circuito_protecao](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/exemplo%20circuito%20de%20prote%C3%A7%C3%A3o.png)
+
+### Dimensionando o circuito de proteção de sobrecorrente ao regulador linear
+
+![R6](https://github.com/alvesotavio21/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Ot%C3%A1vio%20Alves/Imagens%20projeto%20final/dimensionando%20R6.png)
+
+- O transistor deve ser um transistor de sinal, ou seja, deve suportar pequenas correntes. Então, o modelo escolhido foi o 2N7002. Como o dreno funciona como chave, a tensão varia entre 0 e a tensão máxima recebida,  neste caso, VGS. Para o transistor conduzir, é necessário VGS> VT. VT pode ser considerado o VGS(th) que foi encontrado no datasheet e possui um valor de 2.1 V. Então como tensão na saída e para cálculos futuros adotaremos 3V. 
+
+- R11 = R12 = 20kΩ
+
+- O valor do resistor shunt deve ser pequeno para que a queda de tensão seja mínima. Logo, Rshunt = 100mΩ.
 
