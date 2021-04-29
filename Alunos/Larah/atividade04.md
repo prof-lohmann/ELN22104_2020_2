@@ -11,11 +11,11 @@
  * Conceito de LDO – Low Dropout Voltage: Um LDO é um regulador de tensão que precisa de pouca energia para funcionar corretamente e dissipa pouca energia. Para um CI regulador de tensão funcionar ele precisa de uma tensão mínima superior a saída que é chamada de Vdo, o LDO é um baixo Vdo para o regulador funcionar.
 
 ### Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
-  A relação é dada por: Tensão saída = Tensão entrada(V+) * (R2+R3)/R3. O ampop desliga o mosfet quando a tensão de saída está fora da tensão desejada, com o mosfet desligado a saída cai para 0v.  
+  A relação é dada por: Tensão saída = Vdiodo zener D3 * (R2+R3)/R3. O ampop desliga o mosfet quando a tensão de saída está fora da tensão desejada, com o mosfet desligado a saída cai para 0v.  
 ### O que devemos considerar para esse circuito operar como um LDO?
-  A escolha do diodo zener, que deve proporcionar uma tensão de entrada para o ampop superior a tensão de saída do mesmo. Mantendo a dissipação de energia (potência) baixa.
+  A escolha do diodo zener, que deve proporcionar uma tensão de entrada para o ampop superior a tensão de saída do mesmo. Mantendo a dissipação de energia (potência) baixa. Outro requisito importante para o ampop trabalhar é que a entrada VCC do ampop tem que ter tensão suficiente para saturar o gate do mosfet, pois o mosfet polarizado implica em menos perdas de energia.
 ### Como obter as tensões de alimentação para o AmpOp (VCC e VEE)?
-  Pode-se utilizar uma fonte simétrica para alimentar o ampop. Utilizando um dobrador de tensão.
+  Pode-se utilizar um circuito com VEE indo para o GND e VCC sendo alimentado por um bloco dobrador de tensão junto de um bloco retificador de tensão com um mosfet, diodo zener, ampop e resistores. A tensão de alimentação (VCC e VEE) é dada pela soma de Vgs do mosfet com a tensão Vout da saída da fonte.
   
 ### Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms?
 
