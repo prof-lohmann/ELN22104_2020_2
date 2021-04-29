@@ -99,6 +99,12 @@ _Figura 3: Circuito de alimentação 2.
 
 Como estamos trabalhando com a mínima corrente de alimentação, mesmo com este aumento de corrente o circuito continuará funcionando.
 
+![image](https://user-images.githubusercontent.com/74205954/116502483-f9363f80-a889-11eb-8dca-1ca2b3f207fc.png)
+
+![image](https://user-images.githubusercontent.com/74205954/116502337-9a70c600-a889-11eb-90e5-da417fbed93d.png)
+
+![image](https://user-images.githubusercontent.com/74205954/116502905-26cfb880-a88b-11eb-959f-d1e6b4a22806.png)
+
 ## Parte 2
 
 #### A) Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes
