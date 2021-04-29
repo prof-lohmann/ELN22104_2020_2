@@ -65,9 +65,34 @@ AD8539
 - 2. Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída.
 Explique o resultado.
 
+AD8040
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.GRAFICO.Vin.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.inversor.anp03.GRAFICO.Vo.PNG)
+
+
+AD8539
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.inversor.anp03.GRAFICO.Vin.PNG)
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.inversor.anp03.GRAFICO.Vo.PNG)
+
+#### Conclusão
+
+Apesar de ambos possuirem ganhos na tensão de acordo com a topologia aplicada o AD8539 foi muito mais preciso.
+
 ### 4.Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
 - 1. Aplique 0V(zero) na entrada e verifique o valor da tensão na saída. Explique o resultado.
+
+AD8040
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8040.naoinversor.anp03.op0.PNG)
+
+AD8539
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/AD8539.naoinversor.anp03.op0.PNG)
 
 - 2. Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal
 de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
@@ -99,5 +124,8 @@ AD8539
 ### Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito
 pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops
 você utilizaria? Justifique a sua resposta.
+
+AD8539 Por ter uma precisão muito melhor quea do AD8040.
+
 Escolha um terceiro ampop com características melhores que os ampops acima para uma aplicação
 como subtrator.
