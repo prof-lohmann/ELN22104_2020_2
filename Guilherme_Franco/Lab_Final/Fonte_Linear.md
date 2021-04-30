@@ -198,18 +198,29 @@ b) Circuito referência de tensão zener (R1 e D3):
    
    - Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito?
    
-   *Resposta:*
+   *Resposta:* Sobrecorrente trata-se de um excesso de corrente que ultrapassa o que se espera dentro de um circuito. Os impactos que podem acontecer são majoritariamente queima dos componentes, sobrecarga, causando, por fim, um mal funcionamento do circuito.
    
    - O que deve fazer um circuito de proteção de sobrecorrente?
    
-   *Resposta:*
+   *Resposta:* Este circuito tem como objetivo proteger a carga e o circuito como um todo enquanto sob efeitos da sobrecorrente.
    
    - O que é a proteção foldback?
    
-   *Resposta:*
+   *Resposta:* Foldback, em linhas gerais, trata-se de uma alternativa/método de limitação de corrente. Com a proteção foldback, quando a tensão cai, o limite de corrente também cai de maneira bastante linear. Isso fornece proteção mais segura contra curtos circuitos, pois um curto circuito "muito ruim" resultará em muito pouco consumo de corrente, para que o suprimento não fique aquecendo na corrente máxima. O gráfico a seguir ilustrará a diferença entre o limite clássico de corrente e o foldback:
+   
+   ![image](https://user-images.githubusercontent.com/61738767/116636097-de6dd480-a936-11eb-8221-37fea16155c7.png)
+   
+   *Referência:* https://qastack.com.br/electronics/2931/what-is-foldback-short-circuit-protection-in-a-power-supply
+   
+Durante a operação normal, você se move ao longo da parte horizontal do gráfico: a tensão permanece constante na corrente variável. Uma vez que a corrente excede o máximo permitido, a tensão cai, mas a corrente permanece (gráfico à esquerda), o que pode causar danos ao circuito e também causar uma alta dissipação na própria fonte de alimentação.
+
+Com o limite de corrente de foldback, quando a corrente máxima é excedida, a tensão ainda cai, mas a corrente é reduzida para um valor seguro. (gráfico à direita)
    
    - Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
    
    *Resposta:*
    
-   
+  ### Circuito Completo
+  
+  ![image](https://user-images.githubusercontent.com/61738767/116639465-fcd7ce00-a93e-11eb-8c6e-ad28f8300457.png)
+
