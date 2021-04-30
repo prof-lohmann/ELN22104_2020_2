@@ -167,6 +167,6 @@ Justifique a escolha dos resistores R2 e R3
 
  - Caso deseja-se fazer um circuito LDO, o o que devemos levarem consideração para o regulador?
  
-  Para esse circuito ser LDO o Vin tem que ser muito próximo do Vout, para isso o Vgs deve ter valor suficiente para saturar o transistor. Esse circuito para a proteção do ampop existe um resistor na saída do ampop, como visto em aula nesse resistor deve passar uma corrente de 10mA, com isso podemos estipular qual resistor podemos utilizar para que o nosso circuito opere como um LDO. Temos que o Vgs do nosso transistor escolhido é de 4V para saturar e a fonte deve ter um Vout de 15V, como visto anteriormente a saída do ampop deve ter 19V para o sistema operar corretamente e 10mA no máximo para operar com menor perda de energia. Assim para o sistema operar como LDO temo que R6 = 19V/10mA = 1,9x10^-3 Ohms.
+  Para esse circuito ser LDO o Vin tem que ser muito próximo do Vout, para isso o Vgs deve ter valor suficiente para saturar o transistor. Esse circuito para a proteção do ampop existe um resistor na saída do ampop, como visto em aula nesse resistor deve passar uma corrente de 10mA, com isso podemos estipular qual resistor podemos utilizar para que o nosso circuito opere como um LDO. Temos que o Vgs do nosso transistor escolhido é de 4V para saturar e a fonte deve ter um Vout de 15V, como visto anteriormente a saída do ampop deve ter 19V para o sistema operar corretamente e 10mA no máximo para operar com menor perda de energia. Assim para o sistema operar como LDO temo que R6 = 19V/10mA = 19.000 Ohms.
  
 
