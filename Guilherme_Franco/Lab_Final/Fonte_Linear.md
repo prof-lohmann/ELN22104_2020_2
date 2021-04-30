@@ -146,14 +146,17 @@ b) Circuito referência de tensão zener (R1 e D3):
    ![image](https://user-images.githubusercontent.com/61738767/116590319-fb34e880-a8f3-11eb-9378-b5fd9c17148a.png)
 
    - Acerca do fonte de corrente. Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+   
    *Resposta:* A fim de deixar a fonte com valor ajustável, pode-se fazer uso de um potenciômetro em paralelo com a tensão de referência `Vref`.
    
    c) Escolhendo o transistor M1 e calculando R2 e R3.
    
    - Qual a corrente contínua necessária?
+   
    *Resposta:* Para o transistor M1, é necessário uma corrente de 1A com um `Vgs`de 4,5V.
    
    - Quais os limites de tensão para este circuito?
+   
    *Resposta:* Sabendo que as tensões que circulam pelo circuito são limitadas pela tensão de entrada, é necessário que a tensão `VDO` seja a menor possível. Por outro lado, a tensão `Vgs`será limitada pelo produto da regulação de tensão de zener pelo ganho.
    
    #### Ao escolher o transistor, obtenha:
