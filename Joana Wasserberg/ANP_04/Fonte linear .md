@@ -1,7 +1,9 @@
+# Integração dos blocos de uma fonte linear
+
 # Parte 01: Entendendo um regulador linear # 
 
 
-![figura01]()
+![figura01](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_04/figura%201.PNG)
 
 ### Considerando o circuito da figura 01 que representa uma fonte linear com regulador MOSFET, temos o seguinte problema: Qual relação entre a tensão de alimentação do ampop e a tensão de saída?
 
@@ -15,13 +17,15 @@ O LDO (Low Dropout Voltage) é um regulador de tensão que ameniza a Tensão de 
 
 O AmpOp deve ter na entrada um circuito dobrador de tensão, cujo funciona como um multiplicador de tensão.
 
-![figura02]()
+![figura02](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_04/figura%202.PNG)
 
 ### Circuito proposto (01) para a alimentação do AmpOp: Utilizando o circuito dobrador de tensão, qual valor de VCC você obtêm para um sinal Vin+ de 12Vrms? Quais problemas apresentam esse circuito? Podemos melhorar?
 
 Dado o valor eficaz da tensão 12V, a tensão de pico é 17, como o dobrador de tensão multiplica o valor de tensão, VCC será em torno de 32V. 
 Um dos problemas apresentado é o ripple do sinal de entrada, para melhorar teriamos que inserir um retificador de sinal.
 
+
+![figura 03](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_04/figura%203.PNG)
 
 ### Projetando o circuito de alimentação do AmpOp? Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vripple_pós_retificador = 1V, considere as quedas de tensão nos diodos de 0,7V.
 
