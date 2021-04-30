@@ -105,6 +105,10 @@ Sim, eliminando um dos fatores da regulação, mantendo a corrente constante no 
 
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar? 
 
+Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+
+Com um circuito sobrecorrente.
+
 ### Escolhendo o transistor M1 e calculando R2 e R3. 
 
 • Qual a corrente contínua necessária? 
