@@ -54,9 +54,9 @@ Para o AmpOp ad8539, a tensão de saída ficou proxíma de 4.8V. Por conta da te
 
 
 
-![Seguidor de tensão ad8040]( )
+![Seguidor de tensão ad8040]( https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_03/Imagens/Seguidor%20de%20tens%C3%A3o%20ad8040.PNG)
 
-![Seguidor de tensão gráfico]( )
+![Seguidor de tensão gráfico](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_03/Imagens/Seguidor%20de%20tens%C3%A3o%20gr%C3%A1fico.PNG )
 
 
 
@@ -77,7 +77,7 @@ Para o AmpOp AD8040, a tensão ficou em 0.18V, que está de acordo com a tensão
 Com o sinal de 5mV de amplitude e o ganho em 100V/V a tensão de saída fica 500mV seguido 50mV (AD8439)
 
 
-![inversor ad8040]()
+![inversor ad8040](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_03/Imagens/Inversor%20ad8040.PNG)
 
 
 Apesar de ambos possuirem ganhos na tensão de acordo com a topologia aplicada, o AD8539 foi muito mais preciso.
@@ -86,9 +86,9 @@ Apesar de ambos possuirem ganhos na tensão de acordo com a topologia aplicada, 
 3. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
 
-![não inversor ad8539]()
+![não inversor ad8539](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_03/Imagens/n%C3%A3o%20inversor%20ad8539.PNG)
 
-![não inversor ad8040]()
+![não inversor ad8040](https://github.com/joananana/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Joana%20Wasserberg/ANP_03/Imagens/n%C3%A3o%20inversor%20ad8040.PNG)
 
 + Aplique 0V na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
