@@ -66,6 +66,11 @@ Sim, contanto que os valores minimos do datasheet sejam atendidos.
 
 - Projete o circuito de alimentação do AmpOp com as especificações acima.
 
+Componentes escolhidos:
+
+Diodo 1N4001
+Diodo zener BZX84C11
+
 
 -------------------------------------------
 ## Parte 02: Calculando e dimensionando os componentes
@@ -119,6 +124,7 @@ Quais os os parâmetros L, W, uo, Cox, VA e Vt?
 Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V 
 
 Quais as tensões máximas de operação deste componente? 
+
 Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet. 
 
 Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos. 
