@@ -125,6 +125,8 @@ Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V
 
 Quais as tensões máximas de operação deste componente? 
 
+Vds máxima de 100V. Vgs máxima de 20V e mínima de -20V
+
 Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet. 
 
 Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos. 
