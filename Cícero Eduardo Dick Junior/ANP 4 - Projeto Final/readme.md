@@ -138,7 +138,7 @@ A proteção em foldback limita a corrente de forma linear, conforme a tensão n
 No caso do regulador de tensão, para manter o princípio de LDO, devemos procurar por uma proteção de sobrecorrente que tenha uma baixa queda de tensão para o seu funcionamento.
 
 Figura 1 - Proteção de Sobrecorrente
-![]()
+![](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Proteção%20sobrecorrente.JPG)
 
 A proteção de sobrecorrente apresentada na figura 1 funciona por meio de um circuito comparador que mede as tensões na entrada e saída de um resistor shunt. Caso a tensão no resistor shunt seja maior do que a projetada, o circuito comparador envia tensão suficiente para ativar o transistor NMOS M2. Por sua vez, o transistor M2 envia o sinal do ampop U1 direto pro terra, desligando a fonte.
 
