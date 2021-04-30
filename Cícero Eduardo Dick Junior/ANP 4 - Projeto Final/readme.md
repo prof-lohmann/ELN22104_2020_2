@@ -2,9 +2,7 @@
 
 ## Parte 1: Entendendo o Regulador Linear
 
-- Princípios de regulação de tensão:
-
-A regulação de tensão é o princípio de manter o sinal de saída estável, mesmo que ocorra variações no sinal de entrada.
+- Princípios de regulação de tensão: A regulação de tensão é o princípio de manter o sinal de saída estável, mesmo que ocorra variações no sinal de entrada.
 - Tensão de saída e tensão de ripple: A tensão de ripple refere-se a variação na tensão de saída do circuito.
 - Regulação de linha: A regulação de linha é a comparação na variação de tensão na entrada com a variação de tensão na saída.
 - Regulação de Carga: A regulação de carga é a razão da variação de tensão pela variação de corrente na saída do circuito para diferentes cargas.
@@ -64,20 +62,21 @@ O diodo zener deve ter uma resistência baixa, para caso de variações de corre
 ## Parte 02 Calculando e dimensionando os componentes
 
 **Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, Vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.**
+O bloco em questão é o retificador de onda completa. Para os diodos, os seguintes fatores devem ser considerados: tensão reversa, corrente de pico e queda de tensão.
+Os diodos devem ter uma queda de tensão abaixo de 1V para que o sinal na saída não fique abaixo de 15V. Eles também precisam suportar uma tensão reversa acima de 30V. Para este circuito, podemos usar o diodo 1N4007.
 
-Os diodos devem ter uma queda de tensão abaixo de 1V para que o sinal na saída não fique abaixo de 15V. Eles também precisam suportar uma tensão reversa acima de 30V.
 
 O capacitor deve ser escolhido de acordo com a seguinte equação:
 
 ```
-    C = Il/2*f*Vr = 18,33mF
+    C = Il/f*Vr = 18,33mF
 ```
 
 **Circuito referência de tensão zener (R1 e D3):**
 
 **Quais fatores devo considerar para escolher o diodo zener para essa aplicação?**
 
-O diodo zener deve ter baixa resistência por conta das variações de corrente. 
+O diodo zener deve ter baixa resistência por conta das variações de corrente. Utilizaremos um diodo zener de 6,2V para o projeto.
 
 **Qual a influência da regulação de linha e da regulação de carga para este circuito? Qual o impacto da regulação linha / carga do circuito com o diodo zener na tensão de saída do regulador linear?**
 
@@ -97,10 +96,50 @@ A corrente especificada para este circuito é de 1A.
 
 A tensão no circuito é limitada pelo retificador de onda completa. 
 
+**Utilizando o transistor IRF540, temos os seguintes dados:**
+
+- L=100uH
+
+- W=100uW
+
+- LAMBDA = 0.00291031
+
+- u0 (valor padrão) = 600 cm²/V/s
+
+- C0x = KP/u0 = 25,0081/600 = 41,68 mF/m²
+
+- VA = 1/LAMBDA = 1/0.00291031 = 343,61 v
+
+- Vt = 3.56362 V
+
+**Quais as tensões máximas de operação deste componente?**
+
+A tensão de Drain-Source máxima do IRF540 é de 100V. 
+A tensão de Gate-Source máxima é de 20V.
+
+**Qual o valor da capacitância de gate?**
+
+CGS = Ciss - Crss = 440pF
+
+**Justifique a escolha dos resistores R2 e R3.**
+
+Considerando o diodo zener D3 com uma tensão de 6,2V, precisamos de um ganho de 3.2V/V em nosso ampop. É vantajoso também que os resistores tenham valores altos de resistência para que a corrente que circule sobre eles seja baixa. Como temos 1A na saída do circuito, utilizaremos diodos na ordem dos kilo ohms para o projeto.
+
+Utilizando resistores de 32k e 10k, obtemos o ganho necessário e a corrente que circulará por eles será de 357uA, baixa o suficiente para não afetar o circuito.
+
 ## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
 **Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito? O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback?**
 
 A sobrecorrente é qualquer corrente que circule pelo circuito que esteja acima da corrente para a qual ele foi projetado. A sobrecorrente pode causar danos sérios ao circuito, portanto, é importante que haja uma proteção.
 
-A proteção em foldback limita a correntem de forma linear, conforme a tensão no circuito aumenta.
+A proteção em foldback limita a corrente de forma linear, conforme a tensão no circuito aumenta.
+
+No caso do regulador de tensão, para manter o princípio de LDO, devemos procurar por uma proteção de sobrecorrente que tenha uma baixa queda de tensão para o seu funcionamento.
+
+Figura 1 - Proteção de Sobrecorrente
+![](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Proteção%20sobrecorrente.JPG)
+
+A proteção de sobrecorrente apresentada na figura 1 funciona por meio de um circuito comparador que mede as tensões na entrada e saída de um resistor shunt. Caso a tensão no resistor shunt seja maior do que a projetada, o circuito comparador envia tensão suficiente para ativar o transistor NMOS M2. Por sua vez, o transistor M2 envia o sinal do ampop U1 direto pro terra, desligando a fonte.
+
+Este circuito é ideal para essa aplicação, pois a queda de tensão da entrada para a saída da fonte é a tensão no resistor shut, que é muito pequena.
