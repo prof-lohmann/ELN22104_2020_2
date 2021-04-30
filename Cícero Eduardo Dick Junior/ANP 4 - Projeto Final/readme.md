@@ -31,7 +31,7 @@ O grande problema desse circuito é o Vripple muito alto, como mostra a imagem:
 
 Figura 1 - Dobrador de Tensão
 
-![Dobrador de tensão]()
+![Dobrador de tensão](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/dobrador%20de%20tensao.JPG)
 
 
 Para resolver esse problema, podemos implementar um regulador de tensão para amenizar esse problema.
@@ -69,7 +69,7 @@ O diodo zener deve ter uma resistência baixa, para caso de variações de corre
 
 Figura 2 - Dobrador de Tensão com Regulador de Tensão
 
-![Dobrador de Tensão com Regulador de Tensão]()
+![Dobrador de Tensão com Regulador de Tensão](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/dobrador%20de%20tensao%20com%20regulador.JPG)
 
 ## Parte 02 Calculando e dimensionando os componentes
 
@@ -87,10 +87,10 @@ O capacitor deve ser escolhido de acordo com a seguinte equação:
     C = Il/f*Vr = 18,33mF
 ```
 Figura 3 - Retificador de Onda Completa
-![Retificador de onda completa]()
+![Retificador de onda completa](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Retificador.JPG)
 
 Figura 4 - Corrente no Diodo
-![corrente no diodo]()
+![corrente no diodo](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Corrente%20no%20diodo.JPG)
 
 **Circuito referência de tensão zener (R1 e D3):**
 
@@ -148,7 +148,8 @@ Considerando o diodo zener D3 com uma tensão de 6,2V, precisamos de um ganho de
 Utilizando resistores de 32k e 10k, obtemos o ganho necessário e a corrente que circulará por eles será de 357uA, baixa o suficiente para não afetar o circuito.
 
 Figura 5 - fonte
-![fonte]()
+
+![fonte](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/fonte.JPG)
 
 
 ## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
@@ -161,7 +162,7 @@ A proteção em foldback limita a corrente de forma linear, conforme a tensão n
 
 No caso do regulador de tensão, para manter o princípio de LDO, devemos procurar por uma proteção de sobrecorrente que tenha uma baixa queda de tensão para o seu funcionamento.
 
-Figura 1 - Proteção de Sobrecorrente
+Figura 6 - Proteção de Sobrecorrente
 ![](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Proteção%20sobrecorrente.JPG)
 
 A proteção de sobrecorrente apresentada na figura 1 funciona por meio de um circuito comparador que mede as tensões na entrada e saída de um resistor shunt. Caso a tensão no resistor shunt seja maior do que a projetada, o circuito comparador envia tensão suficiente para ativar o transistor NMOS M2. Por sua vez, o transistor M2 envia o sinal do ampop U1 direto pro terra, desligando a fonte.
