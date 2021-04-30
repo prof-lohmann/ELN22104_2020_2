@@ -35,7 +35,7 @@ Considere: AmpOp LM324, MOSFET IRF540, VOUT = 15V, IOUT = 1A, vin+ = 12Vrms, vri
 
 - Qual a Tensão VGS? Descreva como obter o valor.
 
-Para uma corrente de saída de 1A tem-se a tensão VGS de 4,5V, informação obtida no datasheet do mosfet.
+Para uma corrente de saída de 1A tem-se a tensão VGS de 4V, informação obtida no datasheet do mosfet.
 Esse valor precisa ser somado a tensão de saída do mosfet para se definir a tensão de saída do ampop.
 
 - Qual a corrente de alimentação do AmpOp?
@@ -52,24 +52,30 @@ O ganho deve ser alto para que a corrente de dreno seja baixa.
 
 - Qual valor da tensão do diodo zener D6?
 
-A tensão do zener precisa ser superior a tensão de saída do ampop, que nesse projeto precisa ser de aproximadamente 19,5V (saída de 15V somada da tensão Vgs do mosfet).
+A tensão do zener precisa ser superior a tensão de saída do ampop, que nesse projeto precisa ser de aproximadamente 19V (saída de 15V somada da tensão Vgs do mosfet).
 
-- Como escolher o diodo zener D6, maximizando a eficiência energética e
-minimizando os ruídos no circuito?
+- Como escolher o diodo zener D6, maximizando a eficiência energética e minimizando os ruídos no circuito?
 
-Para minimizar os ruídos no crcuito o zener deve possuir uma tensão baixa e com a menor variação posível, o que leva a escolher um diodo zener com resistência pequena.
+Para minimizar os ruídos no circuito o zener deve possuir uma tensão baixa e com a menor variação posível, o que leva a escolher um diodo zener com resistência pequena.
 
 - Considere que, por alterações futuras no circuito, o AmpOp poderá ter uma
 aumento de 10mA na corrente de alimentação, o circuito proposto continuará
 funcionando?
 
-Sim.
+Sim, contanto que os valores minimos do datasheet sejam atendidos.
+
+- Projete o circuito de alimentação do AmpOp com as especificações acima.
+
+Componentes escolhidos:
+
+Diodo 1N4001
+Diodo zener BZX84C11
+
 
 -------------------------------------------
 ## Parte 02: Calculando e dimensionando os componentes
 
-### Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga =
-1,1A. Justifique a escolha dos componentes.
+### Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.
 
   Considerando que os diodos estão funcionando como retificadores de onda completa, cada um irá operar em um semiciclo da alimentação, aplicando sempre uma corrente no mesmo sentido para a carga. Precisamos saber o valor dos capacitores a serem utilizados e a corrente de pico sobre os diodos.
   
@@ -99,6 +105,10 @@ Sim, eliminando um dos fatores da regulação, mantendo a corrente constante no 
 
 No qual o circuito com R1, R5, Q2 e Q3 é uma fonte de corrente constante para polarizar o diodo zener D3. Vamos projetar? 
 
+Podemos melhorar mais ainda? Que tal deixar essa fonte com valor ajustável? Como fazer isso?
+
+Com um circuito sobrecorrente.
+
 ### Escolhendo o transistor M1 e calculando R2 e R3. 
 
 • Qual a corrente contínua necessária? 
@@ -118,7 +128,12 @@ Quais os os parâmetros L, W, uo, Cox, VA e Vt?
 Calcule o valor de RDS para as tensões VGS de 2V, 3V, 4V, 5V e 10V 
 
 Quais as tensões máximas de operação deste componente? 
+
+Vds máxima de 100V. Vgs máxima de 20V e mínima de -20V
+
 Obtenha as curvas ID x VDS para esse componente para as tensões VGS de 2V, 3V, 4V, 5V e 10V e compare os resultados com as curvas presentes no Datasheet. 
+
+![](https://github.com/LFRB-IFSC/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Alunos/Larah/Midias/VGS.PNG)
 
 Utilizando a curva ID x VDS obtenha os valores RDS e compare com os valores teóricos. 
 
@@ -140,4 +155,18 @@ Justifique a escolha dos resistores R2 e R3
   
 - O que é a proteção foldback?
 
-  É um sistema de proteção de sobre corrente, ele diminui a corrente enquanto diminui a tensão que vai para a carga, isso possibilita que no nosso circuito por exemplo o mosfet não sobre aqueça. Pois caso o dispositivo de proteção de corrente não fosse do tipo foldback provavelmente a tensão que iria para a carga iria diminuir enquanto a corrente se manteria estática, com isso a alta potência dissipada no mosfet do circuito iria se manter enquanto o surto de tensão continuasse. Já com o foldback não pois com a corrente diminuindo linearmente junto a potência dissipada no mosfet iria cair e poderiamos economizar com dissipadores de calor no mosfet.
+  É um sistema de proteção de sobre corrente, ele diminui a corrente enquanto diminui a tensão que vai para a carga, isso possibilita que no nosso circuito por exemplo o mosfet não sobre aqueça. Pois caso o dispositivo de proteção de corrente não fosse do tipo foldback provavelmente a tensão que iria para a carga iria diminuir enquanto a corrente se manteria estática, com isso a alta potência dissipada no mosfet do circuito iria se manter enquanto o surto de tensão continuasse. Já com o foldback não, pois o sistema diminui a corrente saída e com isso o potência dissipada no bloco regulador linear.
+  
+  ![Capturar](https://user-images.githubusercontent.com/58013651/116634242-ebd49000-a931-11eb-86af-0bce308159dd.PNG)
+  
+ - Pesquise as topologias disponíveis:
+  
+  ![121312312](https://user-images.githubusercontent.com/58013651/116639605-47594a80-a93f-11eb-9cc5-14cc8c29f1dd.PNG)
+  
+  Esta é outra topologia de regulador linear fornecido pela Texas Instrument, esse regulador linear é do tipo LDO. A equação do seu Vout é dada por: VOUT= VREF× (1+R1/R2). Como pode-se ver o circuito é muito similar ao que fazemos nesse projeto no entanto para se um Vgs suficiente para saturar o mosfet e ele operar como chave a Texas Instrument utiliza um sistema de charge pump para elevar a tensão de Vin para poder alimentar o Vcc do ampop com tensão superior ao Vin e ter uma saída superior a Vout.
+
+ - Caso deseja-se fazer um circuito LDO, o o que devemos levarem consideração para o regulador?
+ 
+  Para esse circuito ser LDO o Vin tem que ser muito próximo do Vout, para isso o Vgs deve ter valor suficiente para saturar o transistor. Esse circuito para a proteção do ampop existe um resistor na saída do ampop, como visto em aula nesse resistor deve passar uma corrente de 10mA, com isso podemos estipular qual resistor podemos utilizar para que o nosso circuito opere como um LDO. Temos que o Vgs do nosso transistor escolhido é de 4V para saturar e a fonte deve ter um Vout de 15V, como visto anteriormente a saída do ampop deve ter 19V para o sistema operar corretamente e 10mA no máximo para operar com menor perda de energia. Assim para o sistema operar como LDO temo que R6 = 19V/10mA = 1900 Ohms.
+ 
+
