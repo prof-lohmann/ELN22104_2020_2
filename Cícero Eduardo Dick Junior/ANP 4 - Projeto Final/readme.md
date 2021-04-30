@@ -27,7 +27,14 @@ O valor VCC para o sinal de 12Vrms será de aproximadamente 32,6V, pois o circui
 ```
 2*17 - 1,4 = 32,6
 ```
-O grande problema desse circuito é o Vripple muito alto. Para resolver esse problema, podemos implementar um regulador de tensão para amenizar esse problema.
+O grande problema desse circuito é o Vripple muito alto, como mostra a imagem:
+
+Figura 1 - Dobrador de Tensão
+
+![Dobrador de tensão](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/dobrador%20de%20tensao.JPG)
+
+
+Para resolver esse problema, podemos implementar um regulador de tensão para amenizar esse problema.
 
 ### **Projetando o circuito de alimentação do ampop**
 
@@ -36,7 +43,8 @@ Qual a Tensão VGS? Descreva como obter o valor.**
 
 A tensão Vgs deve ser suficiente para que a corrente Id do MOSFET seja de 1A. No caso do IRF540, a tensão indicada é de Vgs = 4V. Para obtermos esse valor, precisamos ter 19V na saída do Ampop que alimenta o Gate do transistor, pois:
 ```
-Vgs = Vg + Vs = 4 + 15 = 19
+Vgs = Vg - Vs
+Vg = Vgs + Vs = 4 + 15 = 19V
 ```
 
 **Qual a corrente de alimentação do AmpOp?**
@@ -45,11 +53,11 @@ A corrente de alimentação do ampop é próxima de 3mA, segundo o datasheet do 
 
 **Qual a tensão de alimentação do AmpOp?**
 
-A tensão de alimentação do AmpOp deve ser maior do que a tensão de saída, que neste caso é de 19V, portanto, para deixar uma margem de erro, projetaremos com o valor de 22V.
+A tensão de alimentação máxima do AmpOp LM324 é de 32V. No caso em questão, a alimentação do ampop precisa ser um pouco maior que a tensão de saída de 19V. Nesse caso, podemos arbitrar uma tensão de 22V.
 
 **Qual fator devo considerar para escolher o transistor Q1?**
 
-O transistor Q1 deve ter uma corrente de emissor baixa para não interferir no funcionamento do diodo Zener, portanto, seu fator beta deve acima de 100.
+O transistor Q1 deve ter uma corrente de emissor baixa para não interferir no funcionamento do diodo Zener, portanto, seu fator beta deve estar acima de 100.
 
 **Qual valor da tensão do diodo zener D6?**
 
@@ -59,18 +67,30 @@ Utilizamos um diodo zener de 22V para o circuito.
 
 O diodo zener deve ter uma resistência baixa, para caso de variações de corrente no circuito.
 
+Figura 2 - Dobrador de Tensão com Regulador de Tensão
+
+![Dobrador de Tensão com Regulador de Tensão](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/dobrador%20de%20tensao%20com%20regulador.JPG)
+
 ## Parte 02 Calculando e dimensionando os componentes
 
 **Para o primeiro bloco (D1, D2 e C1) considere vin+ = 12Vrms, Vripple_pós_retificador = 1V e I_carga = 1,1A. Justifique a escolha dos componentes.**
 O bloco em questão é o retificador de onda completa. Para os diodos, os seguintes fatores devem ser considerados: tensão reversa, corrente de pico e queda de tensão.
-Os diodos devem ter uma queda de tensão abaixo de 1V para que o sinal na saída não fique abaixo de 15V. Eles também precisam suportar uma tensão reversa acima de 30V. Para este circuito, podemos usar o diodo 1N4007.
-
+Os diodos devem ter uma queda de tensão abaixo de 1V para que o sinal na saída não fique abaixo de 15V. Eles também precisam suportar uma tensão reversa acima de 30V. A corrente de pico é dada pela equação:
+```
+    Idmáx = Il(1 + 2*pi*sqrt(Vp/2Vr)) = 22A
+```
+Portanto, o diodo deve ser capaz de suportar 22A na fase de carga do capacitor.
 
 O capacitor deve ser escolhido de acordo com a seguinte equação:
 
 ```
     C = Il/f*Vr = 18,33mF
 ```
+Figura 3 - Retificador de Onda Completa
+![Retificador de onda completa](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Retificador.JPG)
+
+Figura 4 - Corrente no Diodo
+![corrente no diodo](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Corrente%20no%20diodo.JPG)
 
 **Circuito referência de tensão zener (R1 e D3):**
 
@@ -127,6 +147,11 @@ Considerando o diodo zener D3 com uma tensão de 6,2V, precisamos de um ganho de
 
 Utilizando resistores de 32k e 10k, obtemos o ganho necessário e a corrente que circulará por eles será de 357uA, baixa o suficiente para não afetar o circuito.
 
+Figura 5 - fonte
+
+![fonte](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/fonte.JPG)
+
+
 ## Parte 03: Adicionando um circuito de proteção de sobre corrente ao regulador linear
 
 **Primeiramente reflita e pesquise sobre o que é sobrecorrente? Quais os impactos neste circuito? O que deve fazer um circuito de proteção de sobrecorrente? O que é a proteção foldback?**
@@ -137,7 +162,7 @@ A proteção em foldback limita a corrente de forma linear, conforme a tensão n
 
 No caso do regulador de tensão, para manter o princípio de LDO, devemos procurar por uma proteção de sobrecorrente que tenha uma baixa queda de tensão para o seu funcionamento.
 
-Figura 1 - Proteção de Sobrecorrente
+Figura 6 - Proteção de Sobrecorrente
 ![](https://github.com/ciceroed/ELN22104_2020_2/blob/prof-lohmann-Alunos_01/Cícero%20Eduardo%20Dick%20Junior/ANP%204%20-%20Projeto%20Final/Proteção%20sobrecorrente.JPG)
 
 A proteção de sobrecorrente apresentada na figura 1 funciona por meio de um circuito comparador que mede as tensões na entrada e saída de um resistor shunt. Caso a tensão no resistor shunt seja maior do que a projetada, o circuito comparador envia tensão suficiente para ativar o transistor NMOS M2. Por sua vez, o transistor M2 envia o sinal do ampop U1 direto pro terra, desligando a fonte.
