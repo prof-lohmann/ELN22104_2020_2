@@ -147,4 +147,10 @@ Justifique a escolha dos resistores R2 e R3
   
 - O que é a proteção foldback?
 
-  É um sistema de proteção de sobre corrente, ele diminui a corrente enquanto diminui a tensão que vai para a carga, isso possibilita que no nosso circuito por exemplo o mosfet não sobre aqueça. Pois caso o dispositivo de proteção de corrente não fosse do tipo foldback provavelmente a tensão que iria para a carga iria diminuir enquanto a corrente se manteria estática, com isso a alta potência dissipada no mosfet do circuito iria se manter enquanto o surto de tensão continuasse. Já com o foldback não pois com a corrente diminuindo linearmente junto a potência dissipada no mosfet iria cair e poderiamos economizar com dissipadores de calor no mosfet.
+  É um sistema de proteção de sobre corrente, ele diminui a corrente enquanto diminui a tensão que vai para a carga, isso possibilita que no nosso circuito por exemplo o mosfet não sobre aqueça. Pois caso o dispositivo de proteção de corrente não fosse do tipo foldback provavelmente a tensão que iria para a carga iria diminuir enquanto a corrente se manteria estática, com isso a alta potência dissipada no mosfet do circuito iria se manter enquanto o surto de tensão continuasse. Já com o foldback não, pois o sistema diminui a corrente saída e com isso o potência dissipada no bloco regulador linear.
+  
+  ![Capturar](https://user-images.githubusercontent.com/58013651/116634242-ebd49000-a931-11eb-86af-0bce308159dd.PNG)
+  
+  
+ 
+
