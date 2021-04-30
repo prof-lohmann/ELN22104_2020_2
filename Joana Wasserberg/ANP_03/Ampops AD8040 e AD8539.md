@@ -54,6 +54,11 @@ Para o AmpOp ad8539, a tensão de saída ficou proxíma de 4.8V. Por conta da te
 
 
 
+![Seguidor de tensão ad8040]( )
+
+![Seguidor de tensão gráfico]( )
+
+
 
 2. Simule um circuito amplificador inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual -100V/V.
 
@@ -63,7 +68,7 @@ Para o AmpOp ad8539, a tensão de saída ficou proxíma de 4.8V. Por conta da te
 
 Com a tensão de entrada em 0V, a saída do AmpOp ficou proxíma de 1.94mv (AD8539). Isso é por efeito da tensão de offset, que nesse ampop, com o ganho de 100V/V fica proxímo de 0,5mV variando a 1,5mV.
 
-
+Para o AmpOp AD8040, a tensão ficou em 0.18V, que está de acordo com a tensão de offset esperada para um ganho de 100V/V.
 
 + Aplique um sinal senoidal de 10mVpp@1kHz na entrada e verifique o sinal de saída. Explique o resultado.
 
@@ -72,15 +77,25 @@ Com a tensão de entrada em 0V, a saída do AmpOp ficou proxíma de 1.94mv (AD85
 Com o sinal de 5mV de amplitude e o ganho em 100V/V a tensão de saída fica 500mV seguido 50mV (AD8439)
 
 
+![inversor ad8040]()
+
+
+Apesar de ambos possuirem ganhos na tensão de acordo com a topologia aplicada, o AD8539 foi muito mais preciso.
+
 
 3. Simule um circuito amplificador não inversor com cada um dos ampops indicados e calcule os resistores para ter um ganho igual 10V/V.
 
-![não inversor ad8539](link)
+
+![não inversor ad8539]()
+
+![não inversor ad8040]()
 
 + Aplique 0V na entrada e verifique o valor da tensão na saída. Explique o resultado.
 
 
 Com a tensão de entrada em 0V, a saída do AmpOp ficou proxíma de 216uV (AD8539). Isso é por efeito da tensão de offset, que nesse ampop, com o ganho de 10V/V fica proxímo de 50uV variando a 150uV.
+
+Para o AmpOp AD8040, a tensão de saída ficou 74mV. Isso é por efeito da tensão de offset, que nesse ampop, com o ganho de 10V/V fica proxímo de 50mV variando até 16V.
 
 + Aplique um sinal continuo de 5mV, 50mV, 200mV e 500mV na entrada e verifique o sinal de saída. Qual o erro com relação ao ganho calculado? Explique o resultado.
 
@@ -95,3 +110,15 @@ AD8539|  |   |
 Devida a saturação para o VCC, o ganho esperado em 500mV foi menor.
 
 
+AD8040|  |   |
+----------:|:--------------:|:--------
+|Entrada | Saída | Erro em relação ao ganho
+|5mV     | 124mV| 148%
+|50mV    | 573mV| 14,6%
+|200mV   | 2V    |0%
+|500mV   | 4.95V |1%
+
+
+## Caso deseja-se projetar um amplificador subtrator com ganho de 100V/V, para sinais muito pequenos com variação de +/-10uV até +/-30mV de muito baixa frequência, qual desses ampops você utilizaria? Justifique a sua resposta.
+
+Utilizaria o ampop AD8539 por sua precisão ser muito melhor que o ampop AD8040 para sinais pequenos como o proposto.
