@@ -278,3 +278,37 @@ RDS Simulação[ohms] |
    ...
 </p>
 
+## Parte 03 - Adicionando um circuito de proteção de sobre corrente ao regulador linear
+
+#### Primeiramente reflita e pesquise sobre o que é sobrecorrente?
+
+<p align="justify">
+   Sobrecorrente é causada quando a carga exige mais corrente do que os valores nominais aos quais o circuito foi projetado para suportar.
+</p>
+
+#### Quais os impactos neste circuito?
+
+<p align="justify">
+   Uma sobre corrente pode causar diversos impatos ao circuito, des de colocar o circuito em um estado em que não é possivel garantir a tensão na saída até a queima de componentes e uma falha completa do circuito.
+</p>
+
+#### O que deve fazer um circuito de proteção de sobrecorrente?
+
+<p align="justify">
+   Adicionar um circuito com o objetivo de interromper a corrente que circula no circuito, automaticamente, sempre que a intensidade de corrente atingir valores fora dos estipulados para o projeto.
+</p>
+
+#### O que é a proteção foldback?
+
+<p align="justify">
+   Foldback é um circuito de limitação de corrente. Este setup reduz a saída de tensão para valorez muito abaixo do estipulado de forma a reduzir a corrente circuluando no circuito em uma eventual sobrecorrente. Impedindo assim que um eventual curto cicuito na carga danifique a fonte ou o circuito em questão.
+</p>
+
+
+#### Pesquise as topologias disponíveis, caso deseja-se fazer um circuito LDO, o o que devemos levar em consideração para o regulador?
+
+<p align="justify">
+   ...
+</p>
+
+
